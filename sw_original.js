@@ -10,9 +10,8 @@
       calibrate.html (faltavam → offline quebrava o player).
    4. Versão fixada do EmulatorJS (4.2.3) no warmup — veja play.html.
    ═══════════════════════════════════════════════════════════ */
-const CACHE_NAME = 'retroverse-v11';
+const CACHE_NAME = 'retroverse-v10';
 const CACHE_EJS = CACHE_NAME + '-ejs'; // núcleos/framework do EmulatorJS
-const CACHE_COVERS = 'retroverse-covers'; // capas baixadas automaticamente da web
 const EJS_CDN = 'https://cdn.emulatorjs.org/4.2.3/data/';
 
 const STATIC_ASSETS = [
@@ -26,8 +25,6 @@ const STATIC_ASSETS = [
   'assets/rv-icon.png',
   'manifest.json',
   'js/audio.js',
-  'js/covers.js',
-  'js/covers-map.js',
   'js/overlay-parser.js',
   // Base de cheats dinâmica do EmulatorJS
   'cheats/cheats.json',
@@ -57,7 +54,7 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE_NAME && k !== CACHE_EJS && k !== CACHE_COVERS).map(k => caches.delete(k)))
+      Promise.all(keys.filter(k => k !== CACHE_NAME && k !== CACHE_EJS).map(k => caches.delete(k)))
     ).then(() => self.clients.claim())
   );
 
@@ -94,25 +91,6 @@ self.addEventListener('fetch', event => {
           })
           .catch(() => cached);
         return cached || network;
-      })
-    );
-    return;
-  }
-
-  // Capas remotas (libretro-thumbnails): cache-first, para não rebaixar
-  // as mesmas imagens toda vez e funcionar offline depois da 1ª vez.
-  if (url.hostname === 'thumbnails.libretro.com') {
-    event.respondWith(
-      caches.open(CACHE_COVERS).then(async cache => {
-        const cached = await cache.match(event.request);
-        if (cached) return cached;
-        try {
-          const res = await fetch(event.request);
-          if (res && res.ok) cache.put(event.request, res.clone());
-          return res;
-        } catch (e) {
-          return cached || Response.error();
-        }
       })
     );
     return;

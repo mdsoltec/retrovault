@@ -10,6 +10,8 @@
   <title>RetroVerse - Jogos</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/audio.js"></script>
+  <script src="js/covers-map.js"></script>
+  <script src="js/covers.js"></script>
 </head>
 
 <body>
@@ -78,52 +80,13 @@
     document.title = 'RetroVerse - ' + currentConfig.title;
 
     // ─────────────────────────────────────────────────────────
-    // SISTEMA DE CAPAS AUTOMÁTICO — Múltiplas fontes sem CORS
-    // 1) Capa LOCAL  → covers/NOME_DO_CONSOLE/<arquivo>.png
-    // 2) Se não existir, busca automaticamente na base comunitária
-    //    "libretro-thumbnails" (mesma base de capas do RetroArch/
-    //    RetroPie/Lakka). Funciona direto no navegador: sem login e
-    //    sem problema de CORS (imagens via <img>).
-    // 3) Se também falhar, mostra o placeholder "RV".
-    const getCover = (game) => {
-      const imageName = game.file.replace(/\.[^/.]+$/, "") + ".png";
-      return `covers/${consoleType}/${encodeURIComponent(imageName)}`;
-    };
-
-    // Mapa de pastas (sistemas) do libretro-thumbnails
-    const RETRO_SYSTEM = {
-      'snes': 'Nintendo - Super Nintendo Entertainment System',
-      'nes': 'Nintendo - Nintendo Entertainment System',
-      'gba': 'Nintendo - Game Boy Advance',
-      'gbc': 'Nintendo - Game Boy Color',
-      'gb': 'Nintendo - Game Boy',
-      'n64': 'Nintendo - Nintendo 64',
-      'nds': 'Nintendo - Nintendo DS',
-      'sega': 'Sega - Mega Drive - Genesis',
-      'segacd': 'Sega - Mega-CD - Sega CD',
-      'gamegear': 'Sega - Game Gear',
-      'mastersystem': 'Sega - Master System - Mark III',
-      'atari2600': 'Atari - 2600',
-      'psx': 'Sony - PlayStation',
-      'arcade': 'FBNeo - Arcade Games'
-    };
-    const RETRO_BASE = 'https://thumbnails.libretro.com';
-
-    // Gera a lista de URLs remotas (em ordem) a tentar para um jogo.
-    // Usa o nome do arquivo da ROM por padrão (coincide com o padrão
-    // No-Intro). Para exceções (ex.: arcade), o jogo pode definir
-    // `remote` com o nome EXATO da capa na fonte.
-    const getRemoteCovers = (game) => {
-      const sys = RETRO_SYSTEM[consoleType];
-      if (!sys) return [];
-      const base = game.remote || game.file.replace(/\.[^/.]+$/, "");
-      const enc = encodeURIComponent(base);
-      // Tenta capa 3D (Named_Boxarts) e depois capa 2D (Named_Covers)
-      return [
-        `${RETRO_BASE}/${sys}/Named_Boxarts/${enc}.png`,
-        `${RETRO_BASE}/${sys}/Named_Covers/${enc}.png`
-      ];
-    };
+    // SISTEMA DE CAPAS AUTOMÁTICO → js/covers.js (RVCovers)
+    // 1) covers/<console>/<rom>.png|.jpg  (local)
+    // 2) se não existir, busca sozinho na web (libretro-thumbnails:
+    //    Named_Boxarts → Named_Covers → Named_Titles, testando
+    //    variações do nome) e memoriza o resultado em cache.
+    // 3) se nada existir, mostra o placeholder "RV".
+    // ─────────────────────────────────────────────────────────
 
     // BANCO DE DADOS DOS JOGOS
     const catalog = {
@@ -437,53 +400,41 @@
         coverWrap.className = 'game-cover-wrap';
         coverWrap.style.position = 'relative';
 
-        const coverUrl = getCover(game);
-        const remoteCovers = getRemoteCovers(game);
-
         const img = document.createElement('img');
         img.alt = game.name;
         img.className = 'game-cover-img';
         img.loading = 'lazy';
 
-        let currentSrc = coverUrl;
-        let remoteIndex = 0;
-
-        // Esgotou todas as fontes → mostra o placeholder "RV"
+        // Placeholder "RV" só depois de esgotar TODAS as fontes (local + web)
         const showFallback = () => {
           const icon = document.createElement('div');
           icon.className = 'game-icon rv-fallback';
           icon.innerHTML = '<span class="rv-fallback-text">RV</span>';
-          coverWrap.replaceWith(icon);
+          if (coverWrap.parentNode) coverWrap.replaceWith(icon);
         };
 
-        // Tenta a próxima fonte remota (ou cai no placeholder)
-        const tryNextSource = () => {
-          if (remoteIndex < remoteCovers.length) {
-            currentSrc = remoteCovers[remoteIndex++];
-            img.src = currentSrc;
-          } else {
-            showFallback();
+        // Sistema automático de capas: se não existir localmente,
+        // baixa da base libretro-thumbnails (js/covers.js)
+        RVCovers.attach(img, {
+          console: consoleType,
+          file: game.file,
+          remote: game.remote,
+          name: game.name,
+          subtitle: game.subtitle,
+          onFail: showFallback,
+          onLoad: (url) => {
+            coverWrap.style.setProperty('--cover-bg', `url('${url}')`);
+            coverWrap.style.setProperty('--cover-loaded', '1');
+            let bgEl = coverWrap.querySelector('.cover-blur-bg');
+            if (!bgEl) {
+              bgEl = document.createElement('div');
+              bgEl.className = 'cover-blur-bg';
+              coverWrap.insertBefore(bgEl, img);
+            }
+            bgEl.style.backgroundImage = `url('${url}')`;
           }
-        };
+        });
 
-        img.onload = function () {
-          // Capa carregada (local ou remota) → aplica o fundo com blur real
-          coverWrap.style.setProperty('--cover-bg', `url('${currentSrc}')`);
-          coverWrap.style.setProperty('--cover-loaded', '1');
-          if (!coverWrap.querySelector('.cover-blur-bg')) {
-            const bgEl = document.createElement('div');
-            bgEl.className = 'cover-blur-bg';
-            bgEl.style.backgroundImage = `url('${currentSrc}')`;
-            coverWrap.insertBefore(bgEl, img);
-          }
-        };
-
-        img.onerror = function () {
-          // Capa local falhou (ou uma remota falhou) → avança na cadeia
-          tryNextSource();
-        };
-
-        img.src = coverUrl;
         coverWrap.appendChild(img);
 
         // Botão de favorito

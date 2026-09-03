@@ -11,6 +11,8 @@
   <title>Retroverso - Universo dos Games Clássicos</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/audio.js"></script>
+  <script src="js/covers-map.js"></script>
+  <script src="js/covers.js"></script>
   <!-- Mapa de capas remotas pré-computado (URL exata por jogo) -->
 
 </head>
@@ -654,28 +656,27 @@
       try { return JSON.parse(localStorage.getItem('rv_recent') || '[]'); } catch { return []; }
     }
 
-    /* ═══ CAPAS (100% locais → placeholder "RV") ═══
-       Todas as capas estão em covers/<console>/<nome do arquivo>.png,
-       com o MESMO nome-base da ROM do catálogo. Sem mapa externo:
-       se a imagem faltar, cai direto no placeholder "RV". */
+    /* ═══ CAPAS AUTOMÁTICAS (js/covers.js) ═══
+       1) covers/<console>/<rom>.png|.jpg (local)
+       2) se não existir localmente, baixa automaticamente da base
+          libretro-thumbnails (mesma do RetroArch), testando variações
+          do nome e guardando em cache o link que funcionou;
+       3) se nada existir, mostra o placeholder "RV". */
     function getCoverUrl(consoleKey, file) {
-      const imageName = file.replace(/\.[^/.]+$/, '') + '.png';
-      return `covers/${consoleKey}/${encodeURIComponent(imageName)}`;
+      return RVCovers.localUrl(consoleKey, file);
     }
 
-    // Cria a tag <img> da capa, com placeholder "RV" se o arquivo faltar
-    function createCoverImg(consoleKey, file, alt) {
+    function createCoverImg(consoleKey, file, alt, extra) {
       const img = document.createElement('img');
       img.className = 'user-game-cover';
       img.alt = alt || '';
       img.loading = 'lazy';
-      img.onerror = function () {
-        const d = document.createElement('div');
-        d.className = 'user-game-fallback';
-        d.textContent = 'RV';
-        img.replaceWith(d);
-      };
-      img.src = getCoverUrl(consoleKey, file);
+      RVCovers.attach(img, Object.assign({
+        console: consoleKey,
+        file: file,
+        name: alt,
+        fallbackClass: 'user-game-fallback'
+      }, extra || {}));
       return img;
     }
 
