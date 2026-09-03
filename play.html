@@ -9,7 +9,7 @@
   <!-- Boot rápido: abre a conexão com o CDN dos núcleos antes de o jogo pedir -->
   <link rel="preconnect" href="https://cdn.emulatorjs.org" crossorigin>
   <link rel="dns-prefetch" href="https://cdn.emulatorjs.org">
-  <title>RetroVerse - Jogando...</title>
+  <title>RetroVerso - Jogando...</title>
   <!-- Defesa: o EmulatorJS consulta MediaRecorder.isTypeSupported SEM checar
        se a API existe. Em navegadores sem MediaRecorder (WebKit/Safari antigo,
        alguns WebViews e shells de PWA) a referência crua lançava ReferenceError
@@ -419,7 +419,7 @@
   <div class="rv-bg"></div>
   <div class="rv-logo">RV</div>
   <div class="rv-console-title" id="rv-console-title"></div>
-  <div class="rv-name">RETROVERSE</div>
+  <div class="rv-name">RETROVERSO</div>
   <div class="rv-slogan">ENTER THE CLASSICS</div>
   <div class="rv-bar-wrap"><div class="rv-bar"></div></div>
   <div class="rv-msg" id="rv-msg">Carregando emulador...</div>
@@ -532,7 +532,7 @@ const CONSOLE_THEMES = {
 
 // Aplica cores temáticas na loading screen
 (function applyConsoleTheme() {
-  const theme = CONSOLE_THEMES[core] || { name: 'RetroVerse', color: '#00ff41', glow: 'rgba(0,255,65,0.5)' };
+  const theme = CONSOLE_THEMES[core] || { name: 'RetroVerso', color: '#00ff41', glow: 'rgba(0,255,65,0.5)' };
   const loading = document.getElementById('rv-loading');
   if (loading) {
     loading.style.setProperty('--rv-color', theme.color);
@@ -904,7 +904,7 @@ async function preloadGame(gamePath) {
         // Registra se a ROM veio do servidor remoto: BIOS e demais anexos
         // precisam vir da MESMA fonte (roms/ local não existe no GitHub Pages).
         window.__rvRomFromRemote = url.startsWith(ROMS_BASE);
-        console.log('[RetroVerse] ROM carregada com sucesso de:', url);
+        console.log('[RetroVerso] ROM carregada com sucesso de:', url);
         break;
       }
     } catch(err) {
@@ -913,7 +913,7 @@ async function preloadGame(gamePath) {
   }
 
   if (!response) {
-    console.error('[RetroVerse] ROM não encontrada. URLs tentadas:', candidateUrls);
+    console.error('[RetroVerso] ROM não encontrada. URLs tentadas:', candidateUrls);
     msgEl.textContent = 'Erro: ROM não encontrada em roms/ nem no servidor online.';
     throw new Error('ROM não encontrada em nenhuma fonte.');
   }
@@ -967,7 +967,7 @@ if (isNDSCore) {
 
 /* ═══ VERSÃO FIXADA DO EMULATORJS ═══
    'stable' é um alias móvel: quando o projeto sobe de versão, os patches
-   de runtime do RetroVerse (cheats, BIOS trap, stylus NDS, MediaRecorder
+   de runtime do RetroVerso (cheats, BIOS trap, stylus NDS, MediaRecorder
    stub) podem quebrar SEM aviso. Fixamos a tag exata que hoje serve o
    stable (v4.2.3 — bytes idênticos, verificado por hash do CDN).
    Para atualizar: troque o número AQUI e no sw.js (warmup). */
@@ -1207,7 +1207,7 @@ function openRetroVerseCheats() {
   document.body.classList.add('rv-cheats-open');
 
   // O botão "Close" nativo altera display diretamente; mantém o estado visual
-  // do RetroVerse sincronizado quando isso acontecer.
+  // do RetroVerso sincronizado quando isso acontecer.
   if (!cheatMenu.__rvCheatObserver) {
     const observer = new MutationObserver(() => {
       const visible = getComputedStyle(cheatMenu).display !== 'none';
@@ -1226,13 +1226,13 @@ window.openRetroVerseCheats = openRetroVerseCheats;
    continua abrindo os cheats (ver system_menu no js/overlay-parser.js).
    Ícones em SVG (#rv-svg-sprite) e saves com registro visível. */
 
-/* ── SISTEMA DE SAVES RETROVERSE ───────────────────────────────────
+/* ── SISTEMA DE SAVES RETROVERSO ───────────────────────────────────
    UM slot por jogo: "Salvar" sobrescreve o save anterior do mesmo jogo
    (a linha de info da barra deixa isso explícito e mostra data/tamanho).
    O estado completo do emulador (save-state) fica em IndexedDB próprio
-   ("RetroVerse-saves"), independente do menu nativo do EmulatorJS:
+   ("RetroVerso-saves"), independente do menu nativo do EmulatorJS:
    o que a barra salva é exatamente o que a barra carrega. */
-const RV_SAVES_DB = 'RetroVerse-saves';
+const RV_SAVES_DB = 'RetroVerso-saves';
 const RV_SAVES_STORE = 'saves';
 
 function rvSavesOpen() {
@@ -1292,7 +1292,7 @@ async function rvSaveNow() {
     refreshRvSaveInfo();
     return true;
   } catch (err) {
-    console.warn('[RetroVerse] falha ao gravar save:', err);
+    console.warn('[RetroVerso] falha ao gravar save:', err);
     if (typeof showToast === 'function') showToast('Falha ao gravar o save');
     return false;
   }
@@ -1315,7 +1315,7 @@ async function rvLoadNow() {
     if (typeof showToast === 'function') showToast('Save carregado (' + rvFmtDate(rec.savedAt) + ')');
     return true;
   } catch (err) {
-    console.warn('[RetroVerse] falha ao carregar save:', err);
+    console.warn('[RetroVerso] falha ao carregar save:', err);
     if (typeof showToast === 'function') showToast('Falha ao carregar o save');
     return false;
   }
@@ -1405,7 +1405,7 @@ function closeRetroVerseSystemBar() {
         }
         syncRvSysBarState();
       }
-    } catch (err) { console.warn('[RetroVerse] barra de sistema:', err); }
+    } catch (err) { console.warn('[RetroVerso] barra de sistema:', err); }
   });
 })();
 
@@ -1588,14 +1588,14 @@ async function loadRetroVerseCheats() {
       const data = await response.json();
       if (data && typeof data === 'object') databases.push(data);
     } catch (error) {
-      console.warn('[RetroVerse] Não foi possível carregar cheats:', path, error);
+      console.warn('[RetroVerso] Não foi possível carregar cheats:', path, error);
     }
   }
 
   const database = Object.assign({}, ...databases);
   const romName = window.EJS_gameName || decodeURIComponent((game || '').split('/').pop() || '');
   window.EJS_cheats = findCheatEntries(database, romName);
-  console.info(`[RetroVerse] Cheats carregados para "${romName}": ${window.EJS_cheats.length}`);
+  console.info(`[RetroVerso] Cheats carregados para "${romName}": ${window.EJS_cheats.length}`);
 }
 
 let __rvLoaderStarted = false;
@@ -1607,7 +1607,7 @@ async function startRetroVerseEmulator() {
     await loadRetroVerseCheats();
   } catch (error) {
     window.EJS_cheats = [];
-    console.warn('[RetroVerse] Falha ao preparar cheats:', error);
+    console.warn('[RetroVerso] Falha ao preparar cheats:', error);
   }
 
   const script = document.createElement('script');
@@ -1627,7 +1627,7 @@ async function startRetroVerseEmulator() {
         msg.style.whiteSpace = 'normal';
         msg.style.maxWidth = '320px';
       }
-      console.warn('[RetroVerse] watchdog: emulador não iniciou em 30s.', window.__rvLastError || '');
+      console.warn('[RetroVerso] watchdog: emulador não iniciou em 30s.', window.__rvLastError || '');
     } catch (e) { }
   }, 30000);
 }
@@ -1657,7 +1657,7 @@ if (isArcade) {
               this.gameManager.FS.writeFile(nome, new Uint8Array(await resp.arrayBuffer()));
               this.config.biosUrl = url;
             } catch (err) {
-              console.error('[RetroVerse] Falha ao baixar BIOS:', url, err);
+              console.error('[RetroVerso] Falha ao baixar BIOS:', url, err);
               if (this.startGameError) this.startGameError(this.localization ? this.localization('Network Error') : 'Network Error');
               return; // deixa o próprio FBNeo exibir a tela de romset ausente
             }
@@ -1692,10 +1692,10 @@ if (isArcade) {
     for (const url of urls) {
       try {
         const head = await fetch(url, { method: 'HEAD' });
-        if (head.ok) { EJS_biosUrl = url; console.log('[RetroVerse] BIOS do Sega CD configurada:', url); return; }
+        if (head.ok) { EJS_biosUrl = url; console.log('[RetroVerso] BIOS do Sega CD configurada:', url); return; }
       } catch (error) {}
     }
-    console.warn('[RetroVerse] BIOS do Sega CD não encontrada (' + SCD_BIOS_PATH + '). O jogo pode não iniciar.');
+    console.warn('[RetroVerso] BIOS do Sega CD não encontrada (' + SCD_BIOS_PATH + '). O jogo pode não iniciar.');
   };
   preloadGame(game).then(async blobUrl => {
     EJS_gameUrl = blobUrl; EJS_onGameStart = onGameReady; setTimeout(onGameReady, 14000);
@@ -1738,7 +1738,7 @@ function sendInput(id, val) {
       manager.functions.simulateInput(0, id, val);
     }
     if (new URLSearchParams(window.location.search).has('debug')) {
-      console.log('[RetroVerse] input', { id, val });
+      console.log('[RetroVerso] input', { id, val });
     }
   } catch (e) {}
 }
@@ -2120,7 +2120,7 @@ function takeScreenshot() {
     // Download
     const a = document.createElement('a');
     a.href = dataUrl;
-    a.download = `retroverse_${core}_${Date.now()}.png`;
+    a.download = `retroverso_${core}_${Date.now()}.png`;
     a.click();
     // Salva nas conquistas
     try {

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """═══════════════════════════════════════════════════════════
-RETROVERSE — Resolvedor automático de capas
+RETROVERSO — Resolvedor automático de capas
 
 Uso:
   python3 tools/gerar-capas.py            # gera js/covers-map.js

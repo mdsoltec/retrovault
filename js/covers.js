@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVERSE — SISTEMA DE CAPAS AUTOMÁTICO (v2)
+   RETROVERSO — SISTEMA DE CAPAS AUTOMÁTICO (v2)
    ───────────────────────────────────────────────────────────
    Regra: se a capa NÃO existir localmente, o sistema busca
    automaticamente na internet (base comunitária libretro-thumbnails,

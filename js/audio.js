@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVERSE AUDIO ENGINE
+   RETROVERSO AUDIO ENGINE
    Sons sintéticos via Web Audio API (sem arquivos externos)
 ═══════════════════════════════════════════════════════════ */
 const RV_AUDIO = (function() {

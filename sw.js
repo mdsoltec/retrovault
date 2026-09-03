@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVERSE — Service Worker (v9)
+   RETROVERSO — Service Worker (v9)
    O que mudou nesta versão:
    1. EmulatorJS (CDN) agora é cacheado com stale-while-revalidate:
       a 2ª abertura de um jogo usa o núcleo WASM do cache (quase
@@ -10,9 +10,9 @@
       calibrate.html (faltavam → offline quebrava o player).
    4. Versão fixada do EmulatorJS (4.2.3) no warmup — veja play.html.
    ═══════════════════════════════════════════════════════════ */
-const CACHE_NAME = 'retroverse-v11';
+const CACHE_NAME = 'retroverso-v11';
 const CACHE_EJS = CACHE_NAME + '-ejs'; // núcleos/framework do EmulatorJS
-const CACHE_COVERS = 'retroverse-covers'; // capas baixadas automaticamente da web
+const CACHE_COVERS = 'retroverso-covers'; // capas baixadas automaticamente da web
 const EJS_CDN = 'https://cdn.emulatorjs.org/4.2.3/data/';
 
 const STATIC_ASSETS = [

@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVERSE — BASE DE FICHAS DOS JOGOS
+   RETROVERSO — BASE DE FICHAS DOS JOGOS
    Fonte única de metadados. A chave é o nome EXATO do arquivo
    da ROM (padrão No-Intro), igual ao campo `file:` do catálogo
    e ao que aparece no href dos cards (play.html?game=...).
