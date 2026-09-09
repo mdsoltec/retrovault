@@ -1610,7 +1610,7 @@ body {
   width: 22px;
   height: 22px;
 }
-.profile-link.has-avatar { background-size: cover; background-position: center; }
+.profile-link.has-avatar { background-size: contain; background-position: center; background-repeat: no-repeat; background-color: #090e0b; }
 .profile-link.has-avatar svg { display: none; }
 
 .global-search {

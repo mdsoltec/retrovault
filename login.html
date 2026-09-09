@@ -351,18 +351,19 @@ input.code{ text-align:center; letter-spacing:.7em; text-indent:.7em;
 .profile:hover{ transform:translateX(4px); background:rgba(0,255,65,.08); border-color:rgba(0,255,65,.32); }
 .profile[aria-pressed="true"]{ background:rgba(0,255,65,.13); border-color:var(--neon); }
 .avatar{
-  width:38px; height:38px; border-radius:11px; flex-shrink:0; display:grid; place-items:center;
-  overflow:hidden; background-size:cover; background-position:center;
-  font-weight:900; font-size:.84rem; color:#02150b;
-  background:linear-gradient(140deg,var(--neon),#00b0ff);
-  box-shadow:0 4px 14px rgba(0,255,65,.22);
+  width:38px; height:38px; border:2px solid var(--neon); border-radius:11px; flex-shrink:0; display:grid; place-items:center;
+  overflow:hidden;
+  background-size:contain; background-position:center; background-repeat:no-repeat; background-color:#090e0b;
+  font-weight:900; font-size:.84rem; color:rgba(0,255,65,.32);
+  box-shadow:0 0 14px var(--neon-soft), inset 0 0 10px rgba(0,255,65,.06);
+  transition:box-shadow .25s var(--ease), transform .2s var(--ease);
 }
 .avatar{ position:relative; cursor:pointer; }
 .avatar:hover::after{ content:'✎'; position:absolute; inset:0; display:grid; place-items:center; color:#fff; background:rgba(0,0,0,.55); font-size:.9rem; }
 .inline-avatar-picker{ position:absolute; z-index:8; left:10px; top:58px; display:flex; flex-wrap:wrap; gap:5px; width:190px; padding:8px; border:1px solid rgba(0,255,65,.35); border-radius:10px; background:#090e0b; box-shadow:0 10px 25px rgba(0,0,0,.45),0 0 18px rgba(0,255,65,.12); }
 .inline-avatar-picker button{ width:30px; height:30px; padding:0; overflow:hidden; border:1px solid rgba(255,255,255,.14); border-radius:7px; background:#030604; color:var(--neon); cursor:pointer; font:900 .52rem var(--font-display); }
 .inline-avatar-picker button:hover,.inline-avatar-picker button.selected{ border-color:var(--neon); box-shadow:0 0 8px var(--green-glow); }
-.inline-avatar-picker img{ width:100%; height:100%; object-fit:cover; display:block; }
+.inline-avatar-picker img{ width:100%; height:100%; object-fit:contain; background:#090e0b; display:block; }
 .p-meta{ flex:1; min-width:0; }
 .p-name{ font-size:.94rem; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .p-sub{ font-size:.65rem; color:var(--muted); letter-spacing:.06em; margin-top:2px; text-transform:uppercase; }
@@ -378,7 +379,7 @@ input.code{ text-align:center; letter-spacing:.7em; text-indent:.7em;
 .new-avatar-options{ display:flex; gap:7px; flex-wrap:wrap; }
 .new-avatar-option{ width:34px; height:34px; padding:0; overflow:hidden; border:1px solid rgba(255,255,255,.13); border-radius:9px; background:#090e0b; cursor:pointer; transition:transform .2s,border-color .2s,box-shadow .2s; }
 .new-avatar-option:hover,.new-avatar-option.selected{ border-color:var(--neon); box-shadow:0 0 10px var(--green-glow); transform:translateY(-2px); }
-.new-avatar-option img{ width:100%; height:100%; object-fit:cover; display:block; }
+.new-avatar-option img{ width:100%; height:100%; object-fit:contain; background:#090e0b; display:block; }
 .new-avatar-option.none{ color:var(--neon); font:900 .6rem var(--font-display); }
 
 
@@ -1039,5 +1040,5 @@ input.code{ text-align:center; letter-spacing:.7em; text-indent:.7em;
   }
 })();
 </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a38239eccdf22538',t:'MTc4ODkxNTMxNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
