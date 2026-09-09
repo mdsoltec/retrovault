@@ -35,6 +35,7 @@
    ═══════════════════════════════════════════════════════════ */
 
 *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+.rv-inline-icon{ width:1.05em; height:1.05em; display:inline-block; vertical-align:-.16em; object-fit:contain; filter:drop-shadow(0 0 3px rgba(0,255,65,.58)); }
 
 :root{
   /* Espelha as variáveis de css/style.css para a porta de entrada ter a
@@ -205,6 +206,8 @@ body{
    sombras e foco precisam para não serem cortados. */
 .panes{ position:relative; overflow:hidden; margin:-6px; padding:6px;
   transition:height .4s var(--ease); }
+/* O menu do avatar precisa atravessar o limite do painel sem ser cortado. */
+.panes.avatar-menu-open{ overflow:visible; }
 .pane{
   position:absolute; top:0; left:0; right:0;
   display:flex; flex-direction:column; gap:13px;
@@ -353,13 +356,14 @@ input.code{ text-align:center; letter-spacing:.7em; text-indent:.7em;
 .avatar{
   width:38px; height:38px; border:2px solid var(--neon); border-radius:11px; flex-shrink:0; display:grid; place-items:center;
   overflow:hidden;
+  background:rgba(10,22,14,.85);
   background-size:contain; background-position:center; background-repeat:no-repeat; background-color:#090e0b;
-  font-weight:900; font-size:.84rem; color:rgba(0,255,65,.32);
+  font-weight:900; font-size:.84rem; color:var(--neon); text-shadow:0 0 8px var(--neon);
   box-shadow:0 0 14px var(--neon-soft), inset 0 0 10px rgba(0,255,65,.06);
   transition:box-shadow .25s var(--ease), transform .2s var(--ease);
 }
 .avatar{ position:relative; cursor:pointer; }
-.avatar:hover::after{ content:'✎'; position:absolute; inset:0; display:grid; place-items:center; color:#fff; background:rgba(0,0,0,.55); font-size:.9rem; }
+.avatar:hover::after{ content:''; position:absolute; inset:0; display:grid; place-items:center; color:#fff; background:rgba(0,0,0,.55) url('assets/icons/edit.svg') center/16px 16px no-repeat; }
 .inline-avatar-picker{ position:absolute; z-index:8; left:10px; top:58px; display:flex; flex-wrap:wrap; gap:5px; width:190px; padding:8px; border:1px solid rgba(0,255,65,.35); border-radius:10px; background:#090e0b; box-shadow:0 10px 25px rgba(0,0,0,.45),0 0 18px rgba(0,255,65,.12); }
 .inline-avatar-picker button{ width:30px; height:30px; padding:0; overflow:hidden; border:1px solid rgba(255,255,255,.14); border-radius:7px; background:#030604; color:var(--neon); cursor:pointer; font:900 .52rem var(--font-display); }
 .inline-avatar-picker button:hover,.inline-avatar-picker button.selected{ border-color:var(--neon); box-shadow:0 0 8px var(--green-glow); }
@@ -376,8 +380,16 @@ input.code{ text-align:center; letter-spacing:.7em; text-indent:.7em;
 .p-del svg{ width:14px; height:14px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; }
 .empty{ padding:16px 4px; text-align:center; color:var(--muted); font-size:.8rem; }
 .new-avatar-label{ display:block; margin:13px 0 7px; color:var(--muted); font-size:.62rem; letter-spacing:.16em; text-transform:uppercase; }
-.new-avatar-options{ display:flex; gap:7px; flex-wrap:wrap; }
-.new-avatar-option{ width:34px; height:34px; padding:0; overflow:hidden; border:1px solid rgba(255,255,255,.13); border-radius:9px; background:#090e0b; cursor:pointer; transition:transform .2s,border-color .2s,box-shadow .2s; }
+.avatar-select{ position:relative; }
+.avatar-select-trigger{ width:100%; height:48px; display:flex; align-items:center; gap:10px; padding:6px 12px; border:1px solid rgba(0,255,65,.26); border-radius:10px; background:rgba(3,8,5,.82); color:var(--ink); cursor:pointer; text-align:left; font:600 .82rem var(--font-body); transition:border-color .2s,box-shadow .2s; }
+.avatar-select-trigger:hover,.avatar-select.open .avatar-select-trigger{ border-color:var(--neon); box-shadow:0 0 14px var(--green-glow); }
+.avatar-select-preview{ width:34px; height:34px; flex:0 0 34px; display:grid; place-items:center; overflow:hidden; border:1px solid var(--neon); border-radius:8px; color:var(--neon); text-shadow:0 0 7px var(--neon); background:rgba(10,22,14,.85); font:900 .58rem var(--font-display); background-size:contain; background-position:center; background-repeat:no-repeat; background-color:#090e0b; }
+.avatar-select-preview.has-image{ color:transparent; background-color:#090e0b; }
+.avatar-select-name{ flex:1; letter-spacing:.04em; }
+.avatar-select-arrow{ color:var(--neon); font-size:1.15rem; line-height:1; transform:translateY(-2px); }
+.new-avatar-options{ display:none; position:absolute; z-index:20; left:0; right:0; top:54px; grid-template-columns:repeat(5,1fr); gap:7px; padding:10px; border:1px solid rgba(0,255,65,.38); border-radius:12px; background:rgba(9,14,11,.98); box-shadow:0 15px 35px rgba(0,0,0,.58),0 0 20px rgba(0,255,65,.13); }
+.avatar-select.open .new-avatar-options{ display:grid; }
+.new-avatar-option{ width:100%; aspect-ratio:1; padding:0; overflow:hidden; border:1px solid rgba(255,255,255,.13); border-radius:9px; background:#090e0b; cursor:pointer; transition:transform .2s,border-color .2s,box-shadow .2s; }
 .new-avatar-option:hover,.new-avatar-option.selected{ border-color:var(--neon); box-shadow:0 0 10px var(--green-glow); transform:translateY(-2px); }
 .new-avatar-option img{ width:100%; height:100%; object-fit:contain; background:#090e0b; display:block; }
 .new-avatar-option.none{ color:var(--neon); font:900 .6rem var(--font-display); }
@@ -542,7 +554,14 @@ input.code{ text-align:center; letter-spacing:.7em; text-indent:.7em;
             </div>
           </div>
           <span class="new-avatar-label">Avatar</span>
-          <div class="new-avatar-options" id="new-avatar-options" aria-label="Escolha do avatar"></div>
+          <div class="avatar-select" id="new-avatar-select">
+            <button type="button" class="avatar-select-trigger" id="new-avatar-trigger" aria-haspopup="listbox" aria-expanded="false">
+              <span class="avatar-select-preview none" id="new-avatar-preview">RV</span>
+              <span class="avatar-select-name" id="new-avatar-name">Usar iniciais</span>
+              <span class="avatar-select-arrow">⌄</span>
+            </button>
+            <div class="new-avatar-options" id="new-avatar-options" role="listbox" aria-label="Escolha do avatar"></div>
+          </div>
           <button class="btn outline" type="submit" style="width:100%;margin-top:11px"><span class="label"><span class="spin"></span>Criar perfil</span></button>
         </form>
       </div>
@@ -996,22 +1015,58 @@ input.code{ text-align:center; letter-spacing:.7em; text-indent:.7em;
   /* Avatares disponíveis também durante a criação do perfil. As artes são capas locais do catálogo. */
   var AVATARES = [
     { id: '', name: 'RV' },
-    { id: 'covers/snes/Super Mario World (USA).png', name: 'Mario' },
-    { id: 'covers/snes/Legend of Zelda, The - A Link to the Past (USA).png', name: 'Link' },
-    { id: 'covers/gamegear/Sonic The Hedgehog (World).png', name: 'Sonic' },
-    { id: 'covers/gba/Metroid Fusion (USA).png', name: 'Samus' },
-    { id: 'covers/nes/Mega Man 2 (USA).png', name: 'Mega Man' },
-    { id: 'covers/snes/Donkey Kong Country (USA) (Rev 2).png', name: 'Donkey Kong' },
-    { id: "covers/snes/Kirby's Dream Land 3 (U).png", name: 'Kirby' }
+    { id: 'assets/avatar-01.png', name: 'Cyber Hero' },
+    { id: 'assets/avatar-02.png', name: 'Ninja' },
+    { id: 'assets/avatar-03.png', name: 'Caçadora Espacial' },
+    { id: 'assets/avatar-04.png', name: 'Robô' },
+    { id: 'assets/avatar-05.png', name: 'Campeã Arcade' },
+    { id: 'assets/avatar-06.png', name: 'Maga' },
+    { id: 'assets/avatar-07.png', name: 'Caçador Sombrio' },
+    { id: 'assets/avatar-08.png', name: 'Explorador Alienígena' },
+    { id: 'assets/avatar-09.png', name: 'Guerreira Cyberpunk' },
+    { id: 'assets/avatar-10.png', name: 'Ninja Lunar' },
+    { id: 'assets/avatar-11.png', name: 'Pilota Estelar' },
+    { id: 'assets/avatar-12.png', name: 'Arqueira' },
+    { id: 'assets/avatar-13.png', name: 'Mecânica' },
+    { id: 'assets/avatar-14.png', name: 'Rogue' },
+    { id: 'assets/avatar-15.png', name: 'Lutador' },
+    { id: 'assets/avatar-16.png', name: 'Samurai' },
+    { id: 'assets/avatar-17.png', name: 'Mago' },
+    { id: 'assets/avatar-18.png', name: 'Androide' },
+    { id: 'assets/avatar-19.png', name: 'Caçadora' },
+    { id: 'assets/avatar-20.png', name: 'Alienígena' }
   ];
   var novoAvatar = '';
+  var avatarSelect = document.getElementById('new-avatar-select');
+  var avatarTrigger = document.getElementById('new-avatar-trigger');
+  var avatarPreview = document.getElementById('new-avatar-preview');
+  var avatarName = document.getElementById('new-avatar-name');
   var avatarOptions = document.getElementById('new-avatar-options');
+  function atualizarAvatarNovo(av) {
+    novoAvatar = av.id;
+    avatarPreview.classList.toggle('has-image', !!av.id);
+    avatarPreview.style.backgroundImage = av.id ? 'url(\"' + av.id + '\")' : '';
+    avatarPreview.textContent = av.id ? '' : 'RV';
+    avatarName.textContent = av.id ? av.name : 'Usar iniciais';
+    avatarTrigger.setAttribute('aria-label', 'Avatar: ' + (av.id ? av.name : 'usar iniciais'));
+  }
+  function fecharMenuAvatar() {
+    avatarSelect.classList.remove('open');
+    avatarTrigger.setAttribute('aria-expanded','false');
+    panes.classList.remove('avatar-menu-open');
+  }
+  avatarTrigger.addEventListener('click', function () {
+    var open = avatarSelect.classList.toggle('open');
+    avatarTrigger.setAttribute('aria-expanded', String(open));
+    panes.classList.toggle('avatar-menu-open', open);
+  });
+  document.addEventListener('click', function (ev) { if (!avatarSelect.contains(ev.target)) fecharMenuAvatar(); });
   AVATARES.forEach(function (av) {
     var b = document.createElement('button'); b.type = 'button'; b.className = 'new-avatar-option' + (!av.id ? ' none selected' : '');
-    b.title = av.name; b.setAttribute('aria-label', av.name);
+    b.title = av.name; b.setAttribute('aria-label', av.name); b.setAttribute('role', 'option');
     if (av.id) { var im = document.createElement('img'); im.src = av.id; im.alt = av.name; b.appendChild(im); }
     else b.textContent = 'RV';
-    b.addEventListener('click', function () { novoAvatar = av.id; [].forEach.call(avatarOptions.children, function (x) { x.classList.remove('selected'); }); b.classList.add('selected'); });
+    b.addEventListener('click', function (ev) { ev.stopPropagation(); [].forEach.call(avatarOptions.children, function (x) { x.classList.remove('selected'); }); b.classList.add('selected'); atualizarAvatarNovo(av); fecharMenuAvatar(); });
     avatarOptions.appendChild(b);
   });
 
@@ -1040,5 +1095,5 @@ input.code{ text-align:center; letter-spacing:.7em; text-indent:.7em;
   }
 })();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a38239eccdf22538',t:'MTc4ODkxNTMxNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a382c3a358714fa6',t:'MTc4ODkyMDk1NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

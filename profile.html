@@ -33,18 +33,24 @@
       font-weight: 900;
       color: var(--green-neon);
       letter-spacing: 2px;
-      box-shadow: 0 0 20px var(--green-glow);
+      text-shadow: 0 0 8px var(--green-neon);
+      background: rgba(10,22,14,.85);
+      box-shadow: 0 0 14px var(--green-glow), inset 0 0 10px rgba(0,255,65,.06);
       margin-bottom: 16px;
     }
 
     .profile-avatar.has-image {
-      background-size: cover;
+      background-size: contain;
       background-position: center;
+      background-repeat: no-repeat;
+      background-color: #090e0b;
       color: transparent;
       text-shadow: none;
       box-shadow: 0 0 20px var(--green-glow), inset 0 0 0 1px rgba(0,255,65,.45);
     }
     .avatar-picker {
+      position: relative;
+      z-index: 40;
       max-width: 440px;
       margin: -20px auto 36px;
       padding: 17px 18px 16px;
@@ -62,11 +68,31 @@
       text-align: center;
       text-transform: uppercase;
     }
-    .avatar-options {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      gap: 8px;
+    .avatar-select { position: relative; }
+    .avatar-select-trigger {
+      width: 100%; height: 48px; display: flex; align-items: center; gap: 10px;
+      padding: 6px 12px; border: 1px solid rgba(0,255,65,.26); border-radius: 10px;
+      background: rgba(3,8,5,.82); color: var(--text); cursor: pointer; text-align: left;
+      font: 600 .82rem var(--font-body); transition: border-color .2s, box-shadow .2s;
     }
+    .avatar-select-trigger:hover, .avatar-select.open .avatar-select-trigger { border-color: var(--green-neon); box-shadow: 0 0 14px var(--green-glow); }
+    .avatar-select-preview {
+      width: 34px; height: 34px; flex: 0 0 34px; display: grid; place-items: center;
+      overflow: hidden; border: 1px solid var(--green-neon); border-radius: 8px;
+      color: var(--green-neon); text-shadow: 0 0 7px var(--green-neon);
+      background: rgba(10,22,14,.85); font: 900 .58rem var(--font-display);
+      background-size: contain; background-position: center; background-repeat: no-repeat;
+    }
+    .avatar-select-preview.has-image { color: transparent; background-color: #090e0b; }
+    .avatar-select-name { flex: 1; letter-spacing: .04em; }
+    .avatar-select-arrow { color: var(--green-neon); font-size: 1.15rem; line-height: 1; transform: translateY(-2px); }
+    .avatar-options {
+      display: none; position: absolute; z-index: 20; left: 0; right: 0; top: 54px;
+      grid-template-columns: repeat(5, 1fr); gap: 7px; padding: 10px;
+      border: 1px solid rgba(0,255,65,.38); border-radius: 12px;
+      background: rgba(9,14,11,.98); box-shadow: 0 15px 35px rgba(0,0,0,.58), 0 0 20px rgba(0,255,65,.13);
+    }
+    .avatar-select.open .avatar-options { display: grid; }
     .avatar-option {
       position: relative;
       aspect-ratio: 1;
@@ -80,7 +106,7 @@
     }
     .avatar-option:hover { transform: translateY(-3px); border-color: var(--green-neon); }
     .avatar-option.selected { border-color: var(--green-neon); box-shadow: 0 0 12px var(--green-glow); }
-    .avatar-option img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .avatar-option img { width: 100%; height: 100%; display: block; object-fit: contain; background: #090e0b; }
     .avatar-option.none { display: grid; place-items: center; color: var(--green-neon); font: 900 .75rem var(--font-display); letter-spacing: 1px; background: linear-gradient(145deg,#0c1b11,#030604); }
     .avatar-option.none::after { content: ''; position: absolute; inset: 4px; border: 1px solid rgba(0,255,65,.35); border-radius: 7px; pointer-events: none; }
     @media (max-width: 520px) { .avatar-options { grid-template-columns: repeat(5, 1fr); } }
@@ -297,6 +323,8 @@
       font-size: 1.2rem;
       flex-shrink: 0;
     }
+    .achievement-icon img { width: 22px; height: 22px; object-fit: contain; filter: drop-shadow(0 0 4px rgba(0,255,65,.55)); }
+.achievements-title .rv-inline-icon { filter: drop-shadow(0 0 4px rgba(0,255,65,.7)); }
 
     .achievement-card.unlocked .achievement-icon {
       background: rgba(255,215,0,0.15);
@@ -426,7 +454,14 @@
 
     <div class="avatar-picker" aria-label="Escolha do avatar">
       <div class="avatar-picker-title">Avatar</div>
-      <div class="avatar-options" id="avatar-options"></div>
+      <div class="avatar-select" id="profile-avatar-select">
+        <button type="button" class="avatar-select-trigger" id="profile-avatar-trigger" aria-haspopup="listbox" aria-expanded="false">
+          <span class="avatar-select-preview none" id="profile-avatar-preview">RV</span>
+          <span class="avatar-select-name" id="profile-avatar-name">Usar iniciais</span>
+          <span class="avatar-select-arrow">⌄</span>
+        </button>
+        <div class="avatar-options" id="avatar-options" role="listbox" aria-label="Escolha do avatar"></div>
+      </div>
     </div>
 
     <!-- Nome do jogador -->
@@ -444,19 +479,19 @@
 
     <!-- Consoles Jogados -->
     <div class="achievements-section">
-      <div class="achievements-title">🎮 Consoles Explorados</div>
+      <div class="achievements-title"><img class="rv-inline-icon" src="assets/icons/gamepad.svg" alt=""> Consoles Explorados</div>
       <div class="consoles-played" id="consoles-played"></div>
     </div>
 
     <!-- Achievements -->
     <div class="achievements-section">
-      <div class="achievements-title">🏆 Conquistas <span id="achievement-count" style="font-size:0.7rem;color:var(--text-muted);font-weight:400;"></span></div>
+      <div class="achievements-title"><img class="rv-inline-icon" src="assets/icons/trophy.svg" alt=""> Conquistas <span id="achievement-count" style="font-size:0.7rem;color:var(--text-muted);font-weight:400;"></span></div>
       <div class="achievements-grid" id="achievements-grid"></div>
     </div>
 
     <!-- CONTA / SINCRONIZAÇÃO -->
     <div class="achievements-section" id="account-card">
-      <div class="achievements-title">👤 Conta <span id="account-badge" class="rv-acc-badge"></span></div>
+      <div class="achievements-title"><img class="rv-inline-icon" src="assets/icons/user.svg" alt=""> Conta <span id="account-badge" class="rv-acc-badge"></span></div>
       <div class="rv-acc-line" id="account-who">—</div>
       <div class="rv-acc-line rv-acc-dim" id="account-sync">—</div>
       <div class="rv-acc-actions">
@@ -470,7 +505,7 @@
 
     <!-- CONTROLE NA TELA -->
     <div class="achievements-section" id="pad-card">
-      <div class="achievements-title">🕹️ Controle na tela</div>
+      <div class="achievements-title"><img class="rv-inline-icon" src="assets/icons/joystick.svg" alt=""> Controle na tela</div>
       <div class="rv-acc-line rv-acc-dim" id="pad-status">—</div>
       <div class="rv-acc-actions" id="pad-modes">
         <button type="button" class="rv-acc-btn" data-pad="auto">Automático</button>
@@ -493,18 +528,18 @@
 
 <script>
 const ALL_ACHIEVEMENTS = [
-  { id: 'first_game', name: 'Primeira Aventura', desc: 'Abra seu primeiro jogo', icon: '🎮' },
-  { id: 'five_games', name: 'Explorador', desc: 'Jogue 5 jogos diferentes', icon: '🗺️' },
-  { id: 'ten_games', name: 'Veterano', desc: 'Jogue 10 jogos diferentes', icon: '⭐' },
-  { id: 'twenty_games', name: 'Lenda Retro', desc: 'Jogue 20 jogos diferentes', icon: '👑' },
-  { id: 'three_consoles', name: 'Multiverso', desc: 'Jogue em 3 consoles diferentes', icon: '🌀' },
-  { id: 'all_consoles', name: 'Mestre dos Mundos', desc: 'Jogue em todos os consoles', icon: '🏆' },
-  { id: 'first_fav', name: 'Favorito!', desc: 'Favorite seu primeiro jogo', icon: '❤️' },
-  { id: 'five_favs', name: 'Curador', desc: 'Favorite 5 jogos', icon: '📚' },
-  { id: 'ten_sessions', name: 'Dedicado', desc: 'Abra 10 sessões de jogo', icon: '💪' },
-  { id: 'fifty_sessions', name: 'Hardcore', desc: 'Abra 50 sessões de jogo', icon: '🔥' },
-  { id: 'first_screenshot', name: 'Fotógrafo', desc: 'Tire seu primeiro screenshot', icon: '📸' },
-  { id: 'ten_screenshots', name: 'Galeria', desc: 'Tire 10 screenshots', icon: '🖼️' },
+  { id: 'first_game', name: 'Primeira Aventura', desc: 'Abra seu primeiro jogo', icon: 'assets/icons/gamepad.svg' },
+  { id: 'five_games', name: 'Explorador', desc: 'Jogue 5 jogos diferentes', icon: 'assets/icons/map.svg' },
+  { id: 'ten_games', name: 'Veterano', desc: 'Jogue 10 jogos diferentes', icon: 'assets/icons/star.svg' },
+  { id: 'twenty_games', name: 'Lenda Retro', desc: 'Jogue 20 jogos diferentes', icon: 'assets/icons/crown.svg' },
+  { id: 'three_consoles', name: 'Multiverso', desc: 'Jogue em 3 consoles diferentes', icon: 'assets/icons/infinity.svg' },
+  { id: 'all_consoles', name: 'Mestre dos Mundos', desc: 'Jogue em todos os consoles', icon: 'assets/icons/trophy.svg' },
+  { id: 'first_fav', name: 'Favorito!', desc: 'Favorite seu primeiro jogo', icon: 'assets/icons/heart.svg' },
+  { id: 'five_favs', name: 'Curador', desc: 'Favorite 5 jogos', icon: 'assets/icons/book.svg' },
+  { id: 'ten_sessions', name: 'Dedicado', desc: 'Abra 10 sessões de jogo', icon: 'assets/icons/gamepad.svg' },
+  { id: 'fifty_sessions', name: 'Hardcore', desc: 'Abra 50 sessões de jogo', icon: 'assets/icons/flame.svg' },
+  { id: 'first_screenshot', name: 'Fotógrafo', desc: 'Tire seu primeiro screenshot', icon: 'assets/icons/camera.svg' },
+  { id: 'ten_screenshots', name: 'Galeria', desc: 'Tire 10 screenshots', icon: 'assets/icons/image.svg' },
 ];
 
 const ALL_CONSOLES = {
@@ -540,24 +575,62 @@ function renderPlayerName() {
 }
 
 const AVATAR_OPTIONS = [
-  { id: '', name: 'RV' },
-  { id: 'covers/snes/Super Mario World (USA).png', name: 'Mario' },
-  { id: 'covers/snes/Legend of Zelda, The - A Link to the Past (USA).png', name: 'Link' },
-  { id: 'covers/gamegear/Sonic The Hedgehog (World).png', name: 'Sonic' },
-  { id: 'covers/gba/Metroid Fusion (USA).png', name: 'Samus' },
-  { id: 'covers/nes/Mega Man 2 (USA).png', name: 'Mega Man' },
-  { id: 'covers/snes/Donkey Kong Country (USA) (Rev 2).png', name: 'Donkey Kong' },
-  { id: "covers/snes/Kirby's Dream Land 3 (U).png", name: 'Kirby' }
-];
+    { id: '', name: 'RV' },
+    { id: 'assets/avatar-01.png', name: 'Cyber Hero' },
+    { id: 'assets/avatar-02.png', name: 'Ninja' },
+    { id: 'assets/avatar-03.png', name: 'Caçadora Espacial' },
+    { id: 'assets/avatar-04.png', name: 'Robô' },
+    { id: 'assets/avatar-05.png', name: 'Campeã Arcade' },
+    { id: 'assets/avatar-06.png', name: 'Maga' },
+    { id: 'assets/avatar-07.png', name: 'Caçador Sombrio' },
+    { id: 'assets/avatar-08.png', name: 'Explorador Alienígena' },
+    { id: 'assets/avatar-09.png', name: 'Guerreira Cyberpunk' },
+    { id: 'assets/avatar-10.png', name: 'Ninja Lunar' },
+    { id: 'assets/avatar-11.png', name: 'Pilota Estelar' },
+    { id: 'assets/avatar-12.png', name: 'Arqueira' },
+    { id: 'assets/avatar-13.png', name: 'Mecânica' },
+    { id: 'assets/avatar-14.png', name: 'Rogue' },
+    { id: 'assets/avatar-15.png', name: 'Lutador' },
+    { id: 'assets/avatar-16.png', name: 'Samurai' },
+    { id: 'assets/avatar-17.png', name: 'Mago' },
+    { id: 'assets/avatar-18.png', name: 'Androide' },
+    { id: 'assets/avatar-19.png', name: 'Caçadora' },
+    { id: 'assets/avatar-20.png', name: 'Alienígena' }
+  ];
 
 function applyAvatar(src) {
   avatarEl.classList.toggle('has-image', !!src);
   avatarEl.style.backgroundImage = src ? 'url("' + src.replace(/"/g, '') + '")' : '';
 }
 
+const avatarSelect = document.getElementById('profile-avatar-select');
+const avatarTrigger = document.getElementById('profile-avatar-trigger');
+const avatarPreview = document.getElementById('profile-avatar-preview');
+const avatarName = document.getElementById('profile-avatar-name');
+const avatarOptions = document.getElementById('avatar-options');
+function closeAvatarMenu() {
+  avatarSelect.classList.remove('open');
+  avatarTrigger.setAttribute('aria-expanded', 'false');
+}
+function updateAvatarTrigger(option) {
+  avatarPreview.classList.toggle('has-image', !!option.id);
+  avatarPreview.style.backgroundImage = option.id ? 'url("' + option.id.replace(/"/g, '') + '")' : '';
+  avatarPreview.textContent = option.id ? '' : 'RV';
+  avatarName.textContent = option.id ? option.name : 'Usar iniciais';
+}
+avatarTrigger.addEventListener('click', () => {
+  const open = avatarSelect.classList.toggle('open');
+  avatarTrigger.setAttribute('aria-expanded', String(open));
+});
+document.addEventListener('click', (event) => {
+  if (!avatarSelect.contains(event.target)) closeAvatarMenu();
+});
+
 function renderAvatarOptions() {
-  const box = document.getElementById('avatar-options');
+  const box = avatarOptions;
   const current = RVStore.getItem('rv_avatar') || '';
+  const selected = AVATAR_OPTIONS.find((item) => item.id === current) || AVATAR_OPTIONS[0];
+  updateAvatarTrigger(selected);
   box.innerHTML = '';
   AVATAR_OPTIONS.forEach((option) => {
     const button = document.createElement('button');
@@ -574,12 +647,14 @@ function renderAvatarOptions() {
       button.classList.add('none');
       button.textContent = 'RV';
     }
+    button.setAttribute('role', 'option');
     button.addEventListener('click', () => {
       if (option.id) RVStore.setItem('rv_avatar', option.id);
       else RVStore.removeItem('rv_avatar');
       if (RVAccount.user() && RVAccount.user().mode === 'local') RVAccount.updateLocalProfile(RVAccount.uid(), { avatar: option.id });
       renderAvatarOptions();
       renderPlayerName();
+      closeAvatarMenu();
       window.dispatchEvent(new Event('rv-avatar-changed'));
     });
     box.appendChild(button);
@@ -653,7 +728,7 @@ ALL_ACHIEVEMENTS.forEach(a => {
   const dateStr = data ? new Date(data.date).toLocaleDateString('pt-BR') : '';
   achievementsGrid.innerHTML += `
     <div class="achievement-card ${isUnlocked ? 'unlocked' : 'locked'}">
-      <div class="achievement-icon">${a.icon}</div>
+      <div class="achievement-icon"><img src="${a.icon}" alt=""></div>
       <div class="achievement-info">
         <div class="achievement-name">${a.name}</div>
         <div class="achievement-desc">${a.desc}</div>
@@ -693,7 +768,7 @@ function resetProfile() {
   }
 
   const cloud = RVAccount.isCloud();
-  badge.textContent = cloud ? '☁ nuvem' : '⬤ local';
+  badge.textContent = cloud ? 'nuvem' : 'local';
   if (!cloud) badge.classList.add('local');
   whoEl.textContent = (RVAccount.name() || user.name || 'Jogador') + (user.email ? ' · ' + user.email : '');
 
@@ -710,7 +785,7 @@ function resetProfile() {
   btnSync.addEventListener('click', async () => {
     btnSync.disabled = true; btnSync.textContent = 'Sincronizando...';
     const ok = await RVAccount.syncNow();
-    btnSync.textContent = ok ? 'Sincronizado ✓' : 'Falhou — sem internet?';
+    btnSync.textContent = ok ? 'Sincronizado' : 'Falhou — sem internet?';
     describeSync();
     setTimeout(() => { btnSync.disabled = false; btnSync.textContent = 'Sincronizar agora'; if (ok) location.reload(); }, 1200);
   });
@@ -776,5 +851,5 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js', { scope: './' }).catch(() => { });
 }
 </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a382d21b2f46d838',t:'MTc4ODkyMTU0OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

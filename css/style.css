@@ -2247,3 +2247,15 @@ body {
     font-size: 0.55rem;
   }
 }
+/* Iconografia consistente: substitui emojis por SVGs do sistema visual. */
+.rv-inline-icon {
+  width: 1.05em;
+  height: 1.05em;
+  display: inline-block;
+  vertical-align: -0.16em;
+  object-fit: contain;
+  filter: drop-shadow(0 0 3px rgba(0,255,65,.58));
+}
+.home-user-cloud { width: .95em; height: .95em; margin-right: 4px; }
+.achievements-title .rv-inline-icon { width: 1.18em; height: 1.18em; vertical-align: -0.22em; margin-right: 5px; }
+.user-section-title .rv-inline-icon { width: 1em; height: 1em; margin-right: 4px; }

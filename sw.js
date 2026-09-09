@@ -10,7 +10,7 @@
       calibrate.html (faltavam → offline quebrava o player).
    4. Versão fixada do EmulatorJS (4.2.3) no warmup — veja play.html.
    ═══════════════════════════════════════════════════════════ */
-const CACHE_NAME = 'retroverso-v12';
+const CACHE_NAME = 'retroverso-v13';
 const CACHE_EJS = CACHE_NAME + '-ejs'; // núcleos/framework do EmulatorJS
 const CACHE_COVERS = 'retroverso-covers'; // capas baixadas automaticamente da web
 const EJS_CDN = 'https://cdn.emulatorjs.org/4.2.3/data/';
@@ -25,6 +25,26 @@ const STATIC_ASSETS = [
   'calibrate.html',
   'css/style.css',
   'assets/rv-icon.png',
+  'assets/avatar-01.png',
+  'assets/avatar-02.png',
+  'assets/avatar-03.png',
+  'assets/avatar-04.png',
+  'assets/avatar-05.png',
+  'assets/avatar-06.png',
+  'assets/avatar-07.png',
+  'assets/avatar-08.png',
+  'assets/avatar-09.png',
+  'assets/avatar-10.png',
+  'assets/avatar-11.png',
+  'assets/avatar-12.png',
+  'assets/avatar-13.png',
+  'assets/avatar-14.png',
+  'assets/avatar-15.png',
+  'assets/avatar-16.png',
+  'assets/avatar-17.png',
+  'assets/avatar-18.png',
+  'assets/avatar-19.png',
+  'assets/avatar-20.png',
   'manifest.json',
   'js/audio.js',
   'js/rv-config.js',
