@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Perfil + saves do RetroVerso.
+    // Estrutura usada pelo js/rv-account.js:
+    //   users/{uid}                       -> perfil (email, name, data, clientAt)
+    //   users/{uid}/saves/{saveId}        -> metadados do save-state
+    //   users/{uid}/saves/{saveId}/parts/{n} -> pedaços base64 do save (gzip)
+    //
+    // Regra: só o dono (request.auth.uid == uid) lê/escreve os próprios dados.
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+
+      match /saves/{saveId} {
+        allow read, write: if request.auth != null && request.auth.uid == uid;
+
+        match /parts/{partId} {
+          allow read, write: if request.auth != null && request.auth.uid == uid;
+        }
+      }
+    }
+
+    // Nega todo o resto por padrão
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

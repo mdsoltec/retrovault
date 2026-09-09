@@ -1,29 +1,18 @@
 /* ═══════════════════════════════════════════════════════════
    RETROVERSO — CONFIGURAÇÃO DA CONTA / NUVEM
    ───────────────────────────────────────────────────────────
-   Este é o ÚNICO arquivo que você precisa editar para ligar a
-   sincronização na nuvem (Firebase).
-
-   • Enquanto os campos estiverem em branco, o RetroVerso funciona
-     em MODO LOCAL: o login existe, cria perfis no próprio
-     navegador e separa o histórico por jogador — só não sincroniza
-     entre dispositivos.
-   • Preencha com os dados do seu projeto Firebase
-     (Console → Configurações do projeto → Seus apps → Web)
-     e o login por e-mail + a sincronização ligam sozinhos.
-
-   Passo a passo completo: veja FIREBASE-SETUP.md
+   Nuvem LIGADA: login por e-mail + sincronização entre dispositivos.
    ═══════════════════════════════════════════════════════════ */
 window.RV_CONFIG = {
 
   /* ─── 1. Credenciais do Firebase (cole o objeto firebaseConfig) ─── */
   firebase: {
-    apiKey:            '',
-    authDomain:        '',
-    projectId:         '',
-    storageBucket:     '',
-    messagingSenderId: '',
-    appId:             ''
+    apiKey:            'AIzaSyAMfGOsGFsYhoT_ujQzTKx-Zsx3VMkiets',
+    authDomain:        'retroverso-3536c.firebaseapp.com',
+    projectId:         'retroverso-3536c',
+    storageBucket:     'retroverso-3536c.firebasestorage.app',
+    messagingSenderId: '502704861004',
+    appId:             '1:502704861004:web:8e2b71ce0f602bd1c2a9e9'
   },
 
   /* ─── 2. O que sincronizar ─── */
