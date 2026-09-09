@@ -1,0 +1,25 @@
+rules_version = '2';
+
+/* ═══════════════════════════════════════════════════════════
+   RETROVERSO — Regras de segurança do Firestore
+   Cole este conteúdo em: Firebase Console → Firestore Database → Regras
+   Cada jogador só lê e escreve na própria pasta users/{uid}.
+   ═══════════════════════════════════════════════════════════ */
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+
+      // Histórico, conquistas e save-states (incluindo os pedaços em /parts).
+      match /{document=**} {
+        allow read, write: if request.auth != null && request.auth.uid == uid;
+      }
+    }
+
+    // Nada mais é acessível.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

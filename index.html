@@ -15,6 +15,10 @@
   <script src="js/covers.js"></script>
   <!-- Mapa de capas remotas pré-computado (URL exata por jogo) -->
 
+  <script src="js/rv-config.js"></script>
+  <script src="js/rv-account.js"></script>
+  <script src="js/rv-input-mode.js"></script>
+  <script>RVAccount.guard();</script>
 </head>
 
 <body>
@@ -33,6 +37,7 @@
     <div class="home-user-chip">
       <span class="home-user-name" id="home-user-name" style="display:none"></span>
       <a href="profile.html" class="profile-link" title="Perfil">
+        <span id="home-avatar" aria-hidden="true"></span>
         <svg viewBox="0 0 24 24" width="22" height="22">
           <path fill="currentColor"
             d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
@@ -653,7 +658,7 @@
        CONTINUE JOGANDO (localStorage)
     ═══════════════════════════════════════════════════════════ */
     function getRecent() {
-      try { return JSON.parse(localStorage.getItem('rv_recent') || '[]'); } catch { return []; }
+      try { return JSON.parse(RVStore.getItem('rv_recent') || '[]'); } catch { return []; }
     }
 
     /* ═══ CAPAS AUTOMÁTICAS (js/covers.js) ═══
@@ -703,7 +708,7 @@
     }
 
     function clearRecent() {
-      localStorage.removeItem('rv_recent');
+      RVStore.removeItem('rv_recent');
       renderRecent();
     }
 
@@ -711,7 +716,7 @@
        FAVORITOS (localStorage)
     ═══════════════════════════════════════════════════════════ */
     function getFavorites() {
-      try { return JSON.parse(localStorage.getItem('rv_favorites') || '[]'); } catch { return []; }
+      try { return JSON.parse(RVStore.getItem('rv_favorites') || '[]'); } catch { return []; }
     }
 
     function renderFavorites() {
@@ -737,7 +742,7 @@
     }
 
     function clearFavorites() {
-      localStorage.removeItem('rv_favorites');
+      RVStore.removeItem('rv_favorites');
       renderFavorites();
     }
 
@@ -834,18 +839,33 @@
     /* ═══ NOME DO JOGADOR NA HOME ═══
        Lê rv_player_name (definido no profile.html) e mostra ao lado
        do ícone de perfil. Reage a mudanças feitas em outra aba. */
+    /* ═══ NOME DO JOGADOR NA HOME ═══
+       Mostra quem está logado ao lado do ícone de perfil. O ☁ indica que
+       o histórico está sincronizado com a conta na nuvem. */
     (function initPlayerChip() {
       const nameEl = document.getElementById('home-user-name');
       if (!nameEl) return;
       const apply = () => {
-        const n = (localStorage.getItem('rv_player_name') || '').trim();
-        nameEl.textContent = n;
+        const n = (RVStore.getItem('rv_player_name') || (RVAccount.user() && RVAccount.user().name) || '').trim();
+        const cloud = RVAccount.isCloud();
+        nameEl.textContent = n ? (cloud ? '☁ ' + n : n) : '';
         nameEl.style.display = n ? '' : 'none';
-        nameEl.title = n ? 'Jogador: ' + n : '';
+        const avatarEl = document.getElementById('home-avatar');
+        const avatar = RVStore.getItem('rv_avatar') || '';
+        const profileLink = avatarEl && avatarEl.closest('.profile-link');
+        if (profileLink) {
+          profileLink.classList.toggle('has-avatar', !!avatar);
+          profileLink.style.backgroundImage = avatar ? 'url("' + avatar.replace(/"/g, '') + '")' : '';
+        }
+        nameEl.title = n
+          ? 'Jogador: ' + n + (cloud ? ' — histórico sincronizado na nuvem' : ' — perfil deste aparelho')
+          : '';
       };
       apply();
-      window.addEventListener('storage', (e) => { if (e.key === 'rv_player_name' || e.key === null) apply(); });
+      window.addEventListener('storage', (e) => { if (!e.key || /rv_player_name/.test(e.key)) apply(); });
       window.addEventListener('rv-player-name-changed', apply);
+      window.addEventListener('rv-avatar-changed', apply);
+      window.addEventListener('rv-data-changed', (e) => { if (e.detail && (e.detail.key === 'rv_player_name' || e.detail.key === 'rv_avatar')) apply(); });
     })();
 
     /* ═══ UI Sound Effects ═══ */
@@ -920,9 +940,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.babel.js"></script>
   <script src="js/fichas.js"></script>
   <script src="js/card-info.js"></script>
-  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
-  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2b101c0af28c134',t:'MTc4NjcyMTQ5MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
-
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2cda9918b16c134',t:'MTc4NzAyMTk2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  </body>
 
 </html>

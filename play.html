@@ -24,6 +24,12 @@
       window.__rvLastError = String((e.error && e.error.message) || e.message || '');
     });
   </script>
+  <!-- Conta/sessão: precisa vir ANTES de tudo que lê histórico, porque
+       RVStore separa os dados por usuário (rv:<uid>:chave). -->
+  <script src="js/rv-config.js"></script>
+  <script src="js/rv-account.js"></script>
+  <script src="js/rv-input-mode.js"></script>
+  <script>RVAccount.guard();</script>
   <script src="js/audio.js"></script>
   <script src="js/overlay-parser.js"></script>
   <style>
@@ -227,6 +233,11 @@
        Container posicionado no bottom com a imagem
        e zonas de toque transparentes por cima
     ═══════════════════════════════════════════ */
+    /* Aparelho sem necessidade de controle na tela (PC, ou gamepad
+       conectado): nada de overlay, nem por engano. */
+    body.rv-no-virtualpad #rv-overlay,
+    body.rv-no-virtualpad #rv-pad { display: none !important; }
+
     #rv-overlay {
       position: fixed;
       bottom: 0; left: 0;
@@ -442,6 +453,12 @@
   <div class="rv-float-btn" id="rv-theater-btn" title="Modo Theater">
     <svg viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
   </div>
+  <!-- MENU (Salvar/Carregar/Reset/Turbo/Sair). Essencial no PC e quando há
+       controle conectado: sem o overlay na tela, não existiria outro caminho
+       para a barra de sistema do RetroVerso. -->
+  <div class="rv-float-btn" id="rv-sysbar-btn" title="Menu do jogo — Salvar, Carregar, Reset (F1)">
+    <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+  </div>
 </div>
 
 <!-- TOAST NOTIFICATION -->
@@ -555,11 +572,11 @@ const CONSOLE_THEMES = {
       consoleShort: consoleShorts[core] || core.toUpperCase(),
       timestamp: Date.now()
     };
-    let recent = JSON.parse(localStorage.getItem('rv_recent') || '[]');
+    let recent = JSON.parse(RVStore.getItem('rv_recent') || '[]');
     recent = recent.filter(r => r.file !== entry.file || r.console !== entry.console);
     recent.unshift(entry);
     recent = recent.slice(0, 8);
-    localStorage.setItem('rv_recent', JSON.stringify(recent));
+    RVStore.setItem('rv_recent', JSON.stringify(recent));
   } catch(e) {}
 })();
 
@@ -1258,11 +1275,16 @@ const rvSaveGet = (key) => rvSavesRun('readonly', st => st.get(key));
 const rvSavePut = (key, val) => rvSavesRun('readwrite', st => st.put(val, key));
 const rvSaveDel = (key) => rvSavesRun('readwrite', st => st.delete(key));
 
-// Identidade do save = core + "console/arquivo" (mesmo valor da URL do jogo).
+// Identidade do save = usuário + core + "console/arquivo" (valor da URL do jogo).
+// O prefixo do usuário garante que cada conta tenha o SEU save do mesmo jogo,
+// e é a mesma chave usada na nuvem (Firestore) — o save segue a conta.
 function rvSaveKey() {
   const file = decodeURIComponent(((typeof game === 'string' ? game : '') || '').split('?')[0]);
-  return (typeof core === 'string' ? core : '?') + '|' + file;
+  const c = (typeof core === 'string' ? core : '?');
+  return (window.RVAccount ? RVAccount.saveKeyFor(c, file) : c + '|' + file);
 }
+const rvCloudOn = () => !!(window.RVAccount && RVAccount.cloudEnabled() &&
+  (RVAccount.config.sync || {}).saves !== false);
 const rvGameLabel = () =>
   decodeURIComponent(((typeof game === 'string' ? game : '') || '').split('/').pop() || 'Jogo').replace(/\.[^/.]+$/, '');
 const rvFmtBytes = (n) => (n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(n / 1024)) + ' KB');
@@ -1290,6 +1312,20 @@ async function rvSaveNow() {
       showToast((prev ? 'Save substituído: ' : 'Save gravado: ') + rvFmtDate(rec.savedAt) + ' · ' + rvFmtBytes(rec.bytes));
     }
     refreshRvSaveInfo();
+    // ─── Envio para a nuvem (não trava o jogo: roda em segundo plano) ───
+    if (rvCloudOn() && (RVAccount.config.sync || {}).autoUploadSaves !== false) {
+      RVAccount.uploadSave(key, rec).then(res => {
+        if (res && res.ok) {
+          if (typeof showToast === 'function') showToast('☁ Save enviado para a sua conta');
+        } else if (res && res.reason === 'too_big') {
+          if (typeof showToast === 'function') showToast('Save grande demais para a nuvem — guardado só neste aparelho');
+        }
+        refreshRvSaveInfo();
+      }).catch(err => {
+        console.warn('[RetroVerso] upload do save falhou:', err);
+        if (typeof showToast === 'function') showToast('Save local OK — nuvem indisponível agora');
+      });
+    }
     return true;
   } catch (err) {
     console.warn('[RetroVerso] falha ao gravar save:', err);
@@ -1306,13 +1342,22 @@ async function rvLoadNow() {
     return false;
   }
   try {
-    const rec = await rvSaveGet(rvSaveKey());
+    const key = rvSaveKey();
+    let rec = await rvSaveGet(key);
+    // Sem save local? Tenta buscar na conta (outro PC/celular).
+    if ((!rec || !rec.state) && rvCloudOn()) {
+      if (typeof showToast === 'function') showToast('Buscando save na sua conta...');
+      try {
+        const cloud = await RVAccount.downloadSave(key);
+        if (cloud && cloud.state) { rec = cloud; await rvSavePut(key, cloud); }
+      } catch (e) { console.warn('[RetroVerso] download do save falhou:', e); }
+    }
     if (!rec || !rec.state) {
       if (typeof showToast === 'function') showToast('Nenhum save gravado para este jogo');
       return false;
     }
     await Promise.resolve(gm.loadState(rec.state));
-    if (typeof showToast === 'function') showToast('Save carregado (' + rvFmtDate(rec.savedAt) + ')');
+    if (typeof showToast === 'function') showToast((rec.fromCloud ? '☁ Save da conta carregado (' : 'Save carregado (') + rvFmtDate(rec.savedAt) + ')');
     return true;
   } catch (err) {
     console.warn('[RetroVerso] falha ao carregar save:', err);
@@ -1332,8 +1377,13 @@ async function refreshRvSaveInfo() {
   try {
     const rec = await rvSaveGet(rvSaveKey());
     if (rec && rec.state) {
-      info.textContent = 'Save deste jogo: ' + rvFmtDate(rec.savedAt) + ' · ' + rvFmtBytes(rec.bytes || (rec.state.byteLength || 0));
+      const cloudTag = rvCloudOn() ? (rec.cloudSynced === false ? ' · só neste aparelho' : ' · ☁') : '';
+      info.textContent = 'Save deste jogo: ' + rvFmtDate(rec.savedAt) + ' · ' + rvFmtBytes(rec.bytes || (rec.state.byteLength || 0)) + cloudTag;
       if (delBtn) delBtn.hidden = false;
+      if (loadBtn) loadBtn.classList.remove('rv-dim');
+    } else if (rvCloudOn()) {
+      info.textContent = 'Nenhum save neste aparelho — toque em Carregar para buscar na conta';
+      if (delBtn) delBtn.hidden = true;
       if (loadBtn) loadBtn.classList.remove('rv-dim');
     } else {
       info.textContent = 'Nenhum save gravado neste jogo';
@@ -1387,6 +1437,7 @@ function closeRetroVerseSystemBar() {
         await rvLoadNow();
       } else if (act === 'delete') {
         await rvSaveDel(rvSaveKey());
+        if (rvCloudOn()) { RVAccount.deleteCloudSave(rvSaveKey()).catch(() => {}); }
         if (typeof showToast === 'function') showToast('Save apagado');
         refreshRvSaveInfo();
       } else if (act === 'reset') {
@@ -1496,6 +1547,26 @@ function onGameReady() {
   // Ativa a região touch/stylus da tela inferior do Nintendo DS.
   initNDSStylus();
   initControls();
+
+  // Puxa o save da conta em segundo plano: trocou de PC/celular e o save
+  // já fica disponível no botão "Carregar" sem precisar de nada manual.
+  if (rvCloudOn() && (RVAccount.config.sync || {}).autoDownloadSaves !== false) {
+    (async () => {
+      try {
+        const key = rvSaveKey();
+        const local = await rvSaveGet(key);
+        const cloud = await RVAccount.downloadSave(key);
+        if (!cloud || !cloud.state) return;
+        const localAt = local && local.savedAt ? Date.parse(local.savedAt) : 0;
+        const cloudAt = cloud.savedAt ? Date.parse(cloud.savedAt) : 0;
+        if (cloudAt > localAt) {
+          await rvSavePut(key, cloud);
+          refreshRvSaveInfo();
+          showToast('☁ Save da sua conta disponível (' + rvFmtDate(cloud.savedAt) + ')');
+        }
+      } catch (e) { /* offline ou sem save na nuvem: segue o jogo */ }
+    })();
+  }
 
   // Tocar som de boot do console
   RV_AUDIO.playBoot(core);
@@ -1712,7 +1783,9 @@ if (isArcade) {
   const st = document.createElement('style');
   st.textContent = `.ejs_virtualGamepad,.ejs-virtualGamepad,[class*="virtualGamepad"],[class*="gamepad_container"],[class*="touch_controls"],[class*="ejs_gamepad"],[class*="ejs-gamepad"],[id*="virtualGamepad"],.ejs_gamepad_button,.ejs_gamepad_dpad,[class*="b_left"],[class*="b_right"],[class*="b_fast"],[class*="b_slow"],[class*="b_menu"],[class*="nipple"],[class*="joystick"],[class*="stick"],.back,.front{display:none!important;visibility:hidden!important;pointer-events:none!important;opacity:0!important;}`;
   document.head.appendChild(st);
-  if (isTouch) {
+  // Observador sempre ativo: em notebooks com tela sensível ao toque o
+  // EmulatorJS ainda tenta injetar o gamepad dele. Aqui ele nunca aparece.
+  {
     new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => {
       if (!(n instanceof HTMLElement)) return;
       if (/gamepad|virtualGamepad|nipple|joystick|b_left|b_right|b_fast|b_slow|b_menu|touch_control/i.test((n.className||'')+(n.id||''))
@@ -1744,6 +1817,49 @@ function sendInput(id, val) {
 }
 
 /* ═══════════════════════════════════════════════════════════
+   CONTROLE VIRTUAL: LIGA/DESLIGA
+   Remove por completo o overlay/pad da tela (imagens, zonas de toque
+   e o engine do RetroArch), liberando a viewport para o jogo.
+═══════════════════════════════════════════════════════════ */
+function teardownControls() {
+  if (window.__rvRAEngine && window.__rvRAEngine.destroy) {
+    try { window.__rvRAEngine.destroy(); } catch (e) { }
+  }
+  window.__rvRAEngine = null;
+  ['rv-overlay', 'rv-pad'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.classList.remove('active');
+    el.innerHTML = '';
+    el.removeAttribute('style');
+  });
+}
+
+/* Reage a controle conectado/desconectado enquanto o jogo roda. */
+if (window.RVInput) {
+  RVInput.onChange(info => {
+    if (info.previous === null) return;           // primeira avaliação: initControls já cuida
+    if (!info.show) {
+      teardownControls();
+      document.body.classList.add('rv-no-virtualpad');
+      if (typeof showToast === 'function') {
+        showToast(info.reason === 'controle físico conectado'
+          ? '🎮 Controle detectado — controles da tela ocultados'
+          : 'Controles da tela ocultados');
+      }
+    } else {
+      document.body.classList.remove('rv-no-virtualpad');
+      initControls(true);
+      if (typeof showToast === 'function' && info.reason !== 'aparelho de toque sem controle') {
+        showToast('Controles da tela ativados');
+      } else if (typeof showToast === 'function') {
+        showToast('Controle desconectado — controles da tela de volta');
+      }
+    }
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════
    INIT CONTROLS
    Portrait + overlay disponível → sistema de imagem calibrado
    Landscape ou sem overlay → controles CSS
@@ -1754,6 +1870,17 @@ async function initControls(force = false) {
   if (__rvInitPromise) { return __rvInitPromise; }
 
   __rvInitPromise = (async () => {
+    // ─── DECISÃO: este aparelho precisa de controle na tela? ───
+    // PC com mouse/teclado ou QUALQUER aparelho com gamepad conectado
+    // não recebe overlay nenhum: a tela fica limpa e o jogo usa o
+    // controle físico (o EmulatorJS já trata gamepad nativamente).
+    if (window.RVInput && !RVInput.shouldShowVirtualPad()) {
+      teardownControls();
+      document.body.classList.add('rv-no-virtualpad');
+      return;
+    }
+    document.body.classList.remove('rv-no-virtualpad');
+
     // Aguarda o EJS_emulator estar pronto (se ainda não estiver) para que o
     // envio de input funcione. Timeout de 8s para não travar a tela.
     const t0 = Date.now();
@@ -2124,9 +2251,9 @@ function takeScreenshot() {
     a.click();
     // Salva nas conquistas
     try {
-      let screenshots = JSON.parse(localStorage.getItem('rv_screenshots') || '0');
+      let screenshots = JSON.parse(RVStore.getItem('rv_screenshots') || '0');
       screenshots = (typeof screenshots === 'number' ? screenshots : 0) + 1;
-      localStorage.setItem('rv_screenshots', JSON.stringify(screenshots));
+      RVStore.setItem('rv_screenshots', JSON.stringify(screenshots));
       checkAchievements();
     } catch(e) {}
     showToast('📸 Screenshot salvo!');
@@ -2185,21 +2312,21 @@ function showToast(msg) {
 function trackAchievements(consoleKey, gameName) {
   try {
     // Jogos únicos jogados
-    let playedGames = JSON.parse(localStorage.getItem('rv_played_games') || '[]');
+    let playedGames = JSON.parse(RVStore.getItem('rv_played_games') || '[]');
     const gameId = consoleKey + '/' + gameName;
     if (!playedGames.includes(gameId)) {
       playedGames.push(gameId);
-      localStorage.setItem('rv_played_games', JSON.stringify(playedGames));
+      RVStore.setItem('rv_played_games', JSON.stringify(playedGames));
     }
     // Total de sessões
-    let sessions = JSON.parse(localStorage.getItem('rv_sessions') || '0');
+    let sessions = JSON.parse(RVStore.getItem('rv_sessions') || '0');
     sessions = (typeof sessions === 'number' ? sessions : 0) + 1;
-    localStorage.setItem('rv_sessions', JSON.stringify(sessions));
+    RVStore.setItem('rv_sessions', JSON.stringify(sessions));
     // Consoles únicos
-    let consoles = JSON.parse(localStorage.getItem('rv_consoles_played') || '[]');
+    let consoles = JSON.parse(RVStore.getItem('rv_consoles_played') || '[]');
     if (!consoles.includes(consoleKey)) {
       consoles.push(consoleKey);
-      localStorage.setItem('rv_consoles_played', JSON.stringify(consoles));
+      RVStore.setItem('rv_consoles_played', JSON.stringify(consoles));
     }
     checkAchievements();
   } catch(e) {}
@@ -2207,12 +2334,12 @@ function trackAchievements(consoleKey, gameName) {
 
 function checkAchievements() {
   try {
-    const achievements = JSON.parse(localStorage.getItem('rv_achievements') || '{}');
-    const playedGames = JSON.parse(localStorage.getItem('rv_played_games') || '[]');
-    const sessions = JSON.parse(localStorage.getItem('rv_sessions') || '0');
-    const consoles = JSON.parse(localStorage.getItem('rv_consoles_played') || '[]');
-    const favorites = JSON.parse(localStorage.getItem('rv_favorites') || '[]');
-    const screenshots = JSON.parse(localStorage.getItem('rv_screenshots') || '0');
+    const achievements = JSON.parse(RVStore.getItem('rv_achievements') || '{}');
+    const playedGames = JSON.parse(RVStore.getItem('rv_played_games') || '[]');
+    const sessions = JSON.parse(RVStore.getItem('rv_sessions') || '0');
+    const consoles = JSON.parse(RVStore.getItem('rv_consoles_played') || '[]');
+    const favorites = JSON.parse(RVStore.getItem('rv_favorites') || '[]');
+    const screenshots = JSON.parse(RVStore.getItem('rv_screenshots') || '0');
     let newAchievements = [];
 
     const defs = [
@@ -2238,7 +2365,7 @@ function checkAchievements() {
     }
 
     if (newAchievements.length > 0) {
-      localStorage.setItem('rv_achievements', JSON.stringify(achievements));
+      RVStore.setItem('rv_achievements', JSON.stringify(achievements));
       for (const a of newAchievements) {
         showToast(`🏆 ${a.name}: ${a.desc}`);
       }
@@ -2252,6 +2379,28 @@ document.getElementById('rv-screenshot-btn').addEventListener('touchend', e => {
 // O evento click também funciona em touch; manter um único listener evita
 // ativar/desativar o modo duas vezes no celular.
 document.getElementById('rv-theater-btn').addEventListener('click', toggleTheater);
+
+/* ═══════════════════════════════════════════
+   MENU DO JOGO SEM CONTROLE NA TELA
+   No celular o menu abre segurando o botão MENU do overlay. No PC (ou com
+   gamepad conectado) o overlay não existe — então o botão flutuante e os
+   atalhos de teclado assumem esse papel.
+     F1 = abre/fecha o menu   F2 = salvar   F4 = carregar
+═══════════════════════════════════════════ */
+(function bindSysBarShortcuts() {
+  const btn = document.getElementById('rv-sysbar-btn');
+  if (btn) btn.addEventListener('click', () => openRetroVerseSystemBar());
+
+  document.addEventListener('keydown', (event) => {
+    if (event.repeat || event.ctrlKey || event.altKey || event.metaKey) return;
+    const tag = (event.target && event.target.tagName) || '';
+    if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;
+
+    if (event.key === 'F1') { event.preventDefault(); openRetroVerseSystemBar(); }
+    else if (event.key === 'F2') { event.preventDefault(); rvSaveNow(); }
+    else if (event.key === 'F4') { event.preventDefault(); rvLoadNow(); }
+  });
+})();
 
 /* Fullscreen */
 function requestFS(){const el=document.documentElement;(el.requestFullscreen||el.webkitRequestFullscreen)?.call(el);}
@@ -2274,7 +2423,7 @@ document.getElementById('rv-fs-btn').addEventListener('touchend',e=>{e.preventDe
 (function initPadDebugHUD() {
   const viaUrl = /[?&]paddebug=1/.test(location.search);
   let viaPrefs = false;
-  try { viaPrefs = localStorage.getItem('rv_paddebug') === '1'; } catch (e) { }
+  try { viaPrefs = RVStore.getItem('rv_paddebug') === '1'; } catch (e) { }
   if (!viaUrl && !viaPrefs) return;
   const hud = document.createElement('div');
   hud.id = 'rv-pad-hud';
@@ -2299,15 +2448,17 @@ document.getElementById('rv-fs-btn').addEventListener('touchend',e=>{e.preventDe
   });
 })();
 
-/* Resize/orientation */
-window.addEventListener('orientationchange',()=>{setTimeout(()=>{if(isTouch)initControls();},350);});
+/* Resize/orientation — só reconstrói se o aparelho realmente usa controle na tela */
+function rvNeedsVirtualPad() {
+  return window.RVInput ? RVInput.shouldShowVirtualPad() : isTouch;
+}
+window.addEventListener('orientationchange',()=>{setTimeout(()=>{if(rvNeedsVirtualPad())initControls();},350);});
 window.addEventListener('resize',()=>{
-  if(isTouch){
+  if(rvNeedsVirtualPad()){
     const has=document.getElementById('rv-overlay').classList.contains('active')||document.getElementById('rv-pad').classList.contains('active');
     if(has) initControls();
   }
 });
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2b252240adadcd8',t:'MTc4NjczNTI2OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
 </body>
 </html>

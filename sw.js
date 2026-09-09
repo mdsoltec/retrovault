@@ -10,7 +10,7 @@
       calibrate.html (faltavam → offline quebrava o player).
    4. Versão fixada do EmulatorJS (4.2.3) no warmup — veja play.html.
    ═══════════════════════════════════════════════════════════ */
-const CACHE_NAME = 'retroverso-v11';
+const CACHE_NAME = 'retroverso-v12';
 const CACHE_EJS = CACHE_NAME + '-ejs'; // núcleos/framework do EmulatorJS
 const CACHE_COVERS = 'retroverso-covers'; // capas baixadas automaticamente da web
 const EJS_CDN = 'https://cdn.emulatorjs.org/4.2.3/data/';
@@ -20,12 +20,16 @@ const STATIC_ASSETS = [
   'games.html',
   'play.html',
   'profile.html',
+  'login.html',
   'retroflix.html',
   'calibrate.html',
   'css/style.css',
   'assets/rv-icon.png',
   'manifest.json',
   'js/audio.js',
+  'js/rv-config.js',
+  'js/rv-account.js',
+  'js/rv-input-mode.js',
   'js/covers.js',
   'js/covers-map.js',
   'js/overlay-parser.js',
@@ -46,9 +50,19 @@ const STATIC_ASSETS = [
 ];
 
 // Install — cache static assets
+// IMPORTANTE: cache.addAll() é "tudo ou nada" — um único arquivo ausente
+// (ex.: uma página listada aqui que não existe mais no repositório) fazia a
+// instalação inteira falhar e o app ficava SEM cache offline. Agora cada
+// arquivo é buscado isoladamente: o que existir entra, o que faltar é ignorado.
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS))
+    caches.open(CACHE_NAME).then(cache => Promise.all(
+      STATIC_ASSETS.map(url =>
+        cache.add(url).catch(err => {
+          console.warn('[RetroVerso SW] recurso ignorado no cache:', url, err && err.message);
+        })
+      )
+    ))
   );
   self.skipWaiting();
 });

@@ -37,6 +37,54 @@
       margin-bottom: 16px;
     }
 
+    .profile-avatar.has-image {
+      background-size: cover;
+      background-position: center;
+      color: transparent;
+      text-shadow: none;
+      box-shadow: 0 0 20px var(--green-glow), inset 0 0 0 1px rgba(0,255,65,.45);
+    }
+    .avatar-picker {
+      max-width: 440px;
+      margin: -20px auto 36px;
+      padding: 17px 18px 16px;
+      background: rgba(8,14,10,.6);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 12px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .avatar-picker-title {
+      margin-bottom: 12px;
+      color: var(--green-neon);
+      font: 700 .6rem var(--font-display);
+      letter-spacing: 3px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .avatar-options {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 8px;
+    }
+    .avatar-option {
+      position: relative;
+      aspect-ratio: 1;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 10px;
+      background: #090e0b;
+      cursor: pointer;
+      transition: transform .2s, border-color .2s, box-shadow .2s;
+    }
+    .avatar-option:hover { transform: translateY(-3px); border-color: var(--green-neon); }
+    .avatar-option.selected { border-color: var(--green-neon); box-shadow: 0 0 12px var(--green-glow); }
+    .avatar-option img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .avatar-option.none { display: grid; place-items: center; color: var(--green-neon); font: 900 .75rem var(--font-display); letter-spacing: 1px; background: linear-gradient(145deg,#0c1b11,#030604); }
+    .avatar-option.none::after { content: ''; position: absolute; inset: 4px; border: 1px solid rgba(0,255,65,.35); border-radius: 7px; pointer-events: none; }
+    @media (max-width: 520px) { .avatar-options { grid-template-columns: repeat(5, 1fr); } }
+
     .profile-name {
       font-family: var(--font-display);
       font-size: 1.5rem;
@@ -175,6 +223,28 @@
     }
 
     /* Achievements */
+    /* ═══ Conta / sincronização / controle ═══ */
+    .rv-acc-badge {
+      font-size: .6rem; letter-spacing: 1.6px; text-transform: uppercase;
+      padding: 3px 9px; border-radius: 20px; margin-left: 8px; vertical-align: middle;
+      border: 1px solid rgba(0,255,65,.35); color: var(--green-neon); background: rgba(0,255,65,.08);
+      font-weight: 700;
+    }
+    .rv-acc-badge.local { border-color: rgba(255,190,60,.35); color: #ffc65c; background: rgba(255,190,60,.08); }
+    .rv-acc-line { font-size: .88rem; margin: 6px 0; }
+    .rv-acc-dim { color: var(--text-muted); font-size: .78rem; }
+    .rv-acc-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .rv-acc-btn {
+      padding: 9px 14px; border-radius: 9px; cursor: pointer; font-family: inherit;
+      background: rgba(0,255,65,.07); border: 1px solid rgba(0,255,65,.28);
+      color: var(--green-neon); font-size: .74rem; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; transition: background .18s, border-color .18s;
+    }
+    .rv-acc-btn:hover { background: rgba(0,255,65,.16); border-color: var(--green-neon); }
+    .rv-acc-btn.active { background: rgba(0,255,65,.22); border-color: var(--green-neon); }
+    .rv-acc-btn-out { color: #ff8f8f; border-color: rgba(255,90,90,.3); background: rgba(255,60,60,.06); }
+    .rv-acc-btn-out:hover { background: rgba(255,60,60,.16); border-color: #ff8f8f; }
+
     .achievements-section {
       margin-bottom: 40px;
     }
@@ -328,6 +398,10 @@
       .achievements-grid { grid-template-columns: 1fr; }
     }
   </style>
+  <script src="js/rv-config.js"></script>
+  <script src="js/rv-account.js"></script>
+  <script src="js/rv-input-mode.js"></script>
+  <script>RVAccount.guard();</script>
 </head>
 <body>
 
@@ -348,6 +422,11 @@
       <div class="profile-avatar">RV</div>
       <div class="profile-name">JOGADOR</div>
       <div class="profile-subtitle" id="profile-joined">Membro do RetroVerso</div>
+    </div>
+
+    <div class="avatar-picker" aria-label="Escolha do avatar">
+      <div class="avatar-picker-title">Avatar</div>
+      <div class="avatar-options" id="avatar-options"></div>
     </div>
 
     <!-- Nome do jogador -->
@@ -373,6 +452,35 @@
     <div class="achievements-section">
       <div class="achievements-title">🏆 Conquistas <span id="achievement-count" style="font-size:0.7rem;color:var(--text-muted);font-weight:400;"></span></div>
       <div class="achievements-grid" id="achievements-grid"></div>
+    </div>
+
+    <!-- CONTA / SINCRONIZAÇÃO -->
+    <div class="achievements-section" id="account-card">
+      <div class="achievements-title">👤 Conta <span id="account-badge" class="rv-acc-badge"></span></div>
+      <div class="rv-acc-line" id="account-who">—</div>
+      <div class="rv-acc-line rv-acc-dim" id="account-sync">—</div>
+      <div class="rv-acc-actions">
+        <button type="button" class="rv-acc-btn" id="btn-sync">Sincronizar agora</button>
+        <button type="button" class="rv-acc-btn" id="btn-export">Baixar backup</button>
+        <button type="button" class="rv-acc-btn" id="btn-import">Restaurar backup</button>
+        <button type="button" class="rv-acc-btn rv-acc-btn-out" id="btn-logout">Sair da conta</button>
+      </div>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+    </div>
+
+    <!-- CONTROLE NA TELA -->
+    <div class="achievements-section" id="pad-card">
+      <div class="achievements-title">🕹️ Controle na tela</div>
+      <div class="rv-acc-line rv-acc-dim" id="pad-status">—</div>
+      <div class="rv-acc-actions" id="pad-modes">
+        <button type="button" class="rv-acc-btn" data-pad="auto">Automático</button>
+        <button type="button" class="rv-acc-btn" data-pad="on">Sempre mostrar</button>
+        <button type="button" class="rv-acc-btn" data-pad="off">Nunca mostrar</button>
+      </div>
+      <div class="profile-edit-hint" style="margin-top:10px">
+        No modo automático o controle virtual só aparece em celular/tablet sem
+        controle físico. Conectou um gamepad? Ele some na hora.
+      </div>
     </div>
 
     <button class="reset-btn" onclick="resetProfile()">Resetar Dados</button>
@@ -405,7 +513,7 @@ const ALL_CONSOLES = {
 };
 
 function getLS(key, fallback) {
-  try { const v = JSON.parse(localStorage.getItem(key)); return v !== null ? v : fallback; }
+  try { const v = JSON.parse(RVStore.getItem(key)); return v !== null ? v : fallback; }
   catch { return fallback; }
 }
 
@@ -418,7 +526,7 @@ const profileNameEl = document.querySelector('.profile-name');
 const avatarEl = document.querySelector('.profile-avatar');
 
 function renderPlayerName() {
-  const n = (localStorage.getItem('rv_player_name') || '').trim();
+  const n = (RVStore.getItem('rv_player_name') || '').trim();
   profileNameEl.textContent = n ? n.toUpperCase() : 'JOGADOR';
   // Iniciais no avatar (estilo do "RV": até 2 letras)
   let initials = 'RV';
@@ -427,13 +535,62 @@ function renderPlayerName() {
     initials = ((parts[0][0] || '') + (parts.length > 1 ? parts[parts.length - 1][0] : '')).toUpperCase();
   }
   avatarEl.textContent = initials;
+  applyAvatar(RVStore.getItem('rv_avatar') || '');
   if (document.activeElement !== nameInput) nameInput.value = n;
 }
 
+const AVATAR_OPTIONS = [
+  { id: '', name: 'RV' },
+  { id: 'covers/snes/Super Mario World (USA).png', name: 'Mario' },
+  { id: 'covers/snes/Legend of Zelda, The - A Link to the Past (USA).png', name: 'Link' },
+  { id: 'covers/gamegear/Sonic The Hedgehog (World).png', name: 'Sonic' },
+  { id: 'covers/gba/Metroid Fusion (USA).png', name: 'Samus' },
+  { id: 'covers/nes/Mega Man 2 (USA).png', name: 'Mega Man' },
+  { id: 'covers/snes/Donkey Kong Country (USA) (Rev 2).png', name: 'Donkey Kong' },
+  { id: "covers/snes/Kirby's Dream Land 3 (U).png", name: 'Kirby' }
+];
+
+function applyAvatar(src) {
+  avatarEl.classList.toggle('has-image', !!src);
+  avatarEl.style.backgroundImage = src ? 'url("' + src.replace(/"/g, '') + '")' : '';
+}
+
+function renderAvatarOptions() {
+  const box = document.getElementById('avatar-options');
+  const current = RVStore.getItem('rv_avatar') || '';
+  box.innerHTML = '';
+  AVATAR_OPTIONS.forEach((option) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'avatar-option' + (option.id === current ? ' selected' : '');
+    button.title = option.id ? option.name : 'Usar iniciais';
+    button.setAttribute('aria-label', button.title);
+    if (option.id) {
+      const image = document.createElement('img');
+      image.src = option.id;
+      image.alt = option.name;
+      button.appendChild(image);
+    } else {
+      button.classList.add('none');
+      button.textContent = 'RV';
+    }
+    button.addEventListener('click', () => {
+      if (option.id) RVStore.setItem('rv_avatar', option.id);
+      else RVStore.removeItem('rv_avatar');
+      if (RVAccount.user() && RVAccount.user().mode === 'local') RVAccount.updateLocalProfile(RVAccount.uid(), { avatar: option.id });
+      renderAvatarOptions();
+      renderPlayerName();
+      window.dispatchEvent(new Event('rv-avatar-changed'));
+    });
+    box.appendChild(button);
+  });
+}
+renderAvatarOptions();
+
 function savePlayerName() {
   const n = nameInput.value.trim().slice(0, 20);
-  if (n) localStorage.setItem('rv_player_name', n);
-  else localStorage.removeItem('rv_player_name');
+  if (n) RVStore.setItem('rv_player_name', n);
+  else RVStore.removeItem('rv_player_name');
   nameInput.value = n;
   renderPlayerName();
   nameSave.textContent = 'Salvo';
@@ -448,7 +605,7 @@ renderPlayerName();
 /* Limpeza: a opção de HUD de toque saiu do perfil; remove a preferência
    antiga de quem chegou a ativá-la (o HUD continua acessível via
    ?paddebug=1 na URL do jogo, para diagnóstico manual). */
-try { localStorage.removeItem('rv_paddebug'); } catch (e) { }
+try { RVStore.removeItem('rv_paddebug'); } catch (e) { }
 
 // Stats
 const playedGames = getLS('rv_played_games', []);
@@ -507,10 +664,112 @@ ALL_ACHIEVEMENTS.forEach(a => {
 
 function resetProfile() {
   if (confirm('Tem certeza? Todos os dados de conquistas, recentes e favoritos serão apagados.')) {
-    ['rv_recent', 'rv_favorites', 'rv_achievements', 'rv_played_games', 'rv_sessions', 'rv_consoles_played', 'rv_screenshots', 'rv_player_name'].forEach(k => localStorage.removeItem(k));
+    ['rv_recent', 'rv_favorites', 'rv_achievements', 'rv_played_games', 'rv_sessions', 'rv_consoles_played', 'rv_screenshots', 'rv_player_name'].forEach(k => RVStore.removeItem(k));
     location.reload();
   }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   PAINEL DE CONTA
+   Mostra quem está logado, o estado da sincronização e dá as
+   ferramentas para nunca perder o histórico: sincronizar,
+   baixar backup, restaurar backup e sair.
+═══════════════════════════════════════════════════════════ */
+(function initAccountPanel() {
+  const user = RVAccount.user();
+  const whoEl = document.getElementById('account-who');
+  const syncEl = document.getElementById('account-sync');
+  const badge = document.getElementById('account-badge');
+  const btnSync = document.getElementById('btn-sync');
+
+  if (!user) {
+    badge.textContent = 'sem sessão';
+    badge.classList.add('local');
+    whoEl.innerHTML = '<a href="login.html" style="color:var(--green-neon)">Entrar ou criar conta →</a>';
+    syncEl.textContent = 'Sem login, o histórico não tem dono e pode se misturar com o de outra pessoa neste navegador.';
+    btnSync.style.display = 'none';
+    document.getElementById('btn-logout').style.display = 'none';
+    return;
+  }
+
+  const cloud = RVAccount.isCloud();
+  badge.textContent = cloud ? '☁ nuvem' : '⬤ local';
+  if (!cloud) badge.classList.add('local');
+  whoEl.textContent = (RVAccount.name() || user.name || 'Jogador') + (user.email ? ' · ' + user.email : '');
+
+  function describeSync() {
+    const at = RVAccount.store.updatedAt();
+    const quando = at ? new Date(at).toLocaleString('pt-BR') : 'ainda não';
+    syncEl.textContent = cloud
+      ? 'Sincronizado com a sua conta. Última alteração: ' + quando + '. Entre com o mesmo e-mail em outro aparelho para continuar de onde parou.'
+      : 'Perfil deste aparelho. Última alteração: ' + quando + '. Para levar o histórico para outro aparelho, use "Baixar backup" (ou configure a nuvem em js/rv-config.js).';
+  }
+  describeSync();
+
+  if (!cloud) btnSync.style.display = 'none';
+  btnSync.addEventListener('click', async () => {
+    btnSync.disabled = true; btnSync.textContent = 'Sincronizando...';
+    const ok = await RVAccount.syncNow();
+    btnSync.textContent = ok ? 'Sincronizado ✓' : 'Falhou — sem internet?';
+    describeSync();
+    setTimeout(() => { btnSync.disabled = false; btnSync.textContent = 'Sincronizar agora'; if (ok) location.reload(); }, 1200);
+  });
+
+  document.getElementById('btn-export').addEventListener('click', () => {
+    const pack = RVAccount.exportBackup();
+    const blob = new Blob([JSON.stringify(pack, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'retroverso-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  });
+
+  const fileInput = document.getElementById('import-file');
+  document.getElementById('btn-import').addEventListener('click', () => fileInput.click());
+  fileInput.addEventListener('change', async () => {
+    const file = fileInput.files && fileInput.files[0];
+    if (!file) return;
+    try {
+      RVAccount.importBackup(await file.text(), true);
+      alert('Backup restaurado e mesclado com o histórico atual.');
+      location.reload();
+    } catch (err) { alert('Não foi possível restaurar: ' + err.message); }
+  });
+
+  document.getElementById('btn-logout').addEventListener('click', async () => {
+    if (!confirm('Sair da conta? Seus dados continuam salvos e voltam quando você entrar de novo.')) return;
+    await RVAccount.signOut();
+    location.href = 'login.html';
+  });
+})();
+
+/* ═══ PREFERÊNCIA DO CONTROLE NA TELA ═══ */
+(function initPadPref() {
+  const status = document.getElementById('pad-status');
+  const wrap = document.getElementById('pad-modes');
+  if (!window.RVInput) { document.getElementById('pad-card').style.display = 'none'; return; }
+
+  function render() {
+    const m = RVInput.mode();
+    wrap.querySelectorAll('[data-pad]').forEach(b => b.classList.toggle('active', b.dataset.pad === m));
+    const gp = RVInput.hasGamepad();
+    status.textContent =
+      'Agora: ' + (RVInput.shouldShowVirtualPad() ? 'controle virtual ATIVO' : 'controle virtual OCULTO') +
+      ' (' + RVInput.reason() + ')' +
+      (gp ? ' · gamepad: ' + (RVInput.gamepadName() || 'conectado') : '');
+  }
+  wrap.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-pad]');
+    if (!b) return;
+    RVInput.setMode(b.dataset.pad);
+    render();
+  });
+  RVInput.onChange(render);
+  render();
+  /* O gamepad só aparece para o navegador depois de um botão apertado. */
+  setTimeout(render, 1200);
+})();
 
 /* Register Service Worker (PWA) — sw.js na raiz, escopo cobre todo o app */
 if ('serviceWorker' in navigator) {
