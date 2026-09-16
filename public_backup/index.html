@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="original" data-mode="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/rv-icon.png">
+  <link rel="apple-touch-icon" href="assets/rv-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#020503">
+  <title>Retroverso - Universo dos Games Clássicos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/audio.js"></script>
+  <script src="js/covers-map.js"></script>
+  <script src="js/covers.js"></script>
+  <!-- Mapa de capas remotas pré-computado (URL exata por jogo) -->
+
+  <script src="js/rv-config.js"></script>
+  <script src="js/rv-account.js"></script>
+  <script src="js/rv-input-mode.js"></script>
+  <script>RVAccount.guard();</script>
+</head>
+
+<body>
+  <!-- EFEITO CRT SCANLINES (discreto, não bloqueia cliques) -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar navbar-home">
+    <div class="brand">
+      <div class="brand-logo">RV</div>
+      <div class="brand-text">
+        <span class="brand-name">RETROVERSO</span>
+        <span class="brand-slogan">ENTER THE CLASSICS // BETA</span>
+      </div>
+    </div>
+    <div class="home-user-chip">
+      <span class="home-user-name" id="home-user-name" style="display:none"></span>
+      <a href="profile.html" class="profile-link" title="Perfil">
+        <span id="home-avatar" aria-hidden="true"></span>
+        <svg viewBox="0 0 24 24" width="22" height="22">
+          <path fill="currentColor"
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+        </svg>
+      </a>
+    </div>
+    
+  </header>
+
+  <!-- BARRA DE BUSCA GLOBAL (fixa abaixo da navbar) -->
+  <div class="global-search-bar">
+    <div class="global-search" id="global-search-wrap">
+      <input type="text" id="global-search" placeholder="BUSCAR EM TODOS OS CONSOLES...">
+      <div class="global-search-results" id="global-search-results"></div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✦ PLATAFORMA DE EMULAÇÃO ✦</div>
+      <h2 class="hero-title">
+        Todos os Mundos.<br>
+        <span class="hero-title-glow">Todos os Clássicos.</span>
+      </h2>
+      <p class="hero-desc">Reviva a era de ouro dos videogames diretamente do navegador.</p>
+      <div class="hero-line"></div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num" id="hero-consoles">—</span>
+          <span class="hero-stat-label">Consoles</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" id="hero-games">—</span>
+          <span class="hero-stat-label">Jogos</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">∞</span>
+          <span class="hero-stat-label">Diversão</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-particles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE CONSOLES -->
+  <section class="consoles-section">
+    <div class="section-header">
+      <span class="section-tag">// ESCOLHA SEU UNIVERSO //</span>
+    </div>
+
+    <!-- CONTINUE JOGANDO (preenchido via JS) -->
+    <div class="user-section" id="continue-playing-section" style="display:none;">
+      <div class="user-section-header">
+        <span class="user-section-title"><span class="icon">▶</span> Continue Jogando</span>
+        <button class="user-section-clear" onclick="clearRecent()">Limpar</button>
+      </div>
+      <div class="user-games-row" id="continue-playing-row"></div>
+    </div>
+
+    <!-- FAVORITOS (preenchido via JS) -->
+    <div class="user-section" id="favorites-section" style="display:none;">
+      <div class="user-section-header">
+        <span class="user-section-title"><span class="icon">❤</span> Favoritos</span>
+        <button class="user-section-clear" onclick="clearFavorites()">Limpar</button>
+      </div>
+      <div class="user-games-row" id="favorites-row"></div>
+    </div>
+
+    <!-- GAMEPASS SEMANAL (preenchido via JS) -->
+    <div class="user-section" id="gamepass-section">
+      <div class="user-section-header">
+        <span class="user-section-title"><span class="icon">⭐</span> Gamepass da Semana</span>
+      </div>
+      <div class="user-games-row" id="gamepass-row"></div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         8-BIT ERA
+    ════════════════════════════════════ -->
+    <div class="category-section">
+      <div class="category-header">
+        <span class="category-title">8-Bit</span>
+        <span class="category-line"></span>
+        <span class="category-badge">1983 — 1992</span>
+      </div>
+      <main class="grid-container">
+
+        <!-- ATARI 2600 -->
+        <a href="games.html?console=atari2600" class="card console-card atari2600">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Atari-2600-Wood-4Sw-Set.png/330px-Atari-2600-Wood-4Sw-Set.png"
+            alt="Atari 2600" class="console-img">
+          <div class="console-info">
+            <h2>Atari 2600</h2>
+            <p>VCS</p>
+          </div>
+        </a>
+
+        <!-- NES (reativado) -->
+        <a href="games.html?console=nes" class="card console-card nes">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/NES-Console-Set.png/330px-NES-Console-Set.png"
+            alt="Nintendinho" class="console-img">
+          <div class="console-info">
+            <h2>Nintendo Classic</h2>
+            <p>NES</p>
+          </div>
+        </a>
+
+        <!-- GBC -->
+        <a href="games.html?console=gbc" class="card console-card gbc">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Nintendo-Game-Boy-Color-FL.png/250px-Nintendo-Game-Boy-Color-FL.png"
+            alt="Game Boy Color" class="console-img">
+          <div class="console-info">
+            <h2>Game Boy Color</h2>
+            <p>GBC</p>
+          </div>
+        </a>
+
+        <!-- MASTER SYSTEM (TECTOY) -->
+        <a href="games.html?console=mastersystem" class="card console-card mastersystem">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sega-Master-System-Set.png/330px-Sega-Master-System-Set.png"
+            alt="Master System" class="console-img">
+          <div class="console-info">
+            <h5>Em construção</h5>
+            <h2>Master System</h2>
+          
+            <p>SMS</p>
+          </div>
+        </a>
+
+      </main>
+    </div>
+
+    <!-- ════════════════════════════════════
+         16-BIT ERA
+    ════════════════════════════════════ -->
+    <div class="category-section">
+      <div class="category-header">
+        <span class="category-title">16-Bit</span>
+        <span class="category-line"></span>
+        <span class="category-badge">1988 — 1996</span>
+      </div>
+      <main class="grid-container">
+
+        <!-- SUPER NINTENDO -->
+        <a href="games.html?console=snes" class="card console-card snes">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/SNES-Mod1-Console-Set.png/330px-SNES-Mod1-Console-Set.png"
+            alt="Super Nintendo" class="console-img">
+          <div class="console-info">
+            <h2>Super Nintendo</h2>
+            <p>SNES</p>
+          </div>
+        </a>
+
+        <!-- MEGA DRIVE -->
+        <a href="games.html?console=sega" class="card console-card sega">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sega-Genesis-NA-Mk2-Console-Set.png/330px-Sega-Genesis-NA-Mk2-Console-Set.png"
+            alt="Mega Drive" class="console-img">
+          <div class="console-info">
+            <h2>Mega Drive</h2>
+            <p>SEGA</p>
+          </div>
+        </a>
+
+        <!-- SEGA CD -->
+        <a href="games.html?console=segacd" class="card console-card segacd">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sega-CD-Model2-Set.png/330px-Sega-CD-Model2-Set.png"
+            alt="Sega CD" class="console-img">
+          <div class="console-info">
+            <h2>Sega CD</h2>
+            <p>MEGA CD</p>
+          </div>
+        </a>
+
+      </main>
+    </div>
+
+    <!-- ════════════════════════════════════
+         3D ERA (32/64 bit)
+    ════════════════════════════════════ -->
+    <div class="category-section">
+      <div class="category-header">
+        <span class="category-title">3D Era</span>
+        <span class="category-line"></span>
+        <span class="category-badge">1994 — 2002</span>
+      </div>
+      <main class="grid-container">
+
+        <!-- NINTENDO 64 -->
+        <a href="games.html?console=n64" class="card console-card n64">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/N64-Console-Set.png/330px-N64-Console-Set.png"
+            alt="Nintendo 64" class="console-img">
+          <div class="console-info">
+            <h2>Nintendo 64</h2>
+            <p>N64</p>
+          </div>
+        </a>
+
+        <!-- PLAYSTATION -->
+        <a href="games.html?console=psx" class="card console-card psx">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/PSX-Console-wController.png/330px-PSX-Console-wController.png"
+            alt="PlayStation" class="console-img">
+          <div class="console-info">
+            <h2>PlayStation</h2>
+            <p>PS1</p>
+          </div>
+        </a>
+
+      </main>
+    </div>
+
+    <!-- ════════════════════════════════════
+         PORTÁTEIS
+    ════════════════════════════════════ -->
+    <div class="category-section">
+      <div class="category-header">
+        <span class="category-title">Portáteis</span>
+        <span class="category-line"></span>
+        <span class="category-badge">HANDHELDS</span>
+      </div>
+      <main class="grid-container">
+
+        <!-- GAME BOY ADVANCE -->
+        <a href="games.html?console=gba" class="card console-card gba">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Nintendo-Game-Boy-Advance-Purple-FL.png/330px-Nintendo-Game-Boy-Advance-Purple-FL.png"
+            alt="Game Boy Advance" class="console-img">
+          <div class="console-info">
+            <h2>Game Boy Advance</h2>
+            <p>GBA</p>
+          </div>
+        </a>
+
+        <!-- GAME GEAR -->
+        <a href="games.html?console=gamegear" class="card console-card gamegear">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sega-Game-Gear-WB.png/330px-Sega-Game-Gear-WB.png"
+            alt="Game Gear" class="console-img">
+          <div class="console-info">
+            <h2>Game Gear</h2>
+            <p>GG</p>
+          </div>
+        </a>
+
+        <!-- NINTENDO DS -->
+        <a href="games.html?console=nds" class="card console-card nds">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nintendo-DS-Lite-w-stylus.png/330px-Nintendo-DS-Lite-w-stylus.png"
+            alt="Nintendo DS" class="console-img">
+          <div class="console-info">
+            <h2>Nintendo DS</h2>
+            <p>NDS</p>
+          </div>
+        </a>
+
+      </main>
+    </div>
+
+    <!-- ════════════════════════════════════
+         ARCADE
+    ════════════════════════════════════ -->
+    <div class="category-section">
+      <div class="category-header">
+        <span class="category-title">Arcade</span>
+        <span class="category-line"></span>
+        <span class="category-badge">FLIPERAMA</span>
+      </div>
+      <main class="grid-container">
+
+        <!-- ARCADE -->
+        <a href="games.html?console=arcade" class="card console-card arcade">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Neo_Geo_full_on.png/330px-Neo_Geo_full_on.png"
+            alt="Arcade" class="console-img">
+          <div class="console-info">
+            <h2>Arcade</h2>
+            <p>Fliperama</p>
+          </div>
+        </a>
+
+      </main>
+    </div>
+
+    <!-- ════════════════════════════════════
+         ESPECIAIS (RetroVerso originais)
+    ════════════════════════════════════ 
+    <div class="category-section">
+      <div class="category-header">
+        <span class="category-title">Especiais</span>
+        <span class="category-line"></span>
+        <span class="category-badge">RETROVERSO</span>
+      </div>
+      <main class="grid-container">
+        -->
+
+        <!-- CS-OFF: Counter-Strike desativado (motor ainda em ajuste).
+        <a href="cs16.html" class="card console-card cs16">
+          <div class="card-glow-top"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Half-Life_Counter-Strike.svg/330px-Half-Life_Counter-Strike.svg.png"
+            alt="Counter-Strike 1.6" class="console-img">
+          <div class="console-info">
+            <h2>Counter-Strike 1.6</h2>
+            <p>PC · WASM</p>
+          </div>
+        </a>
+        -->
+
+        <!-- RETROFLIX-OFF: Em desenvolvimento
+        <a href="retroflix.html" class="card console-card retroflix">
+          <div class="card-glow-top"></div>
+          <img
+            src="assets/tv.png"
+            alt="RetroFlix" class="console-img">
+          <div class="console-info">
+            <h2>RetroFlix</h2>
+            <p>Filmes · Séries</p>
+          </div>
+        </a>
+        -->
+
+      </main>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="rv-footer">
+    <div class="footer-brand">RV</div>
+    <p class="footer-copy">RETROVERSO &mdash; ENTER THE CLASSICS</p>
+    <p class="footer-sub">Todos os Mundos. Todos os Clássicos.</p>
+  </footer>
+
+  <script>
+    /* ═══════════════════════════════════════════════════════════
+       CATÁLOGO COMPLETO (para busca global)
+    ═══════════════════════════════════════════════════════════ */
+    const CATALOG = {
+      snes: {
+        name: 'Super Nintendo', short: 'SNES', core: 'snes', games: [
+          { name: 'Aladdin', file: 'Aladdin (USA).sfc' },
+          { name: 'Chrono Trigger', file: 'Chrono Trigger (USA).sfc' },
+          { name: 'D-Force', file: 'D-Force (USA).sfc' },
+          { name: 'Donkey Kong Classic', file: 'Donkey Kong Classic.smc' },
+          { name: 'Donkey Kong Country', file: 'Donkey Kong Country (USA) (Rev 2).sfc' },
+          { name: 'Donkey Kong Country 2', subtitle: "Diddy's Kong Quest", file: "Donkey Kong Country 2 - Diddy's Kong Quest (USA) (En,Fr) (Rev 1).sfc" },
+          { name: 'Donkey Kong Country 3', subtitle: "Dixie Kong's Double Trouble!", file: "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr).sfc" },
+          { name: 'The Flintstones', file: 'Flintstones, The (USA) (En,Fr,De,Es,It).sfc' },
+          { name: "Kirby's Dream Land 3", file: "Kirby's Dream Land 3 (U).smc" },
+          { name: 'The Legend of Zelda', subtitle: 'A Link to the Past', file: 'Legend of Zelda, The - A Link to the Past (USA).sfc' },
+          { name: 'The Lost Vikings 2', file: 'Lost Vikings 2 (USA).sfc' },
+          { name: 'The Lost Vikings', file: 'Lost Vikings, The (USA).sfc' },
+          { name: 'Mickey Mania', subtitle: 'The Timeless Adventures', file: 'Mickey Mania - The Timeless Adventures of Mickey Mouse (USA).sfc' },
+          { name: 'Mighty Morphin Power Rangers', subtitle: 'The Fighting Edition', file: 'Mighty Morphin Power Rangers - The Fighting Edition (USA).sfc' },
+          { name: 'Pilotwings', file: 'Pilotwings (USA).sfc' },
+          { name: "Road Runner's", subtitle: 'Death Valley Rally', file: "Road Runner's Death Valley Rally (USA).sfc" },
+          { name: 'Space Invaders', file: 'Space Invaders (USA).sfc' },
+          { name: 'Super Bomberman', file: 'Super Bomberman (USA).sfc' },
+          { name: 'Super Bomberman 4', file: 'Super Bomberman 4.smc', remote: 'Super Bomberman 4 (USA)' },
+          { name: 'Super Bomberman 5', subtitle: 'Gold Cartridge', file: 'Super Bomberman 5 Gold Cartridge (J) [!].smc', remote: 'Super Bomberman 5 (USA)' },
+          { name: 'Super Mario All-Stars', file: 'Super Mario All-Stars (USA) (Wii).sfc' },
+          { name: 'Super Mario Kart', file: 'Super Mario Kart (USA).sfc' },
+          { name: 'Super Mario RPG', subtitle: 'Legend of the Seven Stars', file: 'Super Mario RPG - Legend of the Seven Stars (USA).sfc' },
+          { name: 'Super Mario World', file: 'Super Mario World (USA).sfc' },
+          { name: 'Super Mario World 2', subtitle: "Yoshi's Island", file: "Super Mario World 2 - Yoshi's Island (USA) (Rev 1).sfc" },
+          { name: 'Super Metroid', file: 'Super Metroid (Japan, USA) (En,Ja).sfc' },
+          { name: 'Super Tennis', file: 'Super Tennis (USA).sfc' },
+          { name: 'Taz-Mania', file: 'Taz-Mania (USA).sfc' },
+          { name: 'Tiny Toon', subtitle: 'Buster Busts Loose!', file: 'Tiny Toon Adventures - Buster Busts Loose! (USA).sfc' },
+          { name: 'Tiny Toon', subtitle: 'Wild & Wacky Sports', file: 'Tiny Toon Adventures - Wild & Wacky Sports (Europe).sfc', remote: 'Tiny Toon Adventures - Wild _ Wacky Sports (Europe)' },
+          { name: 'Top Gear', file: 'Top Gear (USA).sfc' },
+          { name: 'Top Gear 2', file: 'Top Gear 2 (USA).sfc' },
+          { name: 'Top Gear 3000', file: 'Top Gear 3000 (USA).sfc' },
+          { name: 'Ultimate Mortal Kombat 3', file: 'Ultimate Mortal Kombat 3 (USA).sfc' },
+          { name: 'Urban Strike', file: 'Urban Strike (USA).sfc' }
+        ]
+      },
+      nes: {
+        name: 'Nintendo Classic', short: 'NES', core: 'nes', games: [
+          { name: 'Castlevania III', subtitle: "Dracula's Curse", file: "Castlevania III - Dracula's Curse (USA).nes" },
+          { name: 'Contra', file: 'Contra (USA).nes' },
+          { name: 'Duck Hunt', file: 'Duck Hunt (World).nes' },
+          { name: 'Mega Man 2', file: 'Mega Man 2 (USA).nes' },
+          { name: 'Super Mario Bros', file: 'Super Mario Bros (World).nes', remote: 'Super Mario Bros. (World)' },
+          { name: 'Super Mario Bros 2', subtitle: 'PT-BR', file: 'Super Mario Bros 2 (PT-BR).nes', remote: 'Super Mario Bros. 2 (USA) (Rev 1)' },
+          { name: 'Super Mario Bros 3', subtitle: 'PT-BR', file: 'Super Mario Bros 3 (PT-BR).nes', remote: 'Super Mario Bros. 3 (USA) (Rev 1)' },
+          { name: 'Zelda II', subtitle: 'The Adventure of Link', file: 'Zelda II - The Adventure of Link (USA).nes' }
+        ]
+      },
+      gba: {
+        name: 'Game Boy Advance', short: 'GBA', core: 'gba', games: [
+          { name: 'Carros', subtitle: 'Disney / Pixar', file: 'Carros Disney.gba', remote: 'Cars (Europe) (Es,Pt)' },
+          { name: 'Castlevania', subtitle: 'Aria of Sorrow', file: 'Castlevania - Aria of Sorrow (USA).gba' },
+          { name: 'Pac-Man', subtitle: 'Classic NES Series', file: 'Classic NES Series - Pac-Man (USA, Europe).gba' },
+          { name: 'The Legend of Zelda', subtitle: 'The Minish Cap', file: 'Legend of Zelda, The - The Minish Cap (USA).gba' },
+          { name: 'Mario Kart', subtitle: 'Super Circuit', file: 'Mario Kart - Super Circuit (USA).gba' },
+          { name: 'Metroid Fusion', file: 'Metroid Fusion (USA).gba' },
+          { name: 'Pokémon', subtitle: 'Emerald Version', file: 'Pokemon - Emerald Version (USA, Europe).gba' },
+          { name: 'Pokémon', subtitle: 'FireRed Version', file: 'Pokemon - FireRed Version (USA, Europe) (Rev 1).gba' },
+          { name: 'Pokémon', subtitle: 'LeafGreen Version', file: 'Pokemon - LeafGreen Version (USA, Europe) (Rev 1).gba' }
+        ]
+      },
+      gbc: {
+        name: 'Game Boy Color', short: 'GBC', core: 'gbc', games: [
+          { name: 'The Legend of Zelda', subtitle: "Link's Awakening DX", file: "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 2) (SGB Enhanced) (GB Compatible).gbc" },
+          { name: 'Pokémon', subtitle: 'Gold Version', file: 'Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).gbc' },
+          { name: 'Pokémon', subtitle: 'Silver Version', file: 'Pokemon - Silver Version (USA, Europe) (SGB Enhanced) (GB Compatible).gbc' },
+          { name: 'Spider-Man', subtitle: 'PT-BR', file: 'Spider-Man (PT-BR).gbc', remote: 'Spider-Man (USA, Europe)' },
+          { name: 'Super Mario Bros. Deluxe', file: 'Super Mario Bros. Deluxe (USA, Europe) (Rev 2).gbc', remote: 'Super Mario Bros. Deluxe (USA, Europe)' },
+          { name: 'Tetris DX', file: 'Tetris DX (World) (SGB Enhanced) (GB Compatible).gbc' },
+          { name: 'Tom & Jerry', file: 'Tom & Jerry (USA).gbc', remote: 'Tom and Jerry (USA, Europe)' },
+          { name: 'Wario Land 3', file: 'Wario Land 3 (World) (En,Ja).gbc' },
+          { name: 'Wario Land II', file: 'Wario Land II (USA, Europe) (SGB Enhanced) (GB Compatible).gbc' }
+        ]
+      },
+      n64: {
+        name: 'Nintendo 64', short: 'N64', core: 'n64', games: [
+          { name: 'Banjo-Kazooie', file: 'Banjo-Kazooie (USA) (Rev 1).z64' },
+          { name: 'GoldenEye 007', file: 'GoldenEye 007 (USA).z64' },
+          { name: 'The Legend of Zelda', subtitle: 'Ocarina of Time', file: 'Legend of Zelda, The - Ocarina of Time (USA) (Rev 2).z64' },
+          { name: 'Mario Kart 64', file: 'Mario Kart 64 (USA).z64' },
+          { name: 'Super Mario 64', file: 'Super Mario 64 (USA).z64' },
+          { name: 'Super Smash Bros.', file: 'Super Smash Bros. (USA).z64' }
+        ]
+      },
+      psx: {
+        name: 'PlayStation 1', short: 'PS1', core: 'pcsx_rearmed', games: [
+          { name: 'Castlevania', subtitle: 'Symphony of the Night', file: 'Castlevania - Symphony of the Night (USA).chd' },
+          { name: 'Crash Bandicoot 3', subtitle: 'Warped', file: 'Crash Bandicoot - Warped (USA).chd' },
+          { name: 'Crash Bandicoot 2', subtitle: 'Cortex Strikes Back', file: 'Crash Bandicoot 2 - Cortex Strikes Back (USA).chd' },
+          { name: 'Crash Team Racing', subtitle: 'CTR', file: 'Crash Team Racing (USA).chd', remote: 'CTR - Crash Team Racing (USA)' },
+          { name: 'Dino Crisis', file: 'Dino Crisis (USA).chd' },
+          { name: 'Gran Turismo 2', file: 'Gran Turismo 2 (USA).chd', remote: 'Gran Turismo 2 (Europe) (En,Fr,De,Es,It) (Disc 1) (Arcade Mode)' },
+          { name: 'Metal Gear Solid', subtitle: 'Disc 1', file: 'Metal Gear Solid (USA) (Disc 1).chd' },
+          { name: 'Metal Slug X', file: 'Metal Slug X (USA).chd' },
+          { name: 'Resident Evil 3', subtitle: 'Nemesis', file: 'Resident Evil 3 - Nemesis (USA).chd' },
+          { name: 'Tekken', file: 'Tekken (USA).chd' },
+          { name: 'Tekken 3', file: 'Tekken 3 (USA).chd' },
+          { name: "Tony Hawk's", subtitle: 'Pro Skater 2', file: "Tony Hawk's Pro Skater 2 (USA).chd" }
+        ]
+      },
+      sega: {
+        name: 'Mega Drive', short: 'SEGA', core: 'segaMD', games: [
+          { name: 'Aladdin', file: 'Aladdin (USA).md' },
+          { name: 'Altered Beast', file: 'Altered Beast (USA, Europe).md' },
+          { name: 'Felix', subtitle: 'Detona Ralph', file: 'Felix - Detona Ralph.bin', remote: 'Fix It Felix Jr. (USA)' },
+          { name: 'Golden Axe II', file: 'Golden Axe II (World).md' },
+          { name: 'Great Circus Mystery', subtitle: 'Starring Mickey & Minnie', file: 'Great Circus Mystery Starring Mickey & Minnie, The (USA).md', remote: 'Great Circus Mystery Starring Mickey _ Minnie, The (USA)' },
+          { name: 'Kid Chameleon', file: 'Kid Chameleon (USA, Europe).md' },
+          { name: "Mickey's", subtitle: 'Ultimate Challenge', file: "Mickey's Ultimate Challenge (USA).md" },
+          { name: 'Shinobi III', subtitle: 'Return of the Ninja Master', file: 'Shinobi III - Return of the Ninja Master (USA).md' },
+          { name: 'Show do Milhão', file: 'Show do Milhao (Brazil).md' },
+          { name: 'Sonic & Knuckles + Sonic 2', file: 'Sonic & Knuckles + Sonic The Hedgehog 2 (World).md', remote: 'Sonic _ Knuckles + Sonic The Hedgehog 2 (World)' },
+          { name: 'Sonic Compilation', subtitle: 'Sonic Classics', file: 'Sonic Compilation ~ Sonic Classics (USA, Europe, Korea) (Rev A).md' },
+          { name: 'Streets of Rage 2', file: 'Streets of Rage 2 (USA).md' },
+          { name: 'Top Gear 2', file: 'Top Gear 2 (USA).md' }
+        ]
+      },
+      segacd: {
+        name: 'Sega CD', short: 'MEGA CD', core: 'segaCD', games: [
+          { name: 'Sonic CD', file: 'Sonic CD (USA).chd' },
+          { name: 'Snatcher', file: 'Snatcher (USA).chd' },
+          { name: 'Lunar', subtitle: 'The Silver Star', file: 'Lunar - The Silver Star (USA).chd' },
+          { name: 'Lunar 2', subtitle: 'Eternal Blue', file: 'Lunar 2 - Eternal Blue (USA).chd', remote: 'Lunar - Eternal Blue (USA)' },
+          { name: 'Popful Mail', file: 'Popful Mail (USA).chd' },
+          { name: 'Shining Force CD', file: 'Shining Force CD (USA).chd' },
+          { name: 'Ecco the Dolphin', subtitle: 'CD', file: 'Ecco the Dolphin - CD (USA).chd', remote: 'Ecco the Dolphin (USA)' },
+          { name: 'Final Fight CD', file: 'Final Fight CD (USA).chd' }
+        ]
+      },
+      gamegear: {
+        name: 'Game Gear', short: 'GG', core: 'segaGG', games: [
+          { name: 'Sonic the Hedgehog', file: 'Sonic the Hedgehog (World).gg', remote: 'Sonic The Hedgehog (World) (Rev 1) (Virtual Console)' },
+          { name: 'Sonic the Hedgehog 2', file: 'Sonic the Hedgehog 2 (World).gg', remote: 'Sonic The Hedgehog 2 (World)' },
+          { name: 'Shinobi', file: 'Shinobi (World).gg', remote: 'Shinobi (World) (Rev A)' },
+          { name: 'Shinobi II', subtitle: 'The Silent Fury', file: 'Shinobi II - The Silent Fury (World).gg' },
+          { name: 'Columns', file: 'Columns (World).gg', remote: 'Columns (USA, Europe, Brazil) (En) (Rev 2)' },
+          { name: 'Wonder Boy', subtitle: "The Dragon's Trap", file: "Wonder Boy - The Dragon's Trap (USA, Europe).gg", remote: "Wonder Boy - The Dragon's Trap (Europe)" },
+          { name: 'Land of Illusion', subtitle: 'Starring Mickey Mouse', file: 'Land of Illusion Starring Mickey Mouse (World).gg', remote: 'Land of Illusion Starring Mickey Mouse (USA, Europe, Brazil) (En)' }
+        ]
+      },
+      nds: {
+        name: 'Nintendo DS', short: 'NDS', core: 'nds', games: [
+          { name: 'New Super Mario Bros.', file: 'New Super Mario Bros (USA).nds', remote: 'New Super Mario Bros. (Europe) (En,Fr,De,Es,It)' },
+          { name: 'Mario Kart DS', file: 'Mario Kart DS (USA).nds', remote: 'Mario Kart DS (USA) (En,Fr,De,Es,It)' },
+          { name: 'Pokémon', subtitle: 'HeartGold Version', file: 'Pokemon - HeartGold Version (USA).nds' },
+          { name: 'The Legend of Zelda', subtitle: 'Phantom Hourglass', file: 'Legend of Zelda, The - Phantom Hourglass (USA).nds', remote: 'Legend of Zelda, The - Phantom Hourglass (USA) (En,Fr,Es)' },
+          { name: 'Castlevania', subtitle: 'Dawn of Sorrow', file: 'Castlevania - Dawn of Sorrow (USA).nds' },
+          { name: 'Grand Theft Auto', subtitle: 'Chinatown Wars', file: 'Grand Theft Auto - Chinatown Wars (USA).nds', remote: 'Grand Theft Auto - Chinatown Wars (USA) (En,Fr,De,Es,It)' },
+          { name: "Tony Hawk's", subtitle: 'American Sk8land', file: "Tony Hawk's American Sk8land (USA).nds" },
+          { name: 'Contra 4', file: 'Contra 4 (USA).nds' },
+          { name: 'Chrono Trigger', file: 'Chrono Trigger (USA).nds', remote: 'Chrono Trigger (USA) (En,Fr)' },
+          { name: 'Tetris DS', file: 'Tetris DS (USA).nds' }
+        ]
+      },
+      atari2600: {
+        name: 'Atari 2600', short: 'ATARI', core: 'atari2600', games: [
+          { name: 'Pac-Man', file: 'Pac-Man (USA).bin' },
+          { name: 'Pitfall!', file: 'Pitfall! (USA).bin' },
+          { name: 'River Raid', file: 'River Raid (USA).bin' },
+          { name: 'Enduro', file: 'Enduro (USA).bin' },
+          { name: 'Space Invaders', file: 'Space Invaders (USA).bin' },
+          { name: 'Adventure', file: 'Adventure (USA).bin' },
+          { name: "Yars' Revenge", file: "Yars' Revenge (USA).bin" },
+          { name: 'Missile Command', file: 'Missile Command (USA).bin' },
+          { name: 'Combat', file: 'Combat (USA).bin' },
+          { name: 'Breakout', file: 'Breakout (USA).bin' },
+          { name: 'Frogger', file: 'Frogger (USA).bin' },
+          { name: 'Donkey Kong', file: 'Donkey Kong (USA).bin' },
+          { name: 'Joust', file: 'Joust (USA).bin' },
+          { name: 'Defender', file: 'Defender (USA).bin' },
+          { name: 'Berzerk', file: 'Berzerk (USA).bin' },
+          { name: 'Keystone Kapers', file: 'Keystone Kapers (USA).bin' },
+          { name: 'Kaboom!', file: 'Kaboom! (USA).bin' },
+          { name: 'Galaxian', file: 'Galaxian (USA).bin' },
+          { name: 'Phoenix', file: 'Phoenix (USA).bin' },
+          { name: 'E.T. The Extra Terrestrial', file: 'E.T. The Extra Terrestrial (USA).bin' },
+          { name: 'Asteroids', file: 'Asteroids (USA).bin' },
+          { name: 'Centipede', file: 'Centipede (USA).bin' },
+          { name: 'Q*bert', file: 'Q-bert (USA).bin' },
+          { name: 'Dig Dug', file: 'Dig Dug (USA).bin' },
+          { name: 'Demon Attack', file: 'Demon Attack (USA).bin' },
+          { name: 'Warlords', file: 'Warlords (USA).bin' },
+          { name: 'Bowling', file: 'Bowling (USA).bin' },
+          { name: 'Freeway', file: 'Freeway (USA).bin' },
+          { name: 'Cosmic Ark', file: 'Cosmic Ark (USA).bin' },
+          { name: 'Frostbite', file: 'Frostbite (USA).bin' },
+          { name: 'Seaquest', file: 'Seaquest (USA).bin' },
+          { name: 'Mario Bros.', file: 'Mario Bros. (USA).bin' },
+          { name: 'Popeye', file: 'Popeye (USA).bin' },
+          { name: 'Carnival', file: 'Carnival (USA).bin' },
+          { name: 'Atlantis', file: 'Atlantis (USA).bin' },
+          { name: 'Haunted House', file: 'Haunted House (USA).bin' },
+        ]
+      },
+      mastersystem: {
+        name: 'Master System', short: 'SMS', core: 'segaMS', games: [
+          { name: 'Alex Kidd in Miracle World', file: 'Alex Kidd in Miracle World (USA, Europe, Brazil) (Rev 1).sms' },
+          { name: 'Alex Kidd in Shinobi World', file: 'Alex Kidd in Shinobi World (USA, Europe, Brazil).sms' },
+          { name: 'Sonic the Hedgehog', file: 'Sonic The Hedgehog (USA, Europe, Brazil) (Rev 1).sms' },
+          { name: 'Sonic the Hedgehog 2', file: 'Sonic The Hedgehog 2 (USA, Europe, Brazil).sms' },
+          { name: 'Wonder Boy III', subtitle: "The Dragon's Trap", file: "Wonder Boy III - The Dragon's Trap (USA, Europe, Brazil).sms" },
+          { name: 'Wonder Boy', subtitle: 'In Monster Land', file: 'Wonder Boy in Monster Land (USA, Europe, Brazil).sms' },
+          { name: 'Phantasy Star', file: 'Phantasy Star (USA, Europe, Brazil).sms' },
+          { name: 'Golden Axe', file: 'Golden Axe (USA, Europe, Brazil).sms' },
+          { name: 'Out Run', file: 'Out Run (USA, Europe, Brazil).sms' },
+          { name: 'After Burner', file: 'After Burner (USA, Europe, Brazil).sms' },
+          { name: 'Double Dragon', file: 'Double Dragon (USA, Europe, Brazil).sms' },
+          { name: 'California Games', file: 'California Games (USA, Europe, Brazil).sms' },
+          { name: 'Castle of Illusion', subtitle: 'Starring Mickey Mouse', file: 'Mickey Mouse - Castle of Illusion (USA, Europe, Brazil).sms' },
+          { name: 'Psycho Fox', file: 'Psycho Fox (USA, Europe, Brazil).sms' },
+          { name: 'Fantasy Zone', file: 'Fantasy Zone (World).sms' },
+          { name: 'Kung Fu Kid', file: 'Kung Fu Kid (USA, Europe, Brazil).sms' },
+          { name: 'R-Type', file: 'R-Type (USA, Europe, Brazil).sms' },
+          { name: 'Space Harrier', file: 'Space Harrier (USA, Europe, Brazil).sms' },
+          { name: 'Shinobi', file: 'Shinobi (USA, Europe, Brazil).sms' },
+          { name: 'Mortal Kombat', file: 'Mortal Kombat (USA, Europe, Brazil).sms' },
+          { name: 'Sonic Chaos', file: 'Sonic Chaos (USA, Europe, Brazil).sms' },
+          { name: 'Golden Axe Warrior', file: 'Golden Axe Warrior (USA, Europe, Brazil).sms' },
+          { name: 'Wonder Boy in Monster World', file: 'Wonder Boy in Monster World (USA, Europe, Brazil).sms' },
+          { name: 'Hang-On', file: 'Hang-On (USA, Europe, Brazil).sms' },
+          { name: 'Alex Kidd', subtitle: 'The Lost Stars', file: 'Alex Kidd - The Lost Stars (USA, Europe, Brazil).sms' },
+          { name: 'Batman', file: 'Batman (USA, Europe, Brazil).sms' },
+          { name: 'Asterix', file: 'Asterix (Europe, Brazil).sms' },
+          { name: 'Operation Wolf', file: 'Operation Wolf (USA, Europe, Brazil).sms' },
+          { name: 'ESWAT', subtitle: 'Cyber Police', file: 'ESWAT - Cyber Police (USA, Europe, Brazil).sms' },
+          { name: 'Power Strike', file: 'Power Strike (USA, Europe, Brazil).sms' },
+          { name: 'Master of Darkness', file: 'Master of Darkness (Europe, Brazil).sms' },
+          { name: "Michael Jackson's Moonwalker", file: "Michael Jackson's Moonwalker (USA, Europe, Brazil).sms" },
+        ]
+      },
+      arcade: {
+        name: 'Arcade', short: 'ARCADE', core: 'fbneo', games: [
+          { name: 'Garou', subtitle: 'Mark of the Wolves', file: 'garou.zip', remote: "Garou - Mark of the Wolves (NGH-2530)" },
+          { name: "The King of Fighters '97", file: 'kof97.zip', remote: "The King of Fighters '97 (NGH-2320)" },
+          { name: "The King of Fighters '98", subtitle: 'The Slugfest', file: 'kof98.zip', remote: "The King of Fighters '98 - The Slugfest _ King of Fighters '98 - Dream Match Never Ends (NGH-2420)" },
+          { name: 'The King of Fighters 2002', subtitle: 'Challenge to Ultimate Match', file: 'kof2002.zip', remote: 'The King of Fighters 2002 (NGM-2650)(NGH-2650)' },
+          { name: 'Metal Slug', file: 'mslug.zip', remote: 'Metal Slug - Super Vehicle-001' },
+          { name: 'Marvel vs. Capcom', subtitle: 'Clash of Super Heroes', file: 'mvsc.zip', remote: 'Marvel Vs. Capcom_ Clash of Super Heroes (Brazil 980123)' },
+          { name: 'Real Bout Fatal Fury Special', file: 'rbffspec.zip', remote: 'Real Bout Fatal Fury Special _ Real Bout Garou Densetsu Special' },
+          { name: 'Samurai Shodown II', file: 'samsho2.zip', remote: 'Samurai Shodown II _ Shin Samurai Spirits - Haohmaru Jigokuhen (NGM-063 ~ NGH-063)' },
+          { name: 'Street Fighter Alpha 3', file: 'sfa3.zip', remote: 'Street Fighter Alpha 3 (980904 USA)' },
+          { name: 'Vampire Savior', subtitle: 'The Lord of Vampire', file: 'vsav.zip', remote: 'Vampire Savior - the lord of vampire (970519 USA)' }
+        ]
+      }
+    };
+
+    /* ═══════════════════════════════════════════════════════════
+       CONTINUE JOGANDO (localStorage)
+    ═══════════════════════════════════════════════════════════ */
+    function getRecent() {
+      try { return JSON.parse(RVStore.getItem('rv_recent') || '[]'); } catch { return []; }
+    }
+
+    /* ═══ CAPAS AUTOMÁTICAS (js/covers.js) ═══
+       1) covers/<console>/<rom>.png|.jpg (local)
+       2) se não existir localmente, baixa automaticamente da base
+          libretro-thumbnails (mesma do RetroArch), testando variações
+          do nome e guardando em cache o link que funcionou;
+       3) se nada existir, mostra o placeholder "RV". */
+    function getCoverUrl(consoleKey, file) {
+      return RVCovers.localUrl(consoleKey, file);
+    }
+
+    function createCoverImg(consoleKey, file, alt, extra) {
+      const img = document.createElement('img');
+      img.className = 'user-game-cover';
+      img.alt = alt || '';
+      img.loading = 'lazy';
+      RVCovers.attach(img, Object.assign({
+        console: consoleKey,
+        file: file,
+        name: alt,
+        fallbackClass: 'user-game-fallback'
+      }, extra || {}));
+      return img;
+    }
+
+    function renderRecent() {
+      const recent = getRecent();
+      const section = document.getElementById('continue-playing-section');
+      const row = document.getElementById('continue-playing-row');
+      if (recent.length === 0) { section.style.display = 'none'; return; }
+      section.style.display = '';
+      row.innerHTML = '';
+      recent.forEach(item => {
+        const card = document.createElement('a');
+        card.className = 'user-game-card';
+        card.href = `play.html?core=${item.core}&game=${item.console}/${encodeURIComponent(item.file)}`;
+        card.appendChild(createCoverImg(item.console, item.file, item.name));
+        const info = document.createElement('div');
+        info.className = 'user-game-info';
+        info.innerHTML = `
+      <div class="user-game-name">${item.name}${item.subtitle ? ' — ' + item.subtitle : ''}</div>
+      <div class="user-game-console">${item.consoleShort}</div>`;
+        card.appendChild(info);
+        row.appendChild(card);
+      });
+    }
+
+    function clearRecent() {
+      RVStore.removeItem('rv_recent');
+      renderRecent();
+    }
+
+    /* ═══════════════════════════════════════════════════════════
+       FAVORITOS (localStorage)
+    ═══════════════════════════════════════════════════════════ */
+    function getFavorites() {
+      try { return JSON.parse(RVStore.getItem('rv_favorites') || '[]'); } catch { return []; }
+    }
+
+    function renderFavorites() {
+      const favs = getFavorites();
+      const section = document.getElementById('favorites-section');
+      const row = document.getElementById('favorites-row');
+      if (favs.length === 0) { section.style.display = 'none'; return; }
+      section.style.display = '';
+      row.innerHTML = '';
+      favs.forEach(item => {
+        const card = document.createElement('a');
+        card.className = 'user-game-card';
+        card.href = `play.html?core=${item.core}&game=${item.console}/${encodeURIComponent(item.file)}`;
+        card.appendChild(createCoverImg(item.console, item.file, item.name));
+        const info = document.createElement('div');
+        info.className = 'user-game-info';
+        info.innerHTML = `
+      <div class="user-game-name">${item.name}${item.subtitle ? ' — ' + item.subtitle : ''}</div>
+      <div class="user-game-console">${item.consoleShort}</div>`;
+        card.appendChild(info);
+        row.appendChild(card);
+      });
+    }
+
+    function clearFavorites() {
+      RVStore.removeItem('rv_favorites');
+      renderFavorites();
+    }
+
+    /* ═══════════════════════════════════════════════════════════
+       BUSCA GLOBAL
+    ═══════════════════════════════════════════════════════════ */
+    const searchInput = document.getElementById('global-search');
+    const searchResults = document.getElementById('global-search-results');
+
+    searchInput.addEventListener('input', function () {
+      const q = this.value.trim().toLowerCase();
+      if (q.length < 2) { searchResults.classList.remove('visible'); return; }
+
+      let results = [];
+      for (const [consoleKey, cat] of Object.entries(CATALOG)) {
+        for (const game of cat.games) {
+          // Busca no nome, no subtítulo E no arquivo — cobre siglas e
+          // apelidos que só existem no nome do arquivo ("kof" encontra
+          // "The King of Fighters 97" via kof97.zip, "mslug" etc.).
+          const nameMatch = game.name.toLowerCase().includes(q);
+          const subMatch = game.subtitle ? game.subtitle.toLowerCase().includes(q) : false;
+          const fileMatch = game.file ? game.file.toLowerCase().includes(q) : false;
+          if (nameMatch || subMatch || fileMatch) {
+            results.push({ ...game, console: consoleKey, consoleShort: cat.short, core: cat.core });
+          }
+        }
+      }
+
+      if (results.length === 0) {
+        searchResults.innerHTML = '<div class="gsr-empty">Nenhum jogo encontrado</div>';
+      } else {
+        searchResults.innerHTML = results.slice(0, 15).map(r => `
+      <a class="gsr-item" href="play.html?core=${r.core}&game=${r.console}/${encodeURIComponent(r.file)}">
+        <span class="gsr-item-console">${r.consoleShort}</span>
+        <span class="gsr-item-name">${r.name}</span>
+        ${r.subtitle ? `<span class="gsr-item-sub">${r.subtitle}</span>` : ''}
+      </a>
+    `).join('');
+      }
+      searchResults.classList.add('visible');
+    });
+
+    searchInput.addEventListener('focus', function () {
+      if (this.value.trim().length >= 2) searchResults.classList.add('visible');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!document.getElementById('global-search-wrap').contains(e.target)) {
+        searchResults.classList.remove('visible');
+      }
+    });
+
+    /* Conta só o que está visível na home.
+       Consoles vêm dos cards (a.console-card) e jogos do CATALOG.
+       Se um card não tiver entrada no CATALOG, um aviso sai no console. */
+    function renderHeroStats() {
+      const cards = [...document.querySelectorAll('a.console-card[href*="console="]')];
+      const keys = cards.map((a) => {
+        try { return new URL(a.getAttribute('href'), location.href).searchParams.get('console'); }
+        catch (e) { return null; }
+      }).filter(Boolean);
+
+      const unique = [...new Set(keys)];
+
+      // Diagnóstico: card de console sem entrada no CATALOG não soma jogos
+      unique.forEach((key) => {
+        if (!CATALOG[key]) console.warn('[RetroVerso] Card de console sem catálogo (0 jogos):', key);
+      });
+
+      const gameCount = unique.reduce((n, key) => {
+        const cat = CATALOG[key];
+        return n + (cat && Array.isArray(cat.games) ? cat.games.length : 0);
+      }, 0);
+
+      const elC = document.getElementById('hero-consoles');
+      const elG = document.getElementById('hero-games');
+      if (elC) elC.textContent = String(unique.length);
+      if (elG) elG.textContent = String(gameCount);
+    }
+
+    /* Init */
+    renderRecent();
+    renderFavorites();
+    renderGamepass();
+    renderHeroStats();
+
+
+    if ('serviceWorker' in navigator) {
+      // try/catch: alguns WebViews expõem a chave serviceWorker com valor
+      // undefined — chamar .register ali quebraria o script inteiro da página.
+      try { navigator.serviceWorker.register('sw.js', { scope: './' }).catch(() => { }); } catch (e) { }
+    }
+
+    /* ═══ NOME DO JOGADOR NA HOME ═══
+       Lê rv_player_name (definido no profile.html) e mostra ao lado
+       do ícone de perfil. Reage a mudanças feitas em outra aba. */
+    /* ═══ NOME DO JOGADOR NA HOME ═══
+       Mostra quem está logado ao lado do ícone de perfil. O ☁ indica que
+       o histórico está sincronizado com a conta na nuvem. */
+    (function initPlayerChip() {
+      const nameEl = document.getElementById('home-user-name');
+      if (!nameEl) return;
+      const apply = () => {
+        const n = (RVStore.getItem('rv_player_name') || (RVAccount.user() && RVAccount.user().name) || '').trim();
+        const cloud = RVAccount.isCloud();
+        nameEl.textContent = n ? (cloud ? '☁ ' + n : n) : '';
+        nameEl.style.display = n ? '' : 'none';
+        const avatarEl = document.getElementById('home-avatar');
+        const avatar = RVStore.getItem('rv_avatar') || '';
+        const profileLink = avatarEl && avatarEl.closest('.profile-link');
+        if (profileLink) {
+          profileLink.classList.toggle('has-avatar', !!avatar);
+          profileLink.style.backgroundImage = avatar ? 'url("' + avatar.replace(/"/g, '') + '")' : '';
+        }
+        nameEl.title = n
+          ? 'Jogador: ' + n + (cloud ? ' — histórico sincronizado na nuvem' : ' — perfil deste aparelho')
+          : '';
+      };
+      apply();
+      window.addEventListener('storage', (e) => { if (!e.key || /rv_player_name/.test(e.key)) apply(); });
+      window.addEventListener('rv-player-name-changed', apply);
+      window.addEventListener('rv-avatar-changed', apply);
+      window.addEventListener('rv-data-changed', (e) => { if (e.detail && (e.detail.key === 'rv_player_name' || e.detail.key === 'rv_avatar')) apply(); });
+    })();
+
+    /* ═══ UI Sound Effects ═══ */
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('a, button, .card, .fav-btn, .filter-btn, .user-game-card, .game-card')) {
+        RV_AUDIO.uiClick();
+      }
+    });
+
+    document.addEventListener('mouseover', (e) => {
+      if (e.target.closest('.console-card, .game-card, .user-game-card, .btn-back, .filter-btn, .profile-link')) {
+        RV_AUDIO.uiHover();
+      }
+    });
+
+    /* Page load transition sound */
+    window.addEventListener('load', () => {
+      setTimeout(() => RV_AUDIO.uiTransition(), 500);
+    });
+
+    /* ═══ GAMEPASS SEMANAL ═══ */
+    function renderGamepass() {
+      const section = document.getElementById('gamepass-section');
+      const row = document.getElementById('gamepass-row');
+      if (!section || !row) return;
+
+      // Seleciona jogos baseado na semana do ano (rotação automática)
+      const now = new Date();
+      const startOfYear = new Date(now.getFullYear(), 0, 1);
+      const weekNum = Math.floor((now - startOfYear) / (7 * 24 * 60 * 60 * 1000));
+
+      // Pool de jogos destaque de cada console
+      const highlights = [
+        { console: 'snes', core: 'snes', name: 'Chrono Trigger', subtitle: '', file: 'Chrono Trigger (USA).sfc', short: 'SNES' },
+        { console: 'psx', core: 'pcsx_rearmed', name: 'Castlevania', subtitle: 'Symphony of the Night', file: 'Castlevania - Symphony of the Night (USA).chd', short: 'PS1' },
+        { console: 'n64', core: 'n64', name: 'The Legend of Zelda', subtitle: 'Ocarina of Time', file: 'Legend of Zelda, The - Ocarina of Time (USA) (Rev 2).z64', short: 'N64' },
+        { console: 'gba', core: 'gba', name: 'Metroid Fusion', subtitle: '', file: 'Metroid Fusion (USA).gba', short: 'GBA' },
+        { console: 'nds', core: 'nds', name: 'Chrono Trigger', subtitle: '', file: 'Chrono Trigger (USA).nds', short: 'NDS' },
+        { console: 'snes', core: 'snes', name: 'Super Metroid', subtitle: '', file: 'Super Metroid (Japan, USA) (En,Ja).sfc', short: 'SNES' },
+        { console: 'psx', core: 'pcsx_rearmed', name: 'Metal Gear Solid', subtitle: '', file: 'Metal Gear Solid (USA) (Disc 1).chd', short: 'PS1' },
+        { console: 'sega', core: 'segaMD', name: 'Streets of Rage 2', subtitle: '', file: 'Streets of Rage 2 (USA).md', short: 'SEGA' },
+        { console: 'snes', core: 'snes', name: 'Super Mario World', subtitle: '', file: 'Super Mario World (USA).sfc', short: 'SNES' },
+        { console: 'gba', core: 'gba', name: 'Castlevania', subtitle: 'Aria of Sorrow', file: 'Castlevania - Aria of Sorrow (USA).gba', short: 'GBA' },
+        { console: 'arcade', core: 'fbneo', name: 'Metal Slug', subtitle: '', file: 'mslug.zip', short: 'ARCADE' },
+        { console: 'gbc', core: 'gbc', name: 'Pokémon', subtitle: 'Gold Version', file: 'Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).gbc', short: 'GBC' },
+      ];
+
+      // Pega 4 jogos baseados na semana
+      const start = (weekNum * 4) % highlights.length;
+      const picks = [];
+      for (let i = 0; i < 4; i++) {
+        picks.push(highlights[(start + i) % highlights.length]);
+      }
+
+      section.style.display = '';
+      row.innerHTML = '';
+      picks.forEach(item => {
+        const card = document.createElement('a');
+        card.className = 'user-game-card';
+        card.href = `play.html?core=${item.core}&game=${item.console}/${encodeURIComponent(item.file)}`;
+        card.appendChild(createCoverImg(item.console, item.file, item.name));
+        const info = document.createElement('div');
+        info.className = 'user-game-info';
+        info.innerHTML = `
+      <div class="user-game-name">${item.name}${item.subtitle ? ' — ' + item.subtitle : ''}</div>
+      <div class="user-game-console">${item.short} ★</div>`;
+        card.appendChild(info);
+        row.appendChild(card);
+      });
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.babel.js"></script>
+  <script src="js/fichas.js"></script>
+  <script src="js/card-info.js"></script>
+  </body>
+
+</html>

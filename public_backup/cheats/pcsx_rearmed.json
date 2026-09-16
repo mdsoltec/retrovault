@@ -1,0 +1,438 @@
+{
+  "Castlevania - Symphony of the Night (USA)": [
+    {
+      "desc": "Infinite Money",
+      "code": "80097C00+423F+80097C02+000F"
+    },
+    {
+      "desc": "All Familiars at Level 99",
+      "code": "80097C54+0063+80097C60+0063+80097C6C+0063+80097C78+0063+80097C84+0063"
+    },
+    {
+      "desc": "All have EXP 99",
+      "code": "5000050C+0000+30097C58+0063"
+    },
+    {
+      "desc": "Infinite HP for Richter",
+      "code": "80087BB0+003C+80136C14+003C"
+    },
+    {
+      "desc": "Infinite HP",
+      "code": "80097BA0+03E7"
+    },
+    {
+      "desc": "Infinite MP",
+      "code": "80097BB0+03E7"
+    },
+    {
+      "desc": "Infinite Hearts",
+      "code": "80097BA8+0063"
+    },
+    {
+      "desc": "Level up booster",
+      "code": "80097BFC+423F+80097BFE+000F"
+    },
+    {
+      "desc": "Quick Level Gain",
+      "code": "80097BEC+FFFF"
+    },
+    {
+      "desc": "Japanese Demon-Level 99",
+      "code": "30097C9C+0063"
+    },
+    {
+      "desc": "All Relics",
+      "code": "50000E02+0000+80097974+0303"
+    },
+    {
+      "desc": "Have all Spells",
+      "code": "50000402+0202+80097992+8081"
+    }
+  ],
+  "Crash Bandicoot - Warped (USA)": [
+    {
+      "desc": "Infinite Lifes",
+      "code": "D0065D54+0100+800AD3DC+6300+D0065D54+0100+800AD42C+6300+D0065D54+0100+800AD0A4+6300+D0065D54+0100+800BCD48+6300"
+    },
+    {
+      "desc": "Enable All Powers",
+      "code": "80069178+003F"
+    },
+    {
+      "desc": "Enable all Powers",
+      "code": "80069328+003F"
+    },
+    {
+      "desc": "99 Lives",
+      "code": "D005BEEC+F64C+800B5D4C+6300+D005BEEC+F64C+80068F58+6300"
+    },
+    {
+      "desc": "Modifies Time Trials Timer (Push Select)",
+      "code": "E0065D55+0001+8006909C+BBBB"
+    },
+    {
+      "desc": "Have All Gems",
+      "code": "80068FB0+FFFF+80068FB2+FFFF+80068FB4+FFFF+80068FB6+FF00"
+    },
+    {
+      "desc": "Have All Sapphires",
+      "code": "800691B4+FFFF+800691B6+FFFF+800691B8+FFFF"
+    },
+    {
+      "desc": "Have All Crystals",
+      "code": "8006912C+FFFF+8006912E+FFFF+80069130+FFFF"
+    },
+    {
+      "desc": "Have All Platinum Relics",
+      "code": "800691B4+FFFF+800691B6+FFFF+800691B8+FFFF+800691BA+FFFF+800691BC+FFFF+800691BE+FFFF+800691C0+FFFF+800691C2+FFFF+800691C4+FFFF"
+    },
+    {
+      "desc": "Have all Gems",
+      "code": "80069160+FFFF+80069162+FFFF+80069164+FFFF+80069166+FF00"
+    },
+    {
+      "desc": "Have all Sapphires",
+      "code": "80069364+FFFF+80069366+FFFF+80069368+FFFF"
+    },
+    {
+      "desc": "Have all Crystals",
+      "code": "800692DC+FFFF+800692DE+FFFF+800692E0+FFFF"
+    }
+  ],
+  "Crash Bandicoot 2 - Cortex Strikes Back (USA)": [
+    {
+      "desc": "Open all Levels",
+      "code": "8006+CE74+43C8"
+    },
+    {
+      "desc": "100 Lives",
+      "code": "8006+CE68+6400"
+    },
+    {
+      "desc": "All Crystals",
+      "code": "8006+D03C+FFFF+8006+D03E+FFFF+8006+D040+FFFF"
+    },
+    {
+      "desc": "All Gems",
+      "code": "8006+CEC0+FFFF+8006+CEC2+FFFF+8006+CEC4+FFFF+8006+CEC6+FFFF"
+    }
+  ],
+  "Crash Team Racing (USA)": [
+    {
+      "desc": "Unlock All Everything (Cheat Device 2.2 Or Higher Needed!)",
+      "code": "50000302+0000+8008E6EC+FFFF"
+    },
+    {
+      "desc": "Have All Awards",
+      "code": "8008FBA4+FFFF+8008FBA6+FFFF+8008FBA8+FFFF+8008FBAA+FFFF+8008FBAC+FFFF+8008FBAE+FFFF+8008FBB0+FFFF+8008FBB2+FFFF"
+    },
+    {
+      "desc": "Time Always 0:00:00",
+      "code": "80035012+2400"
+    },
+    {
+      "desc": "Complete Adventure Mode Quickly (Cheat Device 2.2 Or Higher Needed!)",
+      "code": "50000A02+0000+8008FBA2+FFFF"
+    }
+  ],
+  "Dino Crisis (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "800B9574+04B0"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "D0038CC8+0108+80038CCA+2400+D0039594+0108+80039596+2400+D0039744+0108+80039746+2400+D00D2348+0108+800D234A+2400+D00D24A0+0108+800D24A2+2400+D00D25B0+0108+800D25B2+2400+D00D26FC+0108+800D26FE+2400+D00D38BC+0108+800D38BE+2400"
+    },
+    {
+      "desc": "All Weapons (Regina)",
+      "code": "800C15A8+FFFF"
+    },
+    {
+      "desc": "All Weapons Available In Shop",
+      "code": "D01CE5C0+0074+801CE5C0+0001+D01CE5C8+0074+801CE5C8+0001+D01CE5D0+000A+801CE5D0+0001+D01CE5D8+0012+801CE5D8+0001+D01CE5E0+0012+801CE5E0+0001+D01CE5E8+0014+801CE5E8+0001+D01CE5F0+0016+801CE5F0+0001+D01CE5F8+0016+801CE5F8+0001+D01CE600+0017+801CE600+0001"
+    },
+    {
+      "desc": "Short Version Of All Weapons Available In Shop",
+      "code": "C1000000+5000+50000908+0000+801CE5C0+0001"
+    },
+    {
+      "desc": "Have Infinite Extinction Points At Character Buying Screen (At End of The Game)",
+      "code": "800AEE28+967F+800AEE2A+0098+800D84E8+967F+800D84EA+0098"
+    },
+    {
+      "desc": "Infinite Item Usage",
+      "code": "D00560AC+FFFF+800560AE+2400"
+    },
+    {
+      "desc": "Have All Maps",
+      "code": "800C15D0+FFFF+800C15D2+FFFF+800C15D4+FFFF+800C15D6+FFFF+800C15D8+FFFF+800C15DA+FFFF"
+    },
+    {
+      "desc": "Have All Items (Regina)",
+      "code": "800C15A4+FFFF+800C15A6+FFFF+800C15AC+FFFF+800C15AE+FFFF+800C15B0+FFFF+800C15B2+FFFF+800C15B4+FFFF+800C15B6+FFFF+800C15B8+FFFF+800C15BA+FFFF+800C15BC+FFFF"
+    },
+    {
+      "desc": "Max Extinct Points",
+      "code": "800AEE10+967F+800AEE12+0098"
+    },
+    {
+      "desc": "Walk Thru Walls",
+      "code": "80038E02+2400"
+    },
+    {
+      "desc": "Vedere il primo Finale (premere Select)",
+      "code": "D00A+93D0+0100+800A+FA0D+000A+D00A+93D0+0100+300A+FA13+0000+D00A+93D0+0100"
+    }
+  ],
+  "Gran Turismo 2 (USA)": [
+    {
+      "desc": "CPU kann nicht fahren (Druecke Kreuz & Select)",
+      "code": "$75C550D98DCB+$85B362B9CECD+$75C550D98DCB+$85B38FB9CECD+$75C550D98DCB+$85B38479CECD+$75C550D98DCB+$85B37939CECD+$75C550D98DCB+$85B36EF9CECD"
+    },
+    {
+      "desc": "16:9 Widescreen (1.1)",
+      "code": "A4052A64 801EF8EF+8005D598 0000+80057010 0000+00000000 FFFF+A4052B20 000000E7+8005D598 0000+80057010 0000+00000000 FFFF+A4020A74 3084007F+A701E55C FF80FF56+A701E564 008000AA+A70201A8 FF97FF74+A70201B0 0069008C+A7015350 014001AA+00000000 FFFF+A401F888 AEB40008+A70100D0 FF60FF2B+A70100D4 00A000D5+00000000 FFFF+A403EC6C 02602021+A70295E4 FFC4FFB0+A70295E8 003C0050+00000000 FFFF+A4057010 260201C0+A7049736 A485A489+A7049EB4 00C8010A+A7049EBC 302100C8+A7049EBE 00A03406+A704C100 00C8010A+A704C108 302100C8+A704C10A 00A03406+A704DFE8 00000160+A704DFEA 00002405+A704DFF4 022000C4+A704DFF6 8FB2A485+A704DFD0 016001D5+A7050B80 FF50FF16+A7050B88 00B000EA+00000000 FFFF+A405D598 8005A5B4+A705802C 00C8010A+A7058034 302100C8+A7058036 00A03406+A70588E0 00C8010A+A70588E8 302100C8+A70588EA 00A03406+A70599C4 016001D5+00000000 FFFF+A40244EC 800229D8+A701CDF4 00B30086+A701CDFC FFCEFFDB+A701CE04 03200258+00000000 FFFF"
+    },
+    {
+      "desc": "16:9 Widescreen (1.2)",
+      "code": "A40529DC 801EFB39+8005D5DC 0000+80057054 0000+00000000 FFFF+A4052A70 000000F6+8005D5DC 0000+80057054 0000+00000000 FFFF+A4020A90 3084007F+A701E578 FF80FF56+A701E580 008000AA+A70201C4 FF97FF74+A70201CC 0069008C+A701536C 014001AA+00000000 FFFF+A401F888 AEB40008+A70100D0 FF60FF2B+A70100D4 00A000D5+00000000 FFFF+A403EC74 02602021+A70295EC FFC4FFB0+A70295F0 003C0050+00000000 FFFF+A4057054 260201C0+A70497CA A485A489+A7049F48 00C8010A+A7049F50 302100C8+A7049F52 00A03406+A704C194 00C8010A+A704C19C 302100C8+A704C19E 00A03406+A704E07C 00000160+A704E07E 00002405+A704E088 022000C4+A704E08A 8FB2A485+A704E064 016001D5+A7050C14 FF50FF16+A7050C1C 00B000EA+00000000 FFFF+A405D5DC 8005A5F8+A7058070 00C8010A+A7058078 302100C8+A705807A 00A03406+A7058924 00C8010A+A705892C 302100C8+A705892E 00A03406+A7059A08 016001D5+00000000 FFFF+A402442C 800229A8+A701CDF4 00B30086+A701CDFC FFCEFFDB+A701CE04 03200258+00000000 FFFF"
+    },
+    {
+      "desc": "21:9 Widescreen (1.1)",
+      "code": "A4052A64 801EF8EF+8005D598 0000+80057010 0000+00000000 FFFF+A4052B20 000000E7+8005D598 0000+80057010 0000+00000000 FFFF+A4020A74 3084007F+A701E55C FF80FF20+A701E564 008000E0+A70201A8 FF97FF49+A70201B0 006900B7+A7015350 01400230+00000000 FFFF+A401F888 AEB40008+A70100D0 FF60FEE8+A70100D4 00A00118+00000000 FFFF+A403EC6C 02602021+A70295E4 FFC4FF97+A70295E8 003C0069+00000000 FFFF+A4057010 260201C0+A7049736 A485A489+A7049EB4 00C8015E+A7049EBC 302100C8+A7049EBE 00A03406+A704C100 00C8015E+A704C108 302100C8+A704C10A 00A03406+A704DFE8 00000160+A704DFEA 00002405+A704DFF4 022000C4+A704DFF6 8FB2A485+A704DFD0 01600268+A7050B80 FF50FECC+A7050B88 00B00134+00000000 FFFF+A405D598 8005A5B4+A705802C 00C8015E+A7058034 302100C8+A7058036 00A03406+A70588E0 00C8015E+A70588E8 302100C8+A70588EA 00A03406+A70599C4 01600268+00000000 FFFF+A40244EC 800229D8+A701CDF4 00B30066+A701CDFC FFCEFFE4+A701CE04 032001C9+00000000 FFFF"
+    },
+    {
+      "desc": "21:9 Widescreen (1.2)",
+      "code": "A40529DC 801EFB39+8005D5DC 0000+80057054 0000+00000000 FFFF+A4052A70 000000F6+8005D5DC 0000+80057054 0000+00000000 FFFF+A4020A90 3084007F+A701E578 FF80FF20+A701E580 008000E0+A70201C4 FF97FF49+A70201CC 006900B7+A701536C 01400230+00000000 FFFF+A401F888 AEB40008+A70100D0 FF60FEE8+A70100D4 00A00118+00000000 FFFF+A403EC74 02602021+A70295EC FFC4FF97+A70295F0 003C0069+00000000 FFFF+A4057054 260201C0+A70497CA A485A489+A7049F48 00C8015E+A7049F50 302100C8+A7049F52 00A03406+A704C194 00C8015E+A704C19C 302100C8+A704C19E 00A03406+A704E07C 00000160+A704E07E 00002405+A704E088 022000C4+A704E08A 8FB2A485+A704E064 01600268+A7050C14 FF50FECC+A7050C1C 00B00134+00000000 FFFF+A405D5DC 8005A5F8+A7058070 00C8015E+A7058078 302100C8+A705807A 00A03406+A7058924 00C8015E+A705892C 302100C8+A705892E 00A03406+A7059A08 01600268+00000000 FFFF+A402442C 800229A8+A701CDF4 00B30066+A701CDFC FFCEFFE4+A701CE04 032001C9+00000000 FFFF"
+    },
+    {
+      "desc": "60 FPS (1.1)",
+      "code": "E01D5634 0002+301D5634 0001+A401F888 AEB40008+A70168C8 00020000+A7019644 00020000+00000000 FFFF+A003EC6C 02602021+A7029548 00020000"
+    },
+    {
+      "desc": "60 FPS (1.2)",
+      "code": "E01D5864 0002+301D5864 0001+A401F888 AEB40008+A70168C8 00020000+A7019644 00020000+00000000 FFFF+A003EC74 02602021+A7029550 00020000"
+    },
+    {
+      "desc": "Use 8MB RAM for polygon buffers (1.1, 1.2)",
+      "code": "A401F888 AEB40008+D121F88A AEB4+A7016A6C 000E8020+D121F88A AEB4+A7016A70 57000000+D121F88A AEB4+A7016A7C 00030007+D121F88A AEB4+A7016A78 28210000+D121F88A AEB4+A7016A7A 02250000+D121F88A AEB4+A7016A88 80000000+00000000 FFFF"
+    },
+    {
+      "desc": "Full detail AI cars (Needs 8MB RAM) (1.1, 1.2)",
+      "code": "A401F888 AEB40008+A7014344 00405112+A7014346 16A00800+A7014348 00030001+00000000 FFFF"
+    },
+    {
+      "desc": "Slightly higher draw distance (1.1)",
+      "code": "A403EC6C 02602021+A7020420 0004810D+A7020422 14400800+00000000 FFFF"
+    },
+    {
+      "desc": "Slightly higher draw distance (1.2)",
+      "code": "A403EC74 02602021+A7020420 0004810D+A7020422 14400800+00000000 FFFF"
+    },
+    {
+      "desc": "L3 to toggle Mirror (tap) and HUD (hold) (1.1)",
+      "code": "A403EC6C 02602021+D7010001 00000200+A002951C 1040000C+9002951C 00000001+A002951C 0800A554+9002951C 1040000C+A002951C 00000000+9002951C 0800A554+A002951C 00000001+9002951C 00000000+00000000 FFFF+00000000 FFFF+A403EC6C 02602021+D701003C 00000200+F502942C 0022A52E+F502942E 14400800+F502941C BA040000+F502941E 0C000000+00000000 FFFF+00000000 FFFF"
+    }
+  ],
+  "Metal Gear Solid (USA) (Disc 1)": [
+    {
+      "desc": "Infinite Health",
+      "code": "800B752E+03E8"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "800B7526+03E7"
+    },
+    {
+      "desc": "Infinite 3:00 Fight Time",
+      "code": "800E72C4+1475"
+    },
+    {
+      "desc": "Infinite Time Jeep Chase",
+      "code": "800E1260+FFFF"
+    },
+    {
+      "desc": "Infinite 3:00 Fight Time",
+      "code": "800E72BC+1475"
+    },
+    {
+      "desc": "Infinite Time In Jeep Chase",
+      "code": "800E1258+FFFF"
+    },
+    {
+      "desc": "Max Life",
+      "code": "800B7528+0600"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "800AE1B4+03E8"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "800AE1AC+03E7"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "800AE1AC+0400"
+    },
+    {
+      "desc": "RAZIONI infinite",
+      "code": "800B5EBC+0063"
+    },
+    {
+      "desc": "SOCOM con munizioni infinite",
+      "code": "800B5E7A+03E7"
+    }
+  ],
+  "Metal Slug X (USA)": [
+    {
+      "desc": "Beginne mit letzter Mission",
+      "code": "$776B206A3535+$87661B6F343A"
+    },
+    {
+      "desc": "UE Zeit",
+      "code": "$87AE853A3134"
+    }
+  ],
+  "Resident Evil 3 - Nemesis (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "800CCC90 00C8"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "800CEA50+00C8"
+    },
+    {
+      "desc": "Infinite Item Usage (All Slots)",
+      "code": "8006D0CA 2400"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "800D1F98 0078"
+    },
+    {
+      "desc": "Unlimited Time",
+      "code": "800C79BA 0000"
+    },
+    {
+      "desc": "Start with ALL secrets",
+      "code": "800D3CEA+FFE0"
+    },
+    {
+      "desc": "Access Item Box Anytime (Press L1+Square)",
+      "code": "D00CC830 0084+800D1F2C 0200+D00CC830 0084+800E01C4 0002"
+    },
+    {
+      "desc": "Max Reward Total",
+      "code": "800D25EC 967F+800D25EE 0098"
+    }
+  ],
+  "Tekken (USA)": [
+    {
+      "desc": "P1 Infinite Health",
+      "code": "801232DE+0080"
+    },
+    {
+      "desc": "P2 Infinite Health",
+      "code": "80124312+0080"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "80125180+090E"
+    },
+    {
+      "desc": "Infinite Time To Choose Character",
+      "code": "800B7E14+FFFF"
+    },
+    {
+      "desc": "Select All Extra Players",
+      "code": "801273D0+FFFF"
+    },
+    {
+      "desc": "P1 No Health",
+      "code": "801232DE+0000"
+    },
+    {
+      "desc": "P2 No Health",
+      "code": "80124312+0080"
+    },
+    {
+      "desc": "Replace Yoshimitsu With Ganryu (On Character Select Screen)",
+      "code": "800E5A48+0110"
+    },
+    {
+      "desc": "P1 One Hit Death",
+      "code": "D01232DE+0080+801232DE+0001"
+    },
+    {
+      "desc": "P2 One Hit Death",
+      "code": "D0124312+0080+80124312+0001"
+    },
+    {
+      "desc": "Play As Devil Kazuya",
+      "code": "801C0924+0028"
+    },
+    {
+      "desc": "P2 Always Has 2nd Costume",
+      "code": "80124162+0001"
+    }
+  ],
+  "Tekken 3 (USA)": [
+    {
+      "desc": "Infinite Health P1",
+      "code": "300A961E+008C"
+    },
+    {
+      "desc": "Infinite Health P2",
+      "code": "300AAEAA+008C"
+    },
+    {
+      "desc": "Infinite Force Mode Time",
+      "code": "800ADBCC+FFFF"
+    },
+    {
+      "desc": "Press Select To Refill Life P1",
+      "code": "D00A8C48+0100+800A961E+008C"
+    },
+    {
+      "desc": "Press Select To Refill Life P2",
+      "code": "D00A8C4A+0100+800AAEAA+008C"
+    },
+    {
+      "desc": "Absolutely Everything Unlocked",
+      "code": "80097EF0+FFFF+30097EF2+001F+80097EF4+0382+30097EF6+0005+80097EF8+FFFF+30097EFA+001F+30097EFD+0009+30097EFE+0001+80097F26+0101"
+    },
+    {
+      "desc": "P1 Massive Damage",
+      "code": "800B8B94+FFFF"
+    },
+    {
+      "desc": "P2 Massive Damage",
+      "code": "800B8B74+FFFF"
+    },
+    {
+      "desc": "Tekken Force Stage Skip",
+      "code": "D00A8C48+4100+800B6C04+0001"
+    },
+    {
+      "desc": "No Music",
+      "code": "8006B052+0303"
+    },
+    {
+      "desc": "Recorder Enabled",
+      "code": "800B8BE6+0100"
+    }
+  ],
+  "Tony Hawk's Pro Skater 2 (USA)": [
+    {
+      "desc": "Perfect Balance",
+      "code": "800BBD44+0001+800BBD46+0001"
+    },
+    {
+      "desc": "Moon Physics",
+      "code": "800BBD68+0001+800BBD6A+0001"
+    }
+  ]
+}

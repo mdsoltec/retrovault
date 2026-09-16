@@ -1,0 +1,432 @@
+{
+  "Castlevania III - Dracula's Curse (USA)": [
+    {
+      "desc": "Gain A Life Everytime You Die, And Have Infinite Lives",
+      "code": "PAYESO"
+    },
+    {
+      "desc": "Infinite Lives (After First Life)",
+      "code": "PAYASO"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SXOAUPSA"
+    },
+    {
+      "desc": "Infinite Health (Alternate)",
+      "code": "OXEEZZSE"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "0035:99"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "SXKAKPSA+SXKEKPSA"
+    },
+    {
+      "desc": "Infinite Time  (Alternate)",
+      "code": "OXKEKPSE+OXKAKPSE"
+    },
+    {
+      "desc": "Infinite Time Without Having To Switch Off After Boss Orb Is Collected",
+      "code": "NSEEZEYN+NSEEAETN+GXKAKPSA+GXKEKPSA"
+    },
+    {
+      "desc": "Start With Alucard And Cross And Invincible Potion",
+      "code": "OPOPAAEP"
+    },
+    {
+      "desc": "Start With Sypha And Cross And Invincible Potion",
+      "code": "OPOPYAEP"
+    },
+    {
+      "desc": "Start With Grant And Cross And Invincible Potion",
+      "code": "OPOOTAEP"
+    },
+    {
+      "desc": "Enable Extra Enemies And Start With Cross And Invincible Potion",
+      "code": "OPEOPAEP"
+    }
+  ],
+  "Contra (USA)": [
+    {
+      "desc": "Start with infinite lives",
+      "code": "SLAIUZ"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "SLAIUZ"
+    },
+    {
+      "desc": "Infinite Lives P2",
+      "code": "0033:09"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SZEIUZVI"
+    },
+    {
+      "desc": "Infinite Lives P1",
+      "code": "0032:09"
+    },
+    {
+      "desc": "Weapon Upgrades Give An Extra Life",
+      "code": "VEVVTXOZ+ZEVVYXZA+ONNTIZEZ"
+    },
+    {
+      "desc": "Keep weapons after losing life",
+      "code": "GXIIUX"
+    },
+    {
+      "desc": "Keep weapons after losing a life",
+      "code": "GXIIUX"
+    },
+    {
+      "desc": "Start New Life With Fireball Gun",
+      "code": "ZEIIXZ"
+    },
+    {
+      "desc": "P1 And P2 Start With 30 Lives",
+      "code": "IPVGZGZE"
+    },
+    {
+      "desc": "Choose Your Weapon! (All Rapid Fire!)",
+      "code": "00AA:16"
+    },
+    {
+      "desc": "Totally Invincible P1",
+      "code": "00AE:41"
+    }
+  ],
+  "Duck Hunt (World)": [
+    {
+      "desc": "Infinite Ammo",
+      "code": "SZNIPPVG"
+    },
+    {
+      "desc": "Infinite Ammo",
+      "code": "00BA:03"
+    },
+    {
+      "desc": "Infinite Shots",
+      "code": "0000BA03"
+    },
+    {
+      "desc": "Always Clear The Level In Duck Hunt",
+      "code": "ZAOKNTAA"
+    },
+    {
+      "desc": "Always Clear The Level In Clay Shooting",
+      "code": "ZAKIPTAA"
+    },
+    {
+      "desc": "Always Advance To The Next Round (Miss All Of The Targets To Get The Perfect Bonus)",
+      "code": "ALSIPLEI"
+    },
+    {
+      "desc": "Ducks Fly Away Faster - Game A",
+      "code": "EISGNZEY"
+    },
+    {
+      "desc": "Always Get The Perfect Bonus",
+      "code": "AASIAUZA+ALSIPLEI"
+    },
+    {
+      "desc": "Get The Perfect Bonus Only For Hitting 20 Targets",
+      "code": "GPSIAUZA+ALSIPLEI"
+    },
+    {
+      "desc": "Get The Perfect Bonus For Hitting At Least 10 Targets",
+      "code": "ZEUIYZAE+XXUSPXUU"
+    }
+  ],
+  "Mega Man 2 (USA)": [
+    {
+      "desc": "Start With All Weapons And 255 Lives At Dr. Wily's Stage",
+      "code": "NYOZZLAE+EZOZGUSN"
+    },
+    {
+      "desc": "255 Maximum Weapon Ammo [All Weapons - Shows Up To 28]",
+      "code": "NYKAGUGO"
+    },
+    {
+      "desc": "Start With 255 Weapon Ammo [All Weapons]",
+      "code": "NNEELEGO"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "SXUGTPVG"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "06C0:30"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00A8:04"
+    },
+    {
+      "desc": "Start With All Weapons At Dr. Wily Stage",
+      "code": "009A:FF+009B:FF"
+    },
+    {
+      "desc": "Start With All Weapons At Dr. Wily's Stage",
+      "code": "NYOZZLAE+XPOZGUSN"
+    },
+    {
+      "desc": "Infinite Time Stopper",
+      "code": "00A2:30"
+    },
+    {
+      "desc": "Start with 6 lives",
+      "code": "TANALALA"
+    },
+    {
+      "desc": "Start with 9 lives",
+      "code": "PANALALE"
+    }
+  ],
+  "Super Mario Bros (World)": [
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every 10 Coins",
+      "code": "ZAOLUGGV+AZOUVKOZ+TPOUNGAG+EIXLEGSE+XTXLOKVN"
+    },
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every 25 Coins",
+      "code": "PPOLUGGV+AZOUVKOZ+TPOUNGAG+EIXLEGSE+XTXLOKVN"
+    },
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every 50 Coins",
+      "code": "ZLOLUGGT+AZOUVKOZ+TPOUNGAG+EIXLEGSE+XTXLOKVN"
+    },
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every 75 Coins",
+      "code": "LGOLUGGV+AZOUVKOZ+TPOUNGAG+EIXLEGSE+XTXLOKVN"
+    },
+    {
+      "desc": "Time Starts At 150 Instead Of 400 (plus About 30 Seconds Of Invincibility At The Start Of Every Life)",
+      "code": "YNAOPO"
+    },
+    {
+      "desc": "Time Starts At 600 Instead Of 400 (plus About 10 Seconds Of Invincibility At The Start Of Every Life)",
+      "code": "LXAOPP"
+    },
+    {
+      "desc": "Time Starts At 995 Instead Of 400 (plus About 20 Seconds Of Invincibility At The Start Of Every Life)",
+      "code": "GVAOPP"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SXIOPO"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00075A02"
+    },
+    {
+      "desc": "Once You Turn Into Fire Mario, You Will Always Be Able To Shoot Fireballs, Even If You Turn Small Again (until You Die). Also, If You Touch An Enemy, It Will Make You Power-up!! (On Some Emulator ROMs, The Code Will Make You Invincible.)",
+      "code": "PAZSKO"
+    },
+    {
+      "desc": "Infinite lives for both players",
+      "code": "SXIOPO"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "075A:03"
+    },
+    {
+      "desc": "Vidas infinitas",
+      "code": "SXIOPO"
+    },
+    {
+      "desc": "Não perder power-ups ao ser atingido",
+      "code": "SXULKNSE"
+    },
+    {
+      "desc": "Pulos mais altos",
+      "code": "AUSUPLAZ"
+    }
+  ],
+  "Super Mario Bros 2 (PT-BR)": [
+    {
+      "desc": "Start every life with Max Health",
+      "code": "TPVTLXAP+OZOYTZSE+ZAOYYZSA+SAONAXKX+SZONLXOU+GZONGZZZ+SXXPIEVV+TPEUXEAP"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "SZNESXVK"
+    },
+    {
+      "desc": "Infinite life meter (except if you hit a spike)",
+      "code": "GZELVXSE"
+    },
+    {
+      "desc": "Infinite sub-space time",
+      "code": "SZUPYNVK"
+    },
+    {
+      "desc": "Invincibility Star Powerup Lasts 1.5x Longer",
+      "code": "ATOUXEYL"
+    },
+    {
+      "desc": "Invincibility Star Powerup Lasts 2x Longer",
+      "code": "YYOUXEYU"
+    },
+    {
+      "desc": "Invincibility Star Powerup Appears After Collecting 4 Cherries, Instead Of 5",
+      "code": "GAOOZAIA"
+    },
+    {
+      "desc": "Invincibility Star Powerup Appears After Collecting 3 Cherries",
+      "code": "LAOOZAIA"
+    },
+    {
+      "desc": "Invincibility Star Powerup Appears After Collecting 2 Cherries",
+      "code": "ZAOOZAIA"
+    },
+    {
+      "desc": "Invincibility Star Powerup Appears After Collecting 1 Cherry",
+      "code": "PAOOZAIA"
+    },
+    {
+      "desc": "Infinite Float Time As Peach",
+      "code": "LLXAOIAE"
+    },
+    {
+      "desc": "Start with 5 Lives, instead of 3",
+      "code": "IAOTIGLA"
+    }
+  ],
+  "Super Mario Bros 3 (PT-BR)": [
+    {
+      "desc": "Infinite Time As Statue Mario",
+      "code": "SKNZSNVK"
+    },
+    {
+      "desc": "Invincibility Star Powerup Lasts Slightly Longer",
+      "code": "NYOZOAEV"
+    },
+    {
+      "desc": "Start with 7 Lives, instead of 4 - both players",
+      "code": "YESZOAGA"
+    },
+    {
+      "desc": "Start with 10 Lives - both players",
+      "code": "ZESZOAGE"
+    },
+    {
+      "desc": "Start with 15 Lives - both players",
+      "code": "YESZOAGE"
+    },
+    {
+      "desc": "Start with 25 Lives - both players",
+      "code": "POSZOAGE"
+    },
+    {
+      "desc": "Start with 50 Lives - both players",
+      "code": "ZUSZOAGA"
+    },
+    {
+      "desc": "Start with 75 Lives - both players",
+      "code": "LKSZOAGE"
+    },
+    {
+      "desc": "Start with 99 Lives - both players",
+      "code": "LVSZOAGA"
+    },
+    {
+      "desc": "Invincibility (mostly)",
+      "code": "AEKKKVZA+ASSGXTEY"
+    },
+    {
+      "desc": "Invincibility against Pits and Lava (Hold B to Jump Higher)",
+      "code": "KZOZTGAE+NGOXAKSV+ALOXPGAZ+GAOXZKGN+AVEZIOSA"
+    },
+    {
+      "desc": "Press Start For Temporary Invincibility",
+      "code": "OZVESVPK+EAVEVTPA+LINAETTY+IANAOTLA+EYNAXTEI"
+    }
+  ],
+  "Zelda II - The Adventure of Link (USA)": [
+    {
+      "desc": "Don't Lose All of Your Experience Points When You Level-Up",
+      "code": "SZVOUNSE"
+    },
+    {
+      "desc": "Infinite/Max Health",
+      "code": "0774:FF"
+    },
+    {
+      "desc": "Infinite/Max Health",
+      "code": "0774:55"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "0700:04"
+    },
+    {
+      "desc": "Infinite Magic And Health In Battle. See notes.",
+      "code": "AEYSAU"
+    },
+    {
+      "desc": "Link has infinite lives",
+      "code": "SZKGKXVK"
+    },
+    {
+      "desc": "Start A New Game With Max Life Level",
+      "code": "AEVLSZPE"
+    },
+    {
+      "desc": "Max Life Level",
+      "code": "0779:55"
+    },
+    {
+      "desc": "Max Life Level",
+      "code": "0779:FF"
+    },
+    {
+      "desc": "Infinite/Max Magic",
+      "code": "0773:55"
+    },
+    {
+      "desc": "Infinite/Max Magic",
+      "code": "0773:FF"
+    },
+    {
+      "desc": "Don't Lose Any EXP  When You  Level-Up",
+      "code": "SZVOUNSE+SZNPKNSE"
+    }
+  ],
+  "Super Mario Bros.": [
+    {
+      "desc": "Super jump",
+      "code": "TPZLTG"
+    },
+    {
+      "desc": "Mega-jump",
+      "code": "APZLGG"
+    }
+  ],
+  "Super Mario Bros": [
+    {
+      "desc": "Vidas infinitas",
+      "code": "SXIOPO"
+    },
+    {
+      "desc": "Não perder power-ups ao ser atingido",
+      "code": "SXULKNSE"
+    },
+    {
+      "desc": "Pulos mais altos",
+      "code": "AUSUPLAZ"
+    }
+  ],
+  "The Legend of Zelda": [
+    {
+      "desc": "Infinite Health",
+      "code": "SZLZZZ"
+    }
+  ]
+}

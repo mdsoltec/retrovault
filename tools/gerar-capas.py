@@ -8,7 +8,7 @@ Uso:
   python3 tools/gerar-capas.py --tudo     # reprocessa também quem já tem capa local
 
 O que faz:
-  • Lê o catálogo (index.html + games.html);
+  • Lê o catálogo (js/catalog.js — fonte única);
   • Para cada jogo SEM capa local em covers/<console>/, procura a capa
     na base libretro-thumbnails (Named_Boxarts → Named_Covers →
     Named_Titles), usando o índice completo de cada sistema e um
@@ -31,7 +31,7 @@ import urllib.request
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-PAGINAS = ["index.html", "games.html"]
+PAGINAS = ["js/catalog.js"]
 SAIDA = RAIZ / "js" / "covers-map.js"
 BASE = "https://thumbnails.libretro.com"
 TIPOS = ["Named_Boxarts", "Named_Covers", "Named_Titles"]
@@ -79,7 +79,7 @@ def catalogo():
     for pagina in PAGINAS:
         txt = (RAIZ / pagina).read_text(encoding="utf-8")
         # console atual = última chave `'xxx': [` vista antes do jogo
-        for m in re.finditer(r"'([a-z0-9]+)':\s*\[|" + RE_JOGO.pattern, txt):
+        for m in re.finditer(r"([a-z0-9]+):\s*\{\s*\n\s*name:|" + RE_JOGO.pattern, txt):
             if m.group(1):
                 consola = m.group(1)
                 continue

@@ -1,0 +1,5762 @@
+{
+  "Castlevania III - Dracula's Curse (USA)": [
+    {
+      "desc": "Infinite Energy",
+      "code": "SEXEVGSZ"
+    },
+    {
+      "desc": "Start With More Energy",
+      "code": "AVKPIAAK"
+    },
+    {
+      "desc": "Start With MUCH More Energy",
+      "code": "NNKPIAAK"
+    },
+    {
+      "desc": "Infinite Lives (After First Life)",
+      "code": "PAYASO"
+    },
+    {
+      "desc": "Gain A Life Everytime You Die, And Have Infinite Lives",
+      "code": "PAYESO"
+    },
+    {
+      "desc": "Start With 10 Lives Without The \"HELP ME\" Password",
+      "code": "NYGPZA"
+    },
+    {
+      "desc": "Start a New Game With 9 Lives",
+      "code": "PEUOAAZE"
+    },
+    {
+      "desc": "Start a New Game With 25 Lives",
+      "code": "IXUOAAZA"
+    },
+    {
+      "desc": "Start a New Game With 50 Lives",
+      "code": "ASUOAAZA"
+    },
+    {
+      "desc": "Start With 555 Seconds",
+      "code": "PAGLLL"
+    },
+    {
+      "desc": "Start With 9500 Seconds",
+      "code": "PALUYL"
+    },
+    {
+      "desc": "Start with more time",
+      "code": "OPKLGLAE"
+    },
+    {
+      "desc": "Infinite Hearts",
+      "code": "OPELUZEP"
+    },
+    {
+      "desc": "Start with MUCH more time",
+      "code": "NYKLGLAE"
+    },
+    {
+      "desc": "Start With 25 Hearts",
+      "code": "IXKPPAIA"
+    },
+    {
+      "desc": "Start With 50 Hearts",
+      "code": "ASKPPAIA"
+    },
+    {
+      "desc": "Start With 99 Hearts",
+      "code": "OOKPPAIE"
+    },
+    {
+      "desc": "Start With 1000 Points And You've Defeated 2 Bosses",
+      "code": "TTLLTY"
+    },
+    {
+      "desc": "Start With Alucard And Cross And Invincible Potion",
+      "code": "OPOPAAEP"
+    },
+    {
+      "desc": "Start With Sypha And Cross And Invincible Potion",
+      "code": "OPOPYAEP"
+    },
+    {
+      "desc": "Start With Grant And Cross And Invincible Potion",
+      "code": "OPOOTAEP"
+    },
+    {
+      "desc": "Start With Trevor As Partner",
+      "code": "GEPTTL"
+    },
+    {
+      "desc": "Start With Sypha's Fireball",
+      "code": "SEKPLAKA"
+    },
+    {
+      "desc": "Don't Lose Double Or Triple Shot When You Get A Different Weapon",
+      "code": "SZNXYPKZ"
+    },
+    {
+      "desc": "Mega Jump",
+      "code": "PAUPLVPA"
+    },
+    {
+      "desc": "Super mega jump",
+      "code": "AAUPLVPA"
+    },
+    {
+      "desc": "Whip Hits Hits Anything That Is Up To Eight Blocks Away",
+      "code": "VPLLTG"
+    },
+    {
+      "desc": "Takes Twice As Many Hits For Enemies, Not Bosses",
+      "code": "SOTLYK"
+    },
+    {
+      "desc": "There Are Less Candles Than Normal Where The Screen Goes From Left To Right",
+      "code": "SXGAPO"
+    },
+    {
+      "desc": "There Are More Candles Than Normal Where The Screen Goes From Left To Right",
+      "code": "SXGAAO"
+    },
+    {
+      "desc": "There Are No Candles Where The Screen Goes From Left To Right",
+      "code": "SXIAPO"
+    },
+    {
+      "desc": "There Are More Candles, Up And Down, And Left And Right Scrolling Screens",
+      "code": "SXPPZO"
+    },
+    {
+      "desc": "Candles Are In The Form Of Enemies, And You Running",
+      "code": "SXIAIO"
+    },
+    {
+      "desc": "Start The Game And You'll Be Dropped In Towards The Middle Of Stage 1-01",
+      "code": "AXALLL"
+    },
+    {
+      "desc": "Start Each Life By Being Dropped Into The Stage",
+      "code": "OOAETO"
+    },
+    {
+      "desc": "Automatically Picks Opening At The Title Screen",
+      "code": "SZAVGG"
+    },
+    {
+      "desc": "Receive Twice The Points Defeating Enemies",
+      "code": "OEAEXG"
+    },
+    {
+      "desc": "Hearts And Items Are Worth More And It Causes Some Enemies To Drop Items They Normally Don't",
+      "code": "AEAAEG"
+    },
+    {
+      "desc": "Walk Twice As Fast Going To The Right",
+      "code": "GEYATL"
+    },
+    {
+      "desc": "When You Die, You'll Start On The Screen You Died On, Not At The Beginning Of The Stage",
+      "code": "VALUZL"
+    },
+    {
+      "desc": "When You Die, Start On The Screen You Died On, With More Time, And 13 Hearts",
+      "code": "KALUZL+KALLZL"
+    },
+    {
+      "desc": "Enable Extra Enemies And Start With Cross And Invincible Potion",
+      "code": "OPEOPAEP"
+    },
+    {
+      "desc": "Receive Triple Shot Upon Weapon Pick-Up",
+      "code": "ZANXGPAA"
+    },
+    {
+      "desc": "Double Shot Appears Faster",
+      "code": "VANXIPSA"
+    },
+    {
+      "desc": "Use Any Weapon To Activate The Watch",
+      "code": "PLKLOXAU"
+    },
+    {
+      "desc": "Collecting A Whip Power Up Also Gives You The Invisible Potion",
+      "code": "PEOXYOSP"
+    },
+    {
+      "desc": "Debug Menu Enabled",
+      "code": "KVAVPY"
+    },
+    {
+      "desc": "Small Hearts Don't Fall Down Or Go Away",
+      "code": "VOYOKN"
+    },
+    {
+      "desc": "Push Up To Climb Stairs Automatically (If There Are No Stairs, You'll Climb Invisible Stairs)",
+      "code": "SPTLYV"
+    },
+    {
+      "desc": "Sample Password Screen",
+      "code": "IEPTTL"
+    },
+    {
+      "desc": "Peaceful Mode [No Music]",
+      "code": "TUYEUP"
+    },
+    {
+      "desc": "World modifier",
+      "code": "0032:00"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "EIOAZPEY"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "SXKAKPSA+SXKEKPSA"
+    },
+    {
+      "desc": "Jump Higher",
+      "code": "IAUPLVPA"
+    },
+    {
+      "desc": "Walk Twice As Fast To The Left",
+      "code": "VYXOANNN"
+    },
+    {
+      "desc": "Walk Twice As Fast To The Right",
+      "code": "ZEVOGTPA"
+    },
+    {
+      "desc": "Jump Twice As Far To The Left",
+      "code": "VYSPIVNN"
+    },
+    {
+      "desc": "Jump Twice As Far To The Right",
+      "code": "ZAKOZTPA"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SXOAUPSA"
+    },
+    {
+      "desc": "Most Enemies Are Frozen And Don't Attack",
+      "code": "ATKEAKVY"
+    },
+    {
+      "desc": "Bats Are Frozen",
+      "code": "AEXETPAG"
+    },
+    {
+      "desc": "Toads Don't Attack",
+      "code": "ATXEOXVY"
+    },
+    {
+      "desc": "Bosses Start With No Energy",
+      "code": "AAUPLLAG"
+    },
+    {
+      "desc": "1st Boss Just Walks To The Left",
+      "code": "SLOZTKSO+PEVZTLAA+SLKAIVSO"
+    },
+    {
+      "desc": "Giant Bat Boss Stays In The Same Place",
+      "code": "AAVXSPAG+AANZNZAG"
+    },
+    {
+      "desc": "Jump In Midair",
+      "code": "AVVAELAP+PSVPYUYG+PSSPINYG+SZSPOAGA+SZUPOASA+TZSPXEOG+ZASPUEAE+EPSPKAEL+SASPVESX+OZSOOAES+IASOXEGA+SASOUESX+EISOKAIV+IASONATZ+IAVPOEAA"
+    },
+    {
+      "desc": "Hit Anywhere",
+      "code": "AEELYXAP"
+    },
+    {
+      "desc": "Stairs sometimes keep going",
+      "code": "EPTPEP"
+    },
+    {
+      "desc": "Invincibility Alternate",
+      "code": "SZKLPZSA"
+    },
+    {
+      "desc": "Have 4 Times The Health (Still Shows The Regular Amount)",
+      "code": "NNGPIA"
+    },
+    {
+      "desc": "Start With 10 Lives",
+      "code": "AAGPLA"
+    },
+    {
+      "desc": "Infinite Health (Alternate)",
+      "code": "OXEEZZSE"
+    },
+    {
+      "desc": "Infinite Time  (Alternate)",
+      "code": "OXKEKPSE+OXKAKPSE"
+    },
+    {
+      "desc": "Start With 99 Lives (Alternate)",
+      "code": "OOUOAAZE"
+    },
+    {
+      "desc": "High Jump",
+      "code": "LAUPLVPA"
+    },
+    {
+      "desc": "Start With Dagger",
+      "code": "VEKPAZSA+SEKPLAKA"
+    },
+    {
+      "desc": "Invincible",
+      "code": "0080:02"
+    },
+    {
+      "desc": "Remove Invincibility Flickering",
+      "code": "001A:00"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "003C:40"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "0035:99"
+    },
+    {
+      "desc": "Infinite Hearts",
+      "code": "0084:99"
+    },
+    {
+      "desc": "(Simon) Best Whip",
+      "code": "008E:02"
+    },
+    {
+      "desc": "(Alucard) Best Attack",
+      "code": "008F:02"
+    },
+    {
+      "desc": "Have III Item",
+      "code": "0087:02"
+    },
+    {
+      "desc": "Enable Character Switching & Partner Modifier",
+      "code": "003A:01"
+    },
+    {
+      "desc": "Choose Partner's Sub-Weapon",
+      "code": "0086:05"
+    },
+    {
+      "desc": "Have Lots of Points",
+      "code": "0036:70+0037:99"
+    },
+    {
+      "desc": "Bosses Have No Health",
+      "code": "003D:00"
+    },
+    {
+      "desc": "Have Infinite Time (First Two Digits)",
+      "code": "007E:99"
+    },
+    {
+      "desc": "Have Infinite Time (Final Two Digits)",
+      "code": "007F:99"
+    },
+    {
+      "desc": "Small hearts drift further to the right",
+      "code": "EGLZPA"
+    },
+    {
+      "desc": "Start with Sypha (6 digit code)",
+      "code": "EGLPPA"
+    },
+    {
+      "desc": "Find alternate stair cases",
+      "code": "ZVPPOU"
+    },
+    {
+      "desc": "Shoot Projectile After Falling",
+      "code": "EYEOXPEI"
+    },
+    {
+      "desc": "Automatically Attack While Jumping/Falling",
+      "code": "EINPGYEY"
+    },
+    {
+      "desc": "No Knockback When Hurt By Enemies",
+      "code": "ATUEGXSA"
+    },
+    {
+      "desc": "Disable Upwards Auto Scrolling",
+      "code": "EAUSLYXA"
+    },
+    {
+      "desc": "Trevor's Partner Always has the Triple Shot Power-Up",
+      "code": "0088:02"
+    },
+    {
+      "desc": "Skip Intro Screen",
+      "code": "AEKTLLZA"
+    },
+    {
+      "desc": "DPCM Pop Reducer",
+      "code": "SLUAOOSE"
+    },
+    {
+      "desc": "Wrap To The Top When Falling Down Pits",
+      "code": "AVNEKKSZ"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "AEVOZTTA+AEVPPVYA+AAOOIYUI+AAXPTNXG"
+    },
+    {
+      "desc": "Blink 1.5x Longer After Being Hit",
+      "code": "KLXEIXAY"
+    },
+    {
+      "desc": "Blink 2x Longer After Being Hit",
+      "code": "EYXEIXAY"
+    },
+    {
+      "desc": "Take Less Damage",
+      "code": "SVEALXON+PSEAGXGA"
+    },
+    {
+      "desc": "Infinite Hearts",
+      "code": "SZSAVGSA"
+    },
+    {
+      "desc": "Start Each Life With 1.5x More Health",
+      "code": "AVKPIAAG"
+    },
+    {
+      "desc": "Start Each Life With 2x More Health",
+      "code": "EEKPIAAG"
+    },
+    {
+      "desc": "Start a new game with Sypha enabled",
+      "code": "PASUTENY"
+    },
+    {
+      "desc": "Start a new game with Grant enabled",
+      "code": "ZASUTENY"
+    },
+    {
+      "desc": "Start a new game with Alucard enabled",
+      "code": "LASUTENY"
+    },
+    {
+      "desc": "Enable Debug Menu before Start of Game",
+      "code": "KVEVPYEP"
+    },
+    {
+      "desc": "Meat Fully Restores Health",
+      "code": "AGUUGLAZ"
+    },
+    {
+      "desc": "Stopwatch Subweapon freezes enemies slightly longer",
+      "code": "NYKUUZKU"
+    },
+    {
+      "desc": "Invincibility against Spikes",
+      "code": "AIOAIGEI"
+    },
+    {
+      "desc": "Invincibility Potion lasts slightly longer",
+      "code": "NNXXYPKU"
+    },
+    {
+      "desc": "Double Shot And Triple Shot Powerups Appear 2x Faster",
+      "code": "IEKZAUZA"
+    },
+    {
+      "desc": "Keep Double Or Triple Shot Powerup When Picking Up a Different Subweapon",
+      "code": "OUEZPOOO"
+    },
+    {
+      "desc": "Item Pickups Don't Disappear Until Picked Up Or Left Behind",
+      "code": "SUXZLEVS"
+    },
+    {
+      "desc": "View Ending",
+      "code": "LXOTTULK"
+    },
+    {
+      "desc": "View Ending With Syfa",
+      "code": "LXOTTULK+ZUSUYGSU"
+    },
+    {
+      "desc": "View Ending With Grant",
+      "code": "LXOTTULK+ZLSLLOGO"
+    },
+    {
+      "desc": "View Ending With Alucard",
+      "code": "LXOTTULK+LASLPPZA+ZLSLLOGO"
+    },
+    {
+      "desc": "View Ending Without Belmont",
+      "code": "LXOTGLLX"
+    },
+    {
+      "desc": "Infinite Time Without Having To Switch Off After Boss Orb Is Collected",
+      "code": "NSEEZEYN+NSEEAETN+GXKAKPSA+GXKEKPSA"
+    },
+    {
+      "desc": "Mist Doesn't Move In Stages",
+      "code": "SZOXAPVT"
+    }
+  ],
+  "Contra (USA)": [
+    {
+      "desc": "Totally Invincible P1",
+      "code": "00AE:41"
+    },
+    {
+      "desc": "Infinite Lives P2",
+      "code": "0033:09"
+    },
+    {
+      "desc": "Enable 30 Lives Option",
+      "code": "0024:01"
+    },
+    {
+      "desc": "Weapon Modifier P2",
+      "code": "00AB:00"
+    },
+    {
+      "desc": "Start New Life With Fireball Gun",
+      "code": "ZEIIXZ"
+    },
+    {
+      "desc": "When You Die You Get An Extra Life",
+      "code": "NYAIUZ"
+    },
+    {
+      "desc": "Tons Of Points For Shooting Enemies",
+      "code": "SXZGYK"
+    },
+    {
+      "desc": "1st Boss Harder To Kill",
+      "code": "EPTILE"
+    },
+    {
+      "desc": "When The Bridge Explodes, You Can Still Walk On It",
+      "code": "EOGKPN"
+    },
+    {
+      "desc": "Weapon Capsules Fly By Slower",
+      "code": "OIGEAU"
+    },
+    {
+      "desc": "Bullets Will Travel Thru Weaker Enemies",
+      "code": "KOYVAL"
+    },
+    {
+      "desc": "Your Bullets Will Auto-Hit Any Enemy",
+      "code": "KOYTAK"
+    },
+    {
+      "desc": "Kill Any Enemy Or Boss With 1 Shot (Except For Base 1 And 2 Bosses)",
+      "code": "KOYTAL"
+    },
+    {
+      "desc": "Characters Can Walk On Water",
+      "code": "SLPVIA"
+    },
+    {
+      "desc": "Removes Lifebar Indicators",
+      "code": "GOTGET"
+    },
+    {
+      "desc": "Play Game In Black And White Mode",
+      "code": "OZNKTASX+YPNKYEVN"
+    },
+    {
+      "desc": "P1 And P2 Start With 30 Lives",
+      "code": "IPVGZGZE"
+    },
+    {
+      "desc": "P1 And P2 Has The 30 Lives Cheat Activated",
+      "code": "AAVGTGZA"
+    },
+    {
+      "desc": "Activating The 30 Lives Cheat Gives You 99 Lives",
+      "code": "LTVKAKIP"
+    },
+    {
+      "desc": "Start with infinite lives",
+      "code": "SLAIUZ"
+    },
+    {
+      "desc": "Keep weapons after losing a life",
+      "code": "GXIIUX"
+    },
+    {
+      "desc": "Become invincible (enemies don't shoot at you)",
+      "code": "SLTIYG"
+    },
+    {
+      "desc": "Start new life with machine gun",
+      "code": "PEIIXZ"
+    },
+    {
+      "desc": "Start new life with spread gun--DON'T USE CODE 6 WITH CODE 1 AND 2",
+      "code": "LEIIXZ"
+    },
+    {
+      "desc": "Start new life with laser",
+      "code": "GEIIXZ"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SZEIUZVI"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "SXKVPZAX"
+    },
+    {
+      "desc": "Start On Level Modifier",
+      "code": "PANGIGAA+ALNKPKYL"
+    },
+    {
+      "desc": "Jump In Midair",
+      "code": "AZNITGSL+NPNIYGEU+VINSAGEY+XTNSPKAE+SUEIAGVI+SUVSOPSP+ATKSZSOZ"
+    },
+    {
+      "desc": "Hit Anywhere",
+      "code": "GZNVYLEL+ESEVALEP+GXXTPLEL+SXKTYLAX"
+    },
+    {
+      "desc": "Press Select To Change Weapons",
+      "code": "GGKIZAKX+ZPKILAIZ+VYKIGAEI+KZOYZVNY+IZOYLVNY+EYOYGVNY+LAOYIVNY+GGOYTVNN+LIOYYVNY+EIONAVNY+PZONPVNN+AZONZVNY+EYONLVNY+TAONGVNN+SZONIVNY+XZONTVNN+PZONYVNN+YAXYAVNY+OGXYPVNN+GAXYZVNY+EIXYLVNY+ZAXYGVNY+OZXYIVNN+PTXYYVNN+PAXNAVNY+SAXNPVNY+XZXNZVNN+SZXNLVNY+SYXNGVNY+GGXNIVNN+TGXNTVNY+EIXNYVNY"
+    },
+    {
+      "desc": "One Hit Kills",
+      "code": "AETVZL+APAXZA+APAEUY"
+    },
+    {
+      "desc": "Invincible",
+      "code": "AAVITGIA"
+    },
+    {
+      "desc": "Run 2X As Fast",
+      "code": "ZASSIYPA+VYVIPNNN"
+    },
+    {
+      "desc": "Run 4X As Fast",
+      "code": "GASSIYPA+KYVIPNNN"
+    },
+    {
+      "desc": "Turn Off Electric Barrier in Base Areas",
+      "code": "ALSKXIEY"
+    },
+    {
+      "desc": "Press Start to Complete Current Level",
+      "code": "LLKSIAIX"
+    },
+    {
+      "desc": "Jump Higher",
+      "code": "XNVSPVUN+UNVSYVKN"
+    },
+    {
+      "desc": "Shoot Enemies, Literally!",
+      "code": "0368:27+0369:27+036A:27+036B:27"
+    },
+    {
+      "desc": "Alternate Invincible",
+      "code": "0090:01"
+    },
+    {
+      "desc": "Walk On Water",
+      "code": "00B2:00"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "0030:00"
+    },
+    {
+      "desc": "Invincible",
+      "code": "00AE:77"
+    },
+    {
+      "desc": "Choose Your Weapon! (All Rapid Fire!)",
+      "code": "00AA:16"
+    },
+    {
+      "desc": "Infinite Lives P1",
+      "code": "0032:09"
+    },
+    {
+      "desc": "Invincible P1 (Flashing)",
+      "code": "00AE:4D"
+    },
+    {
+      "desc": "Invincibility (Star Effect) (Player 1)",
+      "code": "00B0:FE"
+    },
+    {
+      "desc": "Invincible P2 (Flashing)",
+      "code": "00AF:4D"
+    },
+    {
+      "desc": "Invincibility (Star Effect) (Player 2)",
+      "code": "00B1:FE"
+    },
+    {
+      "desc": "Kill Any Enemy Or Boss With One Hit, Any Weapon",
+      "code": "057D:01+057E:01+057F:01+0580:01+0581:01+0582:01+0583:01+0584:01+0585:01+0586:01+0587:01+0588:01+0589:01+05F5:01+05C7:01"
+    },
+    {
+      "desc": "Enemies Die Automatically",
+      "code": "OZSVALEN+ZGVTAUPZ+AENTPUAA"
+    },
+    {
+      "desc": "Weapon Upgrades Give An Extra Life",
+      "code": "VEVVTXOZ+ZEVVYXZA+ONNTIZEZ"
+    },
+    {
+      "desc": "Get Weapon Upgrades From Anywhere",
+      "code": "AISVZZEP"
+    },
+    {
+      "desc": "Start New Life With Spread Gun (6 to 8 character conversion)",
+      "code": "LESIXZAA"
+    },
+    {
+      "desc": "Shots Pierce Through Enemies",
+      "code": "SXKTYLAX"
+    },
+    {
+      "desc": "Skip Title Screen Scroll",
+      "code": "AANKTZPL"
+    },
+    {
+      "desc": "DPCM Pop Reducer",
+      "code": "SUKAKESE"
+    },
+    {
+      "desc": "Start With Super Body",
+      "code": "ELUSIIEG"
+    },
+    {
+      "desc": "Difficulty Modifier",
+      "code": "0031:02"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "SLAIUZ"
+    },
+    {
+      "desc": "Keep weapons after losing life",
+      "code": "GXIIUX"
+    },
+    {
+      "desc": "Enemies will ignore you",
+      "code": "SLTIYG"
+    },
+    {
+      "desc": "Get Machine Gun after dying",
+      "code": "PEIIXZ"
+    },
+    {
+      "desc": "Get Fire Gun after dying",
+      "code": "ZEIIXZ"
+    },
+    {
+      "desc": "Get Spray Gun after dying",
+      "code": "LEIIXZ"
+    }
+  ],
+  "Duck Hunt (World)": [
+    {
+      "desc": "Infinite Ammo",
+      "code": "SZNIPPVG"
+    },
+    {
+      "desc": "Always Hit The Duck In Single-Duck Mode",
+      "code": "ELXSLZEI"
+    },
+    {
+      "desc": "Always Advance To The Next Round (Miss All Of The Targets To Get The Perfect Bonus)",
+      "code": "ALSIPLEI"
+    },
+    {
+      "desc": "Get The Perfect Bonus For Hitting At Least 10 Targets",
+      "code": "ZEUIYZAE+XXUSPXUU"
+    },
+    {
+      "desc": "Always Get The Perfect Bonus",
+      "code": "AASIAUZA+ALSIPLEI"
+    },
+    {
+      "desc": "Get The Perfect Bonus Only For Hitting 20 Targets",
+      "code": "GPSIAUZA+ALSIPLEI"
+    },
+    {
+      "desc": "Round Modifier",
+      "code": "00C1:00"
+    },
+    {
+      "desc": "Infinite Ammo",
+      "code": "00BA:03"
+    },
+    {
+      "desc": "Game D enabled",
+      "code": "GEOKTPLA"
+    },
+    {
+      "desc": "Always Clear The Level In Duck Hunt",
+      "code": "ZAOKNTAA"
+    },
+    {
+      "desc": "Always Clear The Level In Clay Shooting",
+      "code": "ZAKIPTAA"
+    },
+    {
+      "desc": "Ducks Fly Away Faster - Game A",
+      "code": "EISGNZEY"
+    },
+    {
+      "desc": "Ducks Never Fly Away - Game A",
+      "code": "IAVKKZVG"
+    },
+    {
+      "desc": "Hit Anywhere",
+      "code": "AAXSGZSY"
+    },
+    {
+      "desc": "Infinite Shots",
+      "code": "0000BA03"
+    }
+  ],
+  "Mega Man 2 (USA)": [
+    {
+      "desc": "Infinite Air Man",
+      "code": "009D:1E"
+    },
+    {
+      "desc": "Infinite Wood Man",
+      "code": "009E:1E"
+    },
+    {
+      "desc": "Infinite Bubble Man",
+      "code": "009F:1E"
+    },
+    {
+      "desc": "Infinite Quick Man",
+      "code": "00A0:1E"
+    },
+    {
+      "desc": "Infinite Flash Man",
+      "code": "00A1:1E"
+    },
+    {
+      "desc": "Infinite Metal Man",
+      "code": "00A2:1E"
+    },
+    {
+      "desc": "Infinite Crash Man",
+      "code": "00A3:1E"
+    },
+    {
+      "desc": "Start With 255 Life",
+      "code": "NNKAIEGO"
+    },
+    {
+      "desc": "255 Maximum Weapon Ammo [All Weapons - Shows Up To 28]",
+      "code": "NYKAGUGO"
+    },
+    {
+      "desc": "Start With 255 Weapon Ammo [All Weapons]",
+      "code": "NNEELEGO"
+    },
+    {
+      "desc": "Health Capsules Completely Refill Health",
+      "code": "GZOAALAL"
+    },
+    {
+      "desc": "Start With 9 E-Tanks",
+      "code": "PASEGAAE"
+    },
+    {
+      "desc": "Go Into The Menu And Exit To Have Metal Blades",
+      "code": "POIPAP"
+    },
+    {
+      "desc": "Cannot Gain Any E-Tanks",
+      "code": "GATEYL"
+    },
+    {
+      "desc": "Super Jump",
+      "code": "AANAOZGE"
+    },
+    {
+      "desc": "Auto Defeat Bosses At The Stage Start",
+      "code": "OKAETO"
+    },
+    {
+      "desc": "Weapons Travel Super Fast",
+      "code": "EOYIKG"
+    },
+    {
+      "desc": "Enemies And Bosses Move Faster",
+      "code": "STPKUN"
+    },
+    {
+      "desc": "Skip The Bosses' Intro",
+      "code": "EOLAIO"
+    },
+    {
+      "desc": "Can Pick Dr. Wily At Start Of Game",
+      "code": "POIAAA"
+    },
+    {
+      "desc": "No Rabbits On Woodman's Stage",
+      "code": "SOYNEA"
+    },
+    {
+      "desc": "Dogs In Woodman's Stage Do Not Fire",
+      "code": "PIZXAA"
+    },
+    {
+      "desc": "Dogs In Woodman's Stage Fire Travels A Short Distance",
+      "code": "ONPNUP"
+    },
+    {
+      "desc": "Keep Shooting An Enemy Until One Of Them Drops A Weapon Capsule",
+      "code": "PETPIP"
+    },
+    {
+      "desc": "Pick A Boss And Start At Dr. Wily's Fortress",
+      "code": "PXGELA"
+    },
+    {
+      "desc": "Start Halfway Through Each Stage",
+      "code": "PEOAZAAA"
+    },
+    {
+      "desc": "Start Right Before Boss Room",
+      "code": "ZEOAZAAA"
+    },
+    {
+      "desc": "Birds Always Appear at Boss Preview",
+      "code": "PVNALOPX"
+    },
+    {
+      "desc": "Disable Title Screen Timer",
+      "code": "SZUXYZSA"
+    },
+    {
+      "desc": "Cool Background!",
+      "code": "KIGGGG"
+    },
+    {
+      "desc": "When You Fight Woodman, He Just Stands There",
+      "code": "PGZETV"
+    },
+    {
+      "desc": "Go Into The Menu And Exit To Have A Strange Weapon",
+      "code": "PETOIP"
+    },
+    {
+      "desc": "Press Start While Highlighting E-Tanks And It Show",
+      "code": "SOPPLX"
+    },
+    {
+      "desc": "Stage Select Screen is Green",
+      "code": "POOELGPO"
+    },
+    {
+      "desc": "Stage Select Screen is Red",
+      "code": "TOOELGPP"
+    },
+    {
+      "desc": "Different Music For The Capcom Logo",
+      "code": "GZGEYZ"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "SXUGTPVG"
+    },
+    {
+      "desc": "Infinite energy",
+      "code": "SXXTPSSE"
+    },
+    {
+      "desc": "Start with half energy",
+      "code": "TEKAIEGO"
+    },
+    {
+      "desc": "Start with 1 life",
+      "code": "PANALALA"
+    },
+    {
+      "desc": "Start with 6 lives",
+      "code": "TANALALA"
+    },
+    {
+      "desc": "Start with 9 lives",
+      "code": "PANALALE"
+    },
+    {
+      "desc": "Gives burst-fire from normal weapon",
+      "code": "LZVSSZYZ"
+    },
+    {
+      "desc": "Power jumps",
+      "code": "TANAOZGA"
+    },
+    {
+      "desc": "Mega power jumps",
+      "code": "APNAOZGA"
+    },
+    {
+      "desc": "Maximum weapon energy on pick-up",
+      "code": "GZKEYLAL"
+    },
+    {
+      "desc": "Moonwalking",
+      "code": "PGEAKOPX"
+    },
+    {
+      "desc": "Infinite Heat Man",
+      "code": "SXSSOISA"
+    },
+    {
+      "desc": "Infinite Air Man",
+      "code": "SXSSNZSA"
+    },
+    {
+      "desc": "Infinite Wood Man",
+      "code": "SZVIUYSA"
+    },
+    {
+      "desc": "Infinite Bubble Man",
+      "code": "SZUIKLVG"
+    },
+    {
+      "desc": "Infinite Quick Man",
+      "code": "SZVSNLVG"
+    },
+    {
+      "desc": "Infinite Metal Man",
+      "code": "SXKSOLVG"
+    },
+    {
+      "desc": "Infinite Crash Man",
+      "code": "SXESKLSA"
+    },
+    {
+      "desc": "Infinite 1",
+      "code": "SZNIVGSA"
+    },
+    {
+      "desc": "Infinite 2",
+      "code": "SZXTGZVG"
+    },
+    {
+      "desc": "Infinite 3",
+      "code": "SZKTALVG"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "SAUGKTSZ+AIUGVTEY"
+    },
+    {
+      "desc": "Intstant Crash Bomb Explosions",
+      "code": "ENXTIAEI"
+    },
+    {
+      "desc": "Crash Bombs Explode In Twice The Time",
+      "code": "NNEVGETN"
+    },
+    {
+      "desc": "Crash Bombs Explode In Half The Time",
+      "code": "YUEVGETN"
+    },
+    {
+      "desc": "Crash Bombs Explode In A Short Time",
+      "code": "YOEVGETN"
+    },
+    {
+      "desc": "Always Shoot Full Atomic Fire",
+      "code": "SXUSXISX+KNUSUIAA+SSUSKSZK"
+    },
+    {
+      "desc": "Always Shoot Full Atomic Fire",
+      "code": "04E4:03"
+    },
+    {
+      "desc": "Gameboy mode",
+      "code": "PIVSTETO"
+    },
+    {
+      "desc": "Moon Jump",
+      "code": "AXEAUUSZ+VEEAKLEX+SEEASLGA+LXEEYIYZ"
+    },
+    {
+      "desc": "Hit Anywhere",
+      "code": "GXKXZIEL+ASSXGIEP"
+    },
+    {
+      "desc": "One Hit Kills",
+      "code": "GXETTTEL+GZUZGTEL"
+    },
+    {
+      "desc": "Enemies Always Drop Small Weapon Refill",
+      "code": "ASUNZZEP+SKUNLXKK"
+    },
+    {
+      "desc": "Enemies Always Drop Small Energy Refill",
+      "code": "ASUNZZEP+OSUNLXKG"
+    },
+    {
+      "desc": "Enemies Always Drop Big Weapon Refill",
+      "code": "ASUNZZEP+SSUNLXKG"
+    },
+    {
+      "desc": "Enemies Always Drop Big Energy Refill",
+      "code": "ASUNZZEP+OSUNLXKK"
+    },
+    {
+      "desc": "Enemies Always Drop Lives",
+      "code": "ASUNZZEP+SSUNLXKK"
+    },
+    {
+      "desc": "Enable Doctor Wily's Stage",
+      "code": "AOKEZAEI"
+    },
+    {
+      "desc": "Allow Access to Any Defeated Boss Stage",
+      "code": "AEVAZEKI"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "EIUGVTEY"
+    },
+    {
+      "desc": "255 Maximum Life",
+      "code": "NNNEAXGO+NYEAIUGO"
+    },
+    {
+      "desc": "255 Maximum Lives",
+      "code": "NNEAALLV"
+    },
+    {
+      "desc": "255 Maximum Energy Tanks",
+      "code": "IZNAZLGA"
+    },
+    {
+      "desc": "Collectable Items Never Disappear",
+      "code": "SSNLNKVS"
+    },
+    {
+      "desc": "Special Items Always Re-appear After Being Collected",
+      "code": "OUVVASOO"
+    },
+    {
+      "desc": "Hit Anywhere v2",
+      "code": "GZXTPTEL+EIUTZTEP+GZSVPTEI+GZVTGTEY+GXETTTEL"
+    },
+    {
+      "desc": "Continually Hit Anywhere",
+      "code": "GXKVVYEP+GZXTPTEL+EIUTZTEP+GZSVPTEI+GZVTGTEY+GXETTTEL"
+    },
+    {
+      "desc": "Infinite Energy (Except For Contact With Some Bosses)",
+      "code": "KXXTPSSE"
+    },
+    {
+      "desc": "Go Into The Menu And Exit To Have Flash Stopper",
+      "code": "POIOLP"
+    },
+    {
+      "desc": "Game Skips Intro Sequence",
+      "code": "GKEPNNOX+EUEOEYAA+NXEOOYSA+XVEOXNVX"
+    },
+    {
+      "desc": "Infinite Heat Man",
+      "code": "009C:1F"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "06C0:30"
+    },
+    {
+      "desc": "No Boss Health",
+      "code": "06C1:00"
+    },
+    {
+      "desc": "1 Hit Kills Enemies",
+      "code": "06D4:00+06D5:00+06D6:00+06D7:00+06D8:00+06D9:00+06DA:00+06DB:00+06DC:00+06DD:00+06DE:00+06DF:00"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00A8:04"
+    },
+    {
+      "desc": "Untouchable",
+      "code": "004B:02"
+    },
+    {
+      "desc": "Infinite #1",
+      "code": "00A4:30"
+    },
+    {
+      "desc": "Infinite #2",
+      "code": "00A5:30"
+    },
+    {
+      "desc": "Infinite #3",
+      "code": "00A6:30"
+    },
+    {
+      "desc": "Start With All Weapons At Dr. Wily Stage",
+      "code": "009A:FF+009B:FF"
+    },
+    {
+      "desc": "Infinite Energy Tanks",
+      "code": "00A7:03"
+    },
+    {
+      "desc": "Level Highlighter",
+      "code": "002A:00"
+    },
+    {
+      "desc": "Make Individual Buster Shots Clustered",
+      "code": "0025:00"
+    },
+    {
+      "desc": "Ice Skating Mode",
+      "code": "003F:01"
+    },
+    {
+      "desc": "Suit Modifier",
+      "code": "00A9:00"
+    },
+    {
+      "desc": "Atomic Fire Always Fully Charged",
+      "code": "00AC:FF"
+    },
+    {
+      "desc": "Robot Masters Have No Invulnerability Time",
+      "code": "05A8:00"
+    },
+    {
+      "desc": "Switch F/X On To Levitate Jump",
+      "code": "0660:7E"
+    },
+    {
+      "desc": "Infinite Bubble Lead",
+      "code": "009C:30"
+    },
+    {
+      "desc": "Infinite Air Shooter",
+      "code": "009D:30"
+    },
+    {
+      "desc": "Infinite Quick Boomerang",
+      "code": "009E:30"
+    },
+    {
+      "desc": "Infinite Atomic Fire",
+      "code": "009F:30"
+    },
+    {
+      "desc": "Infinite Leaf Shield",
+      "code": "00A0:30"
+    },
+    {
+      "desc": "Infinite Metal Blade",
+      "code": "00A1:30"
+    },
+    {
+      "desc": "Infinite Time Stopper",
+      "code": "00A2:30"
+    },
+    {
+      "desc": "Infinite Crash Bomber",
+      "code": "00A3:30"
+    },
+    {
+      "desc": "Super Jump",
+      "code": "0030:1E"
+    },
+    {
+      "desc": "Jump Higher",
+      "code": "04C0:00"
+    },
+    {
+      "desc": "Speed Modifier",
+      "code": "0600:01"
+    },
+    {
+      "desc": "Press Up For Super High Jump",
+      "code": "0034:02"
+    },
+    {
+      "desc": "Climb Anywhere",
+      "code": "0035:0E"
+    },
+    {
+      "desc": "Treadmill Modifier",
+      "code": "0040:00"
+    },
+    {
+      "desc": "More Enemies",
+      "code": "ALONGAAP"
+    },
+    {
+      "desc": "More Enemies (Alt)",
+      "code": "APXYLAAL"
+    },
+    {
+      "desc": "Enemies Move Away From You (Vertically)",
+      "code": "ELKYLZEP"
+    },
+    {
+      "desc": "Enemies Come After You More Aggressively",
+      "code": "EOKNIPEL"
+    },
+    {
+      "desc": "After Jumping, You Fall Down Slower (And Can Walk In Air)",
+      "code": "EPKAEGEL"
+    },
+    {
+      "desc": "Enemies Automatically Die",
+      "code": "EUSTSTEP"
+    },
+    {
+      "desc": "Skip READY Dialog At Beginning Of Stage",
+      "code": "EYSAIPEI"
+    },
+    {
+      "desc": "No Audio",
+      "code": "EYXAZAEI"
+    },
+    {
+      "desc": "One Bullet Can Kill Multiple Enemies",
+      "code": "EINIEZEY"
+    },
+    {
+      "desc": "Dropped Items From Enemies Float",
+      "code": "ESSUSGEY"
+    },
+    {
+      "desc": "Have All Weapons (Bosses are still active)",
+      "code": "OZSOLZIX+OZVOTZIX+SXVPGUOO+OZUPGGEO+OXOPLGEO"
+    },
+    {
+      "desc": "Main Weapon Can Destroy Crash Blocks And Turrets",
+      "code": "OZVTGTEN"
+    },
+    {
+      "desc": "Stop Quick Man's Stage Beams",
+      "code": "NYESOZGE"
+    },
+    {
+      "desc": "Mega Man's Right Traction Modifier",
+      "code": "0041:00"
+    },
+    {
+      "desc": "Mega Man's Leaf Shield Stays active",
+      "code": "04E2:01"
+    },
+    {
+      "desc": "Wood Man's Leaf Shield Doesn't Stay on him",
+      "code": "0610:01"
+    },
+    {
+      "desc": "Remove Most Music, but leaves Sound Effects",
+      "code": "0500:00+0502:00+050E:00+051D:00+051F:00+0548:00+054C:00+053E:00+0562:00"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "XVNAVOSE+XVEEKOSE"
+    },
+    {
+      "desc": "Shots Pierce Through Enemies",
+      "code": "SZVVPVTS"
+    },
+    {
+      "desc": "Skip Intro Screen",
+      "code": "AANPKYLA"
+    },
+    {
+      "desc": "Blink 1.5x Longer After Being Hit",
+      "code": "NZKSZUYT"
+    },
+    {
+      "desc": "Blink 2x Longer After Being Hit",
+      "code": "VIKSZUYV"
+    },
+    {
+      "desc": "Blink 2.3x Longer After Being Hit",
+      "code": "NYKSZUYV"
+    },
+    {
+      "desc": "Continue with 9 Lives",
+      "code": "PESUGPLE"
+    },
+    {
+      "desc": "Continue With 4 Energy Tanks",
+      "code": "GEUKLPAA"
+    },
+    {
+      "desc": "Continue a Password Game with 4 Energy Tanks",
+      "code": "OXKZAGSX"
+    },
+    {
+      "desc": "Invincibility against Spikes",
+      "code": "ZEUEUGLA"
+    },
+    {
+      "desc": "Take Less Damage",
+      "code": "SVOVTSON"
+    },
+    {
+      "desc": "Take Much Less Damage",
+      "code": "SVOVTSON+PVOVYSGS"
+    },
+    {
+      "desc": "After pause in game (start) you jump with 5 pixels",
+      "code": "IAOAISNY"
+    },
+    {
+      "desc": "No enemies, just items remain",
+      "code": "EPVIPYEL"
+    },
+    {
+      "desc": "Jump In Mid-Air (Altered nolberto82's Moon Jump Code)",
+      "code": "AXEAUUSZ+VEEAKLEX+SEEASLGA"
+    },
+    {
+      "desc": "Can Pick Dr. Wily At Start Of Game (8 Code Conversion)",
+      "code": "POSAAAEI"
+    },
+    {
+      "desc": "View Ending At Level Select Screen",
+      "code": "YAVKLIAE"
+    },
+    {
+      "desc": "Start With All Weapons At Dr. Wily's Stage",
+      "code": "NYOZZLAE+XPOZGUSN"
+    },
+    {
+      "desc": "Start With All Weapons And 255 Lives At Dr. Wily's Stage",
+      "code": "NYOZZLAE+EZOZGUSN"
+    },
+    {
+      "desc": "Super power jumps",
+      "code": "AANAOZGE"
+    }
+  ],
+  "Super Mario Bros (World)": [
+    {
+      "desc": "Always Big",
+      "code": "0754:00+0756:01"
+    },
+    {
+      "desc": "Always Have Fireball",
+      "code": "0754:00+0756:02"
+    },
+    {
+      "desc": "Totally Invincible",
+      "code": "079E:07"
+    },
+    {
+      "desc": "Mario legs move faster",
+      "code": "0700:28"
+    },
+    {
+      "desc": "Always Running",
+      "code": "0783:0A"
+    },
+    {
+      "desc": "God Mode",
+      "code": "079F:01"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "07FA:09"
+    },
+    {
+      "desc": "Enable Hard Mode",
+      "code": "07FC:01"
+    },
+    {
+      "desc": "Koopa Kode",
+      "code": "NAPKIN"
+    },
+    {
+      "desc": "Koopa Mutiny! (1/3)",
+      "code": "KYPTNV+SZPVET+VZPVOT+NZPVXT+EXPVUV+OZPVKV+SAPVST+SAPVVT+KYPVNV+EZZTET+OZZTOT+XZZTXT+UZZTUT+KZZTKT+SAZTST+SAZTVT+KYZTNV+SZZVET+VZZVOT+NZZVXT+EZZVUV+OZZVKV+SAZVST+SAZVVT+KYZVNV+EZLTET+OZLTOT+XZLTXT+UZLTUT+KZLTKT+SALTST+SALTVT+KYLTNV+EZLVET+OZLVOT+XZLVXT+UZLVUT+KZLVKT+SALVST+SALVVT+KYLVNV+EZGTET+OZGTOT+XZGTXT+UZGTUT+KZGTKT+SAGTST+SAGTVT+KYGTNV+SZGVET+VZGVOT+NZGVXT+EZGVUV+OZGVKV+SAGVST+SAGTVT+KYGVNV+EZITET+OZITOT+XZITXT+UZITUT+KZITKT+SAITST"
+    },
+    {
+      "desc": "Koopa Mutiny! (2/3)",
+      "code": "SAITVT+KYITNV+SZIVET+VZIVOT+NZIVXT+EZIVUV+OZIVKV+SAIVST+SAIVVT+KYIVNV+EZTTET+OZTTOT+XZTTXT+UZTTUT+KZTTKT+SATTST+SATTVT+KYTVOV+SZTVXT+VZTVUT+NZTVKT+EZTVSV+EZTVVV+KYTVNV+EZYTET+OZYTOT+XZYTXT+UZYTUT+KZYTKT+SAYTST+SAYTVT+VZYVUV+NZYVKV+ELYVST+OLYVVT+XXATUV+UXATKV+KXATSV+SXATVV+XXAVUV+UXAVKV+KXAVSV+SXAVVV+VXPTUV+NXPTKV+EUPTST+OUPTVT+VXPVUV+NXPVKV+EUPVST+OUPVVT+XXZTUV+UXZTKV+KXZTSV+SXZTVV+XXZVUV+UXZVKV+KXZVSV+SXZVVV+VXLTUV+NXLTKV+EULTST+OULTVT"
+    },
+    {
+      "desc": "Koopa Mutiny! (3/3)",
+      "code": "XXLVUV+UXLVKV+KXLVSV+SXLVVV+VXGTUV+NXGTKV+EUGTST+OUGTVT+VXGVUV+VXGVKV+EUGVST+EUGVVT+VXITUV+NXITKV+EUITST+EUITVT+KNIVOV+SXIVXT+VXIVUT+NXIVKT+KXIVSV+KXIVVV+KNIVNV+SXTTET+VXTTOT+NXTTXT+EXTTUV+EXTTKV+SETTST+SETTVT+SETTNT+EUTVET"
+    },
+    {
+      "desc": "Jump As High As You Want",
+      "code": "AAZUAG"
+    },
+    {
+      "desc": "Invincibility (You Go Through Everything)",
+      "code": "ZZZSSO"
+    },
+    {
+      "desc": "Power Up On Enemies",
+      "code": "GAYINE"
+    },
+    {
+      "desc": "Always Have Firepower",
+      "code": "ZZZLTT"
+    },
+    {
+      "desc": "Another Power Up On Enemies Code",
+      "code": "POAISA"
+    },
+    {
+      "desc": "Super Speed Game",
+      "code": "YZZLNY"
+    },
+    {
+      "desc": "Invincible Except To Pirahna Plants And Pits",
+      "code": "POZITT"
+    },
+    {
+      "desc": "You Can Run Fast",
+      "code": "KEYVAS"
+    },
+    {
+      "desc": "Once You Get A Mushroom, You Are Protected From Dying From Enemies (Start Out Small)",
+      "code": "SZLIVO"
+    },
+    {
+      "desc": "All Blocks Are Smashable",
+      "code": "STALKS"
+    },
+    {
+      "desc": "Mushrooms Make You Invincible!!!",
+      "code": "LUILUI"
+    },
+    {
+      "desc": "Go Through Enemies And Flowers",
+      "code": "GTTTTL"
+    },
+    {
+      "desc": "Mario Is Always Swimming",
+      "code": "PAKOPPAA"
+    },
+    {
+      "desc": "Jump As High As You Want!  Works While Standing, Running, Or Turbo Running!",
+      "code": "AETLTK"
+    },
+    {
+      "desc": "Enemies Can Go Thru Pipes, Walls, And Blocks! Mario (as Usual) Can't Go Thru Pipes, Walls, Or Blocks. This Code Really Changes The Way You Play SMB",
+      "code": "PIATYP"
+    },
+    {
+      "desc": "Mario Can Jump Higher When Walking, Running, Or Turbo Running! Also, He Jumps Further (only When Normal Running)",
+      "code": "AEAENT"
+    },
+    {
+      "desc": "Once You Turn Into Fire Mario, You Will Always Be Able To Shoot Fireballs, Even If You Turn Small Again (until You Die). Also, If You Touch An Enemy, It Will Make You Power-up!! (On Some Emulator ROMs, The Code Will Make You Invincible.)",
+      "code": "PAZSKO"
+    },
+    {
+      "desc": "Ever Have Trouble Remembering Which Pipes You Can And Can't Go Down? Well, This Code Solves That Problem! The Pipes You Can't Go Down Are Upside-down, The Pipes You Can Go Down Are Normal",
+      "code": "ANTOSA"
+    },
+    {
+      "desc": "Take No Damage From Most Enemies!  Depending On Which Version Of SMB You Are Using, You May Have To Either Become Big Mario, Or Jump On One Enemy Before Becoming Invincible. (NOTE: This Code Doesn't Work Against The  Potted Plants.)",
+      "code": "PAASNO"
+    },
+    {
+      "desc": "Similar To Above",
+      "code": "PAZSSO"
+    },
+    {
+      "desc": "Timer Counts Up Instead Of Down!!  This Code Basically Gives You As Much Time As You Want To Finish A Level. The Longer You Take To Finish A Level, The More Points You Get At The End!!",
+      "code": "VVAANY"
+    },
+    {
+      "desc": "Level Select Code!!",
+      "code": "YSAOPE+YEAOZA"
+    },
+    {
+      "desc": "Mario Can Swim Everywhere, And You Start Some Worlds About 1/2 Way Thru",
+      "code": "AAGOPO"
+    },
+    {
+      "desc": "Time Starts At 900 (instead Of 400)",
+      "code": "VGYOKK"
+    },
+    {
+      "desc": "Start With 400 More Seconds, And Invincibility For The First 10 Seconds",
+      "code": "GUAOPO"
+    },
+    {
+      "desc": "Mario Skates Like Gumby",
+      "code": "VTTNYA"
+    },
+    {
+      "desc": "Mario Always Walks Crouched Down",
+      "code": "VGANYA"
+    },
+    {
+      "desc": "Mario Turns Big When He Walks",
+      "code": "VTLNYA"
+    },
+    {
+      "desc": "Mario Walks Right Thru Enemies",
+      "code": "UATIUA"
+    },
+    {
+      "desc": "Everything Is Invisible Except Mario",
+      "code": "OKGASA"
+    },
+    {
+      "desc": "Mario Starts Out Swimming",
+      "code": "NLTOGK"
+    },
+    {
+      "desc": "You Can Position Mario Anywhere On The Screen (even When He's Moving) By Holding Down The  \"A\" Button On Controller #2",
+      "code": "GSAENT"
+    },
+    {
+      "desc": "Swim Without Water (You're Always Swimming)",
+      "code": "PIGOAP"
+    },
+    {
+      "desc": "You Can Jump Over The Castle At The End Of World 1-1 And Keep On Going. Also, Going Down Tubes Does Weird Things",
+      "code": "VTPOZI"
+    },
+    {
+      "desc": "Most Enemies Are Invisible, But They Die  When You Touch Them",
+      "code": "KEATPE"
+    },
+    {
+      "desc": "Enemies Don't Die When You Jump On Them, So By Jumping On The Same One Over And Over,  You Get Several 1 Up's. But Shooting Them Does Kill Them",
+      "code": "KEATZE"
+    },
+    {
+      "desc": "Take No Damage From Touching Enemies!",
+      "code": "UAYIUA"
+    },
+    {
+      "desc": "Items That Were Worth 1,000 Points, Are Now Worth 1,000,000,000 Points!!",
+      "code": "NYTELN"
+    },
+    {
+      "desc": "Time Starts At 150 Instead Of 400 (plus About 30 Seconds Of Invincibility At The Start Of Every Life)",
+      "code": "YNAOPO"
+    },
+    {
+      "desc": "Time Starts With One Extra Minute (460 Instead Of 400)",
+      "code": "LEAOPO"
+    },
+    {
+      "desc": "Time Starts At 600 Instead Of 400 (plus About 10 Seconds Of Invincibility At The Start Of Every Life)",
+      "code": "LXAOPP"
+    },
+    {
+      "desc": "Time Starts At 995 Instead Of 400 (plus About 20 Seconds Of Invincibility At The Start Of Every Life)",
+      "code": "GVAOPP"
+    },
+    {
+      "desc": "Most Enemies Are Gone",
+      "code": "TSLIIT"
+    },
+    {
+      "desc": "All Enemies Are Gone! (Sorry, This Code Doesn't Seem To Work On The SMB Only Version.)",
+      "code": "TSPIIT"
+    },
+    {
+      "desc": "Play As Game Boy Mario (everything Is Black",
+      "code": "NEPELA"
+    },
+    {
+      "desc": "Mario Turns Into The Invisible Man. This Code Works On Both Versions But Does Different Things",
+      "code": "ZSYENT"
+    },
+    {
+      "desc": "Play At Night",
+      "code": "ASTETE"
+    },
+    {
+      "desc": "Most Enemies Are Frozen!",
+      "code": "AALLEY"
+    },
+    {
+      "desc": "Super Mega Jump, Standing Start Only",
+      "code": "AETLIK"
+    },
+    {
+      "desc": "Mario Has Semi Lunar Descent.  This Means That When You Jump, You Float Back To The Ground Instead Of Just Droping. This Code Works For Standing, Running, Or Turbo Running",
+      "code": "GETLYG"
+    },
+    {
+      "desc": "Start At 1-2",
+      "code": "NGPOKG"
+    },
+    {
+      "desc": "Start On World 3 ??? (use With PIGOAP)",
+      "code": "NGZOKK"
+    },
+    {
+      "desc": "Start On World 5 ???",
+      "code": "VTPOKG"
+    },
+    {
+      "desc": "Start On World 6 ???",
+      "code": "NTPOKK"
+    },
+    {
+      "desc": "Mario Swims Instead Of Walking In All Blue Background Worlds",
+      "code": "SYLOGK"
+    },
+    {
+      "desc": "Mario Has Variable Jump Heights. Sometimes He Jumps High, Sometimes Low",
+      "code": "YETLYG"
+    },
+    {
+      "desc": "Similar To Above Code",
+      "code": "PETLYG"
+    },
+    {
+      "desc": "Mario Walks Past Castle At End Of 1-1 And Keeps On Going Forever (this Is The First Code That I Ever Made For SMB. WOW! :-))",
+      "code": "AITOSA"
+    },
+    {
+      "desc": "All Castles Are Missing, But Game Still Plays Normally",
+      "code": "STPONE"
+    },
+    {
+      "desc": "After The First Pipe, Mario Keeps On Going Forever (no Obsticles)",
+      "code": "NTPOLS"
+    },
+    {
+      "desc": "Enemies Follow You! (Best If You Use This Code With SSASSA)",
+      "code": "GNATUE"
+    },
+    {
+      "desc": "Invincibility! Mario Walks Right Thru Enemies. (this Code Is Completely Different Than My SSASSA Invincibility Code)",
+      "code": "UATIUE"
+    },
+    {
+      "desc": "Mario Can Float For A Very Long Time. You Have To Press And Hold The Jump Button For This Code To Work Right. Only Works  From A Standing Start. (This Is Just A Simple Modification Of A Galoob Code)",
+      "code": "PAZULG"
+    },
+    {
+      "desc": "X-ray Vision (bizarre).  Shows Where Hidden Blocks Are",
+      "code": "STPENT"
+    },
+    {
+      "desc": "In 1-1, The Enemies Have Hammers",
+      "code": "NIYNEE"
+    },
+    {
+      "desc": "If You Press The \"A\" Button, You Can Position Mario Anywhere On The Screen. If You Don't Press The \"A\" Button, The Screen Won't Scroll",
+      "code": "ISAENT"
+    },
+    {
+      "desc": "Some New Worlds.  You Get To Swim In Most Of Them",
+      "code": "YLAOKK"
+    },
+    {
+      "desc": "Enemies That Are Up On Blocks Don't Fall Down (and Other Oddities)",
+      "code": "TEYVPA"
+    },
+    {
+      "desc": "Power-Ups = Invincibility; 1-Up Mushrooms = Fiery Mario",
+      "code": "PPPISA+PPPIEA"
+    },
+    {
+      "desc": "Double Power-Ups!",
+      "code": "PPPIOE"
+    },
+    {
+      "desc": "Power-Up Mushrooms Instead Of Fire Flowers",
+      "code": "PPYLUG"
+    },
+    {
+      "desc": "More Enemies",
+      "code": "GGGGTY"
+    },
+    {
+      "desc": "Start On 2nd Quest (You Can Select Worlds With The 'B' Button)",
+      "code": "KNAOPE+YEAOZA"
+    },
+    {
+      "desc": "Lots Of Time And Invincibility!",
+      "code": "NNAOPO"
+    },
+    {
+      "desc": "Timer Starts Over When Mario Enters A Pipe Or Falls From The Sky",
+      "code": "YSAOPA+YEAOZA"
+    },
+    {
+      "desc": "Timer Starts Over When Mario Enters A Pipe Or Falls From The Sky (Same As Above Except The Timer Goes Into The 900's!)",
+      "code": "ENAOPE+YEAOZA"
+    },
+    {
+      "desc": "Always 3 Fireworks At End Of Each Stage",
+      "code": "GPAIIU"
+    },
+    {
+      "desc": "Hit A Fire Flower And Become Small Fire Mario",
+      "code": "OZTLLX"
+    },
+    {
+      "desc": "Normal Run = Turbo-Speed",
+      "code": "AZGLGG"
+    },
+    {
+      "desc": "Faster Run",
+      "code": "EATLTL"
+    },
+    {
+      "desc": "Start As Fiery Mario And Invincibility Power-Ups!",
+      "code": "TSAOPA+YEAOZA"
+    },
+    {
+      "desc": "Jump 'til Release \"A\" Walking Start",
+      "code": "AAZLTG"
+    },
+    {
+      "desc": "When Little, Look Big",
+      "code": "TIIOPO"
+    },
+    {
+      "desc": "1 Life When You Die",
+      "code": "VNIOPO"
+    },
+    {
+      "desc": "Both Players Start With One Life",
+      "code": "EATOLE"
+    },
+    {
+      "desc": "Killing Enemies Gives No Points",
+      "code": "YYPIXX"
+    },
+    {
+      "desc": "Big Mario After Loosing a Life",
+      "code": "AAVOAZPA"
+    },
+    {
+      "desc": "Boomerang Fireball",
+      "code": "AEVLYTTA"
+    },
+    {
+      "desc": "Always Running",
+      "code": "AIKLLIEI"
+    },
+    {
+      "desc": "Allways Get Fireworks",
+      "code": "VENITZYA"
+    },
+    {
+      "desc": "Start as Fire Mario",
+      "code": "ZEXAGIAA+SXUAPSSE+AAVPZAPA"
+    },
+    {
+      "desc": "Can Break Most Blocks",
+      "code": "AESSOGAP"
+    },
+    {
+      "desc": "Start both players with 1 life",
+      "code": "AATOZA"
+    },
+    {
+      "desc": "Start both players with 6 lives",
+      "code": "IATOZA"
+    },
+    {
+      "desc": "Start both players with 9 lives",
+      "code": "AATOZE"
+    },
+    {
+      "desc": "Start player 1 with 8 lives and player 2 with 3 lives",
+      "code": "VATOLE"
+    },
+    {
+      "desc": "Infinite lives for both players",
+      "code": "SXIOPO"
+    },
+    {
+      "desc": "Super jump from a standing start only",
+      "code": "APZLGK"
+    },
+    {
+      "desc": "Super jump from running only",
+      "code": "TPZLTG"
+    },
+    {
+      "desc": "Super jump from turbo running only",
+      "code": "GPZUAG"
+    },
+    {
+      "desc": "Mega-jump from a standing start only",
+      "code": "APZLGG"
+    },
+    {
+      "desc": "Mega-jump from running only",
+      "code": "APZLTG"
+    },
+    {
+      "desc": "Mega-jump from turbo running only",
+      "code": "GAZUAG"
+    },
+    {
+      "desc": "Moon Gravity from a standing start",
+      "code": "YAZULG"
+    },
+    {
+      "desc": "Moon Gravity from a running start",
+      "code": "YAZUIG"
+    },
+    {
+      "desc": "Moon Gravity from turbo running only",
+      "code": "YAZUYG"
+    },
+    {
+      "desc": "Start on World 2",
+      "code": "YSAOPE+YEAOZA+PEAPYA"
+    },
+    {
+      "desc": "Start on World 3",
+      "code": "YSAOPE+YEAOZA+ZEAPYA"
+    },
+    {
+      "desc": "Start on World 4",
+      "code": "YSAOPE+YEAOZA+LEAPYA"
+    },
+    {
+      "desc": "Start on World 5",
+      "code": "YSAOPE+YEAOZA+GEAPYA"
+    },
+    {
+      "desc": "Start on World 6",
+      "code": "YSAOPE+YEAOZA+IEAPYA"
+    },
+    {
+      "desc": "Start on World 7",
+      "code": "YSAOPE+YEAOZA+TEAPYA"
+    },
+    {
+      "desc": "Start on World 8",
+      "code": "YSAOPE+YEAOZA+YEAPYA"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "075A:03"
+    },
+    {
+      "desc": "Control Mario In Entrence To 1-2",
+      "code": "SNAULA"
+    },
+    {
+      "desc": "Control Mario At Menu",
+      "code": "PEUEGZAA+ANUETXKY+YEUEYZTA"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SKSOPOVK"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "VPKUGUOE+ESVVKTEY"
+    },
+    {
+      "desc": "Freeze Time",
+      "code": "OLNASNOO"
+    },
+    {
+      "desc": "Boomerang Fireball",
+      "code": "OSSYPOOO"
+    },
+    {
+      "desc": "Boomerang Fireball",
+      "code": "03D2:00"
+    },
+    {
+      "desc": "Goomas Don't Walk Off Edges",
+      "code": "LETTTE"
+    },
+    {
+      "desc": "Enables Level Select",
+      "code": "AAYAAZ"
+    },
+    {
+      "desc": "Ground Level Music All The Time",
+      "code": "AYAPYP"
+    },
+    {
+      "desc": "Castle Music All The Time",
+      "code": "PTAPYP+ETPPPO"
+    },
+    {
+      "desc": "Total Silence All The Time",
+      "code": "KAAPYO+EETPYA"
+    },
+    {
+      "desc": "Water Music All The Time",
+      "code": "KAAPYO+XXTPYA"
+    },
+    {
+      "desc": "Circus\" Music All The Time",
+      "code": "GLAPYO+SZAOAO"
+    },
+    {
+      "desc": "Normal Water",
+      "code": "ZETOAA"
+    },
+    {
+      "desc": "Normal Underground Music",
+      "code": "GETOAA"
+    },
+    {
+      "desc": "Normal Castle Music",
+      "code": "AETOAE"
+    },
+    {
+      "desc": "Cloud/Star Man Music",
+      "code": "AOTOAA+AKTOAA"
+    },
+    {
+      "desc": "Total Silence When You Are Outside",
+      "code": "EETOAA+AETOAA"
+    },
+    {
+      "desc": "Altered Water Music Followed By Endless Loop Of Normal Water Music",
+      "code": "XXTOAA"
+    },
+    {
+      "desc": "Plays Water Music In Pipe Intro Scene Instead Of Its Original Music.",
+      "code": "TUYOPA"
+    },
+    {
+      "desc": "No New Music",
+      "code": "AAPSKA"
+    },
+    {
+      "desc": "Ground Music",
+      "code": "PAPSKA"
+    },
+    {
+      "desc": "Water Music",
+      "code": "ZAPSKA"
+    },
+    {
+      "desc": "Underground Level Music",
+      "code": "GAPSKA"
+    },
+    {
+      "desc": "Castle Music",
+      "code": "AAPSKE"
+    },
+    {
+      "desc": "Same As Default Value",
+      "code": "APPSKA"
+    },
+    {
+      "desc": "Pipe Intro Music",
+      "code": "AZPSKA"
+    },
+    {
+      "desc": "Default Value",
+      "code": "AGPSKA"
+    },
+    {
+      "desc": "Silence",
+      "code": "EAPSKA"
+    },
+    {
+      "desc": "Death Music",
+      "code": "PAXOIZZA"
+    },
+    {
+      "desc": "Default Value",
+      "code": "ZAXOIZZA"
+    },
+    {
+      "desc": "Victory Music",
+      "code": "GAXOIZZA"
+    },
+    {
+      "desc": "End Of Castle Music",
+      "code": "AAXOIZZE"
+    },
+    {
+      "desc": "Alternate Game Over Music",
+      "code": "APXOIZZA"
+    },
+    {
+      "desc": "End Of Level Music",
+      "code": "AZXOIZZA"
+    },
+    {
+      "desc": "Time Running Out Hurry Up Music",
+      "code": "AGXOIZZA"
+    },
+    {
+      "desc": "Silence",
+      "code": "EAXOIZZA"
+    },
+    {
+      "desc": "Changes All Area Music Selections",
+      "code": "KYOPGOUN"
+    },
+    {
+      "desc": "Ground Music",
+      "code": "PAXOIZZA+UYXOYXKN"
+    },
+    {
+      "desc": "Water Music",
+      "code": "ZAXOIZZA+UYXOYXKN"
+    },
+    {
+      "desc": "Underground Music",
+      "code": "GAXOIZZA+UYXOYXKN"
+    },
+    {
+      "desc": "Castle Music",
+      "code": "AAXOIZZE+UYXOYXKN"
+    },
+    {
+      "desc": "Cloud/Star Man Music",
+      "code": "APXOIZZA+UYXOYXKN+AGXOIZZA"
+    },
+    {
+      "desc": "Pipe Intro Music",
+      "code": "AZXOIZZA+UYXOYXKN"
+    },
+    {
+      "desc": "Underground Music All The Time",
+      "code": "PZAPYP"
+    },
+    {
+      "desc": "Falling Doesn't Kill You",
+      "code": "OKNLOYIV"
+    },
+    {
+      "desc": "You Get An Extra Life When You Collect A Coin",
+      "code": "PAPLUG+PEZVZG"
+    },
+    {
+      "desc": "You can't pause the game",
+      "code": "AEZAPP"
+    },
+    {
+      "desc": "Mario And Luigi Can Jump In Midair",
+      "code": "AOAUIG"
+    },
+    {
+      "desc": "Mushrooms Worth Fire Mario",
+      "code": "ZAKIOAPA"
+    },
+    {
+      "desc": "Coin Modifier",
+      "code": "07EC:00+07ED:00+07EE:00"
+    },
+    {
+      "desc": "Walk In Water or Swim In Air",
+      "code": "0704:00"
+    },
+    {
+      "desc": "Music Modifier",
+      "code": "00F4:00"
+    },
+    {
+      "desc": "You Can't Get Extra Lives",
+      "code": "SXTATK+SZPUUK"
+    },
+    {
+      "desc": "You can't see how many lives you have",
+      "code": "OZGAEE"
+    },
+    {
+      "desc": "Enemies When Killed And Powerups Give 1Up",
+      "code": "AEVAIGYA"
+    },
+    {
+      "desc": "Timer Counts Slower",
+      "code": "AUELYNAO"
+    },
+    {
+      "desc": "Timer Starts At 200",
+      "code": "ZAXOTPGA+ZAXOYPLA"
+    },
+    {
+      "desc": "Timer Starts At 300",
+      "code": "LAXOTPGA+LAUPAPZA"
+    },
+    {
+      "desc": "Timer Starts At 400",
+      "code": "GAXOYPLA+GAUPAPZA"
+    },
+    {
+      "desc": "Timer Starts At 500",
+      "code": "IAXOTPGA+IAXOYPLA+IAUPAPZA"
+    },
+    {
+      "desc": "Timer Starts At 600",
+      "code": "TAXOTPGA+TAXOYPLA+TAUPAPZA"
+    },
+    {
+      "desc": "Timer Starts At 700",
+      "code": "YAXOTPGA+YAXOYPLA+YAUPAPZA"
+    },
+    {
+      "desc": "Timer Starts At 800",
+      "code": "AAXOTPGE+AAXOYPLE+AAUPAPZE"
+    },
+    {
+      "desc": "Disable Fast Music When Timer is Less Than 100",
+      "code": "SXELGYSA"
+    },
+    {
+      "desc": "Mario/Luigi Don't Die When Timer Reaches 0",
+      "code": "GZNLZYEY"
+    },
+    {
+      "desc": "Always Shoot Fireballs",
+      "code": "GZXUPTEP"
+    },
+    {
+      "desc": "Fireballs Hit Anywhere",
+      "code": "GZXIPYEP"
+    },
+    {
+      "desc": "Goombas are flattened",
+      "code": "KIZGYX"
+    },
+    {
+      "desc": "Firey Mario can't shoot fireballs",
+      "code": "POZLYT"
+    },
+    {
+      "desc": "Pipes Only Show The Top Portion",
+      "code": "IILPEP"
+    },
+    {
+      "desc": "Screen is slow to scroll",
+      "code": "SULXEN"
+    },
+    {
+      "desc": "Coins & boxes don't flash",
+      "code": "EYPEOX"
+    },
+    {
+      "desc": "Killing enemies scrambles the stage",
+      "code": "LLAEPI"
+    },
+    {
+      "desc": "Coins sound different when collected",
+      "code": "VZLYTS"
+    },
+    {
+      "desc": "Another strange world code",
+      "code": "EXPOLS"
+    },
+    {
+      "desc": "Take Any Path in Castles 4-4 and 7-4",
+      "code": "ATOGIOSZ"
+    },
+    {
+      "desc": "Fireball Nose Sword",
+      "code": "ALULLTEI+IAUUPTPA+ALUUITEI"
+    },
+    {
+      "desc": "Toss Fireballs Over Your Head",
+      "code": "KNULGTGE"
+    },
+    {
+      "desc": "Control Your Fireball's Descent With A or B",
+      "code": "SXKLLVOZ+ZEKLGTAS"
+    },
+    {
+      "desc": "Fireballs Have Near-Horizontal Movement",
+      "code": "AEKUATLA"
+    },
+    {
+      "desc": "Fireballs Fly Perfectly Straight",
+      "code": "NNKLGTAS+AEKUATLA"
+    },
+    {
+      "desc": "Fireballs Bounce Through Solid Objects",
+      "code": "PENTIPEA"
+    },
+    {
+      "desc": "Can Shoot Fireballs While Crouched",
+      "code": "ALKLYTEI"
+    },
+    {
+      "desc": "Fly With Button Combo A + B",
+      "code": "ZASLPKIO+EGSLLGLA"
+    },
+    {
+      "desc": "Fly With D-Pad UP",
+      "code": "LASLPKIO+AASLLGLE"
+    },
+    {
+      "desc": "Fly With Button A",
+      "code": "ZASLPKIO+EASLLGLA+ALSLGGEI"
+    },
+    {
+      "desc": "Fly After Jumping",
+      "code": "PASLLGLA"
+    },
+    {
+      "desc": "Walk RIGHT Into Any Solid Object To Enter Sub Areas",
+      "code": "ENKSKIEI"
+    },
+    {
+      "desc": "Press DOWN Anywhere To Enter Sub Areas",
+      "code": "OXVSVTSX+POVSNTAA+OXNIKTSX+AONISTPA"
+    },
+    {
+      "desc": "Destroy Blocks With Your Head",
+      "code": "EOKSOGEL"
+    },
+    {
+      "desc": "Destroy Blocks With Body",
+      "code": "ESXSKIEL"
+    },
+    {
+      "desc": "Destroy Most Blocks With Your Feet",
+      "code": "ALEIKIEL"
+    },
+    {
+      "desc": "All Background Elements (hills, clouds, fences, etc.) Become Breakable Bricks",
+      "code": "OZKPIKSU+PIKPTKXA+XTKPYGUO"
+    },
+    {
+      "desc": "Castle Land!",
+      "code": "AUXOPIEY"
+    },
+    {
+      "desc": "Many Item/Coin Boxes Replaced With Powerups",
+      "code": "OXNPPIOU+AENPZINT"
+    },
+    {
+      "desc": "Landscape Feature Replacement: Mushroom Platforms",
+      "code": "OZEOATSX+APEOPTAA"
+    },
+    {
+      "desc": "Landscape Feature Replacement: Brick Structures #1",
+      "code": "OZEOATSX+AZEOPTAA"
+    },
+    {
+      "desc": "Landscape Feature Replacement: Brick Structures #2",
+      "code": "OZEOATSX+AIEOPTAA"
+    },
+    {
+      "desc": "Brick Replacement: Axes",
+      "code": "EZXOVXKZ+IZXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "Block Multiplier x 2",
+      "code": "PAKOUZAA"
+    },
+    {
+      "desc": "Block Multiplier x 3",
+      "code": "ZAKOUZAA"
+    },
+    {
+      "desc": "Objects Are Set Right Above The Ground",
+      "code": "OXUOVLOU+POUONLNV"
+    },
+    {
+      "desc": "Object Macro Extension Modifier",
+      "code": "OXKPSLOU+AKPVLN"
+    },
+    {
+      "desc": "Can Move LEFT or RIGHT While Crouched",
+      "code": "APXLLPEY"
+    },
+    {
+      "desc": "Bubbles Emanate From Player's Mouth",
+      "code": "ALNLPTEI"
+    },
+    {
+      "desc": "Very Low-Bouncing Fireballs",
+      "code": "NNKLGTAS"
+    },
+    {
+      "desc": "Powerups Keep Rising",
+      "code": "ASKLOGEP"
+    },
+    {
+      "desc": "Kicked Shells Move Slowly",
+      "code": "LAEIVZPA"
+    },
+    {
+      "desc": "Kicked Shells Move Very Quickly",
+      "code": "XPEIVZPE"
+    },
+    {
+      "desc": "Enemies & Mushrooms Move Very Quickly (yet another hard mode)",
+      "code": "ZPNKEZAE"
+    },
+    {
+      "desc": "All Enemies Behave Like Hammer Bros.",
+      "code": "OZEGSPSU+IAEGVPTP"
+    },
+    {
+      "desc": "All Enemies Are Bloopers (squid)",
+      "code": "OXNGPPOU+YENGZOOT"
+    },
+    {
+      "desc": "All Enemies Are Jumping Fish!",
+      "code": "OXNGPPOU+GONGZOOT"
+    },
+    {
+      "desc": "All Enemies Are Randomly-Spawning Bullet Bills",
+      "code": "OXNGPPOU+YONGZOOT"
+    },
+    {
+      "desc": "All Enemies Are Fire Bars (CCW)",
+      "code": "OXNGPPOU+TONGZOOV"
+    },
+    {
+      "desc": "All Enemies Are... (insert enemy here)",
+      "code": "OXNGPPOU"
+    },
+    {
+      "desc": "Fireballs Can Kill Buzzy Beetle",
+      "code": "AASIYNLT"
+    },
+    {
+      "desc": "Fireballs Can Kill Podoboo",
+      "code": "AEOIAYZL+AAXVZAGA"
+    },
+    {
+      "desc": "Fireballs Can Kill Bowser's Fire And Bullet Bill",
+      "code": "AEOIGNTZ"
+    },
+    {
+      "desc": "Small Mario/Luigi Can Break Bricks",
+      "code": "AENLNGZA+EZOLNIEI+AAOUEIPA"
+    },
+    {
+      "desc": "Walk On All Background Elements (fixed)",
+      "code": "AONPLKOZ"
+    },
+    {
+      "desc": "Background Elements Slightly Rearranged",
+      "code": "OZOPLKSX+ZAOPGGIZ+XTOPIGYE"
+    },
+    {
+      "desc": "Fireballs Fly Straight #2",
+      "code": "POSTZOGP"
+    },
+    {
+      "desc": "Kicked Shells Move Slowly (fixed)",
+      "code": "XKSSVAIE+XNSSNEXI+EXKNZXNY+LEKNLXNY+GKKNGXNN+YEKNIXNY+XSKNTXNN"
+    },
+    {
+      "desc": "Invisible mario and 8,000 points on each enemies",
+      "code": "AOGISA"
+    },
+    {
+      "desc": "On all question block appear turtle and look out to touch you character die",
+      "code": "SIGUEG"
+    },
+    {
+      "desc": "King 7 lives",
+      "code": "LLLEVE"
+    },
+    {
+      "desc": "Mushroom,1up,flower and star gone up and back on floor.",
+      "code": "GEGUEG"
+    },
+    {
+      "desc": "New background and various enemies is diferents color",
+      "code": "EKGAIS"
+    },
+    {
+      "desc": "Automatically move forward",
+      "code": "PZZLUY"
+    },
+    {
+      "desc": "Ground becomes unbreakable green metal blocks",
+      "code": "LUAPAG"
+    },
+    {
+      "desc": "Ground becomes hidden power-up bricks",
+      "code": "ISAPAG"
+    },
+    {
+      "desc": "Coins never flash",
+      "code": "ITPEOZ"
+    },
+    {
+      "desc": "Enemies Continually Hit Anywhere",
+      "code": "AEOLTTYZ+AAXUZTLG+OXEULTSU+PEEUGTGZ+SOOLATKL+GZXIPYEP"
+    },
+    {
+      "desc": "Enemies Continually Hit Anywhere",
+      "code": "APNIVAEL+AEESVATA"
+    },
+    {
+      "desc": "Allow More than 127 Lives",
+      "code": "ASSOGPAP"
+    },
+    {
+      "desc": "Press Start to Complete Current World",
+      "code": "OXUAYOPK+ZEUEAPPA+SEUEPOPE+ANUEZPEA+YEUELPEI+XVUEGPIE+GXUAIPKA"
+    },
+    {
+      "desc": "Extra Life Every 10 Coins",
+      "code": "ZAOLUGGV"
+    },
+    {
+      "desc": "Extra Life Every 20 Coins",
+      "code": "GPOLUGGT"
+    },
+    {
+      "desc": "Extra Life Every 30 Coins",
+      "code": "TPOLUGGV"
+    },
+    {
+      "desc": "Extra Life Every 50 Coins",
+      "code": "ZLOLUGGT"
+    },
+    {
+      "desc": "Extra Life Every 150 Coins",
+      "code": "VPOLUGGT"
+    },
+    {
+      "desc": "Extra Life Every 200 Coins",
+      "code": "EGOLUGGV"
+    },
+    {
+      "desc": "Extra Life Every 250 Coins",
+      "code": "XYOLUGGV"
+    },
+    {
+      "desc": "Extra Live Every 2 Coins Instead Of 10 Coins",
+      "code": "ZAPLUG"
+    },
+    {
+      "desc": "Strange Invincibility",
+      "code": "000E:08"
+    },
+    {
+      "desc": "Climb Anywhere",
+      "code": "001D:03"
+    },
+    {
+      "desc": "Flag Always Gives 5000 pts",
+      "code": "010F:00"
+    },
+    {
+      "desc": "Hat & Overalls Color Modifier",
+      "code": "03C4:00"
+    },
+    {
+      "desc": "Enemies Can't Harm You",
+      "code": "0491:01+0492:01+0493:01+0494:01+0495:01"
+    },
+    {
+      "desc": "Background Modifier",
+      "code": "0742:00"
+    },
+    {
+      "desc": "Jump Through Blocks",
+      "code": "0754:02"
+    },
+    {
+      "desc": "Alternate Level Modifier",
+      "code": "0760:01"
+    },
+    {
+      "desc": "Ground Modifier",
+      "code": "06AC:BE+06AD:BE"
+    },
+    {
+      "desc": "Danger Modifier",
+      "code": "06CB:BE"
+    },
+    {
+      "desc": "Speed Modifier",
+      "code": "0456:18"
+    },
+    {
+      "desc": "Mario's Missing Parts",
+      "code": "03D0:00"
+    },
+    {
+      "desc": "Super Jump",
+      "code": "0709:10"
+    },
+    {
+      "desc": "Always Crouched",
+      "code": "000B:04"
+    },
+    {
+      "desc": "Mario is a Cheep Cheep",
+      "code": "0033:01+0205:FC+0209:FC+020D:B2+0211:B3+0215:B4+0219:B5+021D:FC+0221:FC+03C4:01+0704:01"
+    },
+    {
+      "desc": "Music Speed Modifier",
+      "code": "00F0:18"
+    },
+    {
+      "desc": "Enemy Modifiers",
+      "code": "0016:00+0017:00+0018:00+0019:00+001A:00"
+    },
+    {
+      "desc": "Always Stay Big",
+      "code": "OZTLLX+AATLGZ+SZLIVO"
+    },
+    {
+      "desc": "Stop Timer Completely",
+      "code": "EYTLYY"
+    },
+    {
+      "desc": "Multi Jump (Jump In Air)",
+      "code": "AEPLLG"
+    },
+    {
+      "desc": "Grayscale",
+      "code": "EOPELA"
+    },
+    {
+      "desc": "Kill Enemies Upon Touching",
+      "code": "VNASSA"
+    },
+    {
+      "desc": "Enable Level Select Only",
+      "code": "AANAAXZG"
+    },
+    {
+      "desc": "Green World",
+      "code": "STAEXO"
+    },
+    {
+      "desc": "Jungle & Ice World",
+      "code": "SUPEOP"
+    },
+    {
+      "desc": "Levels Are Green",
+      "code": "KGAEXO"
+    },
+    {
+      "desc": "Striped Levels",
+      "code": "GGAEXP"
+    },
+    {
+      "desc": "Blue",
+      "code": "SAPPLE"
+    },
+    {
+      "desc": "Striped Levels",
+      "code": "EPAEOP"
+    },
+    {
+      "desc": "Mixed Up Colors",
+      "code": "POZAEP"
+    },
+    {
+      "desc": "Green World",
+      "code": "YAZENO"
+    },
+    {
+      "desc": "Tropical Land",
+      "code": "EOZOPE"
+    },
+    {
+      "desc": "More New Colors. (Works Like The POSTON Code, But With Different Colors.)",
+      "code": "EOITON"
+    },
+    {
+      "desc": "Cool Colors",
+      "code": "PIYAOO"
+    },
+    {
+      "desc": "More Cool Colors",
+      "code": "KSGXVV"
+    },
+    {
+      "desc": "Green & Blue Ground",
+      "code": "EEAEEP"
+    },
+    {
+      "desc": "Same As Above But With More Weird Crap",
+      "code": "OOPEEP"
+    },
+    {
+      "desc": "Same As Above Two Codes But With Different Stuff",
+      "code": "XXZEEP"
+    },
+    {
+      "desc": "Weird Colors",
+      "code": "GYAEVO"
+    },
+    {
+      "desc": "Illusion Land",
+      "code": "ZEGAEP"
+    },
+    {
+      "desc": "Checkered Levels",
+      "code": "OXZAEP"
+    },
+    {
+      "desc": "Color Change",
+      "code": "OTYAEP"
+    },
+    {
+      "desc": "Black & Blue World",
+      "code": "YETANE"
+    },
+    {
+      "desc": "Sliced & Diced Land",
+      "code": "IIAAEO"
+    },
+    {
+      "desc": "Moldy Land",
+      "code": "IIAAVO"
+    },
+    {
+      "desc": "New Colors",
+      "code": "EEAAOP"
+    },
+    {
+      "desc": "All Pits Are GONE!!! (Yipee!!!)",
+      "code": "AEPOXL"
+    },
+    {
+      "desc": "Enemies Are In The Wrong Places & Move The Wrong Way",
+      "code": "AUYYGP"
+    },
+    {
+      "desc": "Fire!!!",
+      "code": "SPAPNY"
+    },
+    {
+      "desc": "Goombas Go Weird When Hit By Fireballs",
+      "code": "GOATSZ"
+    },
+    {
+      "desc": "Helium Filled Goombas",
+      "code": "PZYVSE"
+    },
+    {
+      "desc": "Fast Goombas",
+      "code": "IVYIVY"
+    },
+    {
+      "desc": "Turn Enemies Into Toad",
+      "code": "AKGOTT+IEAGGP+NULTKA"
+    },
+    {
+      "desc": "Enemies Only Move Left",
+      "code": "VALLEY"
+    },
+    {
+      "desc": "Enemies Are Stuck!",
+      "code": "AEYKKA"
+    },
+    {
+      "desc": "Enemies Are Part Of The Background",
+      "code": "PSPSEA"
+    },
+    {
+      "desc": "Can't See Pits",
+      "code": "APASSS"
+    },
+    {
+      "desc": "Goombas Turn Into Invicible Koopas When You Jump On Them",
+      "code": "POAISO"
+    },
+    {
+      "desc": "Lakitu In 1-1, Toad In 1-2",
+      "code": "ZIZPSK"
+    },
+    {
+      "desc": "Bullet Bills In 1-1",
+      "code": "NPAPNY"
+    },
+    {
+      "desc": "Flying Cheep-Cheeps In 1-1",
+      "code": "KPAPNY"
+    },
+    {
+      "desc": "Lakitu On Ground In 1-1",
+      "code": "OPAPNY"
+    },
+    {
+      "desc": "Goombas Go Loco!!!",
+      "code": "GPPIGE"
+    },
+    {
+      "desc": "All Enemies Throw Hammers",
+      "code": "STAGEO"
+    },
+    {
+      "desc": "Mario & Enemies Are Weird",
+      "code": "KILLEN"
+    },
+    {
+      "desc": "Different Enemies",
+      "code": "XVZOKK"
+    },
+    {
+      "desc": "Fake Boxes & Weird Enemies",
+      "code": "NNYEEP"
+    },
+    {
+      "desc": "Dark Monsters & ? Boxes Don't Flash",
+      "code": "VVTEEP"
+    },
+    {
+      "desc": "Enemies Follow You But Don't Hurt You",
+      "code": "NNTKEE"
+    },
+    {
+      "desc": "Enemies Go Thru Stuff",
+      "code": "EYPTIO"
+    },
+    {
+      "desc": "Enemies Are Tricky!",
+      "code": "PNTKEE"
+    },
+    {
+      "desc": "Slow Mario. Enemies Can't Move",
+      "code": "OYLLEY"
+    },
+    {
+      "desc": "Goombas Melt When They Die",
+      "code": "ISGVGY"
+    },
+    {
+      "desc": "Goombas Have Shells",
+      "code": "SUYANT"
+    },
+    {
+      "desc": "Goombas Can Be Kicked Like Koopas",
+      "code": "NSIIEE"
+    },
+    {
+      "desc": "Extra Goombas",
+      "code": "YIGKIN"
+    },
+    {
+      "desc": "Grey Mario",
+      "code": "TIAEZT"
+    },
+    {
+      "desc": "Invisible Mario",
+      "code": "IOAOIO"
+    },
+    {
+      "desc": "Invisible Mario",
+      "code": "PIGNAX"
+    },
+    {
+      "desc": "Shadow Mario",
+      "code": "PGAETT"
+    },
+    {
+      "desc": "Move Left And Mario Teleports All The Way To The Left",
+      "code": "OZGLNN"
+    },
+    {
+      "desc": "Messed Up Jumping Mario",
+      "code": "EPPVVV"
+    },
+    {
+      "desc": "Orange Slice Thru Mario's Leg When He Jumps",
+      "code": "OOPVVV"
+    },
+    {
+      "desc": "Changes Mario's Colors",
+      "code": "POITON"
+    },
+    {
+      "desc": "Puzzle Rectangle Mario",
+      "code": "POITOY"
+    },
+    {
+      "desc": "Crazy Enemies & Mario",
+      "code": "EEITEN"
+    },
+    {
+      "desc": "Mario Can't Walk!",
+      "code": "EPTLLU"
+    },
+    {
+      "desc": "Mario Is Drunk!",
+      "code": "SSIAPE+PEGEIE"
+    },
+    {
+      "desc": "Mario Moves",
+      "code": "KIGLUY"
+    },
+    {
+      "desc": "Mario Is The Only One Who Can Move!",
+      "code": "AAATIO"
+    },
+    {
+      "desc": "Always Look Like Fire Mario",
+      "code": "IIAAZT"
+    },
+    {
+      "desc": "Color Blind Mario When He Gets A Mushroom",
+      "code": "SEYESO"
+    },
+    {
+      "desc": "Mario Has Clones Going Vertically",
+      "code": "TETVEY"
+    },
+    {
+      "desc": "Mario Looks Like He's Running To The Bathroom",
+      "code": "NAYYTE"
+    },
+    {
+      "desc": "Super Slow Mario",
+      "code": "SOYTEY"
+    },
+    {
+      "desc": "Weird Blocks & Coins",
+      "code": "STAEZX"
+    },
+    {
+      "desc": "Falling Coins",
+      "code": "GAAGGA"
+    },
+    {
+      "desc": "No Title Screen, Red Block?",
+      "code": "SUPEOT"
+    },
+    {
+      "desc": "Just Plain Weird",
+      "code": "PEAALE"
+    },
+    {
+      "desc": "Cut Off Numbers",
+      "code": "KYGATI"
+    },
+    {
+      "desc": "Split Numbers",
+      "code": "OZGATI"
+    },
+    {
+      "desc": "Numbers Galore!!!",
+      "code": "STAAXO"
+    },
+    {
+      "desc": "Can't See Your Lives",
+      "code": "KAAAEE"
+    },
+    {
+      "desc": "Slow-Mo Game",
+      "code": "KNZOKK"
+    },
+    {
+      "desc": "Blocks Look Like They Haven't Been Used After You Hit Them",
+      "code": "POPEOZ"
+    },
+    {
+      "desc": "Crazy Coins",
+      "code": "OPAAUN"
+    },
+    {
+      "desc": "Windy",
+      "code": "LLLLUY"
+    },
+    {
+      "desc": "New Jumping Effects",
+      "code": "EUYLNN"
+    },
+    {
+      "desc": "Weird Pipes You Can Climb On",
+      "code": "LUTPEA"
+    },
+    {
+      "desc": "Crazy Boxes",
+      "code": "LUTLUV"
+    },
+    {
+      "desc": "Strong Gravity For Everything Except Jumping / Flying Things",
+      "code": "PEAVYL"
+    },
+    {
+      "desc": "Boxes Turn Invisible When Touched",
+      "code": "LUTLUT"
+    },
+    {
+      "desc": "Mushrooms Don't Move",
+      "code": "LUGLUK"
+    },
+    {
+      "desc": "Bouncy Blocks",
+      "code": "POITOV"
+    },
+    {
+      "desc": "Break A Brick And It Will Cut In Half And Turn Over. (Weird!)",
+      "code": "EEALUV"
+    },
+    {
+      "desc": "Shoot A Fireball And The Graphics Will Change",
+      "code": "OEGULT"
+    },
+    {
+      "desc": "When You Break A Brick, You Fly Off The Screen, Coming Down A Few Seconds Later",
+      "code": "VIPLET"
+    },
+    {
+      "desc": "Fast-mo Game",
+      "code": "PAPEPE"
+    },
+    {
+      "desc": "Bubbles!!!",
+      "code": "UULEEP"
+    },
+    {
+      "desc": "Flashy. (Literally!)",
+      "code": "GKIAEP"
+    },
+    {
+      "desc": "Flashier",
+      "code": "AKIAEP"
+    },
+    {
+      "desc": "The Screen Moves Too Freakin' Slow!",
+      "code": "GEIZVY"
+    },
+    {
+      "desc": "Can't See Your Lives",
+      "code": "EAAAEA"
+    },
+    {
+      "desc": "The Box Still Looks Like It's There After You Hit It",
+      "code": "SXLASX"
+    },
+    {
+      "desc": "Mushrooms And Start LUG (Pun Intended!) Around",
+      "code": "LUGLUG"
+    },
+    {
+      "desc": "When You Hit Something, It Appears In The Sky",
+      "code": "UEZLEY"
+    },
+    {
+      "desc": "Things Fly Around",
+      "code": "OSLEXY"
+    },
+    {
+      "desc": "Green Letters",
+      "code": "AAAEEE"
+    },
+    {
+      "desc": "Glowing Coin Boxes",
+      "code": "OYLASX"
+    },
+    {
+      "desc": "Break A Block And Game Code Appears",
+      "code": "XXLASX"
+    },
+    {
+      "desc": "Scenes Change When You Move Left",
+      "code": "AEAZVY"
+    },
+    {
+      "desc": "Exploding Fireballs!",
+      "code": "STPTVI"
+    },
+    {
+      "desc": "Demo Starts Really Fast",
+      "code": "PLAEPO"
+    },
+    {
+      "desc": "Mushrooms Fly Away",
+      "code": "AUYTLY"
+    },
+    {
+      "desc": "Mario Flies Away Slowly When You Jump",
+      "code": "AAZULG"
+    },
+    {
+      "desc": "Mushroom Is A Different Color",
+      "code": "POTTTT"
+    },
+    {
+      "desc": "The First Mushroom Floats",
+      "code": "GETSUN"
+    },
+    {
+      "desc": "Rather Skippy",
+      "code": "POPZXY"
+    },
+    {
+      "desc": "Faster Enemies",
+      "code": "STAGXO"
+    },
+    {
+      "desc": "Jump And You Won't Come Down",
+      "code": "STPIKI"
+    },
+    {
+      "desc": "Boxes Rain When You Hit Them",
+      "code": "OEILET"
+    },
+    {
+      "desc": "Can't Go Down Bonus Pipes",
+      "code": "LUTPOE"
+    },
+    {
+      "desc": "A Vine Grows Out Of The Ground",
+      "code": "EOPOPO"
+    },
+    {
+      "desc": "No Sound When You Jump And Weird Music",
+      "code": "TSANLL"
+    },
+    {
+      "desc": "Weird Sound When You Jump",
+      "code": "VVTYYL"
+    },
+    {
+      "desc": "Music Has Punchier Drums",
+      "code": "VGTYIU"
+    },
+    {
+      "desc": "Cloud Worls. Turns All Blocks Into Clouds",
+      "code": "GKAPGG"
+    },
+    {
+      "desc": "World H-1",
+      "code": "AOAPYA"
+    },
+    {
+      "desc": "World I-1",
+      "code": "POAPYA"
+    },
+    {
+      "desc": "World J-1",
+      "code": "ZOAPYA"
+    },
+    {
+      "desc": "World K-1",
+      "code": "LOAPYA"
+    },
+    {
+      "desc": "World L-1",
+      "code": "GOAPYA"
+    },
+    {
+      "desc": "World M-1",
+      "code": "IOAPYA"
+    },
+    {
+      "desc": "World N-1",
+      "code": "TOAPYA"
+    },
+    {
+      "desc": "World 0-1",
+      "code": "YOAPYA"
+    },
+    {
+      "desc": "World X-1",
+      "code": "AXAPYA"
+    },
+    {
+      "desc": "World -1 (Minus World)",
+      "code": "LXAPYA"
+    },
+    {
+      "desc": "Water Music All The Time",
+      "code": "KAAPYO"
+    },
+    {
+      "desc": "Dungeon Music All The Time",
+      "code": "PTAPYP"
+    },
+    {
+      "desc": "Star Man Music All The Time",
+      "code": "TPAPYO"
+    },
+    {
+      "desc": "Mario Modifier",
+      "code": "0756:00"
+    },
+    {
+      "desc": "Invincible (Walk Through Enemies)",
+      "code": "079E:06"
+    },
+    {
+      "desc": "Invincible (Kill Enemies On Contact)",
+      "code": "079F:24"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "0787:12"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "075A:09"
+    },
+    {
+      "desc": "Mario Modifier",
+      "code": "0754:00+0756:00"
+    },
+    {
+      "desc": "Invincible (Kill Enemies On Contact)",
+      "code": "079F:18"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "0787:0C"
+    },
+    {
+      "desc": "Coins Modifier (Tens Digit)",
+      "code": "07ED:00"
+    },
+    {
+      "desc": "Coins Modifier (Seconds Digit)",
+      "code": "07EE:00"
+    },
+    {
+      "desc": "Level Text Modifier (i.e. 1-1, 1-2)",
+      "code": "075C:00"
+    },
+    {
+      "desc": "Always Have Starman Power",
+      "code": "079F:20"
+    },
+    {
+      "desc": "Max High Score (Tens)",
+      "code": "07DC:09"
+    },
+    {
+      "desc": "Max High Score (Hundreds)",
+      "code": "07DB:09"
+    },
+    {
+      "desc": "Max High Score (Thousands)",
+      "code": "07DA:09"
+    },
+    {
+      "desc": "Max High Score (Millions)",
+      "code": "07D9:09"
+    },
+    {
+      "desc": "Max High Score (Billions)",
+      "code": "07D8:09"
+    },
+    {
+      "desc": "Max High Score (Trillions)",
+      "code": "07D7:09"
+    },
+    {
+      "desc": "Max High Score (Ones)",
+      "code": "0319:09"
+    },
+    {
+      "desc": "Max High Score (Tens)",
+      "code": "0318:09"
+    },
+    {
+      "desc": "Max High Score (Hundreds)",
+      "code": "0317:09"
+    },
+    {
+      "desc": "Max High Score (Thousands)",
+      "code": "0316:09"
+    },
+    {
+      "desc": "Max High Score (Ten Thousands)",
+      "code": "0315:09"
+    },
+    {
+      "desc": "Max High Score (Hundred Thousands)",
+      "code": "0314:09"
+    },
+    {
+      "desc": "Walk On Clouds",
+      "code": "APEPTSEA"
+    },
+    {
+      "desc": "Outside Backgrounds Are Present In Underground Places",
+      "code": "ALOPPGEY"
+    },
+    {
+      "desc": "All Backgrounds Replaced With Water",
+      "code": "XZSPIKVZ+PASPTGPG+XTSPYGYE"
+    },
+    {
+      "desc": "All Backgrounds Replaced With Castle Walls",
+      "code": "XZSPIKVZ+ZASPTGPG+XTSPYGYE"
+    },
+    {
+      "desc": "Backgrounds Removed From Watery Areas",
+      "code": "XZSPIKVZ+AASPTGPG+XTSPYGYE"
+    },
+    {
+      "desc": "Every Enemy Killed Gives 1Up",
+      "code": "0110:0B+0111:0B+0112:0B+0113:0B+0114:0B"
+    },
+    {
+      "desc": "Power-ups Give 1Ups",
+      "code": "0115:0B"
+    },
+    {
+      "desc": "Every Enemy Killed with Shell Gives 1Up",
+      "code": "0125:08+0126:08+0127:08+0128:08+0129:08"
+    },
+    {
+      "desc": "Always Underground BGM",
+      "code": "00F4:04"
+    },
+    {
+      "desc": "Always Castle BGM",
+      "code": "00F4:08"
+    },
+    {
+      "desc": "Always Overworld BGM",
+      "code": "00F4:01"
+    },
+    {
+      "desc": "Always Star BGM",
+      "code": "00F4:40"
+    },
+    {
+      "desc": "Disable Audio",
+      "code": "ENSYLZEI"
+    },
+    {
+      "desc": "Always Walk Slowly (Right Direction)",
+      "code": "EYVUAIEI"
+    },
+    {
+      "desc": "Walk On Air (After Jumping)",
+      "code": "EYESNIEI"
+    },
+    {
+      "desc": "Walk On Air After Jumping (alt)",
+      "code": "ESXIUYEY"
+    },
+    {
+      "desc": "Air Bubbles Come Out Of Mario",
+      "code": "EYNLPTEI"
+    },
+    {
+      "desc": "Always Walk Slowly",
+      "code": "EIULPIEY"
+    },
+    {
+      "desc": "No Enemies",
+      "code": "EYKKLPEI"
+    },
+    {
+      "desc": "Less Enemies",
+      "code": "ENOGAPEI"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "EISLZYEY"
+    },
+    {
+      "desc": "Start Off As Big Mario And Mushrooms Make You Small (Visually Only)",
+      "code": "ESOYGAEY"
+    },
+    {
+      "desc": "Blocks Turn Invisible After Hitting Them",
+      "code": "ESVLETEY"
+    },
+    {
+      "desc": "Enemies Are Bullet Bill",
+      "code": "ENKTEAEI"
+    },
+    {
+      "desc": "Enemies Look Like Spring Boards",
+      "code": "ENSTNAEI"
+    },
+    {
+      "desc": "Enemies Are Upside Down",
+      "code": "ENVVOAEI"
+    },
+    {
+      "desc": "Jump Like You're Swimming",
+      "code": "ENNVSYEI"
+    },
+    {
+      "desc": "Enemies Walk Thru Objects And Walk On Air",
+      "code": "ENKISYEI"
+    },
+    {
+      "desc": "Enemies Fall Thru The Floor",
+      "code": "ENEKEZEI"
+    },
+    {
+      "desc": "Jump Like You're Crouching",
+      "code": "EYEYGAEI"
+    },
+    {
+      "desc": "Automatically Jump On Enemies (Alt)",
+      "code": "ASNSSAEI"
+    },
+    {
+      "desc": "Jumping On Enemies Are Worth 1000 Points",
+      "code": "ENOIKPEI"
+    },
+    {
+      "desc": "Clouds, Trees, Fences In Underground Stages; Clear Skys On Stages That Normally Have Clouds, Trees, Fences",
+      "code": "EIOPPGEY"
+    },
+    {
+      "desc": "The Ground Is Clouds",
+      "code": "ESEPGGEY"
+    },
+    {
+      "desc": "Breakable Blocks Are Clouds",
+      "code": "EIUPKZEY"
+    },
+    {
+      "desc": "No Enemies (Alt)",
+      "code": "ESVGLPEY"
+    },
+    {
+      "desc": "Enemies Are Glitchy Looking Bowsers",
+      "code": "ESNTSAEY"
+    },
+    {
+      "desc": "Enemies Are Upside Down (Alt)",
+      "code": "EIVTNZEY"
+    },
+    {
+      "desc": "Powerups Don't Fall",
+      "code": "ESVSKYEY"
+    },
+    {
+      "desc": "Can Continue Jumping On A Squished Enemy (Easy 1ups)",
+      "code": "ESXSOAEY"
+    },
+    {
+      "desc": "Jumping On An Enemy Gives You Points, But Does Not Kill Them",
+      "code": "ESETGAEY"
+    },
+    {
+      "desc": "Powerups Don't Move",
+      "code": "ENOLUGEI"
+    },
+    {
+      "desc": "Some Powerups Don't Move",
+      "code": "ESOLNGEY"
+    },
+    {
+      "desc": "Powerups Move Slower After Bouncing Off Of An Object",
+      "code": "EYUTIPEI"
+    },
+    {
+      "desc": "Little Mario Wears Fire Suit, Fire Mario Wears Normal Suit",
+      "code": "EYEAZTEI"
+    },
+    {
+      "desc": "Black Background Is Blue Sky",
+      "code": "EYOEGTEI"
+    },
+    {
+      "desc": "Enemies Are Headless Bowser",
+      "code": "EYNOLAEI"
+    },
+    {
+      "desc": "Swim On Land",
+      "code": "EYSPAPEI"
+    },
+    {
+      "desc": "Look Like Luigi Until You Get Firepower",
+      "code": "ESNEPIEY"
+    },
+    {
+      "desc": "Enemies That Fall From One Platform To A Lower One Die",
+      "code": "ENEVTAEI"
+    },
+    {
+      "desc": "Walk Thru Enemies",
+      "code": "EYOIVPEI"
+    },
+    {
+      "desc": "Walk Thru Enemies (alt)",
+      "code": "EYXSNPEI"
+    },
+    {
+      "desc": "Automatically Jump On Enemies",
+      "code": "EYOIOPEI"
+    },
+    {
+      "desc": "Invincibility Star Stay's Put",
+      "code": "ENOUNGEI"
+    },
+    {
+      "desc": "Fireballs Don't Bounce",
+      "code": "ENSVTPEI"
+    },
+    {
+      "desc": "Invincibility Star Does Not Bounce, Firepower Plant Moves Like Mushroom Powerups",
+      "code": "ESOUUGEY"
+    },
+    {
+      "desc": "Invincibility Star Moves Horizontally",
+      "code": "EINTGPEY"
+    },
+    {
+      "desc": "Invincibility Stars Give Extra Live Instead",
+      "code": "EIOIKAEY"
+    },
+    {
+      "desc": "Automatically Shoot Fireballs (Unless holding B)",
+      "code": "EIXUYTEY"
+    },
+    {
+      "desc": "Enemies And Powerups Can't Move",
+      "code": "EIOTIPEY"
+    },
+    {
+      "desc": "When Hit As Big Mario, You Die Instead Of Shrink",
+      "code": "EIUIKPEY"
+    },
+    {
+      "desc": "Can Continue Jumping On A Squished Enemy (alt)",
+      "code": "ESUISAEY"
+    },
+    {
+      "desc": "Wrong Pipe Leads To Next Area In World 8-4",
+      "code": "NTXPUTOT+KTUPUTOV+ZAKPXTIT"
+    },
+    {
+      "desc": "Power Ups Don't Go Away",
+      "code": "PGAIEA"
+    },
+    {
+      "desc": "All Enemies Throw Hammers",
+      "code": "AXATAA"
+    },
+    {
+      "desc": "Sliding Mario",
+      "code": "AOANAA"
+    },
+    {
+      "desc": "Have Fire Mario Suit Always (Can't shoot fire balls)",
+      "code": "VAAAAT"
+    },
+    {
+      "desc": "No Enemies",
+      "code": "AXIGAO"
+    },
+    {
+      "desc": "Bowser Shots On All Stages",
+      "code": "EOAGKA"
+    },
+    {
+      "desc": "Power Ups Give 1-Ups As Well",
+      "code": "OPAIKA"
+    },
+    {
+      "desc": "Power Ups Don't Go Away So You Can Get a Fire Flower On a Mushroom",
+      "code": "PGAIEA"
+    },
+    {
+      "desc": "Blue And Orange Worlds",
+      "code": "PXGAAI"
+    },
+    {
+      "desc": "The Sky Is Black",
+      "code": "PAGAAT"
+    },
+    {
+      "desc": "The Sky Is Red",
+      "code": "GAGAAT"
+    },
+    {
+      "desc": "Invincibility (Starman effect)",
+      "code": "AEESVATA"
+    },
+    {
+      "desc": "Multi-Jump",
+      "code": "SEEULGSZ"
+    },
+    {
+      "desc": "Mostly No Pits",
+      "code": "ESOOULEY"
+    },
+    {
+      "desc": "Stay Big Mario after being hit",
+      "code": "OZVLLXPK+AAVLGZPA+SZUIVOSE"
+    },
+    {
+      "desc": "High-Jump",
+      "code": "AEEENVZG"
+    },
+    {
+      "desc": "Moon-Jump",
+      "code": "AEVLTGKU"
+    },
+    {
+      "desc": "Super-jump from a standing start only",
+      "code": "APXLGGAX"
+    },
+    {
+      "desc": "Super-jump from running only",
+      "code": "TPXLTKTP"
+    },
+    {
+      "desc": "Super-jump from turbo running only",
+      "code": "GPXUAKAZ"
+    },
+    {
+      "desc": "Mega-jump from a standing start only",
+      "code": "APXLGGAZ"
+    },
+    {
+      "desc": "Mega-jump from running only",
+      "code": "APXLTKTP"
+    },
+    {
+      "desc": "Mega-jump from turbo running only",
+      "code": "GAXUAKAZ"
+    },
+    {
+      "desc": "Moon Gravity from a standing start",
+      "code": "YAXULGAY"
+    },
+    {
+      "desc": "Moon Gravity from a running start",
+      "code": "YAXUIGAT"
+    },
+    {
+      "desc": "Moon Gravity from turbo running only",
+      "code": "YAXUYGEP"
+    },
+    {
+      "desc": "Walk thru pipes and blocks",
+      "code": "GISIVYAA"
+    },
+    {
+      "desc": "Control Mario in entrances that lead to underground",
+      "code": "SNEULAVT"
+    },
+    {
+      "desc": "Night Mode",
+      "code": "ASVETANO"
+    },
+    {
+      "desc": "Start with 5 lives - both players",
+      "code": "GAVOZAZA"
+    },
+    {
+      "desc": "Start with 7 lives - both players",
+      "code": "TAVOZAZA"
+    },
+    {
+      "desc": "Start with 9 lives - both players",
+      "code": "AAVOZAZE"
+    },
+    {
+      "desc": "Start on World 2",
+      "code": "YSEOPAEX+YEEOZALA+PEEPYENY"
+    },
+    {
+      "desc": "Start on World 3",
+      "code": "YSEOPAEX+YEEOZALA+ZEEPYENY"
+    },
+    {
+      "desc": "Start on World 4",
+      "code": "YSEOPAEX+YEEOZALA+LEEPYENY"
+    },
+    {
+      "desc": "Start on World 5",
+      "code": "YSEOPAEX+YEEOZALA+GEEPYENY"
+    },
+    {
+      "desc": "Start on World 6",
+      "code": "YSEOPAEX+YEEOZALA+IEEPYENY"
+    },
+    {
+      "desc": "Start on World 7",
+      "code": "YSEOPAEX+YEEOZALA+TEEPYENY"
+    },
+    {
+      "desc": "Start on World 8",
+      "code": "YSEOPAEX+YEEOZALA+YEEPYENY"
+    },
+    {
+      "desc": "Start on Minus World",
+      "code": "YSEOPAEX+YEEOZALA+LXEPYENY"
+    },
+    {
+      "desc": "Enable Music And Sound Effects On the Title Screen",
+      "code": "AOSYLZEI+AUNPAAEY"
+    },
+    {
+      "desc": "Fireballs Pierce Through Enemies",
+      "code": "SZXIIYSP"
+    },
+    {
+      "desc": "Landscape & Background Are Hidden Experts Only",
+      "code": "AVUEEAKA"
+    },
+    {
+      "desc": "Suspended & Glide Through Mid-Air",
+      "code": "001D:00"
+    },
+    {
+      "desc": "Auto Fire",
+      "code": "KGULPTIX"
+    },
+    {
+      "desc": "Lives Screen Shows a Screen Shot of the Stage",
+      "code": "PVEELIAX"
+    },
+    {
+      "desc": "Game Boy Mode",
+      "code": "XVOELAYE+YOSAKGAL"
+    },
+    {
+      "desc": "enemies that are flattened stay on screen and slide",
+      "code": "UTNKNZSU"
+    },
+    {
+      "desc": "Show Hidden Blocks",
+      "code": "PSVUUIAT+PSVUXSYI"
+    },
+    {
+      "desc": "Coins Worth 10",
+      "code": "ZENUNLPE"
+    },
+    {
+      "desc": "Play as Luigi",
+      "code": "OXNEPIEN+ZYVAEEZY+ZYVASALI+ZIOEGGLS"
+    },
+    {
+      "desc": "Don't Fall From Walking Or Running Off Platforms, Pipes or Blocks",
+      "code": "ALNSKGEY"
+    },
+    {
+      "desc": "All Powerups  Become ??",
+      "code": "0039:00"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SXSOPOVK"
+    },
+    {
+      "desc": "Revert To Super Mario After Being Hit As Fire Mario",
+      "code": "VGUIVOSE+GGVLAXSX+IGVLPZGI+KYVLZZYE+SZKYSGXE+TIKYVKGZ+YAKYNGGA+EYKNEGGA+IAKNOGZZ+SZKNXGGE+GIKNUGGA+YAKNKGKA+EYKNSKGP+LAKNVGNA+GGKNNGTX+LTSYEKZZ+XLSYOGTZ+SASYXGKE+LASYUGGX+YASYKKAZ+OZSYSGGX+PASYVGEA+SASYNGZZ+IPSNEGAE+OZSNOKKO+OGSNXGIE+SASNUGKO+YGSNKGIA+YASNSKIA+ATSNVKNP+AASNNKTP+AAVYEKKP+AAVYOKEP+AAVYXKSP+AAVYUGXA+AAVYKGZZ+AAVYSGGA+AAVYVGGA+AAVYNKGP+AAVNEGGA+AAVNOGGA+AAVNXGKA+AAVNUGGP+AAVNKGVA+AAVNSKTP+AAVNVGEA+AAVNNGTP+AANYEGEA+AANYOGGP+LGENVOPS+LGOYOOPS"
+    },
+    {
+      "desc": "Invincibility Star Powerup Lasts 1.5x Longer",
+      "code": "ILOINALZ"
+    },
+    {
+      "desc": "Invincibility Star Powerup Lasts 2x Longer",
+      "code": "TGOINALZ"
+    },
+    {
+      "desc": "Invincibility Star Powerup Lasts 3x Longer",
+      "code": "PTOINALX"
+    },
+    {
+      "desc": "Temporary Invincibility After Being Hit Lasts 2x Longer",
+      "code": "APUSXOAA"
+    },
+    {
+      "desc": "Temporary Invincibility After Being Hit Lasts 3x Longer",
+      "code": "APUSXOAE"
+    },
+    {
+      "desc": "Temporary Invincibility After Being Hit Lasts 5x Longer",
+      "code": "AZUSXOAE"
+    },
+    {
+      "desc": "Mushroom And Fire Flower Powerups Also Give Invincibility Star Powerup",
+      "code": "AAOIOETA+XTOSNAAV"
+    },
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every 10 Coins",
+      "code": "ZAOLUGGV+AZOUVKOZ+TPOUNGAG+EIXLEGSE+XTXLOKVN"
+    },
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every 25 Coins",
+      "code": "PPOLUGGV+AZOUVKOZ+TPOUNGAG+EIXLEGSE+XTXLOKVN"
+    },
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every 50 Coins",
+      "code": "ZLOLUGGT+AZOUVKOZ+TPOUNGAG+EIXLEGSE+XTXLOKVN"
+    },
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every 75 Coins",
+      "code": "LGOLUGGV+AZOUVKOZ+TPOUNGAG+EIXLEGSE+XTXLOKVN"
+    },
+    {
+      "desc": "Enemies Walk Away From Pits",
+      "code": "PNNVPEOU"
+    },
+    {
+      "desc": "Disable Fireball Object Collision",
+      "code": "SUNTTPSP"
+    },
+    {
+      "desc": "Give Clouds, Large And Small Mountains, etc Brick Block Properties",
+      "code": "XVVPIKPX+XVVPTGEK+EXVOPKZZ"
+    },
+    {
+      "desc": "Mario Has a Weird Jump Descent (Slightly Slower; Affects Enemies As Well)",
+      "code": "OZEKYASX"
+    },
+    {
+      "desc": "Fireball Powerup Looks Like Luigi (Affects Both Players)",
+      "code": "POVAZITO"
+    },
+    {
+      "desc": "Fireballs Are Green (Overworld)",
+      "code": "ZOVAKGTO+PXVAVGYX"
+    },
+    {
+      "desc": "Fireballs Are Green (Underground)",
+      "code": "ZPEEEITO+PZEEXIYX"
+    },
+    {
+      "desc": "Fireballs Are Green (Castles)",
+      "code": "ZPXEKITO+PZXEVIYX"
+    },
+    {
+      "desc": "Fireballs Are Green (Underwater)",
+      "code": "ZOKAEGTO+PXKAXGYX"
+    },
+    {
+      "desc": "Cloud Scenary (Overworlds Only)",
+      "code": "SAXPLKPN"
+    },
+    {
+      "desc": "Fence Scenary (Overworlds Only)",
+      "code": "ITXPLKPN"
+    },
+    {
+      "desc": "Jump Through Blocks, etc Instead Of Hitting (Only On First Life)",
+      "code": "ZAVPZAPA"
+    },
+    {
+      "desc": "Jump Through Blocks, etc Instead Of Hitting",
+      "code": "GSNAAZYI+GINOTPYI+GIVOIZYI"
+    },
+    {
+      "desc": "Pogo-Stick Mario And Luigi (You Can Only Move By Jumping)",
+      "code": "GGVLLLAX"
+    },
+    {
+      "desc": "Red Koopas Don't Fall From Walking Or Running Off Platforms, Pipes Or Blocks",
+      "code": "EKVTZASL"
+    },
+    {
+      "desc": "Enemies Don't Fall From Walking Or Running Off Platforms, Pipes Or Blocks",
+      "code": "GXNVPEOU"
+    },
+    {
+      "desc": "Mountains Overhead Replaces Scenary",
+      "code": "EZXOPKXX"
+    },
+    {
+      "desc": "Sprite Palette 1",
+      "code": "LEXYPZGA"
+    },
+    {
+      "desc": "Sprite Palette 2",
+      "code": "AEXYPZGE"
+    },
+    {
+      "desc": "All Sprites Share Mario's Palette And Are Behind The Scenary",
+      "code": "TEXYPZGA"
+    },
+    {
+      "desc": "Thin Sprites And Mario",
+      "code": "TEUYYXAA"
+    },
+    {
+      "desc": "Ultra Thin Sprites And Mario",
+      "code": "IEUYYXAA"
+    },
+    {
+      "desc": "Paper Mario Mode",
+      "code": "IEUYYXAA"
+    },
+    {
+      "desc": "Sliced-in Half Sprites And Mario",
+      "code": "PEUYYXAE"
+    },
+    {
+      "desc": "Far Apart Sprites And Mario",
+      "code": "AOUYYXAA"
+    },
+    {
+      "desc": "Ultra Far Apart Sprites And Mario",
+      "code": "TOUYYXAA"
+    },
+    {
+      "desc": "Player Can Swim Higher",
+      "code": "VYEULIAE"
+    },
+    {
+      "desc": "Flashing with random invincibility",
+      "code": "SPKZONSX"
+    },
+    {
+      "desc": "Multiple Coin Blocks Act As Standard Coin Blocks And Give Only 1 Coin",
+      "code": "SLUUOSSX"
+    },
+    {
+      "desc": "Multiple Coin Blocks Give Infinite Coins",
+      "code": "SAUUOSSX"
+    },
+    {
+      "desc": "All Breakable Bricks Are Deleted",
+      "code": "OZXOVXKX+AAXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Invisible Solid Blocks",
+      "code": "OZXOVXKX+LZXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Flagpole Bases",
+      "code": "OZXOVXKX+GZXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Ground",
+      "code": "OZXOVXKX+GIXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Regular Brick Powerup Boxes",
+      "code": "OZXOVXKX+IIXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Regular Brick Vine Boxes",
+      "code": "OZXOVXKX+TIXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Regular Brick Starman Boxes",
+      "code": "OZXOVXKX+YIXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Regular Brick Multiple Coin Boxes",
+      "code": "OZXOVXKX+AIXONXTK+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Regular Brick 1-up Boxes",
+      "code": "OZXOVXKX+PIXONXTK+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Unused Brick Powerup Boxes",
+      "code": "OZXOVXKX+ZIXONXTK+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Unused Brick Vine Boxes",
+      "code": "OZXOVXKX+LIXONXTK+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Unused Brick Starman Boxes",
+      "code": "OZXOVXKX+GIXONXTK+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Unused Brick Multiple Coin Boxes",
+      "code": "OZXOVXKX+IIXONXTK+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Unused Brick 1Up Boxes",
+      "code": "OZXOVXKX+TIXONXTK+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Staircase Blocks",
+      "code": "OZXOVXKX+PTXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Bonus Room Clouds",
+      "code": "OZXOVXKX+EAXONXTK+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are ? Coin Blocks",
+      "code": "OZXOVXKX+EGXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are ? Powerup Blocks",
+      "code": "OZXOVXKX+OGXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Coins",
+      "code": "OZXOVXKX+XGXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "All Breakable Bricks Are Axes",
+      "code": "OZXOVXKX+SGXONXTG+XTUPEZYE"
+    },
+    {
+      "desc": "Coins, Question Mark Blocks All Flash Random Palettes",
+      "code": "PZXENXOK"
+    },
+    {
+      "desc": "Coins, Question Mark Blocks All Flash And Extra Step To Black",
+      "code": "EGXENXOG"
+    },
+    {
+      "desc": "Extend Coins, Question Mark Block Flashing Palette To The Maximum Of 28",
+      "code": "GPUAEZTE"
+    },
+    {
+      "desc": "Grab a Coin To Change The Level Palette To Ocean",
+      "code": "PASEKZTA"
+    },
+    {
+      "desc": "Grab a Coin To Change The Level Palette To Night Overworld",
+      "code": "ZASEKZTA"
+    },
+    {
+      "desc": "Grab a Coin To Change The Level Palette To Underground",
+      "code": "LASEKZTA"
+    },
+    {
+      "desc": "Grab a Coin To Change The Level Palette To Castle And Snowy Night Overworld",
+      "code": "GASEKZTA"
+    },
+    {
+      "desc": "Grab a Coin To Change The level Palette To Snowy Day Area",
+      "code": "PASEKZTE"
+    },
+    {
+      "desc": "Grab a Coin To Change The Level Palette To Snowy Night Area",
+      "code": "ZASEKZTE"
+    },
+    {
+      "desc": "Grab a Coin To Change The Level Palette To Vrown Overworld",
+      "code": "LASEKZTE"
+    },
+    {
+      "desc": "Coins, Question Mark Blocks Are Black",
+      "code": "PZOAUZKY"
+    },
+    {
+      "desc": "Coins, Question Mark Blocks Are Inverted",
+      "code": "IAXEVZTA"
+    },
+    {
+      "desc": "After Falling In A Hole, You Appear From Above",
+      "code": "OXNLUYSO"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "VPKUGUOE+AENTXTAG"
+    },
+    {
+      "desc": "Pipes You Can't Go Down Contain Piranha Plants",
+      "code": "AEYOOA"
+    },
+    {
+      "desc": "Improve Power Glove Control",
+      "code": "ZASLPKIO+EASLLGLA"
+    },
+    {
+      "desc": "Soinc speed",
+      "code": "AOYLZI"
+    },
+    {
+      "desc": "Walk Behind Scenery",
+      "code": "03C4:20"
+    },
+    {
+      "desc": "Scrolling Always Enabled",
+      "code": "0732:00"
+    },
+    {
+      "desc": "Always Fire Power - Start Big (Filled Request)",
+      "code": "AAZUZT+AAAALT+ZEZAGI+SXLAPS+GSAOYP+AEZEPI+GSZELI"
+    },
+    {
+      "desc": "Don't Get Stuck At The Top Of The Screen",
+      "code": "AAYLYA+AAYOGP"
+    },
+    {
+      "desc": "Slower Running",
+      "code": "AZSLPIAK"
+    },
+    {
+      "desc": "Faster Jumps",
+      "code": "AUSUPLAZ"
+    },
+    {
+      "desc": "Don't Lose Power-Ups When Hit",
+      "code": "SXULKNSE"
+    },
+    {
+      "desc": "Every Power-Up Acts As A Star",
+      "code": "ALASKA"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SXIOPO"
+    },
+    {
+      "desc": "Higher Jumping From Turbo Running Only",
+      "code": "GPZUAG"
+    },
+    {
+      "desc": "Extra High Jumping From Turbo Running Only",
+      "code": "GAZUAG"
+    },
+    {
+      "desc": "Invincibility and always able to fire",
+      "code": "000756FF"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00075A02"
+    },
+    {
+      "desc": "Freeze Timer",
+      "code": "0007FA04"
+    },
+    {
+      "desc": "Always have 99 Coins",
+      "code": "0007EE99"
+    },
+    {
+      "desc": "Start on World 1-2",
+      "code": "00076002"
+    },
+    {
+      "desc": "Different World",
+      "code": "0000E8AC"
+    }
+  ],
+  "Super Mario Bros 2 (PT-BR)": [
+    {
+      "desc": "Birdo Spits Invincibility Stars",
+      "code": "IGEPYETP"
+    },
+    {
+      "desc": "Birdo Spits Koopa Shells",
+      "code": "ILEPYETP"
+    },
+    {
+      "desc": "Birdo Spits Explosions",
+      "code": "OAEPYETO"
+    },
+    {
+      "desc": "Snifit Spits Eggs",
+      "code": "TPEPZVLO"
+    },
+    {
+      "desc": "Snifit Spits Flying Carpets",
+      "code": "PGEPZVLP"
+    },
+    {
+      "desc": "Snifit Spits Invincibility Stars",
+      "code": "IGEPZVLP"
+    },
+    {
+      "desc": "Slower Enemies x1",
+      "code": "XTSOUVZE"
+    },
+    {
+      "desc": "Slower Enemies x2",
+      "code": "XTSOUVZE+XTSOKVZE"
+    },
+    {
+      "desc": "Slower Enemies x3",
+      "code": "XTSOUVZE+XTSOKVZE+XTSOSVZE"
+    },
+    {
+      "desc": "Slower Enemies x4",
+      "code": "XTSOUVZE+XTSOKVZE+XTSOSVZE+XTSOVVZE"
+    },
+    {
+      "desc": "Phanto Is Never Aroused When You're Holding a Key",
+      "code": "EIXPPLSZ"
+    },
+    {
+      "desc": "Birdo Spits Out Small Vegetables",
+      "code": "ZLEPYETP"
+    },
+    {
+      "desc": "Skip Bonus Chance",
+      "code": "VNNTZYTE+LONTGYLA"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "SZNESXVK"
+    },
+    {
+      "desc": "Infinite life meter (except if you hit a spike)",
+      "code": "GZELVXSE"
+    },
+    {
+      "desc": "Quick pick up",
+      "code": "SXUASXOU"
+    },
+    {
+      "desc": "Special \"squat\" high jumps",
+      "code": "AEUEKKGL"
+    },
+    {
+      "desc": "Princess has mega-float",
+      "code": "PPXAOIAA"
+    },
+    {
+      "desc": "Princess has mega-float and lunar descent",
+      "code": "PAXAOIAA"
+    },
+    {
+      "desc": "Super moonjumps for Mario",
+      "code": "PESEGLGA"
+    },
+    {
+      "desc": "Super moonjumps for Toad",
+      "code": "PENALLGA"
+    },
+    {
+      "desc": "Super moonjumps for Princess",
+      "code": "PAXAPGGA"
+    },
+    {
+      "desc": "Speed up enemies",
+      "code": "AEXALGZA"
+    },
+    {
+      "desc": "Strong Tryclyde",
+      "code": "YAXXIYZE"
+    },
+    {
+      "desc": "Strong Fryguy",
+      "code": "YAVXVGGE"
+    },
+    {
+      "desc": "Strong Clawgrip",
+      "code": "YAEXTPGE"
+    },
+    {
+      "desc": "Can Carry Enemies & Items Through Doorways",
+      "code": "EOXPLPEY"
+    },
+    {
+      "desc": "Can Climb Vines While Holding Enemies & Items",
+      "code": "EPUPIAEI"
+    },
+    {
+      "desc": "All Enemies Die In Your Presence",
+      "code": "ESEPXPEY"
+    },
+    {
+      "desc": "Lifted Enemies/Items Produce Flying Carpets",
+      "code": "ENKUOAEI"
+    },
+    {
+      "desc": "No Gravity for Enemies and Items",
+      "code": "AOEAGIAL"
+    },
+    {
+      "desc": "Hit Anywhere",
+      "code": "EVOUYVPZ+AEXLATGA+GKXLZVIG"
+    },
+    {
+      "desc": "Super Turbo Running",
+      "code": "XVVANSZK+XVNEXSZV"
+    },
+    {
+      "desc": "Permanent Turbo Running",
+      "code": "AEVAVIIA+AENEEITA"
+    },
+    {
+      "desc": "Super Fast Run For Mario",
+      "code": "AXSETUAO+ESVAPUEV"
+    },
+    {
+      "desc": "Super Fast Run For Luigi",
+      "code": "AZEEGKAO+EIEEYKEV"
+    },
+    {
+      "desc": "Fast Run For Toad",
+      "code": "AXNAIUAO+ESNEAUEV"
+    },
+    {
+      "desc": "Super Fast Run For Princess",
+      "code": "AZXALKAO+EIXATKEV"
+    },
+    {
+      "desc": "Super Speed Enemies",
+      "code": "AXNAZSAA+EVNALSEY"
+    },
+    {
+      "desc": "Shells Bounce Off Of Obstacles",
+      "code": "SXUPEAKU+VOUPOAOO"
+    },
+    {
+      "desc": "Flying Carpets Last Forever",
+      "code": "SLNZZLVI"
+    },
+    {
+      "desc": "Every 2nd Large Vegetable That You Pull Up Will Be A Stop Watch (Instead of Every 5th)",
+      "code": "ZESOTAIA"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A POW Block",
+      "code": "ZLVOLAZU"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Stop Watch",
+      "code": "TGVOLAZL"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Heart",
+      "code": "AAVOLAZL"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Coin",
+      "code": "TLVOLAZL"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Mushroom",
+      "code": "YLVOLAZU"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A 1-Up Mushroom",
+      "code": "AGVOLAZL"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Key",
+      "code": "ILVOLAZU"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Sub-Space Door",
+      "code": "GLVOLAZU"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Bomb",
+      "code": "YLVOLAZL"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Star",
+      "code": "IGVOLAZL"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Turtle Shell",
+      "code": "ILVOLAZL"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Red Log",
+      "code": "LLVOLAZU"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Spark",
+      "code": "ALVOLAZL"
+    },
+    {
+      "desc": "Pulling Up Small Vegetables Gives You A Mushroom Block",
+      "code": "PLVOLAZU"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A POW Block",
+      "code": "ZLVOZALU"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Heart",
+      "code": "AAVOZALL"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Coin",
+      "code": "TLVOZALL"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Mushroom",
+      "code": "YLVOZALU"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A 1-Up Mushroom",
+      "code": "AGVOZALL"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Sub-Space Door",
+      "code": "GLVOZALU"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Bomb",
+      "code": "YLVOZALL"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Star",
+      "code": "IGVOZALL"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Turtle Shell",
+      "code": "ILVOZALL"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Red Log",
+      "code": "LLVOZALU"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Spark",
+      "code": "ALVOZALL"
+    },
+    {
+      "desc": "Pulling Up Large Vegetables Gives You A Mushroom Block",
+      "code": "PLVOZALU"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a POW Block",
+      "code": "ZUVPZATK"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a Heart",
+      "code": "AEVPZATG"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a Coin",
+      "code": "TUVPZATG"
+    },
+    {
+      "desc": "Stop Watch from 5th Large Vegetable Becomes a Mushroom",
+      "code": "YUVPZATK"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a 1-up Mushroom",
+      "code": "AKVPZATG"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a Key",
+      "code": "IUVPZATK"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a Sub-Space Door",
+      "code": "GUVPZATK"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a Bomb",
+      "code": "YUVPZATG"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a Star",
+      "code": "IKVPZATG"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a Turtle Shell",
+      "code": "IUVPZATG"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes A Red Log",
+      "code": "LUVPZATK"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a Spark",
+      "code": "AUVPZATG"
+    },
+    {
+      "desc": "Stop Watch From 5th Large Vegetable Becomes a Mushroom Block",
+      "code": "PUVPZATK"
+    },
+    {
+      "desc": "Lift Objects Quickly",
+      "code": "EUEEOZEI"
+    },
+    {
+      "desc": "Grass Always Produces Coins",
+      "code": "EUSPGPEI"
+    },
+    {
+      "desc": "Stay In Sub-Space Longer Than 1 Minute",
+      "code": "YPZOTN"
+    },
+    {
+      "desc": "Hawkmouth Always Open",
+      "code": "GXUESIEY"
+    },
+    {
+      "desc": "Level Eraser",
+      "code": "AAPPZA"
+    },
+    {
+      "desc": "Hard Rock Miner Lv. 1",
+      "code": "OLTOTO+ISNEGVOK+LXLPPA"
+    },
+    {
+      "desc": "Hard Rock Miner Lv. 2",
+      "code": "OLTOTO+ISNEGVOK+TEUPPAIV"
+    },
+    {
+      "desc": "Hard Rock Miner Lv. 1 (improved)",
+      "code": "OLVOTOOK+SUNEGVOG+OXUPAEOU+YUUPPAIT+XVUPZAEO"
+    },
+    {
+      "desc": "Hard Rock Miner Lv. 2 (improved)",
+      "code": "OLVOTOOK+SUNEGVOG+OXUPAEOU+PEUPPAIV+XVUPZAEO"
+    },
+    {
+      "desc": "Icy!",
+      "code": "SZEEENGE"
+    },
+    {
+      "desc": "Can Enter Locked Doors Without Keys",
+      "code": "ELXOZZEY+AYUPGZEI"
+    },
+    {
+      "desc": "Dig Up Mushroom Blocks Anywhere (improved)",
+      "code": "OLVOTOOK+SXUPAEOU+AYOEKTEP"
+    },
+    {
+      "desc": "More Than Twice As Much Time In Sub-space",
+      "code": "NNXPZIAV"
+    },
+    {
+      "desc": "Background Pallette Modifier",
+      "code": "04BC:00"
+    },
+    {
+      "desc": "Inf Time Bonus Door",
+      "code": "SZLPYN"
+    },
+    {
+      "desc": "Start on World 2",
+      "code": "PEEPUZAG+IUEPSZAA+TEEPVZPA"
+    },
+    {
+      "desc": "Start on World 3",
+      "code": "ZEEPUZAG+IUEPSZAA+TEEPVZPA"
+    },
+    {
+      "desc": "Start on World 4",
+      "code": "LEEPUZAG+IUEPSZAA+TEEPVZPA"
+    },
+    {
+      "desc": "Start on World 5",
+      "code": "GEEPUZAG+IUEPSZAA+TEEPVZPA"
+    },
+    {
+      "desc": "Start on World 6",
+      "code": "IEEPUZAG+IUEPSZAA+TEEPVZPA"
+    },
+    {
+      "desc": "Start on World 7",
+      "code": "TEEPUZAG+IUEPSZAA+TEEPVZPA"
+    },
+    {
+      "desc": "World Modifier",
+      "code": "0635:00"
+    },
+    {
+      "desc": "All Characters Can Float Jump",
+      "code": "ANNEEGEY"
+    },
+    {
+      "desc": "Mario Has Moon-Float Jump",
+      "code": "GUSEZLAE"
+    },
+    {
+      "desc": "Mario Has Mega Moon-Float Jump",
+      "code": "NNSEZLAE"
+    },
+    {
+      "desc": "Mario Has Moon Gravity Jumps",
+      "code": "PESELLYA"
+    },
+    {
+      "desc": "Luigi Has Moon-Float Jump",
+      "code": "GLEEAGAE"
+    },
+    {
+      "desc": "Luigi Has Mega Moon-Float Jump",
+      "code": "NYEEAGAE"
+    },
+    {
+      "desc": "Toad Has Moon-Float Jump",
+      "code": "GUNAPLAE"
+    },
+    {
+      "desc": "Toad Has Mega Moon-Float Jump",
+      "code": "NNNAPLAE"
+    },
+    {
+      "desc": "Princess Has A Longer Flight Jump",
+      "code": "KAXAOIAA"
+    },
+    {
+      "desc": "Always Charged For Super Jump",
+      "code": "04CA:3C"
+    },
+    {
+      "desc": "Multi Jump In Mid-Air",
+      "code": "0099:00"
+    },
+    {
+      "desc": "All Players Can Jump in Midair",
+      "code": "ALOENGEI"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "AOXEKYEY"
+    },
+    {
+      "desc": "Quickly Move LEFT/RIGHT While on a Flying Carpet (press B to go faster)",
+      "code": "AYKAEGEI"
+    },
+    {
+      "desc": "Mario Has Mega Moon-Float And Ultra Slow Descent! (Just Press And Hold The Jump Button!!)",
+      "code": "ZAXAOIAA+NNSEZLAE"
+    },
+    {
+      "desc": "Mario Will Moon-Float As Long As You Hold Down The Jump Button!",
+      "code": "NYXAOIAE+NNSEZLAE"
+    },
+    {
+      "desc": "Mario Has Mega-Jump And Moon Float!",
+      "code": "PESELLYA+NNSEZLAE"
+    },
+    {
+      "desc": "Luigi Has Mega Moon-Float And Ultra Slow Descent! (Just Press And Hold The Jump Button)",
+      "code": "ZAXAOIAA+NYEEAGAE"
+    },
+    {
+      "desc": "Luigi Will Moon-Float As Long As You Hold Down The Jump Button!",
+      "code": "NYXAOIAE+NYEEAGAE"
+    },
+    {
+      "desc": "Toad Has Mega Moon-Float And Ultra Slow Descent! (Just Press And Hold The Jump Button)",
+      "code": "ZAXAOIAA+NNNAPLAE"
+    },
+    {
+      "desc": "Toad Will Moon-Float As Long As You Hold Down The Jump Button!",
+      "code": "NYXAOIAE+NNNAPLAE"
+    },
+    {
+      "desc": "All Characters Jump Like Princess",
+      "code": "0553:3C"
+    },
+    {
+      "desc": "Super Jump",
+      "code": "0555:01"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "005A:04"
+    },
+    {
+      "desc": "Sky Climber",
+      "code": "ELUENLEY"
+    },
+    {
+      "desc": "Infinite sub-space time",
+      "code": "SZUPYNVK"
+    },
+    {
+      "desc": "POW Boxes Keep 'POW'ing",
+      "code": "NTEPPNEG"
+    },
+    {
+      "desc": "Hawkeye At End Of Level Always Open (Alternate)",
+      "code": "GXKAOIEY"
+    },
+    {
+      "desc": "Skip Intro Screen",
+      "code": "OZKONUPX"
+    },
+    {
+      "desc": "All Characters can Float Jump and Float 3x longer",
+      "code": "SEKESKSX"
+    },
+    {
+      "desc": "Start with 5 Lives, instead of 3",
+      "code": "IAOTIGLA"
+    },
+    {
+      "desc": "Start with 10 Lives",
+      "code": "ZAOTIGLE"
+    },
+    {
+      "desc": "Start with 15 Lives",
+      "code": "YAOTIGLE"
+    },
+    {
+      "desc": "Start with 25 Lives",
+      "code": "PPOTIGLE"
+    },
+    {
+      "desc": "Start with 50 Lives",
+      "code": "ZLOTIGLA"
+    },
+    {
+      "desc": "Start with 75 Lives",
+      "code": "LGOTIGLE"
+    },
+    {
+      "desc": "Start with 100 Lives",
+      "code": "GTOTIGLA"
+    },
+    {
+      "desc": "All Characters can Float Jump",
+      "code": "AUKEVGLS+SEKENGIE+AIOEVIEY"
+    },
+    {
+      "desc": "All Characters can Float Jump and Float 2x longer",
+      "code": "VKKEVGLI+KOKENGIA+AIOEVIEY"
+    },
+    {
+      "desc": "All Characters can Float Jump",
+      "code": "0553:3C"
+    },
+    {
+      "desc": "All Characters can Float Jump and Float 2x longer",
+      "code": "0553:78"
+    },
+    {
+      "desc": "All Characters can Float Jump and Float 3x longer",
+      "code": "0553:B4"
+    },
+    {
+      "desc": "Start every life with Max Health",
+      "code": "TPVTLXAP+OZOYTZSE+ZAOYYZSA+SAONAXKX+SZONLXOU+GZONGZZZ+SXXPIEVV+TPEUXEAP"
+    },
+    {
+      "desc": "Invincibility Star Powerup Lasts 1.5x Longer",
+      "code": "ATOUXEYL"
+    },
+    {
+      "desc": "Invincibility Star Powerup Lasts 2x Longer",
+      "code": "YYOUXEYU"
+    },
+    {
+      "desc": "Invincibility Star Powerup Appears After Collecting 4 Cherries, Instead Of 5",
+      "code": "GAOOZAIA"
+    },
+    {
+      "desc": "Invincibility Star Powerup Appears After Collecting 3 Cherries",
+      "code": "LAOOZAIA"
+    },
+    {
+      "desc": "Invincibility Star Powerup Appears After Collecting 2 Cherries",
+      "code": "ZAOOZAIA"
+    },
+    {
+      "desc": "Invincibility Star Powerup Appears After Collecting 1 Cherry",
+      "code": "PAOOZAIA"
+    },
+    {
+      "desc": "Heart Appears After Killing 6 Enemies, Instead Of 8 Enemies",
+      "code": "TAKATSAA"
+    },
+    {
+      "desc": "Heart Appears After Killing 4 Enemies",
+      "code": "TAKATSAA"
+    },
+    {
+      "desc": "Heart Appears After Killing 2 Enemies",
+      "code": "ZAKATSAA"
+    },
+    {
+      "desc": "Disable Icy Surfaces",
+      "code": "AAUAVITP"
+    },
+    {
+      "desc": "Invulnerability",
+      "code": "ENNUKPEI"
+    },
+    {
+      "desc": "Walk Through Enemies",
+      "code": "AONLPTAL"
+    },
+    {
+      "desc": "Don't Die From Enemy Attacks",
+      "code": "AAELSXGZ"
+    },
+    {
+      "desc": "Infinite Float Time As Peach",
+      "code": "LLXAOIAE"
+    },
+    {
+      "desc": "Jump In Mid Air",
+      "code": "SAKEXYVA"
+    }
+  ],
+  "Super Mario Bros 3 (PT-BR)": [
+    {
+      "desc": "Invulnerable To Most Damage",
+      "code": "AIVIPLEI"
+    },
+    {
+      "desc": "Infinite Item Usage",
+      "code": "OLUXYVOO"
+    },
+    {
+      "desc": "Don't Slowly Fall After Flying",
+      "code": "AENXNKTA"
+    },
+    {
+      "desc": "Charge P Meter Up, And It Stays Full",
+      "code": "XVSZPKEE"
+    },
+    {
+      "desc": "Press Select To Change Suits",
+      "code": "AAXXKVLZ"
+    },
+    {
+      "desc": "Always Swim",
+      "code": "AYSZOPEY"
+    },
+    {
+      "desc": "Can Always Slowly Fall, Even Without A Tail",
+      "code": "ANVZSGEY"
+    },
+    {
+      "desc": "Infinite Time As Statue Mario",
+      "code": "SKNZSNVK"
+    },
+    {
+      "desc": "Invulnerable To Fireballs",
+      "code": "EYOUEAEI"
+    },
+    {
+      "desc": "Always Have Firepower",
+      "code": "AYKXYZEI"
+    },
+    {
+      "desc": "Skip Intro Screen",
+      "code": "AAKXVPTA+AASXEOST"
+    },
+    {
+      "desc": "Start with 7 Lives, instead of 4 - both players",
+      "code": "YESZOAGA"
+    },
+    {
+      "desc": "Start with 10 Lives - both players",
+      "code": "ZESZOAGE"
+    },
+    {
+      "desc": "Start with 15 Lives - both players",
+      "code": "YESZOAGE"
+    },
+    {
+      "desc": "Start with 25 Lives - both players",
+      "code": "POSZOAGE"
+    },
+    {
+      "desc": "Start with 50 Lives - both players",
+      "code": "ZUSZOAGA"
+    },
+    {
+      "desc": "Start with 75 Lives - both players",
+      "code": "LKSZOAGE"
+    },
+    {
+      "desc": "Start with 99 Lives - both players",
+      "code": "LVSZOAGA"
+    },
+    {
+      "desc": "Continue with 7 Lives - both players",
+      "code": "YEKPTZGA"
+    },
+    {
+      "desc": "Continue with 10 Lives - both players",
+      "code": "ZEKPTZGE"
+    },
+    {
+      "desc": "Continue with 15 Lives - both players",
+      "code": "YEKPTZGE"
+    },
+    {
+      "desc": "Continue with 25 Lives - both players",
+      "code": "POKPTZGE"
+    },
+    {
+      "desc": "Continue with 50 Lives - both players",
+      "code": "ZUKPTZGA"
+    },
+    {
+      "desc": "Continue with 75 Lives - both players",
+      "code": "LKKPTZGE"
+    },
+    {
+      "desc": "Continue with 99 Lives - both players",
+      "code": "LVKPTZGA"
+    },
+    {
+      "desc": "Easy Pipes",
+      "code": "PYKGGTOU+PYKGITXU"
+    },
+    {
+      "desc": "Disable Starman Somersault Jump",
+      "code": "SZVZXKSE"
+    },
+    {
+      "desc": "Toad Item Chest always contains Mushroom",
+      "code": "OXUIPOSU+XVUILPOS+PEUIZOLL"
+    },
+    {
+      "desc": "Toad Item Chest always contains Fire Flower",
+      "code": "OXUIPOSU+XVUILPOS+ZEUIZOLL"
+    },
+    {
+      "desc": "Toad Item Chest always contains Raccoon Leaf",
+      "code": "OXUIPOSU+XVUILPOS+LEUIZOLL"
+    },
+    {
+      "desc": "Toad Item Chest always contains Frog Suit",
+      "code": "OXUIPOSU+XVUILPOS+GEUIZOLL"
+    },
+    {
+      "desc": "Toad Item Chest always contains Tanooki Suit",
+      "code": "OXUIPOSU+XVUILPOS+IEUIZOLL"
+    },
+    {
+      "desc": "Toad Item Chest always contains Hammer Suit",
+      "code": "OXUIPOSU+XVUILPOS+TEUIZOLL"
+    },
+    {
+      "desc": "Toad Item Chest always contains Cloud",
+      "code": "OXUIPOSU+XVUILPOS+YEUIZOLL"
+    },
+    {
+      "desc": "Toad Item Chest always contains P-Wing",
+      "code": "OXUIPOSU+XVUILPOS+AEUIZOLU"
+    },
+    {
+      "desc": "Toad Item Chest always contains Star",
+      "code": "OXUIPOSU+XVUILPOS+PEUIZOLU"
+    },
+    {
+      "desc": "Toad Item Chest always contains Anchor",
+      "code": "OXUIPOSU+XVUILPOS+ZEUIZOLU"
+    },
+    {
+      "desc": "Toad Item Chest always contains Hammer",
+      "code": "OXUIPOSU+XVUILPOS+LEUIZOLU"
+    },
+    {
+      "desc": "Toad Item Chest always contains Warp Whistle",
+      "code": "OXUIPOSU+XVUILPOS+GEUIZOLU"
+    },
+    {
+      "desc": "Toad Item Chest always contains Music Box",
+      "code": "OXUIPOSU+XVUILPOS+IEUIZOLU"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Mushroom",
+      "code": "OZXZPUSX+XTXZLUPN+PAXZZLLT"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Fire Flower",
+      "code": "OZXZPUSX+XTXZLUPN+ZAXZZLLT"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Raccoon Leaf",
+      "code": "OZXZPUSX+XTXZLUPN+LAXZZLLT"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Frog Suit",
+      "code": "OZXZPUSX+XTXZLUPN+GAXZZLLT"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Tanooki Suit",
+      "code": "OZXZPUSX+XTXZLUPN+IAXZZLLT"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Hammer Suit",
+      "code": "OZXZPUSX+XTXZLUPN+TAXZZLLT"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Cloud",
+      "code": "OZXZPUSX+XTXZLUPN+YAXZZLLT"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains P-Wing",
+      "code": "OZXZPUSX+XTXZLUPN+AAXZZLLV"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Star",
+      "code": "OZXZPUSX+XTXZLUPN+PAXZZLLV"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Anchor",
+      "code": "OZXZPUSX+XTXZLUPN+ZAXZZLLV"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Hammer",
+      "code": "OZXZPUSX+XTXZLUPN+LAXZZLLV"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Warp Whistle",
+      "code": "OZXZPUSX+XTXZLUPN+GAXZZLLV"
+    },
+    {
+      "desc": "Hammer Bros. Item Chest always contains Music Box",
+      "code": "OZXZPUSX+XTXZLUPN+IAXZZLLV"
+    },
+    {
+      "desc": "Invincibility (mostly)",
+      "code": "AEKKKVZA+ASSGXTEY"
+    },
+    {
+      "desc": "Can't Take Damage Or Die (If you don't fall down a pit)",
+      "code": "ENVINPEI"
+    },
+    {
+      "desc": "Invincibility against Pits and Lava (Hold B to Jump Higher)",
+      "code": "KZOZTGAE+NGOXAKSV+ALOXPGAZ+GAOXZKGN+AVEZIOSA"
+    },
+    {
+      "desc": "Blink 1.5x Longer After Being Hit",
+      "code": "ELVSVZPY"
+    },
+    {
+      "desc": "Blink 2x Longer After Being Hit",
+      "code": "NYVSVZPN"
+    },
+    {
+      "desc": "Invincibility Star Powerup Lasts Slightly Longer",
+      "code": "NYOZOAEV"
+    },
+    {
+      "desc": "Press Select To Toggle Invulnerability On/Off",
+      "code": "LPOGVPYX"
+    },
+    {
+      "desc": "Press Start For Temporary Invincibility",
+      "code": "OZVESVPK+EAVEVTPA+LINAETTY+IANAOTLA+EYNAXTEI"
+    },
+    {
+      "desc": "Press Start For P-Wing Effect (Must Have A Tail)",
+      "code": "OZVESVPK+NYVEVTPE+TTNAETTN+IANAOTLA+EYNAXTEI"
+    },
+    {
+      "desc": "Press Start For 99 Lives",
+      "code": "OZVESVPK+LTVEVTPA+TLNAETTY+YANAOTLA+EYNAXTEI"
+    },
+    {
+      "desc": "Press Start To Become Raccoon Mario",
+      "code": "OZVESVPK+LAVEVTPA+STNAETTN+AANAOTLA+EYNAXTEI"
+    },
+    {
+      "desc": "Press Start To Become Big Mario With Firepower",
+      "code": "OZVESVPK+ZAVEVTPA+STNAETTN+AANAOTLA+EYNAXTEI"
+    },
+    {
+      "desc": "Press Start To Become Big Mario",
+      "code": "OZVESVPK+STNAETTN+AANAOTLA+EYNAXTEI"
+    },
+    {
+      "desc": "Press Start To Become Frog Mario",
+      "code": "OZVESVPK+GAVEVTPA+STNAETTN+AANAOTLA+EYNAXTEI"
+    },
+    {
+      "desc": "Press Start To Become Tanooki Mario",
+      "code": "OZVESVPK+IAVEVTPA+STNAETTN+AANAOTLA+EYNAXTEI"
+    },
+    {
+      "desc": "Press Start To Become Hammer Mario",
+      "code": "OZVESVPK+TAVEVTPA+STNAETTN+AANAOTLA+EYNAXTEI"
+    },
+    {
+      "desc": "Fireball Does Same Damage As Hammers",
+      "code": "ASUZITEY"
+    }
+  ],
+  "Zelda II - The Adventure of Link (USA)": [
+    {
+      "desc": "Infinite/Max Health",
+      "code": "0774:FF"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "0700:04"
+    },
+    {
+      "desc": "Have Maximum Life Containers",
+      "code": "0784:08"
+    },
+    {
+      "desc": "Have Maximum Magic Jars",
+      "code": "0783:08"
+    },
+    {
+      "desc": "EXP Points Ner LV Up",
+      "code": "0771:00"
+    },
+    {
+      "desc": "No enemies on overworld map",
+      "code": "0086:00+0087:00+0088:00+0089:00"
+    },
+    {
+      "desc": "Jewels",
+      "code": "0794:00"
+    },
+    {
+      "desc": "Have Candle",
+      "code": "0785:01"
+    },
+    {
+      "desc": "Have Glove",
+      "code": "0786:01"
+    },
+    {
+      "desc": "Have Raft",
+      "code": "0787:01"
+    },
+    {
+      "desc": "Have Boots",
+      "code": "0788:01"
+    },
+    {
+      "desc": "Have Flute",
+      "code": "0789:01"
+    },
+    {
+      "desc": "Have Cross",
+      "code": "078A:01"
+    },
+    {
+      "desc": "Have Hammer",
+      "code": "078B:01"
+    },
+    {
+      "desc": "Have Key",
+      "code": "078C:01"
+    },
+    {
+      "desc": "Keys Modifier",
+      "code": "0793:00"
+    },
+    {
+      "desc": "Have Jump Spell",
+      "code": "077C:01"
+    },
+    {
+      "desc": "Have Life Spell",
+      "code": "077D:01"
+    },
+    {
+      "desc": "Have Fairy Spell",
+      "code": "077E:01"
+    },
+    {
+      "desc": "Have Fire Spell",
+      "code": "077F:01"
+    },
+    {
+      "desc": "Have Reflect Spell",
+      "code": "0780:01"
+    },
+    {
+      "desc": "Have \"Spell\" Spell",
+      "code": "0781:01"
+    },
+    {
+      "desc": "Have Thunder Spell",
+      "code": "0782:01"
+    },
+    {
+      "desc": "Have Shield Spell",
+      "code": "077B:01"
+    },
+    {
+      "desc": "Jump Spell Always On",
+      "code": "076F:02"
+    },
+    {
+      "desc": "Fire Spell Always On",
+      "code": "076F:10"
+    },
+    {
+      "desc": "Thunder Spell Always On",
+      "code": "076F:80"
+    },
+    {
+      "desc": "Set Spell Ability Modifier",
+      "code": "076F:00"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "XTUTILSV+XTUTTUGE"
+    },
+    {
+      "desc": "Infinite Energy Outside Of Palace, Take Minimal Damage Inside Palaces",
+      "code": "XTLTAL"
+    },
+    {
+      "desc": "Take Much Less Damage From Enemies!",
+      "code": "AAUTTUGE"
+    },
+    {
+      "desc": "Infinite Magic And Health In Battle. See notes.",
+      "code": "AEYSAU"
+    },
+    {
+      "desc": "Infinite Magic",
+      "code": "GXNAESON+XVNAESON+XVNAOSZN+XVNAXSSE+SXNASSSE"
+    },
+    {
+      "desc": "Gain more than 2,048 EXP for every EXP point",
+      "code": "AAVIIGAE"
+    },
+    {
+      "desc": "Gain more than 256 EXP for every EXP point",
+      "code": "PAVIIGAA"
+    },
+    {
+      "desc": "Don't Lose All of Your Experience Points When You Level-Up",
+      "code": "SZVOUNSE"
+    },
+    {
+      "desc": "Don't Lose Any EXP  When You  Level-Up",
+      "code": "SZVOUNSE+SZNPKNSE"
+    },
+    {
+      "desc": "Don't Lose Any EXP  When You Are Hit By Enemies That Normally Subtract From Your Experience Points",
+      "code": "SXESIKSE"
+    },
+    {
+      "desc": "Boost Attack,Magic,& Life Far Above 8",
+      "code": "YYKEEVSE+NPKEOVVE+APVIIGAA"
+    },
+    {
+      "desc": "Have \"D\" Lives",
+      "code": "TASKPLLE"
+    },
+    {
+      "desc": "Weaker Ennemies Give Lot More EXP [256+]",
+      "code": "APVIIGAA"
+    },
+    {
+      "desc": "Kill Most Enemies And Bosses In One Hit",
+      "code": "GALTLY"
+    },
+    {
+      "desc": "Max Out Most Abilities [New Game Only]",
+      "code": "YEEZAAVP"
+    },
+    {
+      "desc": "Max Out Most Abilities When You Level-up [New or Saved Game]",
+      "code": "YEKZTAVP"
+    },
+    {
+      "desc": "Link Jumps Very Fast And High While Walking",
+      "code": "YYVIIGAE"
+    },
+    {
+      "desc": "Link Can't Jump Very Good",
+      "code": "EAUOLIAL"
+    },
+    {
+      "desc": "Link Can Jump On Things He Couldn't Before",
+      "code": "IIAEII"
+    },
+    {
+      "desc": "Link Can Jump Very High",
+      "code": "AAUOLIAU"
+    },
+    {
+      "desc": "Mega-Super Jump",
+      "code": "AAUOLIAL"
+    },
+    {
+      "desc": "Link Runs Left/Right Very Fast When In An Area",
+      "code": "ISISPP"
+    },
+    {
+      "desc": "Move Quick & Rapid Ducking Attack (Turbo Controller Reccomended!)",
+      "code": "AEEPPGIP+NYEPAGUL"
+    },
+    {
+      "desc": "Beany Weiny Jump!",
+      "code": "AYUOLIAL"
+    },
+    {
+      "desc": "Walk Thru Walls (Overworld)",
+      "code": "AAOETYZA"
+    },
+    {
+      "desc": "No Music",
+      "code": "AAOOULIG"
+    },
+    {
+      "desc": "Alter The Map Screen",
+      "code": "IIPPPP"
+    },
+    {
+      "desc": "Fall From Sky",
+      "code": "VVPPAA"
+    },
+    {
+      "desc": "Don't Need Keys To Open Doors In Palaces",
+      "code": "XVVIXPEN+XVVIUOPO"
+    },
+    {
+      "desc": "Link Jumps Very Fast And High While Walking",
+      "code": "IIPOII"
+    },
+    {
+      "desc": "Magic Bottles Refill All Your Magic Boxes",
+      "code": "AEYSZU"
+    },
+    {
+      "desc": "There's A Fairy In Zelda's Temple At Game Start",
+      "code": "PIYALU"
+    },
+    {
+      "desc": "Slimes Throw Spears After They Are Defeated",
+      "code": "PAYSES"
+    },
+    {
+      "desc": "Moving Right Drops You Into Random Places On The Screen",
+      "code": "PSTTVX"
+    },
+    {
+      "desc": "Flood Hyrule",
+      "code": "GEIKOI"
+    },
+    {
+      "desc": "Start In ? Temple",
+      "code": "EAIGGU"
+    },
+    {
+      "desc": "Start In Town Of Rauru",
+      "code": "OAIGGU"
+    },
+    {
+      "desc": "Start Near Temple On The",
+      "code": "PAIKSU"
+    },
+    {
+      "desc": "Start In The Swamp",
+      "code": "PAIKVU"
+    },
+    {
+      "desc": "Start Near King's Tomb",
+      "code": "PAGKXL"
+    },
+    {
+      "desc": "Kill An Enemy To Recieve The Treasure Glove",
+      "code": "GALVZY"
+    },
+    {
+      "desc": "Infinite Keys (You Have To Have At Least One)",
+      "code": "SXVIKOVK"
+    },
+    {
+      "desc": "Shield Spell Gives You Extra Lives, One After Another",
+      "code": "LYKEEVSA+NPKEOVVE"
+    },
+    {
+      "desc": "Shield Spell Makes Strange Doors Appear [very glitchy]",
+      "code": "EYKEEVSA"
+    },
+    {
+      "desc": "Shield Spell Raises A Temple No Matter Where You Are",
+      "code": "VTKEEVSA+OPKEOAVA"
+    },
+    {
+      "desc": "Casting Shield Will Give You Experience Points",
+      "code": "PYKEEVSA+NPKEOVVE"
+    },
+    {
+      "desc": "Start With All Spells",
+      "code": "VIEXIVSU"
+    },
+    {
+      "desc": "Have Child Rescued For The Mountain Town Of Darunia (New Game Only)",
+      "code": "AZEUELAA"
+    },
+    {
+      "desc": "Link has infinite lives",
+      "code": "SZKGKXVK"
+    },
+    {
+      "desc": "Link starts with 1 life",
+      "code": "PASKPLLA"
+    },
+    {
+      "desc": "Link starts with 6 lives",
+      "code": "TASKPLLA"
+    },
+    {
+      "desc": "Link starts with 9 lives",
+      "code": "PASKPLLE"
+    },
+    {
+      "desc": "Mega-jump",
+      "code": "AZUOLIAL"
+    },
+    {
+      "desc": "Able To Talk Error In Town Of Ruto [New game only]",
+      "code": "VLELXLAA"
+    },
+    {
+      "desc": "Have Trophy Collected For The Woman In The Town Of Ruto [New game only]",
+      "code": "VLELKLAA"
+    },
+    {
+      "desc": "Have Water Of Life Collected For The Woman In Harbor Town Of Mido [New game only]",
+      "code": "LGELVLAA"
+    },
+    {
+      "desc": "Have Water Collected For Woman In The Town Of Nabooru [New game only]",
+      "code": "PAELNLAA"
+    },
+    {
+      "desc": "Have Mirror Collected For Woman In The Town Of Saria [New game only]",
+      "code": "PAELSLAA"
+    },
+    {
+      "desc": "Have Note From Bagu Collected To Cross The Bridge In The Town Of Saria (New game only)",
+      "code": "AAELVLAE"
+    },
+    {
+      "desc": "Little Knockback and No Stun from Enemies",
+      "code": "SZKVTUSE"
+    },
+    {
+      "desc": "Just Touching Enemies Will Kill Them",
+      "code": "GGUTPUSX+NLUTZLGN+KIUTLLYE"
+    },
+    {
+      "desc": "Always First Save",
+      "code": "SXXGUXVV"
+    },
+    {
+      "desc": "Start A New Game With Max Magic Level",
+      "code": "AEVLKZPE"
+    },
+    {
+      "desc": "Start A New Game With Max Life Level",
+      "code": "AEVLSZPE"
+    },
+    {
+      "desc": "Start A New Game With 0 Attack Level",
+      "code": "AEVLUZPA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "0748:00"
+    },
+    {
+      "desc": "Room Modifier",
+      "code": "075C:00"
+    },
+    {
+      "desc": "Npc Sprite Modifier",
+      "code": "00A6:00"
+    },
+    {
+      "desc": "Jump In Midair",
+      "code": "SYUPAINY+OZUPISSX+UYUPTSIN+SAUPYIIE+IYUOAIAO+IAUOPIZA"
+    },
+    {
+      "desc": "Hit Anywhere",
+      "code": "ASXTGTEL"
+    },
+    {
+      "desc": "Get 256 level-up points for most enemies that you kill.  This lets you level-up very fast.",
+      "code": "XTSSTKSE"
+    },
+    {
+      "desc": "Get 18,532 level-up points for most enemies that you kill.",
+      "code": "ALSSTKSA"
+    },
+    {
+      "desc": "No random battles on the overworld map.",
+      "code": "EIUEPLEY"
+    },
+    {
+      "desc": "Your sword can always shoot (sword beams), even if you don't have a full health meter.",
+      "code": "AASOSEZP"
+    },
+    {
+      "desc": "Level 1 sword is 10x stronger (20 damage instead of 2).",
+      "code": "GPVVITZA"
+    },
+    {
+      "desc": "Level 2 sword is 10x stronger (30 damage instead of 3).",
+      "code": "TPVVTTLE"
+    },
+    {
+      "desc": "All levels of swords do massive damage.",
+      "code": "STUTZNON"
+    },
+    {
+      "desc": "One hit kills most enemies.",
+      "code": "APUTYYEY"
+    },
+    {
+      "desc": "Swap Shield Spell For Fire Spell",
+      "code": "OYKEEVSA+NPKEOVVA"
+    },
+    {
+      "desc": "Swap Shield Spell For Spell Spell",
+      "code": "LYKEEVSA+VAKEOVVE"
+    },
+    {
+      "desc": "Swap Shield Spell For Fairy Spell",
+      "code": "LZKEEVSA+OPKEOVVA"
+    },
+    {
+      "desc": "Swap Shield Spell For Life Spell",
+      "code": "IIKEEVSE+VAKEOVVE"
+    },
+    {
+      "desc": "Swap Shield Spell For Thunder Spell",
+      "code": "VTKEEVSA+OPKEOVVA"
+    },
+    {
+      "desc": "No Monsters On Overworld Map",
+      "code": "EEPEAX"
+    },
+    {
+      "desc": "Spells Don't Use Any Magic",
+      "code": "GXNAESON"
+    },
+    {
+      "desc": "Shield Spell Gives You Extra Lives, One After Another, Repeatedly",
+      "code": "LYKEEVSA+NPKEOVVE"
+    },
+    {
+      "desc": "Shield Spell Raises A Temple No Matter Where You Are. You Just Can't Enter It",
+      "code": "VTKEEVSA+OPKEOAVA"
+    },
+    {
+      "desc": "No Damage From Ennemies",
+      "code": "XTUTILSV+XTUTTUGE"
+    },
+    {
+      "desc": "Spells Don't Take Any Magic (2)",
+      "code": "XVNAESON+XVNAOSZN+XVNAXSSE"
+    },
+    {
+      "desc": "When You Start Your Game, Link's Seen Walking Into The Temple Instead Of Being There",
+      "code": "PEIKEU"
+    },
+    {
+      "desc": "Start Near Temple On The Island",
+      "code": "PAIKSU"
+    },
+    {
+      "desc": "When You Kill An Enemy, Your Experience Never Quits Rising",
+      "code": "SSSSSSSS"
+    },
+    {
+      "desc": "Max-Out Levels At Quest's Start (Select 'Attack' Or 'Magic' Girst)",
+      "code": "AEAPPT+EEZOUT"
+    },
+    {
+      "desc": "Move Quick & Rapid Ducking Attack (Turbo Controller Needed!)",
+      "code": "AEEPPGIP+NYEPAGUL"
+    },
+    {
+      "desc": "Life Level",
+      "code": "0779:00"
+    },
+    {
+      "desc": "Sword Level",
+      "code": "0777:00"
+    },
+    {
+      "desc": "Magic",
+      "code": "0778:00"
+    },
+    {
+      "desc": "Lives",
+      "code": "0700:00"
+    },
+    {
+      "desc": "Number of 'Hearts'",
+      "code": "0784:00"
+    },
+    {
+      "desc": "Magic",
+      "code": "0773:00"
+    },
+    {
+      "desc": "Keys",
+      "code": "0793:00"
+    },
+    {
+      "desc": "Infinite/Max Health",
+      "code": "0774:55"
+    },
+    {
+      "desc": "Press Up Or Down To Stab Up Or Down When Jumping",
+      "code": "0796:55"
+    },
+    {
+      "desc": "Infinite/Max Magic",
+      "code": "0773:55"
+    },
+    {
+      "desc": "Fire Spell Always On",
+      "code": "076F:16"
+    },
+    {
+      "desc": "Thunder Spell Always On",
+      "code": "076F:28"
+    },
+    {
+      "desc": "Few Enemies #2",
+      "code": "0512:00"
+    },
+    {
+      "desc": "Few Enemies #3",
+      "code": "0513:00"
+    },
+    {
+      "desc": "Few Enemies #4",
+      "code": "0514:00"
+    },
+    {
+      "desc": "Few Enemies #5",
+      "code": "0515:00"
+    },
+    {
+      "desc": "Few Enemies #6",
+      "code": "0516:04"
+    },
+    {
+      "desc": "Few Enemies #7",
+      "code": "0517:00"
+    },
+    {
+      "desc": "Max Life Level",
+      "code": "0779:55"
+    },
+    {
+      "desc": "Max Sword Level",
+      "code": "0777:55"
+    },
+    {
+      "desc": "Max Magic Level",
+      "code": "0778:55"
+    },
+    {
+      "desc": "EXP Points",
+      "code": "0776:00"
+    },
+    {
+      "desc": "EXP Points Needed For LV Up",
+      "code": "0771:00"
+    },
+    {
+      "desc": "Health Modifier",
+      "code": "0774:00"
+    },
+    {
+      "desc": "Item Modifier",
+      "code": "0785:01"
+    },
+    {
+      "desc": "Untouchable By Enemies Or Missiles",
+      "code": "0518:03"
+    },
+    {
+      "desc": "Press Up Or Down To Stab Up Or Down When Jumping",
+      "code": "0796:FF"
+    },
+    {
+      "desc": "Infinite/Max Magic",
+      "code": "0773:FF"
+    },
+    {
+      "desc": "Have All Hearts",
+      "code": "0784:08"
+    },
+    {
+      "desc": "Have All Magic Jars",
+      "code": "0783:08"
+    },
+    {
+      "desc": "VERY Few Enemies On World Map (Seven Codes)",
+      "code": "0511:00"
+    },
+    {
+      "desc": "Max Life Level",
+      "code": "0779:FF"
+    },
+    {
+      "desc": "Max Sword Level",
+      "code": "0777:FF"
+    },
+    {
+      "desc": "Max Magic Level",
+      "code": "0778:FF"
+    },
+    {
+      "desc": "Sidescrolling Stage Level Modifier",
+      "code": "0748:00"
+    },
+    {
+      "desc": "Switch F/X On To Levitate Jump",
+      "code": "03E6:7F"
+    },
+    {
+      "desc": "Defeat Final Boss With 1 Hit",
+      "code": "00C2:01"
+    },
+    {
+      "desc": "Walk Thru Walls (Overworld)",
+      "code": "GAPELY"
+    },
+    {
+      "desc": "Faster Text",
+      "code": "AEUUTVNI"
+    },
+    {
+      "desc": "Walk Through Walls (Sidescrolling Mode)",
+      "code": "AIXOYGEY+EOOOGLEY"
+    },
+    {
+      "desc": "Jump Through Roof",
+      "code": "AAKOGSAA"
+    },
+    {
+      "desc": "Skip Intro Screen",
+      "code": "AEOXLYGZ+OXOXGNPX"
+    },
+    {
+      "desc": "Save With 1p Controller",
+      "code": "NNSXTOEY"
+    },
+    {
+      "desc": "Star with tons Of Lives",
+      "code": "NASKPLLA"
+    },
+    {
+      "desc": "View Ending At Start Of Level",
+      "code": "GTSKLLAE+ZASKPLLA"
+    },
+    {
+      "desc": "Fairies Spawn Instead Of Enemies In Overworld",
+      "code": "EZOEILKZ+IAOETUAE"
+    },
+    {
+      "desc": "No Enemies Spawn In Overworld",
+      "code": "AVNAYZSZ"
+    },
+    {
+      "desc": "Four Enemies Instead Of Three Spawn In The Overworld",
+      "code": "AENEGZYZ"
+    },
+    {
+      "desc": "Start At First Palace With A Lot Of Lives",
+      "code": "YASKLLAA"
+    },
+    {
+      "desc": "You Can Move While Talking/Reading",
+      "code": "AEVOGZLI"
+    },
+    {
+      "desc": "Start Next To Last Boss",
+      "code": "KAEXUXSE+KAOZOXSE+GTOZXZPV+IASXAENY+YASXZAAY+AENKXVTA+TUOEITUT"
+    }
+  ]
+}

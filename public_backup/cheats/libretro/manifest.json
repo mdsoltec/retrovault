@@ -1,0 +1,63 @@
+{
+  "source": "https://github.com/libretro/libretro-database",
+  "sourceFolder": "cht/",
+  "generatedAt": "2026-08-09T02:30:20.043902+00:00",
+  "curation": "Até 12 códigos úteis por jogo no arquivo ativo; a base completa fica em libretro/.",
+  "cores": {
+    "snes": {
+      "games": 31,
+      "activeCheats": 351,
+      "sourceCheats": 4687
+    },
+    "nes": {
+      "games": 8,
+      "activeCheats": 93,
+      "sourceCheats": 1436
+    },
+    "gba": {
+      "games": 7,
+      "activeCheats": 74,
+      "sourceCheats": 220
+    },
+    "gbc": {
+      "games": 9,
+      "activeCheats": 96,
+      "sourceCheats": 1190
+    },
+    "n64": {
+      "games": 6,
+      "activeCheats": 67,
+      "sourceCheats": 9373
+    },
+    "pcsx_rearmed": {
+      "games": 12,
+      "activeCheats": 103,
+      "sourceCheats": 408
+    },
+    "nds": {
+      "games": 10,
+      "activeCheats": 119,
+      "sourceCheats": 3634
+    },
+    "segaMD": {
+      "games": 10,
+      "activeCheats": 113,
+      "sourceCheats": 860
+    },
+    "segaCD": {
+      "games": 4,
+      "activeCheats": 47,
+      "sourceCheats": 95
+    },
+    "segaGG": {
+      "games": 7,
+      "activeCheats": 57,
+      "sourceCheats": 137
+    },
+    "fbneo": {
+      "games": 0,
+      "activeCheats": 0,
+      "sourceCheats": 0
+    }
+  }
+}

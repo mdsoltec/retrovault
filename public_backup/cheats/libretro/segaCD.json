@@ -1,0 +1,390 @@
+{
+  "Sonic CD (USA)": [
+    {
+      "desc": "Invincibility",
+      "code": "FF151F:0001"
+    },
+    {
+      "desc": "Enable Debug Mode",
+      "code": "FF1589:0001"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FF1507:0009"
+    },
+    {
+      "desc": "Always Have 1 Ring",
+      "code": "FF1513:0001"
+    },
+    {
+      "desc": "Always Have 50 Rings",
+      "code": "FF1512:0032"
+    },
+    {
+      "desc": "Always Have 100 Rings",
+      "code": "FF1513:0064"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "FF1516:0000"
+    },
+    {
+      "desc": "Always Have Shield",
+      "code": "FF151E:0001"
+    },
+    {
+      "desc": "Have All 7 Time Stones/Good Futures",
+      "code": "FF0F20:7F00"
+    },
+    {
+      "desc": "Inf Speed shoes/Invincibility after pickup",
+      "code": "FFD032:00FF"
+    },
+    {
+      "desc": "Infinite Invincibility after Pickup",
+      "code": "FFD032:051B"
+    },
+    {
+      "desc": "Infinite Shields",
+      "code": "FF151E:0001"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FF1508:0009"
+    },
+    {
+      "desc": "Infinite Rings",
+      "code": "FF1512:03E7"
+    },
+    {
+      "desc": "Infinite Speed Shoes after Pickup",
+      "code": "FFD034:051B"
+    },
+    {
+      "desc": "Infinite Time Underwater",
+      "code": "FF150B:001E"
+    },
+    {
+      "desc": "Have all 7 Time Stones/Good Futures",
+      "code": "FF0F20:007F"
+    },
+    {
+      "desc": "Levitate",
+      "code": "FFD012:00FA"
+    },
+    {
+      "desc": "Freeze Timer",
+      "code": "FF1517:0000"
+    },
+    {
+      "desc": "Press B for Level Select on Title Screen",
+      "code": "FFE438:0005"
+    },
+    {
+      "desc": "Press A for Sound Test on Title Screen",
+      "code": "FFE434:0005"
+    },
+    {
+      "desc": "Press C for Sonic CD Staff's Time Attack Scores",
+      "code": "FFE43C:0005"
+    }
+  ],
+  "Lunar - The Silver Star (USA)": [
+    {
+      "desc": "Lot of Money",
+      "code": "FFE5F8:FFFF"
+    },
+    {
+      "desc": "Alex Currect HP",
+      "code": "FFE341:00FF"
+    },
+    {
+      "desc": "Alex Max HP",
+      "code": "FFE343:00FF"
+    },
+    {
+      "desc": "Alex Currect MP",
+      "code": "FFE345:00FF"
+    },
+    {
+      "desc": "Alex Max MP",
+      "code": "FFE347:00FF"
+    },
+    {
+      "desc": "Alex Atk pwr",
+      "code": "FFE348:00FF"
+    },
+    {
+      "desc": "Alex Def pwr",
+      "code": "FFE349:00FF"
+    },
+    {
+      "desc": "Alex Agility",
+      "code": "FFE34A:00FF"
+    },
+    {
+      "desc": "Alex Anti-magic",
+      "code": "FFE34B:00FF"
+    },
+    {
+      "desc": "Alex # of Moves",
+      "code": "FFE34C:00FF"
+    },
+    {
+      "desc": "Alex # of Atks",
+      "code": "FFE34D:00FF"
+    },
+    {
+      "desc": "Luna Currect HP",
+      "code": "FFE381:00FF"
+    },
+    {
+      "desc": "Luna Max HP",
+      "code": "FFE383:00FF"
+    },
+    {
+      "desc": "Luna Currect MP",
+      "code": "FFE385:00FF"
+    },
+    {
+      "desc": "Luna Max MP",
+      "code": "FFE387:00FF"
+    },
+    {
+      "desc": "Luna Atk pwr",
+      "code": "FFE388:00FF"
+    },
+    {
+      "desc": "Luna Def pwr",
+      "code": "FFE389:00FF"
+    },
+    {
+      "desc": "Luna Agility",
+      "code": "FFE38A:00FF"
+    },
+    {
+      "desc": "Luna Anti-magic",
+      "code": "FFE38B:00FF"
+    },
+    {
+      "desc": "Luna # of Moves",
+      "code": "FFE38C:00FF"
+    },
+    {
+      "desc": "Luna # of Atks",
+      "code": "FFE38D:00FF"
+    },
+    {
+      "desc": "Ramus Currect HP",
+      "code": "FFE501:00FF"
+    },
+    {
+      "desc": "Ramus Max HP",
+      "code": "FFE503:00FF"
+    },
+    {
+      "desc": "Ramus Currect MP",
+      "code": "FFE505:00FF"
+    },
+    {
+      "desc": "Ramus Max MP",
+      "code": "FFE507:00FF"
+    },
+    {
+      "desc": "Ramus Atk pwr",
+      "code": "FFE508:00FF"
+    },
+    {
+      "desc": "Ramus Def pwr",
+      "code": "FFE509:00FF"
+    },
+    {
+      "desc": "Ramus Agility",
+      "code": "FFE50A:00FF"
+    },
+    {
+      "desc": "Ramus Anti-magic",
+      "code": "FFE50B:00FF"
+    },
+    {
+      "desc": "Ramus # of Moves",
+      "code": "FFE50C:00FF"
+    },
+    {
+      "desc": "Ramus # of Atks",
+      "code": "FFE50D:00FF"
+    }
+  ],
+  "Popful Mail (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "FFA057:0064"
+    },
+    {
+      "desc": "Infinite Gold",
+      "code": "FFEBF2:C350"
+    },
+    {
+      "desc": "Disable In-Game Timers",
+      "code": "FFEBA5:0000+FFEBA7:0000+FFFF0B:0000"
+    },
+    {
+      "desc": "Teleport to Top of Screen",
+      "code": "FFA020:0100"
+    },
+    {
+      "desc": "Infinite Arms",
+      "code": "FFEC1B:0064"
+    },
+    {
+      "desc": "Infinite Amulet",
+      "code": "FFEC11:0064"
+    },
+    {
+      "desc": "Infinite Helmet",
+      "code": "FFEC13:0064"
+    },
+    {
+      "desc": "Infinite Stone Shoes",
+      "code": "FFEC15:0064"
+    },
+    {
+      "desc": "Infinite Ice Shoes",
+      "code": "FFEC17:0064"
+    },
+    {
+      "desc": "Infinite Spiked Boots",
+      "code": "FFEC19:0064"
+    },
+    {
+      "desc": "Mail All Equipment",
+      "code": "FFEBCC:FFFF+FFEBCE:00FF"
+    },
+    {
+      "desc": "Tatto All Equipment",
+      "code": "FFEBDC:FFFF+FFEBDE:00FF"
+    },
+    {
+      "desc": "Gaw All Equipment",
+      "code": "FFEBEC:FFFF+FFEBEE:00FF"
+    },
+    {
+      "desc": "Enable Tatto",
+      "code": "FEEBDF:00FF"
+    },
+    {
+      "desc": "Enable Gaw",
+      "code": "FFEBEF:00FF"
+    },
+    {
+      "desc": "Max Amulet",
+      "code": "FFEBF6:0063"
+    },
+    {
+      "desc": "Max Helmet",
+      "code": "FFEBF7:0063"
+    },
+    {
+      "desc": "Max Stone Shoes",
+      "code": "FFEBF8:0063"
+    },
+    {
+      "desc": "Max Ice Shoes",
+      "code": "FFEBF9:0063"
+    },
+    {
+      "desc": "Max Spiked Boots",
+      "code": "FFEBFA:0063"
+    },
+    {
+      "desc": "Max Orange",
+      "code": "FFEBFB:0063"
+    },
+    {
+      "desc": "Max Cherry",
+      "code": "FFEBFC:0063"
+    },
+    {
+      "desc": "Max Apple",
+      "code": "FFEBFD:0063"
+    },
+    {
+      "desc": "Max Banana",
+      "code": "FFEBFE:0063"
+    },
+    {
+      "desc": "Max Melon",
+      "code": "FFEBFF:0063"
+    },
+    {
+      "desc": "Max Gold Bullion",
+      "code": "FFEC04:0063"
+    },
+    {
+      "desc": "Max Elixir",
+      "code": "FFEC05:0063"
+    }
+  ],
+  "Final Fight CD (USA)": [
+    {
+      "desc": "Inf Time",
+      "code": "FF9516:0099"
+    },
+    {
+      "desc": "P1 Inf Lives",
+      "code": "FFB245:0009"
+    },
+    {
+      "desc": "P2 Inf Lives",
+      "code": "FFB305:0009"
+    },
+    {
+      "desc": "P1 Inf HP",
+      "code": "FFB1DC:0070+FFB1DE:0070"
+    },
+    {
+      "desc": "P2 Inf HP",
+      "code": "FFB29C:0070+FFB29E:0070"
+    },
+    {
+      "desc": "P1 Invincibility",
+      "code": "FFB224:0079"
+    },
+    {
+      "desc": "P2 Invincibility",
+      "code": "FFB2E4:0079"
+    },
+    {
+      "desc": "P1 Invincibility",
+      "code": "FFB223:0079"
+    },
+    {
+      "desc": "P1 Infinite Health",
+      "code": "FFB1DB:0070"
+    },
+    {
+      "desc": "P1 Infinite Lives",
+      "code": "FFB242:000A"
+    },
+    {
+      "desc": "Infinite Continues",
+      "code": "FF8EA0:0009"
+    },
+    {
+      "desc": "P2 Invincibility",
+      "code": "FFB2E3:0079"
+    },
+    {
+      "desc": "P2 Infinite Health",
+      "code": "FFB29B:0070"
+    },
+    {
+      "desc": "P2 Infinite Lives",
+      "code": "FFB302:000A"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "FF9515:009A"
+    }
+  ]
+}

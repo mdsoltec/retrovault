@@ -1,5 +1,5 @@
 /**
- * RetroVerso - RetroArch Overlay CFG Parser & Automatic Touch Engine (PocketArch Compatible)
+ * RetroVault OS - RetroArch Overlay CFG Parser & Automatic Touch Engine (PocketArch Compatible)
  * 
  * Converte automaticamente qualquer arquivo .cfg do RetroArch / Libretro (ex: PocketArch)
  * e suas imagens de overlay em um sistema de controle touch dinâmico e calibrado.
@@ -455,7 +455,7 @@
           if (cur !== -1) target = this.overlayOrder[(cur + 1) % this.overlayOrder.length];
         }
         if (target && this.overlays[target]) {
-          // Overlays de pausa se comportam como o botão MENU do RetroVerso:
+          // Overlays de pausa se comportam como o botão MENU do RetroVault OS:
           // toque rápido = cheats / segurar = barra de sistema.
           if (this.isPauseOverlay(this.overlays[target])) {
             return [{ type: 'system_menu', action: 'open_cheats', desc }];
@@ -466,7 +466,7 @@
       }
 
       // Alguns CFGs do RetroArch chamam este botão de menu_toggle.
-      // No RetroVerso: toque rápido abre os cheats (execução deferida ao
+      // No RetroVault OS: toque rápido abre os cheats (execução deferida ao
       // touchend); SEGURAR abre a mini-barra com as ações de sistema.
       const systemButton = String(desc.button || '').toLowerCase();
       if (['menu_toggle', 'menu', 'retroarch_menu', 'menu_bar_button'].includes(systemButton)) {
@@ -555,8 +555,8 @@
       if (action === 'overlay_change' && target) {
         const targetOverlay = this.overlays[target];
         if (this.isPauseOverlay(targetOverlay)) {
-          if (typeof window.openRetroVerseCheats === 'function') {
-            window.openRetroVerseCheats();
+          if (typeof window.openRvCheats === 'function') {
+            window.openRvCheats();
           }
           return;
         }
@@ -565,8 +565,8 @@
       }
 
       if (action === 'open_cheats') {
-        if (typeof window.openRetroVerseCheats === 'function') {
-          window.openRetroVerseCheats();
+        if (typeof window.openRvCheats === 'function') {
+          window.openRvCheats();
         } else {
           // Fallback caso o parser seja usado fora do play.html.
           const emulator = window.EJS_emulator;
@@ -578,7 +578,7 @@
       try {
         const gm = window.EJS_emulator?.gameManager || window.EJS_emulator;
         if (!gm) return;
-        // Salvar/carregar passa antes pelo sistema de saves do RetroVerso
+        // Salvar/carregar passa antes pelo sistema de saves do RetroVault OS
         // (play.html): é o MESMO slot mostrado na barra de sistema, com data
         // e tamanho — o botão do overlay e a barra nunca divergem.
         // Fallback: quickSave/quickLoad do EJS (gm.saveState não existe na
@@ -650,8 +650,8 @@
         timer: setTimeout(() => {
           pending.firedLong = true;
           this.vibrate();
-          if (typeof window.openRetroVerseSystemBar === 'function') window.openRetroVerseSystemBar();
-          else if (typeof window.openRetroVerseCheats === 'function') window.openRetroVerseCheats();
+          if (typeof window.openRvSystemBar === 'function') window.openRvSystemBar();
+          else if (typeof window.openRvCheats === 'function') window.openRvCheats();
           this.menuPresses.delete(touchId);
         }, 500)
       };
@@ -669,7 +669,7 @@
       this.menuPresses.delete(touchId);
       if (!pending.firedLong) {
         clearTimeout(pending.timer);
-        if (typeof window.openRetroVerseCheats === 'function') window.openRetroVerseCheats();
+        if (typeof window.openRvCheats === 'function') window.openRvCheats();
       }
     }
 

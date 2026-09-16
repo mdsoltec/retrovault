@@ -1,0 +1,474 @@
+{
+  "Aladdin (USA)": [
+    {
+      "desc": "Infinite lives",
+      "code": "RGJB-Y6Z8"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FF7E3C:3300"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "FFEFFA:0003"
+    },
+    {
+      "desc": "Set Infinite Lives (9)",
+      "code": "FF7E3C:0039"
+    },
+    {
+      "desc": "Start with 7 lives",
+      "code": "G6AB-0AC0"
+    },
+    {
+      "desc": "Start with 9 lives",
+      "code": "HEAB-0AC0"
+    },
+    {
+      "desc": "Start with 1 health unit instead of 8",
+      "code": "AGXB-YAE2"
+    },
+    {
+      "desc": "Start with 2 health units instead of 8",
+      "code": "ALXB-YAE2"
+    },
+    {
+      "desc": "Start with 4 health units instead of 8",
+      "code": "AWXB-YAE2"
+    },
+    {
+      "desc": "Start with 12 health units instead of 8",
+      "code": "BWXB-YAE2"
+    },
+    {
+      "desc": "Start with 16 health units instead of 8",
+      "code": "CCXB-YAE2"
+    },
+    {
+      "desc": "Start with 32 health units instead of 8",
+      "code": "ECXB-YAE2"
+    }
+  ],
+  "Altered Beast (USA, Europe)": [
+    {
+      "desc": "Infinite Lives (Player 1)",
+      "code": "FFB120:03"
+    },
+    {
+      "desc": "Infinite Lives (Player 2)",
+      "code": "FFB126:03"
+    },
+    {
+      "desc": "Infinite Health (Player 1)",
+      "code": "FFCF10:0C"
+    },
+    {
+      "desc": "Infinite Health (Player 2)",
+      "code": "FFCF50:7F"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "FT1T-AA5L"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FFB120:030C"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AJ1T-AA5L"
+    },
+    {
+      "desc": "Invincibility (Can Lose Health But Cannot Be Touched)",
+      "code": "H20A-AA42"
+    },
+    {
+      "desc": "Infinite Lives (Player 1)",
+      "code": "FFB120:0003"
+    },
+    {
+      "desc": "Infinite Lives (Player 2)",
+      "code": "FFB126:0003"
+    },
+    {
+      "desc": "Infinite Health (Player 1)",
+      "code": "FFCF10:000C"
+    },
+    {
+      "desc": "Infinite Health (Player 2)",
+      "code": "FFCF50:007F"
+    }
+  ],
+  "Golden Axe II (World)": [
+    {
+      "desc": "Infinite Lives (Use On A Real PAR)",
+      "code": "FF0880:0002"
+    },
+    {
+      "desc": "Infinite Lives (Player 1)",
+      "code": "FF0880:03"
+    },
+    {
+      "desc": "Infinite Lives (Player 2)",
+      "code": "FF0924:03"
+    },
+    {
+      "desc": "Infinite Health (Player 1)",
+      "code": "FF083E:05"
+    },
+    {
+      "desc": "Infinite Health (Player 2)",
+      "code": "FF08E2:05"
+    },
+    {
+      "desc": "Infinite lives (both players)",
+      "code": "BTJA-AA48"
+    },
+    {
+      "desc": "Infinite Lives Player 2",
+      "code": "FF0924:0003"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "ZAJA-BGW8"
+    },
+    {
+      "desc": "Infinite Health (Player 1)",
+      "code": "FF083E:0005"
+    },
+    {
+      "desc": "Infinite Health (Player 2)",
+      "code": "FF08E2:0005"
+    },
+    {
+      "desc": "Max And Infinite Fighter Magic",
+      "code": "A0WA-BE5L+AJFT-AA30"
+    }
+  ],
+  "Great Circus Mystery Starring Mickey & Minnie, The (USA)": [
+    {
+      "desc": "Infinite Lives P1",
+      "code": "FF8273:0A"
+    },
+    {
+      "desc": "Infinite Lives P2",
+      "code": "FF83F3:0A"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FALA-CYX2"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AALA-CAD4"
+    },
+    {
+      "desc": "Infinite Lives P1",
+      "code": "FF8272:000A"
+    },
+    {
+      "desc": "Infinite Lives P2",
+      "code": "FF83F2:000A"
+    },
+    {
+      "desc": "Infinite Special Power",
+      "code": "AJRA-CA4C+AJRT-CA7W"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "E3MA-CA4G+RYXT-C6YN"
+    },
+    {
+      "desc": "Infinite Hearts",
+      "code": "R02T-A6V2+AVMA-CA4T"
+    },
+    {
+      "desc": "Infinite Energy P1",
+      "code": "FF81DE:03"
+    },
+    {
+      "desc": "Infinite Energy P2",
+      "code": "FF835E:03"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "ABMA-CACW"
+    }
+  ],
+  "Kid Chameleon (USA, Europe)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "00B838:4A78"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FFFC3F:0080"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "A46A-AA32"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AC6A-AAB4"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SC6A-AYV2"
+    },
+    {
+      "desc": "Infinite time",
+      "code": "H49A-AA7J"
+    },
+    {
+      "desc": "Start with 6 lives",
+      "code": "A2DA-AAE2"
+    },
+    {
+      "desc": "Start with 9 lives",
+      "code": "BEDA-AAE2"
+    },
+    {
+      "desc": "Start with 15 lives",
+      "code": "B6DA-AAE2"
+    },
+    {
+      "desc": "Start with 25 lives",
+      "code": "DEDA-AAE2"
+    },
+    {
+      "desc": "Start with 50 lives",
+      "code": "GJDA-AAE2"
+    }
+  ],
+  "Shinobi III - Return of the Ninja Master (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "FF37E8:0010"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "B2SA-EA7J"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AW2A-AA60"
+    },
+    {
+      "desc": "All in one Invincibility (No Flashing)",
+      "code": "RYSA-E6T4"
+    },
+    {
+      "desc": "Start with 11 lives - Normal Difficulty",
+      "code": "CBTT-AYC8"
+    },
+    {
+      "desc": "Start with 50 lives - Normal Difficulty",
+      "code": "CBTT-BCL8"
+    },
+    {
+      "desc": "Start with 99 lives - Normal Difficulty",
+      "code": "CBTT-AG48"
+    },
+    {
+      "desc": "Start with 1 life - Normal Difficulty",
+      "code": "CBTT-AAC8"
+    },
+    {
+      "desc": "Flaming Shurikens + Invincibility",
+      "code": "FF00E6:0001+FF4164:0001"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "G58T-CA5W+AJHT-EA4J"
+    },
+    {
+      "desc": "Enable Infinite Shuriken Cheat",
+      "code": "ACXA-AA7G+B23A-EA7R+BJ2T-EA7R"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "A58T-CA62+HTLT-EA4T"
+    }
+  ],
+  "Sonic & Knuckles + Sonic The Hedgehog 2 (World)": [
+    {
+      "desc": "Infinite Time",
+      "code": "R0LX-G6TL"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "R0BX-G6WY"
+    },
+    {
+      "desc": "Pause the game and press A for level select menu",
+      "code": "REJD-A60L+FAJD-AAG0"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "R0GX-C6WY"
+    },
+    {
+      "desc": "Alt walk through walls (PAR version)",
+      "code": "FFB03F00FF"
+    },
+    {
+      "desc": "Walk Through Perfectly Solid Walls",
+      "code": "RZTD-C6W4"
+    },
+    {
+      "desc": "The regular level music plays when Super Knuckles, instead of the Super theme",
+      "code": "ADFW-8AF6"
+    },
+    {
+      "desc": "Press double jump to turn into Super Knuckles at any time.  See notes.",
+      "code": "BBWX-CA5C+RZXD-C6WW"
+    },
+    {
+      "desc": "Walk Through Solid Objects",
+      "code": "RZHD-C6YL"
+    },
+    {
+      "desc": "Press double jump to turn into Super Knuckles at any time. See notes.",
+      "code": "BBWX-CA5C"
+    },
+    {
+      "desc": "Jump In Midair - Knuckles",
+      "code": "CVWD-CA94+HVWX-DEJT+ABWX-DZ2W+APWX-DP20+AVWX-CR26"
+    },
+    {
+      "desc": "Pause the game and press A to play special stages",
+      "code": "REJD-A60L+CAJD-AAG0"
+    }
+  ],
+  "Sonic Compilation ~ Sonic Classics (USA, Europe, Korea) (Rev A)": [
+    {
+      "desc": "infinite lives",
+      "code": "GJ6C-CA46"
+    },
+    {
+      "desc": "99 lives",
+      "code": "NN3W-AAAG"
+    },
+    {
+      "desc": "You can't be hurt by enemies or spikes when you collect rings",
+      "code": "ATTA-CABE"
+    },
+    {
+      "desc": "Rings always count up to 999",
+      "code": "AP2A-CAR4"
+    },
+    {
+      "desc": "Grab rings from anywhere",
+      "code": "AP2A-CAPA"
+    },
+    {
+      "desc": "Dont lose rings when Hit",
+      "code": "AWRW-AA3R"
+    },
+    {
+      "desc": "Dont lose rings when Hit",
+      "code": "ATTA-CA92"
+    }
+  ],
+  "Streets of Rage 2 (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "FFEF81:68"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FFEF83:0A"
+    },
+    {
+      "desc": "Infinite lives (both players)",
+      "code": "AW7T-AA6L"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "FFEF80:0068"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AL7T-AA6L"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FFEF82:000A"
+    },
+    {
+      "desc": "P2 Unlimited Health",
+      "code": "FFF081:0068"
+    },
+    {
+      "desc": "Boss Unlimited Health",
+      "code": "FFF181:0068"
+    },
+    {
+      "desc": "Invincible Against Hits from Partner and Explosions - Both Players",
+      "code": "AZGA-AAGN+ABGA-BD8T"
+    },
+    {
+      "desc": "Infinite Use Of Weapon#1",
+      "code": "FFF773:00FF"
+    },
+    {
+      "desc": "Infinite Use Of Weapon#2",
+      "code": "FFF7F3:00FF"
+    },
+    {
+      "desc": "Infinite Use Of Weapon#3",
+      "code": "FFF873:00FF"
+    }
+  ],
+  "Top Gear 2 (USA)": [
+    {
+      "desc": "Infinite Money",
+      "code": "FF1B84:270F"
+    },
+    {
+      "desc": "Start with max Money",
+      "code": "B6TT-ARMJ"
+    },
+    {
+      "desc": "Infinite Nitro",
+      "code": "AMTA-AA8J"
+    },
+    {
+      "desc": "Infinite Nitro",
+      "code": "FF1B9E:0006"
+    },
+    {
+      "desc": "Have Lots of Money",
+      "code": "FF2570:FF+FF2571:FF"
+    },
+    {
+      "desc": "Have Lots of Money",
+      "code": "FF2570:00FF+FF2570:00FF"
+    },
+    {
+      "desc": "Master Code",
+      "code": "ATRT-AA7E"
+    },
+    {
+      "desc": "Acceleration Modifier P1",
+      "code": "FF18D8:XX"
+    },
+    {
+      "desc": "Lap Modifier P1",
+      "code": "FF1995:XX"
+    },
+    {
+      "desc": "Position Modifier P1",
+      "code": "FF199D:XX"
+    },
+    {
+      "desc": "Total Points Modifier P1",
+      "code": "FF1B85:XX"
+    },
+    {
+      "desc": "Always Finish First",
+      "code": "AMVT-AA40"
+    }
+  ]
+}

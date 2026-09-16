@@ -1,6 +1,6 @@
 {
-  "name": "Retroverso - Enter The Classics",
-  "short_name": "Retroverso",
+  "name": "RetroVault OS - Enter The Classics",
+  "short_name": "RetroVault OS",
   "description": "Plataforma de emulação de jogos retro e streaming no navegador. 13 consoles, 195+ jogos",
   "id": "./",
   "start_url": "./index.html",

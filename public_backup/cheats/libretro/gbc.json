@@ -1,0 +1,4780 @@
+{
+  "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 2) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "Skip Intro Screens",
+      "code": "15E-E49-F72+AFE-E29-7F4"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "C9D-689-081"
+    },
+    {
+      "desc": "Walk Thru Walls",
+      "code": "AF4-A08-3B0"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "003-B69-19E"
+    },
+    {
+      "desc": "Infinite Magic",
+      "code": "00C-60B-E6E"
+    },
+    {
+      "desc": "Infinite Arrows",
+      "code": "003-D5E-E6E"
+    },
+    {
+      "desc": "Infinite Bombs",
+      "code": "003-67E-E6E"
+    },
+    {
+      "desc": "Infinite Small Keys",
+      "code": "001-4E8-19E"
+    },
+    {
+      "desc": "Infinite Rupees",
+      "code": "002-CF9-A24"
+    },
+    {
+      "desc": "Enable Debug Mode 1",
+      "code": "010-03F-E6A"
+    },
+    {
+      "desc": "Enable Debug Mode 2",
+      "code": "010-04F-E6A"
+    },
+    {
+      "desc": "Enable Debug Mode 3",
+      "code": "010-05F-E6A"
+    },
+    {
+      "desc": "Walk Through Walls Everywhere (Alternate)",
+      "code": "21E-6A9-081"
+    },
+    {
+      "desc": "Lift Object For Maximum Rupees",
+      "code": "031-51D-B3A"
+    },
+    {
+      "desc": "Lift Object To Destroy All Enemies On Screen",
+      "code": "041-51D-B3A"
+    },
+    {
+      "desc": "Can Use Items While Holding An Object",
+      "code": "EAA-83E-081"
+    },
+    {
+      "desc": "Items Can Be Carried To Different Screen Locations",
+      "code": "EA3-57A-D5D"
+    },
+    {
+      "desc": "Strike Chicken Once For Frenzy",
+      "code": "005-B3B-6E6+006-F2B-6E6"
+    },
+    {
+      "desc": "Crane Game Items Don't Move (Switch off to collect item)",
+      "code": "30D-DD9-4CA"
+    },
+    {
+      "desc": "Always Drop Item Modifier",
+      "code": "2D6-56A-193+3E6-55A-80E+006-51A-E69"
+    }
+  ],
+  "Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "No Random Battles",
+      "code": "01000BD2"
+    },
+    {
+      "desc": "Always On Bike",
+      "code": "010182D6"
+    },
+    {
+      "desc": "Day Of Week Modifier",
+      "code": "0100DCD1"
+    },
+    {
+      "desc": "Hour Modifier",
+      "code": "0100DDD1"
+    },
+    {
+      "desc": "Minute Modifier",
+      "code": "0100DED1+0100DFD1"
+    },
+    {
+      "desc": "Infinite Money",
+      "code": "019973D5+019974D5+019975D5"
+    },
+    {
+      "desc": "Have All Badges",
+      "code": "01FF7CD5+01FF7DD5"
+    },
+    {
+      "desc": "Key Item Modifier",
+      "code": "0100E2D5"
+    },
+    {
+      "desc": "Able To Get All 3 Starter Pokemon From Prof Elm",
+      "code": "0100BAD7"
+    },
+    {
+      "desc": "Infinite Casino Coins",
+      "code": "010F7BD5+01277AD5"
+    },
+    {
+      "desc": "Infinite Park Balls",
+      "code": "0114C3D9"
+    },
+    {
+      "desc": "Infinite Time In Bug Catching Contest",
+      "code": "011393D1"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "010AA6CE+010AA5CE+010AA4CE+010AA3CE"
+    },
+    {
+      "desc": "First Pokemon Level Up To 100 After Battle",
+      "code": "011632DA+01E333DA+016034DA"
+    },
+    {
+      "desc": "Amount Money That Mom Is Holding",
+      "code": "010076D5+010077D5+010078D5"
+    },
+    {
+      "desc": "Catch The Pokerus",
+      "code": "019D46DA"
+    },
+    {
+      "desc": "Bunny Ears Mode",
+      "code": "010102C3"
+    },
+    {
+      "desc": "Pokemon Color Modifier",
+      "code": "0100EED0"
+    },
+    {
+      "desc": "Have All Room Decorations Permenantly",
+      "code": "01FF0BD8+01FF0CD8+01FF0DD8+01FF0ED8+01FF0FD8+01FF10D8+01FF11D8"
+    },
+    {
+      "desc": "Upper Left Corner Room Decoration",
+      "code": "011A60D9"
+    },
+    {
+      "desc": "Poster by Door Room Decoration [Note 1]",
+      "code": "01105CD9"
+    },
+    {
+      "desc": "Lower Left Corner Room Decoration",
+      "code": "010259D9"
+    },
+    {
+      "desc": "In Front of TV Room Decoration",
+      "code": "01155DD9"
+    },
+    {
+      "desc": "Left Side of Shelf Room Decoration",
+      "code": "01005ED9"
+    },
+    {
+      "desc": "Right Side of Shelf Room Decoration",
+      "code": "01005FD9"
+    },
+    {
+      "desc": "Quick Egg Hatching Slot 1",
+      "code": "010145DA"
+    },
+    {
+      "desc": "Quick Egg Hatching Slot 2",
+      "code": "010175DA"
+    },
+    {
+      "desc": "Quick Egg Hatching Slot 3",
+      "code": "0101A5DA"
+    },
+    {
+      "desc": "Quick Egg Hatching Slot 4",
+      "code": "0101D5DA"
+    },
+    {
+      "desc": "Quick Egg Hatching Slot 5",
+      "code": "010105DB"
+    },
+    {
+      "desc": "Quick Egg Hatching Slot 6",
+      "code": "010135DB"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 1 Holds",
+      "code": "01002BDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 2 Holds",
+      "code": "01005BDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 3 Holds",
+      "code": "01008BDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 4 Holds",
+      "code": "0100BBDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 5 Holds",
+      "code": "0100EBDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 6 Holds",
+      "code": "01001BDB"
+    },
+    {
+      "desc": "Infinite HP [In Battle]",
+      "code": "01FF1DCB"
+    },
+    {
+      "desc": "Infinite PP [1st Position]",
+      "code": "012814CB"
+    },
+    {
+      "desc": "Infinite PP [2nd Position]",
+      "code": "012815CB"
+    },
+    {
+      "desc": "Infinite PP [3rd Position]",
+      "code": "012816CB"
+    },
+    {
+      "desc": "Infinite PP [4th Position]",
+      "code": "012817CB"
+    },
+    {
+      "desc": "Skill Modifier [1st Position]",
+      "code": "010049D1"
+    },
+    {
+      "desc": "Skill Modifier [2nd Position]",
+      "code": "01004AD1"
+    },
+    {
+      "desc": "Skill Modifier [3rd Position]",
+      "code": "01004BD1"
+    },
+    {
+      "desc": "Skill Modifier [4th Position]",
+      "code": "01004CD1"
+    },
+    {
+      "desc": "Enemy LV Modifier",
+      "code": "0100FCD0"
+    },
+    {
+      "desc": "1-Hit Enemy Kills",
+      "code": "010000D1"
+    },
+    {
+      "desc": "Enemy Asleep And Poisoned",
+      "code": "0100ADD7"
+    },
+    {
+      "desc": "Catch ? Pokemon In The Wild Mod",
+      "code": "0100EDD0"
+    },
+    {
+      "desc": "Always Fight Shiny Pokemon",
+      "code": "010719D1"
+    },
+    {
+      "desc": "Easy Level Gain",
+      "code": "010036D1"
+    },
+    {
+      "desc": "Always Fight Female Pokemon",
+      "code": "010419D1"
+    },
+    {
+      "desc": "Always Fight Male Pokemon",
+      "code": "010519D1"
+    },
+    {
+      "desc": "Character Sprite Modifier",
+      "code": "010019D1"
+    },
+    {
+      "desc": "Catch Trainers Pokemon",
+      "code": "010116D1"
+    },
+    {
+      "desc": "No Status Change",
+      "code": "01001ACB"
+    },
+    {
+      "desc": "Trainers Pokemon Modifier Slot 1",
+      "code": "010056DD"
+    },
+    {
+      "desc": "Trainers Pokemon Modifier Slot 2",
+      "code": "010057DD"
+    },
+    {
+      "desc": "Trainers Pokemon Modifier Slot 3",
+      "code": "010058DD"
+    },
+    {
+      "desc": "Trainers Pokemon Modifier Slot 4",
+      "code": "010059DD"
+    },
+    {
+      "desc": "Trainers Pokemon Modifier Slot 5",
+      "code": "01005ADD"
+    },
+    {
+      "desc": "Trainers Pokemon Modifier Slot 6",
+      "code": "01005BDD"
+    },
+    {
+      "desc": "Buy Item At Pokemart Slot 1",
+      "code": "0101EDCF"
+    },
+    {
+      "desc": "Buy Item At Pokemart Slot 2",
+      "code": "0100EECF"
+    },
+    {
+      "desc": "Buy Item At Pokemart Slot 3",
+      "code": "0100EFCF"
+    },
+    {
+      "desc": "Buy Item At Pokemart Slot 4",
+      "code": "0100F0CF"
+    },
+    {
+      "desc": "Buy Item At Pokemart Slot 5",
+      "code": "0100F1CF"
+    },
+    {
+      "desc": "Total Item Number Modifier",
+      "code": "0100B7D5"
+    },
+    {
+      "desc": "Item Modifier 1st Position",
+      "code": "0100B8D5"
+    },
+    {
+      "desc": "Infinite Quantity 1st Position",
+      "code": "0163B9D5"
+    },
+    {
+      "desc": "Item Modifier 2nd Position",
+      "code": "0100BAD5"
+    },
+    {
+      "desc": "Infinite Quantity 2nd Position",
+      "code": "0163BBD5"
+    },
+    {
+      "desc": "Item Modifier 3rd Position",
+      "code": "0100BCD5"
+    },
+    {
+      "desc": "Infinite Quantity 3rd Position",
+      "code": "0163BDD5"
+    },
+    {
+      "desc": "Item Modifier 4th Position",
+      "code": "0100BED5"
+    },
+    {
+      "desc": "Infinite Quantity 4th Position",
+      "code": "0163BFD5"
+    },
+    {
+      "desc": "Item Modifier 5th Position",
+      "code": "0100C0D5"
+    },
+    {
+      "desc": "Infinite Quantity 5th Position",
+      "code": "0163C1D5"
+    },
+    {
+      "desc": "Item Modifier 6th Position",
+      "code": "0100C2D5"
+    },
+    {
+      "desc": "Infinite Quantity 6th Position",
+      "code": "0163C3D5"
+    },
+    {
+      "desc": "Item Modifier 7th Position",
+      "code": "0100C4D5"
+    },
+    {
+      "desc": "Infinite Quantity 7th Position",
+      "code": "0163C5D5"
+    },
+    {
+      "desc": "Item Modifier 8th Position",
+      "code": "0100C6D5"
+    },
+    {
+      "desc": "Infinite Quantity 8th Position",
+      "code": "0163C7D5"
+    },
+    {
+      "desc": "Item Modifier 9th Position",
+      "code": "0100C8D5"
+    },
+    {
+      "desc": "Infinite Quantity 9th Position",
+      "code": "0163C9D5"
+    },
+    {
+      "desc": "Item Modifier 10th Position",
+      "code": "0100CAD5"
+    },
+    {
+      "desc": "Infinite Quantity 10th Position",
+      "code": "0163CBD5"
+    },
+    {
+      "desc": "Item Modifier 11th Position",
+      "code": "0100CCD5"
+    },
+    {
+      "desc": "Infinite Quantity 11th Position",
+      "code": "0163CDD5"
+    },
+    {
+      "desc": "Item Modifier 12th Position",
+      "code": "0100CED5"
+    },
+    {
+      "desc": "Infinite Quantity 12th Position",
+      "code": "0163CFD5"
+    },
+    {
+      "desc": "Item Modifier 13th Position",
+      "code": "0100D0D5"
+    },
+    {
+      "desc": "Infinite Quantity 13th Position",
+      "code": "0163D1D5"
+    },
+    {
+      "desc": "Item Modifier 14th Position",
+      "code": "0100D2D5"
+    },
+    {
+      "desc": "Infinite Quantity 14th Position",
+      "code": "0163D3D5"
+    },
+    {
+      "desc": "Item Modifier 15th Position",
+      "code": "0100D4D5"
+    },
+    {
+      "desc": "Infinite Quantity 15th Position",
+      "code": "0163D5D5"
+    },
+    {
+      "desc": "Item Modifier 16th Position",
+      "code": "0100D6D5"
+    },
+    {
+      "desc": "Infinite Quantity Slot 16",
+      "code": "0163D7D5"
+    },
+    {
+      "desc": "Item Modifier 17th Position",
+      "code": "0100D8D5"
+    },
+    {
+      "desc": "Infinite Quantity Slot 17",
+      "code": "0163D9D5"
+    },
+    {
+      "desc": "Item Modifier 18th Position",
+      "code": "0100DAD5"
+    },
+    {
+      "desc": "Infinite Quantity slot 18",
+      "code": "0163DBD5"
+    },
+    {
+      "desc": "Item Modifier 19th Position",
+      "code": "0100DCD5"
+    },
+    {
+      "desc": "Infinite Quantity Slot 19",
+      "code": "0163DDD5"
+    },
+    {
+      "desc": "Item Modifier 20th Position",
+      "code": "0100DED5"
+    },
+    {
+      "desc": "Infinite Quantity Slot 20",
+      "code": "0163DFD5"
+    },
+    {
+      "desc": "Total Key Item Modifier",
+      "code": "0100E1D5"
+    },
+    {
+      "desc": "Key Item Slot 1",
+      "code": "0107E2D5"
+    },
+    {
+      "desc": "Key Item Slot 2",
+      "code": "0100E3D5"
+    },
+    {
+      "desc": "Key Item Slot 3",
+      "code": "0100E4D5"
+    },
+    {
+      "desc": "Key Item Slot 4",
+      "code": "0100E5D5"
+    },
+    {
+      "desc": "Key Item Slot 5",
+      "code": "0100E6D5"
+    },
+    {
+      "desc": "Key Item Slot 6",
+      "code": "0100E7D5"
+    },
+    {
+      "desc": "Key Item Slot 7",
+      "code": "0100E8D5"
+    },
+    {
+      "desc": "Key Item Slot 8",
+      "code": "0100E9D5"
+    },
+    {
+      "desc": "Key Item Slot 9",
+      "code": "0100EAD5"
+    },
+    {
+      "desc": "Key Item Slot 10",
+      "code": "0100EBD5"
+    },
+    {
+      "desc": "Key Item Slot 11",
+      "code": "0100ECD5"
+    },
+    {
+      "desc": "Key Item Slot 12",
+      "code": "0100EDD5"
+    },
+    {
+      "desc": "Key Item Slot 13",
+      "code": "0100EED5"
+    },
+    {
+      "desc": "Key Item Slot 14",
+      "code": "0100EFD5"
+    },
+    {
+      "desc": "Key Item Slot 15",
+      "code": "0100F0D5"
+    },
+    {
+      "desc": "Key Item Slot 16",
+      "code": "0100F1D5"
+    },
+    {
+      "desc": "Pokéball Quantity Modifier",
+      "code": "0100FCD5"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "0100FDD5"
+    },
+    {
+      "desc": "Infinite Slot 1",
+      "code": "01FFFED5"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "0100FFD5"
+    },
+    {
+      "desc": "Infinite Slot 2",
+      "code": "01FF00D6"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "010001D6"
+    },
+    {
+      "desc": "Infinite Slot 3",
+      "code": "01FF02D6"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "010003D6"
+    },
+    {
+      "desc": "Infinite Slot 4",
+      "code": "01FF04D6"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "010005D6"
+    },
+    {
+      "desc": "Infinite Slot 5",
+      "code": "01FF06D6"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "010007D6"
+    },
+    {
+      "desc": "Infinite Slot 6",
+      "code": "01FF08D6"
+    },
+    {
+      "desc": "Slot 7",
+      "code": "010009D6"
+    },
+    {
+      "desc": "Infinite Slot 7",
+      "code": "01FF0AD6"
+    },
+    {
+      "desc": "Slot 8",
+      "code": "01000BD6"
+    },
+    {
+      "desc": "Infinite Slot 8",
+      "code": "01FF0CD6"
+    },
+    {
+      "desc": "Slot 9",
+      "code": "01000DD6"
+    },
+    {
+      "desc": "Infinite Slot 9",
+      "code": "01FF0ED6"
+    },
+    {
+      "desc": "Slot 10",
+      "code": "01000FD6"
+    },
+    {
+      "desc": "Infinite Slot 10",
+      "code": "01FF10D6"
+    },
+    {
+      "desc": "Slot 11",
+      "code": "010011D6"
+    },
+    {
+      "desc": "Infinite Slot 11",
+      "code": "01FF12D6"
+    },
+    {
+      "desc": "Slot 12",
+      "code": "010013D6"
+    },
+    {
+      "desc": "Infinite Slot 12",
+      "code": "01FF14D6"
+    },
+    {
+      "desc": "TM Slot 1 Dynamicpunch",
+      "code": "01007ED5"
+    },
+    {
+      "desc": "TM Slot 2 Headbutt",
+      "code": "01007FD5"
+    },
+    {
+      "desc": "TM Slot 3 Curse",
+      "code": "010080D5"
+    },
+    {
+      "desc": "TM Slot 4 Rollout",
+      "code": "010081D5"
+    },
+    {
+      "desc": "TM Slot 5 Roar",
+      "code": "010082D5"
+    },
+    {
+      "desc": "TM Slot 6 Toxic",
+      "code": "010083D5"
+    },
+    {
+      "desc": "TM Slot 7 Zap Cannon",
+      "code": "010084D5"
+    },
+    {
+      "desc": "TM Slot 8 Rock Smash",
+      "code": "010085D5"
+    },
+    {
+      "desc": "TM Slot 9 Psych Up",
+      "code": "010086D5"
+    },
+    {
+      "desc": "TM Slot 10 Hidden Power",
+      "code": "010087D5"
+    },
+    {
+      "desc": "TM Slot 11 Sunny Day",
+      "code": "010088D5"
+    },
+    {
+      "desc": "TM Slot 12 Sweet Scent",
+      "code": "010089D5"
+    },
+    {
+      "desc": "TM Slot 13 Snore",
+      "code": "01008AD5"
+    },
+    {
+      "desc": "TM Slot 14 Bli??ard",
+      "code": "01008BD5"
+    },
+    {
+      "desc": "TM Slot 15 Hyper Beam",
+      "code": "01008CD5"
+    },
+    {
+      "desc": "TM Slot 16 Icy Wind",
+      "code": "01008DD5"
+    },
+    {
+      "desc": "TM Slot 17 Protect",
+      "code": "01008ED5"
+    },
+    {
+      "desc": "TM Slot 18 Rain Dance",
+      "code": "01008FD5"
+    },
+    {
+      "desc": "TM Slot 19 Giga Drain",
+      "code": "010090D5"
+    },
+    {
+      "desc": "TM Slot 20 Endure",
+      "code": "010091D5"
+    },
+    {
+      "desc": "TM Slot 21 Frustration",
+      "code": "010092D5"
+    },
+    {
+      "desc": "TM Slot 22 Solar Beam",
+      "code": "010093D5"
+    },
+    {
+      "desc": "TM Slot 23 Iron Tail",
+      "code": "010094D5"
+    },
+    {
+      "desc": "TM Slot 24 Dragonbreath",
+      "code": "010095D5"
+    },
+    {
+      "desc": "TM Slot 25 Thunder",
+      "code": "010096D5"
+    },
+    {
+      "desc": "TM Slot 26 Earthquake",
+      "code": "010097D5"
+    },
+    {
+      "desc": "TM Slot 27 Return",
+      "code": "010098D5"
+    },
+    {
+      "desc": "TM Slot 28 Dig",
+      "code": "010099D5"
+    },
+    {
+      "desc": "TM Slot 29 Psychic",
+      "code": "01009AD5"
+    },
+    {
+      "desc": "TM Slot 30 Shadow Ball",
+      "code": "01009BD5"
+    },
+    {
+      "desc": "TM Slot 31 Mud-Slap",
+      "code": "01009CD5"
+    },
+    {
+      "desc": "TM Slot 32 Double Team",
+      "code": "01009DD5"
+    },
+    {
+      "desc": "TM Slot 33 Ice Punch",
+      "code": "01009ED5"
+    },
+    {
+      "desc": "TM Slot 34 Swagger",
+      "code": "01009FD5"
+    },
+    {
+      "desc": "TM Slot 35 Sleep Talk",
+      "code": "0100A0D5"
+    },
+    {
+      "desc": "TM Slot 36 Sludge Bomb",
+      "code": "0100A1D5"
+    },
+    {
+      "desc": "TM Slot 37 Sandstorm",
+      "code": "0100A2D5"
+    },
+    {
+      "desc": "TM Slot 38 Fire Blast",
+      "code": "0100A3D5"
+    },
+    {
+      "desc": "TM Slot 39 Swift",
+      "code": "0100A4D5"
+    },
+    {
+      "desc": "TM Slot 40 Defense Curl",
+      "code": "0100A5D5"
+    },
+    {
+      "desc": "TM Slot 41 Thunderpunch",
+      "code": "0100A6D5"
+    },
+    {
+      "desc": "TM Slot 42 Dream Eater",
+      "code": "0100A7D5"
+    },
+    {
+      "desc": "TM Slot 43 Detect",
+      "code": "0100A8D5"
+    },
+    {
+      "desc": "TM Slot 44 Rest",
+      "code": "0100A9D5"
+    },
+    {
+      "desc": "TM Slot 45 Attract",
+      "code": "0100AAD5"
+    },
+    {
+      "desc": "TM Slot 46 Thief",
+      "code": "0100ABD5"
+    },
+    {
+      "desc": "TM Slot 47 Steel Wing",
+      "code": "0100ACD5"
+    },
+    {
+      "desc": "TM Slot 48 Fire Punch",
+      "code": "0100ADD5"
+    },
+    {
+      "desc": "TM Slot 49 Fury Cutter",
+      "code": "0100AED5"
+    },
+    {
+      "desc": "TM Slot 50 Nightmare",
+      "code": "0100AFD5"
+    },
+    {
+      "desc": "HM Slot 1 Cut",
+      "code": "0100B0D5"
+    },
+    {
+      "desc": "HM Slot 2 Fly",
+      "code": "0100B1D5"
+    },
+    {
+      "desc": "HM Slot 3 Surf",
+      "code": "0100B2D5"
+    },
+    {
+      "desc": "HM Slot 4 Strength",
+      "code": "0100B3D5"
+    },
+    {
+      "desc": "HM Slot 5 Flash",
+      "code": "0100B4D5"
+    },
+    {
+      "desc": "HM Slot 6 Whirlpool",
+      "code": "0100B5D5"
+    },
+    {
+      "desc": "HM Slot 7 Waterfall",
+      "code": "0100B6D5"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010023DA"
+    },
+    {
+      "desc": "Skill Modifier [1st Position]",
+      "code": "01002CDA"
+    },
+    {
+      "desc": "Skill Modifier [2nd Position]",
+      "code": "01002DDA"
+    },
+    {
+      "desc": "Skill Modifier [3rd Position]",
+      "code": "01002EDA"
+    },
+    {
+      "desc": "Skill Modifier [4th Position]",
+      "code": "01002FDA"
+    },
+    {
+      "desc": "Trainer ID# Modifier",
+      "code": "010030DA+010031DA"
+    },
+    {
+      "desc": "Exp. Modifier",
+      "code": "010032DA+010033DA+010034DA"
+    },
+    {
+      "desc": "Infinite PP [1st Position]",
+      "code": "010041DA"
+    },
+    {
+      "desc": "Infinite PP [2nd Position]",
+      "code": "010042DA"
+    },
+    {
+      "desc": "Infinite PP [3rd Position]",
+      "code": "010043DA"
+    },
+    {
+      "desc": "Infinite PP [4th Position]",
+      "code": "010044DA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "010049DA"
+    },
+    {
+      "desc": "Infinite HP [Larger]",
+      "code": "01004CDA"
+    },
+    {
+      "desc": "Infinite HP [Smaller]",
+      "code": "01004DDA"
+    },
+    {
+      "desc": "Max HP Modifier [Larger]",
+      "code": "01004EDA"
+    },
+    {
+      "desc": "Max HP Modifier [Smaller]",
+      "code": "01004FDA"
+    },
+    {
+      "desc": "Max Attack Modifier [Larger]",
+      "code": "010050DA"
+    },
+    {
+      "desc": "Max Attack Modifier [Smaller]",
+      "code": "010051DA"
+    },
+    {
+      "desc": "Max Defense Modifier [Larger]",
+      "code": "010052DA"
+    },
+    {
+      "desc": "Max Defense Modifier [Smaller]",
+      "code": "010053DA"
+    },
+    {
+      "desc": "Max Speed [Larger]",
+      "code": "010054DA"
+    },
+    {
+      "desc": "Max Speed [Small]",
+      "code": "010055DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Larger]",
+      "code": "010056DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Smaller]",
+      "code": "010057DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Larger]",
+      "code": "010058DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Smaller]",
+      "code": "010059DA"
+    },
+    {
+      "desc": "Pokemon Is Shiny",
+      "code": "01EA3FDA+01EA40DA"
+    },
+    {
+      "desc": "Default Name End [Must Be On]",
+      "code": "015096DB"
+    },
+    {
+      "desc": "Name Mod Slot 1",
+      "code": "01008CDB"
+    },
+    {
+      "desc": "Name Mod Slot 2",
+      "code": "01008DDB"
+    },
+    {
+      "desc": "Name Mod Slot 3",
+      "code": "01008EDB"
+    },
+    {
+      "desc": "Name Mod Slot 4",
+      "code": "01008FDB"
+    },
+    {
+      "desc": "Name Mod Slot 5",
+      "code": "010090DB"
+    },
+    {
+      "desc": "Name Mod Slot 6",
+      "code": "010091DB"
+    },
+    {
+      "desc": "Name Mod Slot 7",
+      "code": "010092DB"
+    },
+    {
+      "desc": "Name Mod Slot 8",
+      "code": "010093DB"
+    },
+    {
+      "desc": "Name Mod Slot 9",
+      "code": "010094DB"
+    },
+    {
+      "desc": "Name Mod Slot 10",
+      "code": "010095DB"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010024DA"
+    },
+    {
+      "desc": "Skill Modifier [1st Position]",
+      "code": "01005CDA"
+    },
+    {
+      "desc": "Skill Modifier [2nd Position]",
+      "code": "01005DDA"
+    },
+    {
+      "desc": "Skill Modifier [3rd Position]",
+      "code": "01005EDA"
+    },
+    {
+      "desc": "Skill Modifier [4th Position]",
+      "code": "01005FDA"
+    },
+    {
+      "desc": "Trainer ID# Modifier",
+      "code": "010060DA+010061DA"
+    },
+    {
+      "desc": "Exp. Modifier",
+      "code": "010062DA+010063DA+010064DA"
+    },
+    {
+      "desc": "Infinite PP [1st Position]",
+      "code": "010071DA"
+    },
+    {
+      "desc": "Infinite PP [2nd Position]",
+      "code": "010072DA"
+    },
+    {
+      "desc": "Infinite PP [3rd Position]",
+      "code": "010073DA"
+    },
+    {
+      "desc": "Infinite PP [4th Position]",
+      "code": "010074DA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "010079DA"
+    },
+    {
+      "desc": "Infinite HP [Larger]",
+      "code": "01007CDA"
+    },
+    {
+      "desc": "Infinite HP [Smaller]",
+      "code": "01007DDA"
+    },
+    {
+      "desc": "Max HP Modifier [Larger]",
+      "code": "01007EDA"
+    },
+    {
+      "desc": "Max HP Modifier [Smaller]",
+      "code": "01007FDA"
+    },
+    {
+      "desc": "Max Attack Modifier [Larger]",
+      "code": "010080DA"
+    },
+    {
+      "desc": "Max Attack Modifier [Smaller]",
+      "code": "010081DA"
+    },
+    {
+      "desc": "Max Defense Modifier [Larger]",
+      "code": "010082DA"
+    },
+    {
+      "desc": "Max Defense Modifier [Smaller]",
+      "code": "010083DA"
+    },
+    {
+      "desc": "Max Speed [Larger]",
+      "code": "010084DA"
+    },
+    {
+      "desc": "Max Speed [Small]",
+      "code": "010085DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Larger]",
+      "code": "010086DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Smaller]",
+      "code": "010087DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Larger]",
+      "code": "010088DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Smaller]",
+      "code": "010089DA"
+    },
+    {
+      "desc": "Pokemon Is Shiny",
+      "code": "01EA6FDA+01AA70DA"
+    },
+    {
+      "desc": "Default Name End [Must Be On]",
+      "code": "0150A1DB"
+    },
+    {
+      "desc": "Name Mod Slot 1",
+      "code": "010097DB"
+    },
+    {
+      "desc": "Name Mod Slot 2",
+      "code": "010098DB"
+    },
+    {
+      "desc": "Name Mod Slot 3",
+      "code": "010099DB"
+    },
+    {
+      "desc": "Name Mod Slot 4",
+      "code": "01009ADB"
+    },
+    {
+      "desc": "Name Mod Slot 5",
+      "code": "01009BDB"
+    },
+    {
+      "desc": "Name Mod Slot 6",
+      "code": "01009CDB"
+    },
+    {
+      "desc": "Name Mod Slot 7",
+      "code": "01009DDB"
+    },
+    {
+      "desc": "Name Mod Slot 8",
+      "code": "01009EDB"
+    },
+    {
+      "desc": "Name Mod Slot 9",
+      "code": "01009FDB"
+    },
+    {
+      "desc": "Name Mod Slot 10",
+      "code": "0100A0DB"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010025DA"
+    },
+    {
+      "desc": "Skill Modifier [1st Position]",
+      "code": "01008CDA"
+    },
+    {
+      "desc": "Skill Modifier [2nd Position]",
+      "code": "01008DDA"
+    },
+    {
+      "desc": "Skill Modifier [3rd Position]",
+      "code": "01008EDA"
+    },
+    {
+      "desc": "Skill Modifier [4th Position]",
+      "code": "01008FDA"
+    },
+    {
+      "desc": "Trainer ID# Modifier",
+      "code": "010090DA+010091DA"
+    },
+    {
+      "desc": "Exp. Modifier",
+      "code": "010092DA+010093DA+010094DA"
+    },
+    {
+      "desc": "Infinite PP [1st Position]",
+      "code": "0100A1DA"
+    },
+    {
+      "desc": "Infinite PP [2nd Position]",
+      "code": "0100A2DA"
+    },
+    {
+      "desc": "Infinite PP [3rd Position]",
+      "code": "0100A3DA"
+    },
+    {
+      "desc": "Infinite PP [4th Position]",
+      "code": "0100A4DA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "0100A9DA"
+    },
+    {
+      "desc": "Infinite HP [Larger]",
+      "code": "0100ACDA"
+    },
+    {
+      "desc": "Infinite HP [Smaller]",
+      "code": "0100ADDA"
+    },
+    {
+      "desc": "Max HP Modifier [Larger]",
+      "code": "0100AEDA"
+    },
+    {
+      "desc": "Max HP Modifier [Smaller]",
+      "code": "0100AFDA"
+    },
+    {
+      "desc": "Max Attack Modifier [Larger]",
+      "code": "0100B0DA"
+    },
+    {
+      "desc": "Max Attack Modifier [Smaller]",
+      "code": "0100B1DA"
+    },
+    {
+      "desc": "Max Defense Modifier [Larger]",
+      "code": "0100B2DA"
+    },
+    {
+      "desc": "Max Defense Modifier [Smaller]",
+      "code": "0100B3DA"
+    },
+    {
+      "desc": "Max Speed [Larger]",
+      "code": "0100B4DA"
+    },
+    {
+      "desc": "Max Speed [Small]",
+      "code": "0100B5DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Larger]",
+      "code": "0100B6DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Smaller]",
+      "code": "0100B7DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Larger]",
+      "code": "0100B8DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Smaller]",
+      "code": "0100B9DA"
+    },
+    {
+      "desc": "Pokemon Is Shiny",
+      "code": "01EA9FDA+01AAA0DA"
+    },
+    {
+      "desc": "Default Name End [Must Be On]",
+      "code": "0150ACDB"
+    },
+    {
+      "desc": "Name Mod Slot 1",
+      "code": "0100A2DB"
+    },
+    {
+      "desc": "Name Mod Slot 2",
+      "code": "0100A3DB"
+    },
+    {
+      "desc": "Name Mod Slot 3",
+      "code": "0100A4DB"
+    },
+    {
+      "desc": "Name Mod Slot 4",
+      "code": "0100A5DB"
+    },
+    {
+      "desc": "Name Mod Slot 5",
+      "code": "0100A6DB"
+    },
+    {
+      "desc": "Name Mod Slot 6",
+      "code": "0100A7DB"
+    },
+    {
+      "desc": "Name Mod Slot 7",
+      "code": "0100A8DB"
+    },
+    {
+      "desc": "Name Mod Slot 8",
+      "code": "0100A9DB"
+    },
+    {
+      "desc": "Name Mod Slot 9",
+      "code": "0100AADB"
+    },
+    {
+      "desc": "Name Mod Slot 10",
+      "code": "0100ABDB"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010026DA"
+    },
+    {
+      "desc": "Skill Modifier [1st Position]",
+      "code": "0100BCDA"
+    },
+    {
+      "desc": "Skill Modifier [2nd Position]",
+      "code": "0100BDDA"
+    },
+    {
+      "desc": "Skill Modifier [3rd Position]",
+      "code": "0100BEDA"
+    },
+    {
+      "desc": "Skill Modifier [4th Position]",
+      "code": "0100BFDA"
+    },
+    {
+      "desc": "Trainer ID# Modifier",
+      "code": "0100C0DA+0100C1DA"
+    },
+    {
+      "desc": "Exp. Modifier",
+      "code": "0100C2DA+0100C3DA+0100C4DA"
+    },
+    {
+      "desc": "Infinite PP [1st Position]",
+      "code": "0100D1DA"
+    },
+    {
+      "desc": "Infinite PP [2nd Position]",
+      "code": "0100D2DA"
+    },
+    {
+      "desc": "Infinite PP [3rd Position]",
+      "code": "0100D3DA"
+    },
+    {
+      "desc": "Infinite PP [4th Position]",
+      "code": "0100D4DA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "0100D9DA"
+    },
+    {
+      "desc": "Infinite HP [Larger]",
+      "code": "0100DCDA"
+    },
+    {
+      "desc": "Infinite HP [Smaller]",
+      "code": "0100DDDA"
+    },
+    {
+      "desc": "Max HP Modifier [Larger]",
+      "code": "0100DEDA"
+    },
+    {
+      "desc": "Max HP Modifier [Smaller]",
+      "code": "0100DFDA"
+    },
+    {
+      "desc": "Max Attack Modifier [Larger]",
+      "code": "0100E0DA"
+    },
+    {
+      "desc": "Max Attack Modifier [Smaller]",
+      "code": "0100E1DA"
+    },
+    {
+      "desc": "Max Defense Modifier [Larger]",
+      "code": "0100E2DA"
+    },
+    {
+      "desc": "Max Defense Modifier [Smaller]",
+      "code": "0100E3DA"
+    },
+    {
+      "desc": "Max Speed [Larger]",
+      "code": "0100E4DA"
+    },
+    {
+      "desc": "Max Speed [Small]",
+      "code": "0100E5DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Larger]",
+      "code": "0100E6DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Smaller]",
+      "code": "0100E7DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Larger]",
+      "code": "0100E8DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Smaller]",
+      "code": "0100E9DA"
+    },
+    {
+      "desc": "Pokemon Is Shiny",
+      "code": "01EACFDA+01AAD0DA"
+    },
+    {
+      "desc": "Default Name End [Must Be On]",
+      "code": "0150B7DB"
+    },
+    {
+      "desc": "Name Mod Slot 1",
+      "code": "0100ADDB"
+    },
+    {
+      "desc": "Name Mod Slot 2",
+      "code": "0100AEDB"
+    },
+    {
+      "desc": "Name Mod Slot 3",
+      "code": "0100AFDB"
+    },
+    {
+      "desc": "Name Mod Slot 4",
+      "code": "0100B0DB"
+    },
+    {
+      "desc": "Name Mod Slot 5",
+      "code": "0100B1DB"
+    },
+    {
+      "desc": "Name Mod Slot 6",
+      "code": "0100B2DB"
+    },
+    {
+      "desc": "Name Mod Slot 7",
+      "code": "0100B3DB"
+    },
+    {
+      "desc": "Name Mod Slot 8",
+      "code": "0100B4DB"
+    },
+    {
+      "desc": "Name Mod Slot 9",
+      "code": "0100B5DB"
+    },
+    {
+      "desc": "Name Mod Slot 10",
+      "code": "0100B6DB"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010027DA"
+    },
+    {
+      "desc": "Skill Modifier [1st Position]",
+      "code": "0100ECDA"
+    },
+    {
+      "desc": "Skill Modifier [2nd Position]",
+      "code": "0100EDDA"
+    },
+    {
+      "desc": "Skill Modifier [3rd Position]",
+      "code": "0100EEDA"
+    },
+    {
+      "desc": "Skill Modifier [4th Position]",
+      "code": "0100EFDA"
+    },
+    {
+      "desc": "Trainer ID# Modifier",
+      "code": "0100F0DA+0100F1DA"
+    },
+    {
+      "desc": "Exp. Modifier",
+      "code": "0100F2DA+0100F3DA+0100F4DA"
+    },
+    {
+      "desc": "Infinite PP [1st Position]",
+      "code": "010001DB"
+    },
+    {
+      "desc": "Infinite PP [2nd Position]",
+      "code": "010002DB"
+    },
+    {
+      "desc": "Infinite PP [3rd Position]",
+      "code": "010003DB"
+    },
+    {
+      "desc": "Infinite PP [4th Position]",
+      "code": "010004DB"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "010009DB"
+    },
+    {
+      "desc": "Infinite HP [Larger]",
+      "code": "01000CDB"
+    },
+    {
+      "desc": "Infinite HP [Smaller]",
+      "code": "01000DDB"
+    },
+    {
+      "desc": "Max HP Modifier [Larger]",
+      "code": "01000EDB"
+    },
+    {
+      "desc": "Max HP Modifier [Smaller]",
+      "code": "01000FDB"
+    },
+    {
+      "desc": "Max Attack Modifier [Larger]",
+      "code": "010010DB"
+    },
+    {
+      "desc": "Max Attack Modifier [Smaller]",
+      "code": "010011DB"
+    },
+    {
+      "desc": "Max Defense Modifier [Larger]",
+      "code": "010012DB"
+    },
+    {
+      "desc": "Max Defense Modifier [Smaller]",
+      "code": "010013DB"
+    },
+    {
+      "desc": "Max Speed [Larger]",
+      "code": "010014DB"
+    },
+    {
+      "desc": "Max Speed [Small]",
+      "code": "010015DB"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Larger]",
+      "code": "010016DB"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Smaller]",
+      "code": "010017DB"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Larger]",
+      "code": "010018DB"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Smaller]",
+      "code": "010019DB"
+    },
+    {
+      "desc": "Pokemon Is Shiny",
+      "code": "01EAFFDA+01AA00DB"
+    },
+    {
+      "desc": "Default Name End [Must Be On]",
+      "code": "0150C2DB"
+    },
+    {
+      "desc": "Name Mod Slot 1",
+      "code": "0100B8DB"
+    },
+    {
+      "desc": "Name Mod Slot 2",
+      "code": "0100B9DB"
+    },
+    {
+      "desc": "Name Mod Slot 3",
+      "code": "0100BADB"
+    },
+    {
+      "desc": "Name Mod Slot 4",
+      "code": "0100BBDB"
+    },
+    {
+      "desc": "Name Mod Slot 5",
+      "code": "0100BCDB"
+    },
+    {
+      "desc": "Name Mod Slot 6",
+      "code": "0100BDDB"
+    },
+    {
+      "desc": "Name Mod Slot 7",
+      "code": "0100BEDB"
+    },
+    {
+      "desc": "Name Mod Slot 8",
+      "code": "0100BFDB"
+    },
+    {
+      "desc": "Name Mod Slot 9",
+      "code": "0100C0DB"
+    },
+    {
+      "desc": "Name Mod Slot 10",
+      "code": "0100C1DB"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010028DA"
+    },
+    {
+      "desc": "Skill Modifier [1st Position]",
+      "code": "01001CDA"
+    },
+    {
+      "desc": "Skill Modifier [2nd Position]",
+      "code": "01001DDA"
+    },
+    {
+      "desc": "Skill Modifier [3rd Position]",
+      "code": "01001EDA"
+    },
+    {
+      "desc": "Skill Modifier [4th Position]",
+      "code": "01001FDA"
+    },
+    {
+      "desc": "Trainer ID# Modifier",
+      "code": "010020DA+010021DA"
+    },
+    {
+      "desc": "Exp. Modifier",
+      "code": "010022DA+010023DA+010024DA"
+    },
+    {
+      "desc": "Infinite PP [1st Position]",
+      "code": "010031DB"
+    },
+    {
+      "desc": "Infinite PP [2nd Position]",
+      "code": "010032DB"
+    },
+    {
+      "desc": "Infinite PP [3rd Position]",
+      "code": "010033DB"
+    },
+    {
+      "desc": "Infinite PP [4th Position]",
+      "code": "010034DB"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "010039DB"
+    },
+    {
+      "desc": "Infinite HP [Larger]",
+      "code": "01003CDB"
+    },
+    {
+      "desc": "Infinite HP [Smaller]",
+      "code": "01003DDB"
+    },
+    {
+      "desc": "Max HP Modifier [Larger]",
+      "code": "01003EDB"
+    },
+    {
+      "desc": "Max HP Modifier [Smaller]",
+      "code": "01003FDB"
+    },
+    {
+      "desc": "Max Attack Modifier [Larger]",
+      "code": "010040DB"
+    },
+    {
+      "desc": "Max Attack Modifier [Smaller]",
+      "code": "010041DB"
+    },
+    {
+      "desc": "Max Defense Modifier [Larger]",
+      "code": "010042DB"
+    },
+    {
+      "desc": "Max Defense Modifier [Smaller]",
+      "code": "010043DB"
+    },
+    {
+      "desc": "Max Speed [Larger]",
+      "code": "010044DB"
+    },
+    {
+      "desc": "Max Speed [Small]",
+      "code": "010045DB"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Larger]",
+      "code": "010046DB"
+    },
+    {
+      "desc": "Max Special Defense Modifier [Smaller]",
+      "code": "010047DB"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Larger]",
+      "code": "010048DB"
+    },
+    {
+      "desc": "Max Special Attack Modifier [Smaller]",
+      "code": "010049DB"
+    },
+    {
+      "desc": "Pokemon Is Shiny",
+      "code": "01EA2FDB+01AA30DB"
+    },
+    {
+      "desc": "Default Name End [Must Be On]",
+      "code": "0150CDDB"
+    },
+    {
+      "desc": "Name Mod Slot 1",
+      "code": "0100C3DB"
+    },
+    {
+      "desc": "Name Mod Slot 2",
+      "code": "0100C4DB"
+    },
+    {
+      "desc": "Name Mod Slot 3",
+      "code": "0100C5DB"
+    },
+    {
+      "desc": "Name Mod Slot 4",
+      "code": "0100C6DB"
+    },
+    {
+      "desc": "Name Mod Slot 5",
+      "code": "0100C7DB"
+    },
+    {
+      "desc": "Name Mod Slot 6",
+      "code": "0100C8DB"
+    },
+    {
+      "desc": "Name Mod Slot 7",
+      "code": "0100C9DB"
+    },
+    {
+      "desc": "Name Mod Slot 8",
+      "code": "0100CADB"
+    },
+    {
+      "desc": "Name Mod Slot 9",
+      "code": "0100CBDB"
+    },
+    {
+      "desc": "Name Mod Slot 10",
+      "code": "0100CCDB"
+    },
+    {
+      "desc": "Skip Trainer Battles",
+      "code": "007-6B9-806"
+    },
+    {
+      "desc": "Opponent Can't Attack",
+      "code": "C96-86B-D5D"
+    },
+    {
+      "desc": "One Hit Kills",
+      "code": "00E-86A-D52"
+    },
+    {
+      "desc": "No Random Battles",
+      "code": "186-469-2AA"
+    }
+  ],
+  "Pokemon - Silver Version (USA, Europe) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "Reopen Safari Zone",
+      "code": "3A6-0E9-19F"
+    },
+    {
+      "desc": "Remove Cut Bush In Fuschia City (Can Access Whole Area Without Cut)",
+      "code": "016-AE9-6EB"
+    },
+    {
+      "desc": "Your Starting Pokemon Will Be Level 10 (Instead of Level 5) (Only Works When You Pick The MIDDLE Pokeball)",
+      "code": "0A1-39B-F7E"
+    },
+    {
+      "desc": "Your Starting Pokemon Will Be Level 18 (Instead of Level 5) (Only Works When You Pick The MIDDLE Pokeball)",
+      "code": "121-39B-F7E"
+    },
+    {
+      "desc": "Start With Any Pokemon!!",
+      "code": "013891FB"
+    },
+    {
+      "desc": "Mega Stuff Code",
+      "code": "00C-D6A-5D4"
+    },
+    {
+      "desc": "Even More Stuff Code",
+      "code": "7CC-D6A-5D4"
+    },
+    {
+      "desc": "Enemies Start With No HP",
+      "code": "008-D09-6E2+008-D49-3B7"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "00E-D0A-F77"
+    },
+    {
+      "desc": "In The Morning",
+      "code": "FB3-7E8-A2A+FB3-808-C42+FB3-848-C46"
+    },
+    {
+      "desc": "In The Evening",
+      "code": "FB3-8C8-A2A+FB3-8E8-C42+FB3-968-C46"
+    },
+    {
+      "desc": "Get Almost Any Item You Want From The Shop (Pokemart) In VIOLET CITY.",
+      "code": "FE3-4F9-C42"
+    },
+    {
+      "desc": "Get Almost Any Item You Want From The Shop (Pokemart) In ECRUTEAK CITY",
+      "code": "FE3-B39-C42"
+    },
+    {
+      "desc": "Get Almost Any Item You Want From The Shop (Pokemart) In OLIVINE CITY",
+      "code": "FE3-A89-C4E"
+    },
+    {
+      "desc": "New And Improved Money Code!",
+      "code": "FF9-189-E6E"
+    },
+    {
+      "desc": "Poke Balls Are Free (Instead of $200)",
+      "code": "008-BC9-C49"
+    },
+    {
+      "desc": "Great Balls Cost $88 (Instead of $600)",
+      "code": "008-B69-E62"
+    },
+    {
+      "desc": "Ultra Balls Cost $176 (Instead of $1200)",
+      "code": "008-A89-F7A"
+    },
+    {
+      "desc": "Ultra Balls Are Free (Instead of $1200)",
+      "code": "008-A89-F7A+008-A79-2A8"
+    },
+    {
+      "desc": "Parlyz Heal Is Free (Instead of $200)",
+      "code": "008-F49-C49"
+    },
+    {
+      "desc": "Burn Heal Is Free (Instead of $250)",
+      "code": "008-DF9-081"
+    },
+    {
+      "desc": "Ice Heal Is Free (Instead of $250)",
+      "code": "008-E69-081"
+    },
+    {
+      "desc": "Antidotes Are Free (Instead of $100)",
+      "code": "008-D89-7FB"
+    },
+    {
+      "desc": "Awakening Is Free (Instead of $250)",
+      "code": "008-ED9-081"
+    },
+    {
+      "desc": "Escape Rope Costs $38 (Instead of $550)",
+      "code": "009-1F9-E62"
+    },
+    {
+      "desc": "X Defend Costs $38 (Instead of $550)",
+      "code": "009-FF9-E62"
+    },
+    {
+      "desc": "X Speed Costs $94 (Instead of $350)",
+      "code": "00A-069-E6E"
+    },
+    {
+      "desc": "Super Potions Cost $188 (Instead of $700)",
+      "code": "009-119-E62"
+    },
+    {
+      "desc": "Super Potions Are Free (Instead of $700)",
+      "code": "009-119-E62+009-109-198"
+    },
+    {
+      "desc": "Hyper Potions Cost $176 (Instead of $1200)",
+      "code": "009-0A9-F7A"
+    },
+    {
+      "desc": "Hyper Potions Are Free (Instead of $1200)",
+      "code": "009-0A9-F7A+009-099-2A8"
+    },
+    {
+      "desc": "Max Potions Cost $196 (Instead of $2500)",
+      "code": "009-039-C4E"
+    },
+    {
+      "desc": "Max Potions Are Free (Instead of $2500)",
+      "code": "009-039-C4E+009-029-F79"
+    },
+    {
+      "desc": "Revive Costs $220 (Instead of $1500)",
+      "code": "009-AB9-F7E"
+    },
+    {
+      "desc": "Revive Is Free (Instead of $1500)",
+      "code": "009-AB9-F7E+009-AA9-919"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In CHERRYGROVE CITY (Instead of Potion/2nd Slot)",
+      "code": "0143A2D9+014AA2D9"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In CHERRYGROVE CITY (Instead of Antidote/3rd Slot)",
+      "code": "449-C4E+4B9-C4E"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In CHERRYGROVE CITY (Instead of Parlyz Heal/4th Slot)",
+      "code": "459-D5E+4C9-D5E"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In CHERRYGROVE CITY (Instead of Awakening/5th Slot)",
+      "code": "469-D5A+4D9-D5A"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In ECRUTEAK CITY (Instead of Poke Ball/1st Slot)",
+      "code": "B49-F7E"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In ECRUTEAK CITY (Instead of Great Ball/2nd Slot)",
+      "code": "B59-F7A"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In ECRUTEAK CITY (Instead of Potion/3rd Slot)",
+      "code": "01B6A2D9"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In OLIVINE CITY (Instead of Great Ball/1st Slot)",
+      "code": "A99-F7A"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In OLIVINE CITY (Instead of Super Potion/2nd Slot)",
+      "code": "AA9-A2E"
+    },
+    {
+      "desc": "Allows You To Buy Any Item You Want At The Shop (Mart) In OLIVINE CITY (Instead of Hyper Potion/3rd Slot)",
+      "code": "AB9-A2A"
+    },
+    {
+      "desc": "New And Improved Money Code!",
+      "code": "FF8-DE9-E6E"
+    },
+    {
+      "desc": "Poke Balls Are Free (Instead of $200)",
+      "code": "008-829-C49"
+    },
+    {
+      "desc": "Great Balls Cost $88 (Instead of $600)",
+      "code": "008-7C9-E62"
+    },
+    {
+      "desc": "Ultra Balls Cost $176 (Instead of $1200)",
+      "code": "008-6E9-F7A"
+    },
+    {
+      "desc": "Ultra Balls Are Free (Instead of $1200)",
+      "code": "008-6E9-F7A+008-6D9-2A8"
+    },
+    {
+      "desc": "Parlyz Heal Is Free (Instead of $200)",
+      "code": "008-BA9-C49"
+    },
+    {
+      "desc": "Burn Heal Is Free (Instead of $250)",
+      "code": "008-A59-081"
+    },
+    {
+      "desc": "Ice Heal Is Free (Instead of $250)",
+      "code": "008-AC9-081"
+    },
+    {
+      "desc": "Antidotes Are Free (Instead of $100)",
+      "code": "008-9E9-7FB"
+    },
+    {
+      "desc": "Awakening Is Free (Instead of $250)",
+      "code": "008-B39-081"
+    },
+    {
+      "desc": "Escape Rope Costs $38 (Instead of $550)",
+      "code": "008-E59-E62"
+    },
+    {
+      "desc": "X Defend Costs $38 (Instead of $550)",
+      "code": "009-C59-E62"
+    },
+    {
+      "desc": "X Speed Costs $94 (Instead of $350)",
+      "code": "009-CC9-E6E"
+    },
+    {
+      "desc": "Super Potions Cost $188 (Instead of $700)",
+      "code": "008-D79-E62"
+    },
+    {
+      "desc": "Super Potions Are Free (Instead of $700)",
+      "code": "008-D79-E62+008-D69-198"
+    },
+    {
+      "desc": "Hyper Potions Cost $176 (Instead of $1200)",
+      "code": "008-D09-F7A"
+    },
+    {
+      "desc": "Hyper Potions Are Free (Instead of $1200)",
+      "code": "008-D09-F7A+008-CF9-2A8"
+    },
+    {
+      "desc": "Max Potions Cost $196 (Instead of $2500)",
+      "code": "008-C99-C4E"
+    },
+    {
+      "desc": "Max Potions Are Free (Instead of $2500)",
+      "code": "008-C99-C4E+008-C89-F79"
+    },
+    {
+      "desc": "Revive Costs $220 (Instead of $1500)",
+      "code": "009-719-F7E"
+    },
+    {
+      "desc": "Revive Is Free (Instead of $1500)",
+      "code": "009-719-F7E+009-709-919"
+    },
+    {
+      "desc": "Auto-Kill Pokémon",
+      "code": "010000D1"
+    },
+    {
+      "desc": "Infinite PP 1st Move",
+      "code": "010513CB"
+    },
+    {
+      "desc": "Infinite PP 2nd Move",
+      "code": "010B15CB"
+    },
+    {
+      "desc": "Infinite PP 3rd Move",
+      "code": "012716CB"
+    },
+    {
+      "desc": "Infinite PP 4th Move",
+      "code": "010417CB"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010124DA"
+    },
+    {
+      "desc": "Skill Modifier (1st Position)",
+      "code": "01005CDA"
+    },
+    {
+      "desc": "Skill Modifier (2nd Position)",
+      "code": "01005DDA"
+    },
+    {
+      "desc": "Skill Modifier (3rd Position)",
+      "code": "01005EDA"
+    },
+    {
+      "desc": "Skill Modifier (4th Position)",
+      "code": "01005FDA"
+    },
+    {
+      "desc": "Infinite PP (1st Position)",
+      "code": "010071DA"
+    },
+    {
+      "desc": "Infinite PP (2nd Position)",
+      "code": "010072DA"
+    },
+    {
+      "desc": "Infinite PP (3rd Position)",
+      "code": "010073DA"
+    },
+    {
+      "desc": "Infinite PP (4th Position)",
+      "code": "010074DA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "010079DA"
+    },
+    {
+      "desc": "Infinite HP (Larger)",
+      "code": "01007CDA"
+    },
+    {
+      "desc": "Infinite HP (Smaller)",
+      "code": "01007DDA"
+    },
+    {
+      "desc": "Max HP Modifier (Larger)",
+      "code": "01007EDA"
+    },
+    {
+      "desc": "Max HP Modifier (Smaller)",
+      "code": "01007FDA"
+    },
+    {
+      "desc": "Max Attack Modifier (Larger)",
+      "code": "010080DA"
+    },
+    {
+      "desc": "Max Attack Modifier (Smaller)",
+      "code": "010081DA"
+    },
+    {
+      "desc": "Max Defense Modifier (Larger)",
+      "code": "010082DA"
+    },
+    {
+      "desc": "Max Defense Modifier (Smaller)",
+      "code": "010083DA"
+    },
+    {
+      "desc": "Max Speed (Larger)",
+      "code": "010084DA"
+    },
+    {
+      "desc": "Max Speed (Small)",
+      "code": "010085DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Larger)",
+      "code": "010086DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Smaller)",
+      "code": "010087DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Larger)",
+      "code": "010088DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Smaller)",
+      "code": "010089DA"
+    },
+    {
+      "desc": "Default Name End (Must Be On)",
+      "code": "0150A1DB"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "010097DB"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "010098DB"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "010099DB"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "01009ADB"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "01009BDB"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "01009CDB"
+    },
+    {
+      "desc": "Slot 7",
+      "code": "01009DDB"
+    },
+    {
+      "desc": "Slot 8",
+      "code": "01009EDB"
+    },
+    {
+      "desc": "Slot 9",
+      "code": "01009FDB"
+    },
+    {
+      "desc": "Slot 10",
+      "code": "0100A0DB"
+    },
+    {
+      "desc": "Total Item Number Modifier [Note 1]",
+      "code": "0101B7D5"
+    },
+    {
+      "desc": "Item Modifier 1st Position",
+      "code": "0100B8D5"
+    },
+    {
+      "desc": "Infinite Quantity 1st Position",
+      "code": "0163B9D5"
+    },
+    {
+      "desc": "Item Modifier 2nd Position",
+      "code": "0100BAD5"
+    },
+    {
+      "desc": "Infinite Quantity 2nd Position",
+      "code": "0163BBD5"
+    },
+    {
+      "desc": "Item Modifier 3rd Position",
+      "code": "0100BCD5"
+    },
+    {
+      "desc": "Infinite Quantity 3rd Position",
+      "code": "0163BDD5"
+    },
+    {
+      "desc": "Item Modifier 4th Position",
+      "code": "0100BED5"
+    },
+    {
+      "desc": "Infinite Quantity 4th Position",
+      "code": "0163BFD5"
+    },
+    {
+      "desc": "Item Modifier 5th Position",
+      "code": "0100C0D5"
+    },
+    {
+      "desc": "Infinite Quantity 5th Position",
+      "code": "0163C1D5"
+    },
+    {
+      "desc": "Item Modifier 6th Position",
+      "code": "0100C2D5"
+    },
+    {
+      "desc": "Infinite Quantity 6th Position",
+      "code": "0163C3D5"
+    },
+    {
+      "desc": "Item Modifier 7th Position",
+      "code": "0100C4D5"
+    },
+    {
+      "desc": "Infinite Quantity 7th Position",
+      "code": "0163C5D5"
+    },
+    {
+      "desc": "Item Modifier 8th Position",
+      "code": "0100C6D5"
+    },
+    {
+      "desc": "Infinite Quantity 8th Position",
+      "code": "0163C7D5"
+    },
+    {
+      "desc": "Item Modifier 9th Position",
+      "code": "0100C8D5"
+    },
+    {
+      "desc": "Infinite Quantity 9th Position",
+      "code": "0163C9D5"
+    },
+    {
+      "desc": "Item Modifier 10th Position",
+      "code": "0100CAD5"
+    },
+    {
+      "desc": "Infinite Quantity 10th Position",
+      "code": "0163CBD5"
+    },
+    {
+      "desc": "Item Modifier 11th Position",
+      "code": "0100CCD5"
+    },
+    {
+      "desc": "Infinite Quantity 11th Position",
+      "code": "0163CDD5"
+    },
+    {
+      "desc": "Item Modifier 12th Position",
+      "code": "0100CED5"
+    },
+    {
+      "desc": "Infinite Quantity 12th Position",
+      "code": "0163CFD5"
+    },
+    {
+      "desc": "Item Modifier 13th Position",
+      "code": "0100D0D5"
+    },
+    {
+      "desc": "Infinite Quantity 13th Position",
+      "code": "0163D1D5"
+    },
+    {
+      "desc": "Item Modifier 14th Position",
+      "code": "0100D2D5"
+    },
+    {
+      "desc": "Infinite Quantity 14th Position",
+      "code": "0163D3D5"
+    },
+    {
+      "desc": "Item Modifier 15th Position",
+      "code": "0100D4D5"
+    },
+    {
+      "desc": "Infinite Quantity 15th Position",
+      "code": "0163D5D5"
+    },
+    {
+      "desc": "Item Modifier 16th Position",
+      "code": "0100D6D5"
+    },
+    {
+      "desc": "Infinite Quantity Slot 16",
+      "code": "0163D7D5"
+    },
+    {
+      "desc": "Item Modifier 17th Position",
+      "code": "0100D8D5"
+    },
+    {
+      "desc": "Infinite Quantity Slot 17",
+      "code": "0163D9D5"
+    },
+    {
+      "desc": "Item Modifier 18th Position",
+      "code": "0100DAD5"
+    },
+    {
+      "desc": "Infinite Quantity slot 18",
+      "code": "0163DBD5"
+    },
+    {
+      "desc": "Item Modifier 19th Position",
+      "code": "0100DCD5"
+    },
+    {
+      "desc": "Infinite Quantity Slot 19",
+      "code": "0163DDD5"
+    },
+    {
+      "desc": "Item Modifier 20th Position",
+      "code": "0100DED5"
+    },
+    {
+      "desc": "Infinite Quantity Slot 20",
+      "code": "0163DFD5"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010125DA"
+    },
+    {
+      "desc": "Skill Modifier (1st Position)",
+      "code": "01008CDA"
+    },
+    {
+      "desc": "Skill Modifier (2nd Position)",
+      "code": "01008DDA"
+    },
+    {
+      "desc": "Skill Modifier (3rd Position)",
+      "code": "01008EDA"
+    },
+    {
+      "desc": "Skill Modifier (4th Position)",
+      "code": "01008FDA"
+    },
+    {
+      "desc": "Infinite PP (1st Position)",
+      "code": "0100A1DA"
+    },
+    {
+      "desc": "Infinite PP (2nd Position)",
+      "code": "0100A2DA"
+    },
+    {
+      "desc": "Infinite PP (3rd Position)",
+      "code": "0100A3DA"
+    },
+    {
+      "desc": "Infinite PP (4th Position)",
+      "code": "0100A4DA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "0100A9DA"
+    },
+    {
+      "desc": "Infinite HP (Larger)",
+      "code": "0100ACDA"
+    },
+    {
+      "desc": "Infinite HP (Smaller)",
+      "code": "0100ADDA"
+    },
+    {
+      "desc": "Max HP Modifier (Larger)",
+      "code": "0100AEDA"
+    },
+    {
+      "desc": "Max HP Modifier (Smaller)",
+      "code": "0100AFDA"
+    },
+    {
+      "desc": "Max Attack Modifier (Larger)",
+      "code": "0100B0DA"
+    },
+    {
+      "desc": "Max Attack Modifier (Smaller)",
+      "code": "0100B1DA"
+    },
+    {
+      "desc": "Max Defense Modifier (Larger)",
+      "code": "0100B2DA"
+    },
+    {
+      "desc": "Max Defense Modifier (Smaller)",
+      "code": "0100B3DA"
+    },
+    {
+      "desc": "Max Speed (Larger)",
+      "code": "0100B4DA"
+    },
+    {
+      "desc": "Max Speed (Small)",
+      "code": "0100B5DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Larger)",
+      "code": "0100B6DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Smaller)",
+      "code": "0100B7DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Larger)",
+      "code": "0100B8DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Smaller)",
+      "code": "0100B9DA"
+    },
+    {
+      "desc": "Default Name End (Must Be On)",
+      "code": "0150ACDB"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "0100A2DB"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "0100A3DB"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "0100A4DB"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "0100A5DB"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "0100A6DB"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "0100A7DB"
+    },
+    {
+      "desc": "Slot 7",
+      "code": "0100A8DB"
+    },
+    {
+      "desc": "Slot 8",
+      "code": "0100A9DB"
+    },
+    {
+      "desc": "Slot 9",
+      "code": "0100AADB"
+    },
+    {
+      "desc": "Slot 10",
+      "code": "0100ABDB"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010126DA"
+    },
+    {
+      "desc": "Skill Modifier (1st Position)",
+      "code": "0100BCDA"
+    },
+    {
+      "desc": "Skill Modifier (2nd Position)",
+      "code": "0100BDDA"
+    },
+    {
+      "desc": "Skill Modifier (3rd Position)",
+      "code": "0100BEDA"
+    },
+    {
+      "desc": "Skill Modifier (4th Position)",
+      "code": "0100BFDA"
+    },
+    {
+      "desc": "Infinite PP (1st Position)",
+      "code": "0100D1DA"
+    },
+    {
+      "desc": "Infinite PP (2nd Position)",
+      "code": "0100D2DA"
+    },
+    {
+      "desc": "Infinite PP (3rd Position)",
+      "code": "0100D3DA"
+    },
+    {
+      "desc": "Infinite PP (4th Position)",
+      "code": "0100D4DA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "0100D9DA"
+    },
+    {
+      "desc": "Infinite HP (Larger)",
+      "code": "0100DCDA"
+    },
+    {
+      "desc": "Infinite HP (Smaller)",
+      "code": "0100DDDA"
+    },
+    {
+      "desc": "Max HP Modifier (Larger)",
+      "code": "0100DEDA"
+    },
+    {
+      "desc": "Max HP Modifier (Smaller)",
+      "code": "0100DFDA"
+    },
+    {
+      "desc": "Max Attack Modifier (Larger)",
+      "code": "0100E0DA"
+    },
+    {
+      "desc": "Max Attack Modifier (Smaller)",
+      "code": "0100E1DA"
+    },
+    {
+      "desc": "Max Defense Modifier (Larger)",
+      "code": "0100E2DA"
+    },
+    {
+      "desc": "Max Defense Modifier (Smaller)",
+      "code": "0100E3DA"
+    },
+    {
+      "desc": "Max Speed (Larger)",
+      "code": "0100E4DA"
+    },
+    {
+      "desc": "Max Speed (Small)",
+      "code": "0100E5DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Larger)",
+      "code": "0100E6DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Smaller)",
+      "code": "0100E7DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Larger)",
+      "code": "0100E8DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Smaller)",
+      "code": "0100E9DA"
+    },
+    {
+      "desc": "Default Name End (Must Be On)",
+      "code": "0150B7DB"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "0150ADDB"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "0100AEDB"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "0100AFDB"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "0100B0DB"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "0100B1DB"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "0100B2DB"
+    },
+    {
+      "desc": "Slot 7",
+      "code": "0100B3DB"
+    },
+    {
+      "desc": "Slot 8",
+      "code": "0100B4DB"
+    },
+    {
+      "desc": "Slot 9",
+      "code": "0100B5DB"
+    },
+    {
+      "desc": "Slot 10",
+      "code": "0100B6DB"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010127DA"
+    },
+    {
+      "desc": "Skill Modifier (1st Position)",
+      "code": "0100ECDA"
+    },
+    {
+      "desc": "Skill Modifier (2nd Position)",
+      "code": "0100EDDA"
+    },
+    {
+      "desc": "Skill Modifier (3rd Position)",
+      "code": "0100EEDA"
+    },
+    {
+      "desc": "Skill Modifier (4th Position)",
+      "code": "0100EFDA"
+    },
+    {
+      "desc": "Infinite PP (1st Position)",
+      "code": "010001DB"
+    },
+    {
+      "desc": "Infinite PP (2nd Position)",
+      "code": "010002DB"
+    },
+    {
+      "desc": "Infinite PP (3rd Position)",
+      "code": "010003DB"
+    },
+    {
+      "desc": "Infinite PP (4th Position)",
+      "code": "010004DB"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "010009DB"
+    },
+    {
+      "desc": "Infinite HP (Larger)",
+      "code": "01000CDB"
+    },
+    {
+      "desc": "Infinite HP (Smaller)",
+      "code": "01000DDB"
+    },
+    {
+      "desc": "Max HP Modifier (Larger)",
+      "code": "01000EDB"
+    },
+    {
+      "desc": "Max HP Modifier (Smaller)",
+      "code": "01000FDB"
+    },
+    {
+      "desc": "Max Attack Modifier (Larger)",
+      "code": "010010DB"
+    },
+    {
+      "desc": "Max Attack Modifier (Smaller)",
+      "code": "010011DB"
+    },
+    {
+      "desc": "Max Defense Modifier (Larger)",
+      "code": "010012DB"
+    },
+    {
+      "desc": "Max Defense Modifier (Smaller)",
+      "code": "010013DB"
+    },
+    {
+      "desc": "Max Speed (Larger)",
+      "code": "010014DB"
+    },
+    {
+      "desc": "Max Speed (Small)",
+      "code": "010015DB"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Larger)",
+      "code": "010016DB"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Smaller)",
+      "code": "010017DB"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Larger)",
+      "code": "010018DB"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Smaller)",
+      "code": "010019DB"
+    },
+    {
+      "desc": "Default Name End (Must Be On)",
+      "code": "0150C2DB"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "0150B8DB"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "0100B9DB"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "0100BADB"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "0100BBDB"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "0100BCDB"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "0100BDDB"
+    },
+    {
+      "desc": "Slot 7",
+      "code": "0100BEDB"
+    },
+    {
+      "desc": "Slot 8",
+      "code": "0100BFDB"
+    },
+    {
+      "desc": "Slot 9",
+      "code": "0100C0DB"
+    },
+    {
+      "desc": "Slot 10",
+      "code": "0100C1DB"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010128DA"
+    },
+    {
+      "desc": "Skill Modifier (1st Position)",
+      "code": "01001CDA"
+    },
+    {
+      "desc": "Skill Modifier (2nd Position)",
+      "code": "01001DDA"
+    },
+    {
+      "desc": "Skill Modifier (3rd Position)",
+      "code": "01001EDA"
+    },
+    {
+      "desc": "Skill Modifier (4th Position)",
+      "code": "01001FDA"
+    },
+    {
+      "desc": "Infinite PP (1st Position)",
+      "code": "010031DB"
+    },
+    {
+      "desc": "Infinite PP (2nd Position)",
+      "code": "010032DB"
+    },
+    {
+      "desc": "Infinite PP (3rd Position)",
+      "code": "010033DB"
+    },
+    {
+      "desc": "Infinite PP (4th Position)",
+      "code": "010034DB"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "010039DB"
+    },
+    {
+      "desc": "Infinite HP (Larger)",
+      "code": "01003CDB"
+    },
+    {
+      "desc": "Infinite HP (Smaller)",
+      "code": "01003DDB"
+    },
+    {
+      "desc": "Max HP Modifier (Larger)",
+      "code": "01003EDB"
+    },
+    {
+      "desc": "Max HP Modifier (Smaller)",
+      "code": "01003FDB"
+    },
+    {
+      "desc": "Max Attack Modifier (Larger)",
+      "code": "010040DB"
+    },
+    {
+      "desc": "Max Attack Modifier (Smaller)",
+      "code": "010041DB"
+    },
+    {
+      "desc": "Max Defense Modifier (Larger)",
+      "code": "010042DB"
+    },
+    {
+      "desc": "Max Defense Modifier (Smaller)",
+      "code": "010043DB"
+    },
+    {
+      "desc": "Max Speed (Larger)",
+      "code": "010044DB"
+    },
+    {
+      "desc": "Max Speed (Small)",
+      "code": "010045DB"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Larger)",
+      "code": "010046DB"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Smaller)",
+      "code": "010047DB"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Larger)",
+      "code": "010048DB"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Smaller)",
+      "code": "010049DB"
+    },
+    {
+      "desc": "Default Name End (Must Be On)",
+      "code": "0150CDDB"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "0150C3DB"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "0100C4DB"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "0100C5DB"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "0100C6DB"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "0100C7DB"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "0100C8DB"
+    },
+    {
+      "desc": "Slot 7",
+      "code": "0100C9DB"
+    },
+    {
+      "desc": "Slot 8",
+      "code": "0100CADB"
+    },
+    {
+      "desc": "Slot 9",
+      "code": "0100CBDB"
+    },
+    {
+      "desc": "Slot 10",
+      "code": "0100CCDB"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "0107E2D5"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "0100E3D5"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "0100E4D5"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "0100E5D5"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "0100E6D5"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "0100E7D5"
+    },
+    {
+      "desc": "Slot 7",
+      "code": "0100E8D5"
+    },
+    {
+      "desc": "Slot 8",
+      "code": "0100E9D5"
+    },
+    {
+      "desc": "Slot 9",
+      "code": "0100EAD5"
+    },
+    {
+      "desc": "Slot 10",
+      "code": "0100EBD5"
+    },
+    {
+      "desc": "Slot 11",
+      "code": "0100ECD5"
+    },
+    {
+      "desc": "Slot 12",
+      "code": "0100EDD5"
+    },
+    {
+      "desc": "Slot 13",
+      "code": "0100EED5"
+    },
+    {
+      "desc": "Slot 14",
+      "code": "0100EFD5"
+    },
+    {
+      "desc": "Slot 15",
+      "code": "0100F0D5"
+    },
+    {
+      "desc": "Slot 16",
+      "code": "0100F1D5"
+    },
+    {
+      "desc": "Pokeball Quantity Modifier",
+      "code": "0100FCD5"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "0101FDD5"
+    },
+    {
+      "desc": "Infinite Slot 1",
+      "code": "01FFFED5"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "0100FFD5"
+    },
+    {
+      "desc": "Infinite Slot 2",
+      "code": "01FF00D6"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "010001D6"
+    },
+    {
+      "desc": "Infinite Slot 3",
+      "code": "01FF02D6"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "010003D6"
+    },
+    {
+      "desc": "Infinite Slot 4",
+      "code": "01FF04D6"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "010005D6"
+    },
+    {
+      "desc": "Infinite Slot 5",
+      "code": "01FF06D6"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "010007D6"
+    },
+    {
+      "desc": "Infinite Slot 6",
+      "code": "01FF08D6"
+    },
+    {
+      "desc": "Slot 7",
+      "code": "010009D6"
+    },
+    {
+      "desc": "Infinite Slot 7",
+      "code": "01FF0AD6"
+    },
+    {
+      "desc": "Slot 8",
+      "code": "01000BD6"
+    },
+    {
+      "desc": "Infinite Slot 8",
+      "code": "01FF0CD6"
+    },
+    {
+      "desc": "Slot 9",
+      "code": "01000DD6"
+    },
+    {
+      "desc": "Infinite Slot 9",
+      "code": "01FF0ED6"
+    },
+    {
+      "desc": "Slot 10",
+      "code": "01000FD6"
+    },
+    {
+      "desc": "Infinite Slot 10",
+      "code": "01FF10D6"
+    },
+    {
+      "desc": "Slot 11",
+      "code": "010011D6"
+    },
+    {
+      "desc": "Infinite Slot 11",
+      "code": "01FF12D6"
+    },
+    {
+      "desc": "Slot 12",
+      "code": "010013D6"
+    },
+    {
+      "desc": "Infinite Slot 12",
+      "code": "01FF14D6"
+    },
+    {
+      "desc": "No Random Battles",
+      "code": "01000BD2"
+    },
+    {
+      "desc": "Always On Bike",
+      "code": "010182D6"
+    },
+    {
+      "desc": "Day Of Week Modifier",
+      "code": "0100DCD1"
+    },
+    {
+      "desc": "Hour Modifier",
+      "code": "0100DDD1"
+    },
+    {
+      "desc": "Key Item Modifier",
+      "code": "0100E2D5"
+    },
+    {
+      "desc": "Modifier For How Many Pokemon Your Enemy Has",
+      "code": "010155DD"
+    },
+    {
+      "desc": "Fast Text Speed",
+      "code": "010099D1"
+    },
+    {
+      "desc": "Every Item Available At Pokémart",
+      "code": "01FF41D0"
+    },
+    {
+      "desc": "Forever Seen By Unbeaten Trainers",
+      "code": "010063D1"
+    },
+    {
+      "desc": "Able To Get All 3 Starter Pokemon From Prof Elm",
+      "code": "0100BAD7"
+    },
+    {
+      "desc": "Infinite Park Balls",
+      "code": "0114C3D9"
+    },
+    {
+      "desc": "Infinite Time In Bug Catching Contest",
+      "code": "011393D1"
+    },
+    {
+      "desc": "Learn All Moves After Leveling Up",
+      "code": "010FF7CB"
+    },
+    {
+      "desc": "Pokédex Mode",
+      "code": "0100D4C6"
+    },
+    {
+      "desc": "Funky Colors",
+      "code": "0101E0FF"
+    },
+    {
+      "desc": "Intro Slowdown",
+      "code": "010163CE"
+    },
+    {
+      "desc": "Can't Jump",
+      "code": "01000BD2"
+    },
+    {
+      "desc": "Invisibility",
+      "code": "01A40AD2"
+    },
+    {
+      "desc": "Play Time Modifier (Seconds)",
+      "code": "0100EED1"
+    },
+    {
+      "desc": "Play Time Modifier (Milliseconds)",
+      "code": "0100EFD1"
+    },
+    {
+      "desc": "Warp To Other Areas",
+      "code": "010201DA"
+    },
+    {
+      "desc": "All Pokémon Gain Experience",
+      "code": "013F42CB"
+    },
+    {
+      "desc": "Play As Other People",
+      "code": "0112FFD1"
+    },
+    {
+      "desc": "Graphics Misplaced",
+      "code": "01FF86CE"
+    },
+    {
+      "desc": "Printing Press Mode (Can't leave area)",
+      "code": "0120A6CE"
+    },
+    {
+      "desc": "Bunny Ears Mode",
+      "code": "010102C3"
+    },
+    {
+      "desc": "Pokémon Color Modifier",
+      "code": "0100EED0"
+    },
+    {
+      "desc": "Battle Animation Modifier",
+      "code": "01003ECF"
+    },
+    {
+      "desc": "Fake 1-hit Kos",
+      "code": "010244CB"
+    },
+    {
+      "desc": "Says Enemy Has No Pp But They Still Attack",
+      "code": "0104C7CB"
+    },
+    {
+      "desc": "When The Enemy Attacks It Just Says They Have No Pp",
+      "code": "0108C7CB"
+    },
+    {
+      "desc": "Main Menu Modifier (Turn On At Title And Hit A",
+      "code": "010064CE"
+    },
+    {
+      "desc": "Option Activated At Main Menu",
+      "code": "0100ABCE"
+    },
+    {
+      "desc": "Option Selected At Most Menus",
+      "code": "0100E0CE"
+    },
+    {
+      "desc": "Default Option At Main Menu (1-4)",
+      "code": "0100BFCE"
+    },
+    {
+      "desc": "Funny Corners On Main Menu Text Box",
+      "code": "010167CE"
+    },
+    {
+      "desc": "Funny Lines On Main Menu Text Box",
+      "code": "010267CE"
+    },
+    {
+      "desc": "Cursor X Coords",
+      "code": "0100D9CE"
+    },
+    {
+      "desc": "Cursor Y Coords",
+      "code": "0100D8CE"
+    },
+    {
+      "desc": "Number Of Options On Most Menus",
+      "code": "0100DACE"
+    },
+    {
+      "desc": "Which Buttons Are Enabled At Menus?",
+      "code": "0100DFCE"
+    },
+    {
+      "desc": "Symbol Left Behind By Cursor (Normally 7f)",
+      "code": "0100E2CE"
+    },
+    {
+      "desc": "Instant Freeze",
+      "code": "01F0D6CE"
+    },
+    {
+      "desc": "Graphic Glitches",
+      "code": "010067CE"
+    },
+    {
+      "desc": "Which Of The Enemy Trainer's Pokémon Faints (0-5. Use 06 For Endless Battles)",
+      "code": "010041CB"
+    },
+    {
+      "desc": "Some Warps Don't Work",
+      "code": "01700BD2"
+    },
+    {
+      "desc": "Press A When Facing Up To Activate A Pc! (You Can't Move Up)",
+      "code": "0193A4CE"
+    },
+    {
+      "desc": "Skip Title Screen",
+      "code": "01F063CE"
+    },
+    {
+      "desc": "Can't Get To Main Menu",
+      "code": "010063CE"
+    },
+    {
+      "desc": "Reset At Title",
+      "code": "010263CE"
+    },
+    {
+      "desc": "Sprites Stuck, Extras May Appear",
+      "code": "0101DAFF"
+    },
+    {
+      "desc": "Sprites Stuck, Follow You Everywhere",
+      "code": "0102DAFF"
+    },
+    {
+      "desc": "Text Lag",
+      "code": "0100D6FF"
+    },
+    {
+      "desc": "Messed Up Scroll/text",
+      "code": "0101D6FF"
+    },
+    {
+      "desc": "Text Lag/messed Up Text",
+      "code": "0102D6FF"
+    },
+    {
+      "desc": "Coocco Move List",
+      "code": "0106D3D0"
+    },
+    {
+      "desc": "Fudged Scrolling",
+      "code": "018085CE"
+    },
+    {
+      "desc": "Number Of Pokémon Enemy Trainers Have",
+      "code": "010080D2"
+    },
+    {
+      "desc": "Weird Sfx",
+      "code": "0100F6C0"
+    },
+    {
+      "desc": "No Music",
+      "code": "010000C0"
+    },
+    {
+      "desc": "Unown Selected (Unowndex)",
+      "code": "0100DDC6"
+    },
+    {
+      "desc": "Whether Save File Ezists Modifier",
+      "code": "010A9AD1"
+    },
+    {
+      "desc": "Game Boy Color Features On/off",
+      "code": "0100E8FF"
+    },
+    {
+      "desc": "Super Gameboy Features On/off",
+      "code": "0100E9FF"
+    },
+    {
+      "desc": "Make All Wild Pokemon Shiny",
+      "code": "010719D1"
+    },
+    {
+      "desc": "Have All Badges",
+      "code": "01FF7CD5"
+    },
+    {
+      "desc": "All The People In Your Phone Books Repeatedly Phone You",
+      "code": "91308FD1"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "0100EDCF"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "0100EECF"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "0100EFCF"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "0100F0CF"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "0100F1CF"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "01053AD0"
+    },
+    {
+      "desc": "Change Your Pokemon's Gender To Female",
+      "code": "01FA05DA"
+    },
+    {
+      "desc": "Turn Your Pokemon Back To Normal",
+      "code": "017705DA"
+    },
+    {
+      "desc": "Catch Special Colored Pokemon",
+      "code": "01070BD1"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "010145DA"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "010175DA"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "0101A5DA"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "0101D5DA"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "010105DB"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "010135DB"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 1 Holds",
+      "code": "01002BDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 2 Holds",
+      "code": "01005BDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 3 Holds",
+      "code": "01008BDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 4 Holds",
+      "code": "0100BBDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 5 Holds",
+      "code": "0100EBDA"
+    },
+    {
+      "desc": "Modifiy Item Pokemon 6 Holds",
+      "code": "01001BDB"
+    },
+    {
+      "desc": "Catch the Pokerus",
+      "code": "019D46DA"
+    },
+    {
+      "desc": "1st Letter",
+      "code": "0100F6CA"
+    },
+    {
+      "desc": "2nd Letter",
+      "code": "0100F7CA"
+    },
+    {
+      "desc": "3rd Letter",
+      "code": "0100F8CA"
+    },
+    {
+      "desc": "4th Letter",
+      "code": "0100F9CA"
+    },
+    {
+      "desc": "5th Letter",
+      "code": "0100FACA"
+    },
+    {
+      "desc": "6th Letter",
+      "code": "0100FBCA"
+    },
+    {
+      "desc": "7th Letter",
+      "code": "0100FCCA"
+    },
+    {
+      "desc": "8th Letter",
+      "code": "0100FDCA"
+    },
+    {
+      "desc": "9th Letter",
+      "code": "0100FECA"
+    },
+    {
+      "desc": "Upper Left Corner",
+      "code": "010060D9"
+    },
+    {
+      "desc": "Poster by Door",
+      "code": "01005CD9"
+    },
+    {
+      "desc": "Lower Left Corner",
+      "code": "010059D9"
+    },
+    {
+      "desc": "In Front of TV",
+      "code": "01005DD9"
+    },
+    {
+      "desc": "Left Side of Shelf",
+      "code": "01005ED9"
+    },
+    {
+      "desc": "Right Side of Shelf",
+      "code": "01005FD9"
+    },
+    {
+      "desc": "Infinite HP (In Battle)",
+      "code": "01FF1DCB"
+    },
+    {
+      "desc": "Infinite PP (1st Position)",
+      "code": "012814CB"
+    },
+    {
+      "desc": "Infinite PP (2nd Position)",
+      "code": "012815CB"
+    },
+    {
+      "desc": "Infinite PP (3rd Position)",
+      "code": "012816CB"
+    },
+    {
+      "desc": "Infinite PP (4th Position)",
+      "code": "012817CB"
+    },
+    {
+      "desc": "Skill Modifier (1st Position)",
+      "code": "010049D1"
+    },
+    {
+      "desc": "Skill Modifier (2nd Position)",
+      "code": "01004AD1"
+    },
+    {
+      "desc": "Skill Modifier (3rd Position)",
+      "code": "01004BD1"
+    },
+    {
+      "desc": "Skill Modifier (4th Position)",
+      "code": "01004CD1"
+    },
+    {
+      "desc": "Enemy LV Modifier",
+      "code": "0100FCD0"
+    },
+    {
+      "desc": "1-Hit Enemy Kills",
+      "code": "010000D1"
+    },
+    {
+      "desc": "Enemy Asleep And Poisoned",
+      "code": "0100ADD7"
+    },
+    {
+      "desc": "Catch Any Pokemon In The Wild",
+      "code": "0100EDD0"
+    },
+    {
+      "desc": "Always Fight Shiny Pokemon",
+      "code": "010719D1"
+    },
+    {
+      "desc": "Easy Level Gain",
+      "code": "010036D1"
+    },
+    {
+      "desc": "Always Fight Female Pokemon",
+      "code": "010419D1"
+    },
+    {
+      "desc": "Always Fight Male Pokemon",
+      "code": "010519D1"
+    },
+    {
+      "desc": "Character Sprite Modifier",
+      "code": "010019D1"
+    },
+    {
+      "desc": "Catch Trainers Pokemon",
+      "code": "010116D1"
+    },
+    {
+      "desc": "No Status Change",
+      "code": "01001ACB"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "010156DD"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "010057DD"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "010058DD"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "010059DD"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "01005ADD"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "01005BDD"
+    },
+    {
+      "desc": "Pokémon Modifier",
+      "code": "010123DA"
+    },
+    {
+      "desc": "Skill Modifier (1st Position)",
+      "code": "01002CDA"
+    },
+    {
+      "desc": "Skill Modifier (2nd Position)",
+      "code": "01002DDA"
+    },
+    {
+      "desc": "Skill Modifier (3rd Position)",
+      "code": "01002EDA"
+    },
+    {
+      "desc": "Skill Modifier (4th Position)",
+      "code": "01002FDA"
+    },
+    {
+      "desc": "Infinite PP (1st Position)",
+      "code": "010041DA"
+    },
+    {
+      "desc": "Infinite PP (2nd Position)",
+      "code": "010042DA"
+    },
+    {
+      "desc": "Infinite PP (3rd Position)",
+      "code": "010043DA"
+    },
+    {
+      "desc": "Infinite PP (4th Position)",
+      "code": "010044DA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "010049DA"
+    },
+    {
+      "desc": "Infinite HP (Larger)",
+      "code": "01004CDA"
+    },
+    {
+      "desc": "Infinite HP (Smaller)",
+      "code": "01004DDA"
+    },
+    {
+      "desc": "Max HP Modifier (Larger)",
+      "code": "01004EDA"
+    },
+    {
+      "desc": "Max HP Modifier (Smaller)",
+      "code": "01004FDA"
+    },
+    {
+      "desc": "Max Attack Modifier (Larger)",
+      "code": "010050DA"
+    },
+    {
+      "desc": "Max Attack Modifier (Smaller)",
+      "code": "010051DA"
+    },
+    {
+      "desc": "Max Defense Modifier (Larger)",
+      "code": "010052DA"
+    },
+    {
+      "desc": "Max Defense Modifier (Smaller)",
+      "code": "010053DA"
+    },
+    {
+      "desc": "Max Speed (Larger)",
+      "code": "010054DA"
+    },
+    {
+      "desc": "Max Speed (Small)",
+      "code": "010055DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Larger)",
+      "code": "010056DA"
+    },
+    {
+      "desc": "Max Special Defense Modifier (Smaller)",
+      "code": "010057DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Larger)",
+      "code": "010058DA"
+    },
+    {
+      "desc": "Max Special Attack Modifier (Smaller)",
+      "code": "010059DA"
+    },
+    {
+      "desc": "Default Name End (Must Be On)",
+      "code": "015096DB"
+    },
+    {
+      "desc": "Slot 1",
+      "code": "01008CDB"
+    },
+    {
+      "desc": "Slot 2",
+      "code": "01008DDB"
+    },
+    {
+      "desc": "Slot 3",
+      "code": "01008EDB"
+    },
+    {
+      "desc": "Slot 4",
+      "code": "01008FDB"
+    },
+    {
+      "desc": "Slot 5",
+      "code": "010090DB"
+    },
+    {
+      "desc": "Slot 6",
+      "code": "010091DB"
+    },
+    {
+      "desc": "Slot 7",
+      "code": "010092DB"
+    },
+    {
+      "desc": "Slot 8",
+      "code": "010093DB"
+    },
+    {
+      "desc": "Slot 9",
+      "code": "010094DB"
+    },
+    {
+      "desc": "Slot 10",
+      "code": "010095DB"
+    },
+    {
+      "desc": "Have 99 of TM 1",
+      "code": "01637ED5"
+    },
+    {
+      "desc": "Have 99 of TM 2",
+      "code": "01637FD5"
+    },
+    {
+      "desc": "Have 99 of TM 3",
+      "code": "016380D5"
+    },
+    {
+      "desc": "Have 99 of TM 4",
+      "code": "016381D5"
+    },
+    {
+      "desc": "Have 99 of TM 5",
+      "code": "016382D5"
+    },
+    {
+      "desc": "Have 99 of TM 6",
+      "code": "016383D5"
+    },
+    {
+      "desc": "Have 99 of TM 7",
+      "code": "016384D5"
+    },
+    {
+      "desc": "Have 99 of TM 8",
+      "code": "016385D5"
+    },
+    {
+      "desc": "Have 99 of TM 9",
+      "code": "016386D5"
+    },
+    {
+      "desc": "Have 99 of TM 10",
+      "code": "016387D5"
+    },
+    {
+      "desc": "Have 99 of TM 11",
+      "code": "016388D5"
+    },
+    {
+      "desc": "Have 99 of TM 12",
+      "code": "016389D5"
+    },
+    {
+      "desc": "Have 99 of TM 13",
+      "code": "01638AD5"
+    },
+    {
+      "desc": "Have 99 of TM 14",
+      "code": "01638BD5"
+    },
+    {
+      "desc": "Have 99 of TM 15",
+      "code": "01638CD5"
+    },
+    {
+      "desc": "Have 99 of TM 16",
+      "code": "01638DD5"
+    },
+    {
+      "desc": "Have 99 of TM 17",
+      "code": "01638ED5"
+    },
+    {
+      "desc": "Have 99 of TM 18",
+      "code": "01638FD5"
+    },
+    {
+      "desc": "Have 99 of TM 19",
+      "code": "016390D5"
+    },
+    {
+      "desc": "Have 99 of TM 20",
+      "code": "016391D5"
+    },
+    {
+      "desc": "Have 99 of TM 21",
+      "code": "016392D5"
+    },
+    {
+      "desc": "Have 99 of TM 22",
+      "code": "016393D5"
+    },
+    {
+      "desc": "Have 99 of TM 23",
+      "code": "016394D5"
+    },
+    {
+      "desc": "Have 99 of TM 24",
+      "code": "016395D5"
+    },
+    {
+      "desc": "Have 99 of TM 25",
+      "code": "016396D5"
+    },
+    {
+      "desc": "Have 99 of TM 26",
+      "code": "016397D5"
+    },
+    {
+      "desc": "Have 99 of TM 27",
+      "code": "016398D5"
+    },
+    {
+      "desc": "Have 99 of TM 28",
+      "code": "016399D5"
+    },
+    {
+      "desc": "Have 99 of TM 29",
+      "code": "01639AD5"
+    },
+    {
+      "desc": "Have 99 of TM 30",
+      "code": "01639BD5"
+    },
+    {
+      "desc": "Have 99 of TM 31",
+      "code": "01639CD5"
+    },
+    {
+      "desc": "Have 99 of TM 32",
+      "code": "01639DD5"
+    },
+    {
+      "desc": "Have 99 of TM 33",
+      "code": "01639ED5"
+    },
+    {
+      "desc": "Have 99 of TM 34",
+      "code": "01639FD5"
+    },
+    {
+      "desc": "Have 99 of TM 35",
+      "code": "0163A0D5"
+    },
+    {
+      "desc": "Have 99 of TM 36",
+      "code": "0163A1D5"
+    },
+    {
+      "desc": "Have 99 of TM 37",
+      "code": "0163A2D5"
+    },
+    {
+      "desc": "Have 99 of TM 38",
+      "code": "0163A3D5"
+    },
+    {
+      "desc": "Have 99 of TM 39",
+      "code": "0163A4D5"
+    },
+    {
+      "desc": "Have 99 of TM 40",
+      "code": "0163A5D5"
+    },
+    {
+      "desc": "Have 99 of TM 41",
+      "code": "0163A6D5"
+    },
+    {
+      "desc": "Have 99 of TM 42",
+      "code": "0163A7D5"
+    },
+    {
+      "desc": "Have 99 of TM 43",
+      "code": "0163A8D5"
+    },
+    {
+      "desc": "Have 99 of TM 44",
+      "code": "0163A9D5"
+    },
+    {
+      "desc": "Have 99 of TM 45",
+      "code": "0163AAD5"
+    },
+    {
+      "desc": "Have 99 of TM 46",
+      "code": "0163ABD5"
+    },
+    {
+      "desc": "Have 99 of TM 47",
+      "code": "0163ACD5"
+    },
+    {
+      "desc": "Have 99 of TM 48",
+      "code": "0163ADD5"
+    },
+    {
+      "desc": "Have 99 of TM 49",
+      "code": "0163AED5"
+    },
+    {
+      "desc": "Have 99 of TM 50",
+      "code": "0163AFD5"
+    },
+    {
+      "desc": "Activate HM 1",
+      "code": "0101B0D5"
+    },
+    {
+      "desc": "Activate HM 2",
+      "code": "0101B1D5"
+    },
+    {
+      "desc": "Activate HM 3",
+      "code": "0101B2D5"
+    },
+    {
+      "desc": "Activate HM 4",
+      "code": "0101B3D5"
+    },
+    {
+      "desc": "Activate HM 5",
+      "code": "0101B4D5"
+    },
+    {
+      "desc": "Activate HM 6",
+      "code": "0101B5D5"
+    },
+    {
+      "desc": "Activate HM 7",
+      "code": "0101B6D5"
+    },
+    {
+      "desc": "One Hit Kills",
+      "code": "3EE-85A-2AA"
+    },
+    {
+      "desc": "Skip Trainer Battles",
+      "code": "007-6B9-806"
+    },
+    {
+      "desc": "No Random Battles",
+      "code": "186-469-2AA"
+    },
+    {
+      "desc": "Opponent Doesn't Attack",
+      "code": "C96-86B-D5D"
+    }
+  ],
+  "Spider-Man (PT-BR)": [
+    {
+      "desc": "Infinite Health",
+      "code": "016495C3"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "016477C3"
+    },
+    {
+      "desc": "Max Attack",
+      "code": "01065AC2"
+    },
+    {
+      "desc": "Max Defense",
+      "code": "01065BC2"
+    },
+    {
+      "desc": "Exp Points Modifier",
+      "code": "010058C2+010059C2"
+    },
+    {
+      "desc": "Max Exp Points",
+      "code": "01FF58C2+01FF59C2"
+    },
+    {
+      "desc": "Slow Motion",
+      "code": "01055DC2"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "1CA-96D"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "7EC-BCD"
+    },
+    {
+      "desc": "Start With And Continue Game With 99 Lives",
+      "code": "641-7DF+64B-78B"
+    },
+    {
+      "desc": "1 Hit Enemy Kills",
+      "code": "0100B4C3"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "01FF38C2"
+    },
+    {
+      "desc": "Infinite Webs",
+      "code": "01FF3AC2"
+    }
+  ],
+  "Super Mario Bros. Deluxe (USA, Europe) (Rev 2)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "90097FC1"
+    },
+    {
+      "desc": "World/Stage Modifier",
+      "code": "900063C1"
+    },
+    {
+      "desc": "Always Have Star",
+      "code": "9001DBC1"
+    },
+    {
+      "desc": "Mario Doesn't Get Hurt",
+      "code": "01FFF3C1"
+    },
+    {
+      "desc": "All Enemies Are Gone",
+      "code": "9120D2D2"
+    },
+    {
+      "desc": "Always Stay Big",
+      "code": "0101C5C1"
+    },
+    {
+      "desc": "Always Have Fire",
+      "code": "0101AFC1"
+    },
+    {
+      "desc": "Super Jump",
+      "code": "01AA05C2+010004C2+010006C2"
+    },
+    {
+      "desc": "Score Modifier",
+      "code": "01007CC1"
+    },
+    {
+      "desc": "Character Select",
+      "code": "010083C3"
+    },
+    {
+      "desc": "Stop Timer",
+      "code": "01897DC1"
+    },
+    {
+      "desc": "Fly",
+      "code": "0102C1C1"
+    },
+    {
+      "desc": "Stage Modifier",
+      "code": "0100EFC1"
+    },
+    {
+      "desc": "Coin Modifier",
+      "code": "0100F2C1"
+    },
+    {
+      "desc": "Always Be Small Mario With Fire",
+      "code": "0109C1C1"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "01907DC1"
+    },
+    {
+      "desc": "Color Of Attire Modifier",
+      "code": "0100AFC1"
+    },
+    {
+      "desc": "All Pictures",
+      "code": "01FF29C4+01FF2AC4+01FF2CC4"
+    },
+    {
+      "desc": "All Challange Levels",
+      "code": "01FF8EC1+01FF8FC1+01FF90C1+01FF91C1"
+    },
+    {
+      "desc": "Enable Boo Vs. You",
+      "code": "010392C1"
+    },
+    {
+      "desc": "Get Yoshi Egg",
+      "code": "016393C1"
+    },
+    {
+      "desc": "Have All Red Coins",
+      "code": "011F0AD3"
+    },
+    {
+      "desc": "Freeze Timer at 409",
+      "code": "7D3-C19"
+    },
+    {
+      "desc": "Jump In Midair",
+      "code": "185-4CA-6EA+CD5-7DB-081+555-7EB-E6D+555-7FB-E6D"
+    },
+    {
+      "desc": "Disable Swimming",
+      "code": "003-82B-A26"
+    },
+    {
+      "desc": "Run Fast Underwater",
+      "code": "D87-58A-2A9+287-59A-A2A"
+    },
+    {
+      "desc": "Have Yoshi Egg",
+      "code": "3CB-85C-081+EAB-86C-A24+93B-87C-E6D+C1B-88C-7F4"
+    },
+    {
+      "desc": "One Red Coin Worth 5",
+      "code": "FFE-17D-5DE+B4E-1CD-3B0"
+    },
+    {
+      "desc": "Enemies Die When You Get Close To Them",
+      "code": "18F-5DB-6EA+55F-53B-3B9"
+    },
+    {
+      "desc": "Enemies Die When You Get Close To Them",
+      "code": "181-999-6EA+001-909-3BA"
+    },
+    {
+      "desc": "Enemies Die When You Get Close To Them",
+      "code": "187-2FB-6EA+007-26B-F7F"
+    },
+    {
+      "desc": "Enemies Die When You Get Close To Them",
+      "code": "007-BAA-B37+187-C3A-6EA"
+    },
+    {
+      "desc": "Always Have Fireball",
+      "code": "006-1AA-7F2"
+    },
+    {
+      "desc": "Fireball Hits Anywhere",
+      "code": "180-BBB-4CA+180-CBB-4CA+FA3-01D-801+FA3-0FD-801"
+    },
+    {
+      "desc": "Fireballs Go Through All Enemies and Obstacles",
+      "code": "180-BBB-4CA+180-CBB-4CA"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "1C8-D9B+1C8-6BB"
+    },
+    {
+      "desc": "Start With 99 Lives",
+      "code": "634-83A"
+    },
+    {
+      "desc": "Gain Fire Flower Power Instead of Growth From Mushroom",
+      "code": "091-0B8"
+    },
+    {
+      "desc": "Always Have Fire Power",
+      "code": "0101CEC1"
+    },
+    {
+      "desc": "Jump Modifier",
+      "code": "0101C7C1"
+    },
+    {
+      "desc": "Always Be A Ghost",
+      "code": "900FD5C1"
+    },
+    {
+      "desc": "Slide Instead Of Run",
+      "code": "0101C6C1"
+    },
+    {
+      "desc": "Have All Red Coins In Challenge Mode",
+      "code": "911F0AD3"
+    },
+    {
+      "desc": "Ghost Can't Move",
+      "code": "01002DD0"
+    },
+    {
+      "desc": "No Slide",
+      "code": "0118FFC1"
+    },
+    {
+      "desc": "Jump High",
+      "code": "015F00C2"
+    },
+    {
+      "desc": "Far Slide",
+      "code": "01FFFDC1"
+    },
+    {
+      "desc": "Ghost Mode",
+      "code": "0110D5C1"
+    },
+    {
+      "desc": "One Hit Death",
+      "code": "0100D5C1"
+    },
+    {
+      "desc": "Invincible",
+      "code": "0101DBC1"
+    },
+    {
+      "desc": "Shell Stomps 1-Ups + Enemy Stomp Equals 8000 Points",
+      "code": "010DDEC1"
+    },
+    {
+      "desc": "10-Coin Boxes Never Run Out",
+      "code": "01116CC2"
+    },
+    {
+      "desc": "Behind Scenery",
+      "code": "0101E3C1"
+    },
+    {
+      "desc": "Stop Time",
+      "code": "010081C1"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "01220FD0"
+    },
+    {
+      "desc": "Transparent Mario",
+      "code": "017FAFFF"
+    },
+    {
+      "desc": "Jump Mod",
+      "code": "0100ACFF"
+    },
+    {
+      "desc": "Modify Number Of Wins In Boo Vs. You Mode",
+      "code": "01008FC3"
+    },
+    {
+      "desc": "Modify Number Of Losses In Boo Vs. You Mode",
+      "code": "010090C3"
+    },
+    {
+      "desc": "Cursor X Coord (Calendar)",
+      "code": "01005DD9"
+    },
+    {
+      "desc": "Cursor Y Coord (Calendar)",
+      "code": "01005ED9"
+    },
+    {
+      "desc": "New Date Icon",
+      "code": "01006ED9"
+    },
+    {
+      "desc": "Caption Style (Toads in Toybox)",
+      "code": "0100DFC4"
+    },
+    {
+      "desc": "For Super Players Menu Option",
+      "code": "010097FF"
+    },
+    {
+      "desc": "Level",
+      "code": "010063C1"
+    },
+    {
+      "desc": "Mario Image",
+      "code": "010003C2"
+    },
+    {
+      "desc": "Music Codes",
+      "code": "01626FC3"
+    },
+    {
+      "desc": "Have Star Power (Rev B)",
+      "code": "01FFDAC1+01FFDBC1"
+    },
+    {
+      "desc": "Blocks With ? That Contain A Coin Give Starman",
+      "code": "028-A3B-E6A+487-52B-E6B+B57-51B-E6A"
+    },
+    {
+      "desc": "Fireballs Can Hit Enemies That Are Immune To Them",
+      "code": "0C1-F4B-F79"
+    },
+    {
+      "desc": "Unverwundbar",
+      "code": "$0D22A281"
+    },
+    {
+      "desc": "Unendlich Leben",
+      "code": "$0D26A081"
+    },
+    {
+      "desc": "SuperSprung",
+      "code": "$0D211CEF"
+    },
+    {
+      "desc": "Unendlich Zeit",
+      "code": "$0D1DC381"
+    },
+    {
+      "desc": "Kleiner Feuer Mario",
+      "code": "01XXCEC1"
+    },
+    {
+      "desc": "You VS Boo & For Super Players Modes Accessible",
+      "code": "18E-A1B-6EA+C9E-2FB-E69"
+    }
+  ],
+  "Tetris DX (World) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "Score Increases A Lot",
+      "code": "1F3-C9A-F70"
+    },
+    {
+      "desc": "Swap Over Next Shape to Current Shape by pressing the A Button",
+      "code": "C37-C5A-081+B67-C6A-E60+587-C7A-5D4"
+    },
+    {
+      "desc": "Swap Over Next Shape to Current Shape by pressing the B Button",
+      "code": "C38-1EA-081+B68-1FA-E60+588-20A-5D4"
+    },
+    {
+      "desc": "Swap Over Next Shape to Current Shape by pressing the Select Button",
+      "code": "188-76A-081+3E8-77A-F74"
+    },
+    {
+      "desc": "Block Modifier",
+      "code": "010085AF"
+    },
+    {
+      "desc": "Points Modifier",
+      "code": "019989AF+01998AAF+01998BAF+01998CAF"
+    },
+    {
+      "desc": "Lines Modifier",
+      "code": "0109EAAC+0109E8AC+0109E9AC+0109EBAC+0109ECAC"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "010097AF"
+    },
+    {
+      "desc": "Total Lines Modifier",
+      "code": "019903BD+019904BD+019905BD+019906BD"
+    },
+    {
+      "desc": "Computer Never Wins (Versus Mode)",
+      "code": "010031AB"
+    },
+    {
+      "desc": "Instant Win (Versus Mode)",
+      "code": "0112D0AF"
+    },
+    {
+      "desc": "Pieces Don't Fall",
+      "code": "010081AF"
+    },
+    {
+      "desc": "No Time (40 Lines)",
+      "code": "010093AF+010094AF"
+    },
+    {
+      "desc": "1 Line Win (40 Lines)",
+      "code": "01008DAF"
+    },
+    {
+      "desc": "Drop Piece to Clear Line",
+      "code": "00A-8BA-3B5"
+    },
+    {
+      "desc": "Disable Auto Descend",
+      "code": "006-3FA-3BA"
+    },
+    {
+      "desc": "Replace A-TYPE Music With The March of the Toreadors (From the original Tetris)",
+      "code": "3DD-01B-3B6+4BC-2CB-913+4CC-31B-917+4CC-36B-D5B"
+    },
+    {
+      "desc": "Replace A-TYPE Music With Unused Critical Music",
+      "code": "3ED-01B-3B6+4BC-2CB-913+4BC-31B-917+4BC-36B-D5B"
+    },
+    {
+      "desc": "Replace A-TYPE Music With Korobeiniki (Original Tetris 'Famous' A-TYPE)",
+      "code": "57D-01B-3B6+64C-2CB-913+64C-31B-917+64C-36B-D5B"
+    },
+    {
+      "desc": "Replace A-TYPE Music With Unused Loop",
+      "code": "56D-01B-3B6+63C-2CB-913+63C-31B-917+63C-36B-D5B"
+    },
+    {
+      "desc": "Drop Score Multiplier",
+      "code": "B3A-E6E"
+    },
+    {
+      "desc": "Start with Minutes in Ultra Mode",
+      "code": "0193E69B"
+    },
+    {
+      "desc": "Player Select Music Modifier",
+      "code": "264-5CB-E6F"
+    },
+    {
+      "desc": "Forced Drop Rate Easily (improvement)",
+      "code": "376-D5A-C48"
+    },
+    {
+      "desc": "Tetrimino Ascends (Turn off code to drop)",
+      "code": "356-5DA-3BA"
+    },
+    {
+      "desc": "Force Game Boy/Super Game Boy Mode",
+      "code": "023-19E-E66"
+    },
+    {
+      "desc": "Force Super Game Boy Mode If Playing In a Super Game Boy 2",
+      "code": "1E1-82F-916"
+    },
+    {
+      "desc": "Force Super Game Boy 2 Mode of played Using a Super Game Boy",
+      "code": "1F1-6DF-912"
+    },
+    {
+      "desc": "Force GB Mode In GBC Mode",
+      "code": "F01-51F-6E9"
+    },
+    {
+      "desc": "Force Glitch Mode",
+      "code": "802-02F-C42"
+    },
+    {
+      "desc": "Replace A-TYPE Music With Unused Song",
+      "code": "BED-01B-3B6+CBC-2CB-913+CBC-31B-917+CBC-36B-D5B"
+    },
+    {
+      "desc": "Always get ?? Piece",
+      "code": "008-B6A-081+3E8-B7A-F78+008-B8A-5D4"
+    },
+    {
+      "desc": "Next Piece Modifier",
+      "code": "010084AF"
+    },
+    {
+      "desc": "Game Speed Modifier",
+      "code": "010096AF"
+    },
+    {
+      "desc": "Keep next piece and stack displayed while paused",
+      "code": "185-9DB-4CA"
+    },
+    {
+      "desc": "Can choose a starting level up to level 20",
+      "code": "145-55A-C4E"
+    }
+  ],
+  "Tom & Jerry (USA)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "01034ED5"
+    },
+    {
+      "desc": "99 Cheese",
+      "code": "01993EDC"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "013B1AD5"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "01022DDD"
+    },
+    {
+      "desc": "Moon Jump",
+      "code": "3E0-DAB-4CA"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "EA5-5CB-081+3E5-5AB-6EA"
+    },
+    {
+      "desc": "Sound Test Enabled",
+      "code": "C98-74B-E69"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "C9C-1EE-E69"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "188-50D-6EA"
+    },
+    {
+      "desc": "Stage Select Enabled",
+      "code": "3CD-0DB-3B4"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "C9D-34D-E69"
+    },
+    {
+      "desc": "Infinite Projectiles",
+      "code": "186-7CB-6EA"
+    }
+  ],
+  "Wario Land 3 (World) (En,Ja)": [
+    {
+      "desc": "Total Coins Modifier",
+      "code": "010005CA"
+    },
+    {
+      "desc": "Musical Coin Modifier",
+      "code": "01005CCA"
+    },
+    {
+      "desc": "Key Modifier",
+      "code": "01015BCA"
+    },
+    {
+      "desc": "Rapid Jump & Charge",
+      "code": "010093C0"
+    },
+    {
+      "desc": "All Power-Ups (Except The Last One)",
+      "code": "01083CCA"
+    },
+    {
+      "desc": "Wario Always Does His Idle Animation",
+      "code": "01FF84CA+010685CA"
+    },
+    {
+      "desc": "Wario Never Does His Idle Animation",
+      "code": "010084CA+010185CA"
+    },
+    {
+      "desc": "Fat Wario",
+      "code": "01848ECA+01008FCA"
+    },
+    {
+      "desc": "Ball-O-String Wario",
+      "code": "01C38ECA+01018FCA"
+    },
+    {
+      "desc": "Fire Wario Phase 1 (Running)",
+      "code": "01C18ECA+01018FCA"
+    },
+    {
+      "desc": "Fire Wario Phase 2 (On fire)",
+      "code": "01C18ECA+01028FCA"
+    },
+    {
+      "desc": "Hammer Wario",
+      "code": "01098ECA+01008FCA"
+    },
+    {
+      "desc": "Ice Skatin' Wario",
+      "code": "014D8ECA+01008FCA"
+    },
+    {
+      "desc": "Zombie Wario",
+      "code": "01488ECA+01008FCA"
+    },
+    {
+      "desc": "Balloon Wario",
+      "code": "01078ECA+01008FCA"
+    },
+    {
+      "desc": "Vampire Wario",
+      "code": "014B8ECA+01008FCA"
+    },
+    {
+      "desc": "Electroshock Wario",
+      "code": "01858ECA+01008FCA"
+    },
+    {
+      "desc": "Invisible Wario",
+      "code": "01068ECA+01008FCA"
+    },
+    {
+      "desc": "Snowman Wario",
+      "code": "01508ECA+01008FCA"
+    },
+    {
+      "desc": "Snowball Wario (Size 1)",
+      "code": "01508ECA+01018FCA"
+    },
+    {
+      "desc": "Snowball Wario (Size 2)",
+      "code": "01508ECA+01028FCA"
+    },
+    {
+      "desc": "Snowball Wario (Size 3)",
+      "code": "01508ECA+01038FCA"
+    },
+    {
+      "desc": "Flat Wario",
+      "code": "01428ECA+01008FCA"
+    },
+    {
+      "desc": "Dizzy Wario",
+      "code": "010A8ECA+01008FCA"
+    },
+    {
+      "desc": "Bubble Wario",
+      "code": "014C8ECA+01008FCA"
+    },
+    {
+      "desc": "Blind Wario",
+      "code": "01538ECA+01008FCA"
+    },
+    {
+      "desc": "Normal Wario",
+      "code": "01008ECA+01008FCA"
+    },
+    {
+      "desc": "Inf Hitstun A1",
+      "code": "01008CCA"
+    },
+    {
+      "desc": "Inf Hitstun A2",
+      "code": "01018CCA"
+    },
+    {
+      "desc": "Inf Hitstun A3",
+      "code": "01158CCA"
+    },
+    {
+      "desc": "Inf Hitstun B1",
+      "code": "01008DCA"
+    },
+    {
+      "desc": "Inf Hitstun B2",
+      "code": "01018DCA"
+    },
+    {
+      "desc": "Everlasting Fire, Fat, and Hammer Wario",
+      "code": "010390CA+010391CA"
+    },
+    {
+      "desc": "MoonJump",
+      "code": "EA0-948-081"
+    },
+    {
+      "desc": "Have Effect of Rolling Wario!",
+      "code": "01029DCA"
+    },
+    {
+      "desc": "Revert Back to Wario",
+      "code": "018D83CA"
+    },
+    {
+      "desc": "Ground pound while crouched",
+      "code": "010196CA"
+    },
+    {
+      "desc": "Jump in Midair",
+      "code": "000-D48-7F6+1A0-D08-7F6"
+    }
+  ],
+  "Wario Land II (USA, Europe) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "Jump in Midair",
+      "code": "007-B79-7F6+1A7-B39-7F6"
+    }
+  ]
+}

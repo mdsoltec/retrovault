@@ -1,0 +1,1658 @@
+{
+  "Castlevania - Symphony of the Night (USA)": [
+    {
+      "desc": "Infinite Money",
+      "code": "80097C00+423F+80097C02+000F"
+    },
+    {
+      "desc": "Level up booster",
+      "code": "80097BFC+423F+80097BFE+000F"
+    },
+    {
+      "desc": "Max attack",
+      "code": "800F4C06+1400"
+    },
+    {
+      "desc": "Max guard",
+      "code": "800F505E+1400"
+    },
+    {
+      "desc": "Max strength",
+      "code": "80097BC8+03E7"
+    },
+    {
+      "desc": "Max condition",
+      "code": "80097BCC+03E7"
+    },
+    {
+      "desc": "Max intelligence",
+      "code": "80097BD0+03E7"
+    },
+    {
+      "desc": "Max luck",
+      "code": "80097BD4+03E7"
+    },
+    {
+      "desc": "All Relics",
+      "code": "50000E02+0000+80097974+0303"
+    },
+    {
+      "desc": "Infinite HP for Richter",
+      "code": "80087BB0+003C+80136C14+003C"
+    },
+    {
+      "desc": "Quick Level Gain",
+      "code": "80097BEC+FFFF"
+    },
+    {
+      "desc": "Infinite HP",
+      "code": "80097BA0+03E7"
+    },
+    {
+      "desc": "Infinite MP",
+      "code": "80097BB0+03E7"
+    },
+    {
+      "desc": "Infinite Hearts",
+      "code": "80097BA8+0063"
+    },
+    {
+      "desc": "999 Attack",
+      "code": "800F4BF6+1400"
+    },
+    {
+      "desc": "All Familiars at Level 99",
+      "code": "80097C54+0063+80097C60+0063+80097C6C+0063+80097C78+0063+80097C84+0063"
+    },
+    {
+      "desc": "Sudden Death Dracula I",
+      "code": "E0072EF0+0005+80076EDE+0000"
+    },
+    {
+      "desc": "Sudden Death Dracula II",
+      "code": "E0072EF0+000A+8007728A+0000"
+    },
+    {
+      "desc": "Have Superjump",
+      "code": "30097458+0090"
+    },
+    {
+      "desc": "Playing time 00:00:00",
+      "code": "80097C48+0000"
+    },
+    {
+      "desc": "All have EXP 99",
+      "code": "5000050C+0000+30097C58+0063"
+    },
+    {
+      "desc": "Japanese Demon-Level 99",
+      "code": "30097C9C+0063"
+    },
+    {
+      "desc": "Japanese Demon-EXP 99",
+      "code": "30097CA0+0063"
+    },
+    {
+      "desc": "Menu at maximum",
+      "code": "800F505E+03E7+800F4C06+03E7+50000404+0000+80097BC8+03E7"
+    },
+    {
+      "desc": "X-Code I",
+      "code": "50000504+0000+30097BB0+00FF"
+    },
+    {
+      "desc": "X-Code II",
+      "code": "50000204+0000+80097BFC+2710"
+    },
+    {
+      "desc": "Have all Spells",
+      "code": "50000402+0202+80097992+8081"
+    },
+    {
+      "desc": "Summon and Tetra Spirit Attack Modifier (Standard Attack +15)",
+      "code": "800A8444+000F"
+    },
+    {
+      "desc": "Hellfire and Darkinferno Attack Modifier (Standard Attack +30)",
+      "code": "800A8460+001E"
+    },
+    {
+      "desc": "Soul Steal Attack Modifier (Standard Attack +15)",
+      "code": "800A84B4+000F"
+    }
+  ],
+  "Crash Bandicoot - Warped (USA)": [
+    {
+      "desc": "99 Lives",
+      "code": "D005BEEC+F64C+800B5D4C+6300+D005BEEC+F64C+80068F58+6300"
+    },
+    {
+      "desc": "Enable All Powers",
+      "code": "80069178+003F"
+    },
+    {
+      "desc": "Have All Gems",
+      "code": "80068FB0+FFFF+80068FB2+FFFF+80068FB4+FFFF+80068FB6+FF00"
+    },
+    {
+      "desc": "Have All Sapphires",
+      "code": "800691B4+FFFF+800691B6+FFFF+800691B8+FFFF"
+    },
+    {
+      "desc": "Have All Crystals",
+      "code": "8006912C+FFFF+8006912E+FFFF+80069130+FFFF"
+    },
+    {
+      "desc": "Hyper Mode",
+      "code": "8003AE8C+FFFF"
+    },
+    {
+      "desc": "Have All Platinum Relics",
+      "code": "800691B4+FFFF+800691B6+FFFF+800691B8+FFFF+800691BA+FFFF+800691BC+FFFF+800691BE+FFFF+800691C0+FFFF+800691C2+FFFF+800691C4+FFFF"
+    },
+    {
+      "desc": "Enable \"Spyro The Dragon\" Demo",
+      "code": "300A57F9+0003"
+    },
+    {
+      "desc": "Infinite Lifes",
+      "code": "D0065D54+0100+800AD3DC+6300+D0065D54+0100+800AD42C+6300+D0065D54+0100+800AD0A4+6300+D0065D54+0100+800BCD48+6300"
+    },
+    {
+      "desc": "Enable all Powers",
+      "code": "80069328+003F"
+    },
+    {
+      "desc": "Have all Gems",
+      "code": "80069160+FFFF+80069162+FFFF+80069164+FFFF+80069166+FF00"
+    },
+    {
+      "desc": "Have all Sapphires",
+      "code": "80069364+FFFF+80069366+FFFF+80069368+FFFF"
+    },
+    {
+      "desc": "Have all Crystals",
+      "code": "800692DC+FFFF+800692DE+FFFF+800692E0+FFFF"
+    },
+    {
+      "desc": "Modifies Time Trials Timer (Push Select)",
+      "code": "E0065D55+0001+8006909C+BBBB"
+    }
+  ],
+  "Crash Bandicoot 2 - Cortex Strikes Back (USA)": [
+    {
+      "desc": "100 Lives",
+      "code": "8006+CE68+6400"
+    },
+    {
+      "desc": "All Crystals",
+      "code": "8006+D03C+FFFF+8006+D03E+FFFF+8006+D040+FFFF"
+    },
+    {
+      "desc": "All Gems",
+      "code": "8006+CEC0+FFFF+8006+CEC2+FFFF+8006+CEC4+FFFF+8006+CEC6+FFFF"
+    },
+    {
+      "desc": "Open all Levels",
+      "code": "8006+CE74+43C8"
+    }
+  ],
+  "Crash Team Racing (USA)": [
+    {
+      "desc": "Complete Adventure Mode Quickly (Cheat Device 2.2 Or Higher Needed!)",
+      "code": "50000A02+0000+8008FBA2+FFFF"
+    },
+    {
+      "desc": "Unlock All Everything (Cheat Device 2.2 Or Higher Needed!)",
+      "code": "50000302+0000+8008E6EC+FFFF"
+    },
+    {
+      "desc": "Time Always 0:00:00",
+      "code": "80035012+2400"
+    },
+    {
+      "desc": "Freezes Clock In All Timed Races/Prevents Bosses From Using Power-Ups",
+      "code": "80098830+0000"
+    },
+    {
+      "desc": "Have All Awards",
+      "code": "8008FBA4+FFFF+8008FBA6+FFFF+8008FBA8+FFFF+8008FBAA+FFFF+8008FBAC+FFFF+8008FBAE+FFFF+8008FBB0+FFFF+8008FBB2+FFFF"
+    }
+  ],
+  "Dino Crisis (USA)": [
+    {
+      "desc": "Enable Code (Must Be On)",
+      "code": "D0029588+0005+8002958A+1000"
+    },
+    {
+      "desc": "Enable Code (Must Be On - Alternate)",
+      "code": "D014957C+023A+8014957E+1000"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "800B9574+04B0"
+    },
+    {
+      "desc": "Have All Maps",
+      "code": "800C15D0+FFFF+800C15D2+FFFF+800C15D4+FFFF+800C15D6+FFFF+800C15D8+FFFF+800C15DA+FFFF"
+    },
+    {
+      "desc": "All Weapons (Regina)",
+      "code": "800C15A8+FFFF"
+    },
+    {
+      "desc": "Have All Items (Regina)",
+      "code": "800C15A4+FFFF+800C15A6+FFFF+800C15AC+FFFF+800C15AE+FFFF+800C15B0+FFFF+800C15B2+FFFF+800C15B4+FFFF+800C15B6+FFFF+800C15B8+FFFF+800C15BA+FFFF+800C15BC+FFFF"
+    },
+    {
+      "desc": "Hyper Mode (Press L1+L2 To Turn On; Press R1+R2 To Turn Off)",
+      "code": "D00B1418+0005+80087918+0000+D00B1418+000A+80087918+0005"
+    },
+    {
+      "desc": "Enable Code (Must Be On-Version 1)",
+      "code": "D00D639C+023A+800D639E+1000"
+    },
+    {
+      "desc": "Enable Code (Must Be On-Version 2)",
+      "code": "D00D6314+000A+800D6316+1000"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "D0038CC8+0108+80038CCA+2400+D0039594+0108+80039596+2400+D0039744+0108+80039746+2400+D00D2348+0108+800D234A+2400+D00D24A0+0108+800D24A2+2400+D00D25B0+0108+800D25B2+2400+D00D26FC+0108+800D26FE+2400+D00D38BC+0108+800D38BE+2400"
+    },
+    {
+      "desc": "Max Extinct Points",
+      "code": "800AEE10+967F+800AEE12+0098"
+    },
+    {
+      "desc": "Have Infinite Extinction Points At Character Buying Screen (At End of The Game)",
+      "code": "800AEE28+967F+800AEE2A+0098+800D84E8+967F+800D84EA+0098"
+    },
+    {
+      "desc": "Infinite Item Usage",
+      "code": "D00560AC+FFFF+800560AE+2400"
+    },
+    {
+      "desc": "Dinos Can't Hit You",
+      "code": "80048814+0000"
+    },
+    {
+      "desc": "Freeze Dinos (They Can't Move)",
+      "code": "80035532+2400"
+    },
+    {
+      "desc": "Walk Thru Walls",
+      "code": "80038E02+2400"
+    },
+    {
+      "desc": "High Jump In Water Stage (Press Triangle)",
+      "code": "D00AF130+0010+800EA036+F000"
+    },
+    {
+      "desc": "All Weapons Available In Shop",
+      "code": "D01CE5C0+0074+801CE5C0+0001+D01CE5C8+0074+801CE5C8+0001+D01CE5D0+000A+801CE5D0+0001+D01CE5D8+0012+801CE5D8+0001+D01CE5E0+0012+801CE5E0+0001+D01CE5E8+0014+801CE5E8+0001+D01CE5F0+0016+801CE5F0+0001+D01CE5F8+0016+801CE5F8+0001+D01CE600+0017+801CE600+0001"
+    },
+    {
+      "desc": "Short Version Of All Weapons Available In Shop",
+      "code": "C1000000+5000+50000908+0000+801CE5C0+0001"
+    },
+    {
+      "desc": "Energia Infinita",
+      "code": "800B+152C+04B0+800B+9588+FFFF+800B+958A+FFFF"
+    },
+    {
+      "desc": "Tutte le mappe",
+      "code": "800B+958C+FFFF+800B+958E+FFFF+800B+9590+FFFF+800B+9592+FFFF"
+    },
+    {
+      "desc": "Tutte le Armi (Regina)",
+      "code": "800B+9560+FFFF+800B+955C+FFFF+800B+955E+FFFF+800B+9564+FFFF+800B+9566+FFFF+800B+9568+FFFF"
+    },
+    {
+      "desc": "Tutti gli oggetti (Regina)",
+      "code": "800B+956A+FFFF+800B+956C+FFFF+800B+956E+FFFF+800B+9570+FFFF+800B+9572+FFFF+800B+9574+FFFF"
+    },
+    {
+      "desc": "Vedere il primo Finale (premere Select)",
+      "code": "D00A+93D0+0100+800A+FA0D+000A+D00A+93D0+0100+300A+FA13+0000+D00A+93D0+0100"
+    },
+    {
+      "desc": "Vedere il secondo Finale (premere Select)",
+      "code": "D00A+93D0+0100+800A+FA0D+000A+D00A+93D0+0100+300A+FA13+0001+D00A+93D0+0100"
+    },
+    {
+      "desc": "Vedere il terzo Finale (premere Select)",
+      "code": "D00A+93D0+0100+800A+FA0D+000A+D00A+93D0+0100+300A+FA13+0002"
+    },
+    {
+      "desc": "Salvare ovunque (premere L1+L2)",
+      "code": "D00A+93D0+0005+800A+FA00+0007"
+    },
+    {
+      "desc": "Munizioni ed oggetti infiniti",
+      "code": "D00B+9CAC+0001+8006+303E+3C00"
+    },
+    {
+      "desc": "Abilita cambio costume",
+      "code": "800B+9CAC+000F+D00B+FBFA+0003+800B+FBFA+0503"
+    },
+    {
+      "desc": "Abilita missione Extra (premere R1+R2)",
+      "code": "D00A+93D0+000A+800B+FBFA+0403"
+    },
+    {
+      "desc": "Tempo infinito nella missione Wipe Out",
+      "code": "8004+0348+3C00"
+    }
+  ],
+  "Gran Turismo 2 (USA)": [
+    {
+      "desc": "CPU kann nicht fahren (Druecke Kreuz & Select)",
+      "code": "$75C550D98DCB+$85B362B9CECD+$75C550D98DCB+$85B38FB9CECD+$75C550D98DCB+$85B38479CECD+$75C550D98DCB+$85B37939CECD+$75C550D98DCB+$85B36EF9CECD"
+    },
+    {
+      "desc": "16:9 Widescreen (1.1)",
+      "code": "A4052A64 801EF8EF+8005D598 0000+80057010 0000+00000000 FFFF+A4052B20 000000E7+8005D598 0000+80057010 0000+00000000 FFFF+A4020A74 3084007F+A701E55C FF80FF56+A701E564 008000AA+A70201A8 FF97FF74+A70201B0 0069008C+A7015350 014001AA+00000000 FFFF+A401F888 AEB40008+A70100D0 FF60FF2B+A70100D4 00A000D5+00000000 FFFF+A403EC6C 02602021+A70295E4 FFC4FFB0+A70295E8 003C0050+00000000 FFFF+A4057010 260201C0+A7049736 A485A489+A7049EB4 00C8010A+A7049EBC 302100C8+A7049EBE 00A03406+A704C100 00C8010A+A704C108 302100C8+A704C10A 00A03406+A704DFE8 00000160+A704DFEA 00002405+A704DFF4 022000C4+A704DFF6 8FB2A485+A704DFD0 016001D5+A7050B80 FF50FF16+A7050B88 00B000EA+00000000 FFFF+A405D598 8005A5B4+A705802C 00C8010A+A7058034 302100C8+A7058036 00A03406+A70588E0 00C8010A+A70588E8 302100C8+A70588EA 00A03406+A70599C4 016001D5+00000000 FFFF+A40244EC 800229D8+A701CDF4 00B30086+A701CDFC FFCEFFDB+A701CE04 03200258+00000000 FFFF"
+    },
+    {
+      "desc": "16:9 Widescreen (1.2)",
+      "code": "A40529DC 801EFB39+8005D5DC 0000+80057054 0000+00000000 FFFF+A4052A70 000000F6+8005D5DC 0000+80057054 0000+00000000 FFFF+A4020A90 3084007F+A701E578 FF80FF56+A701E580 008000AA+A70201C4 FF97FF74+A70201CC 0069008C+A701536C 014001AA+00000000 FFFF+A401F888 AEB40008+A70100D0 FF60FF2B+A70100D4 00A000D5+00000000 FFFF+A403EC74 02602021+A70295EC FFC4FFB0+A70295F0 003C0050+00000000 FFFF+A4057054 260201C0+A70497CA A485A489+A7049F48 00C8010A+A7049F50 302100C8+A7049F52 00A03406+A704C194 00C8010A+A704C19C 302100C8+A704C19E 00A03406+A704E07C 00000160+A704E07E 00002405+A704E088 022000C4+A704E08A 8FB2A485+A704E064 016001D5+A7050C14 FF50FF16+A7050C1C 00B000EA+00000000 FFFF+A405D5DC 8005A5F8+A7058070 00C8010A+A7058078 302100C8+A705807A 00A03406+A7058924 00C8010A+A705892C 302100C8+A705892E 00A03406+A7059A08 016001D5+00000000 FFFF+A402442C 800229A8+A701CDF4 00B30086+A701CDFC FFCEFFDB+A701CE04 03200258+00000000 FFFF"
+    },
+    {
+      "desc": "21:9 Widescreen (1.1)",
+      "code": "A4052A64 801EF8EF+8005D598 0000+80057010 0000+00000000 FFFF+A4052B20 000000E7+8005D598 0000+80057010 0000+00000000 FFFF+A4020A74 3084007F+A701E55C FF80FF20+A701E564 008000E0+A70201A8 FF97FF49+A70201B0 006900B7+A7015350 01400230+00000000 FFFF+A401F888 AEB40008+A70100D0 FF60FEE8+A70100D4 00A00118+00000000 FFFF+A403EC6C 02602021+A70295E4 FFC4FF97+A70295E8 003C0069+00000000 FFFF+A4057010 260201C0+A7049736 A485A489+A7049EB4 00C8015E+A7049EBC 302100C8+A7049EBE 00A03406+A704C100 00C8015E+A704C108 302100C8+A704C10A 00A03406+A704DFE8 00000160+A704DFEA 00002405+A704DFF4 022000C4+A704DFF6 8FB2A485+A704DFD0 01600268+A7050B80 FF50FECC+A7050B88 00B00134+00000000 FFFF+A405D598 8005A5B4+A705802C 00C8015E+A7058034 302100C8+A7058036 00A03406+A70588E0 00C8015E+A70588E8 302100C8+A70588EA 00A03406+A70599C4 01600268+00000000 FFFF+A40244EC 800229D8+A701CDF4 00B30066+A701CDFC FFCEFFE4+A701CE04 032001C9+00000000 FFFF"
+    },
+    {
+      "desc": "21:9 Widescreen (1.2)",
+      "code": "A40529DC 801EFB39+8005D5DC 0000+80057054 0000+00000000 FFFF+A4052A70 000000F6+8005D5DC 0000+80057054 0000+00000000 FFFF+A4020A90 3084007F+A701E578 FF80FF20+A701E580 008000E0+A70201C4 FF97FF49+A70201CC 006900B7+A701536C 01400230+00000000 FFFF+A401F888 AEB40008+A70100D0 FF60FEE8+A70100D4 00A00118+00000000 FFFF+A403EC74 02602021+A70295EC FFC4FF97+A70295F0 003C0069+00000000 FFFF+A4057054 260201C0+A70497CA A485A489+A7049F48 00C8015E+A7049F50 302100C8+A7049F52 00A03406+A704C194 00C8015E+A704C19C 302100C8+A704C19E 00A03406+A704E07C 00000160+A704E07E 00002405+A704E088 022000C4+A704E08A 8FB2A485+A704E064 01600268+A7050C14 FF50FECC+A7050C1C 00B00134+00000000 FFFF+A405D5DC 8005A5F8+A7058070 00C8015E+A7058078 302100C8+A705807A 00A03406+A7058924 00C8015E+A705892C 302100C8+A705892E 00A03406+A7059A08 01600268+00000000 FFFF+A402442C 800229A8+A701CDF4 00B30066+A701CDFC FFCEFFE4+A701CE04 032001C9+00000000 FFFF"
+    },
+    {
+      "desc": "60 FPS (1.1)",
+      "code": "E01D5634 0002+301D5634 0001+A401F888 AEB40008+A70168C8 00020000+A7019644 00020000+00000000 FFFF+A003EC6C 02602021+A7029548 00020000"
+    },
+    {
+      "desc": "60 FPS (1.2)",
+      "code": "E01D5864 0002+301D5864 0001+A401F888 AEB40008+A70168C8 00020000+A7019644 00020000+00000000 FFFF+A003EC74 02602021+A7029550 00020000"
+    },
+    {
+      "desc": "Use 8MB RAM for polygon buffers (1.1, 1.2)",
+      "code": "A401F888 AEB40008+D121F88A AEB4+A7016A6C 000E8020+D121F88A AEB4+A7016A70 57000000+D121F88A AEB4+A7016A7C 00030007+D121F88A AEB4+A7016A78 28210000+D121F88A AEB4+A7016A7A 02250000+D121F88A AEB4+A7016A88 80000000+00000000 FFFF"
+    },
+    {
+      "desc": "Full detail AI cars (Needs 8MB RAM) (1.1, 1.2)",
+      "code": "A401F888 AEB40008+A7014344 00405112+A7014346 16A00800+A7014348 00030001+00000000 FFFF"
+    },
+    {
+      "desc": "Slightly higher draw distance (1.1)",
+      "code": "A403EC6C 02602021+A7020420 0004810D+A7020422 14400800+00000000 FFFF"
+    },
+    {
+      "desc": "Slightly higher draw distance (1.2)",
+      "code": "A403EC74 02602021+A7020420 0004810D+A7020422 14400800+00000000 FFFF"
+    },
+    {
+      "desc": "L3 to toggle Mirror (tap) and HUD (hold) (1.1)",
+      "code": "A403EC6C 02602021+D7010001 00000200+A002951C 1040000C+9002951C 00000001+A002951C 0800A554+9002951C 1040000C+A002951C 00000000+9002951C 0800A554+A002951C 00000001+9002951C 00000000+00000000 FFFF+00000000 FFFF+A403EC6C 02602021+D701003C 00000200+F502942C 0022A52E+F502942E 14400800+F502941C BA040000+F502941E 0C000000+00000000 FFFF+00000000 FFFF"
+    },
+    {
+      "desc": "L3 to toggle Mirror (tap) and HUD (hold) (1.2)",
+      "code": "A403EC74 02602021+D7010001 00000200+A0029524 1040000C+90029524 00000001+A0029524 0800A556+90029524 1040000C+A0029524 00000000+90029524 0800A556+A0029524 00000001+90029524 00000000+00000000 FFFF+00000000 FFFF+A403EC74 02602021+D701003C 00000200+F5029434 0022A530+F5029436 14400800+F5029424 BA060000+F5029426 0C000000+00000000 FFFF+00000000 FFFF"
+    },
+    {
+      "desc": "Metric units (1.1)",
+      "code": "A0052A64 801EF8EF+80057010 0000+A0052B20 000000E7+80057010 0000+A71C6A27 706D6D6B+A71C6A29 0068682F+A70F853D 7466006D+A70F8435 626C676B+A70F8474 626C676B+A70F8476 662D2F6D+A70F8478 2F746425+A70F847A 64257072+A70F847C 7072006D+A70F8487 626C676B+A70F8489 662D2F6D+A70F848B 2F74257E+A70F848D 257E7264+A70F848F 72646D70+A70F8491 6D700000+A70F835A 626C676B+A70F835C 662D006D+A71C6EA9 706D6D6B+A71C6EAB 0068682F+A71EF476 626C676B+A71C2EA7 626C676B+A71C2EA9 662D206D+A71C2EAB 2074202F+A71C2EAD 202F0000+A403EC6C 02602021+A702F6F4 B0D8A0C0+A702F6F6 39233922+A7030568 000D0016+A703056C FBDD8000+00000000 FFFF+A4020A74 3084007F+A7018AC8 13030000+A7018ACA 00090000+A7018AD0 30230000+A7018AD2 00463446+A7018C0C 17C30000+A7018C0E 000234A8+A7018C20 40230000+A7018C22 00620000+A7019798 18230004+A701979A 00629683+A70198B2 ACC3ACC4+00000000 FFFF+A4057010 260201C0+A704D984 37C30000+A704D986 00069506+A704D994 30230000+A704D996 00460000+00000000 FFFF+A40244EC 800229D8+A701C968 48100000+A701C974 302303A4+A701C976 00468D26+A701C564 48100000+A701C570 302303A4+A701C572 00468D26+A701C808 40230000+A701C80A 00620000+00000000 FFFF"
+    },
+    {
+      "desc": "Metric units (1.2)",
+      "code": "A00529DC 801EFB39+80057054 0000+A0052A70 000000F6+80057054 0000+A71C6C87 706D6D6B+A71C6C88 0068682F+A70F8677 626C676B+A70F86AF 626C676B+A70F86B1 662D2F6D+A70F86B3 2F746425+A70F86B5 64257072+A70F86B7 7072006D+A70F86C0 626C676B+A70F86C2 662D2F6D+A70F86C4 2F74257E+A70F86C6 257E7264+A70F86C8 72646D70+A70F86CA 6D700000+A70F85A6 626C676B+A70F85A8 662D006D+A71C7101 706D6D6B+A71C7103 0068682F+A71EF6C3 626C676B+A71C30FF 626C676B+A71C3101 662D206D+A71C3103 2074202F+A71C3105 202F0000+A403EC74 02602021+A702F6FC B0D8A0C0+A702F6FE 39233922+A7030570 000D0016+A7030574 FBDD8000+00000000 FFFF+A4020A90 3084007F+A7018AE4 13030000+A7018AE6 00090000+A7018AEC 30230000+A7018AEE 00463446+A7018C28 17C30000+A7018C2A 000234A8+A7018C3C 40230000+A7018C3E 00620000+A70197B4 18230004+A70197B6 00629683+A70198CE ACC3ACC4+00000000 FFFF+A4057054 260201C0+A704DA18 37C30000+A704DA1A 00069506+A704DA28 30230000+A704DA2A 00460000+00000000 FFFF+A402442C 800229A8+A701C968 48100000+A701C974 302303A4+A701C976 00468D26+A701C564 48100000+A701C570 302303A4+A701C572 00468D26+A701C808 40230000+A701C80A 00620000+00000000 FFFF"
+    },
+    {
+      "desc": "Enable extra cameras in race (1.1, 1.2)",
+      "code": "A401F888 AEB40008+A701031C 00030009+A7010370 40F045C1+C30A92BC 0001+A701171C 0106010E+A7011778 45E945D7+00000000 FFFF+00000000 FFFF+A401F888 AEB40008+C30A92BC 0001+D701001E 01000008+F5010148 40B6427F+F5010A4C 006C8021+F5010A4E 8C700000+301FFA89 0002+00000000 FFFF+00000000 FFFF+00000000 FFFF+A401F888 AEB40008+C40A92BC 0000+D001171C 010E+8001171C 0106+D0011778 45D7+80011778 45E9+A0010A4C 00008021+90010A4C 8C70006C+00000000 FFFF+00000000 FFFF"
+    },
+    {
+      "desc": "True Endurance tweak (1.1)",
+      "code": "A0052A64 801EF8EF+80057010 0000+A0052B20 000000E7+80057010 0000+A4057010 260201C0+E01D563B 00FF+E0046ED5 0000+30046ED5 0001+E0046ED5 0000+A602CE1C 00020006+C4046ED5 0000+A702CE1C 00060002+E01D563B 0063+301D563B 00FF+00000000 FFFF+00000000 FFFF"
+    },
+    {
+      "desc": "True Endurance tweak (1.2)",
+      "code": "A00529DC 801EFB39+80057054 0000+A0052A70 000000F6+80057054 0000+A4057054 260201C0+E01D586B 00FF+E0046F69 0000+30046F69 0001+E0046F69 0000+A602CE24 00020006+C4046F69 0000+A702CE24 00060002+E01D586B 0063+301D586B 00FF+00000000 FFFF+00000000 FFFF"
+    },
+    {
+      "desc": "R3 to switch BGM in race (tap) and mute (hold) (1.1)",
+      "code": "D702003C 02000400+51050005 01+00000000 FFFF+52900002 0000003C+51050005 02+00000000 FFFF+52900002 00000000+52100005 01+51050005 03+00000000 FFFF+00000000 FFFF+51050003 00+A403EC6C 02602021+52130005 02+51810003 0002F4EC+51060304 000002EE+00000000 FFFF+00000000 FFFF+52130005 02+52900003 00000000+51050005 00+00000000 FFFF+00000000 FFFF+52100005 03+52150004 05+51030404 01+52120004 05+51050004 00+00000000 FFFF+00000000 FFFF+00000000 FFFF+52100005 03+52100004 FE+51050004 00+00000000 FFFF+00000000 FFFF+52100005 02+52150004 05+51050004 FE+00000000 FFFF+00000000 FFFF+52910003 00000000+51830303 000002EE+51040403 00+51050005 00+00000000 FFFF"
+    },
+    {
+      "desc": "R3 to switch BGM in race (tap) and mute (hold) (1.2)",
+      "code": "D702003C 02000400+51050005 01+00000000 FFFF+52900002 0000003C+51050005 02+00000000 FFFF+52900002 00000000+52100005 01+51050005 03+00000000 FFFF+00000000 FFFF+51050003 00+A403EC74 02602021+52130005 02+51810003 0002F4F4+51060304 000002EE+00000000 FFFF+00000000 FFFF+52130005 02+52900003 00000000+51050005 00+00000000 FFFF+00000000 FFFF+52100005 03+52150004 05+51030404 01+52120004 05+51050004 00+00000000 FFFF+00000000 FFFF+00000000 FFFF+52100005 03+52100004 FE+51050004 00+00000000 FFFF+00000000 FFFF+52100005 02+52150004 05+51050004 FE+00000000 FFFF+00000000 FFFF+52910003 00000000+51830303 000002EE+51040403 00+51050005 00+00000000 FFFF"
+    },
+    {
+      "desc": "Fixed Apricot Hill and added AR Mini to Event Generator (1.1)",
+      "code": "A40244EC 800229D8+A7023037 6D61616D+A7023039 53610053+A70231AC 494C6572+A70231AE 25535F76+A70231B0 3230696D+A70231B2 0064696E+A70231B4 494C0000+A0050D98 00000000+90050D98 800231AC+A0050D9C 800231AC+90050D9C 800231B0+A0050DA0 800231B4+90050DA0 00000000+00000000 FFFF"
+    },
+    {
+      "desc": "Fixed Apricot Hill and added AR Mini to Event Generator (1.2)",
+      "code": "A402442C 800229A8+A7023007 6D61616D+A7023009 53610053+A702317C 494C6572+A702317E 25535F76+A7023180 3230696D+A7023182 0064696E+A7023184 494C0000+A0050CE8 00000000+90050CE8 8002317C+A0050CEC 8002317C+90050CEC 80023180+A0050CF0 80023184+90050CF0 00000000+00000000 FFFF"
+    }
+  ],
+  "Metal Gear Solid (USA) (Disc 1)": [
+    {
+      "desc": "Unendlich Luft",
+      "code": "$85B3885BCED1"
+    },
+    {
+      "desc": "Unendlich Gesundheit",
+      "code": "$85B41CD5D4CD"
+    },
+    {
+      "desc": "Alle Waffen Unendlich Munition",
+      "code": "$B5B3BED1CECD+$15B41CE1CECC"
+    },
+    {
+      "desc": "Alle Gegenstaende",
+      "code": "$B5C1BED1CECD+$15B41C09CECC"
+    },
+    {
+      "desc": "Radar wird nicht gestoert",
+      "code": "$35B38827CECD"
+    },
+    {
+      "desc": "Keine Zeitbombe",
+      "code": "$85B41C2DCECD"
+    },
+    {
+      "desc": "Schalldaempfer aktiv",
+      "code": "$85B41C37CECD"
+    },
+    {
+      "desc": "Geister-Modus",
+      "code": "$85B38837CECD+$85B38839CECD"
+    },
+    {
+      "desc": "Keine Erkaeltung",
+      "code": "$85B41CD9CECD"
+    },
+    {
+      "desc": "All Modi im VR-Training",
+      "code": "$35B40EDACEED"
+    },
+    {
+      "desc": "Durch Waende gehen",
+      "code": "$85AB19FF6A91+$85AB1901D6CD"
+    },
+    {
+      "desc": "Unendlich Zeit",
+      "code": "$85B717470865"
+    },
+    {
+      "desc": "Have SOCOM Pistol and Ammo",
+      "code": "800B753A+0019"
+    },
+    {
+      "desc": "Have FAMAS Rifle and Ammo",
+      "code": "800B753C+0065"
+    },
+    {
+      "desc": "Have Grenade",
+      "code": "800B753E+0008"
+    },
+    {
+      "desc": "Have Nikita and Ammo",
+      "code": "800B7540+0004"
+    },
+    {
+      "desc": "Have Stinger and Ammo",
+      "code": "800B7542+0004"
+    },
+    {
+      "desc": "Have Claymore",
+      "code": "800B7544+0006"
+    },
+    {
+      "desc": "Have C-4",
+      "code": "800B7546+0004"
+    },
+    {
+      "desc": "Have Stun Grenade",
+      "code": "800B7548+0003"
+    },
+    {
+      "desc": "Have Chaff Grenade",
+      "code": "800B754A+0003"
+    },
+    {
+      "desc": "Have PSG1 Rifle and Ammo",
+      "code": "800B754C+0005"
+    },
+    {
+      "desc": "Have Cigarettes",
+      "code": "800B7562+0001"
+    },
+    {
+      "desc": "Have Scope",
+      "code": "800B7564+0001"
+    },
+    {
+      "desc": "Have Cardboard Box A",
+      "code": "800B7566+0001"
+    },
+    {
+      "desc": "Have Cardboard Box B",
+      "code": "800B7568+0001"
+    },
+    {
+      "desc": "Have Cardboard Box C",
+      "code": "800B756A+0001"
+    },
+    {
+      "desc": "Have Night Vision Goggles",
+      "code": "800B756C+0001"
+    },
+    {
+      "desc": "Have Thermal Goggles",
+      "code": "800B756E+0001"
+    },
+    {
+      "desc": "Have Gasmask",
+      "code": "800B7570+0001"
+    },
+    {
+      "desc": "Have Body Armor",
+      "code": "800B7572+0001"
+    },
+    {
+      "desc": "Have Ketchup",
+      "code": "800B7574+0001"
+    },
+    {
+      "desc": "Have Stealth Suit",
+      "code": "800B7576+0001"
+    },
+    {
+      "desc": "Have Bandana",
+      "code": "800B7578+0001"
+    },
+    {
+      "desc": "Have Camera",
+      "code": "800B757A+0001"
+    },
+    {
+      "desc": "Have Rations",
+      "code": "800B757C+0002"
+    },
+    {
+      "desc": "Have Medicine",
+      "code": "800B757E+0002"
+    },
+    {
+      "desc": "Have Diazepam",
+      "code": "800B7580+0002"
+    },
+    {
+      "desc": "Have PAL Key",
+      "code": "800B7582+0001"
+    },
+    {
+      "desc": "Have Level 10 Key",
+      "code": "800B7584+000A"
+    },
+    {
+      "desc": "Have Never Have Time Bomb",
+      "code": "800B7586+0000"
+    },
+    {
+      "desc": "Have Mine Detector",
+      "code": "800B7588+0001"
+    },
+    {
+      "desc": "Have MO Disk",
+      "code": "800B758A+0001"
+    },
+    {
+      "desc": "Have Rope",
+      "code": "800B758C+0001"
+    },
+    {
+      "desc": "Have Hankerchief",
+      "code": "800B758E+0001"
+    },
+    {
+      "desc": "Have Suppressor Active",
+      "code": "800B7590+0000"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "800AE1B4+03E8"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "800B752E+03E8"
+    },
+    {
+      "desc": "Ghost Mode",
+      "code": "800AE190+0000+800AE192+0000"
+    },
+    {
+      "desc": "All VR Training Modes",
+      "code": "300B6733+0040"
+    },
+    {
+      "desc": "Never Get A Cold",
+      "code": "800B758A+0000"
+    },
+    {
+      "desc": "Ocelot Has 0 Bullets",
+      "code": "801167CB0+0000"
+    },
+    {
+      "desc": "Walk Thru Walls",
+      "code": "80027250+9CC4+80027252+0800"
+    },
+    {
+      "desc": "Infinite 3:00 Fight Time",
+      "code": "800E72C4+1475"
+    },
+    {
+      "desc": "Infinite Time Jeep Chase",
+      "code": "800E1260+FFFF"
+    },
+    {
+      "desc": "Liquid: No Health In Final Fight",
+      "code": "80179984+0000"
+    },
+    {
+      "desc": "Radar Not Jammed When Spotted",
+      "code": "800AE180+0000"
+    },
+    {
+      "desc": "Press R1 For An Easy Fight Against Ninja",
+      "code": "D00B2D60+0008+8015B5A4+0000"
+    },
+    {
+      "desc": "Press R1 For An Easy Fight Against Mantis",
+      "code": "D00B2D60+0008+801B8CBE+0000"
+    },
+    {
+      "desc": "Press R1 For Meryl + Health S.Wolf",
+      "code": "D00B2D60+0008+80174A58+0080"
+    },
+    {
+      "desc": "Press R1 For A Quick Battle With Hind D",
+      "code": "D00B2D60+0008+80154ABC+0000"
+    },
+    {
+      "desc": "Press R1 For Quick S.Wolf Snow Fight",
+      "code": "D00B2D60+0008+8016FE80+0000"
+    },
+    {
+      "desc": "Press R1 For A Quick Metal Gear Battle",
+      "code": "D00B2D58+0008+800B8EFE+0000"
+    },
+    {
+      "desc": "Press R1 For Quick Battle With Raven",
+      "code": "D00B2D60+0008+80157410+0000"
+    },
+    {
+      "desc": "Press R1 For Normal PAL Key",
+      "code": "D00B2D60+0008+800B759A+0000"
+    },
+    {
+      "desc": "Press R2 For Hot PAL Key",
+      "code": "D00B2D60+0002+800B759A+0001"
+    },
+    {
+      "desc": "Press L1 For Cold PAL Key",
+      "code": "D00B2D60+0004+800B759A+0002"
+    },
+    {
+      "desc": "Never Reload",
+      "code": "800AE16C+000D"
+    },
+    {
+      "desc": "Extra Ammo SOCOM Pistol",
+      "code": "80067CD8+0001"
+    },
+    {
+      "desc": "Extra Ammo FAMAS Rifle",
+      "code": "800682F4+0001"
+    },
+    {
+      "desc": "Extra Ammo Stinger",
+      "code": "80069524+0001"
+    },
+    {
+      "desc": "Extra Ammo Claymore",
+      "code": "800698D8+0001"
+    },
+    {
+      "desc": "Extra Ammo C-4",
+      "code": "80069C24+0001"
+    },
+    {
+      "desc": "Extra Ammo PSG1 Rifle",
+      "code": "8006A378+0001"
+    },
+    {
+      "desc": "Extra Ammo Nikita",
+      "code": "80068FE0+0001"
+    },
+    {
+      "desc": "Get Big Boss Rank",
+      "code": "300B75B4+0000+300B75B6+0000+300B75C4+0000+300B75C6+0000+300B75C8+0000+300B75CE+0000+800B75D0+0000"
+    },
+    {
+      "desc": "Press L2+R2 For First Person Mode",
+      "code": "D00AE0D0+0013+300AE1D0+0000"
+    },
+    {
+      "desc": "Radar Access In Hard/Extreme Mode",
+      "code": "300B751D+0000"
+    },
+    {
+      "desc": "Ninja Has Snake's Skin (Appearance) In Lab",
+      "code": "D00E69A8+494E+800E69D4+6E73+D00E69A8+494E+800E69D6+6B61+D00E69A8+494E+800E69D8+0065"
+    },
+    {
+      "desc": "Meryl Has Snake's Skin (Only In Nuke Bldg. B1)",
+      "code": "D00D7638+454D+800D7650+6E73+D00D7638+454D+800D7652+6B61+D00D7638+454D+800D7654+0065"
+    },
+    {
+      "desc": "Meryl Has Psycho's Skin (Only In Commander Room)",
+      "code": "D00E7B00+656D+800E7AF8+7370+D00E7B00+656D+800E7AFA+6379+D00E7B00+656D+800E7AFC+6F68"
+    },
+    {
+      "desc": "Meryl Has Nikita (Only In Nuke Bldg. B1)",
+      "code": "D00D7638+454D+800D7658+696E+D00D7638+454D+800D765A+696B+D00D7638+454D+800D765C+6174"
+    },
+    {
+      "desc": "Drunk Helicopter Mode",
+      "code": "800B9F78+0040"
+    },
+    {
+      "desc": "Closeup Mode",
+      "code": "800B9F78+0240"
+    },
+    {
+      "desc": "1st Person View",
+      "code": "800B9F7A+0001"
+    },
+    {
+      "desc": "SOCOM Is Rifle",
+      "code": "800ADFB8+6972+800ADFBA+6C66+800ADFBC+0065+800ADFC0+6972+800ADFC2+6C66+800ADFC4+0065+800ADFD0+6972+800ADFD2+6C66+800ADFD4+2E65+800ADFD6+0063"
+    },
+    {
+      "desc": "FAMAS Is Rifle",
+      "code": "800ADFE0+6972+800ADFE2+6C66+800ADFE4+0065+800ADFE8+6972+800ADFEA+6C66+800ADFEC+2E65"
+    },
+    {
+      "desc": "Cigs Are Rifle",
+      "code": "800129F8+6972+800129FA+6C66+800129FC+0065+80012A00+6972+80012A02+6C66+80012A04+0065+80012A08+6972+80012A0A+6C66+80012A0C+2E65+80012A0E+0063"
+    },
+    {
+      "desc": "Gasmask Is FAMAS",
+      "code": "80012928+6166+8001292A+616D+8001292C+0073+80012934+6166+80012936+616D+80012938+2E73+8001293A+0063+8001293C+0000"
+    },
+    {
+      "desc": "Superman Mode",
+      "code": "80172FD4+0400"
+    },
+    {
+      "desc": "Upside-Down Mode",
+      "code": "80172FD4+0800"
+    },
+    {
+      "desc": "Earthquake Mode",
+      "code": "800AE0E0+0004"
+    },
+    {
+      "desc": "Graphics Scrambler",
+      "code": "C00B2D60+0008+800BDAF4+2006+800BDAF6+8005"
+    },
+    {
+      "desc": "BGM / Background Music Off",
+      "code": "800C18C0+0000"
+    },
+    {
+      "desc": "Never Need Diazepam",
+      "code": "800B7532+0004"
+    },
+    {
+      "desc": "Crawl, Foot & Snow Steps Are Silent",
+      "code": "800AE154+0001"
+    },
+    {
+      "desc": "Vibration Test (Analog Must Be On!)",
+      "code": "D00B2D60+0200+800AE1BC+0001+D00B2D60+0400+800AE1D4+00FF+D00B2D60+0600+800AE1BC+0001+D00B2D60+0600+800AE1D4+00FF"
+    },
+    {
+      "desc": "Credits & LetterBoxes Off",
+      "code": "800AF484+0000+800AF486+0000"
+    },
+    {
+      "desc": "Unendlich Leben",
+      "code": "800B61A6+0600"
+    },
+    {
+      "desc": "Max Leben",
+      "code": "800B61A8+0600"
+    },
+    {
+      "desc": "Unendlich Luft",
+      "code": "800ACE2C+0400"
+    },
+    {
+      "desc": "Bekomme keinen Schnupfen",
+      "code": "800B61AA+0000"
+    },
+    {
+      "desc": "Geister-Modus (kann nichts aufnehmen...)",
+      "code": "800ACE08+0000+800ACE0A+0000"
+    },
+    {
+      "desc": "Radar nicht gestÃ¶rt wenn entdeckt",
+      "code": "800ACDF8+0000"
+    },
+    {
+      "desc": "Alle Modi im VR Training",
+      "code": "300B53AB+0020"
+    },
+    {
+      "desc": "Besitze Socom (Pistole)",
+      "code": "800B61B2+03E7+800B61C6+03E7"
+    },
+    {
+      "desc": "Besitze Fa-Mas (Sturmgewehr)",
+      "code": "800B61B4+03E7+800B61C8+03E7"
+    },
+    {
+      "desc": "Besitze Grenades (Splittergranate)",
+      "code": "800B61B6+03E7+800B61CA+03E7"
+    },
+    {
+      "desc": "Besitze Nikita (Lenkrakete)",
+      "code": "800B61B8+03E7+800B61CC+03E7"
+    },
+    {
+      "desc": "Besitze Stinger (Stinger-Rakete)",
+      "code": "800B61BA+03E7+800B61CE+03E7"
+    },
+    {
+      "desc": "Besitze Claymore (Minen)",
+      "code": "800B61BC+03E7+800B61D0+03E7"
+    },
+    {
+      "desc": "Besitze C4 (Plastiksprengstoff)",
+      "code": "800B61BE+03E7+800B61D2+03E7"
+    },
+    {
+      "desc": "Besitze Stun Grenades (Blendgranate)",
+      "code": "800B61C0+03E7+800B61D4+03E7"
+    },
+    {
+      "desc": "Besitze Chaff (DÃ¼ppel)",
+      "code": "800B61C2+03E7+800B61D6+03E7"
+    },
+    {
+      "desc": "Besitze PSG1 (ScharfschÃ¼tzengewehr)",
+      "code": "800B61C4+03E7+800B61D8+03E7"
+    },
+    {
+      "desc": "Besitze Cigs (Zigaretten)",
+      "code": "800B61DA+0001"
+    },
+    {
+      "desc": "Besitze Scope (Fernglas)",
+      "code": "800B61DC+0001"
+    },
+    {
+      "desc": "Besitze C. Box A (Karton A)",
+      "code": "800B61DE+0001"
+    },
+    {
+      "desc": "Besitze C. Box B (Karton B)",
+      "code": "800B61E0+0001"
+    },
+    {
+      "desc": "Besitze C. Box C (Karton C)",
+      "code": "800B61E2+0001"
+    },
+    {
+      "desc": "Besitze N.V.G. (NachtsichtgerÃ¤t)",
+      "code": "800B61E4+0001"
+    },
+    {
+      "desc": "Besitze Therm. G (InfratorsichtgerÃ¤t)",
+      "code": "800B61E6+0001"
+    },
+    {
+      "desc": "Besitze Gas Mask (Gasmaske)",
+      "code": "800B61E8+0001"
+    },
+    {
+      "desc": "Besitze B. Armor (Schutzweste)",
+      "code": "800B61EA+0001"
+    },
+    {
+      "desc": "Besitze Ketchup",
+      "code": "800B61EC+0001"
+    },
+    {
+      "desc": "Besitze Stealth",
+      "code": "800B61EE+0001"
+    },
+    {
+      "desc": "Besitze Bandana",
+      "code": "800B61F0+0001"
+    },
+    {
+      "desc": "Besitze Camera",
+      "code": "800B61F2+0001"
+    },
+    {
+      "desc": "Besitze 255 Rationen",
+      "code": "800B61F4+03E7+800B620A+03E7"
+    },
+    {
+      "desc": "Besitze 255 Medicine (Medizin)",
+      "code": "800B61F6+03E7+800B620C+03E7"
+    },
+    {
+      "desc": "Besitze 255 Diazepam",
+      "code": "800B61F8+03E7+800B620E+03E7"
+    },
+    {
+      "desc": "Besitze PAL Key (PAL SchlÃ¼ssel)",
+      "code": "800B61FA+0001"
+    },
+    {
+      "desc": "Besitze ID-Karte",
+      "code": "800B61FC+0064"
+    },
+    {
+      "desc": "Besitze nie Zeitbombe",
+      "code": "800B61FE+0000"
+    },
+    {
+      "desc": "Besitze Minendetektor",
+      "code": "800B6200+0001"
+    },
+    {
+      "desc": "Besitze MO Disc",
+      "code": "800B6202+0001"
+    },
+    {
+      "desc": "Besitze Rope (Seil)",
+      "code": "800B6204+0001"
+    },
+    {
+      "desc": "Besitze Handker (Taschentuch)",
+      "code": "800B6206+0001"
+    },
+    {
+      "desc": "Besitze Suppressor (SchalldÃ¤mpfer)",
+      "code": "800B6208+0000"
+    },
+    {
+      "desc": "Besitze cold (blauer) PAL Key DrÃ¼cke Dreieck+O",
+      "code": "D00ACD48+0030+800B6212+0002"
+    },
+    {
+      "desc": "Besitze hot (roter) PAL Key DrÃ¼cke O+X",
+      "code": "D00ACD48+0060+800B6212+0001"
+    },
+    {
+      "desc": "Besitze alle Waffen (ab GameBuster 2.2) (ersetzt Codes 10 bis 19)",
+      "code": "50001402+0000+800B61B2+03E7"
+    },
+    {
+      "desc": "Besitze die meisten GegenstÃ¤nde (ab GameBuster 2.2) (ersetzt Codes 20 - 32)",
+      "code": "50000D02+0000+800B61DA+0001"
+    },
+    {
+      "desc": "Psycho Mantis 0 Energie DrÃ¼cke L2+Dreieck+Quadrat",
+      "code": "D00ACD48+0091+800B7936+0000"
+    },
+    {
+      "desc": "Sniper Wolf 0 Energie DrÃ¼cke Dreieck+Hoch",
+      "code": "D00ACD48+1010+80173188+0000+D00ACD48+1010+8017318C+0000+D00ACD48+1010+80172E44+0001"
+    },
+    {
+      "desc": "Hind D 0 Energie DrÃ¼cke Dreieck+Hoch",
+      "code": "D00ACD48+1010+80154CD4+0000+D00ACD48+1010+80154E74+0000+D00ACD48+1010+80154AB4+0000"
+    },
+    {
+      "desc": "Sniper Wolf II 0 Energie DrÃ¼cke Dreieck+Hoch",
+      "code": "D00ACD48+1010+801701BC+0000+D00ACD48+1010+801701C0+0000+D00ACD48+1010+8016FE78+0001"
+    },
+    {
+      "desc": "Vulcan Raven 0 Energie DrÃ¼cke Dreieck+Hoch",
+      "code": "D00ACD48+1010+80157408+0000+D00ACD48+1010+8015740C+0000"
+    },
+    {
+      "desc": "Metal Gear Rex I & II 0 Energie DrÃ¼cke Dreieck+Hoch",
+      "code": "D00ACD48+1010+800B7B76+0000"
+    },
+    {
+      "desc": "0 Schuss fÃ¼r Revolver Ocelot (Oben+Dreieck)",
+      "code": "D00ACD48+1010+800B7936+0000"
+    },
+    {
+      "desc": "Ninja Besiegen (Oben+Dreieck)",
+      "code": "D00ACD48+1010+8015B59C+0000"
+    },
+    {
+      "desc": "Radar funktioniert bei jedem Schwierigkeitsgrad",
+      "code": "800B6194+2410"
+    },
+    {
+      "desc": "Radar immer aus",
+      "code": "800B6194+2C10"
+    },
+    {
+      "desc": "Spiele im First Person Viewmode",
+      "code": "D00ACD48+001F+300ACE48+0000"
+    },
+    {
+      "desc": "Besitze normalen PAL Key DrÃ¼cke O+X+L2",
+      "code": "D00ACD48+0061+800B6212+0000"
+    },
+    {
+      "desc": "Durch WÃ¤nde gehen",
+      "code": "80026580+9990+80026582+0800"
+    },
+    {
+      "desc": "PAL2NTSC Disc 1 (Im Spiel)",
+      "code": "800AC5BC+0000"
+    },
+    {
+      "desc": "PAL2NTSC Disc 2 (Im Spiel)",
+      "code": "80068328+0000"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "800B7526+03E7"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "800AE1AC+03E7"
+    },
+    {
+      "desc": "SOCOM Pistol And Ammo",
+      "code": "800B7532+0019"
+    },
+    {
+      "desc": "FAMAS Rifle And Ammo",
+      "code": "800B7534+0065"
+    },
+    {
+      "desc": "Grenade",
+      "code": "800B7536+000C"
+    },
+    {
+      "desc": "Nikita And Ammo",
+      "code": "800B7538+0004"
+    },
+    {
+      "desc": "Stinger And Ammo",
+      "code": "800B753A+0004"
+    },
+    {
+      "desc": "Claymore",
+      "code": "800B753C+0006"
+    },
+    {
+      "desc": "C-4",
+      "code": "800B753E+0006"
+    },
+    {
+      "desc": "Stun Grenade",
+      "code": "800B7540+0006"
+    },
+    {
+      "desc": "Chaff Grenade",
+      "code": "800B7542+0006"
+    },
+    {
+      "desc": "PSG1 Rifle And Ammo",
+      "code": "800B7544+0006"
+    },
+    {
+      "desc": "Never Reload",
+      "code": "800AE164+000D"
+    },
+    {
+      "desc": "Scope",
+      "code": "800B755C+0001"
+    },
+    {
+      "desc": "Cigarettes",
+      "code": "800B755A+0001"
+    },
+    {
+      "desc": "Cardboard Box A",
+      "code": "800B755E+0001"
+    },
+    {
+      "desc": "Cardboard Box B",
+      "code": "800B7560+0001"
+    },
+    {
+      "desc": "Cardboard Box C",
+      "code": "800B7562+0001"
+    },
+    {
+      "desc": "Night Vision Goggles",
+      "code": "800B7564+0001"
+    },
+    {
+      "desc": "Thermal Goggles",
+      "code": "800B7566+0001"
+    },
+    {
+      "desc": "Gasmask",
+      "code": "800B7568+0001"
+    },
+    {
+      "desc": "Body Armor",
+      "code": "800B756A+0001"
+    },
+    {
+      "desc": "Camera",
+      "code": "800B7572+0001"
+    },
+    {
+      "desc": "Rations",
+      "code": "800B7574+0002"
+    },
+    {
+      "desc": "Medicine",
+      "code": "800B7576+0004"
+    },
+    {
+      "desc": "Diazepam",
+      "code": "800B7578+0004"
+    },
+    {
+      "desc": "PAL Keycard",
+      "code": "800B757A+0001"
+    },
+    {
+      "desc": "Mine Detector",
+      "code": "800B7580+0001"
+    },
+    {
+      "desc": "MO Disc",
+      "code": "800B7582+0001"
+    },
+    {
+      "desc": "Rope",
+      "code": "800B7584+0001"
+    },
+    {
+      "desc": "Hankerchief",
+      "code": "800B7586+0001"
+    },
+    {
+      "desc": "Ketchup",
+      "code": "800B756C+0001"
+    },
+    {
+      "desc": "Steath Suit",
+      "code": "800B756E+0001"
+    },
+    {
+      "desc": "Bandana",
+      "code": "800B7570+0001"
+    },
+    {
+      "desc": "Level 10 Key",
+      "code": "800B757C+000A"
+    },
+    {
+      "desc": "Never Have Time Bomb",
+      "code": "800B757E+0000"
+    },
+    {
+      "desc": "Extra Ammo SOCOM",
+      "code": "80067CD0+0001"
+    },
+    {
+      "desc": "Extra Ammo FAMAS",
+      "code": "800682EC+0001"
+    },
+    {
+      "desc": "Extra Ammo Stinger",
+      "code": "8006951C+0001"
+    },
+    {
+      "desc": "Extra Ammo Claymore",
+      "code": "800698D+00001"
+    },
+    {
+      "desc": "Extra Ammo C4",
+      "code": "80069C1C+0001"
+    },
+    {
+      "desc": "Extra Ammo PSG1",
+      "code": "8006A370+0001"
+    },
+    {
+      "desc": "Extra Ammo Nikita",
+      "code": "80068FD8+0001"
+    },
+    {
+      "desc": "Max Life",
+      "code": "800B7528+0600"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "800AE1AC+0400"
+    },
+    {
+      "desc": "Ghost Mode",
+      "code": "800AE188+0000+800AE18A+0000"
+    },
+    {
+      "desc": "Never Get A Cold",
+      "code": "800B752A+0000"
+    },
+    {
+      "desc": "Radar Not Jammed When Spotted",
+      "code": "800AE178+0000"
+    },
+    {
+      "desc": "All Modes VR Training",
+      "code": "800B672B+0020"
+    },
+    {
+      "desc": "Ocelot Has 0 Bullets",
+      "code": "80167CA8+0000"
+    },
+    {
+      "desc": "Infinite 3:00 Fight Time",
+      "code": "800E72BC+1475"
+    },
+    {
+      "desc": "Infinite Time In Jeep Chase",
+      "code": "800E1258+FFFF"
+    },
+    {
+      "desc": "Liquid: No Health In Final Fight",
+      "code": "8017997C+0000"
+    },
+    {
+      "desc": "Press R1 For An Easy Fight Against Ninja",
+      "code": "D00B2D58+0008+8015B59C+0000"
+    },
+    {
+      "desc": "Press R1 For An Easy Fight Against Mantis",
+      "code": "D00B2D58+0008+801B8CB6+0000"
+    },
+    {
+      "desc": "Press R1 For Meryl + Health S.Wolf",
+      "code": "D00B2D58+0008+80174A50+0080"
+    },
+    {
+      "desc": "Press R1 For A Quick Battle With Hind D",
+      "code": "D00B2D58+0008+80154AB4+0000"
+    },
+    {
+      "desc": "Press R1 For Quick S.Wolf Snow Fight",
+      "code": "D00B2D58+0008+8016FE78+0000"
+    },
+    {
+      "desc": "Press R1 For A Quick Metal Gear Battle",
+      "code": "D00B2D58+0008+800B8EF6+0000"
+    },
+    {
+      "desc": "Press R1 For Quick Battle With Raven",
+      "code": "D00B2D58+0008+80157408+0000"
+    },
+    {
+      "desc": "Press R1 For Normal PAL Key",
+      "code": "D00B2D58+0008+800B7592+0000"
+    },
+    {
+      "desc": "Press R2 For Hot PAL Key",
+      "code": "D00B2D58+0002+800B7592+0001"
+    },
+    {
+      "desc": "Press L1 For Cold PAL Key",
+      "code": "D00B2D58+0004+800B7592+0002"
+    },
+    {
+      "desc": "Extra Ammo Socom Pistol",
+      "code": "80067CD0+0001"
+    },
+    {
+      "desc": "Extra Ammo Claymore Mines",
+      "code": "800698D0+0001"
+    },
+    {
+      "desc": "Extra Ammo C-4",
+      "code": "80069C1C+0001"
+    },
+    {
+      "desc": "Extra Ammo PSG1 Rifle",
+      "code": "8006A370+0001"
+    },
+    {
+      "desc": "Get Big Boss Rank",
+      "code": "300B75AC+0000+300B75AE+0000+300B75BC+0000+300B75BE+0000+300B75C0+0000+300B75C6+0000+800B75C8+0000"
+    },
+    {
+      "desc": "Press L2+R2 For First Person Mode",
+      "code": "D00AE0C8+0013+300AE1C8+0000"
+    },
+    {
+      "desc": "Have Suppressor Active",
+      "code": "800B7588+0001"
+    },
+    {
+      "desc": "Radar Access In Hard/Extreme Mode",
+      "code": "300B7515+0000"
+    },
+    {
+      "desc": "Invulnerability",
+      "code": "800AE1CA+0080"
+    },
+    {
+      "desc": "Snap Necks Instantly",
+      "code": "D00AE0C8+00C0+800AE1B8+0027"
+    },
+    {
+      "desc": "Always Instantly Snap Necks",
+      "code": "D00AE1B8+0007+800AE1B8+0027"
+    },
+    {
+      "desc": "BGM / BackGround Music Off",
+      "code": "800C18B8+0000"
+    },
+    {
+      "desc": "Crawl, Foot & Snow Steps Are Silent",
+      "code": "800AE14C+0001"
+    },
+    {
+      "desc": "Vibration Test (Analog Must Be On!)",
+      "code": "D00B2D58+0200+800AE1B4+0001+D00B2D58+0400+800AE1CC+00FF+D00B2D58+0600+800AE1B4+0001+D00B2D58+0600+800AE1CC+00FF"
+    },
+    {
+      "desc": "Credits & LetterBoxes Off",
+      "code": "800AF47C+0000+800AF47E+0000"
+    },
+    {
+      "desc": "Fire Multiple Nikita Missiles",
+      "code": "D00A1BB4+0001+800A1BB4+0000+D00A1BB8+0001+800A1BB8+0000"
+    },
+    {
+      "desc": "Clear Stealth",
+      "code": "8016CA90+20CA+8016CAB0+20CA"
+    },
+    {
+      "desc": "Switchable Walk Through Walls (Press R2+Up To Turn On, R2+DownTo Turn Off)",
+      "code": "D00B2D58+4008+80027250+002F+D00B2D58+4008+80027252+1A40+D00B2D58+1008+80027250+9CC4+D00B2D58+1008+80027252+0800"
+    },
+    {
+      "desc": "Elevator Comes Down Immediately At Dock",
+      "code": "D00ADB34+3073+D00ADB36+6130+801622AC+0000"
+    },
+    {
+      "desc": "Barrier Unprotect (Before Comm. Tower)",
+      "code": "D017375C+55F0+8017375C+8000+D017375C+55F0+8017375E+FFFF"
+    },
+    {
+      "desc": "Barrier Unprotect (Snowfield)",
+      "code": "D0170148+4268+80170148+0000+D0170148+4268+8017014A+FFFF"
+    },
+    {
+      "desc": "RAZIONI infinite",
+      "code": "800B5EBC+0063"
+    },
+    {
+      "desc": "SOCOM con munizioni infinite",
+      "code": "800B5E7A+03E7"
+    },
+    {
+      "desc": "FAMAS con munizioni infinite",
+      "code": "800B5E7C+03E7"
+    },
+    {
+      "desc": "GRANATE infinite",
+      "code": "800B5E7E+03E7"
+    },
+    {
+      "desc": "GRANATE STUN infinite",
+      "code": "800B5E88+03E7"
+    },
+    {
+      "desc": "GRANATE CHAFF infinite",
+      "code": "800B5E8A+03E7"
+    },
+    {
+      "desc": "C4 infinito",
+      "code": "800B5E86+03E7"
+    },
+    {
+      "desc": "NIKITA con munizioni infinite",
+      "code": "800B5E80+03E7"
+    },
+    {
+      "desc": "PSG 1 con munizioni infinite",
+      "code": "800B5E8C+03E7"
+    },
+    {
+      "desc": "STINGER con munizioni infinite",
+      "code": "800B5E82+0063"
+    },
+    {
+      "desc": "DIAZEPAM infiniti",
+      "code": "800B5EC0+0063"
+    },
+    {
+      "desc": "Infinite HP",
+      "code": "800BDEBE+0100"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "800B325C+0400"
+    }
+  ],
+  "Metal Slug X (USA)": [
+    {
+      "desc": "Beginne mit letzter Mission",
+      "code": "$776B206A3535+$87661B6F343A"
+    },
+    {
+      "desc": "UE Zeit",
+      "code": "$87AE853A3134"
+    }
+  ],
+  "Resident Evil 3 - Nemesis (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "800CCC90 00C8"
+    },
+    {
+      "desc": "Secret Mode",
+      "code": "800D1F32 FFE0"
+    },
+    {
+      "desc": "Access Item Box Anytime (Press L1+Square)",
+      "code": "D00CC830 0084+800D1F2C 0200+D00CC830 0084+800E01C4 0002"
+    },
+    {
+      "desc": "Quick Ending (Press L1+L2+R1+R2)",
+      "code": "D00CC830 000F+800CC858 C000+D00CC830 000F+800CC85A 0001"
+    },
+    {
+      "desc": "Save Anywhere (Press L1+Triangle)",
+      "code": "D00CC830 0014+800D1D18 13CC+D00CC830 0014+800D1D1A 8005"
+    },
+    {
+      "desc": "Infinite Item Usage (All Slots)",
+      "code": "8006D0CA 2400"
+    },
+    {
+      "desc": "Makes Game Think You Never Saved",
+      "code": "800D1F40 0000"
+    },
+    {
+      "desc": "One-Hit Death",
+      "code": "D0044E18 0006+80044E18 0001"
+    },
+    {
+      "desc": "Unlimited Time",
+      "code": "800C79BA 0000"
+    },
+    {
+      "desc": "Max Reward Total",
+      "code": "800D25EC 967F+800D25EE 0098"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "800D1F98 0078"
+    },
+    {
+      "desc": "Enable Code (Must Be On)",
+      "code": "D0185200+FFFD+80185202+2400"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "800CEA50+00C8"
+    },
+    {
+      "desc": "All Maps",
+      "code": "300D3EE7+00FE+300D3EEB+00FE"
+    },
+    {
+      "desc": "Machine Gun 100%",
+      "code": "800D3EF4+640F"
+    },
+    {
+      "desc": "Have 10 Slots in Hard Mode",
+      "code": "800D4016+000A"
+    },
+    {
+      "desc": "Rapid Fire, R1+R2+X",
+      "code": "D00CE5E8+004A+800CEA44+1E02"
+    },
+    {
+      "desc": "HYPER mode",
+      "code": "800D6304+0002"
+    },
+    {
+      "desc": "The REAL have all files",
+      "code": "800D3EE4+FFFF+800D3EE6+FFFF"
+    },
+    {
+      "desc": "Start with ALL secrets",
+      "code": "800D3CEA+FFE0"
+    }
+  ],
+  "Tekken (USA)": [
+    {
+      "desc": "P1 Infinite Health",
+      "code": "801232DE+0080"
+    },
+    {
+      "desc": "P1 No Health",
+      "code": "801232DE+0000"
+    },
+    {
+      "desc": "P1 One Hit Death",
+      "code": "D01232DE+0080+801232DE+0001"
+    },
+    {
+      "desc": "P2 Infinite Health",
+      "code": "80124312+0080"
+    },
+    {
+      "desc": "P2 No Health",
+      "code": "80124312+0080"
+    },
+    {
+      "desc": "P2 One Hit Death",
+      "code": "D0124312+0080+80124312+0001"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "80125180+090E"
+    },
+    {
+      "desc": "Select All Extra Players",
+      "code": "801273D0+FFFF"
+    },
+    {
+      "desc": "Play As Devil Kazuya",
+      "code": "801C0924+0028"
+    },
+    {
+      "desc": "Replace Yoshimitsu With Ganryu (On Character Select Screen)",
+      "code": "800E5A48+0110"
+    },
+    {
+      "desc": "P2 Always Has 2nd Costume",
+      "code": "80124162+0001"
+    },
+    {
+      "desc": "Infinite Time To Choose Character",
+      "code": "800B7E14+FFFF"
+    }
+  ],
+  "Tekken 3 (USA)": [
+    {
+      "desc": "P1 Massive Damage",
+      "code": "800B8B94+FFFF"
+    },
+    {
+      "desc": "P2 Massive Damage",
+      "code": "800B8B74+FFFF"
+    },
+    {
+      "desc": "Infinite Force Mode Time",
+      "code": "800ADBCC+FFFF"
+    },
+    {
+      "desc": "Press Select To Refill Life P1",
+      "code": "D00A8C48+0100+800A961E+008C"
+    },
+    {
+      "desc": "Press Select To Refill Life P2",
+      "code": "D00A8C4A+0100+800AAEAA+008C"
+    },
+    {
+      "desc": "Tekken Force Stage Skip",
+      "code": "D00A8C48+4100+800B6C04+0001"
+    },
+    {
+      "desc": "Infinite Health P1",
+      "code": "300A961E+008C"
+    },
+    {
+      "desc": "Infinite Health P2",
+      "code": "300AAEAA+008C"
+    },
+    {
+      "desc": "Absolutely Everything Unlocked",
+      "code": "80097EF0+FFFF+30097EF2+001F+80097EF4+0382+30097EF6+0005+80097EF8+FFFF+30097EFA+001F+30097EFD+0009+30097EFE+0001+80097F26+0101"
+    },
+    {
+      "desc": "No Music",
+      "code": "8006B052+0303"
+    },
+    {
+      "desc": "Recorder Enabled",
+      "code": "800B8BE6+0100"
+    }
+  ],
+  "Tony Hawk's Pro Skater 2 (USA)": [
+    {
+      "desc": "Perfect Balance",
+      "code": "800BBD44+0001+800BBD46+0001"
+    },
+    {
+      "desc": "Moon Physics",
+      "code": "800BBD68+0001+800BBD6A+0001"
+    }
+  ]
+}

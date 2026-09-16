@@ -1,0 +1,312 @@
+{
+  "Carros Disney": [
+    {
+      "desc": "Master Code",
+      "code": "00003279+000A+1000F784+0007"
+    },
+    {
+      "desc": "Max Boltz",
+      "code": "32015BF8+00FF"
+    }
+  ],
+  "Castlevania - Aria of Sorrow (USA)": [
+    {
+      "desc": "Max Experience",
+      "code": "8201328C+E0FF+8201328E+05F5"
+    },
+    {
+      "desc": "Max Gold",
+      "code": "82013290+423F+82013292+000F"
+    },
+    {
+      "desc": "Infinite HP",
+      "code": "8201327A+270F"
+    },
+    {
+      "desc": "Infinite MP",
+      "code": "8201327C+270F"
+    },
+    {
+      "desc": "Infinite Double Jumps",
+      "code": "720004F4+1006+320004F4+0002"
+    },
+    {
+      "desc": "Have All Items",
+      "code": "42013294+0101+00000010+0002"
+    },
+    {
+      "desc": "Have All Equipment",
+      "code": "420132B4+0101+00000034+0002"
+    },
+    {
+      "desc": "All Abilities",
+      "code": "82013392+FFFF+32013394+00FF"
+    },
+    {
+      "desc": "All Enemy Data",
+      "code": "420133A0+FFFF+00000017+0002"
+    },
+    {
+      "desc": "Unlock Special",
+      "code": "32000060+000F+320000A1+0001"
+    },
+    {
+      "desc": "Maximum HP",
+      "code": "8201327E+270F"
+    },
+    {
+      "desc": "Maximum MP",
+      "code": "82013280+270F"
+    }
+  ],
+  "Legend of Zelda, The - The Minish Cap (USA)": [
+    {
+      "desc": "Infinite HP",
+      "code": "32002AEA+00A0"
+    },
+    {
+      "desc": "Infinite Rupees",
+      "code": "82002B00+03E7"
+    },
+    {
+      "desc": "Invincible",
+      "code": "3300119D+0003"
+    },
+    {
+      "desc": "Infinite 9 Dungeon 1 Keys",
+      "code": "32002E9D+0009"
+    },
+    {
+      "desc": "Infinite Bombs",
+      "code": "82002AEC+000A+8200AF14+000A"
+    },
+    {
+      "desc": "Infinite Rupees",
+      "code": "82002B00+03E7+8200AF0E+03E7"
+    },
+    {
+      "desc": "Actor Group For The WindMan (In The House In Town Before Fifth Level)",
+      "code": "33001850+00XX"
+    },
+    {
+      "desc": "Actor Value For The WindMan (In The House In Town Before Fifth Level)",
+      "code": "33001851+00YY"
+    },
+    {
+      "desc": "Actor Variable For The WindMan (In The House In Town Before Fifth Level)",
+      "code": "33001852+00ZZ"
+    },
+    {
+      "desc": "Have All Scrolls",
+      "code": "82002B44+5555"
+    },
+    {
+      "desc": "Have All Equipment (MUST Have Minish Cap)",
+      "code": "82002B32+5555+82002B34+5555+82002B36+5554"
+    },
+    {
+      "desc": "Have All Dungeon 1 Equipment",
+      "code": "32002EAD+00FF"
+    }
+  ],
+  "Mario Kart - Super Circuit (USA)": [
+    {
+      "desc": "Infinite Retries",
+      "code": "3300000C+0003"
+    },
+    {
+      "desc": "Always Low Time",
+      "code": "83005C80+0000"
+    },
+    {
+      "desc": "Max Coins",
+      "code": "33003D10+0063"
+    },
+    {
+      "desc": "Enable Code (Must Be On)",
+      "code": "0000D02A+000A+1002D80A+0007"
+    },
+    {
+      "desc": "Always Have Single Green Shell",
+      "code": "83003D12+1000"
+    },
+    {
+      "desc": "Always Have Triple Green Shell",
+      "code": "83003D12+1001"
+    },
+    {
+      "desc": "Always Have Single Red Shell",
+      "code": "83003D12+1002"
+    },
+    {
+      "desc": "Always Have Triple Red Shell",
+      "code": "83003D12+1003"
+    },
+    {
+      "desc": "Always Have Blue Shell",
+      "code": "83003D12+1004"
+    },
+    {
+      "desc": "Always Have Single Banana",
+      "code": "83003D12+1005"
+    },
+    {
+      "desc": "Always Have Triple Banana",
+      "code": "83003D12+1006"
+    },
+    {
+      "desc": "Always Have Single Mushroom",
+      "code": "83003D12+1007"
+    }
+  ],
+  "Metroid Fusion (USA)": [
+    {
+      "desc": "Max Health",
+      "code": "83001312+0833"
+    },
+    {
+      "desc": "Have All Weapons/Suits/Abilities",
+      "code": "4300131A+FFFF+00000003+0002"
+    },
+    {
+      "desc": "Invincible",
+      "code": "33001249+0001"
+    },
+    {
+      "desc": "Infinite Missiles",
+      "code": "83001314+03E7"
+    },
+    {
+      "desc": "Infinite Super Bombs",
+      "code": "33001318+0063"
+    },
+    {
+      "desc": "Ininite Health",
+      "code": "83001310+0833"
+    },
+    {
+      "desc": "Turn Off All Missiles/Bombs",
+      "code": "3300131B+0000"
+    },
+    {
+      "desc": "Low Completion Time",
+      "code": "83000138+0100"
+    },
+    {
+      "desc": "Stop Event Timer",
+      "code": "830008D8+00DA"
+    },
+    {
+      "desc": "Max Missiles",
+      "code": "83001316+03E7"
+    },
+    {
+      "desc": "Max Super Bombs",
+      "code": "33001319+0063"
+    },
+    {
+      "desc": "Time Always 00:00",
+      "code": "820382E4+0000"
+    }
+  ],
+  "Pokemon - Emerald Version (USA, Europe)": [
+    {
+      "desc": "Infinite Safari Time",
+      "code": "8203A04E+0258"
+    },
+    {
+      "desc": "Max Money",
+      "code": "82000568+423F+8200056A+000F"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Beauty)",
+      "code": "72002EFA+0100+32002F52+00FF"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Cool)",
+      "code": "72002EFA+0100+32002F51+00FF"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Cute)",
+      "code": "72002EFA+0100+32002F53+00FF"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Smart)",
+      "code": "72002EFA+0100+32002F54+00FF"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Tough)",
+      "code": "72002EFA+0100+32002F55+00FF"
+    },
+    {
+      "desc": "Max EXP Gain After Battle",
+      "code": "8202309C+03E7+820241F0+03E7"
+    },
+    {
+      "desc": "Infinite PP",
+      "code": "42023070+6363+00000002+0002"
+    },
+    {
+      "desc": "Infinite Wynaut Eggs",
+      "code": "83000E4C+A74F+83000E4E+081EF"
+    },
+    {
+      "desc": "Install Match Call [Press Select+R+Up]",
+      "code": "74000130+02BB+83000E48+0779+74000130+02BB+83000E4A+081E"
+    },
+    {
+      "desc": "Install PokeNAV [Press Select+R+Down]",
+      "code": "74000130+027B+83000E4C+24ED+74000130+027B+83000E4E+0821"
+    }
+  ],
+  "Pokemon - FireRed Version (USA, Europe) (Rev 1)": [
+    {
+      "desc": "Infinite Money",
+      "code": "042257BC+000F423F"
+    },
+    {
+      "desc": "Infinite Safari Time",
+      "code": "82039996+0258"
+    },
+    {
+      "desc": "Master (Must Be On For Money Cheat)",
+      "code": "C4000604+00008401+45525042+001DC0DE+00000000+1802603C+00002100+00000000+4230500C+07900000+4230500C+07910000"
+    },
+    {
+      "desc": "Infinite PP",
+      "code": "42023C08+6363+00000002+0002"
+    },
+    {
+      "desc": "No Random Battle",
+      "code": "00000000+1C0419E6+00002000+00000000"
+    },
+    {
+      "desc": "Quick Level Gain",
+      "code": "820285B0+FFFF+8202863C+FFFF"
+    },
+    {
+      "desc": "Anti DMA",
+      "code": "24C35E88+037C3033+78DA95DF+44018CB4"
+    },
+    {
+      "desc": "Have All Badges",
+      "code": "00226510+000000FF"
+    },
+    {
+      "desc": "Have All Pokeballs",
+      "code": "00000000+8422595C+00630001+010C0001+80000000+00000000"
+    },
+    {
+      "desc": "Have All TMs/HMs",
+      "code": "92225990 00000000+00000000+84225990+00010153+01080001+80000000+00000000+00000000+842259B0+00630121+01320001+80000000+00000000+00000000+40000000"
+    },
+    {
+      "desc": "1st Pokemon Max Stats",
+      "code": "420242DA+03E7+00000007+0002"
+    },
+    {
+      "desc": "2nd Pokemon Max Stats",
+      "code": "4202433E+03E7+00000007+0002"
+    }
+  ]
+}

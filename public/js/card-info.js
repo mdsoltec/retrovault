@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVERSO — FICHA NA CAPA DO CARD
+   RETROVAULT OS — FICHA NA CAPA DO CARD
    Mostra as informações do jogo DIRETO no card (sem modal):
      • linha de metadados: ANO · GÊNERO · JOGADORES
      • descrição curta (2 linhas, com reticências)
@@ -15,7 +15,7 @@
   'use strict';
 
   if (typeof window.RV_FICHAS === 'undefined') {
-    console.warn('[RetroVerso] js/fichas.js não carregado antes de card-info.js');
+    console.warn('[RetroVault OS] js/fichas.js não carregado antes de card-info.js');
     return;
   }
   var F = window.RV_FICHAS;
@@ -95,5 +95,5 @@
   /* exposto para testes e uso externo (não interfere no funcionamento) */
   window.RV_CARDINFO = { montarInfo: montarInfo, extrairArquivo: extrairArquivo };
 
-  console.log('[RetroVerso] Fichas na capa prontas: ' + Object.keys(F).length + ' jogos.');
+  console.log('[RetroVault OS] Fichas na capa prontas: ' + Object.keys(F).length + ' jogos.');
 })();

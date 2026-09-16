@@ -1,0 +1,564 @@
+{
+  "Sonic the Hedgehog (World)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "00D2-4609"
+    },
+    {
+      "desc": "Infinite Rings",
+      "code": "00D2-AA99"
+    },
+    {
+      "desc": "Low Timer",
+      "code": "00D2-CF00"
+    }
+  ],
+  "Sonic the Hedgehog 2 (World)": [
+    {
+      "desc": "Enable Stage Select",
+      "code": "005-43D-A2A"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "009-04F-3BE"
+    },
+    {
+      "desc": "Invincible after 1 ring",
+      "code": "A78-92C-19E"
+    },
+    {
+      "desc": "Each Ring Worth ?? Points",
+      "code": "016-5ED-E6E"
+    },
+    {
+      "desc": "Don't lose rings when hit",
+      "code": "3A7-E4C-2A2"
+    },
+    {
+      "desc": "Start With ?? Lives",
+      "code": "012-B8D-E66"
+    },
+    {
+      "desc": "Stop timer",
+      "code": "001-12D-3B7"
+    },
+    {
+      "desc": "Start on Act 2",
+      "code": "3E2-E4D-3B4+012-E5D-E69"
+    },
+    {
+      "desc": "Start on Act 3",
+      "code": "3E2-E4D-3B4+022-E5D-E69"
+    },
+    {
+      "desc": "Jump In Midair",
+      "code": "00A-A7C-E69"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "C37-77C-E61+C37-B9C-C41+277-BAC-4CA"
+    },
+    {
+      "desc": "Infinite Rings",
+      "code": "00D2-9963"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00D2-9809"
+    },
+    {
+      "desc": "Better Invincibility",
+      "code": "00D3-A915"
+    },
+    {
+      "desc": "Level Select - Zone",
+      "code": "00D2-9500"
+    },
+    {
+      "desc": "Keeps Time At Zero (Seconds)",
+      "code": "00D2-B900"
+    },
+    {
+      "desc": "Keeps Time At Zero (Minutes)",
+      "code": "00D2-BA00"
+    },
+    {
+      "desc": "High Gravity",
+      "code": "00D5-18FF"
+    },
+    {
+      "desc": "Glider From Start",
+      "code": "00D5-0213"
+    },
+    {
+      "desc": "Invisible Sonic",
+      "code": "00D5-2876"
+    },
+    {
+      "desc": "Don't Die When Hit With No Rings",
+      "code": "BC7-BAC-4CA+377-BBC-08A"
+    },
+    {
+      "desc": "Zone Select after Title Screen",
+      "code": "00D1-2CB6"
+    },
+    {
+      "desc": "Hold A or B to Moonjump (period of time)",
+      "code": "DEC-10A"
+    },
+    {
+      "desc": "Hold A or B to Moonjump (let go to land)",
+      "code": "643-DFC-19A"
+    },
+    {
+      "desc": "Invincible After 1 Ring (Except On Act 3)",
+      "code": "A78-92C-19E"
+    },
+    {
+      "desc": "Each Ring Worth 2 Points",
+      "code": "026-5ED-E6E"
+    },
+    {
+      "desc": "Each Ring Worth 3 Points",
+      "code": "036-5ED-E6E"
+    },
+    {
+      "desc": "Each Ring Worth 4 Points",
+      "code": "046-5ED-E6E"
+    },
+    {
+      "desc": "Each Ring Worth 5 Points",
+      "code": "056-5ED-E6E"
+    },
+    {
+      "desc": "Each Ring Worth 6 Points",
+      "code": "066-5ED-E6E"
+    },
+    {
+      "desc": "Each Ring Worth 7 Points",
+      "code": "076-5ED-E6E"
+    },
+    {
+      "desc": "Each Ring Worth 8 Points",
+      "code": "086-5ED-E6E"
+    },
+    {
+      "desc": "Start With 1 Life",
+      "code": "012-B8D-E66"
+    },
+    {
+      "desc": "Start With 5 Lives",
+      "code": "052-B8D-E66"
+    },
+    {
+      "desc": "Start With 9 Lives",
+      "code": "092-B8D-E66"
+    },
+    {
+      "desc": "Level Select - Zone",
+      "code": "00D2-950X"
+    },
+    {
+      "desc": "Level Select - Act",
+      "code": "00D2-960Y"
+    }
+  ],
+  "Shinobi (World)": [
+    {
+      "desc": "Infinite Energy",
+      "code": "21F+055+2A2"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "006+06D+3BE"
+    },
+    {
+      "desc": "Start With 6 Lives",
+      "code": "06B+75C+F72"
+    },
+    {
+      "desc": "Start With 8 Lives",
+      "code": "08B+75C+F72"
+    },
+    {
+      "desc": "Start With 9 Lives",
+      "code": "09B+75C+F72"
+    },
+    {
+      "desc": "On Highway Stage, Jump Onto Road And Stop Traffic",
+      "code": "21E+BA5+2A2"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "00D2-0B04"
+    },
+    {
+      "desc": "Infinite Special Weapons",
+      "code": "00D2-1E01"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00D2-1D09"
+    },
+    {
+      "desc": "Invincible",
+      "code": "00D2-7B86"
+    }
+  ],
+  "Shinobi II - The Silent Fury (World)": [
+    {
+      "desc": "Infinite Ninjitsu Magic",
+      "code": "00C0-4109"
+    },
+    {
+      "desc": "Have all Ninjas",
+      "code": "00C0-28FF"
+    },
+    {
+      "desc": "Have all Crystals Collected",
+      "code": "00C0-27FF"
+    },
+    {
+      "desc": "Go Straight To Round 5 [Enemy Base]",
+      "code": "00C0-2005"
+    },
+    {
+      "desc": "Ultimate Jump",
+      "code": "00CF-1504"
+    },
+    {
+      "desc": "Invincible",
+      "code": "00C0-F20D"
+    },
+    {
+      "desc": "Transparent Ninja",
+      "code": "00CF-01FF"
+    },
+    {
+      "desc": "Invincible With Moon Jump",
+      "code": "00C0-F20D+00CF-210A"
+    },
+    {
+      "desc": "Start with 4 energy bars",
+      "code": "052-50F-F7A"
+    },
+    {
+      "desc": "Start with 6 energy bars",
+      "code": "072-50F-F7A"
+    },
+    {
+      "desc": "Start with 9 energy bars",
+      "code": "0A2-50F-F7A"
+    },
+    {
+      "desc": "Infinite energy",
+      "code": "21A-41C-2A2"
+    },
+    {
+      "desc": "Infinite ninjitsu magic",
+      "code": "008-30D-3BE"
+    },
+    {
+      "desc": "Start with 7 lives",
+      "code": "062-58F-F7A"
+    },
+    {
+      "desc": "Start with 10 lives",
+      "code": "092-58F-F7A"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "00B-A0C-3BE"
+    },
+    {
+      "desc": "Start With 4 Lives",
+      "code": "032-58F-F7A"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00C0-4009"
+    },
+    {
+      "desc": "Mega Jump",
+      "code": "00CF-1514"
+    },
+    {
+      "desc": "Super Jump",
+      "code": "00CF-1524"
+    },
+    {
+      "desc": "Shinobi X-Axis Modifier",
+      "code": "00CF-1100"
+    },
+    {
+      "desc": "Invulnerability",
+      "code": "C9D-D5A-E69"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "C9A-EAB-A28+C9A-F7B-A28"
+    },
+    {
+      "desc": "Blink ?? longer after being hit",
+      "code": "1EB-24C-B3A"
+    },
+    {
+      "desc": "Jump Higher",
+      "code": "F06-85C-081"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "3AA-41C-2A2"
+    },
+    {
+      "desc": "Have all Ninjas",
+      "code": "003-48D-3B6"
+    },
+    {
+      "desc": "Jump to any Height (Hold Jump to go higher, release to descend)",
+      "code": "BD6-BBC-B31"
+    },
+    {
+      "desc": "Start every Life with ?? Health Bars",
+      "code": "062-50F-F7A+06F-28D-6EA+3EF-27D-3B4+00F-29D-2AA+77F-2DD-193"
+    },
+    {
+      "desc": "Infinite/Max Health",
+      "code": "00C0-240C+00C0-250C"
+    }
+  ],
+  "Columns (World)": [
+    {
+      "desc": "Level Modifier",
+      "code": "00C6-990X"
+    }
+  ],
+  "Wonder Boy - The Dragon's Trap (USA, Europe)": [
+    {
+      "desc": "Infinite Health",
+      "code": "00CF-5280"
+    },
+    {
+      "desc": "Infinite Potion",
+      "code": "00CF-4A09"
+    },
+    {
+      "desc": "Max Money",
+      "code": "00CF-5509+00CF-5609+00CF-5709+00CF-5809+00CF-5909+00CF-5A09"
+    },
+    {
+      "desc": "Invulnerability",
+      "code": "00C2-6A26"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "00CF-52FF"
+    },
+    {
+      "desc": "Silent Fireballs",
+      "code": "00C1-1799"
+    },
+    {
+      "desc": "Missing SFX",
+      "code": "00C1-5799"
+    },
+    {
+      "desc": "BGM Remix",
+      "code": "00C1-7FFF"
+    },
+    {
+      "desc": "Infinite Block Item",
+      "code": "00CF-27FF"
+    },
+    {
+      "desc": "Don't Blink When Damaged",
+      "code": "C95-95E-C49"
+    },
+    {
+      "desc": "Invulnerability",
+      "code": "007-E3B-F7E"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "2A6-CAD-6E2"
+    },
+    {
+      "desc": "Start A New Game With 999,999 Gold",
+      "code": "095-DEF-E6A"
+    },
+    {
+      "desc": "Start A New Game With 99 Of Each Item",
+      "code": "635-E8F-E6A"
+    },
+    {
+      "desc": "Character Modifier",
+      "code": "00C2-4F01"
+    },
+    {
+      "desc": "Infinite Magic Weapons",
+      "code": "7E6-72A-3B7"
+    },
+    {
+      "desc": "Infinite Revival (Blue) Potions",
+      "code": "3AA-00B-2A2"
+    },
+    {
+      "desc": "Infinite Gold",
+      "code": "1AD-53F-A22"
+    },
+    {
+      "desc": "Infinite Keys",
+      "code": "3AA-D0B-2A2"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "00C2-4080"
+    },
+    {
+      "desc": "Hit Anywhere - Dragon mode",
+      "code": "00F-D4E-A29"
+    },
+    {
+      "desc": "Hit Anywhere - Other Modes",
+      "code": "00F-23E-C49+00E-9CE-2A2+37E-CEE-196"
+    },
+    {
+      "desc": "Jump Height Modifier",
+      "code": "F50-91A-089"
+    },
+    {
+      "desc": "Infinite Blue Potions",
+      "code": "00CF-4A09"
+    },
+    {
+      "desc": "Infinite\" Block Item",
+      "code": "00CF-XXFF"
+    }
+  ],
+  "Land of Illusion Starring Mickey Mouse (World)": [
+    {
+      "desc": "Invulnerability",
+      "code": "00CB-2D02"
+    },
+    {
+      "desc": "Start with 3 lives",
+      "code": "02F-31D-E66"
+    },
+    {
+      "desc": "Start with 5 lives",
+      "code": "04F-31D-E66"
+    },
+    {
+      "desc": "Start with 7 lives",
+      "code": "06F-31D-E66"
+    },
+    {
+      "desc": "Start with 9 lives",
+      "code": "08F-31D-E66"
+    },
+    {
+      "desc": "Start with 11 lives",
+      "code": "0AF-31D-E66"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "009-FAD-E6E"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "002-4CE-E6E"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "00C-337-E69"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00C0-9F09"
+    },
+    {
+      "desc": "Infinite Circles (Hits)",
+      "code": "00C0-9902"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "00C0-A299"
+    },
+    {
+      "desc": "Invulnerability After Taking Damage (Blinking)",
+      "code": "00C2-2726"
+    },
+    {
+      "desc": "Invulnerability",
+      "code": "18D-027-6EA"
+    },
+    {
+      "desc": "Level Select",
+      "code": "00C0-B000"
+    },
+    {
+      "desc": "Start On Level 2",
+      "code": "707-1AA-3B7"
+    },
+    {
+      "desc": "Freeze Timer",
+      "code": "00C0-A119"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "001-33E-3BE"
+    },
+    {
+      "desc": "Start a new game with ?? health units",
+      "code": "03F-22D-E62"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "00C0-AD06"
+    },
+    {
+      "desc": "Jump Height Modifier",
+      "code": "FBA-CE6-199"
+    },
+    {
+      "desc": "High Jump",
+      "code": "00C2-2AFF"
+    },
+    {
+      "desc": "Invincibility (blinking)",
+      "code": "00C2-2601"
+    },
+    {
+      "desc": "Start With 3 Lives",
+      "code": "02F+31D+E66"
+    },
+    {
+      "desc": "Start With 5 Lives",
+      "code": "04F+31D+E66"
+    },
+    {
+      "desc": "Start With 7 Lives",
+      "code": "06F+31D+E66"
+    },
+    {
+      "desc": "Start With 9 Lives",
+      "code": "08F+31D+E66"
+    },
+    {
+      "desc": "Start With 11 Lives",
+      "code": "0AF+31D+E66"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "009+FAD+E6E"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "002+4CE+E6E"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "00C+337+E69"
+    }
+  ]
+}

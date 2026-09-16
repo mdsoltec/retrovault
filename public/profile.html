@@ -6,37 +6,86 @@
   <link rel="icon" type="image/png" href="assets/rv-icon.png">
   <link rel="apple-touch-icon" href="assets/rv-icon.png">
   <link rel="manifest" href="manifest.json">
-  <title>RetroVerso - Perfil</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/audio.js"></script>
+  <title>RetroVault OS - Perfil</title>
+  <link rel="stylesheet" href="css/style.css?v=20260916">
+  <script src="js/audio.js?v=20260916"></script>
   <style>
+    /* ═══════════════════════════════════════════════════════════
+       RETROVAULT OS 2.0 — PERFIL
+       Mesmos ganchos de comportamento da v1 (nenhum <script> mudou).
+       ═══════════════════════════════════════════════════════════ */
     .profile-wrap {
-      max-width: 900px;
-      margin: 100px auto 60px;
+      max-width: 920px;
+      margin: 0 auto 60px;
       padding: 0 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Capa com gradiente + grade */
+    .profile-cover {
+      height: 210px;
+      max-width: 920px;
+      margin: 26px auto 0;
+      border-radius: 22px;
+      border: 1px solid rgba(0, 255, 65, 0.2);
+      background:
+        radial-gradient(420px 200px at 20% 120%, rgba(0, 255, 65, 0.22), transparent 65%),
+        radial-gradient(420px 200px at 82% -20%, rgba(155, 92, 240, 0.22), transparent 65%),
+        linear-gradient(120deg, #06110a, #040a12 60%, #0a0612);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.6);
+    }
+    .profile-cover::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(0, 255, 65, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 65, 0.07) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: radial-gradient(ellipse at 50% 100%, black 20%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 100%, black 20%, transparent 75%);
+    }
+    .profile-cover::after {
+      content: 'ENTER THE CLASSICS';
+      position: absolute; left: 26px; bottom: 18px;
+      font-family: var(--font-display);
+      font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 5px;
+      color: rgba(0, 255, 65, 0.5);
     }
 
     .profile-header {
       text-align: center;
-      margin-bottom: 40px;
+      margin: -64px auto 30px;
+      position: relative;
     }
 
     .profile-avatar {
-      width: 80px; height: 80px;
-      border: 2.5px solid var(--green-neon);
-      border-radius: 16px;
+      width: 104px; height: 104px;
+      border: 3px solid var(--green-neon);
+      border-radius: 26px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       font-family: var(--font-display);
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 900;
       color: var(--green-neon);
       letter-spacing: 2px;
-      text-shadow: 0 0 8px var(--green-neon);
-      background: rgba(10,22,14,.85);
-      box-shadow: 0 0 14px var(--green-glow), inset 0 0 10px rgba(0,255,65,.06);
+      text-shadow: 0 0 10px var(--green-neon);
+      background: linear-gradient(160deg, #0a1a10, #050c07);
+      box-shadow: 0 0 26px var(--green-glow), 0 14px 34px rgba(0, 0, 0, 0.6), inset 0 0 14px rgba(0,255,65,.08);
       margin-bottom: 16px;
+      position: relative;
+    }
+    .profile-avatar::after {
+      content: '';
+      position: absolute; inset: 0;
+      border-radius: 23px;
+      background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,.14) 3px, rgba(0,0,0,.14) 6px);
+      pointer-events: none;
     }
 
     .profile-avatar.has-image {
@@ -46,19 +95,19 @@
       background-color: #090e0b;
       color: transparent;
       text-shadow: none;
-      box-shadow: 0 0 20px var(--green-glow), inset 0 0 0 1px rgba(0,255,65,.45);
     }
     .avatar-picker {
       position: relative;
       z-index: 40;
-      max-width: 440px;
-      margin: -20px auto 36px;
-      padding: 17px 18px 16px;
-      background: rgba(8,14,10,.6);
-      border: 1px solid rgba(255,255,255,.06);
-      border-radius: 12px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      max-width: 460px;
+      margin: 0 auto 22px;
+      padding: 18px 18px 17px;
+      background: rgba(8,14,10,.62);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 16px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.45);
     }
     .avatar-picker-title {
       margin-bottom: 12px;
@@ -70,15 +119,15 @@
     }
     .avatar-select { position: relative; }
     .avatar-select-trigger {
-      width: 100%; height: 48px; display: flex; align-items: center; gap: 10px;
-      padding: 6px 12px; border: 1px solid rgba(0,255,65,.26); border-radius: 10px;
+      width: 100%; height: 50px; display: flex; align-items: center; gap: 12px;
+      padding: 6px 14px; border: 1px solid rgba(0,255,65,.26); border-radius: 12px;
       background: rgba(3,8,5,.82); color: var(--text); cursor: pointer; text-align: left;
-      font: 600 .82rem var(--font-body); transition: border-color .2s, box-shadow .2s;
+      font: 600 .85rem var(--font-body); transition: border-color .2s, box-shadow .2s;
     }
     .avatar-select-trigger:hover, .avatar-select.open .avatar-select-trigger { border-color: var(--green-neon); box-shadow: 0 0 14px var(--green-glow); }
     .avatar-select-preview {
       width: 34px; height: 34px; flex: 0 0 34px; display: grid; place-items: center;
-      overflow: hidden; border: 1px solid var(--green-neon); border-radius: 8px;
+      overflow: hidden; border: 1px solid var(--green-neon); border-radius: 9px;
       color: var(--green-neon); text-shadow: 0 0 7px var(--green-neon);
       background: rgba(10,22,14,.85); font: 900 .58rem var(--font-display);
       background-size: contain; background-position: center; background-repeat: no-repeat;
@@ -87,9 +136,9 @@
     .avatar-select-name { flex: 1; letter-spacing: .04em; }
     .avatar-select-arrow { color: var(--green-neon); font-size: 1.15rem; line-height: 1; transform: translateY(-2px); }
     .avatar-options {
-      display: none; position: absolute; z-index: 20; left: 0; right: 0; top: 54px;
-      grid-template-columns: repeat(5, 1fr); gap: 7px; padding: 10px;
-      border: 1px solid rgba(0,255,65,.38); border-radius: 12px;
+      display: none; position: absolute; z-index: 20; left: 0; right: 0; top: 56px;
+      grid-template-columns: repeat(5, 1fr); gap: 8px; padding: 12px;
+      border: 1px solid rgba(0,255,65,.38); border-radius: 14px;
       background: rgba(9,14,11,.98); box-shadow: 0 15px 35px rgba(0,0,0,.58), 0 0 20px rgba(0,255,65,.13);
     }
     .avatar-select.open .avatar-options { display: grid; }
@@ -102,9 +151,9 @@
       border-radius: 10px;
       background: #090e0b;
       cursor: pointer;
-      transition: transform .2s, border-color .2s, box-shadow .2s;
+      transition: transform .2s var(--ease-out, ease), border-color .2s, box-shadow .2s;
     }
-    .avatar-option:hover { transform: translateY(-3px); border-color: var(--green-neon); }
+    .avatar-option:hover { transform: translateY(-3px) scale(1.04); border-color: var(--green-neon); }
     .avatar-option.selected { border-color: var(--green-neon); box-shadow: 0 0 12px var(--green-glow); }
     .avatar-option img { width: 100%; height: 100%; display: block; object-fit: contain; background: #090e0b; }
     .avatar-option.none { display: grid; place-items: center; color: var(--green-neon); font: 900 .75rem var(--font-display); letter-spacing: 1px; background: linear-gradient(145deg,#0c1b11,#030604); }
@@ -113,31 +162,40 @@
 
     .profile-name {
       font-family: var(--font-display);
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 900;
       letter-spacing: 4px;
       color: var(--text);
       text-transform: uppercase;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      text-shadow: 0 0 20px rgba(0,255,65,.3);
     }
 
     .profile-subtitle {
+      display: inline-block;
       font-family: var(--font-body);
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      letter-spacing: 2px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--green-neon);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      border: 1px solid rgba(0,255,65,.3);
+      background: rgba(0,255,65,.06);
+      padding: 5px 16px;
+      border-radius: 999px;
     }
 
     /* Editor do nome do jogador */
     .profile-edit-card {
-      max-width: 440px;
-      margin: -18px auto 36px;
-      background: rgba(8,14,10,0.6);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 12px;
-      padding: 18px 20px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      max-width: 460px;
+      margin: 0 auto 30px;
+      background: rgba(8,14,10,0.62);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 20px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.45);
     }
     .profile-edit-label {
       display: block;
@@ -147,7 +205,7 @@
       letter-spacing: 3px;
       color: var(--green-neon);
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       text-align: center;
     }
     .profile-edit-row { display: flex; gap: 10px; }
@@ -156,42 +214,44 @@
       min-width: 0;
       background: rgba(3,8,5,0.9);
       border: 1px solid rgba(0,255,65,0.25);
-      border-radius: 10px;
-      padding: 11px 14px;
+      border-radius: 12px;
+      padding: 12px 14px;
       color: var(--text);
       font-family: var(--font-body);
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      font-weight: 600;
       letter-spacing: 1px;
       outline: none;
       transition: border-color 0.2s, box-shadow 0.2s;
     }
     #player-name-input:focus {
       border-color: var(--green-neon);
-      box-shadow: 0 0 14px var(--green-glow);
+      box-shadow: 0 0 0 3px rgba(0,255,65,.12), 0 0 16px var(--green-glow);
     }
     #player-name-save {
-      background: rgba(0,255,65,0.1);
-      border: 1px solid rgba(0,255,65,0.45);
-      border-radius: 10px;
-      color: var(--green-neon);
+      background: linear-gradient(135deg, #00ff41, #00c933);
+      border: none;
+      border-radius: 12px;
+      color: #02120a;
       font-family: var(--font-display);
       font-size: 0.62rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 2px;
       text-transform: uppercase;
-      padding: 0 18px;
+      padding: 0 22px;
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all 0.25s;
       white-space: nowrap;
+      box-shadow: 0 6px 20px rgba(0,255,65,.25);
     }
-    #player-name-save:hover { background: rgba(0,255,65,0.2); box-shadow: 0 0 12px var(--green-glow); }
-    #player-name-save.saved { background: rgba(0,255,65,0.28); color: #fff; }
+    #player-name-save:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,255,65,.4); }
+    #player-name-save.saved { background: rgba(0,255,65,0.28); color: #fff; box-shadow: none; }
     .profile-edit-hint {
-      margin-top: 9px;
+      margin-top: 10px;
       text-align: center;
-      font-size: 0.6rem;
+      font-size: 0.68rem;
       color: var(--text-muted);
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
     .profile-toggle-row {
       display: flex;
@@ -208,81 +268,99 @@
     /* Stats Grid */
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+      margin-bottom: 34px;
     }
 
     .stat-card {
-      background: rgba(8,14,10,0.6);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 12px;
-      padding: 20px 16px;
+      background: rgba(8,14,10,0.62);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 20px 10px 16px;
       text-align: center;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      transition: border-color 0.2s, transform 0.2s;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+      position: relative;
+      overflow: hidden;
     }
+    .stat-card::before {
+      content: '';
+      position: absolute; top: 0; left: 20%; right: 20%; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--green-neon), transparent);
+      opacity: 0;
+      transition: opacity .25s;
+    }
+    .stat-card:hover::before { opacity: 1; }
 
     .stat-card:hover {
-      border-color: var(--green-neon);
-      transform: translateY(-2px);
+      border-color: rgba(0,255,65,.5);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0,0,0,.5), 0 0 20px rgba(0,255,65,.12);
     }
 
     .stat-value {
       font-family: var(--font-display);
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: 900;
-      color: var(--green-neon);
-      text-shadow: 0 0 12px var(--green-glow);
+      background: linear-gradient(180deg, #fff, #5cff8a);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      filter: drop-shadow(0 0 12px rgba(0,255,65,.35));
       line-height: 1;
       margin-bottom: 8px;
+      font-variant-numeric: tabular-nums;
     }
 
     .stat-label {
       font-family: var(--font-body);
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 2px;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
       color: var(--text-muted);
       text-transform: uppercase;
     }
 
-    /* Achievements */
     /* ═══ Conta / sincronização / controle ═══ */
     .rv-acc-badge {
-      font-size: .6rem; letter-spacing: 1.6px; text-transform: uppercase;
-      padding: 3px 9px; border-radius: 20px; margin-left: 8px; vertical-align: middle;
+      font-size: .58rem; letter-spacing: 1.6px; text-transform: uppercase;
+      padding: 4px 11px; border-radius: 20px; margin-left: 8px; vertical-align: middle;
       border: 1px solid rgba(0,255,65,.35); color: var(--green-neon); background: rgba(0,255,65,.08);
       font-weight: 700;
     }
     .rv-acc-badge.local { border-color: rgba(255,190,60,.35); color: #ffc65c; background: rgba(255,190,60,.08); }
-    .rv-acc-line { font-size: .88rem; margin: 6px 0; }
-    .rv-acc-dim { color: var(--text-muted); font-size: .78rem; }
-    .rv-acc-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .rv-acc-line { font-size: .9rem; margin: 6px 0; color: var(--text); }
+    .rv-acc-dim { color: var(--text-muted); font-size: .78rem; line-height: 1.6; }
+    .rv-acc-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
     .rv-acc-btn {
-      padding: 9px 14px; border-radius: 9px; cursor: pointer; font-family: inherit;
+      padding: 11px 18px; border-radius: 12px; cursor: pointer; font-family: var(--font-body);
       background: rgba(0,255,65,.07); border: 1px solid rgba(0,255,65,.28);
-      color: var(--green-neon); font-size: .74rem; font-weight: 700; letter-spacing: 1px;
-      text-transform: uppercase; transition: background .18s, border-color .18s;
+      color: var(--green-neon); font-size: .72rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; transition: all .2s;
     }
-    .rv-acc-btn:hover { background: rgba(0,255,65,.16); border-color: var(--green-neon); }
+    .rv-acc-btn:hover { background: rgba(0,255,65,.16); border-color: var(--green-neon); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.4); }
     .rv-acc-btn.active { background: rgba(0,255,65,.22); border-color: var(--green-neon); }
     .rv-acc-btn-out { color: #ff8f8f; border-color: rgba(255,90,90,.3); background: rgba(255,60,60,.06); }
     .rv-acc-btn-out:hover { background: rgba(255,60,60,.16); border-color: #ff8f8f; }
 
     .achievements-section {
-      margin-bottom: 40px;
+      margin-bottom: 26px;
+      background: rgba(8,14,10,.5);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 18px;
+      padding: 24px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
 
     .achievements-title {
       font-family: var(--font-display);
-      font-size: 0.9rem;
-      font-weight: 700;
+      font-size: 0.85rem;
+      font-weight: 800;
       letter-spacing: 3px;
       color: var(--text);
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -298,25 +376,37 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      background: rgba(8,14,10,0.5);
+      background: rgba(255,255,255,.025);
       border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 10px;
+      border-radius: 14px;
       padding: 14px 16px;
-      transition: all 0.2s;
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
     }
 
     .achievement-card.unlocked {
-      border-color: rgba(255,215,0,0.3);
-      background: rgba(255,215,0,0.04);
+      border-color: rgba(255,215,0,0.35);
+      background: linear-gradient(120deg, rgba(255,215,0,0.07), rgba(255,215,0,0.02));
     }
+    .achievement-card.unlocked::after {
+      content: '';
+      position: absolute; top: 0; bottom: 0; left: -40%;
+      width: 28%;
+      background: linear-gradient(90deg, transparent, rgba(255,215,0,.12), transparent);
+      transform: skewX(-18deg);
+      animation: achShine 5s ease-in-out infinite;
+    }
+    @keyframes achShine { 0%, 55% { left: -40%; } 85%, 100% { left: 140%; } }
 
     .achievement-card.locked {
-      opacity: 0.4;
+      opacity: 0.42;
+      filter: grayscale(.4);
     }
 
     .achievement-icon {
-      width: 40px; height: 40px;
-      border-radius: 10px;
+      width: 44px; height: 44px;
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -324,11 +414,12 @@
       flex-shrink: 0;
     }
     .achievement-icon img { width: 22px; height: 22px; object-fit: contain; filter: drop-shadow(0 0 4px rgba(0,255,65,.55)); }
-.achievements-title .rv-inline-icon { filter: drop-shadow(0 0 4px rgba(0,255,65,.7)); }
+    .achievements-title .rv-inline-icon { filter: drop-shadow(0 0 4px rgba(0,255,65,.7)); }
 
     .achievement-card.unlocked .achievement-icon {
-      background: rgba(255,215,0,0.15);
-      border: 1px solid rgba(255,215,0,0.3);
+      background: rgba(255,215,0,0.14);
+      border: 1px solid rgba(255,215,0,0.4);
+      box-shadow: 0 0 16px rgba(255,215,0,.2);
     }
 
     .achievement-card.locked .achievement-icon {
@@ -343,7 +434,7 @@
 
     .achievement-name {
       font-family: var(--font-body);
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       font-weight: 700;
       color: var(--text);
       margin-bottom: 2px;
@@ -355,40 +446,41 @@
 
     .achievement-desc {
       font-family: var(--font-body);
-      font-size: 0.7rem;
+      font-size: 0.72rem;
       color: var(--text-muted);
     }
 
     .achievement-date {
       font-family: var(--font-body);
-      font-size: 0.55rem;
+      font-size: 0.6rem;
       color: var(--text-muted);
-      opacity: 0.6;
-      margin-top: 2px;
+      opacity: 0.7;
+      margin-top: 3px;
+      letter-spacing: .5px;
     }
 
     /* Consoles jogados */
     .consoles-played {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 40px;
+      gap: 9px;
     }
 
     .console-badge-tag {
       font-family: var(--font-display);
-      font-size: 0.6rem;
+      font-size: 0.58rem;
       font-weight: 700;
       letter-spacing: 2px;
-      padding: 5px 14px;
+      padding: 7px 15px;
       border-radius: 20px;
       text-transform: uppercase;
     }
 
     .console-badge-tag.played {
-      background: rgba(0,255,65,0.08);
-      border: 1px solid rgba(0,255,65,0.3);
+      background: rgba(0,255,65,0.1);
+      border: 1px solid rgba(0,255,65,0.4);
       color: var(--green-neon);
+      box-shadow: 0 0 12px rgba(0,255,65,.12);
     }
 
     .console-badge-tag.not-played {
@@ -400,16 +492,16 @@
 
     .reset-btn {
       display: block;
-      margin: 40px auto 0;
+      margin: 36px auto 0;
       background: none;
       border: 1px solid rgba(255,68,68,0.3);
-      color: #ff4444;
+      color: #ff6b6b;
       font-family: var(--font-body);
-      font-size: 0.7rem;
-      font-weight: 600;
+      font-size: 0.68rem;
+      font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
-      padding: 8px 24px;
+      padding: 10px 28px;
       border-radius: 20px;
       cursor: pointer;
       transition: all 0.2s;
@@ -417,39 +509,59 @@
 
     .reset-btn:hover {
       background: rgba(255,68,68,0.08);
-      border-color: rgba(255,68,68,0.5);
+      border-color: rgba(255,68,68,0.55);
+      box-shadow: 0 0 16px rgba(255,68,68,.15);
     }
 
-    @media (max-width: 600px) {
-      .profile-wrap { margin-top: 90px; padding: 0 14px; }
-      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-      .achievements-grid { grid-template-columns: 1fr; }
+    @media (max-width: 700px) {
+      .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+      .stat-value { font-size: 1.35rem; }
     }
+    @media (max-width: 600px) {
+      .profile-cover { height: 150px; margin: 14px 12px 0; border-radius: 18px; }
+      .profile-wrap { margin-top: 0; padding: 0 14px; }
+      .profile-header { margin-top: -52px; }
+      .profile-avatar { width: 84px; height: 84px; font-size: 1.7rem; border-radius: 22px; }
+      .profile-name { font-size: 1.2rem; letter-spacing: 2px; }
+      .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .achievements-grid { grid-template-columns: 1fr; }
+      .achievements-section { padding: 18px 14px; border-radius: 16px; }
+    }
+
   </style>
-  <script src="js/rv-config.js"></script>
-  <script src="js/rv-account.js"></script>
-  <script src="js/rv-input-mode.js"></script>
+  <script src="js/rv-config.js?v=20260916"></script>
+  <script src="js/rv-account.js?v=20260916"></script>
+  <script src="js/rv-input-mode.js?v=20260916"></script>
   <script>RVAccount.guard();</script>
 </head>
 <body>
 
   <div class="crt-overlay" aria-hidden="true"></div>
 
-  <header class="navbar">
+  <header class="navbar navbar-home">
     <a href="index.html" class="brand">
       <div class="brand-logo">RV</div>
       <div class="brand-text">
-        <span class="brand-name">RETROVERSO</span>
-        <span class="brand-slogan">ENTER THE CLASSICS // BETA</span>
+        <span class="brand-name">RETROVAULT OS</span>
+        <span class="brand-slogan">ENTER THE CLASSICS // 2.0</span>
       </div>
     </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html" class="nav-link">Início</a>
+      <a href="profile.html" class="nav-link active">Perfil</a>
+    </nav>
+    <div class="home-user-chip">
+      <a href="index.html" class="btn-back">Voltar</a>
+    </div>
   </header>
+
+  <div class="profile-cover" aria-hidden="true"></div>
 
   <div class="profile-wrap">
     <div class="profile-header">
       <div class="profile-avatar">RV</div>
       <div class="profile-name">JOGADOR</div>
-      <div class="profile-subtitle" id="profile-joined">Membro do RetroVerso</div>
+      <div class="profile-subtitle" id="profile-joined">Membro do RetroVault OS</div>
     </div>
 
     <div class="avatar-picker" aria-label="Escolha do avatar">
@@ -523,8 +635,30 @@
 
   <footer class="rv-footer">
     <div class="footer-brand">RV</div>
-    <p class="footer-copy">RETROVERSO &mdash; ENTER THE CLASSICS</p>
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="index.html">Início</a>
+      <a href="index.html#consoles">Consoles</a>
+      <a href="profile.html">Perfil</a>
+    </nav>
+    <p class="footer-copy">RETROVAULT OS &mdash; ENTER THE CLASSICS</p>
   </footer>
+
+  <!-- BOTTOM NAV (mobile) -->
+  <nav class="bottom-nav" aria-label="Navegação rápida">
+    <a href="index.html" class="bn-item" data-page="index.html">
+      <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+      Início
+    </a>
+    <a href="index.html#consoles" class="bn-item" data-page="games.html">
+      <svg viewBox="0 0 24 24"><path d="M6 9h4l2-2 2 2h4a3 3 0 0 1 3 3v5a2 2 0 0 1-3.4 1.4L16 16.8a4 4 0 0 1-2.8-1.1L12 14.5l-1.2 1.2a4 4 0 0 1-2.8 1.1l-1.6 1.6A2 2 0 0 1 3 17V12a3 3 0 0 1 3-3z"/></svg>
+      Jogar
+    </a>
+    <a href="profile.html" class="bn-item" data-page="profile.html">
+      <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/></svg>
+      Perfil
+    </a>
+  </nav>
+  <script src="js/rv-ui.js?v=20260916"></script>
 
 <script>
 const ALL_ACHIEVEMENTS = [
@@ -795,7 +929,7 @@ function resetProfile() {
     const blob = new Blob([JSON.stringify(pack, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'retroverso-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+    a.download = 'retrovault-os-backup-' + new Date().toISOString().slice(0, 10) + '.json';
     a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 4000);
   });

@@ -1,0 +1,404 @@
+{
+  "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 2) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "Infinite Health",
+      "code": "003-B69-19E"
+    },
+    {
+      "desc": "Infinite Small Keys",
+      "code": "001-4E8-19E"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "C9D-689-081"
+    },
+    {
+      "desc": "Infinite Magic",
+      "code": "00C-60B-E6E"
+    },
+    {
+      "desc": "Infinite Arrows",
+      "code": "003-D5E-E6E"
+    },
+    {
+      "desc": "Infinite Bombs",
+      "code": "003-67E-E6E"
+    },
+    {
+      "desc": "Infinite Rupees",
+      "code": "002-CF9-A24"
+    },
+    {
+      "desc": "Walk Through Walls Everywhere (Alternate)",
+      "code": "21E-6A9-081"
+    },
+    {
+      "desc": "Lift Object To Destroy All Enemies On Screen",
+      "code": "041-51D-B3A"
+    },
+    {
+      "desc": "Walk Thru Walls",
+      "code": "AF4-A08-3B0"
+    },
+    {
+      "desc": "Lift Object For Maximum Rupees",
+      "code": "031-51D-B3A"
+    },
+    {
+      "desc": "Skip Intro Screens",
+      "code": "15E-E49-F72+AFE-E29-7F4"
+    }
+  ],
+  "Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "Infinite Time In Bug Catching Contest",
+      "code": "011393D1"
+    },
+    {
+      "desc": "Infinite Money",
+      "code": "019973D5+019974D5+019975D5"
+    },
+    {
+      "desc": "Infinite Casino Coins",
+      "code": "010F7BD5+01277AD5"
+    },
+    {
+      "desc": "Infinite Park Balls",
+      "code": "0114C3D9"
+    },
+    {
+      "desc": "Infinite HP [In Battle]",
+      "code": "01FF1DCB"
+    },
+    {
+      "desc": "Infinite PP [1st Position]",
+      "code": "012814CB"
+    },
+    {
+      "desc": "Infinite PP [2nd Position]",
+      "code": "012815CB"
+    },
+    {
+      "desc": "Infinite PP [3rd Position]",
+      "code": "012816CB"
+    },
+    {
+      "desc": "Infinite PP [4th Position]",
+      "code": "012817CB"
+    },
+    {
+      "desc": "Infinite Quantity 1st Position",
+      "code": "0163B9D5"
+    },
+    {
+      "desc": "Infinite Quantity 2nd Position",
+      "code": "0163BBD5"
+    },
+    {
+      "desc": "Infinite Quantity 3rd Position",
+      "code": "0163BDD5"
+    }
+  ],
+  "Pokemon - Silver Version (USA, Europe) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "Infinite Time In Bug Catching Contest",
+      "code": "011393D1"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "00E-D0A-F77"
+    },
+    {
+      "desc": "All Pokémon Gain Experience",
+      "code": "013F42CB"
+    },
+    {
+      "desc": "Learn All Moves After Leveling Up",
+      "code": "010FF7CB"
+    },
+    {
+      "desc": "Infinite PP 1st Move",
+      "code": "010513CB"
+    },
+    {
+      "desc": "Infinite PP 2nd Move",
+      "code": "010B15CB"
+    },
+    {
+      "desc": "Infinite PP 3rd Move",
+      "code": "012716CB"
+    },
+    {
+      "desc": "Infinite PP 4th Move",
+      "code": "010417CB"
+    },
+    {
+      "desc": "Infinite PP (1st Position)",
+      "code": "010071DA"
+    },
+    {
+      "desc": "Infinite PP (2nd Position)",
+      "code": "010072DA"
+    },
+    {
+      "desc": "Infinite PP (3rd Position)",
+      "code": "010073DA"
+    },
+    {
+      "desc": "Infinite PP (4th Position)",
+      "code": "010074DA"
+    }
+  ],
+  "Spider-Man (PT-BR)": [
+    {
+      "desc": "Infinite Health",
+      "code": "016495C3"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "016477C3"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "1CA-96D"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "7EC-BCD"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "01FF38C2"
+    },
+    {
+      "desc": "Start With And Continue Game With 99 Lives",
+      "code": "641-7DF+64B-78B"
+    },
+    {
+      "desc": "Max Exp Points",
+      "code": "01FF58C2+01FF59C2"
+    },
+    {
+      "desc": "Infinite Webs",
+      "code": "01FF3AC2"
+    },
+    {
+      "desc": "Exp Points Modifier",
+      "code": "010058C2+010059C2"
+    },
+    {
+      "desc": "Max Attack",
+      "code": "01065AC2"
+    },
+    {
+      "desc": "Max Defense",
+      "code": "01065BC2"
+    },
+    {
+      "desc": "Slow Motion",
+      "code": "01055DC2"
+    }
+  ],
+  "Super Mario Bros. Deluxe (USA, Europe) (Rev 2)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "1C8-D9B+1C8-6BB"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "90097FC1"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "01907DC1"
+    },
+    {
+      "desc": "All Challange Levels",
+      "code": "01FF8EC1+01FF8FC1+01FF90C1+01FF91C1"
+    },
+    {
+      "desc": "Start With 99 Lives",
+      "code": "634-83A"
+    },
+    {
+      "desc": "Invincible",
+      "code": "0101DBC1"
+    },
+    {
+      "desc": "All Pictures",
+      "code": "01FF29C4+01FF2AC4+01FF2CC4"
+    },
+    {
+      "desc": "Fireball Hits Anywhere",
+      "code": "180-BBB-4CA+180-CBB-4CA+FA3-01D-801+FA3-0FD-801"
+    },
+    {
+      "desc": "Fireballs Go Through All Enemies and Obstacles",
+      "code": "180-BBB-4CA+180-CBB-4CA"
+    },
+    {
+      "desc": "Level Modifier",
+      "code": "01220FD0"
+    },
+    {
+      "desc": "Level",
+      "code": "010063C1"
+    },
+    {
+      "desc": "All Enemies Are Gone",
+      "code": "9120D2D2"
+    }
+  ],
+  "Tetris DX (World) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "Level Modifier",
+      "code": "010097AF"
+    },
+    {
+      "desc": "Can choose a starting level up to level 20",
+      "code": "145-55A-C4E"
+    },
+    {
+      "desc": "Pieces Don't Fall",
+      "code": "010081AF"
+    },
+    {
+      "desc": "No Time (40 Lines)",
+      "code": "010093AF+010094AF"
+    },
+    {
+      "desc": "Swap Over Next Shape to Current Shape by pressing the Select Button",
+      "code": "188-76A-081+3E8-77A-F74"
+    },
+    {
+      "desc": "Start with Minutes in Ultra Mode",
+      "code": "0193E69B"
+    },
+    {
+      "desc": "Game Speed Modifier",
+      "code": "010096AF"
+    },
+    {
+      "desc": "Swap Over Next Shape to Current Shape by pressing the A Button",
+      "code": "C37-C5A-081+B67-C6A-E60+587-C7A-5D4"
+    },
+    {
+      "desc": "Swap Over Next Shape to Current Shape by pressing the B Button",
+      "code": "C38-1EA-081+B68-1FA-E60+588-20A-5D4"
+    },
+    {
+      "desc": "Points Modifier",
+      "code": "019989AF+01998AAF+01998BAF+01998CAF"
+    },
+    {
+      "desc": "Lines Modifier",
+      "code": "0109EAAC+0109E8AC+0109E9AC+0109EBAC+0109ECAC"
+    },
+    {
+      "desc": "Total Lines Modifier",
+      "code": "019903BD+019904BD+019905BD+019906BD"
+    }
+  ],
+  "Tom & Jerry (USA)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "01034ED5"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "188-50D-6EA"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "C9D-34D-E69"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "013B1AD5"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "C9C-1EE-E69"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "EA5-5CB-081+3E5-5AB-6EA"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "01022DDD"
+    },
+    {
+      "desc": "Infinite Projectiles",
+      "code": "186-7CB-6EA"
+    },
+    {
+      "desc": "Stage Select Enabled",
+      "code": "3CD-0DB-3B4"
+    },
+    {
+      "desc": "99 Cheese",
+      "code": "01993EDC"
+    },
+    {
+      "desc": "Moon Jump",
+      "code": "3E0-DAB-4CA"
+    }
+  ],
+  "Wario Land 3 (World) (En,Ja)": [
+    {
+      "desc": "All Power-Ups (Except The Last One)",
+      "code": "01083CCA"
+    },
+    {
+      "desc": "Snowball Wario (Size 1)",
+      "code": "01508ECA+01018FCA"
+    },
+    {
+      "desc": "Snowball Wario (Size 2)",
+      "code": "01508ECA+01028FCA"
+    },
+    {
+      "desc": "Snowball Wario (Size 3)",
+      "code": "01508ECA+01038FCA"
+    },
+    {
+      "desc": "Wario Always Does His Idle Animation",
+      "code": "01FF84CA+010685CA"
+    },
+    {
+      "desc": "Wario Never Does His Idle Animation",
+      "code": "010084CA+010185CA"
+    },
+    {
+      "desc": "Fat Wario",
+      "code": "01848ECA+01008FCA"
+    },
+    {
+      "desc": "Ball-O-String Wario",
+      "code": "01C38ECA+01018FCA"
+    },
+    {
+      "desc": "Fire Wario Phase 1 (Running)",
+      "code": "01C18ECA+01018FCA"
+    },
+    {
+      "desc": "Fire Wario Phase 2 (On fire)",
+      "code": "01C18ECA+01028FCA"
+    },
+    {
+      "desc": "Hammer Wario",
+      "code": "01098ECA+01008FCA"
+    },
+    {
+      "desc": "Ice Skatin' Wario",
+      "code": "014D8ECA+01008FCA"
+    }
+  ],
+  "Wario Land II (USA, Europe) (SGB Enhanced) (GB Compatible)": [
+    {
+      "desc": "Jump in Midair",
+      "code": "007-B79-7F6+1A7-B39-7F6"
+    }
+  ]
+}

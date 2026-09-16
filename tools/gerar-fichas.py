@@ -7,7 +7,7 @@ Uso:
   python3 tools/gerar-fichas.py inject  # injeta <script> nos HTML (idempotente)
 
 O que faz:
-  • Lê o catálogo (campo `file:` das ROMs) de index.html e games.html;
+  • Lê o catálogo (campo `file:` das ROMs) do js/catalog.js (fonte única);
   • Confere se todo jogo tem ficha em js/fichas.js (chave = nome do arquivo);
   • Lista os jogos sem ficha e os marcados como c:1 (dados a conferir);
   • Com `inject`, adiciona <script src="js/fichas.js"> e
@@ -22,6 +22,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 PAGINAS = ["index.html", "games.html"]
+SCAN = ["js/catalog.js"]
 FICHA_JS = RAIZ / "js" / "fichas.js"
 SCRIPT_FICHAS = '<script src="js/fichas.js"></script>'
 SCRIPT_CARD = '<script src="js/card-info.js"></script>'
@@ -55,7 +56,7 @@ def extrair_bloco_catalogo(html: str, marcador: str) -> str:
 
 def extrair_arquivos(html: str) -> list[str]:
     # conta apenas dentro do bloco do catálogo (busca global ou página do console)
-    bloco = extrair_bloco_catalogo(html, "const CATALOG = {") or extrair_bloco_catalogo(html, "const catalog = {")
+    bloco = extrair_bloco_catalogo(html, "const CATALOG = {") or extrair_bloco_catalogo(html, "var CATALOG = {") or extrair_bloco_catalogo(html, "const catalog = {")
     if bloco:
         return [desescapar(m.group(1)) for m in RE_FILE.finditer(bloco)]
     return [desescapar(m.group(1)) for m in RE_FILE.finditer(html)]
@@ -68,7 +69,8 @@ def extrair_chaves_fichas(js: str) -> list[str]:
 
 
 def injetar_script(html: str, tag: str) -> tuple[str, bool]:
-    if tag in html:
+    base = tag.split('src="')[1].split('"')[0]
+    if tag in html or ('src="%s?' % base) in html:
         return html, False
     if "</body>" in html:
         return html.replace("</body>", "  " + tag + "\n</body>", 1), True
@@ -95,7 +97,7 @@ def main() -> int:
     print()
 
     sem_ficha = []
-    for nome in PAGINAS:
+    for nome in SCAN:
         p = RAIZ / nome
         if not p.exists():
             print(f"[{nome}] (não encontrado — pulando)")
@@ -107,7 +109,7 @@ def main() -> int:
         print(f"[{nome}] {len(jogos)} jogos catalogados | {len(faltando)} sem ficha")
         for j in faltando:
             print(f"   ✗  {j}")
-        if cmd == "inject":
+        if cmd == "inject" and nome.endswith(".html"):
             novo, a1 = injetar_script(html, SCRIPT_FICHAS)
             novo, a2 = injetar_script(novo, SCRIPT_CARD)
             if a1 or a2:

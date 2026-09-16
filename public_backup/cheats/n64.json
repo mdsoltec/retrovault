@@ -1,0 +1,290 @@
+{
+  "Banjo-Kazooie (USA) (Rev 1)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "803851AB 0009"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "803851A3 0008"
+    },
+    {
+      "desc": "Infinite Health With Red Honeycombs",
+      "code": "803851A7 0010"
+    },
+    {
+      "desc": "Infinite Golden Feathers",
+      "code": "80385193 0063"
+    },
+    {
+      "desc": "Have Infinite Gold Bars",
+      "code": "80385F93 0002"
+    },
+    {
+      "desc": "Max Health Available",
+      "code": "803851A7 0008"
+    },
+    {
+      "desc": "Mumbo - All Levels",
+      "code": "81366704 0000"
+    },
+    {
+      "desc": "Blue Jinjo - All Levels",
+      "code": "813652B4 0000"
+    },
+    {
+      "desc": "Green Jinjo - All Levels",
+      "code": "81366448 0000"
+    },
+    {
+      "desc": "Pink Jinjo - All Levels",
+      "code": "81366490 0000"
+    },
+    {
+      "desc": "Infinite Air",
+      "code": "813851AE 0E10"
+    },
+    {
+      "desc": "Infinite Mumbo Tokens",
+      "code": "803851E7 0063"
+    }
+  ],
+  "GoldenEye 007 (USA)": [
+    {
+      "desc": "Infinite Ammo (All Levels)",
+      "code": "80079E3B 0001"
+    },
+    {
+      "desc": "Infinite Health & Armor P1",
+      "code": "8100C0F4 0801+8100C0F6 8090+8100C0F8 AFA4+8100C0FA 0000+81060240 0004+81060242 7600+81060244 3C02+81060246 8008+81060248 8C42+8106024A 9EE0+8106024C 3401+8106024E 3F80+81060250 A441+81060252 00DC+81060254 A441+81060256 00E0+81060258 0800+8106025A 303F"
+    },
+    {
+      "desc": "Infinite Health & Armor AND Rapid Fire P1",
+      "code": "8100C0F4 0801+8100C0F6 8090+8100C0F8 AFA4+8100C0FA 0000+81060240 0004+81060242 7600+81060244 3C02+81060246 8008+81060248 8C42+8106024A 9EE0+8106024C 3401+8106024E 3F80+81060250 A441+81060252 00DC+81060254 A441+81060256 00E0+81060258 3401+8106025A 00FF+8106025C A441+8106025E 0892+81060260 3401+81060262 0009+81060264 0800+81060266 303F+81060268 A441+8106026A 0C38"
+    },
+    {
+      "desc": "Infinite Ammo For Golden Gun",
+      "code": "810CDCC6 013C"
+    },
+    {
+      "desc": "Infinite Ammo For All Guns",
+      "code": "50001E70 0000+80032603 0000"
+    },
+    {
+      "desc": "Improved Infinite Health For 007 Mode",
+      "code": "810B003C 4CCC+810B004E 0000"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "810D943C 3F80+810D944E 0000"
+    },
+    {
+      "desc": "Infinite Health & Armor P1",
+      "code": "8100C0F4 0801+8100C0F6 8090+8100C0F8 AFA4+8100C0FA 0000+81060240 0004+81060242 7600+81060244 3C02+81060246 8008+81060248 8C42+8106024A 9EE0+8106024C 3401+8106024E 3F80+81060250 A441+81060252 00DC+81060254 A441+81060256 00E0+81060258 0800+8106025A 303F"
+    },
+    {
+      "desc": "Infinite Health & Armor AND Rapid Fire P1",
+      "code": "8100C0F4 0801+8100C0F6 8090+8100C0F8 AFA4+8100C0FA 0000+81060240 0004+81060242 7600+81060244 3C02+81060246 8008+81060248 8C42+8106024A 9EE0+8106024C 3401+8106024E 3F80+81060250 A441+81060252 00DC+81060254 A441+81060256 00E0+81060258 3401+8106025A 00FF+8106025C A441+8106025E 0892+81060260 3401+81060262 0009+81060264 0800+81060266 303F+81060268 A441+8106026A 0C38"
+    }
+  ],
+  "Legend of Zelda, The - Ocarina of Time (USA) (Rev 2)": [
+    {
+      "desc": "Infinite Health",
+      "code": "8011ACB0 0040"
+    },
+    {
+      "desc": "Infinite Slingshot Ammo",
+      "code": "8011AD12 0009"
+    },
+    {
+      "desc": "Infinite All Items",
+      "code": "50000F01 0000+8011AD0C 0063"
+    },
+    {
+      "desc": "Infinite Small Keys",
+      "code": "8011AD49 0009"
+    },
+    {
+      "desc": "Infinite Time To Race The Running Man",
+      "code": "8111C055 0000"
+    },
+    {
+      "desc": "Universal Max Money Modifier (Still Turns Green At Original Max)",
+      "code": "81078DF0 2484+81078DF2 0000"
+    },
+    {
+      "desc": "Infinite Magic",
+      "code": "D011ACB9 0008+8011ACBA 0001+8011ACBC 0001+8011ACB3 0060"
+    },
+    {
+      "desc": "Shorter Infinite Magic (You Need To Already Have Magic)",
+      "code": "D211ACB3 0060+8011ACB3 0060"
+    },
+    {
+      "desc": "Every Rupee Gives You Max Money",
+      "code": "80078E21 0004"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "8111ACB0 0140"
+    },
+    {
+      "desc": "Infinite Deku Sticks",
+      "code": "8011AD0C 0009"
+    },
+    {
+      "desc": "Infinite Deku Nuts",
+      "code": "8011AD0D 0009"
+    }
+  ],
+  "Mario Kart 64 (USA)": [
+    {
+      "desc": "Only Use PRESS B FOR ALL GOLDCUP",
+      "code": "8018EDEF 0007"
+    },
+    {
+      "desc": "Infinite Random Items P1",
+      "code": "D0165F5F 0000+80165F5F 0001"
+    },
+    {
+      "desc": "P1 Infinite Balloons",
+      "code": "8118D8C0 0002"
+    },
+    {
+      "desc": "P2 Infinite Balloons",
+      "code": "8118D8C2 0002"
+    },
+    {
+      "desc": "P3 Infinite Balloons",
+      "code": "8118D8C4 0002"
+    },
+    {
+      "desc": "P4 Infinite Balloons",
+      "code": "8118D8C6 0002"
+    },
+    {
+      "desc": "Allowed An Infinite Amount Of Roaming Shells Anywhere",
+      "code": "8015F6FF 0000"
+    },
+    {
+      "desc": "Infinite Star Music Loop",
+      "code": "800EA10C 0000"
+    },
+    {
+      "desc": "Missing Wall",
+      "code": "812846A5 FFFF"
+    },
+    {
+      "desc": "Track Goes Into Wall",
+      "code": "81286600 FFFF"
+    },
+    {
+      "desc": "Cheat Device Button for Max Timer",
+      "code": "880DC599 00FF"
+    },
+    {
+      "desc": "Maximum Speed Modifier P1",
+      "code": "810F6BA4 439B+810F6BA6 439B"
+    }
+  ],
+  "Super Mario 64 (USA)": [
+    {
+      "desc": "Infinite Health/Occasional Power Sounds",
+      "code": "8033B21E 0009"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "8033B21D 0064"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "81254208 2400"
+    },
+    {
+      "desc": "Never Lose Lives",
+      "code": "81259CA8 2400+81259DC4 2400"
+    },
+    {
+      "desc": "Funky Sounds/Reverse Power Meter/Sometimes Game Thinks You're At 8 Health",
+      "code": "8133B267 0008"
+    },
+    {
+      "desc": "Funky Sounds/Reverse Power Meter/Sometimes Game Thinks You're At 7 Health",
+      "code": "8133B267 0007"
+    },
+    {
+      "desc": "Funky Sounds/Reverse Power Meter/Sometimes Game Thinks You're At 6 Health",
+      "code": "8133B267 0006"
+    },
+    {
+      "desc": "Funky Sounds/Reverse Power Meter/Sometimes Game Thinks You're At 5 Health",
+      "code": "8133B267 0005"
+    },
+    {
+      "desc": "Funky Sounds/Reverse Power Meter/Sometimes Game Thinks You're At 4 Health",
+      "code": "8133B267 0004"
+    },
+    {
+      "desc": "Funky Sounds/Reverse Power Meter/Sometimes Game Thinks You're At 3 Health",
+      "code": "8133B267 0003"
+    },
+    {
+      "desc": "Funky Sounds/Reverse Power Meter/Sometimes Game Thinks You're At 2 Health",
+      "code": "8133B267 0002"
+    },
+    {
+      "desc": "Funky Sounds/Reverse Power Meter/Sometimes Game Thinks You're At 1 Health",
+      "code": "8133B267 0001"
+    }
+  ],
+  "Super Smash Bros. (USA)": [
+    {
+      "desc": "Infinite Health P1 (All Levels, All Modes)",
+      "code": "810EA264 0810+810EA266 0000+81400000 5320+81400002 0001+81400004 0000+81400006 2821+81400008 0803+8140000A A89B+8140000C 01C5+8140000E 7821"
+    },
+    {
+      "desc": "Infinite Health P1 + Multiply Everyone Elses Damage (All Levels, All Modes)",
+      "code": "810EA264 0810+810EA266 0004+81400010 5320+81400012 0001+81400014 0000+81400016 2821+81400018 241B+8140001A 0000+8140001C 00BB+8140001E 0019+81400020 0000+81400022 2812+81400024 0803+81400026 A89B+81400028 01C5+8140002A 7821"
+    },
+    {
+      "desc": "Invincible/Untouchable P1 (All Levels, All Modes)",
+      "code": "810E8AC0 0C00+810E8AC2 0018+81000060 8FA5+81000062 001C+81000064 3C01+81000066 8013+81000068 8C21+8100006A 0D84+8100006C 2404+8100006E 0002+81000070 50A1+81000072 0001+81000074 ACA4+81000076 05AC+81000078 03E0+8100007A 0008+8100007C 2400"
+    },
+    {
+      "desc": "Infinite Lives P1",
+      "code": "800A4B43 0004"
+    },
+    {
+      "desc": "Infinite Lives P2",
+      "code": "800A4BB7 0004"
+    },
+    {
+      "desc": "Infinite Lives P3",
+      "code": "800A4C2B 0004"
+    },
+    {
+      "desc": "Infinite Lives P4",
+      "code": "800A4C9F 0004"
+    },
+    {
+      "desc": "Infinite Lives P1",
+      "code": "800A4D33 0004"
+    },
+    {
+      "desc": "Infinite Jumps (All Players, All Modes)",
+      "code": "8113FECC 240D"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "810A4B2E 43CB"
+    },
+    {
+      "desc": "Multiply Everyone's Damage EXCEPT P1 (All Levels, All Modes)",
+      "code": "810EA264 0810+810EA266 000B+8140002C 241B+8140002E 0000+81400030 5320+81400032 0001+81400034 241B+81400036 0000+81400038 00BB+8140003A 0019+8140003C 0000+8140003E 2812+81400040 0803+81400042 A89B+81400044 01C5+81400046 7821"
+    },
+    {
+      "desc": "Multiply Everyone's Damage (All Levels, All Modes)",
+      "code": "810EA264 0810+810EA266 0012+81400048 241B+8140004A 0000+8140004C 00BB+8140004E 0019+81400050 0000+81400052 2812+81400054 0803+81400056 A89B+81400058 01C5+8140005A 7821"
+    }
+  ]
+}

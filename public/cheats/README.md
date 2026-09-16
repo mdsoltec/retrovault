@@ -1,4 +1,4 @@
-# Base de cheats do RetroVerso
+# Base de cheats do RetroVault OS
 
 Esta pasta segue o formato de **Dynamic Cheats do EmulatorJS**.
 
@@ -10,14 +10,14 @@ O `play.html` configura:
 EJS_cheatPath = 'cheats/';
 ```
 
-Além disso, o RetroVerso carrega os JSONs antes de iniciar o loader e converte os registros para `EJS_cheats`, garantindo compatibilidade com a versão do EmulatorJS utilizada no projeto.
+Além disso, o RetroVault OS carrega os JSONs antes de iniciar o loader e converte os registros para `EJS_cheats`, garantindo compatibilidade com a versão do EmulatorJS utilizada no projeto.
 
 São carregados:
 
 - `cheats/cheats.json` — base global opcional;
 - `cheats/<core>.json` — base específica do core.
 
-Os arquivos já criados para o RetroVerso são:
+Os arquivos já criados para o RetroVault OS são:
 
 | Core do EmulatorJS | Arquivo |
 |---|---|

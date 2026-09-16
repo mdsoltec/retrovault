@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVERSO — CONFIGURAÇÃO DA CONTA / NUVEM
+   RETROVAULT OS — CONFIGURAÇÃO DA CONTA / NUVEM
    ───────────────────────────────────────────────────────────
    Nuvem LIGADA: login por e-mail + sincronização entre dispositivos.
    ═══════════════════════════════════════════════════════════ */

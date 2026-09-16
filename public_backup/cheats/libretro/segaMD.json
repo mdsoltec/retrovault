@@ -1,0 +1,3462 @@
+{
+  "Aladdin (USA)": [
+    {
+      "desc": "Start with 1 life",
+      "code": "GEAB-0AC0"
+    },
+    {
+      "desc": "Start with 7 lives",
+      "code": "G6AB-0AC0"
+    },
+    {
+      "desc": "Start with 9 lives",
+      "code": "HEAB-0AC0"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "RGJB-Y6Z8"
+    },
+    {
+      "desc": "Infinite continues",
+      "code": "ATFB-0A26"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "ATCB-0A24"
+    },
+    {
+      "desc": "Start with 1 health unit instead of 8",
+      "code": "AGXB-YAE2"
+    },
+    {
+      "desc": "Start with 2 health units instead of 8",
+      "code": "ALXB-YAE2"
+    },
+    {
+      "desc": "Start with 4 health units instead of 8",
+      "code": "AWXB-YAE2"
+    },
+    {
+      "desc": "Start with 12 health units instead of 8",
+      "code": "BWXB-YAE2"
+    },
+    {
+      "desc": "Start with 16 health units instead of 8",
+      "code": "CCXB-YAE2"
+    },
+    {
+      "desc": "Start with 32 health units instead of 8",
+      "code": "ECXB-YAE2"
+    },
+    {
+      "desc": "Genie hearts do not increase health",
+      "code": "D51V-YA32"
+    },
+    {
+      "desc": "Genie hearts restore health to maximum",
+      "code": "CM1V-YA32"
+    },
+    {
+      "desc": "Infinite apples",
+      "code": "ATBV-0A5L"
+    },
+    {
+      "desc": "Start with 0 apples",
+      "code": "GCXB-ZAM8"
+    },
+    {
+      "desc": "Start with 5 apples",
+      "code": "G0XB-ZAM8"
+    },
+    {
+      "desc": "Start with 20 apples",
+      "code": "GCXB-ZEM8"
+    },
+    {
+      "desc": "Start with 50 apples",
+      "code": "GCXB-ZLM8"
+    },
+    {
+      "desc": "Start with 99 apples",
+      "code": "HGXB-ZWM8"
+    },
+    {
+      "desc": "Each apple found worth 0 apples",
+      "code": "ATBV-0A4A"
+    },
+    {
+      "desc": "Each apple found worth 10 apples",
+      "code": "6ABV-094E"
+    },
+    {
+      "desc": "The apple thief won't steal your apples",
+      "code": "BMYV-YA6G"
+    },
+    {
+      "desc": "Start with 5 gems",
+      "code": "G0XB-ZAMG"
+    },
+    {
+      "desc": "Start with 10 gems",
+      "code": "GCXB-ZCMG"
+    },
+    {
+      "desc": "Start with 20 gems",
+      "code": "GCXB-ZEMG"
+    },
+    {
+      "desc": "Start with 50 gems",
+      "code": "GCXB-ZLMG"
+    },
+    {
+      "desc": "Start with 99 gems",
+      "code": "HGXB-ZWMG"
+    },
+    {
+      "desc": "Each gem found worth 0 gems",
+      "code": "ATBV-0A68"
+    },
+    {
+      "desc": "Each gem found worth 10 gems",
+      "code": "6JBV-097C"
+    },
+    {
+      "desc": "Each genie token found worth 0 genie tokens",
+      "code": "AX4B-YA82"
+    },
+    {
+      "desc": "Each genie token found worth 2 genie tokens",
+      "code": "HH4B-ZJ02"
+    },
+    {
+      "desc": "Each genie token found worth 4 genie tokens",
+      "code": "HH4B-ZT02"
+    },
+    {
+      "desc": "Each genie token found worth 8 genie tokens",
+      "code": "HH4B-ZA02"
+    },
+    {
+      "desc": "Genie tokens never decrease in genie bonus round",
+      "code": "ATNV-0A68"
+    },
+    {
+      "desc": "'Lose!' does not count in genie bonus round",
+      "code": "ATPB-0A6W"
+    },
+    {
+      "desc": "Start at Sultan's Dungeon",
+      "code": "AWWB-YACN+W4WB-YAWE"
+    },
+    {
+      "desc": "Start at Cave of Wonders",
+      "code": "A0WB-YACN+XLWB-YAWE"
+    },
+    {
+      "desc": "Start at Abu in the Cave",
+      "code": "A4WB-YACN+X4WB-YAWE"
+    },
+    {
+      "desc": "Start at The Escape",
+      "code": "A8WB-YACN+YLWB-YAWE"
+    },
+    {
+      "desc": "Start at Rug Ride",
+      "code": "BCWB-YACN+Y4WB-YAWE"
+    },
+    {
+      "desc": "Start at Inside the Lamp",
+      "code": "BGWB-YACN+ZLWB-YAWE"
+    },
+    {
+      "desc": "Start at Sultan's Palace",
+      "code": "BLWB-YACN+Z4WB-YAWE"
+    },
+    {
+      "desc": "Start at Jafar's Quarters",
+      "code": "BWWB-YACN+0LWB-YAWE"
+    },
+    {
+      "desc": "Start at Jafar's Palace",
+      "code": "BRWB-YACN+04WB-YAWE"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "ADWB-YR98"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FF7E3C:3300"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "FFEFFA:0808"
+    },
+    {
+      "desc": "Infinite Apples",
+      "code": "FFEFE0:3130"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "FFF0F2:0200+1ABB60:6606"
+    },
+    {
+      "desc": "Super Jump",
+      "code": "FFF0BE:0000"
+    },
+    {
+      "desc": "Complete Level",
+      "code": "FFF0E8:00FF"
+    },
+    {
+      "desc": "Throwing An Apple Uses All Apples",
+      "code": "9TBV-1GMA+RYBV-06XJ"
+    },
+    {
+      "desc": "Tries Are Free At Peddler's Stall",
+      "code": "GD9B-ZALJ+CM9B-YA5E"
+    },
+    {
+      "desc": "Tries Are 1 Gem At Peddler's Stall",
+      "code": "GH9B-ZALJ+B59B-YA5E"
+    },
+    {
+      "desc": "Tries Are 3 Gems At Peddler's Stall",
+      "code": "GS9B-ZALJ+A59B-YA5E"
+    },
+    {
+      "desc": "Wishes Are Free At Peddler's Stall",
+      "code": "GD9B-ZAPC+E59B-YA7W"
+    },
+    {
+      "desc": "Wishes Are 1 Gem At Peddler's Stall",
+      "code": "GH9B-ZAPC+EM9B-YA7W"
+    },
+    {
+      "desc": "Wishes Are 3 Gems At Peddler's Stall",
+      "code": "GS9B-ZAPC+DM9B-YA7W"
+    },
+    {
+      "desc": "Wishes Are 5 Gems At Peddler's Stall",
+      "code": "G19B-ZAPC+CM9B-YA7W"
+    },
+    {
+      "desc": "Wishes Are 7 Gems At Peddler's Stall",
+      "code": "G99B-ZAPC+BM9B-YA7W"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "FFEFFA:0003"
+    },
+    {
+      "desc": "Set Infinite Lives (9)",
+      "code": "FF7E3C:0039"
+    },
+    {
+      "desc": "Set Infinite Apples (20)",
+      "code": "FFEFE0:0032"
+    },
+    {
+      "desc": "Set Infinite Gems (20)",
+      "code": "FFEFE2:0032"
+    },
+    {
+      "desc": "Infinite Genie Bonus Icons",
+      "code": "FFF002:0009"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "FFF0F2:0080"
+    },
+    {
+      "desc": "Stage Select",
+      "code": "FF7E26:0001"
+    },
+    {
+      "desc": "Enable Cheat Mode (Invincibility)",
+      "code": "FF7E20:00FF"
+    },
+    {
+      "desc": "Enable Freezability Mode",
+      "code": "FF7E24:00FF"
+    },
+    {
+      "desc": "Enable Map View Mode",
+      "code": "FF7272:00FF"
+    },
+    {
+      "desc": "Switch F/X On For Levitate Jump",
+      "code": "FF7E5A:0080"
+    },
+    {
+      "desc": "Hyper Mode (Sky)",
+      "code": "FFF09E:0000"
+    },
+    {
+      "desc": "Disable Death",
+      "code": "FFF0E6:0000"
+    },
+    {
+      "desc": "Level Skip (Abu Version)",
+      "code": "FFF0E8:0020"
+    },
+    {
+      "desc": "Character Modifier",
+      "code": "FFF172:00BE"
+    },
+    {
+      "desc": "Regional Lockout Bypass",
+      "code": "EAAT-AL1T"
+    },
+    {
+      "desc": "Regional Lockout Bypass",
+      "code": "EAAT-AY1T"
+    },
+    {
+      "desc": "Pause the game and press A to skip levels",
+      "code": "FF7279:0036"
+    },
+    {
+      "desc": "Jump higher",
+      "code": "D4RB-YAC6"
+    },
+    {
+      "desc": "Jump much higher",
+      "code": "CLRB-YAC6"
+    },
+    {
+      "desc": "Access the Debug menu by pressing A in the Option menu",
+      "code": "D2GB-0A5C"
+    },
+    {
+      "desc": "Skip to the next level by pausing the game and pressing A",
+      "code": "ABAT-B93L"
+    },
+    {
+      "desc": "Infinite Controllable Jump",
+      "code": "ACMV-YACL"
+    },
+    {
+      "desc": "Press B in the Options Menu for Debug Menu",
+      "code": "FF7279:0050"
+    },
+    {
+      "desc": "Enable Debug Infinite Health",
+      "code": "FF7E20:00FF"
+    },
+    {
+      "desc": "Disable Debug Infinite Health",
+      "code": "FF7E20:0000"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "ADWV-YA26"
+    },
+    {
+      "desc": "Blink 2x longer after being hit",
+      "code": "LACB-0ABC"
+    },
+    {
+      "desc": "Blink 3x longer after being hit",
+      "code": "SACB-0ABC"
+    },
+    {
+      "desc": "High Jump with slower descent",
+      "code": "FCRB-YAC6+NCRB-YABL"
+    },
+    {
+      "desc": "Super Jump with slower descent",
+      "code": "DWRB-YAC6+NCRB-YABL"
+    },
+    {
+      "desc": "Moon Jump with slower descent",
+      "code": "CLRB-YAC6+NCRB-YABL"
+    }
+  ],
+  "Altered Beast (USA, Europe)": [
+    {
+      "desc": "One hit kill for enemys",
+      "code": "AVVA-AAEG"
+    },
+    {
+      "desc": "Hard mode",
+      "code": "MBGA-AAYR"
+    },
+    {
+      "desc": "Can't be hurt",
+      "code": "D6WA-AAGT"
+    },
+    {
+      "desc": "Get hurt to change and flash for a sec",
+      "code": "SE1A-AATE"
+    },
+    {
+      "desc": "Get hurt and you flash for a sec",
+      "code": "RE1A-AATE"
+    },
+    {
+      "desc": "MASTER CODE--MUST BE ENTERED",
+      "code": "DCXA-AA22"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "FT1T-AA5L"
+    },
+    {
+      "desc": "Start with 1 life",
+      "code": "BWXA-ACCT"
+    },
+    {
+      "desc": "Start with 5 lives",
+      "code": "BWXA-ALCT"
+    },
+    {
+      "desc": "Protection against enemy hits (no power lost from power gauge)",
+      "code": "ATWA-AA8R"
+    },
+    {
+      "desc": "First spirit ball transforms you into an Altered Beast",
+      "code": "PA5T-BNT2"
+    },
+    {
+      "desc": "Makes Aggar easier to defeat",
+      "code": "AEFA-AABW"
+    },
+    {
+      "desc": "Most Altered Beast punches are more powerful against bosses",
+      "code": "AA9A-ALN8"
+    },
+    {
+      "desc": "Most Altered Beast attacks are more powerful against bosses.",
+      "code": "AA9A-ALPG"
+    },
+    {
+      "desc": "Makes most enemies easier to defeat",
+      "code": "HTWT-B6KG"
+    },
+    {
+      "desc": "Makes Neff easier to defeat",
+      "code": "A2TA-AAGC"
+    },
+    {
+      "desc": "Makes Crocodile Worm easier to defeat",
+      "code": "AYMT-AAHN"
+    },
+    {
+      "desc": "Can't be hurt",
+      "code": "AEWA-AAN8"
+    },
+    {
+      "desc": "Always flash",
+      "code": "AA0A-AA3C"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "FFCF10:0C00"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FFB120:030C"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AJ1T-AA5L"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "AJWA-AA8Y"
+    },
+    {
+      "desc": "Transform In Beast Right Now",
+      "code": "DT2T-AN5W"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "FFD002:0002"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "RYWA-A6V8"
+    },
+    {
+      "desc": "Skip Opening Credit Screens",
+      "code": "AC7A-AA9R"
+    },
+    {
+      "desc": "Fast Movement (Glitchy Character)",
+      "code": "ABBT-AAZT"
+    },
+    {
+      "desc": "Cannot Be Hurt",
+      "code": "AJWA-APGR"
+    },
+    {
+      "desc": "You Die One Time",
+      "code": "AJWA-AAGT"
+    },
+    {
+      "desc": "Push Down And The B Button To Transform",
+      "code": "MA5A-AAFT"
+    },
+    {
+      "desc": "Invincible",
+      "code": "ATWT-A07G"
+    },
+    {
+      "desc": "Invincibility (Can Lose Health But Cannot Be Touched)",
+      "code": "H20A-AA42"
+    },
+    {
+      "desc": "Untouchable",
+      "code": "9AWA-APPC+KAWA-AEAA"
+    },
+    {
+      "desc": "Almost Invulnerable",
+      "code": "H20A-AA42"
+    },
+    {
+      "desc": "Infinite Lives (Player 1)",
+      "code": "FFB120:0003"
+    },
+    {
+      "desc": "Infinite Lives (Player 2)",
+      "code": "FFB126:0003"
+    },
+    {
+      "desc": "Infinite Health (Player 1)",
+      "code": "FFCF10:000C"
+    },
+    {
+      "desc": "Infinite Health (Player 2)",
+      "code": "FFCF50:007F"
+    },
+    {
+      "desc": "Invincibility (Player 1)",
+      "code": "FFD034:0080"
+    },
+    {
+      "desc": "Invincibility (Player 2)",
+      "code": "FFD074:0080"
+    },
+    {
+      "desc": "Set Power Up Modifier (Player 1)",
+      "code": "FFD02A:0000"
+    },
+    {
+      "desc": "Set Power Up Modifier (Player 2)",
+      "code": "FFD06A:0000"
+    },
+    {
+      "desc": "Stage Select",
+      "code": "FFFE14:0000"
+    },
+    {
+      "desc": "Untouchable (Alternate)",
+      "code": "RYWA-A6TW+RYVT-A60G"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "FFCF03:0000"
+    },
+    {
+      "desc": "1 Hit Kill Boss Neff",
+      "code": "FFE365:0000"
+    },
+    {
+      "desc": "1 Hit Kill Boss Neff",
+      "code": "A2WT-AA3R"
+    },
+    {
+      "desc": "Almost Invulnerable",
+      "code": "002C58:603E"
+    },
+    {
+      "desc": "Infinite Lives (Player 1)",
+      "code": "FFB120:03"
+    },
+    {
+      "desc": "Infinite Lives (Player 2)",
+      "code": "FFB126:03"
+    },
+    {
+      "desc": "Infinite Health (Player 1)",
+      "code": "FFCF10:0C"
+    },
+    {
+      "desc": "Infinite Health (Player 2)",
+      "code": "FFCF50:7F"
+    },
+    {
+      "desc": "Invincibility (Player 1)",
+      "code": "FFD034:80"
+    },
+    {
+      "desc": "Invincibility (Player 2)",
+      "code": "FFD074:80"
+    }
+  ],
+  "Golden Axe II (World)": [
+    {
+      "desc": "Player 1 starts with 1 life",
+      "code": "AEBT-AADN"
+    },
+    {
+      "desc": "Player 1 starts with 2 lives",
+      "code": "AJBT-AADN"
+    },
+    {
+      "desc": "Player 1 starts with 5 lives",
+      "code": "AYBT-AADN"
+    },
+    {
+      "desc": "Player 1 starts with 7 lives",
+      "code": "A6BT-AADN"
+    },
+    {
+      "desc": "Player 1 starts with 9 lives",
+      "code": "BEBT-AADN"
+    },
+    {
+      "desc": "Player 2 starts with 1 life",
+      "code": "AEBT-AAE2"
+    },
+    {
+      "desc": "Player 2 starts with 2 lives",
+      "code": "AJBT-AAE2"
+    },
+    {
+      "desc": "Player 2 starts with 5 lives",
+      "code": "AYBT-AAE2"
+    },
+    {
+      "desc": "Player 2 starts with 7 lives",
+      "code": "A6BT-AAE2"
+    },
+    {
+      "desc": "Player 2 starts with 9 lives",
+      "code": "BEBT-AAE2"
+    },
+    {
+      "desc": "Both players continue with 1 life",
+      "code": "AGXA-AADR"
+    },
+    {
+      "desc": "Both players continue with 2 lives",
+      "code": "ALXA-AADR"
+    },
+    {
+      "desc": "Both players continue with 5 lives",
+      "code": "A0XA-AADR"
+    },
+    {
+      "desc": "Both players continue with 7 lives",
+      "code": "A8XA-AADR"
+    },
+    {
+      "desc": "Both players continue with 9 lives",
+      "code": "BGXA-AADR"
+    },
+    {
+      "desc": "Infinite lives (both players)",
+      "code": "BTJA-AA48"
+    },
+    {
+      "desc": "Each magic book is worth 2",
+      "code": "FEPA-BJYA"
+    },
+    {
+      "desc": "Each magic book is worth 3",
+      "code": "FEPA-BNYA"
+    },
+    {
+      "desc": "Lives",
+      "code": "FF0880:0003"
+    },
+    {
+      "desc": "Magic Bottles",
+      "code": "FF0882:0005"
+    },
+    {
+      "desc": "Energy",
+      "code": "FF0882:0003"
+    },
+    {
+      "desc": "Enemies Don't Attack Player 1",
+      "code": "FF0888:0002"
+    },
+    {
+      "desc": "Infinite Lives Player 2",
+      "code": "FF0924:0003"
+    },
+    {
+      "desc": "Infinite Energy Player 2",
+      "code": "FF08E2:0003"
+    },
+    {
+      "desc": "Infinite Magic Player 2",
+      "code": "FF0926:0008"
+    },
+    {
+      "desc": "Enemies Don't Attack Player 2",
+      "code": "FF092C:0002"
+    },
+    {
+      "desc": "Lizards Never run when hit",
+      "code": "FF0CF8:0000"
+    },
+    {
+      "desc": "Lizards Never run when sleeping",
+      "code": "FF0CFA:090F"
+    },
+    {
+      "desc": "Lizards Never run when hit",
+      "code": "AJNA-AA5L"
+    },
+    {
+      "desc": "Lizards Never run when sleeping",
+      "code": "ABXA-AAHL"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "ZAJA-BGW8"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "9X1A-BGA0+AS1A-AAA2+991A-AAA4+H51A-ATA6+R11A-A6T8"
+    },
+    {
+      "desc": "Max And Infinite Fighter Magic",
+      "code": "A0WA-BE5L+AJFT-AA30"
+    },
+    {
+      "desc": "Max And Infinite Dwarf Magic",
+      "code": "AWWA-BE5L+AJFT-AA30"
+    },
+    {
+      "desc": "Max And Infinite Amazon Magic",
+      "code": "BCWA-BE5L+AJFT-AA30"
+    },
+    {
+      "desc": "Infinite Magic",
+      "code": "AJFT-AA30"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "RYNA-A6TA+RYNT-A61R+R11A-A6T0"
+    },
+    {
+      "desc": "some enemies die when knock down",
+      "code": "AJSA-AAGC"
+    },
+    {
+      "desc": "hit enemies anywhere",
+      "code": "CAMA-AA46"
+    },
+    {
+      "desc": "enemies dont fight back",
+      "code": "NAKA-AA36"
+    },
+    {
+      "desc": "untouchable",
+      "code": "ATMT-AS5T+AANA-AAFA"
+    },
+    {
+      "desc": "kill enemies with one hit",
+      "code": "S2SA-AAEE"
+    },
+    {
+      "desc": "magic books come out of enemies",
+      "code": "HFTA-BAAC"
+    },
+    {
+      "desc": "rush attack doesn't make you bounce back",
+      "code": "5JGA-AARC"
+    },
+    {
+      "desc": "One hit kills for all enemise",
+      "code": "AAMA-AAEW"
+    },
+    {
+      "desc": "no grabbing",
+      "code": "AAPA-AAG8"
+    },
+    {
+      "desc": "enemies dont fight back",
+      "code": "AAKA-AA38"
+    },
+    {
+      "desc": "Lets You Use Any Level Magic In The Game",
+      "code": "FD0T-BJ0J"
+    },
+    {
+      "desc": "Enemies And Bosses Don't Fight Back",
+      "code": "AACA-AMDA"
+    },
+    {
+      "desc": "Enemies Die When Knocked Down",
+      "code": "2ESA-AARE"
+    },
+    {
+      "desc": "Almost Invincible",
+      "code": "ATMT-AS5T"
+    },
+    {
+      "desc": "Infinite Lives (Use On A Real PAR)",
+      "code": "FF0880:0002"
+    },
+    {
+      "desc": "Always Keep Five Bombs (Use On A Real PAR)",
+      "code": "FF0882:0005"
+    },
+    {
+      "desc": "Infinite Health (Player 1)",
+      "code": "FF083E:0005"
+    },
+    {
+      "desc": "Infinite Health (Player 2)",
+      "code": "FF08E2:0005"
+    },
+    {
+      "desc": "Invincible/Enemies Won't Attack (Player 1)",
+      "code": "FF0888:0063"
+    },
+    {
+      "desc": "Invincibility (Player 1)",
+      "code": "FF0840:0064"
+    },
+    {
+      "desc": "Invincibility (Player 2)",
+      "code": "FF08E4:0064"
+    },
+    {
+      "desc": "Set Max./Infinite Magic (Player 1)",
+      "code": "FF0882:0005"
+    },
+    {
+      "desc": "Set Max./Infinite Magic (Player 2)",
+      "code": "FF0926:0000"
+    },
+    {
+      "desc": "Set Max. Magic Attack (Player 1)",
+      "code": "FF088C:0005"
+    },
+    {
+      "desc": "Set Max. Magic Attack (Player 2)",
+      "code": "FF0930:0000"
+    },
+    {
+      "desc": "Infinite Credits",
+      "code": "FF07E8:0005"
+    },
+    {
+      "desc": "Stage Select",
+      "code": "FF07E6:0000"
+    },
+    {
+      "desc": "Battle Modifier (Duel Mode)",
+      "code": "FF07CA:0000"
+    },
+    {
+      "desc": "Kill Every Enemy Or Boss With One Knockdown",
+      "code": "FF0B72:0000+FF0986:0000+FF0A2A:0000+FF0ACE:0000+FF0AD4:0000+FF0C16:0000"
+    },
+    {
+      "desc": "enemies have on a different color",
+      "code": "RC2A-A04R"
+    },
+    {
+      "desc": "enemies don't fight back",
+      "code": "AAKA-AAB6"
+    },
+    {
+      "desc": "you die when you get knock down",
+      "code": "AAHA-AAAA"
+    },
+    {
+      "desc": "jump auto attack",
+      "code": "AAGA-AACC"
+    },
+    {
+      "desc": "Untouchable",
+      "code": "AADA-AAAY"
+    },
+    {
+      "desc": "Can't run anywhere",
+      "code": "AAKA-AAA4"
+    },
+    {
+      "desc": "some enemies,dragons,spells are in a different color",
+      "code": "AAPA-AA96"
+    },
+    {
+      "desc": "you and enemies can walk off screen",
+      "code": "AAPA-AA9T"
+    },
+    {
+      "desc": "Freeze Time Continue",
+      "code": "FF1FC5:0009"
+    },
+    {
+      "desc": "Freeze Time Continue",
+      "code": "ALXA-AA9L"
+    },
+    {
+      "desc": "Start with 9 credits",
+      "code": "BHCT-AABG"
+    },
+    {
+      "desc": "Start each life with more energy",
+      "code": "AAJA-BYV8"
+    },
+    {
+      "desc": "Start each life with much more energy",
+      "code": "AAJA-BAV8"
+    },
+    {
+      "desc": "Invincibility against all physical attacks (can walk thru enemies)",
+      "code": "RYMT-A6XY"
+    },
+    {
+      "desc": "Enabled Level Select",
+      "code": "FF0770:0002"
+    },
+    {
+      "desc": "Enabled Level Select",
+      "code": "AMCT-AA70"
+    },
+    {
+      "desc": "Life Guage has more Health",
+      "code": "BJDT-AAEP"
+    },
+    {
+      "desc": "Infinite Energy P1",
+      "code": "FF0883:03"
+    },
+    {
+      "desc": "Infinite Lives (Player 1)",
+      "code": "FF0880:03"
+    },
+    {
+      "desc": "Infinite Lives (Player 2)",
+      "code": "FF0924:03"
+    },
+    {
+      "desc": "Infinite Health (Player 1)",
+      "code": "FF083E:05"
+    },
+    {
+      "desc": "Infinite Health (Player 2)",
+      "code": "FF08E2:05"
+    },
+    {
+      "desc": "Invincible/Enemies Won't Attack (Player 1)",
+      "code": "FF0889:63"
+    },
+    {
+      "desc": "Invincibility (Player 1)",
+      "code": "FF0841:64"
+    },
+    {
+      "desc": "Invincibility (Player 2)",
+      "code": "FF08E5:64"
+    },
+    {
+      "desc": "Infinite Credits",
+      "code": "FF07E8:05"
+    },
+    {
+      "desc": "Kill Every Enemy Or Boss With One Knockdown",
+      "code": "FF0B72:00+FF0986:00+FF0A2A:00+FF0ACE:00+FF0AD4:00+FF0C16:00"
+    },
+    {
+      "desc": "Enemies Don't Attack Player 2",
+      "code": "FF092D:02"
+    }
+  ],
+  "Great Circus Mystery Starring Mickey & Minnie, The (USA)": [
+    {
+      "desc": "Master Code",
+      "code": "RGAT-A6V4"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FALA-CYX2"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "E3MA-CA4G+RYXT-C6YN"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AALA-CAD4"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "ABMA-CACW"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "RZMA-C6WN"
+    },
+    {
+      "desc": "Infinite Energy P1",
+      "code": "FF81DE:0003"
+    },
+    {
+      "desc": "Infinite Lives P1",
+      "code": "FF8272:000A"
+    },
+    {
+      "desc": "Infinite Energy P2",
+      "code": "FF835E:0003"
+    },
+    {
+      "desc": "Infinite Lives P2",
+      "code": "FF83F2:000A"
+    },
+    {
+      "desc": "Infinite Special Power",
+      "code": "AJRA-CA4C+AJRT-CA7W"
+    },
+    {
+      "desc": "1 Hit and Invincible",
+      "code": "FF825A:0010"
+    },
+    {
+      "desc": "Infinite Hearts",
+      "code": "R02T-A6V2+AVMA-CA4T"
+    },
+    {
+      "desc": "Infinite Coins",
+      "code": "AKJA-CA4J"
+    },
+    {
+      "desc": "1 Hit Kill Enemies/Bosses",
+      "code": "ABMA-CAF8"
+    },
+    {
+      "desc": "Infinite Energy P1",
+      "code": "FF81DE:03"
+    },
+    {
+      "desc": "Infinite Lives P1",
+      "code": "FF8273:0A"
+    },
+    {
+      "desc": "Infinite Energy P2",
+      "code": "FF835E:03"
+    },
+    {
+      "desc": "Infinite Lives P2",
+      "code": "FF83F3:0A"
+    }
+  ],
+  "Kid Chameleon (USA, Europe)": [
+    {
+      "desc": "High Jump (May Need To Switch Off In Some Areas If You Get Stuck)",
+      "code": "AC2T-BAHE"
+    },
+    {
+      "desc": "Super High Jump (May Need To Switch Off In Some areas If You Get Stuck)",
+      "code": "AC2T-AWHE"
+    },
+    {
+      "desc": "Start timer at 1:00 [instead of 3:00]",
+      "code": "AFWT-AAB6"
+    },
+    {
+      "desc": "Start timer at 5:00",
+      "code": "AZWT-AAB6"
+    },
+    {
+      "desc": "Start timer at 7:00",
+      "code": "A7WT-AAB6"
+    },
+    {
+      "desc": "Start timer at 9:00",
+      "code": "BFWT-AAB6"
+    },
+    {
+      "desc": "Infinite time",
+      "code": "H49A-AA7J"
+    },
+    {
+      "desc": "Each diamond worth 2",
+      "code": "SD9A-BJV0"
+    },
+    {
+      "desc": "Each diamond worth 4",
+      "code": "SD9A-BTV0"
+    },
+    {
+      "desc": "Each diamond worth 6",
+      "code": "SD9A-B2V0"
+    },
+    {
+      "desc": "Each diamond worth 8",
+      "code": "SD9A-BAV0"
+    },
+    {
+      "desc": "Start with 1 life instead of 3",
+      "code": "AEDA-AAE2"
+    },
+    {
+      "desc": "Start with 6 lives",
+      "code": "A2DA-AAE2"
+    },
+    {
+      "desc": "Start with 9 lives",
+      "code": "BEDA-AAE2"
+    },
+    {
+      "desc": "Start with 15 lives",
+      "code": "B6DA-AAE2"
+    },
+    {
+      "desc": "Start with 25 lives",
+      "code": "DEDA-AAE2"
+    },
+    {
+      "desc": "Start with 50 lives",
+      "code": "GJDA-AAE2"
+    },
+    {
+      "desc": "Start with 99 lives",
+      "code": "NNDA-AAE2"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "A46A-AA32"
+    },
+    {
+      "desc": "Almost infinite hit points",
+      "code": "A45T-AA3Y"
+    },
+    {
+      "desc": "Each clock worth 8:00 instead of 3:00 (up to the max time of 9:59)",
+      "code": "J99T-BA1C"
+    },
+    {
+      "desc": "Don't lose transformation when you lose all your hit points",
+      "code": "AL5T-AA6Y"
+    },
+    {
+      "desc": "Infinite continues",
+      "code": "AMKT-AA76"
+    },
+    {
+      "desc": "Start on Blue Lake Woods II",
+      "code": "AEBT-JAB4"
+    },
+    {
+      "desc": "Start on Highwater Pass I",
+      "code": "AJBT-JAB4"
+    },
+    {
+      "desc": "Start on Highwater Pass II",
+      "code": "ANBT-JAB4"
+    },
+    {
+      "desc": "Start on Under Skull Mountain I",
+      "code": "ATBT-JAB4"
+    },
+    {
+      "desc": "Start on Under Skull Mountain II",
+      "code": "AYBT-JAB4"
+    },
+    {
+      "desc": "Start on Under Skull Mountain III",
+      "code": "A2BT-JAB4"
+    },
+    {
+      "desc": "Start on Isle of the Lion Lord",
+      "code": "A6BT-JAB4"
+    },
+    {
+      "desc": "Start on Hills of the Warrior I",
+      "code": "BABT-JAB4"
+    },
+    {
+      "desc": "Start on Hills of the Warrior II",
+      "code": "BEBT-JAB4"
+    },
+    {
+      "desc": "Start on Windy City",
+      "code": "BJBT-JAB4"
+    },
+    {
+      "desc": "Start on Sinister Sewers",
+      "code": "BNBT-JAB4"
+    },
+    {
+      "desc": "Start on The Crystal Crags I",
+      "code": "BTBT-JAB4"
+    },
+    {
+      "desc": "Start on The Crystal Crags II",
+      "code": "BYBT-JAB4"
+    },
+    {
+      "desc": "Start on Dragonspike",
+      "code": "B2BT-JAB4"
+    },
+    {
+      "desc": "Start on Stormwalk Mountain",
+      "code": "B6BT-JAB4"
+    },
+    {
+      "desc": "Start on Shishkaboss",
+      "code": "CABT-JAB4"
+    },
+    {
+      "desc": "Start on The Whispering Woods I",
+      "code": "CEBT-JAB4"
+    },
+    {
+      "desc": "Start on The Whispering Woods II",
+      "code": "CJBT-JAB4"
+    },
+    {
+      "desc": "Start on Devil's Marsh I",
+      "code": "CNBT-JAB4"
+    },
+    {
+      "desc": "Start on Devil's Marsh II",
+      "code": "CTBT-JAB4"
+    },
+    {
+      "desc": "Start on Knight Isle",
+      "code": "CYBT-JAB4"
+    },
+    {
+      "desc": "Start on Whale Grotto",
+      "code": "C2BT-JAB4"
+    },
+    {
+      "desc": "Start on Hoverboard Beach",
+      "code": "C6BT-JAB4"
+    },
+    {
+      "desc": "Start on Pyramids of Peril",
+      "code": "DABT-JAB4"
+    },
+    {
+      "desc": "Start on Madmaze Mountain",
+      "code": "DEBT-JAB4"
+    },
+    {
+      "desc": "Start on The Deadly Skyscrapers",
+      "code": "DJBT-JAB4"
+    },
+    {
+      "desc": "Start on Skydragon Castle I",
+      "code": "DNBT-JAB4"
+    },
+    {
+      "desc": "Start on Skydragon Castle II",
+      "code": "DTBT-JAB4"
+    },
+    {
+      "desc": "Start on Coral Blade Grotto",
+      "code": "DYBT-JAB4"
+    },
+    {
+      "desc": "Start on Boomerang Bosses",
+      "code": "D2BT-JAB4"
+    },
+    {
+      "desc": "Start on Woods of Despair I",
+      "code": "D6BT-JAB4"
+    },
+    {
+      "desc": "Start on Woods of Despair II",
+      "code": "EABT-JAB4"
+    },
+    {
+      "desc": "Start on Forced Entry",
+      "code": "EEBT-JAB4"
+    },
+    {
+      "desc": "Start on The Cliffs of Illusion",
+      "code": "EJBT-JAB4"
+    },
+    {
+      "desc": "Start on The Lion's Den",
+      "code": "ENBT-JAB4"
+    },
+    {
+      "desc": "Start on The Wind Castles I",
+      "code": "ETBT-JAB4"
+    },
+    {
+      "desc": "Start on The Wind Castles II",
+      "code": "EYBT-JAB4"
+    },
+    {
+      "desc": "Start on Blizzard Mountaon",
+      "code": "E2BT-JAB4"
+    },
+    {
+      "desc": "Start on Caves of Ice",
+      "code": "E6BT-JAB4"
+    },
+    {
+      "desc": "Start on The Nightmare Peaks I",
+      "code": "FABT-JAB4"
+    },
+    {
+      "desc": "Start on The Nightmare Peaks II",
+      "code": "FEBT-JAB4"
+    },
+    {
+      "desc": "Start on Bagel Brothers",
+      "code": "FJBT-JAB4"
+    },
+    {
+      "desc": "Start on Diamond Edge",
+      "code": "FNBT-JAB4"
+    },
+    {
+      "desc": "Start on The Hills Have Eyes",
+      "code": "FTBT-JAB4"
+    },
+    {
+      "desc": "Start on The Secret of the Rocks",
+      "code": "FYBT-JAB4"
+    },
+    {
+      "desc": "Start on Ice God's Vengeance",
+      "code": "F2BT-JAB4"
+    },
+    {
+      "desc": "Start on Beneath the Twisted Hills",
+      "code": "F6BT-JAB4"
+    },
+    {
+      "desc": "Start on Alien Isle",
+      "code": "GABT-JAB4"
+    },
+    {
+      "desc": "Start on The Land Below",
+      "code": "GEBT-JAB4"
+    },
+    {
+      "desc": "Start on The Final Marathon",
+      "code": "GJBT-JAB4"
+    },
+    {
+      "desc": "Start on Plethora",
+      "code": "GNBT-JAB4"
+    },
+    {
+      "desc": "Start on The Pinnacle",
+      "code": "GTBT-JAB4"
+    },
+    {
+      "desc": "Start on The Hidden Canyon",
+      "code": "GYBT-JAB4"
+    },
+    {
+      "desc": "Start on The Caged Beasts",
+      "code": "G2BT-JAB4"
+    },
+    {
+      "desc": "Start on The Crab Cove",
+      "code": "G6BT-JAB4"
+    },
+    {
+      "desc": "Start on The Crypt",
+      "code": "HABT-JAB4"
+    },
+    {
+      "desc": "Start on The Forbidden Tombs",
+      "code": "HEBT-JAB4"
+    },
+    {
+      "desc": "Start on The Stairway to Oblivion",
+      "code": "HJBT-JAB4"
+    },
+    {
+      "desc": "Start on The Valley of Life",
+      "code": "HNBT-JAB4"
+    },
+    {
+      "desc": "Start on The Black Pit",
+      "code": "HTBT-JAB4"
+    },
+    {
+      "desc": "Start on The Frosty Doom",
+      "code": "HYBT-JAB4"
+    },
+    {
+      "desc": "Start on The Bloody Swamp",
+      "code": "H2BT-JAB4"
+    },
+    {
+      "desc": "Start on The Scorpion Isle",
+      "code": "H6BT-JAB4"
+    },
+    {
+      "desc": "Start on The Towers of Blood",
+      "code": "JABT-JAB4"
+    },
+    {
+      "desc": "Start on The Alien Twilight",
+      "code": "JJBT-JAB4"
+    },
+    {
+      "desc": "Start on The Tunnels Beneath the Woods",
+      "code": "JNBT-JAB4"
+    },
+    {
+      "desc": "Start on Hills of Forever",
+      "code": "JTBT-JAB4"
+    },
+    {
+      "desc": "Start on Monster Island",
+      "code": "JYBT-JAB4"
+    },
+    {
+      "desc": "Start on The Shimmering Caves",
+      "code": "J2BT-JAB4"
+    },
+    {
+      "desc": "Start on The Sky Fortress",
+      "code": "KABT-JAB4"
+    },
+    {
+      "desc": "Start on Elsewhere",
+      "code": "KEBT-JAB4"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AC6A-AAB4"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "AC5T-AAB0"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "848A-AR4J"
+    },
+    {
+      "desc": "Diamond Powers (Circle Of Doom, Samurai Haze, Invulnerability, Circle Of Death, Mini-Snake, Slashing Rain) Require No Diamonds Instead Of 20",
+      "code": "BX5A-GA6T"
+    },
+    {
+      "desc": "All Helmets Transform You Into EyeClops",
+      "code": "9W6T-BCJ4+AW6T-AAA6"
+    },
+    {
+      "desc": "All Helmets Transform You Into Skycutter",
+      "code": "9W6T-BCJ4+AG6T-AAA6"
+    },
+    {
+      "desc": "All Helmets Transform You Into Cyclone",
+      "code": "9W6T-BCJ4+AL6T-AAA6"
+    },
+    {
+      "desc": "All Helmets Transform You Into Red Stealth",
+      "code": "9W6T-BCJ4+AR6T-AAA6"
+    },
+    {
+      "desc": "All Helmets Transform You Into Juggernaut",
+      "code": "9W6T-BCJ4+A06T-AAA6"
+    },
+    {
+      "desc": "All Helmets Transform You Into Iron Knight",
+      "code": "9W6T-BCJ4+A46T-AAA6"
+    },
+    {
+      "desc": "All Helmets Transform You Into Berzerker",
+      "code": "9W6T-BCJ4+A86T-AAA6"
+    },
+    {
+      "desc": "All Helmets Transform You Into Maniaxe",
+      "code": "9W6T-BCJ4+BC6T-AAA6"
+    },
+    {
+      "desc": "All Helmets Transform You Into Micromax",
+      "code": "9W6T-BCJ4+BG6T-AAA6"
+    },
+    {
+      "desc": "Helmets Do Not Transform You Into Anything",
+      "code": "9W6T-BCJ4+AC6T-AAA6"
+    },
+    {
+      "desc": "Start On \"The Crypt\" (Easy Mode)",
+      "code": "JEBT-JAB4"
+    },
+    {
+      "desc": "Start On \"The Crypt\" (Hard Mode)",
+      "code": "J6BT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Under Skull Mountain\")",
+      "code": "KJBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Windy City\")",
+      "code": "KNBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Crystal Crags II\")",
+      "code": "KTBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Whispering Woods II\")",
+      "code": "KYBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Devils Marsh\")",
+      "code": "K2BT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Hoverboard Beach\")",
+      "code": "K6BT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Pyramids Of Peril\")",
+      "code": "LABT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Coral Blade Grotto\")",
+      "code": "LEBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Stairway To Oblivion\")",
+      "code": "LJBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Woods of Despair II\")",
+      "code": "LNBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Cliffs Of Illusion\")",
+      "code": "LTBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Valley Of Life\")",
+      "code": "LYBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Wind Castles II\")",
+      "code": "L2BT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Caves Of Ice\")",
+      "code": "L6BT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Nightmare Peaks\")",
+      "code": "MABT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Bloody Swamp\")",
+      "code": "MEBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"???\")",
+      "code": "MJBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Towers Of Blood\")",
+      "code": "MNBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Scorpion Isle\")",
+      "code": "MTBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Secrets In The Rocks\")",
+      "code": "MYBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Alien Twilight\")",
+      "code": "M2BT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"The Crypt\")",
+      "code": "M6BT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Tunnels Beneath The Woods\")",
+      "code": "NABT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Hills Of Forever\")",
+      "code": "NEBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Hills Of Forever II\")",
+      "code": "NJBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Monster Island\")",
+      "code": "NNBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"The Shimmering Caves\")",
+      "code": "NTBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"The Shimmering Caves II\")",
+      "code": "NYBT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Alien Isle\")",
+      "code": "N2BT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Skyfortress\")",
+      "code": "N6BT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"Skyfortress II\")",
+      "code": "PABT-JAB4"
+    },
+    {
+      "desc": "Start On Elsewhere (Before \"???\")",
+      "code": "PEBT-JAB4"
+    },
+    {
+      "desc": "Stop The Timer",
+      "code": "SC9A-AYZJ"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "SC6A-AYV2"
+    },
+    {
+      "desc": "Immunity To Enemies",
+      "code": "SC5T-AYVY"
+    },
+    {
+      "desc": "Diamonds = 7 Points",
+      "code": "SD9A-B6V0"
+    },
+    {
+      "desc": "Level Select Code",
+      "code": "FFFC45:0000"
+    },
+    {
+      "desc": "Maximum Number of Diamonds",
+      "code": "FFFC43:0063"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FFFC3F:0080"
+    },
+    {
+      "desc": "Costume Modifier",
+      "code": "FFFC46:0000"
+    },
+    {
+      "desc": "Moon Jump",
+      "code": "FF250C:00C8"
+    },
+    {
+      "desc": "1 Hit To Be Invincible (White Version)",
+      "code": "FF0EA8:0003"
+    },
+    {
+      "desc": "1 Hit To Be Invincible",
+      "code": "FF0EAC:0008"
+    },
+    {
+      "desc": "Shadow Kid Chameleon",
+      "code": "FF4EBA:0000+FF4EBC:0000+FF4EBE:0000+FF4EC0:0000+FF4EC2:0000+FF4EC4:0000+FF4EC6:0000+FF4EC8:0000+FF4ECA:0000+FF4ECC:0000+FF4ECE:0000+FF4ED0:0000"
+    },
+    {
+      "desc": "All characters can fly. Just jump and start tapping the C button.",
+      "code": "AL2T-AA6T+ALYA-AA3Y"
+    },
+    {
+      "desc": "Most Characters Can Shoot Cannon Balls By Pressing C",
+      "code": "RF5T-A6T8"
+    },
+    {
+      "desc": "Most Characters Get The Ability To Shoot A Ray Gun That Reveals Hidden Blocks (Just Like EyeClops) By Pressing C",
+      "code": "RF5T-A6WJ+BDWA-AA7J"
+    },
+    {
+      "desc": "Always Have The Stronger Diamond Powers (Even If You Don't Have Any Diamonds)",
+      "code": "D55A-GA6T"
+    },
+    {
+      "desc": "High jump.",
+      "code": "AC2T-A2HN"
+    },
+    {
+      "desc": "Ultra High Controllable Jump",
+      "code": "AC2T-ANHN"
+    },
+    {
+      "desc": "High Jump With Slower Moon Descent",
+      "code": "AC2T-A2HN+AC2T-BAHE"
+    },
+    {
+      "desc": "Ultra High Jump With Slower Moon Descent",
+      "code": "AC2T-ANHN+AC2T-BAHE"
+    },
+    {
+      "desc": "Weaker Enemies Die Just By Walking Into Them, Although You Still Take Damage",
+      "code": "HMHA-GA7J"
+    },
+    {
+      "desc": "Walk Across Any Opening Without Falling (Walk On Air)",
+      "code": "ALHA-AA2W"
+    },
+    {
+      "desc": "Walk Across Any Opening Without Falling (Walk On Air) 2",
+      "code": "ALHA-AA2W+AK6A-AA86"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "ACHT-AA8Y+ACHT-AA5C+R06A-A6T2"
+    },
+    {
+      "desc": "Level Select",
+      "code": "AJEA-BA7Y+S5GA-CAD0+AAGA-B69A+21HA-DCSR+JXHA-D39T"
+    },
+    {
+      "desc": "Intro Music / sound effect / DAC/PCM sample modifier",
+      "code": "4JDT-AAE4"
+    },
+    {
+      "desc": "Stop The Timer",
+      "code": "00BEA8:4A78"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00B838:4A78"
+    },
+    {
+      "desc": "Immunity To Enemies",
+      "code": "00B734:4A78"
+    },
+    {
+      "desc": "Diamonds = 7 Points",
+      "code": "00FE36:5E78"
+    },
+    {
+      "desc": "Level Select Code",
+      "code": "FFFC45:00XX"
+    },
+    {
+      "desc": "Moon Jump",
+      "code": "FF250C:C8"
+    }
+  ],
+  "Shinobi III - Return of the Ninja Master (USA)": [
+    {
+      "desc": "Invincibility (Lightning)",
+      "code": "ATRT-EXYL"
+    },
+    {
+      "desc": "Tap B To Jump Repeatly",
+      "code": "82HT-EH0E"
+    },
+    {
+      "desc": "Turbo mode",
+      "code": "PJCT-AA2R"
+    },
+    {
+      "desc": "Fast music",
+      "code": "APET-BAH4"
+    },
+    {
+      "desc": "Infinite energy",
+      "code": "CJSA-EA7G"
+    },
+    {
+      "desc": "Start with 1 life - Normal Difficulty",
+      "code": "CBTT-AAC8"
+    },
+    {
+      "desc": "Start with 11 lives - Normal Difficulty",
+      "code": "CBTT-AYC8"
+    },
+    {
+      "desc": "Start with 50 lives - Normal Difficulty",
+      "code": "CBTT-BCL8"
+    },
+    {
+      "desc": "Start with 99 lives - Normal Difficulty",
+      "code": "CBTT-AG48"
+    },
+    {
+      "desc": "Each throw costs 2 shurikens (7 for Shuriken Burst)",
+      "code": "SE3A-FLZ2"
+    },
+    {
+      "desc": "Start with 99 shurikens",
+      "code": "HVTT-AG5Y"
+    },
+    {
+      "desc": "Get no shurikens on pick up",
+      "code": "RFST-G6ZC"
+    },
+    {
+      "desc": "Get 8 shurikens on pick up",
+      "code": "JBST-HAZC"
+    },
+    {
+      "desc": "Infinite shurikens (7 for Shuriken Burst)",
+      "code": "AT3A-EA72"
+    },
+    {
+      "desc": "Start with no ninjitsu items",
+      "code": "ABTT-BAEE"
+    },
+    {
+      "desc": "Start with 5 ninjitsu items",
+      "code": "AZTT-BAEE"
+    },
+    {
+      "desc": "Start with 9 ninjitsu items",
+      "code": "BFTT-BAEE"
+    },
+    {
+      "desc": "Infinite ninjitsu items",
+      "code": "AT1T-EA4E"
+    },
+    {
+      "desc": "Start with 1 credit instead of 3 - Normal Difficulty",
+      "code": "APTT-AAD6"
+    },
+    {
+      "desc": "Start with 5 credits - Normal Difficulty",
+      "code": "APTT-ALD6"
+    },
+    {
+      "desc": "Start with 9 credits - Normal Difficulty",
+      "code": "APTT-AWD6"
+    },
+    {
+      "desc": "Infinite credits",
+      "code": "AX6T-AA2E"
+    },
+    {
+      "desc": "Start on round 2",
+      "code": "Y2NA-DRJ2+APTT-ACD6"
+    },
+    {
+      "desc": "Start on round 3",
+      "code": "Y2NA-DRJ2+APTT-AED6"
+    },
+    {
+      "desc": "Start on round 4",
+      "code": "Y2NA-DRJ2+APTT-AGD6"
+    },
+    {
+      "desc": "Start on round 5",
+      "code": "Y2NA-DRJ2+APTT-AJD6"
+    },
+    {
+      "desc": "Start on round 6",
+      "code": "Y2NA-DRJ2+APTT-ALD6"
+    },
+    {
+      "desc": "Start on round 7",
+      "code": "Y2NA-DRJ2+APTT-AND6"
+    },
+    {
+      "desc": "Alternate SEGA Logo Intro",
+      "code": "FF001C:0064"
+    },
+    {
+      "desc": "Start on Round Modifier",
+      "code": "FF37A6:0000"
+    },
+    {
+      "desc": "Auto Kill!",
+      "code": "FF415A:002A"
+    },
+    {
+      "desc": "Ghost Shinobi",
+      "code": "FF4164:001F"
+    },
+    {
+      "desc": "Enemies Can't Touch You [No Flashing]",
+      "code": "FF4164:0001"
+    },
+    {
+      "desc": "Infinite Jumps",
+      "code": "FF377C:0000"
+    },
+    {
+      "desc": "Jitsu of Ikazuchi [Lightning] Enabled",
+      "code": "FF415E:0004"
+    },
+    {
+      "desc": "Flaming Shurikens + Invincibility",
+      "code": "FF00E6:0001+FF4164:0001"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "AART-EAFW"
+    },
+    {
+      "desc": "Character Flashes",
+      "code": "AJLT-EALR"
+    },
+    {
+      "desc": "Tap B to Double Jump",
+      "code": "AAKA-EAS6"
+    },
+    {
+      "desc": "Tap B two Times for Super Jump",
+      "code": "AAKA-EBS2"
+    },
+    {
+      "desc": "Hold B For Auto Throw",
+      "code": "AA3T-EAEE+A23T-EA2L"
+    },
+    {
+      "desc": "Start With Power Up Shurikin",
+      "code": "A20T-EAJN"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "G58T-CA5W+AJHT-EA4J"
+    },
+    {
+      "desc": "Start With Max Shurikens",
+      "code": "GANA-DENL+67TT-AGDY"
+    },
+    {
+      "desc": "Get Max Shurikens When You Pickup Some",
+      "code": "RFST-G6ZJ"
+    },
+    {
+      "desc": "Change Shuriken Limit From 799 To 999",
+      "code": "67ST-GGFN"
+    },
+    {
+      "desc": "Shuriken Burst Doesn't Cost Any Shurikens",
+      "code": "AT2T-EA9A"
+    },
+    {
+      "desc": "Region Bypass",
+      "code": "BL0T-AN7T"
+    },
+    {
+      "desc": "Bump Into Enemies To Become Invincible Temporarily",
+      "code": "MASA-EPNN"
+    },
+    {
+      "desc": "Die With One Hit",
+      "code": "C97T-DWS4"
+    },
+    {
+      "desc": "Get Hit Or Bump Into The Enemy And Fall Differently",
+      "code": "EESA-E524"
+    },
+    {
+      "desc": "Slow Mode",
+      "code": "F2YA-ETEL"
+    },
+    {
+      "desc": "Infinite Shurikens",
+      "code": "FF37E2:0032"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "FF37E8:0010"
+    },
+    {
+      "desc": "Have Flaming Shurikens",
+      "code": "FF00E6:0001"
+    },
+    {
+      "desc": "Moon Jump",
+      "code": "FF4160:008B+FF4160:0002"
+    },
+    {
+      "desc": "Always Flashing",
+      "code": "RELT-E6WT"
+    },
+    {
+      "desc": "Hard Mode",
+      "code": "R18T-C6Y8"
+    },
+    {
+      "desc": "Enable 6-Button Mode",
+      "code": "FF000A:0041"
+    },
+    {
+      "desc": "Enable Invincibility Cheat",
+      "code": "FF000B:0052"
+    },
+    {
+      "desc": "Disable Invincibility Cheat",
+      "code": "FF000B:0000"
+    },
+    {
+      "desc": "Enable Infinite Shuriken Cheat",
+      "code": "FF0001:00B0"
+    },
+    {
+      "desc": "Disable Infinite Shuriken Cheat",
+      "code": "FF0001:0000"
+    },
+    {
+      "desc": "All in one Invincibility (No Flashing)",
+      "code": "RYSA-E6T4"
+    },
+    {
+      "desc": "Always Only Use Long Sword",
+      "code": "RY3A-E6Y4"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "RYTT-E6ZA"
+    },
+    {
+      "desc": "Can activate the infinite Shuriken cheat without changing the sound effects. see notes.",
+      "code": "RGFT-A6ZL"
+    },
+    {
+      "desc": "Keep Flaming Shurikens after being Hit",
+      "code": "C2YA-EA8R"
+    },
+    {
+      "desc": "Keep Flaming Shurikens after Dying",
+      "code": "A2CT-EA6N"
+    },
+    {
+      "desc": "Jitsu of Mijin doesn't cost a life",
+      "code": "ATDT-EA5N"
+    },
+    {
+      "desc": "Jump On Any Height",
+      "code": "AJJA-EA3J"
+    },
+    {
+      "desc": "Regular shurikens are 5x stronger",
+      "code": "AZGT-EACY"
+    },
+    {
+      "desc": "Regular shurikens are 30x stronger",
+      "code": "D3GT-EACY"
+    },
+    {
+      "desc": "Jump higher",
+      "code": "AD8A-CEL2"
+    },
+    {
+      "desc": "Enable 6-Button Mode",
+      "code": "AALA-EA36+E23A-EA64"
+    },
+    {
+      "desc": "Enable Alternate Sega Logo Intro",
+      "code": "JBZA-AAC0"
+    },
+    {
+      "desc": "Enable Invincibility Cheat",
+      "code": "42RT-EA72"
+    },
+    {
+      "desc": "Enable Infinite Shuriken Cheat",
+      "code": "ACXA-AA7G+B23A-EA7R+BJ2T-EA7R"
+    },
+    {
+      "desc": "Multi-Jump",
+      "code": "AA4A-EA2N+6T4A-F1TR+REJA-E6YR+3TJA-EA8L"
+    },
+    {
+      "desc": "Regional Lockout Bypass",
+      "code": "BL0T-AA7T"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "A58T-CA62+HTLT-EA4T"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "B2SA-EA7J"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AW2A-AA60"
+    },
+    {
+      "desc": "Infinite Shurikens",
+      "code": "AT3A-EA72+AT2T-EA9A"
+    }
+  ],
+  "Sonic & Knuckles + Sonic The Hedgehog 2 (World)": [
+    {
+      "desc": "Become Super Knuckles with 0 rings",
+      "code": "ABWX-CADG"
+    },
+    {
+      "desc": "Don't Use Up Rings To Maintain Transformation of Super Knuckles",
+      "code": "ABXD-CACA"
+    },
+    {
+      "desc": "Become Super Knuckles With 0 Emeralds",
+      "code": "ABWX-CAC8"
+    },
+    {
+      "desc": "The regular level music plays when Super Knuckles, instead of the Super theme",
+      "code": "ADFW-8AF6"
+    },
+    {
+      "desc": "Infinite Time In Debugger",
+      "code": "RGMD-G6WT"
+    },
+    {
+      "desc": "Rings Worth 4 In Special Stages",
+      "code": "SDSX-FTZW"
+    },
+    {
+      "desc": "Rings Worth 8 In Special Stages",
+      "code": "SDSX-FAZW"
+    },
+    {
+      "desc": "Jump In Midair - Knuckles",
+      "code": "CVWD-CA94+HVWX-DEJT+ABWX-DZ2W+APWX-DP20+AVWX-CR26"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "R0BX-G6WY"
+    },
+    {
+      "desc": "Get Rings From Anywhere",
+      "code": "E23X-CA5E"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "R0LX-G6TL"
+    },
+    {
+      "desc": "A.I. Only Play",
+      "code": "HT6D-AA2J"
+    },
+    {
+      "desc": "Walk Through Walls",
+      "code": "R0GX-C6WY"
+    },
+    {
+      "desc": "Knuckles jumps as high as Sonic (slightly higher than usual)",
+      "code": "TBWD-CNDC"
+    },
+    {
+      "desc": "Alt walk through walls (PAR version)",
+      "code": "FFB03F00FF"
+    },
+    {
+      "desc": "Don't Lose Rings When Hit",
+      "code": "R16D-A6VN"
+    },
+    {
+      "desc": "Walk Through Solid Objects",
+      "code": "RZHD-C6YL"
+    },
+    {
+      "desc": "Walk Through Perfectly Solid Walls",
+      "code": "RZTD-C6W4"
+    },
+    {
+      "desc": "Pause the game and press A for level select menu",
+      "code": "REJD-A60L+FAJD-AAG0"
+    },
+    {
+      "desc": "Pause the game and press A to play special stages",
+      "code": "REJD-A60L+CAJD-AAG0"
+    },
+    {
+      "desc": "Pause the game and press A for level select menu, press B or C for debugger.  See notes.",
+      "code": "REJD-A60L+FAJD-AAG0+5JJX-B92R"
+    },
+    {
+      "desc": "Get rings from anywhere in special/bonus stages. See notes.",
+      "code": "C5TD-EA5W+G5SD-EA6W"
+    },
+    {
+      "desc": "Can run right thru black spikes in special/bonus stages without bouncing back, or losing any rings",
+      "code": "G5SD-EA6W"
+    },
+    {
+      "desc": "Press double jump to turn into Super Knuckles at any time. See notes.",
+      "code": "BBWX-CA5C"
+    },
+    {
+      "desc": "Press double jump to turn into Super Knuckles at any time.  See notes.",
+      "code": "BBWX-CA5C+RZXD-C6WW"
+    },
+    {
+      "desc": "Special/Bonus stages are always accessible. See notes.",
+      "code": "B4LX-CA5E"
+    },
+    {
+      "desc": "Double jump to make Knuckles fly upwards. See notes.",
+      "code": "ABRX-CJC6"
+    },
+    {
+      "desc": "Start on Emerald Hill Zone, Act 2",
+      "code": "RE6D-A6TA+9T6D-BCJC+AE6D-AAAE"
+    },
+    {
+      "desc": "Start on Chemical Plant Zone, Act 1",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-A4AE"
+    },
+    {
+      "desc": "Start on Chemical Plant Zone, Act 2",
+      "code": "RE6D-A6TA+9T6D-BCJC+AE6D-A4AE"
+    },
+    {
+      "desc": "Start on Aquatic Ruin Zone, Act 1",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-A8AE"
+    },
+    {
+      "desc": "Start on Aquatic Ruin Zone, Act 2",
+      "code": "RE6D-A6TA+9T6D-BCJC+AE6D-A8AE"
+    },
+    {
+      "desc": "Start on Casino Night Zone, Act 1",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-A2AE"
+    },
+    {
+      "desc": "Start on Casino Night Zone, Act 2",
+      "code": "RE6D-A6TA+9T6D-BCJC+AE6D-A2AE"
+    },
+    {
+      "desc": "Start on Hill Top Zone, Act 1",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-ARAE"
+    },
+    {
+      "desc": "Start on Hill Top Zone, Act 2",
+      "code": "RE6D-A6TA+9T6D-BCJC+AE6D-ARAE"
+    },
+    {
+      "desc": "Start on Mystic Cave Zone, Act 1",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-A0AE"
+    },
+    {
+      "desc": "Start on Mystic Cave Zone, Act 2",
+      "code": "RE6D-A6TA+9T6D-BCJC+AE6D-A0AE"
+    },
+    {
+      "desc": "Start on Oil Ocean Zone, Act 1",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-AYAE"
+    },
+    {
+      "desc": "Start on Oil Ocean Zone, Act 2",
+      "code": "RE6D-A6TA+9T6D-BCJC+AE6D-AYAE"
+    },
+    {
+      "desc": "Start on Metropolis Zone, Act 1",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-AJAE"
+    },
+    {
+      "desc": "Start on Metropolis Zone, Act 2",
+      "code": "RE6D-A6TA+9T6D-BCJC+AE6D-AJAE"
+    },
+    {
+      "desc": "Start on Metropolis Zone, Act 3",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-ALAE"
+    },
+    {
+      "desc": "Start on Sky Chase Zone",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-BAAE"
+    },
+    {
+      "desc": "Start on Wing Fortress Zone",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-ANAE"
+    },
+    {
+      "desc": "Start on Death Egg Zone",
+      "code": "RE6D-A6TA+9T6D-BCJC+AA6D-A6AE"
+    }
+  ],
+  "Sonic Compilation ~ Sonic Classics (USA, Europe, Korea) (Rev A)": [
+    {
+      "desc": "infinite lives",
+      "code": "GJ6C-CA46"
+    },
+    {
+      "desc": "99 lives",
+      "code": "NN3W-AAAG"
+    },
+    {
+      "desc": "You can't be hurt by enemies or spikes when you collect rings",
+      "code": "ATTA-CABE"
+    },
+    {
+      "desc": "Rings always count up to 999",
+      "code": "AP2A-CAR4"
+    },
+    {
+      "desc": "Grab rings from anywhere",
+      "code": "AP2A-CAPA"
+    },
+    {
+      "desc": "Dont lose rings when Hit",
+      "code": "AWRW-AA3R"
+    },
+    {
+      "desc": "Dont lose rings when Hit",
+      "code": "ATTA-CA92"
+    }
+  ],
+  "Streets of Rage 2 (USA)": [
+    {
+      "desc": "Enemys Keep Punching You Until You Die",
+      "code": "CBJA-AAG0"
+    },
+    {
+      "desc": "Regional lockout bypass code. Master code is necessary",
+      "code": "M3MT-AA7G"
+    },
+    {
+      "desc": "It makes loading of the game faster. Master code is necessary",
+      "code": "E2BT-AA3A"
+    },
+    {
+      "desc": "Master code",
+      "code": "AABT-AA4J"
+    },
+    {
+      "desc": "Skate Looks Like Shiva",
+      "code": "D2HA-EAF2+LTHA-FK74"
+    },
+    {
+      "desc": "Almost Invinciblity",
+      "code": "5BJA-AF24"
+    },
+    {
+      "desc": "Level Skip",
+      "code": "ACAT-AASC"
+    },
+    {
+      "desc": "Enable \"Bare Knuckle 2\" Title Screen",
+      "code": "ABRA-AAAA"
+    },
+    {
+      "desc": "Enemies, Bosses Are Hard To Kill",
+      "code": "A5TT-A92N"
+    },
+    {
+      "desc": "Enemies, Bosses Are Easy To Kill",
+      "code": "A5TT-A42N"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "AK5A-AA86"
+    },
+    {
+      "desc": "The Remake Of Daminmancejin's Code",
+      "code": "RZHT-A6ZW"
+    },
+    {
+      "desc": "Clear Stages With No Enemies",
+      "code": "RDST-ARY8"
+    },
+    {
+      "desc": "Both Players Are Invincible Against Shooting Attacks",
+      "code": "AZFT-AAFA+ABFT-BD7E"
+    },
+    {
+      "desc": "Both Players Are Invincible Against The Flying Bodies Of Enemies",
+      "code": "AZJT-AAB6+ABJT-BD4A"
+    },
+    {
+      "desc": "Both Players Are Invincible Against The Grappling Attacks Of Their Partners",
+      "code": "AZKA-AAF0"
+    },
+    {
+      "desc": "Signal Can't Throw You",
+      "code": "ABYA-CA5Y"
+    },
+    {
+      "desc": "Storm Can't Grapple You",
+      "code": "ADET-CA5N"
+    },
+    {
+      "desc": "Jet Can't Catch You",
+      "code": "ACWT-CA3J"
+    },
+    {
+      "desc": "Ninja Can't Throw You",
+      "code": "AC2A-CA7G"
+    },
+    {
+      "desc": "Zamza Can't Grapple You From The Front Or Behind",
+      "code": "AB7A-CA8R+AB7T-CA2A"
+    },
+    {
+      "desc": "Abadede Can't Grapple You, If The Difficulty Level Is Normal Or Hard, Or Hardest, Or Mania",
+      "code": "AA1T-CA62"
+    },
+    {
+      "desc": "Abadede Can't Grapple You, If The Difficulty Level Is Easy Or Very Easy",
+      "code": "AA2A-CA34"
+    },
+    {
+      "desc": "Raven Can't Grapple You",
+      "code": "ACMT-CA34"
+    },
+    {
+      "desc": "Bear Can't Grapple You",
+      "code": "AAVA-CA72"
+    },
+    {
+      "desc": "Shiva Can't Grapple You",
+      "code": "AD8A-CA2E"
+    },
+    {
+      "desc": "Jet Can't Get Free From Grapple Attacks",
+      "code": "R0XT-C608"
+    },
+    {
+      "desc": "Abadede Can't Get Free From Grapple Attacks From The Front",
+      "code": "RY6A-C6T0"
+    },
+    {
+      "desc": "Abadede Can't Get Free From Grapple Attacks From The Behind",
+      "code": "RY6A-C6XT"
+    },
+    {
+      "desc": "Abadede Can't Get free From Grapple Attacks Using His Counter Attack",
+      "code": "RY2T-C6Z0"
+    },
+    {
+      "desc": "Bear Doesn't Try To Get Free From Grapple Attacks",
+      "code": "RYWT-C6XR"
+    },
+    {
+      "desc": "Robot Can't Get Free From The Front Grapple Attack",
+      "code": "R1WA-C6XG"
+    },
+    {
+      "desc": "Robot Can't Get Free From The Behind Grapple Attack",
+      "code": "R1WA-C6Z6"
+    },
+    {
+      "desc": "Shiva Can't Get Free From The Front Grapple Attack",
+      "code": "RYBA-E6WJ"
+    },
+    {
+      "desc": "Shiva Can't Get Free From The Behind Grapple Attack",
+      "code": "RYBA-E6Y8"
+    },
+    {
+      "desc": "Max's Special #1 (Press A) Doesn't Hurt Him If It Was Successful",
+      "code": "AL2T-AA8L"
+    },
+    {
+      "desc": "Max's Special #2 (press Forwards + A) doesn't hurt him.",
+      "code": "AL3A-AA6N"
+    },
+    {
+      "desc": "Axel's Special #1 (press A) doesn't hurt him if it was successful.",
+      "code": "AL1A-AA80"
+    },
+    {
+      "desc": "Axels Special #2 (press Forwards + A) doesn't hurt him.",
+      "code": "AL1T-AA7L"
+    },
+    {
+      "desc": "Blaze's Special #1 (press A) doesn't hurt her if it was successful.",
+      "code": "AL2A-AA38"
+    },
+    {
+      "desc": "Blazes Special #2 (press Forwards + A) doesn't hurt her.",
+      "code": "AL2T-AA58"
+    },
+    {
+      "desc": "Skate's Special #1 (press A) doesn't hurt him if it was successful.",
+      "code": "AL3A-AA9Y"
+    },
+    {
+      "desc": "Skates Special #2 (press Forwards + A) doesn't hurt him.",
+      "code": "AL3T-AA86"
+    },
+    {
+      "desc": "Player 1 starts with 7 lives",
+      "code": "V30A-BEB6"
+    },
+    {
+      "desc": "Player 1 starts with 9 lives",
+      "code": "LB0A-BEB6"
+    },
+    {
+      "desc": "Player 2 starts with 7 lives",
+      "code": "V30A-BEGL+V45A-BEAC"
+    },
+    {
+      "desc": "Player 2 starts with 9 lives",
+      "code": "LB0A-BEGL+LC5A-BEAC"
+    },
+    {
+      "desc": "Infinite lives (both players)",
+      "code": "AW7T-AA6L"
+    },
+    {
+      "desc": "Apple pick-up restores less energy",
+      "code": "CBFA-AAG6"
+    },
+    {
+      "desc": "Apple pick-up restores more energy",
+      "code": "JKFA-AAG6"
+    },
+    {
+      "desc": "Apple pick-up restores all energy",
+      "code": "PBFA-AAG6"
+    },
+    {
+      "desc": "Apple pick-up worth nothing",
+      "code": "ABFA-AAG6"
+    },
+    {
+      "desc": "Roast chicken pick-up restores less energy",
+      "code": "JBFA-AAH8+PKFA-ANH6+5VFT-AA2C"
+    },
+    {
+      "desc": "Roast chicken pick-up restores much less energy",
+      "code": "EBFA-AAH8+PKFA-ANH6+5VFT-AA2C"
+    },
+    {
+      "desc": "Roast chicken pick-up worth nothing",
+      "code": "ABFA-AAH8+PKFA-ANH6+5VFT-AA2C"
+    },
+    {
+      "desc": "Cash bag worth 5,000 instead of 1,000",
+      "code": "LBFT-AAAT"
+    },
+    {
+      "desc": "Cash bag worth 10,000",
+      "code": "ABFT-ACAT"
+    },
+    {
+      "desc": "Cash bag worth 25,000",
+      "code": "LBFT-AEAT"
+    },
+    {
+      "desc": "Cash bag worth nothing",
+      "code": "ABFT-AAAT"
+    },
+    {
+      "desc": "Gold bar worth 1,000 instead of 5,000",
+      "code": "CBFT-AAAY"
+    },
+    {
+      "desc": "Gold bar worth 10,000",
+      "code": "ABFT-ACAY"
+    },
+    {
+      "desc": "Gold bar worth 20,000",
+      "code": "ABFT-AEAY"
+    },
+    {
+      "desc": "Gold bar worth 50,000",
+      "code": "ABFT-ALAY"
+    },
+    {
+      "desc": "Gold bar worth nothing",
+      "code": "ABFT-AAAY"
+    },
+    {
+      "desc": "1-up worth 2 lives instead of 1",
+      "code": "PKFA-BJ0E"
+    },
+    {
+      "desc": "1-up worth 3 lives",
+      "code": "PKFA-BN0E"
+    },
+    {
+      "desc": "1-up worth nothing",
+      "code": "AKFA-AA8E"
+    },
+    {
+      "desc": "Player 1 starts with 1 continue instead of 2",
+      "code": "AK1A-AAAE"
+    },
+    {
+      "desc": "Player 1 starts with 4 continues",
+      "code": "AZ1A-AAAE"
+    },
+    {
+      "desc": "Player 1 starts with 6 continues",
+      "code": "A71A-AAAE"
+    },
+    {
+      "desc": "Player 1 starts with 8 continues",
+      "code": "BF1A-AAAE"
+    },
+    {
+      "desc": "Player 1 starts with no continues",
+      "code": "AF1A-AAAE"
+    },
+    {
+      "desc": "Player 2 starts with 1 continue instead of 2",
+      "code": "AK1A-AAC4"
+    },
+    {
+      "desc": "Player 2 starts with 4 continues",
+      "code": "AZ1A-AAC4"
+    },
+    {
+      "desc": "Player 2 starts with 6 continues",
+      "code": "A71A-AAC4"
+    },
+    {
+      "desc": "Player 2 starts with 8 continues",
+      "code": "BF1A-AAC4"
+    },
+    {
+      "desc": "Player 2 starts with no continues",
+      "code": "AF1A-AAC4"
+    },
+    {
+      "desc": "Infinite continues (both players)",
+      "code": "AL7T-AA62"
+    },
+    {
+      "desc": "Choose up to 99 players on options screen",
+      "code": "NM6T-AAF0"
+    },
+    {
+      "desc": "Start on stage 2 instead of 1",
+      "code": "AK9A-BA6C"
+    },
+    {
+      "desc": "Start on stage 3",
+      "code": "AV9A-BA6C"
+    },
+    {
+      "desc": "Start on stage 4",
+      "code": "A39A-BA6C"
+    },
+    {
+      "desc": "Start on stage 5",
+      "code": "BB9A-BA6C"
+    },
+    {
+      "desc": "Start on stage 6",
+      "code": "BK9A-BA6C"
+    },
+    {
+      "desc": "Start on stage 7",
+      "code": "BV9A-BA6C"
+    },
+    {
+      "desc": "Start on stage 8",
+      "code": "B39A-BA6C"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "FFEF80:0068"
+    },
+    {
+      "desc": "Invincible",
+      "code": "FFEF50:0014"
+    },
+    {
+      "desc": "Start with 99 Lives",
+      "code": "FFFD06:0063"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "FFFC3C:0099"
+    },
+    {
+      "desc": "Game always say GO",
+      "code": "BCAT-AA6L"
+    },
+    {
+      "desc": "Game never say GO",
+      "code": "BCAT-AA6J"
+    },
+    {
+      "desc": "GO blinks fast",
+      "code": "BCAT-AA62"
+    },
+    {
+      "desc": "Game play boss music when saying GO",
+      "code": "BCNT-AAS0"
+    },
+    {
+      "desc": "No music",
+      "code": "BCNT-AAR0"
+    },
+    {
+      "desc": "Throws,bodyslam give you a high score",
+      "code": "2XET-AAAW"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "AL7T-AA6L"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "9V5T-BGSE+PB5T-AAHG+975T-AAHJ+TB5T-A99L"
+    },
+    {
+      "desc": "Freeze Time",
+      "code": "RF5A-A608"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "AW4A-AN9W"
+    },
+    {
+      "desc": "Enable Same Character In 2P Game",
+      "code": "9ACA-BAVY"
+    },
+    {
+      "desc": "Enable Extra Options",
+      "code": "HD8T-BE06"
+    },
+    {
+      "desc": "Barbon Can'T Throw You",
+      "code": "ABKT-CA6J"
+    },
+    {
+      "desc": "Masive Damage",
+      "code": "HVLA-BAC6+GBLA-AAC8"
+    },
+    {
+      "desc": "Max Walks Faster",
+      "code": "ADAA-AEHL"
+    },
+    {
+      "desc": "Max Walks Much Faster",
+      "code": "ADAA-AGHL"
+    },
+    {
+      "desc": "Axel Walks Faster",
+      "code": "JDAA-AEHN"
+    },
+    {
+      "desc": "Axel Walks Much Faster",
+      "code": "JDAA-AGHN"
+    },
+    {
+      "desc": "Blaze Walks Faster",
+      "code": "TDAA-AEHR"
+    },
+    {
+      "desc": "Blaze Walks Much Faster",
+      "code": "TDAA-AGHR"
+    },
+    {
+      "desc": "Skate Walks Faster",
+      "code": "YDAA-AEHT"
+    },
+    {
+      "desc": "Skate Walks Much Faster",
+      "code": "YDAA-AGHT"
+    },
+    {
+      "desc": "Max, Axel, And Blaze Are Ultra Fast [Don't Pick Skate].",
+      "code": "AF2A-AAF0"
+    },
+    {
+      "desc": "See The 7 Bosses In The Character Select Screen.",
+      "code": "BV2A-AAF0"
+    },
+    {
+      "desc": "High Jump. Works On All Characters.",
+      "code": "ADAT-AALE"
+    },
+    {
+      "desc": "Super High Jump. Works On All Characters.",
+      "code": "ADAT-BACE"
+    },
+    {
+      "desc": "Max looks like Boss character master code",
+      "code": "D2HA-EAFN"
+    },
+    {
+      "desc": "Max's sprites changes to Jack's sprites",
+      "code": "PJHA-FVPR"
+    },
+    {
+      "desc": "Max's sprites changes to Barbon's sprites",
+      "code": "32HA-F5PR"
+    },
+    {
+      "desc": "Max's sprites changes to Zamza's sprites",
+      "code": "82HA-E1ZR"
+    },
+    {
+      "desc": "Max's sprites changes to R Bear's sprites",
+      "code": "YJHA-FFZR"
+    },
+    {
+      "desc": "Max's sprites changes to Abadede's sprites",
+      "code": "6JHA-F3ZR"
+    },
+    {
+      "desc": "Max's sprites changes to Mr X's sprites",
+      "code": "6JHA-E57R"
+    },
+    {
+      "desc": "Max's sprites changes to Shiva's sprites",
+      "code": "LTHA-FK7R"
+    },
+    {
+      "desc": "Axel looks like Boss character master code",
+      "code": "D2HA-EAFT"
+    },
+    {
+      "desc": "Axel's sprites changes to Jack's sprites",
+      "code": "PJHA-FVPW"
+    },
+    {
+      "desc": "Axel's sprites changes to Barbon's sprites",
+      "code": "32HA-F5PW"
+    },
+    {
+      "desc": "Axel's sprites changes to Zamza's sprites",
+      "code": "82HA-E1ZW"
+    },
+    {
+      "desc": "Axel's sprites changes to R Bear's sprites",
+      "code": "YJHA-FFZW"
+    },
+    {
+      "desc": "Axel's sprites changes to Abadede's sprites",
+      "code": "6JHA-F3ZW"
+    },
+    {
+      "desc": "Axel's sprites changes to Mr X's sprites",
+      "code": "6JHA-E57W"
+    },
+    {
+      "desc": "Axel's sprites changes to shiva's sprites",
+      "code": "LTHA-FK7W"
+    },
+    {
+      "desc": "Blaze looks like Boss character master code",
+      "code": "D2HA-EAFY"
+    },
+    {
+      "desc": "Blaze's sprites changes to Jack's sprites",
+      "code": "PJHA-FVP0"
+    },
+    {
+      "desc": "Blaze's sprites changes to Barbon's sprites",
+      "code": "32HA-F5P0"
+    },
+    {
+      "desc": "Blaze's sprites changes to Zamza's sprites",
+      "code": "82HA-E1Z0"
+    },
+    {
+      "desc": "Blaze's sprites changes to R Bear's sprites",
+      "code": "YJHA-FFZ0"
+    },
+    {
+      "desc": "Blaze's sprites changes to Abadede's sprites",
+      "code": "6JHA-F3Z0"
+    },
+    {
+      "desc": "Blaze's sprites changes to Mr X's sprites",
+      "code": "6JHA-E570"
+    },
+    {
+      "desc": "Blaze's sprites changes to Shiva's sprites",
+      "code": "LTHA-FK70"
+    },
+    {
+      "desc": "Skate looks like Boss character master code",
+      "code": "D2HA-EAF2"
+    },
+    {
+      "desc": "Skate's sprites changes to Jack's sprites",
+      "code": "PJHA-FVP4"
+    },
+    {
+      "desc": "Skate's sprites changes to Barbon's sprites",
+      "code": "32HA-F5P4"
+    },
+    {
+      "desc": "Skate's sprites changes to Zamza's sprites",
+      "code": "82HA-E1Z4"
+    },
+    {
+      "desc": "Skate's sprites changes to R Bear's sprites",
+      "code": "YJHA-FFZ4"
+    },
+    {
+      "desc": "Skate's sprites changes to Abadede's sprites",
+      "code": "6JHA-F3Z4"
+    },
+    {
+      "desc": "Skate's sprites changes to Shiva's sprites",
+      "code": "LTHA-FK74"
+    },
+    {
+      "desc": "Select Weapon P1 Master Code 1",
+      "code": "FFEF32:0001"
+    },
+    {
+      "desc": "Select Weapon P1 Master Code 2",
+      "code": "FFEF34:FFFF"
+    },
+    {
+      "desc": "P1 Weapon Modifier",
+      "code": "FFEF38:003C"
+    },
+    {
+      "desc": "P2 Weapon Modifier",
+      "code": "FFF038:003C"
+    },
+    {
+      "desc": "P1 99 Lives",
+      "code": "FFEF83:0099"
+    },
+    {
+      "desc": "P1 normal health bar size",
+      "code": "FFEF91:000C"
+    },
+    {
+      "desc": "P2 Invincible",
+      "code": "FFF051:0014"
+    },
+    {
+      "desc": "P2 Unlimited Health",
+      "code": "FFF081:0068"
+    },
+    {
+      "desc": "P2 99 Lives",
+      "code": "FFF083:0099"
+    },
+    {
+      "desc": "P2 normal health bar size",
+      "code": "FFF091:000C"
+    },
+    {
+      "desc": "Boss Invincible",
+      "code": "FFF151:0014"
+    },
+    {
+      "desc": "Boss Unlimited Health",
+      "code": "FFF181:0068"
+    },
+    {
+      "desc": "Boss lives (4 stars)",
+      "code": "FFF183:0004"
+    },
+    {
+      "desc": "Boss health bar size (normal)",
+      "code": "FFF191:000C"
+    },
+    {
+      "desc": "P1 MAX Score",
+      "code": "FFEF96:0099+FFEF97:0099+FFEF98:0099+FFF096:0099+FFF097:0099+FFF098:0099"
+    },
+    {
+      "desc": "P1 Character Modifier",
+      "code": "FFEF0C:0000"
+    },
+    {
+      "desc": "P2 Character Modifier",
+      "code": "FFF00C:0000"
+    },
+    {
+      "desc": "Boss Modifier",
+      "code": "FFF10C:000C"
+    },
+    {
+      "desc": "Player 1 score increases rapidly",
+      "code": "FFEF01:005B"
+    },
+    {
+      "desc": "Duel mode stage select",
+      "code": "FFFD12:0000"
+    },
+    {
+      "desc": "P1 Unlimited Moves",
+      "code": "FFEF10:00FF+FFEF11:00FF"
+    },
+    {
+      "desc": "P2 Unlimited Moves",
+      "code": "FFF010:00FF+FFF011:00FF"
+    },
+    {
+      "desc": "Boss Unlimited Moves",
+      "code": "FFF110:00FF+FFF111:00FF"
+    },
+    {
+      "desc": "P1 Sprite Animation  XX",
+      "code": "FFEF0E:0000"
+    },
+    {
+      "desc": "P2 Sprite Animation  XX",
+      "code": "FFF00E:0000"
+    },
+    {
+      "desc": "Boss Sprite Animation  XX",
+      "code": "FFF10E:0000"
+    },
+    {
+      "desc": "Starts at Round",
+      "code": "FFFD0F:0000"
+    },
+    {
+      "desc": "Difficulty Modifier",
+      "code": "FFFC6B:0000"
+    },
+    {
+      "desc": "Instant Kills Punk #1/Boss",
+      "code": "FFF101:0006"
+    },
+    {
+      "desc": "Punk#1/Boss Character Modifier",
+      "code": "FFF10D:0008"
+    },
+    {
+      "desc": "Punk#2/ Character Modifier",
+      "code": "FFF20D:0008"
+    },
+    {
+      "desc": "Punk#3/ Character Modifier",
+      "code": "FFF30D:0008"
+    },
+    {
+      "desc": "Punk#4/ Character Modifier",
+      "code": "FFF40D:0008"
+    },
+    {
+      "desc": "Punk#5/ Character Modifier",
+      "code": "FFF50D:0008"
+    },
+    {
+      "desc": "Player 1 Unlimited Continues",
+      "code": "FFEFA5:000A"
+    },
+    {
+      "desc": "Player 2 Unlimited Continues",
+      "code": "FFF0A5:000A"
+    },
+    {
+      "desc": "Infinite Use Of Weapon#1",
+      "code": "FFF773:00FF"
+    },
+    {
+      "desc": "Infinite Use Of Weapon#2",
+      "code": "FFF7F3:00FF"
+    },
+    {
+      "desc": "Infinite Use Of Weapon#3",
+      "code": "FFF873:00FF"
+    },
+    {
+      "desc": "Infinite Use Of Weapon#4",
+      "code": "FFF8F3:00FF"
+    },
+    {
+      "desc": "Infinite Use Of Weapon#5",
+      "code": "FFF973:00FF"
+    },
+    {
+      "desc": "Infinite Use Of Weapon#6",
+      "code": "FFF9F3:00FF"
+    },
+    {
+      "desc": "Mania Difficulty Selected In Options",
+      "code": "FFFD04:000A"
+    },
+    {
+      "desc": "Very Easy Difficulty Selected In Options",
+      "code": "FFFD04:0000"
+    },
+    {
+      "desc": "Enable Extra Options",
+      "code": "HD8T-BE14"
+    },
+    {
+      "desc": "Axel Looks Like Boss Character Master Code",
+      "code": "D2HA-EAGR"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Jack's Sprites",
+      "code": "PJHA-FVRT"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Barbon's Sprites",
+      "code": "32HA-F5RT"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Zamza's Sprites",
+      "code": "82HA-E10T"
+    },
+    {
+      "desc": "Axel's Sprites Changes To R Bear's Sprites",
+      "code": "YJHA-FF0T"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Abadede's Sprites",
+      "code": "6JHA-F30T"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Mr X's Sprites",
+      "code": "6JHA-E58T"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Shiva's Sprites",
+      "code": "LTHA-FK8T"
+    },
+    {
+      "desc": "Axel Looks Like Player Character Master Code",
+      "code": "B6HA-EAGR"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Max's Sprites",
+      "code": "GAHA-EKRT"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Axel's Sprites",
+      "code": "S2HA-E3RT"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Blaze's Sprites",
+      "code": "KJHA-FPRT"
+    },
+    {
+      "desc": "Axel's Sprites Changes To Skate's Sprites",
+      "code": "B2HA-F9RT"
+    },
+    {
+      "desc": "2p axel color",
+      "code": "N4WT-ANHA+74WT-AYHC+ELWT-AEHE+Z4WT-ANHG+PLWT-AEHJ+E4WT-AAHL+ELWT-ANHN+ACWT-AAHR+VCWT-AYHT+JWWT-AJHW+ELWT-AEHY+VWWT-AAH0+KCWT-AAH2+74WT-AAH4+PWWT-AAH6+ACWT-AAH8"
+    },
+    {
+      "desc": "2p max color",
+      "code": "N4WT-ANHA+74WT-A6HC+ALWT-AAHE+Z4WT-ANHG+PLWT-AEHJ+E4WT-AAHL+JCWT-ANHN+ECWT-AEHR+K4WT-AAHT+BLWT-AAHW+A4WT-AAHY+VLWT-ATH0+J4WT-AJH2+NCWT-A2H4+ACWT-ANH6+ACWT-AAH8"
+    },
+    {
+      "desc": "2p blaze color",
+      "code": "N4WT-ANHA+74WT-A2HC+ELWT-AEHE+Z4WT-ATHG+KLWT-AEHJ+E4WT-AAHL+NCWT-A2HN+ACWT-ATHR+ZLWT-A6HT+N4WT-A2HW+JLWT-ATHY+N4WT-ANH0+N4WT-ANH2+74WT-ATH4+VWWT-AJH6+ACWT-AAH8"
+    },
+    {
+      "desc": "2p skate color",
+      "code": "N4WT-ANHA+74WT-A6HC+ELWT-AEHE+Z4WT-ANHG+PLWT-AEHJ+E4WT-AAHL+NLWT-A2HN+ELWT-AEHR+ZLWT-A6HT+N4WT-A2HW+JLWT-ATHY+KLWT-AAH0+ELWT-ANH2+3WWT-A6H4+VCWT-ATH6+ACWT-AAH8"
+    },
+    {
+      "desc": "Hit Anywhere",
+      "code": "AKGA-AA9R+AKGT-AA5N+AKGT-AA50+AKGT-AA66+AKGT-AA7G+AWGT-CA8N"
+    },
+    {
+      "desc": "Enable Same Character In Main Character Select Screen",
+      "code": "C3ZA-AA9Y"
+    },
+    {
+      "desc": "Enable Same Character During Gameplay Character Selection Screen",
+      "code": "C45A-AA3W"
+    },
+    {
+      "desc": "1-Up Worth 7 Lives",
+      "code": "PKFA-B60E"
+    },
+    {
+      "desc": "Money Bag Worth 999999 Points",
+      "code": "XFFT-BXAT+XFFT-BXAW"
+    },
+    {
+      "desc": "Gold Bar Worth 999999 Points",
+      "code": "XFFT-BXAY+XFFT-BXA0"
+    },
+    {
+      "desc": "Axel's Knee Press Deal Massive Damage [Movelist: Press c or Left+C or Right+C, Then Down+B]",
+      "code": "AJWT-AT44"
+    },
+    {
+      "desc": "Blaze's Flying Chop Deal Massive Damage [Movelist: Press c or Left+C or Right+C, Then Down+B]",
+      "code": "AJXT-AT3C"
+    },
+    {
+      "desc": "Axel's Single Punch Deal Massive Damage",
+      "code": "AAWA-AT38"
+    },
+    {
+      "desc": "Blaze's Single Punch Deal Massive Damage",
+      "code": "AAXA-AT30"
+    },
+    {
+      "desc": "Skate's Single Punch Deal Massive Damage",
+      "code": "DNYA-AT3W"
+    },
+    {
+      "desc": "Max's Single Punch Deal Massive Damage",
+      "code": "AAVA-AT7C"
+    },
+    {
+      "desc": "Max's Slide Deal Massive Damage",
+      "code": "AJVA-AT9C"
+    },
+    {
+      "desc": "Max's Elbow Drop Deal Massive Damage - Press c or Left+C or Right+C, Then Down+B",
+      "code": "AJVA-AT94"
+    },
+    {
+      "desc": "Axel's Grand Uppercut / Bare Knuckle Deal Massive Damage - Forward, Forward, B",
+      "code": "HAWA-AT8Y"
+    },
+    {
+      "desc": "Blaze's Vertical Slash Deal Massive Damage",
+      "code": "L2XA-AT9L"
+    },
+    {
+      "desc": "Skate's Roller Press Deal Massive Damage",
+      "code": "ATYA-AT6R"
+    },
+    {
+      "desc": "Freeze Rain In Round 1 Stage",
+      "code": "FFFC10:00FF"
+    },
+    {
+      "desc": "Stage Scene Modifier",
+      "code": "FFFC22:0000"
+    },
+    {
+      "desc": "Mode Selection",
+      "code": "FFFC02:0000"
+    },
+    {
+      "desc": "All Enemies Have Minimal Health",
+      "code": "ADTT-AAAN"
+    },
+    {
+      "desc": "Almost Untouchable",
+      "code": "NVJA-A3BA"
+    },
+    {
+      "desc": "Enemies Are Untouchable",
+      "code": "ABGA-A284"
+    },
+    {
+      "desc": "Activates Level Select In Options",
+      "code": "AD8T-AN9A+AD6A-AR9R"
+    },
+    {
+      "desc": "Activates Very East And Mania Difficulties In Options",
+      "code": "AD6T-AR5Y+AD6T-AR66"
+    },
+    {
+      "desc": "Activates 9 Lives In Options",
+      "code": "AX6T-AN76"
+    },
+    {
+      "desc": "Makes All Non-Scrolling Texts Japanese",
+      "code": "AJ6T-EA4G+RFAA-E6YA"
+    },
+    {
+      "desc": "The First Sentence Is Located Directly Under \"Photo\" Prom SoR1",
+      "code": "RE7T-E6WN"
+    },
+    {
+      "desc": "Makes Non-Scrolling Texts Centered",
+      "code": "RFBA-E6VW"
+    },
+    {
+      "desc": "Unlock Extra Options",
+      "code": "FFA902:0001"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FFEF82:000A"
+    },
+    {
+      "desc": "Invincible To All Attacks",
+      "code": "FFEF48:0001"
+    },
+    {
+      "desc": "Every Non Knockdown Hit Is A Multi Hit Killing Attack",
+      "code": "FFEF48:0001"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "FFFC3C:005F"
+    },
+    {
+      "desc": "Invincible",
+      "code": "FFEF50:0029"
+    },
+    {
+      "desc": "Invincibility From All Attack",
+      "code": "RZHT-A60G+RZFT-A6ZR"
+    },
+    {
+      "desc": "6 Enemies instead of 5 on single player",
+      "code": "A5XA-AA3L"
+    },
+    {
+      "desc": "Display number of KO's when pausing (Displayed above player's score)",
+      "code": "C36A-AA4E+C36A-AA54"
+    },
+    {
+      "desc": "Reduce Hitting Delay",
+      "code": "RFGT-A61R"
+    },
+    {
+      "desc": "Invincible Against Hits from Enemies - Both Players",
+      "code": "RZHT-A6ZW"
+    },
+    {
+      "desc": "Invincible Against Hits from Partner and Explosions - Both Players",
+      "code": "AZGA-AAGN+ABGA-BD8T"
+    },
+    {
+      "desc": "Invinciblile Against Shooting Attacks - Both Players",
+      "code": "AZFT-AAFA+ABFT-BD7E"
+    },
+    {
+      "desc": "Invinciblile Against Thrown Enemies by Partner - Both Players",
+      "code": "AZJT-AAB6+ABJT-BD4A"
+    },
+    {
+      "desc": "Invinciblile Against Partner's Grapple Attacks - Both Players",
+      "code": "AZKA-AAF0+ABKA-BD74"
+    },
+    {
+      "desc": "Master Code (Improved)",
+      "code": "2JBT-AAB8"
+    },
+    {
+      "desc": "Enable Extra Options in Options Menu",
+      "code": "SD8T-BE06"
+    },
+    {
+      "desc": "Allows you to choose Sammy as your character",
+      "code": "RF1T-A612+RF2T-A6WC+RF2T-A6Y6"
+    },
+    {
+      "desc": "Unlock Extra Options",
+      "code": "FFA903:01"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "FFEF81:68"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FFEF83:0A"
+    },
+    {
+      "desc": "Invincible To All Attacks",
+      "code": "FFEF48:01"
+    },
+    {
+      "desc": "Every Non Knockdown Hit Is A Multi Hit Killing Attack",
+      "code": "FFEF49:01"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "FFFC3C:5F"
+    },
+    {
+      "desc": "Invincible",
+      "code": "FFEF51:29"
+    },
+    {
+      "desc": "Start With 99 Lives",
+      "code": "FFFD07:63"
+    }
+  ],
+  "Top Gear 2 (USA)": [
+    {
+      "desc": "Start with max Money",
+      "code": "B6TT-ARMJ"
+    },
+    {
+      "desc": "Infinite Nitro",
+      "code": "AMTA-AA8J"
+    },
+    {
+      "desc": "Infinite Money",
+      "code": "FF1B84:270F"
+    },
+    {
+      "desc": "Infinite Nitro",
+      "code": "FF1B9E:0006"
+    },
+    {
+      "desc": "Always Finish First",
+      "code": "AMVT-AA40"
+    },
+    {
+      "desc": "Acceleration Modifier P1",
+      "code": "FF18D8:0013"
+    },
+    {
+      "desc": "Lap Modifier P1",
+      "code": "FF1994:0000"
+    },
+    {
+      "desc": "Position Modifier P1",
+      "code": "FF199C:00BE"
+    },
+    {
+      "desc": "Have Lots of Money",
+      "code": "FF2570:00FF+FF2570:00FF"
+    },
+    {
+      "desc": "Total Points Modifier P1",
+      "code": "FF1B84:0000"
+    },
+    {
+      "desc": "Dave Total Points Modifier",
+      "code": "FF21A4:0000"
+    },
+    {
+      "desc": "Nigel Total Points Modifier",
+      "code": "FF21AA:0000"
+    },
+    {
+      "desc": "Ali Total Points Modifier",
+      "code": "FF21B0:0000"
+    },
+    {
+      "desc": "Mick Total Points Modifier",
+      "code": "FF21C2:0000"
+    },
+    {
+      "desc": "Ritchie Total Points Modifier",
+      "code": "FF21C8:0000"
+    },
+    {
+      "desc": "Roz Total Points Modifier",
+      "code": "FF21CE:0000"
+    },
+    {
+      "desc": "Play Unused Song at Title screen",
+      "code": "AZJT-EAHL"
+    },
+    {
+      "desc": "Title Screen Music Modifier",
+      "code": "AFJT-EAHL"
+    },
+    {
+      "desc": "Master Code",
+      "code": "ATRT-AA7E"
+    },
+    {
+      "desc": "Acceleration Modifier P1",
+      "code": "FF18D8:XX"
+    },
+    {
+      "desc": "Lap Modifier P1",
+      "code": "FF1995:XX"
+    },
+    {
+      "desc": "Position Modifier P1",
+      "code": "FF199D:XX"
+    },
+    {
+      "desc": "Have Lots of Money",
+      "code": "FF2570:FF+FF2571:FF"
+    },
+    {
+      "desc": "Total Points Modifier P1",
+      "code": "FF1B85:XX"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "Sonic CD (USA)": [
+    {
+      "desc": "Infinite Invincibility after Pickup",
+      "code": "FFD032:051B"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FF1507:0009"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "FF1508:0009"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "FF1516:0000"
+    },
+    {
+      "desc": "Infinite Time Underwater",
+      "code": "FF150B:001E"
+    },
+    {
+      "desc": "Inf Speed shoes/Invincibility after pickup",
+      "code": "FFD032:00FF"
+    },
+    {
+      "desc": "Infinite Speed Shoes after Pickup",
+      "code": "FFD034:051B"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "FF151F:0001"
+    },
+    {
+      "desc": "Infinite Shields",
+      "code": "FF151E:0001"
+    },
+    {
+      "desc": "Infinite Rings",
+      "code": "FF1512:03E7"
+    },
+    {
+      "desc": "Have All 7 Time Stones/Good Futures",
+      "code": "FF0F20:7F00"
+    }
+  ],
+  "Lunar - The Silver Star (USA)": [
+    {
+      "desc": "Lot of Money",
+      "code": "FFE5F8:FFFF"
+    },
+    {
+      "desc": "Alex Max HP",
+      "code": "FFE343:00FF"
+    },
+    {
+      "desc": "Alex Max MP",
+      "code": "FFE347:00FF"
+    },
+    {
+      "desc": "Luna Max HP",
+      "code": "FFE383:00FF"
+    },
+    {
+      "desc": "Luna Max MP",
+      "code": "FFE387:00FF"
+    },
+    {
+      "desc": "Ramus Max HP",
+      "code": "FFE503:00FF"
+    },
+    {
+      "desc": "Ramus Max MP",
+      "code": "FFE507:00FF"
+    },
+    {
+      "desc": "Alex Currect HP",
+      "code": "FFE341:00FF"
+    },
+    {
+      "desc": "Alex Currect MP",
+      "code": "FFE345:00FF"
+    },
+    {
+      "desc": "Alex Atk pwr",
+      "code": "FFE348:00FF"
+    },
+    {
+      "desc": "Alex Def pwr",
+      "code": "FFE349:00FF"
+    },
+    {
+      "desc": "Alex Agility",
+      "code": "FFE34A:00FF"
+    }
+  ],
+  "Popful Mail (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "FFA057:0064"
+    },
+    {
+      "desc": "Infinite Gold",
+      "code": "FFEBF2:C350"
+    },
+    {
+      "desc": "Max Gold Bullion",
+      "code": "FFEC04:0063"
+    },
+    {
+      "desc": "Infinite Arms",
+      "code": "FFEC1B:0064"
+    },
+    {
+      "desc": "Infinite Amulet",
+      "code": "FFEC11:0064"
+    },
+    {
+      "desc": "Infinite Helmet",
+      "code": "FFEC13:0064"
+    },
+    {
+      "desc": "Infinite Stone Shoes",
+      "code": "FFEC15:0064"
+    },
+    {
+      "desc": "Infinite Ice Shoes",
+      "code": "FFEC17:0064"
+    },
+    {
+      "desc": "Infinite Spiked Boots",
+      "code": "FFEC19:0064"
+    },
+    {
+      "desc": "Mail All Equipment",
+      "code": "FFEBCC:FFFF+FFEBCE:00FF"
+    },
+    {
+      "desc": "Tatto All Equipment",
+      "code": "FFEBDC:FFFF+FFEBDE:00FF"
+    },
+    {
+      "desc": "Gaw All Equipment",
+      "code": "FFEBEC:FFFF+FFEBEE:00FF"
+    }
+  ],
+  "Final Fight CD (USA)": [
+    {
+      "desc": "P1 Infinite Health",
+      "code": "FFB1DB:0070"
+    },
+    {
+      "desc": "P1 Infinite Lives",
+      "code": "FFB242:000A"
+    },
+    {
+      "desc": "P2 Infinite Health",
+      "code": "FFB29B:0070"
+    },
+    {
+      "desc": "P2 Infinite Lives",
+      "code": "FFB302:000A"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "FF9515:009A"
+    },
+    {
+      "desc": "P1 Invincibility",
+      "code": "FFB224:0079"
+    },
+    {
+      "desc": "P2 Invincibility",
+      "code": "FFB2E4:0079"
+    },
+    {
+      "desc": "P1 Invincibility",
+      "code": "FFB223:0079"
+    },
+    {
+      "desc": "Infinite Continues",
+      "code": "FF8EA0:0009"
+    },
+    {
+      "desc": "P2 Invincibility",
+      "code": "FFB2E3:0079"
+    },
+    {
+      "desc": "P1 Inf Lives",
+      "code": "FFB245:0009"
+    },
+    {
+      "desc": "P2 Inf Lives",
+      "code": "FFB305:0009"
+    }
+  ]
+}

@@ -9,7 +9,10 @@
   <!-- Boot rápido: abre a conexão com o CDN dos núcleos antes de o jogo pedir -->
   <link rel="preconnect" href="https://cdn.emulatorjs.org" crossorigin>
   <link rel="dns-prefetch" href="https://cdn.emulatorjs.org">
-  <title>RetroVerso - Jogando...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap">
+  <title>RetroVault OS - Jogando...</title>
   <!-- Defesa: o EmulatorJS consulta MediaRecorder.isTypeSupported SEM checar
        se a API existe. Em navegadores sem MediaRecorder (WebKit/Safari antigo,
        alguns WebViews e shells de PWA) a referência crua lançava ReferenceError
@@ -26,12 +29,12 @@
   </script>
   <!-- Conta/sessão: precisa vir ANTES de tudo que lê histórico, porque
        RVStore separa os dados por usuário (rv:<uid>:chave). -->
-  <script src="js/rv-config.js"></script>
-  <script src="js/rv-account.js"></script>
-  <script src="js/rv-input-mode.js"></script>
+  <script src="js/rv-config.js?v=20260916"></script>
+  <script src="js/rv-account.js?v=20260916"></script>
+  <script src="js/rv-input-mode.js?v=20260916"></script>
   <script>RVAccount.guard();</script>
-  <script src="js/audio.js"></script>
-  <script src="js/overlay-parser.js"></script>
+  <script src="js/audio.js?v=20260916"></script>
+  <script src="js/overlay-parser.js?v=20260916"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body, html {
@@ -65,93 +68,154 @@
       background: #000;
     }
 
-    /* LOADING (personalizado por console) */
+    /* LOADING 2.0 (personalizado por console via --rv-color/--rv-glow) */
     #rv-loading {
       position: fixed; inset: 0; z-index: 9999;
-      background: #030604;
+      background: #020503;
       display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: 20px;
-      transition: opacity 0.9s ease, visibility 0.9s ease;
+      align-items: center; justify-content: center; gap: 18px;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+      font-family: 'Rajdhani', 'Segoe UI', Arial, sans-serif;
+      padding: 24px;
+      text-align: center;
     }
     #rv-loading.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
     .rv-bg {
       position: absolute; inset: 0;
-      background: radial-gradient(circle at 50% 40%, var(--rv-glow, rgba(0,255,65,.13)) 0%, transparent 65%), #030604;
+      background:
+        radial-gradient(circle at 50% 38%, var(--rv-glow, rgba(0,255,65,.16)) 0%, transparent 62%),
+        radial-gradient(700px 340px at 50% 110%, rgba(0,140,255,.08), transparent 60%),
+        #020503;
     }
     .rv-bg::before {
       content: ''; position: absolute; inset: 0;
-      background-image: repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(255,255,255,.02) 3px,rgba(255,255,255,.02) 4px);
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: radial-gradient(ellipse at 50% 45%, black 25%, transparent 72%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 45%, black 25%, transparent 72%);
+    }
+    .rv-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.16) 3px,rgba(0,0,0,.16) 4px);
       animation: scanPulse 4s linear infinite;
     }
     @keyframes scanPulse { 0%,100%{opacity:.5} 50%{opacity:1} }
+    .rv-load-ring {
+      position: relative; z-index: 1;
+      width: 132px; height: 132px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .rv-load-ring::before {
+      content: ''; position: absolute; inset: 0;
+      border-radius: 50%;
+      border: 1px dashed var(--rv-color, rgba(0,255,65,.5));
+      opacity: .55;
+      animation: ringSpin 14s linear infinite;
+    }
+    .rv-load-ring::after {
+      content: ''; position: absolute; inset: 10px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      border-top-color: var(--rv-color, #00ff41);
+      border-right-color: var(--rv-color, #00ff41);
+      opacity: .8;
+      animation: ringSpin 1.6s linear infinite;
+    }
+    @keyframes ringSpin { to { transform: rotate(360deg); } }
     .rv-logo {
       position: relative; z-index: 1;
-      width: 90px; height: 90px;
-      border: 2.5px solid var(--rv-color, #00ff41); border-radius: 16px;
+      width: 84px; height: 84px;
+      border: 2.5px solid var(--rv-color, #00ff41); border-radius: 20px;
       display: flex; align-items: center; justify-content: center;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      font-size: 2.2rem; font-weight: 900; color: var(--rv-color, #00ff41); letter-spacing: 2px;
+      font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+      font-size: 1.9rem; font-weight: 900; color: var(--rv-color, #00ff41); letter-spacing: 2px;
+      background: linear-gradient(160deg, rgba(255,255,255,.05), transparent 60%), #040a06;
+      text-shadow: 0 0 14px var(--rv-color, #00ff41);
       animation: logoPulse 2s ease-in-out infinite;
     }
     @keyframes logoPulse {
-      0%,100%{ box-shadow: 0 0 20px var(--rv-glow, rgba(0,255,65,.6)), 0 0 60px var(--rv-glow, rgba(0,255,65,.2)), inset 0 0 20px var(--rv-glow, rgba(0,255,65,.08)); }
-      50%    { box-shadow: 0 0 35px var(--rv-glow, rgba(0,255,65,.9)), 0 0 90px var(--rv-glow, rgba(0,255,65,.35)), inset 0 0 30px var(--rv-glow, rgba(0,255,65,.15)); }
+      0%,100%{ box-shadow: 0 0 22px var(--rv-glow, rgba(0,255,65,.6)), 0 0 60px var(--rv-glow, rgba(0,255,65,.2)), inset 0 0 20px var(--rv-glow, rgba(0,255,65,.08)); }
+      50%    { box-shadow: 0 0 40px var(--rv-glow, rgba(0,255,65,.9)), 0 0 100px var(--rv-glow, rgba(0,255,65,.35)), inset 0 0 30px var(--rv-glow, rgba(0,255,65,.15)); }
     }
     .rv-console-title {
       position: relative; z-index: 1;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      font-size: 1.4rem; font-weight: 900; letter-spacing: 4px;
+      font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+      font-size: 1.25rem; font-weight: 900; letter-spacing: 4px;
       color: #fff;
       text-shadow: 0 0 16px var(--rv-glow, rgba(0,255,65,.7));
+      text-transform: uppercase;
     }
-    .rv-name { position: relative; z-index: 1; font-size: 2.2rem; font-weight: 900; letter-spacing: 8px; color: #fff; text-shadow: 0 0 20px rgba(0,255,65,.7); }
-    .rv-slogan { position: relative; z-index: 1; font-size: .78rem; font-weight: 600; letter-spacing: 5px; color: var(--rv-color, #00ff41); }
-    .rv-bar-wrap { position: relative; z-index: 1; width: 220px; height: 3px; background: rgba(255,255,255,.08); border-radius: 3px; overflow: hidden; margin-top: 10px; }
-    .rv-bar { height: 100%; width: 40%; background: var(--rv-color, #00ff41); border-radius: 3px; box-shadow: 0 0 10px var(--rv-color, #00ff41); animation: barSweep 1.6s ease-in-out infinite; }
+    .rv-game-sub {
+      position: relative; z-index: 1;
+      font-size: .95rem; font-weight: 600; letter-spacing: 1.5px;
+      color: rgba(255,255,255,.55);
+      max-width: 34ch;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .rv-name { position: relative; z-index: 1; font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif; font-size: 1.1rem; font-weight: 900; letter-spacing: 5px; text-indent: 5px; color: #fff; text-shadow: 0 0 20px rgba(0,255,65,.7); }
+    .rv-slogan { position: relative; z-index: 1; font-size: .68rem; font-weight: 700; letter-spacing: 5px; text-indent: 5px; color: var(--rv-color, #00ff41); text-transform: uppercase; opacity: .85; }
+    .rv-bar-wrap { position: relative; z-index: 1; width: 230px; height: 4px; background: rgba(255,255,255,.08); border-radius: 4px; overflow: hidden; margin-top: 8px; }
+    .rv-bar { height: 100%; width: 40%; background: linear-gradient(90deg, transparent, var(--rv-color, #00ff41)); border-radius: 4px; box-shadow: 0 0 12px var(--rv-color, #00ff41); animation: barSweep 1.6s ease-in-out infinite; }
     @keyframes barSweep { 0%{transform:translateX(-100%)} 100%{transform:translateX(350%)} }
-    .rv-msg { position: relative; z-index: 1; font-size: .72rem; letter-spacing: 3px; color: var(--rv-color, rgba(0,255,65,.5)); }
+    .rv-msg { position: relative; z-index: 1; font-size: .72rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--rv-color, rgba(0,255,65,.6)); }
 
-    #rv-download-progress { position: relative; z-index: 2; display: none; flex-direction: column; align-items: center; gap: 10px; width: 280px; }
+    #rv-download-progress { position: relative; z-index: 2; display: none; flex-direction: column; align-items: center; gap: 10px; width: min(320px, 80vw); background: rgba(0,0,0,.4); border: 1px solid rgba(255,255,255,.08); border-radius: 14px; padding: 14px 18px; backdrop-filter: blur(8px); }
     #rv-download-progress.visible { display: flex; }
-    .rv-dl-title { font-size: 0.7rem; letter-spacing: 3px; color: rgba(0,255,65,0.7); text-transform: uppercase; }
-    .rv-dl-bar-wrap { width: 100%; height: 4px; background: rgba(0,255,65,0.1); border-radius: 4px; overflow: hidden; }
-    .rv-dl-bar-fill { height: 100%; width: 0%; background: #00ff41; border-radius: 4px; box-shadow: 0 0 10px #00ff41; transition: width 0.3s ease; }
-    .rv-dl-info { font-size: 0.72rem; letter-spacing: 2px; color: rgba(255,255,255,0.5); }
+    .rv-dl-title { font-family: 'Orbitron', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 3px; color: var(--rv-color, rgba(0,255,65,0.75)); text-transform: uppercase; }
+    .rv-dl-bar-wrap { width: 100%; height: 5px; background: rgba(0,255,65,0.12); border-radius: 5px; overflow: hidden; }
+    .rv-dl-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--rv-color, #00ff41), #7dffb0); border-radius: 5px; box-shadow: 0 0 12px var(--rv-color, #00ff41); transition: width 0.3s ease; }
+    .rv-dl-info { font-size: 0.74rem; font-weight: 600; letter-spacing: 2px; color: rgba(255,255,255,0.55); font-variant-numeric: tabular-nums; }
 
     #rv-fs-btn {
-      position: fixed; top: 10px; right: 10px; z-index: 8000;
-      background: rgba(0,255,65,.12); border: 1px solid rgba(0,255,65,.4);
-      border-radius: 8px; width: 38px; height: 38px;
+      position: fixed; top: calc(10px + env(safe-area-inset-top, 0px)); right: 10px; z-index: 8000;
+      background: rgba(3,8,5,.72); border: 1px solid rgba(0,255,65,.4);
+      border-radius: 12px; width: 42px; height: 42px;
       display: none; align-items: center; justify-content: center;
       cursor: pointer;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 6px 20px rgba(0,0,0,.5);
+      transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
     }
     #rv-fs-btn.visible { display: flex; }
-    #rv-fs-btn svg { width: 18px; height: 18px; fill: #00ff41; }
+    #rv-fs-btn:hover { border-color: #00ff41; box-shadow: 0 0 16px rgba(0,255,65,.35); }
+    #rv-fs-btn:active { transform: scale(.92); }
+    #rv-fs-btn svg { width: 19px; height: 19px; fill: #00ff41; }
 
     /* ═══════════════════════════════════════════
        FLOATING BUTTONS (screenshot, theater, menu)
     ═══════════════════════════════════════════ */
     .rv-float-btns {
       position: fixed;
-      top: 10px; right: 56px;
+      top: calc(10px + env(safe-area-inset-top, 0px)); right: 60px;
       z-index: 8000;
       display: none;
       gap: 8px;
+      background: rgba(3,8,5,.6);
+      border: 1px solid rgba(0,255,65,.25);
+      border-radius: 14px;
+      padding: 5px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 6px 20px rgba(0,0,0,.5);
     }
     .rv-float-btns.visible { display: flex; }
 
     .rv-float-btn {
-      background: rgba(0,255,65,.12);
-      border: 1px solid rgba(0,255,65,.4);
-      border-radius: 8px;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 10px;
       width: 38px; height: 38px;
       display: flex; align-items: center; justify-content: center;
       cursor: pointer;
-      transition: background 0.2s, transform 0.1s;
+      transition: background 0.2s, transform 0.1s, border-color .2s;
       position: relative;
     }
+    .rv-float-btn:hover { background: rgba(0,255,65,.12); border-color: rgba(0,255,65,.35); }
     .rv-float-btn:active { transform: scale(0.9); background: rgba(0,255,65,.3); }
-    .rv-float-btn svg { width: 18px; height: 18px; fill: #00ff41; pointer-events: none; }
+    .rv-float-btn svg { width: 19px; height: 19px; fill: #00ff41; pointer-events: none; }
 
     /* Toast notification (screenshot salvo) */
     .rv-toast {
@@ -159,24 +223,33 @@
       bottom: 30px;
       left: 50%;
       transform: translateX(-50%) translateY(20px);
-      background: rgba(0,0,0,0.9);
-      border: 1px solid rgba(0,255,65,0.4);
-      border-radius: 10px;
-      padding: 10px 24px;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      font-size: 0.8rem;
+      background: rgba(3,8,5,0.92);
+      border: 1px solid rgba(0,255,65,0.45);
+      border-radius: 14px;
+      padding: 12px 26px;
+      font-family: 'Rajdhani', 'Segoe UI', Arial, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
       color: #00ff41;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
       z-index: 9999;
       opacity: 0;
       transition: opacity 0.3s, transform 0.3s;
       pointer-events: none;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.6), 0 0 24px rgba(0,255,65,.15);
+      white-space: nowrap;
     }
     .rv-toast.show {
       opacity: 1;
       transform: translateX(-50%) translateY(0);
+    }
+    .rv-toast .rv-inline-icon {
+      width: 1.05em; height: 1.05em;
+      vertical-align: -0.23em;
+      margin-right: 8px;
     }
 
     /* ═══ MENU DE CHEATS SOBRE TODOS OS CONTROLES ═══ */
@@ -280,65 +353,76 @@
     #rv-sys-bar {
       position: fixed;
       left: 50%;
-      bottom: max(14px, env(safe-area-inset-bottom, 0px));
-      transform: translateX(-50%) translateY(16px);
+      bottom: max(16px, env(safe-area-inset-bottom, 0px));
+      transform: translateX(-50%) translateY(16px) scale(.98);
       z-index: 6000;
       display: none;
       flex-direction: column;
-      gap: 7px;
-      width: min(92vw, 400px);
-      padding: 10px;
-      background: rgba(8, 12, 10, 0.92);
+      gap: 9px;
+      width: min(92vw, 420px);
+      padding: 14px;
+      background: rgba(5, 10, 7, 0.94);
       border: 1px solid rgba(0, 255, 65, 0.45);
-      border-radius: 14px;
-      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6), 0 0 18px rgba(0, 255, 65, 0.18);
-      backdrop-filter: blur(6px);
+      border-radius: 18px;
+      box-shadow: 0 12px 44px rgba(0, 0, 0, 0.7), 0 0 28px rgba(0, 255, 65, 0.16), inset 0 1px 0 rgba(255,255,255,.06);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       opacity: 0;
-      transition: opacity 0.15s ease, transform 0.15s ease;
+      transition: opacity 0.22s cubic-bezier(.22,1,.36,1), transform 0.22s cubic-bezier(.22,1,.36,1);
+      font-family: 'Rajdhani', 'Segoe UI', Arial, sans-serif;
     }
-    #rv-sys-bar.open { display: flex; opacity: 1; transform: translateX(-50%) translateY(0); }
+    #rv-sys-bar.open { display: flex; opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
     #rv-sys-bar .rv-sys-head {
       display: flex; align-items: baseline; gap: 8px;
       padding: 0 2px; min-width: 0;
     }
     #rv-sys-bar .rv-sys-game {
       flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-      color: #d8ffe0; font-size: 12px; font-weight: 700; letter-spacing: 0.4px;
+      color: #eafff0; font-size: 14px; font-weight: 700; letter-spacing: 0.4px;
     }
-    #rv-sys-bar .rv-sys-core { color: #00ff41; font-size: 10px; letter-spacing: 1px; flex-shrink: 0; }
+    #rv-sys-bar .rv-sys-core {
+      color: #00ff41; font-family: 'Orbitron', sans-serif;
+      font-size: 9px; font-weight: 700; letter-spacing: 2px; flex-shrink: 0;
+      border: 1px solid rgba(0,255,65,.4); background: rgba(0,255,65,.08);
+      padding: 3px 9px; border-radius: 20px;
+    }
     #rv-sys-bar .rv-sys-save-row {
-      display: flex; align-items: center; gap: 8px;
-      padding: 6px 8px;
+      display: flex; align-items: center; gap: 9px;
+      padding: 8px 10px;
       background: rgba(0, 255, 65, 0.06);
       border: 1px solid rgba(0, 255, 65, 0.22);
-      border-radius: 9px;
+      border-radius: 12px;
     }
-    #rv-sys-bar .rv-sys-save-row svg { width: 14px; height: 14px; stroke: #00ff41; flex-shrink: 0; }
+    #rv-sys-bar .rv-sys-save-row svg { width: 15px; height: 15px; stroke: #00ff41; flex-shrink: 0; }
     #rv-sys-bar .rv-sys-save-info {
       flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-      color: #bfe8c8; font-size: 11px;
+      color: #bfe8c8; font-size: 12.5px; font-weight: 600;
     }
-    #rv-sys-bar .rv-sys-actions { display: flex; gap: 6px; }
+    #rv-sys-bar .rv-sys-actions { display: flex; gap: 7px; }
     #rv-sys-bar .rv-sys-actions button {
       flex: 1;
-      display: flex; flex-direction: column; align-items: center; gap: 3px;
-      min-width: 48px; padding: 7px 8px;
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+      min-width: 50px; padding: 9px 8px;
       background: rgba(0, 255, 65, 0.07);
       border: 1px solid rgba(0, 255, 65, 0.35);
-      border-radius: 10px; color: #d8ffe0;
-      font-family: inherit; font-size: 10px; letter-spacing: 0.4px;
+      border-radius: 12px; color: #d8ffe0;
+      font-family: inherit; font-size: 10.5px; font-weight: 700; letter-spacing: 0.6px;
       cursor: pointer; touch-action: manipulation;
+      transition: background .18s, transform .12s, box-shadow .2s;
     }
-    #rv-sys-bar .rv-sys-actions button svg.ico { width: 18px; height: 18px; stroke: currentColor; }
+    #rv-sys-bar .rv-sys-actions button:hover { background: rgba(0,255,65,.15); box-shadow: 0 0 14px rgba(0,255,65,.2); }
+    #rv-sys-bar .rv-sys-actions button svg.ico { width: 19px; height: 19px; stroke: currentColor; }
     #rv-sys-bar button.rv-del {
       display: flex; align-items: center; justify-content: center;
-      width: 26px; height: 26px; padding: 0;
+      width: 28px; height: 28px; padding: 0;
       background: rgba(255, 60, 60, 0.10);
       border: 1px solid rgba(255, 90, 90, 0.45);
-      border-radius: 7px; color: #ffb3b3;
+      border-radius: 9px; color: #ffb3b3;
       cursor: pointer; touch-action: manipulation; flex-shrink: 0;
+      transition: background .18s, transform .12s;
     }
-    #rv-sys-bar button.rv-del svg { width: 13px; height: 13px; stroke: currentColor; }
+    #rv-sys-bar button.rv-del:hover { background: rgba(255,60,60,.22); }
+    #rv-sys-bar button.rv-del svg { width: 14px; height: 14px; stroke: currentColor; }
     #rv-sys-bar button:active { transform: scale(0.94); }
     #rv-sys-bar button.on {
       background: rgba(0, 255, 65, 0.28);
@@ -428,14 +512,14 @@
 
 <div id="rv-loading">
   <div class="rv-bg"></div>
-  <div class="rv-logo">RV</div>
+  <div class="rv-load-ring"><div class="rv-logo">RV</div></div>
   <div class="rv-console-title" id="rv-console-title"></div>
-  <div class="rv-name">RETROVERSO</div>
-  <div class="rv-slogan">ENTER THE CLASSICS</div>
+  <div class="rv-name">RETROVAULT OS</div>
+  <div class="rv-slogan">Enter the classics</div>
   <div class="rv-bar-wrap"><div class="rv-bar"></div></div>
   <div class="rv-msg" id="rv-msg">Carregando emulador...</div>
   <div id="rv-download-progress">
-    <div class="rv-dl-title">⬇ BAIXANDO JOGO</div>
+    <div class="rv-dl-title">Baixando jogo</div>
     <div class="rv-dl-bar-wrap"><div class="rv-dl-bar-fill" id="rv-dl-bar"></div></div>
     <div class="rv-dl-info" id="rv-dl-info">0 MB / ? MB</div>
   </div>
@@ -455,8 +539,8 @@
   </div>
   <!-- MENU (Salvar/Carregar/Reset/Turbo/Sair). Essencial no PC e quando há
        controle conectado: sem o overlay na tela, não existiria outro caminho
-       para a barra de sistema do RetroVerso. -->
-  <div class="rv-float-btn" id="rv-sysbar-btn" title="Menu do jogo — Salvar, Carregar, Reset (F1)">
+       para a barra de sistema do RetroVault OS. -->
+  <div class="rv-float-btn" id="rv-sysbar-btn" title="Saves — Salvar, Carregar, Reset (segure F1)">
     <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
   </div>
 </div>
@@ -549,7 +633,7 @@ const CONSOLE_THEMES = {
 
 // Aplica cores temáticas na loading screen
 (function applyConsoleTheme() {
-  const theme = CONSOLE_THEMES[core] || { name: 'RetroVerso', color: '#00ff41', glow: 'rgba(0,255,65,0.5)' };
+  const theme = CONSOLE_THEMES[core] || { name: 'RetroVault OS', color: '#00ff41', glow: 'rgba(0,255,65,0.5)' };
   const loading = document.getElementById('rv-loading');
   if (loading) {
     loading.style.setProperty('--rv-color', theme.color);
@@ -921,7 +1005,7 @@ async function preloadGame(gamePath) {
         // Registra se a ROM veio do servidor remoto: BIOS e demais anexos
         // precisam vir da MESMA fonte (roms/ local não existe no GitHub Pages).
         window.__rvRomFromRemote = url.startsWith(ROMS_BASE);
-        console.log('[RetroVerso] ROM carregada com sucesso de:', url);
+        console.log('[RetroVault OS] ROM carregada com sucesso de:', url);
         break;
       }
     } catch(err) {
@@ -930,7 +1014,7 @@ async function preloadGame(gamePath) {
   }
 
   if (!response) {
-    console.error('[RetroVerso] ROM não encontrada. URLs tentadas:', candidateUrls);
+    console.error('[RetroVault OS] ROM não encontrada. URLs tentadas:', candidateUrls);
     msgEl.textContent = 'Erro: ROM não encontrada em roms/ nem no servidor online.';
     throw new Error('ROM não encontrada em nenhuma fonte.');
   }
@@ -984,7 +1068,7 @@ if (isNDSCore) {
 
 /* ═══ VERSÃO FIXADA DO EMULATORJS ═══
    'stable' é um alias móvel: quando o projeto sobe de versão, os patches
-   de runtime do RetroVerso (cheats, BIOS trap, stylus NDS, MediaRecorder
+   de runtime do RetroVault OS (cheats, BIOS trap, stylus NDS, MediaRecorder
    stub) podem quebrar SEM aviso. Fixamos a tag exata que hoje serve o
    stable (v4.2.3 — bytes idênticos, verificado por hash do CDN).
    Para atualizar: troque o número AQUI e no sw.js (warmup). */
@@ -1184,7 +1268,7 @@ EJS_cheatPath = 'cheats/';
 
 // Troca o menu genérico (hambúrguer) pelo menu de cheats.
 // O botão mantém o ícone do menu, mas passa a abrir diretamente os cheats.
-function openRetroVerseCheats() {
+function openRvCheats() {
   const emulator = window.EJS_emulator;
   const cheatMenu = emulator?.cheatMenu;
   if (!emulator || !cheatMenu) return;
@@ -1224,7 +1308,7 @@ function openRetroVerseCheats() {
   document.body.classList.add('rv-cheats-open');
 
   // O botão "Close" nativo altera display diretamente; mantém o estado visual
-  // do RetroVerso sincronizado quando isso acontecer.
+  // do RetroVault OS sincronizado quando isso acontecer.
   if (!cheatMenu.__rvCheatObserver) {
     const observer = new MutationObserver(() => {
       const visible = getComputedStyle(cheatMenu).display !== 'none';
@@ -1236,14 +1320,15 @@ function openRetroVerseCheats() {
 }
 
 // Disponibiliza a ação para o parser de overlays.
-window.openRetroVerseCheats = openRetroVerseCheats;
+window.openRvCheats = openRvCheats;
 
 /* ═══ MINI-BARRA DE AÇÕES DE SISTEMA ═══
    Segurar o botão MENU do overlay (~500ms) abre esta barra; toque rápido
    continua abrindo os cheats (ver system_menu no js/overlay-parser.js).
+   No PC: segurar F1 abre a barra, toque rápido no F1 abre os cheats.
    Ícones em SVG (#rv-svg-sprite) e saves com registro visível. */
 
-/* ── SISTEMA DE SAVES RETROVERSO ───────────────────────────────────
+/* ── SISTEMA DE SAVES RETROVAULT OS ───────────────────────────────────
    UM slot por jogo: "Salvar" sobrescreve o save anterior do mesmo jogo
    (a linha de info da barra deixa isso explícito e mostra data/tamanho).
    O estado completo do emulador (save-state) fica em IndexedDB próprio
@@ -1290,16 +1375,54 @@ const rvGameLabel = () =>
 const rvFmtBytes = (n) => (n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(n / 1024)) + ' KB');
 const rvFmtDate = (iso) => new Date(iso).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
 
+/* Congela/retoma o loop principal do núcleo por milissegundos, SEM mexer no
+   botão de pausa do menu EJS. Congelar antes de LER o estado evita capturar
+   um buffer "rasgado" em núcleos com thread própria — carregar um buffer
+   desses depois é o que travava o jogo. Retorna true se pausou (p/ retomar). */
+function rvFreezeCore() {
+  try {
+    const em = window.EJS_emulator;
+    const gm = em && em.gameManager;
+    if (!gm || typeof gm.toggleMainLoop !== 'function') return false;
+    if (em.paused) return false; // já pausado: não mexe em nada
+    gm.toggleMainLoop(0);
+    return true;
+  } catch (e) { return false; }
+}
+function rvUnfreezeCore() {
+  try {
+    const em = window.EJS_emulator;
+    const gm = em && em.gameManager;
+    if (!gm || typeof gm.toggleMainLoop !== 'function') return;
+    if (em && em.paused) return; // usuário pausou no meio: respeita
+    gm.toggleMainLoop(1);
+  } catch (e) { /* o núcleo já cuidou de si */ }
+}
+const rvTick = (ms) => new Promise(r => setTimeout(r, ms));
+
 async function rvSaveNow() {
   const gm = window.EJS_emulator && window.EJS_emulator.gameManager;
   if (!gm || typeof gm.getState !== 'function') {
-    if (typeof showToast === 'function') showToast('Este núcleo não suporta save-state');
+    if (typeof showToast === 'function') showToast('Este núcleo não suporta save-state', 'warning');
     return false;
   }
+  /* Congela o núcleo antes de LER o estado e valida o buffer: states vazios
+     ou inválidos são recusados em vez de sobrescrever um save bom. */
+  const frozen = rvFreezeCore();
+  let state;
   try {
-    let state = await Promise.resolve(gm.getState());
-    if (!state) throw new Error('estado vazio');
+    if (frozen) await rvTick(80); // deixa a thread do núcleo assentar
+    state = await Promise.resolve(gm.getState());
+  } finally {
+    if (frozen) rvUnfreezeCore(); // o jogo volta no mesmo instante
+  }
+  try {
+    const rawLen = state ? (state.byteLength || state.length || 0) : 0;
+    if (!state || !rawLen) throw new Error('estado vazio');
     if (state instanceof Uint8Array) state = state.slice(); // cópia defensiva
+    else if (state instanceof ArrayBuffer) state = new Uint8Array(state);
+    else if (Array.isArray(state)) state = Uint8Array.from(state);
+    if (!state.byteLength) throw new Error('estado vazio');
     const key = rvSaveKey();
     const prev = await rvSaveGet(key);
     const rec = {
@@ -1309,27 +1432,27 @@ async function rvSaveNow() {
     };
     await rvSavePut(key, rec);
     if (typeof showToast === 'function') {
-      showToast((prev ? 'Save substituído: ' : 'Save gravado: ') + rvFmtDate(rec.savedAt) + ' · ' + rvFmtBytes(rec.bytes));
+      showToast((prev ? 'Save substituído: ' : 'Save gravado: ') + rvFmtDate(rec.savedAt) + ' · ' + rvFmtBytes(rec.bytes), 'check');
     }
     refreshRvSaveInfo();
     // ─── Envio para a nuvem (não trava o jogo: roda em segundo plano) ───
     if (rvCloudOn() && (RVAccount.config.sync || {}).autoUploadSaves !== false) {
       RVAccount.uploadSave(key, rec).then(res => {
         if (res && res.ok) {
-          if (typeof showToast === 'function') showToast('☁ Save enviado para a sua conta');
+          if (typeof showToast === 'function') showToast('Save enviado para a sua conta', 'cloud');
         } else if (res && res.reason === 'too_big') {
-          if (typeof showToast === 'function') showToast('Save grande demais para a nuvem — guardado só neste aparelho');
+          if (typeof showToast === 'function') showToast('Save grande demais para a nuvem — guardado só neste aparelho', 'warning');
         }
         refreshRvSaveInfo();
       }).catch(err => {
-        console.warn('[RetroVerso] upload do save falhou:', err);
-        if (typeof showToast === 'function') showToast('Save local OK — nuvem indisponível agora');
+        console.warn('[RetroVault OS] upload do save falhou:', err);
+        if (typeof showToast === 'function') showToast('Save local OK — nuvem indisponível agora', 'warning');
       });
     }
     return true;
   } catch (err) {
-    console.warn('[RetroVerso] falha ao gravar save:', err);
-    if (typeof showToast === 'function') showToast('Falha ao gravar o save');
+    console.warn('[RetroVault OS] falha ao gravar save:', err);
+    if (typeof showToast === 'function') showToast('Falha ao gravar o save', 'warning');
     return false;
   }
 }
@@ -1338,7 +1461,7 @@ window.rvSaveNow = rvSaveNow;
 async function rvLoadNow() {
   const gm = window.EJS_emulator && window.EJS_emulator.gameManager;
   if (!gm || typeof gm.loadState !== 'function') {
-    if (typeof showToast === 'function') showToast('Este núcleo não suporta save-state');
+    if (typeof showToast === 'function') showToast('Este núcleo não suporta save-state', 'warning');
     return false;
   }
   try {
@@ -1346,22 +1469,38 @@ async function rvLoadNow() {
     let rec = await rvSaveGet(key);
     // Sem save local? Tenta buscar na conta (outro PC/celular).
     if ((!rec || !rec.state) && rvCloudOn()) {
-      if (typeof showToast === 'function') showToast('Buscando save na sua conta...');
+      if (typeof showToast === 'function') showToast('Buscando save na sua conta...', 'cloud');
       try {
         const cloud = await RVAccount.downloadSave(key);
         if (cloud && cloud.state) { rec = cloud; await rvSavePut(key, cloud); }
-      } catch (e) { console.warn('[RetroVerso] download do save falhou:', e); }
+      } catch (e) { console.warn('[RetroVault OS] download do save falhou:', e); }
     }
     if (!rec || !rec.state) {
       if (typeof showToast === 'function') showToast('Nenhum save gravado para este jogo');
       return false;
     }
-    await Promise.resolve(gm.loadState(rec.state));
-    if (typeof showToast === 'function') showToast((rec.fromCloud ? '☁ Save da conta carregado (' : 'Save carregado (') + rvFmtDate(rec.savedAt) + ')');
+    const raw = rec.state;
+    const rawLen = raw ? (raw.byteLength || raw.length || 0) : 0;
+    if (!raw || !rawLen) {
+      if (typeof showToast === 'function') showToast('Save inválido — grave novamente', 'warning');
+      return false;
+    }
+    /* Normaliza o buffer e garante o loop rodando com uma folga antes de
+       aplicar: núcleo "frio" + settle = o jogo volta sem travar. */
+    const bytes = raw instanceof Uint8Array ? raw
+      : ArrayBuffer.isView(raw) ? new Uint8Array(raw.buffer, raw.byteOffset, raw.byteLength)
+      : new Uint8Array(raw);
+    rvUnfreezeCore();
+    await rvTick(120);
+    await Promise.resolve(gm.loadState(bytes));
+    await rvTick(60);
+    rvUnfreezeCore();
+    if (typeof showToast === 'function') showToast((rec.fromCloud ? 'Save da conta carregado (' : 'Save carregado (') + rvFmtDate(rec.savedAt) + ')', rec.fromCloud ? 'cloud' : 'check');
     return true;
   } catch (err) {
-    console.warn('[RetroVerso] falha ao carregar save:', err);
-    if (typeof showToast === 'function') showToast('Falha ao carregar o save');
+    console.warn('[RetroVault OS] falha ao carregar save:', err);
+    try { rvUnfreezeCore(); } catch (e) { /* núcleo já tratado */ }
+    if (typeof showToast === 'function') showToast('Falha ao carregar o save', 'warning');
     return false;
   }
 }
@@ -1377,7 +1516,7 @@ async function refreshRvSaveInfo() {
   try {
     const rec = await rvSaveGet(rvSaveKey());
     if (rec && rec.state) {
-      const cloudTag = rvCloudOn() ? (rec.cloudSynced === false ? ' · só neste aparelho' : ' · ☁') : '';
+      const cloudTag = rvCloudOn() ? (rec.cloudSynced === false ? ' · só neste aparelho' : ' · na conta') : '';
       info.textContent = 'Save deste jogo: ' + rvFmtDate(rec.savedAt) + ' · ' + rvFmtBytes(rec.bytes || (rec.state.byteLength || 0)) + cloudTag;
       if (delBtn) delBtn.hidden = false;
       if (loadBtn) loadBtn.classList.remove('rv-dim');
@@ -1401,7 +1540,7 @@ function syncRvSysBarState() {
   if (turbo) turbo.classList.toggle('on', !!(window.EJS_emulator && window.EJS_emulator.isFastForward));
 }
 
-function openRetroVerseSystemBar() {
+function openRvSystemBar() {
   const bar = document.getElementById('rv-sys-bar');
   if (!bar) return;
   bar.classList.toggle('open');
@@ -1414,14 +1553,14 @@ function openRetroVerseSystemBar() {
     refreshRvSaveInfo();
   }
 }
-window.openRetroVerseSystemBar = openRetroVerseSystemBar;
+window.openRvSystemBar = openRvSystemBar;
 
-function closeRetroVerseSystemBar() {
+function closeRvSystemBar() {
   const bar = document.getElementById('rv-sys-bar');
   if (bar) bar.classList.remove('open');
 }
 
-(function bindRetroVerseSystemBar() {
+(function bindRvSystemBar() {
   const bar = document.getElementById('rv-sys-bar');
   if (!bar) return;
   bar.addEventListener('click', async (event) => {
@@ -1438,15 +1577,15 @@ function closeRetroVerseSystemBar() {
       } else if (act === 'delete') {
         await rvSaveDel(rvSaveKey());
         if (rvCloudOn()) { RVAccount.deleteCloudSave(rvSaveKey()).catch(() => {}); }
-        if (typeof showToast === 'function') showToast('Save apagado');
+        if (typeof showToast === 'function') showToast('Save apagado', 'check');
         refreshRvSaveInfo();
       } else if (act === 'reset') {
         if (gm && gm.restart) { gm.restart(); if (typeof showToast === 'function') showToast('Jogo reiniciado'); }
-        closeRetroVerseSystemBar();
+        closeRvSystemBar();
       } else if (act === 'exit') {
         window.location.href = 'index.html';
       } else if (act === 'close') {
-        closeRetroVerseSystemBar();
+        closeRvSystemBar();
       } else if (act === 'turbo') {
         if (gm && gm.toggleFastForward) {
           const isOn = !!em.isFastForward;
@@ -1456,7 +1595,7 @@ function closeRetroVerseSystemBar() {
         }
         syncRvSysBarState();
       }
-    } catch (err) { console.warn('[RetroVerso] barra de sistema:', err); }
+    } catch (err) { console.warn('[RetroVault OS] barra de sistema:', err); }
   });
 })();
 
@@ -1470,7 +1609,7 @@ function bindEmulatorMenuToCheats() {
   // O botão hambúrguer chama este método internamente. Redirecionar o método
   // também cobre versões do EmulatorJS que recriam o botão touch dinamicamente.
   if (emulator.menu && !emulator.menu.__rvCheatsRedirected) {
-    emulator.menu.toggle = () => openRetroVerseCheats();
+    emulator.menu.toggle = () => openRvCheats();
     emulator.menu.__rvCheatsRedirected = true;
   }
 
@@ -1488,7 +1627,7 @@ function bindEmulatorMenuToCheats() {
     const now = Date.now();
     if (now - lastHandled < 450) return;
     lastHandled = now;
-    openRetroVerseCheats();
+    openRvCheats();
   };
 
   ['touchstart', 'touchend', 'mousedown', 'mouseup', 'click'].forEach(type => {
@@ -1506,7 +1645,7 @@ EJS_Buttons = {
   contextMenu: {
     visible: true,
     displayName: 'Cheats',
-    callback: openRetroVerseCheats
+    callback: openRvCheats
   }
 };
 
@@ -1562,7 +1701,7 @@ function onGameReady() {
         if (cloudAt > localAt) {
           await rvSavePut(key, cloud);
           refreshRvSaveInfo();
-          showToast('☁ Save da sua conta disponível (' + rvFmtDate(cloud.savedAt) + ')');
+          showToast('Save da sua conta disponível (' + rvFmtDate(cloud.savedAt) + ')', 'cloud');
         }
       } catch (e) { /* offline ou sem save na nuvem: segue o jogo */ }
     })();
@@ -1641,7 +1780,7 @@ function findCheatEntries(database, romName) {
   return result;
 }
 
-async function loadRetroVerseCheats() {
+async function loadRvCheats() {
   const base = String(window.EJS_cheatPath || 'cheats/')
     .replace(/\/+$/, '') + '/';
   const cheatCore = isNDSCore ? 'nds' : core;
@@ -1659,26 +1798,26 @@ async function loadRetroVerseCheats() {
       const data = await response.json();
       if (data && typeof data === 'object') databases.push(data);
     } catch (error) {
-      console.warn('[RetroVerso] Não foi possível carregar cheats:', path, error);
+      console.warn('[RetroVault OS] Não foi possível carregar cheats:', path, error);
     }
   }
 
   const database = Object.assign({}, ...databases);
   const romName = window.EJS_gameName || decodeURIComponent((game || '').split('/').pop() || '');
   window.EJS_cheats = findCheatEntries(database, romName);
-  console.info(`[RetroVerso] Cheats carregados para "${romName}": ${window.EJS_cheats.length}`);
+  console.info(`[RetroVault OS] Cheats carregados para "${romName}": ${window.EJS_cheats.length}`);
 }
 
 let __rvLoaderStarted = false;
-async function startRetroVerseEmulator() {
+async function startRvEmulator() {
   if (__rvLoaderStarted) return;
   __rvLoaderStarted = true;
 
   try {
-    await loadRetroVerseCheats();
+    await loadRvCheats();
   } catch (error) {
     window.EJS_cheats = [];
-    console.warn('[RetroVerso] Falha ao preparar cheats:', error);
+    console.warn('[RetroVault OS] Falha ao preparar cheats:', error);
   }
 
   const script = document.createElement('script');
@@ -1698,7 +1837,7 @@ async function startRetroVerseEmulator() {
         msg.style.whiteSpace = 'normal';
         msg.style.maxWidth = '320px';
       }
-      console.warn('[RetroVerso] watchdog: emulador não iniciou em 30s.', window.__rvLastError || '');
+      console.warn('[RetroVault OS] watchdog: emulador não iniciou em 30s.', window.__rvLastError || '');
     } catch (e) { }
   }, 30000);
 }
@@ -1728,7 +1867,7 @@ if (isArcade) {
               this.gameManager.FS.writeFile(nome, new Uint8Array(await resp.arrayBuffer()));
               this.config.biosUrl = url;
             } catch (err) {
-              console.error('[RetroVerso] Falha ao baixar BIOS:', url, err);
+              console.error('[RetroVault OS] Falha ao baixar BIOS:', url, err);
               if (this.startGameError) this.startGameError(this.localization ? this.localization('Network Error') : 'Network Error');
               return; // deixa o próprio FBNeo exibir a tela de romset ausente
             }
@@ -1745,12 +1884,12 @@ if (isArcade) {
     // o EmulatorJS logava "Network Error" e o jogo nunca iniciava.
     EJS_biosUrl = (window.__rvRomFromRemote ? ROMS_BASE : 'roms/') + 'arcade/neogeo.zip';
     EJS_onGameStart = onGameReady; setTimeout(onGameReady, 14000);
-    startRetroVerseEmulator();
+    startRvEmulator();
   }).catch(() => {
     EJS_gameUrl = ROMS_BASE + game;
     EJS_biosUrl = ROMS_BASE + 'arcade/neogeo.zip';
     EJS_onGameStart = onGameReady; setTimeout(onGameReady, 14000);
-    startRetroVerseEmulator();
+    startRvEmulator();
   });
 } else {
   // genesis_plus_gx exige a BIOS do Sega CD (bios_CD_U.bin) junto ao conteúdo.
@@ -1763,15 +1902,15 @@ if (isArcade) {
     for (const url of urls) {
       try {
         const head = await fetch(url, { method: 'HEAD' });
-        if (head.ok) { EJS_biosUrl = url; console.log('[RetroVerso] BIOS do Sega CD configurada:', url); return; }
+        if (head.ok) { EJS_biosUrl = url; console.log('[RetroVault OS] BIOS do Sega CD configurada:', url); return; }
       } catch (error) {}
     }
-    console.warn('[RetroVerso] BIOS do Sega CD não encontrada (' + SCD_BIOS_PATH + '). O jogo pode não iniciar.');
+    console.warn('[RetroVault OS] BIOS do Sega CD não encontrada (' + SCD_BIOS_PATH + '). O jogo pode não iniciar.');
   };
   preloadGame(game).then(async blobUrl => {
     EJS_gameUrl = blobUrl; EJS_onGameStart = onGameReady; setTimeout(onGameReady, 14000);
     await configureSegaCDBios();
-    startRetroVerseEmulator();
+    startRvEmulator();
   }).catch(() => {
     document.getElementById('rv-msg').textContent = 'Erro ao carregar.';
     initControls(); // Mostra overlay mesmo em erro/teste sem ROM
@@ -1811,7 +1950,7 @@ function sendInput(id, val) {
       manager.functions.simulateInput(0, id, val);
     }
     if (new URLSearchParams(window.location.search).has('debug')) {
-      console.log('[RetroVerso] input', { id, val });
+      console.log('[RetroVault OS] input', { id, val });
     }
   } catch (e) {}
 }
@@ -1844,16 +1983,16 @@ if (window.RVInput) {
       document.body.classList.add('rv-no-virtualpad');
       if (typeof showToast === 'function') {
         showToast(info.reason === 'controle físico conectado'
-          ? '🎮 Controle detectado — controles da tela ocultados'
-          : 'Controles da tela ocultados');
+          ? 'Controle detectado — controles da tela ocultados'
+          : 'Controles da tela ocultados', 'gamepad');
       }
     } else {
       document.body.classList.remove('rv-no-virtualpad');
       initControls(true);
       if (typeof showToast === 'function' && info.reason !== 'aparelho de toque sem controle') {
-        showToast('Controles da tela ativados');
+        showToast('Controles da tela ativados', 'gamepad');
       } else if (typeof showToast === 'function') {
-        showToast('Controle desconectado — controles da tela de volta');
+        showToast('Controle desconectado — controles da tela de volta', 'gamepad');
       }
     }
   });
@@ -2242,12 +2381,12 @@ function buildPad(skin) {
 function takeScreenshot() {
   try {
     const canvas = document.querySelector('#game canvas');
-    if (!canvas) { showToast('⚠️ Nenhum jogo ativo'); return; }
+    if (!canvas) { showToast('Nenhum jogo ativo', 'warning'); return; }
     const dataUrl = canvas.toDataURL('image/png');
     // Download
     const a = document.createElement('a');
     a.href = dataUrl;
-    a.download = `retroverso_${core}_${Date.now()}.png`;
+    a.download = `retrovault-os_${core}_${Date.now()}.png`;
     a.click();
     // Salva nas conquistas
     try {
@@ -2256,9 +2395,9 @@ function takeScreenshot() {
       RVStore.setItem('rv_screenshots', JSON.stringify(screenshots));
       checkAchievements();
     } catch(e) {}
-    showToast('📸 Screenshot salvo!');
+    showToast('Screenshot salvo!', 'camera');
   } catch(e) {
-    showToast('⚠️ Erro ao capturar tela');
+    showToast('Erro ao capturar tela', 'warning');
   }
 }
 
@@ -2282,7 +2421,7 @@ function toggleTheater() {
   applyTheaterMode();
   // A região touch da tela inferior do NDS precisa seguir o novo tamanho.
   setTimeout(() => { if (typeof window.RV_SYNC_NDS_STYLUS === 'function') window.RV_SYNC_NDS_STYLUS(); }, 100);
-  showToast(theaterMode ? 'Modo Theater ativado — controles ocultos' : 'Modo Theater desativado');
+  showToast(theaterMode ? 'Modo Theater ativado — controles ocultos' : 'Modo Theater desativado', 'theater');
 }
 
 // ESC também fecha o modo imersivo, sem interferir no menu de cheats.
@@ -2290,7 +2429,7 @@ document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && theaterMode && !document.body.classList.contains('rv-cheats-open')) {
     theaterMode = false;
     applyTheaterMode();
-    showToast('🎬 Modo Theater desativado');
+    showToast('Modo Theater desativado', 'theater');
   }
 });
 
@@ -2298,9 +2437,11 @@ document.addEventListener('keydown', (event) => {
    TOAST NOTIFICATION
 ═══════════════════════════════════════════ */
 let toastTimeout;
-function showToast(msg) {
+function showToast(msg, icon) {
   const toast = document.getElementById('rv-toast');
-  toast.textContent = msg;
+  if (!toast) return;
+  const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  toast.innerHTML = (icon ? '<img class="rv-inline-icon" src="assets/icons/' + icon + '.svg" alt="">' : '') + esc(msg);
   toast.classList.add('show');
   clearTimeout(toastTimeout);
   toastTimeout = setTimeout(() => toast.classList.remove('show'), 2500);
@@ -2367,7 +2508,7 @@ function checkAchievements() {
     if (newAchievements.length > 0) {
       RVStore.setItem('rv_achievements', JSON.stringify(achievements));
       for (const a of newAchievements) {
-        showToast(`🏆 ${a.name}: ${a.desc}`);
+        showToast(`${a.name}: ${a.desc}`, 'trophy');
       }
     }
   } catch(e) {}
@@ -2382,23 +2523,36 @@ document.getElementById('rv-theater-btn').addEventListener('click', toggleTheate
 
 /* ═══════════════════════════════════════════
    MENU DO JOGO SEM CONTROLE NA TELA
-   No celular o menu abre segurando o botão MENU do overlay. No PC (ou com
-   gamepad conectado) o overlay não existe — então o botão flutuante e os
-   atalhos de teclado assumem esse papel.
-     F1 = abre/fecha o menu   F2 = salvar   F4 = carregar
+   No celular: toque no MENU do overlay = cheats, segurar = barra de saves.
+   No PC (ou com gamepad) o overlay não existe — F1 espelha esse comportamento
+   (toque = cheats, segurar ~500ms = saves) e o botão flutuante abre os saves.
+     F1 = cheats (segurar = saves)   F2 = salvar   F4 = carregar
 ═══════════════════════════════════════════ */
 (function bindSysBarShortcuts() {
   const btn = document.getElementById('rv-sysbar-btn');
-  if (btn) btn.addEventListener('click', () => openRetroVerseSystemBar());
+  if (btn) btn.addEventListener('click', () => openRvSystemBar());
 
+  /* F1 espelha o botão MENU do touch: toque rápido = cheats, segurar = saves. */
+  let f1Down = 0, f1Held = false, f1Timer = 0;
   document.addEventListener('keydown', (event) => {
     if (event.repeat || event.ctrlKey || event.altKey || event.metaKey) return;
     const tag = (event.target && event.target.tagName) || '';
     if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;
 
-    if (event.key === 'F1') { event.preventDefault(); openRetroVerseSystemBar(); }
+    if (event.key === 'F1') {
+      event.preventDefault();
+      f1Down = Date.now(); f1Held = false;
+      clearTimeout(f1Timer);
+      f1Timer = setTimeout(() => { f1Held = true; openRvSystemBar(); }, 500);
+    }
     else if (event.key === 'F2') { event.preventDefault(); rvSaveNow(); }
     else if (event.key === 'F4') { event.preventDefault(); rvLoadNow(); }
+  });
+  document.addEventListener('keyup', (event) => {
+    if (event.key !== 'F1' || !f1Down) return;
+    clearTimeout(f1Timer);
+    if (!f1Held) openRvCheats(); // soltou rápido = cheats (segurou = barra já abriu)
+    f1Down = 0; f1Held = false;
   });
 })();
 

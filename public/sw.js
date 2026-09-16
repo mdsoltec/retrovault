@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVERSO — Service Worker (v9)
+   RETROVAULT OS — Service Worker (v9)
    O que mudou nesta versão:
    1. EmulatorJS (CDN) agora é cacheado com stale-while-revalidate:
       a 2ª abertura de um jogo usa o núcleo WASM do cache (quase
@@ -10,9 +10,9 @@
       calibrate.html (faltavam → offline quebrava o player).
    4. Versão fixada do EmulatorJS (4.2.3) no warmup — veja play.html.
    ═══════════════════════════════════════════════════════════ */
-const CACHE_NAME = 'retroverso-v13';
+const CACHE_NAME = 'retrovault-v2';
 const CACHE_EJS = CACHE_NAME + '-ejs'; // núcleos/framework do EmulatorJS
-const CACHE_COVERS = 'retroverso-covers'; // capas baixadas automaticamente da web
+const CACHE_COVERS = 'retrovault-covers'; // capas baixadas automaticamente da web
 const EJS_CDN = 'https://cdn.emulatorjs.org/4.2.3/data/';
 
 const STATIC_ASSETS = [
@@ -23,7 +23,7 @@ const STATIC_ASSETS = [
   'login.html',
   'retroflix.html',
   'calibrate.html',
-  'css/style.css',
+  'css/style.css?v=20260916',
   'assets/rv-icon.png',
   'assets/avatar-01.png',
   'assets/avatar-02.png',
@@ -46,13 +46,17 @@ const STATIC_ASSETS = [
   'assets/avatar-19.png',
   'assets/avatar-20.png',
   'manifest.json',
-  'js/audio.js',
-  'js/rv-config.js',
-  'js/rv-account.js',
-  'js/rv-input-mode.js',
-  'js/covers.js',
-  'js/covers-map.js',
-  'js/overlay-parser.js',
+  'js/audio.js?v=20260916',
+  'js/rv-config.js?v=20260916',
+  'js/rv-account.js?v=20260916',
+  'js/rv-input-mode.js?v=20260916',
+  'js/covers.js?v=20260916',
+  'js/covers-map.js?v=20260916',
+  'js/fichas.js?v=20260916',
+  'js/card-info.js?v=20260916',
+  'js/rv-ui.js?v=20260916',
+  'js/overlay-parser.js?v=20260916',
+  'js/catalog.js?v=20260916',
   // Base de cheats dinâmica do EmulatorJS
   'cheats/cheats.json',
   'cheats/nes.json',
@@ -79,7 +83,7 @@ self.addEventListener('install', event => {
     caches.open(CACHE_NAME).then(cache => Promise.all(
       STATIC_ASSETS.map(url =>
         cache.add(url).catch(err => {
-          console.warn('[RetroVerso SW] recurso ignorado no cache:', url, err && err.message);
+          console.warn('[RetroVault OS SW] recurso ignorado no cache:', url, err && err.message);
         })
       )
     ))

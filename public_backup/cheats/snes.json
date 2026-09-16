@@ -1,0 +1,1514 @@
+{
+  "Aladdin (USA)": [
+    {
+      "desc": "Infinite lives",
+      "code": "C221-4FA5"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "A221-4FA5"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "7E036703"
+    },
+    {
+      "desc": "Infinite Health against Enemies",
+      "code": "C267-4D0A"
+    },
+    {
+      "desc": "Infinite Health against Spikes and Lava",
+      "code": "C26F-4DDA"
+    },
+    {
+      "desc": "Only 10 gems needed for health increase/free life",
+      "code": "FD86-4F6E"
+    },
+    {
+      "desc": "Only 20 gems needed for health increase/free life",
+      "code": "4D86-4F6E"
+    },
+    {
+      "desc": "Only 30 gems needed for health increase/free life",
+      "code": "7D86-4F6E"
+    },
+    {
+      "desc": "Only 40 gems needed for health increase/free life",
+      "code": "0D86-4F6E"
+    },
+    {
+      "desc": "Only 50 gems needed for health increase/free life",
+      "code": "9D86-4F6E"
+    },
+    {
+      "desc": "Only 60 gems needed for health increase/free life",
+      "code": "1D86-4F6E"
+    },
+    {
+      "desc": "Only 90 gems needed for health increase/free life",
+      "code": "BD86-4F6E"
+    }
+  ],
+  "Chrono Trigger (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "7E5E30E7+7E5E3103"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "7E5EB0E7+7E5EB103"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "7E5F30E7+7E5F3103"
+    },
+    {
+      "desc": "Infinite Money",
+      "code": "7E2C537F+7E2C5496+7E2C5598"
+    },
+    {
+      "desc": "Infinite Gold (Alternate Code)",
+      "code": "7E2C5301+7E2C5401+7E2C5501"
+    },
+    {
+      "desc": "Infinite Money And Loads of Money",
+      "code": "7EAC53FF+7EAC54FF+7EAC55FF"
+    },
+    {
+      "desc": "You Are Invincible And If A Monster Hits You They All Die!",
+      "code": "1438-7765"
+    },
+    {
+      "desc": "Invincible To Almost All Types Of Monster Attacks/Magic",
+      "code": "24A0-5700"
+    },
+    {
+      "desc": "Erases 2nd Saved Game And All Are Invincible In Battles",
+      "code": "2223-7765"
+    },
+    {
+      "desc": "Experience After Battle Modifier",
+      "code": "7EB28C00+7EB28D00"
+    },
+    {
+      "desc": "Infinite Speed Boosts",
+      "code": "7E009A03"
+    },
+    {
+      "desc": "Experience",
+      "code": "7E261300+7E261400"
+    }
+  ],
+  "D-Force (USA)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "3CCA-D4DD"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00A0C8EA"
+    },
+    {
+      "desc": "Start With Cannon Power At Level 2 Instead Of 1",
+      "code": "DFB6-DF6D"
+    },
+    {
+      "desc": "Start With Cannon Power At Level 3",
+      "code": "D4B6-DF6D"
+    },
+    {
+      "desc": "Start With Cannon Power At Level 4",
+      "code": "D7B6-DF6D"
+    },
+    {
+      "desc": "Start With Cannon Power At Level 6",
+      "code": "D9B6-DF6D"
+    },
+    {
+      "desc": "Start With Cannon Power At Level 8",
+      "code": "D5B6-DF6D"
+    },
+    {
+      "desc": "Start With Cannon Power At Level 10",
+      "code": "DBB6-DF6D"
+    },
+    {
+      "desc": "Start With Cannon Power At Level 12",
+      "code": "D8B6-DF6D"
+    },
+    {
+      "desc": "Start With Cannon Power At Level 12",
+      "code": "0090860B"
+    }
+  ],
+  "Donkey Kong Country (USA) (Rev 2)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "C2C5-4A2C"
+    },
+    {
+      "desc": "Start With Lives Modifier",
+      "code": "7E3402B0+7E340304"
+    },
+    {
+      "desc": "Start With Lives Modifier",
+      "code": "EE63-333D"
+    },
+    {
+      "desc": "Start With Lives Modifier",
+      "code": "3363-333D"
+    },
+    {
+      "desc": "Invincibility [No 'Lockup']",
+      "code": "1DC2-C3EA+F6C9-128A+F6C3-32EA"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "DD2B-325A+1DAB-3E82"
+    },
+    {
+      "desc": "Invincible",
+      "code": "1DC2-C3EA"
+    },
+    {
+      "desc": "Almost Invincible (Switch Off If You Get Stuck)",
+      "code": "1DC2-63EA"
+    },
+    {
+      "desc": "Invincibility in Mine Cart Carnage",
+      "code": "DDCC-CE9B"
+    },
+    {
+      "desc": "Get Life Balloons From Anywhere",
+      "code": "6DC0-32FB"
+    },
+    {
+      "desc": "EZ Level Exit",
+      "code": "DDB9-3764"
+    },
+    {
+      "desc": "Expresso MultiJump",
+      "code": "EE8B-CA53"
+    }
+  ],
+  "Donkey Kong Country 2 - Diddy's Kong Quest (USA) (En,Fr) (Rev 1)": [
+    {
+      "desc": "Invincibility",
+      "code": "CB2C-1A4D+FD2C-1A1D+DD2C-1ACD"
+    },
+    {
+      "desc": "Get Life Balloons From Anywhere",
+      "code": "DDA5-42A2+6DAF-4E62"
+    },
+    {
+      "desc": "Jump In Midair",
+      "code": "DDBD-CA44+D5BD-3214+DBB2-3244+DD8E-121D+6787-C334"
+    },
+    {
+      "desc": "Get Single Bananas From Almost Anywhere(Works with Bonus Stage Stars)",
+      "code": "DDE2-33B9+6DE4-4EF1+DDE7-4EF1"
+    },
+    {
+      "desc": "Skip Intro Screens",
+      "code": "DDB8-34DF+708F-170F"
+    },
+    {
+      "desc": "Enable Death Music When Losing To Kaptain K. Rool",
+      "code": "4A63-E23D"
+    },
+    {
+      "desc": "Correct Banana Bunch Collection Sound",
+      "code": "DBE0-5E21"
+    },
+    {
+      "desc": "Get DK and Banana Coins From Anywhere",
+      "code": "6D85-42EC"
+    },
+    {
+      "desc": "Get Banana Bunches From Anywhere",
+      "code": "6DA9-3EAA"
+    },
+    {
+      "desc": "Get KONG Letters From Anywhere",
+      "code": "6D8A-C25C"
+    },
+    {
+      "desc": "Get Krem Koins From Anywhere",
+      "code": "6D8E-1A7C"
+    },
+    {
+      "desc": "Get Midway Barrel From Anywhere",
+      "code": "6D3F-1A62"
+    }
+  ],
+  "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "C26E-73CD"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "7E05D563"
+    },
+    {
+      "desc": "Infinite Fuel Rocket Rush Level",
+      "code": "C283-72CF"
+    },
+    {
+      "desc": "Invincibility Rocket Rush Level",
+      "code": "DD8E-3ACD"
+    },
+    {
+      "desc": "Unlimited Time In Bonus Stages",
+      "code": "7E09B614"
+    },
+    {
+      "desc": "When you get an extra life for collecting 100 bananas, you will only lose half your bananas instead of all of them",
+      "code": "0B8A-8E3A"
+    },
+    {
+      "desc": "When you get an extra life for collecting 100 bananas, you will only lose 1 banana instead of all of them",
+      "code": "DD8A-8E3A"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "CBA0-CECF+DBA0-CE3F+DDA9-CA4F+6D3A-1386+DD89-C23D"
+    },
+    {
+      "desc": "Infinite Bananas",
+      "code": "7E18CB99+7E18CD63"
+    },
+    {
+      "desc": "Invincibility For Kiddy Kong",
+      "code": "7E14E820"
+    },
+    {
+      "desc": "Invincible",
+      "code": "B768-C34D"
+    },
+    {
+      "desc": "Infinite Silver Coins",
+      "code": "7E05C94F"
+    }
+  ],
+  "Flintstones, The (USA) (En,Fr,De,Es,It)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "226A-ADDD"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "82BB-C402+C9B9-37D2"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "2DB9-3D62+2DB3-CD02"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "7E1D51FF"
+    },
+    {
+      "desc": "Infinite Energy Boss",
+      "code": "7E1ED615"
+    },
+    {
+      "desc": "Hit Anywhere",
+      "code": "6D83-37A2+418E-3DD2"
+    },
+    {
+      "desc": "Get Items From Anywhere",
+      "code": "DDB3-C4D0+DDB4-1760+DDC4-CFD9"
+    },
+    {
+      "desc": "Jump in Midair",
+      "code": "DDB4-1F0E"
+    }
+  ],
+  "Kirby's Dream Land 3 (U)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "C285-D4C7"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "4039CF0A"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "DC7A-97A4"
+    },
+    {
+      "desc": "Infinite Life (Kirby)",
+      "code": "4039D10A"
+    },
+    {
+      "desc": "Infinite Life (Partner)",
+      "code": "4039D308"
+    },
+    {
+      "desc": "Infinite Life (Kirby)",
+      "code": "DC72-9D04"
+    },
+    {
+      "desc": "Infinite Life (Partner)",
+      "code": "D672-9DA4"
+    },
+    {
+      "desc": "Enter/Exit Level Select For All Stage Stars",
+      "code": "B2CA-A4D5+B2CA-A4A5+B2CA-A765"
+    },
+    {
+      "desc": "Kirby Has Infinite Energy",
+      "code": "C281-DDC7"
+    },
+    {
+      "desc": "Infinite Mouth Shot",
+      "code": "4054ED02"
+    },
+    {
+      "desc": "Always Have Invincibility (Kirby)",
+      "code": "4054B201"
+    }
+  ],
+  "Legend of Zelda, The - A Link to the Past (USA)": [
+    {
+      "desc": "All Treasure Chests Can Be Received Infinite Times",
+      "code": "7E040300"
+    },
+    {
+      "desc": "Infinite Money",
+      "code": "7EF362E7+7EF36303"
+    },
+    {
+      "desc": "Golden Pyramid Wall Open",
+      "code": "CB39-AFD8+1439-AF08+6239-AF68+2839-AFA8+3C39-A408"
+    },
+    {
+      "desc": "Revive Infinite Times",
+      "code": "6DEF-DD39+CEE7-D739"
+    },
+    {
+      "desc": "Infinite Small Keys",
+      "code": "7EF36F04"
+    },
+    {
+      "desc": "Infinite Time When You Play The Digging Game In The Dark World",
+      "code": "7E04B41E"
+    },
+    {
+      "desc": "Get Chests Infinite Times",
+      "code": "A230-DD05"
+    },
+    {
+      "desc": "Invincible/Walk Through Enemies",
+      "code": "7E031F01"
+    },
+    {
+      "desc": "Have Golden Sword (Level 4)",
+      "code": "7EF35904"
+    },
+    {
+      "desc": "Have Large Golden Shield (Level 3)",
+      "code": "7EF35A02"
+    },
+    {
+      "desc": "Have Golden Gloves (Level 2)",
+      "code": "7EF35402"
+    }
+  ],
+  "Lost Vikings 2 (USA)": [
+    {
+      "desc": "Infinite Energy",
+      "code": "7E103706+7E103906+7E103B06"
+    },
+    {
+      "desc": "Skip Intro Screens",
+      "code": "E1E7-CFD4+DDE7-CF04"
+    },
+    {
+      "desc": "1st Item Modifier [1st Viking]",
+      "code": "7E03EA01"
+    },
+    {
+      "desc": "2nd Item Modifier [1st Viking]",
+      "code": "7E03EC00"
+    },
+    {
+      "desc": "3rd Item Modifier [1st Viking]",
+      "code": "7E03EE00"
+    },
+    {
+      "desc": "4th Item Modifier [1st Viking]",
+      "code": "7E03FF00"
+    },
+    {
+      "desc": "1st Item Modifier [2nd Viking]",
+      "code": "7E03F200"
+    },
+    {
+      "desc": "2nd Item Modifier [2nd Viking]",
+      "code": "7E03F400"
+    },
+    {
+      "desc": "3rd Item Modifier [2nd Viking]",
+      "code": "7E03F600"
+    },
+    {
+      "desc": "4th Item Modifier [2nd Viking]",
+      "code": "7E03F800"
+    },
+    {
+      "desc": "1st Item Modifier [3rd Viking]",
+      "code": "7E03FA00"
+    }
+  ],
+  "Lost Vikings, The (USA)": [
+    {
+      "desc": "Infinite HP For All Vikings [Instant Death Still Kills]",
+      "code": "1D23-D7AF"
+    },
+    {
+      "desc": "Infinite HP For All Vikings (Instant Death Still Kills You)",
+      "code": "7E0FE908"
+    },
+    {
+      "desc": "Level Select",
+      "code": "7E19DD00"
+    },
+    {
+      "desc": "Start At Level X [Skips Logos & Intro]",
+      "code": "7E31CBDD"
+    },
+    {
+      "desc": "Start At Level X (Skips Logos & Intro)",
+      "code": "DD62-0FD4"
+    },
+    {
+      "desc": "Erik's Item Slot #1",
+      "code": "7E040201"
+    },
+    {
+      "desc": "Erik's Item Slot #2",
+      "code": "7E040400"
+    },
+    {
+      "desc": "Erik's Item Slot #3",
+      "code": "7E040600"
+    },
+    {
+      "desc": "Erik's Item Slot #4",
+      "code": "7E040800"
+    },
+    {
+      "desc": "Balrog's Item Slot #1",
+      "code": "7E040A00"
+    },
+    {
+      "desc": "Balrog's Item Slot #2",
+      "code": "7E040C00"
+    },
+    {
+      "desc": "Balrog's Item Slot #3",
+      "code": "7E040E00"
+    },
+    {
+      "desc": "Start At Level X [Skips Logos & Intro]",
+      "code": "7E31CBDD"
+    },
+    {
+      "desc": "Start At Level X (Skips Logos & Intro)",
+      "code": "DD62-0FD4"
+    }
+  ],
+  "Mickey Mania - The Timeless Adventures of Mickey Mouse (USA)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "7E060E05"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "C2B3-C313"
+    },
+    {
+      "desc": "Start with 7 lives",
+      "code": "D1A3-36A9"
+    },
+    {
+      "desc": "Start with 10 lives",
+      "code": "DBA3-36A9"
+    },
+    {
+      "desc": "Start with 1 life",
+      "code": "DDA3-36D9"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "7E060804"
+    },
+    {
+      "desc": "Invincible [Except For Falling Off Screen]",
+      "code": "7E013738"
+    },
+    {
+      "desc": "Infinite Marbles",
+      "code": "7E060C63"
+    },
+    {
+      "desc": "Infinite energy",
+      "code": "C2B8-CAC3"
+    },
+    {
+      "desc": "Infinite marbles",
+      "code": "C2A8-CA32"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "6D2C-CACE"
+    },
+    {
+      "desc": "Level Select",
+      "code": "7E061080"
+    }
+  ],
+  "Mighty Morphin Power Rangers - The Fighting Edition (USA)": [
+    {
+      "desc": "Infinite Health P1",
+      "code": "7E1A2270"
+    },
+    {
+      "desc": "Infinite Health P2",
+      "code": "7E1A2670"
+    },
+    {
+      "desc": "Infinite P1 Health",
+      "code": "7E1A2278"
+    },
+    {
+      "desc": "Infinite P2 Health",
+      "code": "7E1A2678"
+    },
+    {
+      "desc": "Infinite Round Time",
+      "code": "7E06B806+7E06BA00"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "7E06BA09"
+    },
+    {
+      "desc": "Background Modifier [All Modes]",
+      "code": "7E061000"
+    },
+    {
+      "desc": "P1 Character Modifier [All Modes]",
+      "code": "7E1A6800"
+    },
+    {
+      "desc": "P1 Costume Modifier [All Modes]",
+      "code": "7E1A4000"
+    },
+    {
+      "desc": "1 Button Special 1 P1 (Use Only 1 At A Time)",
+      "code": "7E1B0007+7E1B020C"
+    },
+    {
+      "desc": "1 Button Special 2 P1 (Use Only 1 At A Time)",
+      "code": "7E1B0807+7E1B0A0C"
+    },
+    {
+      "desc": "1 Button Special 3 P1 (Use Only 1 At A Time)",
+      "code": "7E1B1007+7E1B120C"
+    }
+  ],
+  "Pilotwings (USA)": [
+    {
+      "desc": "Infinite Time",
+      "code": "7E0C1900+7E0C1A00+7E0C1C00+7E0C1D00"
+    },
+    {
+      "desc": "Infinite time [switch off to detach hang glider from plane]",
+      "code": "DD8E-AFD5"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "7E1A-BD1C"
+    },
+    {
+      "desc": "Infinite Fuel",
+      "code": "7E0C5955+7E0C5A55+7E0C5B55+7E0C5C55+7E0C5D55+7E0C5F55"
+    },
+    {
+      "desc": "Infinite fuel",
+      "code": "108D-0FA7"
+    },
+    {
+      "desc": "Start At Level (Turnoff To Continue Game)",
+      "code": "7E009E00"
+    },
+    {
+      "desc": "Increase rocket pack thrust power 3x",
+      "code": "E2EF-6F0F"
+    },
+    {
+      "desc": "Increase Rocket Pack Thrust Power 3X",
+      "code": "E2EF-CD0F"
+    },
+    {
+      "desc": "Max. Gain of Altitude",
+      "code": "7E004CCF+7E004CFF"
+    },
+    {
+      "desc": "Set Skydiving Points To 99",
+      "code": "7E1F8800+7E1F8909"
+    },
+    {
+      "desc": "Set Rocket Belt Points To 99",
+      "code": "7E1F8600+7E1F8709"
+    },
+    {
+      "desc": "Set Hang Glider Points To 99",
+      "code": "7E1F8400+7E1F8509"
+    }
+  ],
+  "Road Runner's Death Valley Rally (USA)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "DDB2-4D64"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "7E1F1E06"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "7E1F2003"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "8098D200"
+    },
+    {
+      "desc": "Stay Invincible After Getting Hit Until You Fall & Die (Road Runner Blinks)",
+      "code": "C2C5-C7AF"
+    },
+    {
+      "desc": "Stay Invincible After Getting Hit Until You Fall & Die (Road Runner Does Not Blink)",
+      "code": "6DC5-C70F"
+    },
+    {
+      "desc": "Stay Invincible After Getting Hit Until You Fall And Die (Road Runner Does Not Blink)",
+      "code": "80A67D80"
+    },
+    {
+      "desc": "Stay Invincible After Getting Hit Until You Fall And Die (Road Runner Blinks)",
+      "code": "80A67FAD"
+    },
+    {
+      "desc": "Stay invincible after getting hit until you fall & die [Road Runner blinks]",
+      "code": "C2C5-C7AF"
+    },
+    {
+      "desc": "Stay invincible after getting hit until you fall & die [Road Runner blinks]",
+      "code": "C2C5-C7AF"
+    }
+  ],
+  "Space Invaders (USA)": [
+    {
+      "desc": "P1 Infinite Lives - Original Game Mode",
+      "code": "7E039509"
+    },
+    {
+      "desc": "P2 Infinite Lives - Original Game Mode",
+      "code": "7E039709"
+    },
+    {
+      "desc": "Infinite Lives - Original Game Mode - Both Players",
+      "code": "826F-37A9"
+    },
+    {
+      "desc": "Invincibility - Original Game Mode - Both Players",
+      "code": "7E1A65FF+7E1A6905"
+    },
+    {
+      "desc": "Invincibility - Original Game Mode - Both Players",
+      "code": "DD6B-C4D9"
+    },
+    {
+      "desc": "Aliens don't move",
+      "code": "7E043E00"
+    },
+    {
+      "desc": "Aliens don't attack",
+      "code": "7E044000"
+    },
+    {
+      "desc": "Show Credits After a Demo Plays",
+      "code": "DDBA-44D4"
+    },
+    {
+      "desc": "Enemies Never Move",
+      "code": "7E03D500"
+    },
+    {
+      "desc": "Inf Credits",
+      "code": "7E03BF02"
+    },
+    {
+      "desc": "Staff Roll Starts After Demo",
+      "code": "7E011A01"
+    },
+    {
+      "desc": "Enemy Movement Noise Modifier",
+      "code": "7E03EF00"
+    }
+  ],
+  "Super Bomberman (USA)": [
+    {
+      "desc": "Infinite Lives [Normal Game]",
+      "code": "89FE-57B4"
+    },
+    {
+      "desc": "Infinite Lives (Player 2)",
+      "code": "7E0DBD09"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "7E0D7D09"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "7E0D3BFF"
+    },
+    {
+      "desc": "Invincible [Normal Game]",
+      "code": "89FC-77FF"
+    },
+    {
+      "desc": "Invincible",
+      "code": "7E0D7688"
+    },
+    {
+      "desc": "Exits On All Stages Are Active",
+      "code": "7E0D2500"
+    },
+    {
+      "desc": "Remove All Blocks",
+      "code": "DFFC-849C"
+    },
+    {
+      "desc": "Set Max. Bomb Power (Player 2)",
+      "code": "7E0DB109"
+    },
+    {
+      "desc": "Set Max. Bomb Power (Player 1)",
+      "code": "7E0D7109"
+    },
+    {
+      "desc": "Set Max. Bomb Power (Player 3)",
+      "code": "7E0DF109"
+    },
+    {
+      "desc": "Set Max. Bomb Power (Player 4)",
+      "code": "7E0E3109"
+    }
+  ],
+  "Super Mario All-Stars (USA) (Wii)": [
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every ?? Coins",
+      "code": "DC80-0D0E+4D80-04AE+F480-07DE+2380-070E+3C80-076E+3C80-07AE"
+    },
+    {
+      "desc": "Receive An Extra Life And Invincibility Star Powerup Every ?? Coins",
+      "code": "DC8F-AD51+4D8F-A751+7C8F-A781+228F-A7E1+3C84-AD71+3C84-AD51"
+    },
+    {
+      "desc": "All Characters Have Infinite Float Time",
+      "code": "7E04CAFF"
+    },
+    {
+      "desc": "Start Every Life With Max Health",
+      "code": "CB3B-D12D+D43B-D5FD+623B-D59D+C23C-D0FD+ED3C-D09D"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "C2C1-D4AA"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "C2B6-A455"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "C26E-D5A6"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "82BB-0C6D"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "7E07EA01"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "7E075A63"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "7E04C320"
+    },
+    {
+      "desc": "Infinite Coins For Slot Machine Game At End of Level",
+      "code": "C268-6565"
+    }
+  ],
+  "Super Mario Kart (USA)": [
+    {
+      "desc": "Beat 50cc Mushroom Cup To Get Gold Cup On All Courses, And 150cc Courses",
+      "code": "DDEF-1D97+D4EF-1D27+F9EF-1FB7+F9EF-1F27"
+    },
+    {
+      "desc": "Never Lose Speed",
+      "code": "B5C4-CDA4"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "1A3E-CDA4"
+    },
+    {
+      "desc": "Invincible",
+      "code": "E33E-CDA4"
+    },
+    {
+      "desc": "Infinite Item When You Get One",
+      "code": "8B8F-4F69"
+    },
+    {
+      "desc": "Infinite Coins",
+      "code": "7E0E0063"
+    },
+    {
+      "desc": "Infinite Continues",
+      "code": "7E015404"
+    },
+    {
+      "desc": "Invincible!!!",
+      "code": "1A3E-CDA4"
+    },
+    {
+      "desc": "Unlimited Retries In GP Mode",
+      "code": "C7EB-CDA4"
+    },
+    {
+      "desc": "Expert Code",
+      "code": "EE63-CDA4"
+    },
+    {
+      "desc": "All Jump Items",
+      "code": "FDB9-C701+DDB6-C7D1"
+    },
+    {
+      "desc": "All turn like Toad and Koopa troopa",
+      "code": "CBCF-476F+FDCF-47AF+DDC4-4DDF"
+    }
+  ],
+  "Super Mario RPG - Legend of the Seven Stars (USA)": [
+    {
+      "desc": "Infinite Money",
+      "code": "7FF8AFE7+7FF8B003"
+    },
+    {
+      "desc": "Infinite Star Time",
+      "code": "7E0256:04+7E0257:3C"
+    },
+    {
+      "desc": "Infinite Star Time",
+      "code": "7E025604+7E02573C"
+    },
+    {
+      "desc": "Infinite time in Goomba Stomp",
+      "code": "D974-FF6D"
+    },
+    {
+      "desc": "Experience",
+      "code": "7FF80A00+7FF80B00"
+    },
+    {
+      "desc": "Experience",
+      "code": "7FF81E00+7FF81F00"
+    },
+    {
+      "desc": "Experience",
+      "code": "7FF83200+7FF83300"
+    },
+    {
+      "desc": "Experience",
+      "code": "7FF84600+7FF84700"
+    },
+    {
+      "desc": "Experience",
+      "code": "7FF85A00+7FF85B00"
+    },
+    {
+      "desc": "Level 30 For All Characters In One Battle (Turn Off Before You Enter The Menu)",
+      "code": "7EFA020F+7EFA0327"
+    },
+    {
+      "desc": "Always Have All Beetles, 15 Male, 7 Female, 1 Gold on Booster Hill",
+      "code": "EE78-FD6D"
+    }
+  ],
+  "Super Mario World (USA)": [
+    {
+      "desc": "Infinite lives",
+      "code": "C222-D4DD"
+    },
+    {
+      "desc": "Infinite 99 Lives",
+      "code": "7E0DBE63"
+    },
+    {
+      "desc": "Start As Hovercraft Mario, Or A Mushroom To Turn Invincible And Get A Football Koopa In Reserve",
+      "code": "CBB7-6D67+3CB7-6FD7+69B7-6F07"
+    },
+    {
+      "desc": "FAKE Infinite Time",
+      "code": "7E0F2509+7E0F2609+7E0F2709"
+    },
+    {
+      "desc": "Infinite Flying Time For Yoshi",
+      "code": "C2EC-0700"
+    },
+    {
+      "desc": "Start and stay invincible most of the time",
+      "code": "DD32-6DAD"
+    },
+    {
+      "desc": "Infinite time",
+      "code": "C264-64D7"
+    },
+    {
+      "desc": "Infinite Maximum Coins",
+      "code": "7E0DBF63"
+    },
+    {
+      "desc": "Vidas infinitas",
+      "code": "C222-D4DD"
+    },
+    {
+      "desc": "Tempo infinito",
+      "code": "C264-64D7"
+    },
+    {
+      "desc": "Super pulo",
+      "code": "D42C-AF6F"
+    },
+    {
+      "desc": "Começar com 99 vidas",
+      "code": "14B4-6F07"
+    },
+    {
+      "desc": "Invencível contra buracos, lava e inimigos",
+      "code": "CBED-646F+6DED-64AF+69ED-67DF+52ED-670F+18ED-676F+CECF-0FA1"
+    }
+  ],
+  "Super Mario World 2 - Yoshi's Island (USA) (Rev 1)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "C2EE-649F"
+    },
+    {
+      "desc": "Infinite Lives/Start At Middle Ring (When You Die)",
+      "code": "C2EE-64BF"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "04F6F9AD"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "7E037963"
+    },
+    {
+      "desc": "Infinite Red Switch Time",
+      "code": "7E0CEC66"
+    },
+    {
+      "desc": "Start With 5 Lives",
+      "code": "D9B7-0023"
+    },
+    {
+      "desc": "Start With 10 Lives",
+      "code": "DCB7-0023"
+    },
+    {
+      "desc": "Start With 25 Lives",
+      "code": "FBB7-0023"
+    },
+    {
+      "desc": "Start With 50 Lives",
+      "code": "74B7-0023"
+    },
+    {
+      "desc": "Start With 99 Lives",
+      "code": "17B7-0023"
+    }
+  ],
+  "Super Metroid (Japan, USA) (En,Ja)": [
+    {
+      "desc": "Infinite Life",
+      "code": "7E09C2DB+7E09C305"
+    },
+    {
+      "desc": "Infinite Time To Escape Ship",
+      "code": "7E094500+7E094600+7E094701"
+    },
+    {
+      "desc": "Infinite Power Bomb",
+      "code": "7E09CE50"
+    },
+    {
+      "desc": "Super Missles Shoot Very Fast, Use This Code With Infinite Super Missles",
+      "code": "C28A-C9D7"
+    },
+    {
+      "desc": "Max Life",
+      "code": "7E09C4DB+7E09C505"
+    },
+    {
+      "desc": "Infinite 999 Rockets",
+      "code": "7E09C6E7+7E09C703"
+    },
+    {
+      "desc": "Invincibility Spikes",
+      "code": "6DB1-4194+6D62-C0B7+6D6B-C927"
+    },
+    {
+      "desc": "Invincible",
+      "code": "7E05B6FF+7E18A8FF"
+    },
+    {
+      "desc": "Infinite Missiles",
+      "code": "7E09C6E7+7E09C703"
+    },
+    {
+      "desc": "Infinite 99 Super Bombs",
+      "code": "7E09CE63"
+    },
+    {
+      "desc": "Almost infinite missiles",
+      "code": "C288-C5A7"
+    },
+    {
+      "desc": "Almost infinite super missiles",
+      "code": "C28A-C9D7"
+    }
+  ],
+  "Super Tennis (USA)": [
+    {
+      "desc": "CPU Can't Hit the Ball",
+      "code": "7E00EF00"
+    },
+    {
+      "desc": "CPU Scared of the Ball",
+      "code": "7E00EC00"
+    },
+    {
+      "desc": "Super speed [Matt]",
+      "code": "D060-AFAF+D761-AFAF+DD24-07A5"
+    },
+    {
+      "desc": "Super speed [Amy]",
+      "code": "D060-AFAF+D761-AFAF+DD24-A7A5"
+    },
+    {
+      "desc": "Super speed [Brian]",
+      "code": "D060-AFAF+D761-AFAF+DD27-07A5"
+    },
+    {
+      "desc": "Super speed [Ki]",
+      "code": "D060-AFAF+D761-AFAF+DD27-A7A5"
+    },
+    {
+      "desc": "Super speed [Phil]",
+      "code": "D060-AFAF+D761-AFAF+DD20-07A5"
+    },
+    {
+      "desc": "Super speed [Lisa]",
+      "code": "D060-AFAF+D761-AFAF+DD20-A7A5"
+    },
+    {
+      "desc": "Super speed [John]",
+      "code": "D060-AFAF+D761-AFAF+DD29-07A5"
+    },
+    {
+      "desc": "Super speed [Erin]",
+      "code": "D060-AFAF+D761-AFAF+DD29-A7A5"
+    },
+    {
+      "desc": "Super speed [Meyer]",
+      "code": "D060-AFAF+D761-AFAF+DD21-07A5"
+    },
+    {
+      "desc": "Super speed [Donna]",
+      "code": "D060-AFAF+D761-AFAF+DD21-A7A5"
+    }
+  ],
+  "Taz-Mania (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "7E00961D"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "99E072A5"
+    },
+    {
+      "desc": "Infinite health",
+      "code": "C935-40C0"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "7E009899"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "99E29200"
+    },
+    {
+      "desc": "Infinite time",
+      "code": "DD3B-C0C0"
+    },
+    {
+      "desc": "Start with 1 continue instead of 3 (Do not combine with level select codes)",
+      "code": "DF3F-15C0"
+    },
+    {
+      "desc": "Start with 5 continues (Do not combine with level select codes)",
+      "code": "D93F-15C0"
+    },
+    {
+      "desc": "Start with 7 continues (Do not combine with level select codes)",
+      "code": "D53F-15C0"
+    },
+    {
+      "desc": "Start with 9 continues (Do not combine with level select codes)",
+      "code": "DB3F-15C0"
+    }
+  ],
+  "Tiny Toon Adventures - Buster Busts Loose! (USA)": [
+    {
+      "desc": "Infinite lives [except football level]",
+      "code": "DD34-37D7"
+    },
+    {
+      "desc": "Infinite lives [football level]",
+      "code": "DDC0-3F07"
+    },
+    {
+      "desc": "Infinite health [when hit, a fake empty heart appears]",
+      "code": "3CE9-448A"
+    },
+    {
+      "desc": "Start with 5 lives",
+      "code": "D96F-14DF"
+    },
+    {
+      "desc": "Start with 10 lives",
+      "code": "FD6F-14DF"
+    },
+    {
+      "desc": "Start with 25 lives",
+      "code": "496F-14DF"
+    },
+    {
+      "desc": "Start with 50 lives",
+      "code": "9D6F-14DF"
+    },
+    {
+      "desc": "Start with 99 lives",
+      "code": "BB6F-14DF"
+    },
+    {
+      "desc": "Start with 1 life",
+      "code": "DF6F-14DF"
+    },
+    {
+      "desc": "Start with no continues on normal level [handicap]",
+      "code": "DD6D-47D0"
+    },
+    {
+      "desc": "Start with 7 continues on normal level",
+      "code": "D56D-47D0"
+    },
+    {
+      "desc": "Start with 9 continues on normal level",
+      "code": "DB6D-47D0"
+    }
+  ],
+  "Top Gear (USA)": [
+    {
+      "desc": "Infinite fuel [player 1]",
+      "code": "C225-6429"
+    },
+    {
+      "desc": "Infinite fuel [player 2]",
+      "code": "C223-6D95"
+    },
+    {
+      "desc": "Infinite nitro boosts [player 1]",
+      "code": "3C84-6D64"
+    },
+    {
+      "desc": "Infinite nitro boosts [player 2]",
+      "code": "3C86-64A4"
+    },
+    {
+      "desc": "Infinite Fuel",
+      "code": "7E1E63A7"
+    },
+    {
+      "desc": "Infinite Nitro Boosts (Player 1)",
+      "code": "3C84-6D64"
+    },
+    {
+      "desc": "Infinite Nitro Boosts (Player 2)",
+      "code": "3C86-64A4"
+    },
+    {
+      "desc": "Infinite Fuel (Player 1)",
+      "code": "C225-6429"
+    },
+    {
+      "desc": "Infinite Fuel (Player 2)",
+      "code": "C223-6D95"
+    },
+    {
+      "desc": "Infinite Fuel (Player 1)",
+      "code": "7E1E63FF"
+    },
+    {
+      "desc": "Infinite Fuel (Player 2)",
+      "code": "7E1E65FF"
+    },
+    {
+      "desc": "Infinite Nitro (Player 1)",
+      "code": "7E1E6C02"
+    }
+  ],
+  "Top Gear 2 (USA)": [
+    {
+      "desc": "Invincible Armor",
+      "code": "C9C7-44AD+C9CD-440D+C9C1-4D6D+C931-CFA4"
+    },
+    {
+      "desc": "Infinite nitros for Player 1",
+      "code": "C267-CD07"
+    },
+    {
+      "desc": "Infinite nitros for Player 2",
+      "code": "C2CB-CF0F"
+    },
+    {
+      "desc": "Infinite Nitro",
+      "code": "7E01A606"
+    },
+    {
+      "desc": "Infinite Fuel",
+      "code": "7E01AF0D"
+    },
+    {
+      "desc": "Infinite Nitro",
+      "code": "A267-CD07"
+    },
+    {
+      "desc": "Infinite Fuel",
+      "code": "C2B7-C404"
+    },
+    {
+      "desc": "Infinite Nitros (Player 2)",
+      "code": "C2CB-D0FD"
+    },
+    {
+      "desc": "Infinite Nitros (Player 1)",
+      "code": "C267-D07D"
+    },
+    {
+      "desc": "Infinite Nitros (Player 2 - Alternate Code)",
+      "code": "C2CB-F0FD"
+    },
+    {
+      "desc": "Infinite Fuel (Player 1)",
+      "code": "7E06937F"
+    },
+    {
+      "desc": "Infinite Fuel (Player 2)",
+      "code": "7E06B57F"
+    }
+  ],
+  "Top Gear 3000 (USA)": [
+    {
+      "desc": "Infinite Money",
+      "code": "7E039075+7E038F30"
+    },
+    {
+      "desc": "Infinite Boost Time",
+      "code": "C935-3F63"
+    },
+    {
+      "desc": "Infinite Boosts (Affects Both Human Players)",
+      "code": "EEC5-4DAB"
+    },
+    {
+      "desc": "Infinite Nitro",
+      "code": "7E024E04"
+    },
+    {
+      "desc": "Infinite Fuel",
+      "code": "7E025828"
+    },
+    {
+      "desc": "Infinite Fuel",
+      "code": "C936-1D6E"
+    },
+    {
+      "desc": "Infinite Nitro",
+      "code": "A930-3463"
+    },
+    {
+      "desc": "Infinite Boosts",
+      "code": "C930-3463"
+    },
+    {
+      "desc": "Infinite Warps",
+      "code": "C936-34A3"
+    },
+    {
+      "desc": "Infinite Attractor",
+      "code": "C930-4F6E"
+    },
+    {
+      "desc": "Infinite Fuel (Player 2)",
+      "code": "7E030B28"
+    },
+    {
+      "desc": "Infinite Attractor (Player 1)",
+      "code": "7E025009"
+    }
+  ],
+  "Ultimate Mortal Kombat 3 (USA)": [
+    {
+      "desc": "P1 Infinite Health",
+      "code": "CB38-47F3+A638-4793+6238-4723+203A-4DF3+713A-4D93"
+    },
+    {
+      "desc": "Infinite Health Player 1",
+      "code": "7E36D4A6"
+    },
+    {
+      "desc": "Infinite Health Player 2",
+      "code": "7E3898A6"
+    },
+    {
+      "desc": "Infinite Time to Continue",
+      "code": "7E03D409"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "7E3BD400"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "C9C1-C490"
+    },
+    {
+      "desc": "Infinite Fatality Time",
+      "code": "6DC5-CF29"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "CB38-47F3+A638-4793+6238-4723+203B-4DF3+713B-4D93"
+    },
+    {
+      "desc": "Invincibility P1",
+      "code": "3D3C-C79F+DF3C-C7BF+7D38-CDFF+E138-CD9F+6D33-3DBF"
+    },
+    {
+      "desc": "Infinite Energy P1",
+      "code": "7E36D4A6"
+    },
+    {
+      "desc": "Infinite Energy P2",
+      "code": "7E3898A6"
+    },
+    {
+      "desc": "Infinite Run Meter P1",
+      "code": "7E36D830"
+    }
+  ],
+  "Urban Strike (USA)": [
+    {
+      "desc": "Infinite Health",
+      "code": "7F10D7E3+7F10D803"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "C2C5-4D0F"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "7F10E303"
+    },
+    {
+      "desc": "Infinite ammo",
+      "code": "3CAC-360F"
+    },
+    {
+      "desc": "Infinite armor",
+      "code": "C2A9-4FA7"
+    },
+    {
+      "desc": "Start with 5 lives",
+      "code": "D984-42D6"
+    },
+    {
+      "desc": "Start with 9 lives",
+      "code": "DB84-42D6"
+    },
+    {
+      "desc": "Start with 50 lives",
+      "code": "7484-42D6"
+    },
+    {
+      "desc": "Start with 100 lives",
+      "code": "1084-42D6"
+    },
+    {
+      "desc": "Start with 1 life",
+      "code": "DF84-42D6"
+    },
+    {
+      "desc": "Start with 0 armor",
+      "code": "DD8E-CB72+DD8E-CB52"
+    },
+    {
+      "desc": "Start with 100 armor",
+      "code": "108E-CB72+DD8E-CB52"
+    }
+  ],
+  "Super Mario World": [
+    {
+      "desc": "Vidas infinitas",
+      "code": "C222-D4DD"
+    },
+    {
+      "desc": "Tempo infinito",
+      "code": "C264-64D7"
+    },
+    {
+      "desc": "Super pulo",
+      "code": "D42C-AF6F"
+    }
+  ]
+}

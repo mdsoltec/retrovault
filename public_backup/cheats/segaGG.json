@@ -1,0 +1,244 @@
+{
+  "Sonic the Hedgehog (World)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "00D2-4609"
+    },
+    {
+      "desc": "Infinite Rings",
+      "code": "00D2-AA99"
+    },
+    {
+      "desc": "Low Timer",
+      "code": "00D2-CF00"
+    }
+  ],
+  "Sonic the Hedgehog 2 (World)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "009-04F-3BE"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00D2-9809"
+    },
+    {
+      "desc": "Start With 5 Lives",
+      "code": "052-B8D-E66"
+    },
+    {
+      "desc": "Start With 9 Lives",
+      "code": "092-B8D-E66"
+    },
+    {
+      "desc": "Start With ?? Lives",
+      "code": "012-B8D-E66"
+    },
+    {
+      "desc": "Start With 1 Life",
+      "code": "012-B8D-E66"
+    },
+    {
+      "desc": "Invincibility",
+      "code": "C37-77C-E61+C37-B9C-C41+277-BAC-4CA"
+    },
+    {
+      "desc": "Invincible After 1 Ring (Except On Act 3)",
+      "code": "A78-92C-19E"
+    },
+    {
+      "desc": "Infinite Rings",
+      "code": "00D2-9963"
+    },
+    {
+      "desc": "Better Invincibility",
+      "code": "00D3-A915"
+    }
+  ],
+  "Shinobi (World)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "006+06D+3BE"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00D2-1D09"
+    },
+    {
+      "desc": "Infinite Special Weapons",
+      "code": "00D2-1E01"
+    },
+    {
+      "desc": "Start With 6 Lives",
+      "code": "06B+75C+F72"
+    },
+    {
+      "desc": "Start With 8 Lives",
+      "code": "08B+75C+F72"
+    },
+    {
+      "desc": "Start With 9 Lives",
+      "code": "09B+75C+F72"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "21F+055+2A2"
+    },
+    {
+      "desc": "Infinite Energy",
+      "code": "00D2-0B04"
+    },
+    {
+      "desc": "Invincible",
+      "code": "00D2-7B86"
+    },
+    {
+      "desc": "On Highway Stage, Jump Onto Road And Stop Traffic",
+      "code": "21E+BA5+2A2"
+    }
+  ],
+  "Shinobi II - The Silent Fury (World)": [
+    {
+      "desc": "Infinite/Max Health",
+      "code": "00C0-240C+00C0-250C"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "00B-A0C-3BE"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00C0-4009"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "3AA-41C-2A2"
+    },
+    {
+      "desc": "Start every Life with ?? Health Bars",
+      "code": "062-50F-F7A+06F-28D-6EA+3EF-27D-3B4+00F-29D-2AA+77F-2DD-193"
+    },
+    {
+      "desc": "Start with 7 lives",
+      "code": "062-58F-F7A"
+    },
+    {
+      "desc": "Start with 10 lives",
+      "code": "092-58F-F7A"
+    },
+    {
+      "desc": "Start With 4 Lives",
+      "code": "032-58F-F7A"
+    },
+    {
+      "desc": "Invincible With Moon Jump",
+      "code": "00C0-F20D+00CF-210A"
+    },
+    {
+      "desc": "Infinite Ninjitsu Magic",
+      "code": "00C0-4109"
+    },
+    {
+      "desc": "Invincible",
+      "code": "00C0-F20D"
+    },
+    {
+      "desc": "Infinite energy",
+      "code": "21A-41C-2A2"
+    }
+  ],
+  "Columns (World)": [
+    {
+      "desc": "Level Modifier",
+      "code": "00C6-990X"
+    }
+  ],
+  "Wonder Boy - The Dragon's Trap (USA, Europe)": [
+    {
+      "desc": "Infinite Health",
+      "code": "00CF-52FF"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "00CF-5280"
+    },
+    {
+      "desc": "Infinite Health",
+      "code": "2A6-CAD-6E2"
+    },
+    {
+      "desc": "Infinite Gold",
+      "code": "1AD-53F-A22"
+    },
+    {
+      "desc": "Infinite Magic Weapons",
+      "code": "7E6-72A-3B7"
+    },
+    {
+      "desc": "Max Money",
+      "code": "00CF-5509+00CF-5609+00CF-5709+00CF-5809+00CF-5909+00CF-5A09"
+    },
+    {
+      "desc": "Infinite Blue Potions",
+      "code": "00CF-4A09"
+    },
+    {
+      "desc": "Infinite\" Block Item",
+      "code": "00CF-XXFF"
+    },
+    {
+      "desc": "Infinite Potion",
+      "code": "00CF-4A09"
+    },
+    {
+      "desc": "Infinite Block Item",
+      "code": "00CF-27FF"
+    },
+    {
+      "desc": "Infinite Revival (Blue) Potions",
+      "code": "3AA-00B-2A2"
+    }
+  ],
+  "Land of Illusion Starring Mickey Mouse (World)": [
+    {
+      "desc": "Infinite Lives",
+      "code": "009+FAD+E6E"
+    },
+    {
+      "desc": "Infinite Lives",
+      "code": "00C0-9F09"
+    },
+    {
+      "desc": "Infinite lives",
+      "code": "009-FAD-E6E"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "002+4CE+E6E"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "00C0-A299"
+    },
+    {
+      "desc": "Infinite Time",
+      "code": "002-4CE-E6E"
+    },
+    {
+      "desc": "Start With 3 Lives",
+      "code": "02F+31D+E66"
+    },
+    {
+      "desc": "Start With 5 Lives",
+      "code": "04F+31D+E66"
+    },
+    {
+      "desc": "Start With 7 Lives",
+      "code": "06F+31D+E66"
+    },
+    {
+      "desc": "Start With 9 Lives",
+      "code": "08F+31D+E66"
+    }
+  ]
+}

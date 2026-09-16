@@ -1,0 +1,896 @@
+{
+  "Carros Disney": [
+    {
+      "desc": "Master Code",
+      "code": "00003279+000A+1000F784+0007"
+    },
+    {
+      "desc": "Max Boltz",
+      "code": "32015BF8+00FF"
+    }
+  ],
+  "Castlevania - Aria of Sorrow (USA)": [
+    {
+      "desc": "Enable Code (Must Be On)",
+      "code": "000093DD+000A+100008B0+0007"
+    },
+    {
+      "desc": "Transparent",
+      "code": "8200055C+0000"
+    },
+    {
+      "desc": "Infinite HP",
+      "code": "8201327A+270F"
+    },
+    {
+      "desc": "Maximum HP",
+      "code": "8201327E+270F"
+    },
+    {
+      "desc": "Infinite MP",
+      "code": "8201327C+270F"
+    },
+    {
+      "desc": "Maximum MP",
+      "code": "82013280+270F"
+    },
+    {
+      "desc": "Max STR",
+      "code": "82013282+270F"
+    },
+    {
+      "desc": "Max CON",
+      "code": "82013284+270F"
+    },
+    {
+      "desc": "Max INT",
+      "code": "82013286+270F"
+    },
+    {
+      "desc": "Max LCK",
+      "code": "82013288+7F00"
+    },
+    {
+      "desc": "Max Gold",
+      "code": "82013290+423F+82013292+000F"
+    },
+    {
+      "desc": "Max Experience",
+      "code": "8201328C+E0FF+8201328E+05F5"
+    },
+    {
+      "desc": "Reset Game Timer",
+      "code": "820000AC+0000+820000AE+0000"
+    },
+    {
+      "desc": "Sprint X2",
+      "code": "D0000020+0010+8200052E+0002+D0000020+0020+8200052E+FFFD"
+    },
+    {
+      "desc": "Infinite Double Jumps",
+      "code": "720004F4+1006+320004F4+0002"
+    },
+    {
+      "desc": "Always Rush/Guard",
+      "code": "32013261+00F4"
+    },
+    {
+      "desc": "Weak Final Boss",
+      "code": "7200140C+05DC+8200140C+0000+72001598+07D0+82001598+0000"
+    },
+    {
+      "desc": "Have All Items",
+      "code": "42013294+0101+00000010+0002"
+    },
+    {
+      "desc": "Have All Equipment",
+      "code": "420132B4+0101+00000034+0002"
+    },
+    {
+      "desc": "Complete Soul Set",
+      "code": "4201331C+FFFF+00000032+0002"
+    },
+    {
+      "desc": "All Abilities",
+      "code": "82013392+FFFF+32013394+00FF"
+    },
+    {
+      "desc": "All Enemy Data",
+      "code": "420133A0+FFFF+00000017+0002"
+    },
+    {
+      "desc": "Complete Map",
+      "code": "420000B6+FFFF+0000013F+0002"
+    },
+    {
+      "desc": "Access Warp Gates",
+      "code": "74000130+03B7+32000064+0007+32000378+00FF"
+    },
+    {
+      "desc": "Unlock Special",
+      "code": "32000060+000F+320000A1+0001"
+    },
+    {
+      "desc": "Press R+B+Up To Open Mist Door",
+      "code": "74000130+02BD+8200037E+9871"
+    }
+  ],
+  "Legend of Zelda, The - The Minish Cap (USA)": [
+    {
+      "desc": "Enable (M)",
+      "code": "00001A5E+000A+1001D6C8+0007"
+    },
+    {
+      "desc": "Infinite HP",
+      "code": "32002AEA+00A0"
+    },
+    {
+      "desc": "Max HP",
+      "code": "32002AEB+00A0"
+    },
+    {
+      "desc": "Infinite Rupees",
+      "code": "82002B00+03E7"
+    },
+    {
+      "desc": "Invincible",
+      "code": "3300119D+0003"
+    },
+    {
+      "desc": "Have All Scrolls",
+      "code": "82002B44+5555"
+    },
+    {
+      "desc": "Press L+A To Shrink, L+B To Normal Size",
+      "code": "73000FF0+0201+8300116C+0009+73000FF0+0202+8300116C+0209+7300116C+0309+8300116C+0409"
+    },
+    {
+      "desc": "Press L To Jump Over Things!",
+      "code": "73000FF0+0200+3300116C+0004"
+    },
+    {
+      "desc": "Have Flippers, Grip Ring, And Power Bracelets",
+      "code": "32002B43+0055"
+    },
+    {
+      "desc": "Have All Equipment (MUST Have Minish Cap)",
+      "code": "82002B32+5555+82002B34+5555+82002B36+5554"
+    },
+    {
+      "desc": "Have All Dungeon 1 Equipment",
+      "code": "32002EAD+00FF"
+    },
+    {
+      "desc": "Infinite 9 Dungeon 1 Keys",
+      "code": "32002E9D+0009"
+    },
+    {
+      "desc": "Have 130 Original Figurines",
+      "code": "42002B0E+FFFF+00000007+0002+82002B1E+0007+32002AF0+0082"
+    },
+    {
+      "desc": "Have 129 of 130 Original Figurines",
+      "code": "42002B0E+FFFF+00000007+0002+82002B1E+0003+32002AF0+0081"
+    },
+    {
+      "desc": "Have 136 Figurines",
+      "code": "42002B0E+FFFF+00000007+0002+82002B1E+01FF+32002AF0+0088"
+    },
+    {
+      "desc": "Have 135 of 136 Figurines",
+      "code": "42002B0E+FFFF+00000007+0002+82002B1E+00FF+32002AF0+0087"
+    },
+    {
+      "desc": "Actor Animation",
+      "code": "33002269+00XX"
+    },
+    {
+      "desc": "Actor Sprite",
+      "code": "33002272+0001"
+    },
+    {
+      "desc": "Actor Group For The WindMan (In The House In Town Before Fifth Level)",
+      "code": "33001850+00XX"
+    },
+    {
+      "desc": "Actor Value For The WindMan (In The House In Town Before Fifth Level)",
+      "code": "33001851+00YY"
+    },
+    {
+      "desc": "Actor Variable For The WindMan (In The House In Town Before Fifth Level)",
+      "code": "33001852+00ZZ"
+    },
+    {
+      "desc": "Map Modifier [Controls The General Giant Map Area]",
+      "code": "33000BF4+00XX"
+    },
+    {
+      "desc": "Room Modifier [Controls The Current Submap Area]",
+      "code": "33000BF5+00XX"
+    },
+    {
+      "desc": "Freeze Demo Timer",
+      "code": "82002EE8+685B"
+    },
+    {
+      "desc": "Small Keys Dungeon 1",
+      "code": "82002E9D+0009"
+    },
+    {
+      "desc": "Small Keys Dungeon 2",
+      "code": "82002E9E+0009"
+    },
+    {
+      "desc": "Small Keys Dungeon 3",
+      "code": "82002E9F+0009"
+    },
+    {
+      "desc": "Small Keys Dungeon 4",
+      "code": "82002EA0+0009"
+    },
+    {
+      "desc": "Small Keys Dungeon 5",
+      "code": "82002EA1+0009"
+    },
+    {
+      "desc": "Small Keys Dungeon 6",
+      "code": "82002EA2+0009"
+    },
+    {
+      "desc": "Infinite Bombs",
+      "code": "82002AEC+000A+8200AF14+000A"
+    },
+    {
+      "desc": "Infinite Rupees",
+      "code": "82002B00+03E7+8200AF0E+03E7"
+    },
+    {
+      "desc": "Equipment 1",
+      "code": "82002B32+5555"
+    },
+    {
+      "desc": "Equipment 2",
+      "code": "82002B34+5555"
+    },
+    {
+      "desc": "Equipment 3",
+      "code": "82002B36+5554"
+    },
+    {
+      "desc": "Heart Pieces 3/4",
+      "code": "82002AE8+0300"
+    },
+    {
+      "desc": "999 Shells",
+      "code": "82002B02+03E7"
+    },
+    {
+      "desc": "Have Elements",
+      "code": "82002B40+4000"
+    },
+    {
+      "desc": "Have Flippers, Grip Ring, And Power Bracelets",
+      "code": "82002B42+5505"
+    },
+    {
+      "desc": "Have All 8 Scrolls",
+      "code": "82002B44+5555"
+    },
+    {
+      "desc": "Press L To Jump Over Things",
+      "code": "73000FF0+0200+3300116C+0004"
+    }
+  ],
+  "Mario Kart - Super Circuit (USA)": [
+    {
+      "desc": "Enable Code (Must Be On)",
+      "code": "0000D02A+000A+1002D80A+0007"
+    },
+    {
+      "desc": "Always Low Time",
+      "code": "83005C80+0000"
+    },
+    {
+      "desc": "Infinite Retries",
+      "code": "3300000C+0003"
+    },
+    {
+      "desc": "Max Coins",
+      "code": "33003D10+0063"
+    },
+    {
+      "desc": "Always Have Single Green Shell",
+      "code": "83003D12+1000"
+    },
+    {
+      "desc": "Always Have Triple Green Shell",
+      "code": "83003D12+1001"
+    },
+    {
+      "desc": "Always Have Single Red Shell",
+      "code": "83003D12+1002"
+    },
+    {
+      "desc": "Always Have Triple Red Shell",
+      "code": "83003D12+1003"
+    },
+    {
+      "desc": "Always Have Blue Shell",
+      "code": "83003D12+1004"
+    },
+    {
+      "desc": "Always Have Single Banana",
+      "code": "83003D12+1005"
+    },
+    {
+      "desc": "Always Have Triple Banana",
+      "code": "83003D12+1006"
+    },
+    {
+      "desc": "Always Have Single Mushroom",
+      "code": "83003D12+1007"
+    },
+    {
+      "desc": "Always Have Triple Mushroom",
+      "code": "83003D12+1008"
+    },
+    {
+      "desc": "Always Have Star",
+      "code": "83003D12+100A"
+    },
+    {
+      "desc": "Always Have Ghost",
+      "code": "83003D12+100B"
+    },
+    {
+      "desc": "Always Have Lightening Bolt",
+      "code": "83003D12+100C"
+    },
+    {
+      "desc": "Can Drive More Places",
+      "code": "83003C1D+0040"
+    },
+    {
+      "desc": "Always Babomb (Has Mario Portrait)",
+      "code": "83003BE4+0008"
+    },
+    {
+      "desc": "Always Bowser",
+      "code": "83003BE4+0002"
+    },
+    {
+      "desc": "Always Donkey Kong",
+      "code": "83003BE4+0004"
+    },
+    {
+      "desc": "Always Luigi",
+      "code": "83003BE4+0001"
+    },
+    {
+      "desc": "Always Mario",
+      "code": "83003BE4+0000"
+    },
+    {
+      "desc": "Always Princess Peach",
+      "code": "83003BE4+0003"
+    },
+    {
+      "desc": "Always Toad",
+      "code": "83003BE4+0006"
+    },
+    {
+      "desc": "Always Wario",
+      "code": "83003BE4+0005"
+    },
+    {
+      "desc": "Always Yoshi",
+      "code": "83003BE4+0007"
+    }
+  ],
+  "Metroid Fusion (USA)": [
+    {
+      "desc": "Enable Code (Must Be On)",
+      "code": "00000F6D+000A+100008B4+0007"
+    },
+    {
+      "desc": "Low Completion Time",
+      "code": "83000138+0100"
+    },
+    {
+      "desc": "Stop Event Timer",
+      "code": "830008D8+00DA"
+    },
+    {
+      "desc": "Invincible",
+      "code": "33001249+0001"
+    },
+    {
+      "desc": "Fast Shot/No Pause Between Shots",
+      "code": "3300124E+0000"
+    },
+    {
+      "desc": "Always Run At Super Speed",
+      "code": "83001252+A001"
+    },
+    {
+      "desc": "Super Dash Much Sooner",
+      "code": "33001253+009D"
+    },
+    {
+      "desc": "Super Dash Always Charged",
+      "code": "330012DC+005F"
+    },
+    {
+      "desc": "Moon Jump",
+      "code": "74000130+03FE+83001260+0040"
+    },
+    {
+      "desc": "Ininite Health",
+      "code": "83001310+0833"
+    },
+    {
+      "desc": "Max Health",
+      "code": "83001312+0833"
+    },
+    {
+      "desc": "Infinite Missiles",
+      "code": "83001314+03E7"
+    },
+    {
+      "desc": "Max Missiles",
+      "code": "83001316+03E7"
+    },
+    {
+      "desc": "Infinite Super Bombs",
+      "code": "33001318+0063"
+    },
+    {
+      "desc": "Max Super Bombs",
+      "code": "33001319+0063"
+    },
+    {
+      "desc": "Turn Off All Missiles/Bombs",
+      "code": "3300131B+0000"
+    },
+    {
+      "desc": "Have All Weapons/Suits/Abilities",
+      "code": "4300131A+FFFF+00000003+0002"
+    },
+    {
+      "desc": "100% Item Finding Rate",
+      "code": "3300151E+0064"
+    },
+    {
+      "desc": "Time Always 00:00",
+      "code": "820382E4+0000"
+    },
+    {
+      "desc": "Have The Final Suit With No Side Effects",
+      "code": "83004D2C+02FF+83004D2E+01BE+83004D30+00D3+83004D36+020F+83004D40+0108+83004D44+31E8+83004D46+28A6"
+    },
+    {
+      "desc": "Access Debug Room",
+      "code": "3203821D+0007"
+    },
+    {
+      "desc": "Access Debug Room",
+      "code": "3203821F+0000"
+    },
+    {
+      "desc": "Area Modifier",
+      "code": "3203821D+00XX"
+    },
+    {
+      "desc": "Room Modifier",
+      "code": "3203821F+00YY"
+    }
+  ],
+  "Pokemon - Emerald Version (USA, Europe)": [
+    {
+      "desc": "Master Code",
+      "code": "D8BAE4D9+4864DCE5+A86CDBA5+19BA49B3"
+    },
+    {
+      "desc": "Anti DMA",
+      "code": "B2809E31+3CEF5320+1C7B3231+B494738C"
+    },
+    {
+      "desc": "No Random Battle",
+      "code": "320375D4+0000"
+    },
+    {
+      "desc": "Skip Trainer Battles",
+      "code": "00000000+18059EB6+0000E038+00000000"
+    },
+    {
+      "desc": "Skip Intro",
+      "code": "73005E00+09CD+83005E00+0C19+73005E00+261D+83005E00+15BD"
+    },
+    {
+      "desc": "Enable National Dex [Press Select]",
+      "code": "D0000020+0004+83000E48+9F0D+D0000020+0004+83000E4A+081F"
+    },
+    {
+      "desc": "Complete Pokedex",
+      "code": "32024AB0+00FF+32024AE0+0003+32026388+00FF+320263B8+0003+32029524+00FF+32029554+0003+32024A7C+00FF+32024AAC+0003"
+    },
+    {
+      "desc": "Max Money",
+      "code": "82000568+423F+8200056A+000F"
+    },
+    {
+      "desc": "Max Coins",
+      "code": "82002DEC+270F"
+    },
+    {
+      "desc": "Mini EXP Gain After Battle",
+      "code": "8202309C+0100+820241F0+0100"
+    },
+    {
+      "desc": "Medium EXP Gain After Battle",
+      "code": "8202309C+0200+820241F0+0200"
+    },
+    {
+      "desc": "Max EXP Gain After Battle",
+      "code": "8202309C+03E7+820241F0+03E7"
+    },
+    {
+      "desc": "No Species Restriction At Battle Tower",
+      "code": "00000000+180A58A8+00009D95+00000000+00000000+00000000+00000000+00000000+00000000+00000000"
+    },
+    {
+      "desc": "1st Pokemon Max Stats",
+      "code": "42024542+03E7+00000007+0002"
+    },
+    {
+      "desc": "2nd Pokemon Max Stats",
+      "code": "420245A6+03E7+00000007+0002"
+    },
+    {
+      "desc": "3rd Pokemon Max Stats",
+      "code": "4202460A+03E7+00000007+0002"
+    },
+    {
+      "desc": "4th Pokemon Max Stats",
+      "code": "4202466E+03E7+00000007+0002"
+    },
+    {
+      "desc": "5th Pokemon Max Stats",
+      "code": "420246D2+03E7+00000007+0002"
+    },
+    {
+      "desc": "6th Pokemon Max Stats",
+      "code": "42024736+03E7+00000007+0002"
+    },
+    {
+      "desc": "Infinite PP",
+      "code": "42023070+6363+00000002+0002"
+    },
+    {
+      "desc": "1-Hit Kill",
+      "code": "02024104+0001+32024104+0001"
+    },
+    {
+      "desc": "1-Hit Double Battle Kill (Instant Win)",
+      "code": "74000130+01FF+8202479A+0000+74000130+01FF+8202479C+0000+74000130+01FF+820247FE+0000+74000130+01FF+82024800+0000"
+    },
+    {
+      "desc": "1-Hit Win",
+      "code": "A745569AA9B6+FD228345FE5F+A745569AA9B6+F22203437E0F+A745569AA9B6+94240B01E41E+A745569AA9B6+7BDA7465DE8F+A745569AA9B6+1DDC7C27449E+A745569AA9B6+12DCFC21C4CE+A745569AA9B6+74B8F603545E+A745569AA9B6+FB385605D408+A745569AA9B6+9D5E1D674E99+A745569AA9B6+925E9D61CEC9+A745569AA9B6+F43A97435E59+A745569AA9B6+7BA22345FE0F"
+    },
+    {
+      "desc": "Always Your Turn",
+      "code": "72024082+0A01+32024082+0002+7202407E+0001+8202407E+0100"
+    },
+    {
+      "desc": "Opponent Can't Attack",
+      "code": "00000000+1A01F076+00002801+00000000"
+    },
+    {
+      "desc": "Have All Pokeballs (Activate Only One Cheat)",
+      "code": "00000000+84226050+00630001+010C0001+80000000+00000000"
+    },
+    {
+      "desc": "Have All TMs/HMs (Activate Only One Cheat)",
+      "code": "00000000+84226090+00090121+011E0001+80000000+00000000+00000000+84226108+00090140+01140001+80000000+00000000+00000000+84226154+00090153+01080001+80000000+00000000"
+    },
+    {
+      "desc": "Infinite Safari Time",
+      "code": "8203A04E+0258"
+    },
+    {
+      "desc": "Access Fly Map [Press Select]",
+      "code": "74000130+03FA+830022C4+4691+74000130+03FA+830022C6+0812"
+    },
+    {
+      "desc": "Fly Anywhere On Map",
+      "code": "72002DD4+0A74+32002DEA+0002"
+    },
+    {
+      "desc": "Access Secret Power",
+      "code": "73000E48+5A05+83000E48+5A80"
+    },
+    {
+      "desc": "Have Cut Ability",
+      "code": "73000E4C+0729+83000E4C+06E7"
+    },
+    {
+      "desc": "Have Dive [Press R+Select]",
+      "code": "74000130+02FB+83000E48+0B45+74000130+02FB+83000E4A+0829"
+    },
+    {
+      "desc": "Have Flash [Press L+Select]",
+      "code": "74000130+03BB+43000E48+26F8+E1310002+0002+74000130+03BB+83000F2C+0000"
+    },
+    {
+      "desc": "Have Rock Smash Ability",
+      "code": "73000E48+07A7+83000E48+07EA"
+    },
+    {
+      "desc": "Have Surf Ability [Press Select]",
+      "code": "D0000020+0004++83000E48+1ED2+D0000020+0004+83000E4A+0827"
+    },
+    {
+      "desc": "Waterfall",
+      "code": "73000E48+0A84+83000E48+0A4A"
+    },
+    {
+      "desc": "Receive Balance Badge",
+      "code": "74000130+01BB+83000E48+4E53+74000130+01BB+83000E4A+0820"
+    },
+    {
+      "desc": "Receive Dynamo Badge",
+      "code": "74000130+037B+83000E48+DF31+74000130+037B+83000E4A+0820"
+    },
+    {
+      "desc": "Receive Feather Badge",
+      "code": "74000130+01EB+83000E48+6603+74000130+01EB+83000E4A+0821"
+    },
+    {
+      "desc": "Receive Heat Badge",
+      "code": "74000130+03DB+83000E48+E7C7+74000130+03DB+83000E4A+081F"
+    },
+    {
+      "desc": "Receive Knuckle Badge",
+      "code": "74000130+03EB+83000E48+C802+74000130+03EB+83000E4A+081F"
+    },
+    {
+      "desc": "Receive Mind Badge",
+      "code": "74000130+017B+83000E48+08D7+74000130+017B+83000E4A+0822"
+    },
+    {
+      "desc": "Receive Rain Badge",
+      "code": "74000130+01DB+83000E48+4F88+74000130+01DB+83000E4A+0822"
+    },
+    {
+      "desc": "Receive Stone Badge",
+      "code": "74000130+03BB+83000E48+2F6C+74000130+03BB+83000E4A+0821"
+    },
+    {
+      "desc": "Fre Daycare",
+      "code": "820375E2+0000"
+    },
+    {
+      "desc": "Items Cost 1$",
+      "code": "00000000+00000000+C43B60AA+168457A2+0A5D51E9+0000045B"
+    },
+    {
+      "desc": "100% catch Rate",
+      "code": "720207AE+0102+820055D4+0004+720207AE+0102+82024214+BD84"
+    },
+    {
+      "desc": "Exp Share",
+      "code": "320243FE+00FF"
+    },
+    {
+      "desc": "Berry Blender Max Direct Hits",
+      "code": "372002EFA+0100+82002F04+03E7"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Beauty)",
+      "code": "72002EFA+0100+32002F52+00FF"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Cool)",
+      "code": "72002EFA+0100+32002F51+00FF"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Cute)",
+      "code": "72002EFA+0100+32002F53+00FF"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Smart)",
+      "code": "72002EFA+0100+32002F54+00FF"
+    },
+    {
+      "desc": "Berry Blender Max Lvl Gold (Tough)",
+      "code": "72002EFA+0100+32002F55+00FF"
+    },
+    {
+      "desc": "Berry Blender Maximum Feel",
+      "code": "72002EFA+0100+82002F56+00FF"
+    },
+    {
+      "desc": "Berry Blender No Misses",
+      "code": "72002EFA+0100+82002F08+0000"
+    },
+    {
+      "desc": "Berry Blender Quick Blend",
+      "code": "72002EFA+0100+82002EF8+03E8"
+    },
+    {
+      "desc": "Berry Blender Re-Battle Activator",
+      "code": "D0000020+0004+83000E48+1440+D0000020+0004+83000E4A+0827"
+    },
+    {
+      "desc": "Access Birchs Bag",
+      "code": "74000130+00BF+83000E38+0000+74000130+00BF+83000E40+0200+74000130+00BF+83000E48+BE20+74000130+00BF+83000E4A+081E+73000E48+BE42+83000E48+BE4D"
+    },
+    {
+      "desc": "Access Deco Shop [Press L+A+Select]",
+      "code": "74000130+01FA+83000E38+0000+74000130+01FA+83000E48+0012+74000130+01FA+83000E4A+0822+72002DD4+0280+42002DD0+0000+00000002+0002"
+    },
+    {
+      "desc": "Access MOD Shop [Press L+A+Select]",
+      "code": "74000130+01FA+83000E38+0000+74000130+01FA+83000E48+83D2+74000130+01FA+83000E4A+0826+72002DD4+03C0+42002DD0+0000+00000002+0002"
+    },
+    {
+      "desc": "Free MOD Shop Items",
+      "code": "72002DE2+0200+420051B0+0000+00000002+0002+720051BA+FF00+820051BA+FF63"
+    },
+    {
+      "desc": "Mystic Ticket",
+      "code": "82025EE0+0172"
+    },
+    {
+      "desc": "Aurora Ticket",
+      "code": "82025EE0+0173"
+    },
+    {
+      "desc": "Have Old Sea Map",
+      "code": "82025EE0+0178"
+    },
+    {
+      "desc": "Infinite Wynaut Eggs",
+      "code": "83000E4C+A74F+83000E4E+081EF"
+    },
+    {
+      "desc": "Install Match Call [Press Select+R+Up]",
+      "code": "74000130+02BB+83000E48+0779+74000130+02BB+83000E4A+081E"
+    },
+    {
+      "desc": "Install PokeNAV [Press Select+R+Down]",
+      "code": "74000130+027B+83000E4C+24ED+74000130+027B+83000E4E+0821"
+    },
+    {
+      "desc": "Maximum Hearts",
+      "code": "72002F62+082D+32002EF2+00A0"
+    },
+    {
+      "desc": "Maximum Sale Price",
+      "code": "73005E00+D795+83005E18+FFFF"
+    },
+    {
+      "desc": "Maximum Score",
+      "code": "72002F62+082D+32002EF4+00FF"
+    },
+    {
+      "desc": "Receive BP [Hold Select]",
+      "code": "D0000020+0004+83000E4C+0813+D0000020+0004+83000E4E+0825+D0000020+0004+83000E40+0101"
+    },
+    {
+      "desc": "Receive Symbol",
+      "code": "D0000020+0004+83000E48+C330+D0000020+0004+83000E4A+0824+73000E48+C861+83000E48+99F1"
+    }
+  ],
+  "Pokemon - FireRed Version (USA, Europe) (Rev 1)": [
+    {
+      "desc": "Master (Must Be On For Money Cheat)",
+      "code": "C4000604+00008401+45525042+001DC0DE+00000000+1802603C+00002100+00000000+4230500C+07900000+4230500C+07910000"
+    },
+    {
+      "desc": "Anti DMA",
+      "code": "24C35E88+037C3033+78DA95DF+44018CB4"
+    },
+    {
+      "desc": "No Random Battle",
+      "code": "00000000+1C0419E6+00002000+00000000"
+    },
+    {
+      "desc": "Skip Trainer Battles",
+      "code": "00000000+18040DE1+0000E019+00000000"
+    },
+    {
+      "desc": "Weak Opponents",
+      "code": "42024082+0000+00000006+0064"
+    },
+    {
+      "desc": "Wild PKMN Easily Caught",
+      "code": "72023D74+9A84+82023D74+9AC3"
+    },
+    {
+      "desc": "Complete Pokedex (Buggy. Save Game Before Using it)",
+      "code": "002245A3+000000B9+022265C8+00006258+00226514+00000001+002245E4+000030FF+00225B24+000030FF+00228F44+000030FF+002245B0+000030FF"
+    },
+    {
+      "desc": "Hold R For Quick Lvl Up (Start Holding R When Foe Faints)",
+      "code": "0022459B+00000001+3A303118+00000100+02223D50+0000270F"
+    },
+    {
+      "desc": "Quick Level Gain",
+      "code": "820285B0+FFFF+8202863C+FFFF"
+    },
+    {
+      "desc": "Ride Bike Over Water",
+      "code": "72036E3C+0100+32036E43+0000"
+    },
+    {
+      "desc": "Have All Badges",
+      "code": "00226510+000000FF"
+    },
+    {
+      "desc": "Faster Text Display",
+      "code": "00000000+18002C02+0000E01A+00000000"
+    },
+    {
+      "desc": "Quick Egg Hatch",
+      "code": "32028642+00FE"
+    },
+    {
+      "desc": "1st Pokemon Max Stats",
+      "code": "420242DA+03E7+00000007+0002"
+    },
+    {
+      "desc": "2nd Pokemon Max Stats",
+      "code": "4202433E+03E7+00000007+0002"
+    },
+    {
+      "desc": "3rd Pokemon Max Stats",
+      "code": "420243A2+03E7+00000007+0002"
+    },
+    {
+      "desc": "4th Pokemon Max Stats",
+      "code": "42024406+03E7+00000007+0002"
+    },
+    {
+      "desc": "5th Pokemon Max Stats",
+      "code": "4202446A+03E7+00000007+0002"
+    },
+    {
+      "desc": "6th Pokemon Max Stats",
+      "code": "420244CE+03E7+00000007+0002"
+    },
+    {
+      "desc": "Infinite PP",
+      "code": "42023C08+6363+00000002+0002"
+    },
+    {
+      "desc": "Infinite Safari Time",
+      "code": "82039996+0258"
+    },
+    {
+      "desc": "Free Daycare",
+      "code": "820370C2+0000"
+    },
+    {
+      "desc": "Have All Pokeballs",
+      "code": "00000000+8422595C+00630001+010C0001+80000000+00000000"
+    },
+    {
+      "desc": "Have All TMs/HMs",
+      "code": "92225990 00000000+00000000+84225990+00010153+01080001+80000000+00000000+00000000+842259B0+00630121+01320001+80000000+00000000+00000000+40000000"
+    },
+    {
+      "desc": "Opponent Can't Attack",
+      "code": "00000000+1A00AE74+00002801+00000000"
+    },
+    {
+      "desc": "1 Hit Kill",
+      "code": "20223C64+00000001+00223C64+00000001"
+    },
+    {
+      "desc": "Infinite Money",
+      "code": "042257BC+000F423F"
+    }
+  ]
+}

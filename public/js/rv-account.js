@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVERSO — CONTA, SESSÃO E SINCRONIZAÇÃO   (js/rv-account.js)
+   RETROVAULT OS — CONTA, SESSÃO E SINCRONIZAÇÃO   (js/rv-account.js)
    ───────────────────────────────────────────────────────────
    Resolve o problema de "perder o histórico": tudo que era gravado
    solto no navegador passa a ter DONO.
@@ -229,7 +229,7 @@
       var app = appMod.getApps && appMod.getApps().length ? appMod.getApps()[0] : appMod.initializeApp(FB_CFG);
       return { app: app, A: authMod, F: fsMod, auth: authMod.getAuth(app), db: fsMod.getFirestore(app) };
     })().catch(function (err) {
-      console.warn('[RetroVerso] Firebase indisponível — seguindo em modo local.', err);
+      console.warn('[RetroVault OS] Firebase indisponível — seguindo em modo local.', err);
       fbPromise = null;
       return null;
     });
@@ -349,7 +349,7 @@
       emit('sync', { pulled: true });
       return true;
     } catch (err) {
-      console.warn('[RetroVerso] sincronização do perfil falhou:', err);
+      console.warn('[RetroVault OS] sincronização do perfil falhou:', err);
       emit('sync', { error: err });
       return false;
     }
@@ -383,15 +383,26 @@
     return new Uint8Array(buf);
   }
 
-  function bytesToB64(u8) {
+  /* Cede o turno ao jogo entre fatias: um state de dezenas de MB não pode
+     congelar a tela por segundos durante a conversão base64. */
+  function b64tick() { return new Promise(function (r) { setTimeout(r, 0); }); }
+  async function bytesToB64(u8) {
     var CH = 0x8000, parts = [];
-    for (var i = 0; i < u8.length; i += CH) parts.push(String.fromCharCode.apply(null, u8.subarray(i, i + CH)));
+    for (var i = 0; i < u8.length; i += CH) {
+      parts.push(String.fromCharCode.apply(null, u8.subarray(i, i + CH)));
+      if ((i / CH) % 16 === 15) await b64tick(); /* a cada ~512KB */
+    }
     return btoa(parts.join(''));
   }
-  function b64ToBytes(b64) {
-    var bin = atob(b64), out = new Uint8Array(bin.length);
-    for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
-    return out;
+  async function b64ToBytes(b64) {
+    var CH = 1048576; /* múltiplo de 4: permite atob em fatias */
+    var out = new Uint8Array(Math.ceil(b64.length * 3 / 4)), pos = 0;
+    for (var i = 0; i < b64.length; i += CH) {
+      var bin = atob(b64.slice(i, i + CH));
+      for (var j = 0; j < bin.length; j++) out[pos++] = bin.charCodeAt(j);
+      await b64tick();
+    }
+    return out.slice(0, pos);
   }
   function docIdFor(key) {
     return btoa(unescape(encodeURIComponent(key))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
@@ -405,9 +416,10 @@
     var d = ctx.F;
     var raw = toBytes(rec.state);
     var packed = await gzipBytes(raw);
-    var b64 = bytesToB64(packed.bytes);
     var limit = (CFG.maxCloudSaveMB || 8) * 1024 * 1024;
+    /* Recusa ANTES do base64: state grande demais nem chega a converter. */
     if (packed.bytes.length > limit) return { ok: false, reason: 'too_big', size: packed.bytes.length };
+    var b64 = await bytesToB64(packed.bytes);
 
     var id = docIdFor(key);
     var metaRef = d.doc(ctx.db, 'users', session.uid, 'saves', id);
@@ -449,7 +461,7 @@
       b64 += (part.data() || {}).d || '';
     }
     if (!b64) return null;
-    var state = await gunzipBytes(b64ToBytes(b64), meta.codec);
+    var state = await gunzipBytes(await b64ToBytes(b64), meta.codec);
     return {
       game: key, rom: meta.rom || '', core: meta.core || '',
       bytes: meta.bytes || state.length, savedAt: meta.savedAt, state: state, fromCloud: true
@@ -620,7 +632,7 @@
 
   function exportBackup() {
     return {
-      app: 'RetroVerso', version: 1, exportedAt: new Date().toISOString(),
+      app: 'RetroVault OS', version: 1, exportedAt: new Date().toISOString(),
       user: session ? { uid: session.uid, name: session.name, email: session.email, mode: session.mode } : null,
       data: RVStore.dump()
     };
