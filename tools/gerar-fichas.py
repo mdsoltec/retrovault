@@ -21,9 +21,9 @@ import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-PAGINAS = ["index.html", "games.html"]
-SCAN = ["js/catalog.js"]
-FICHA_JS = RAIZ / "js" / "fichas.js"
+PAGINAS = ["public/index.html", "public/games.html"]
+SCAN = ["public/js/catalog.js"]
+FICHA_JS = RAIZ / "public" / "js" / "fichas.js"
 SCRIPT_FICHAS = '<script src="js/fichas.js"></script>'
 SCRIPT_CARD = '<script src="js/card-info.js"></script>'
 

@@ -31,8 +31,9 @@ import urllib.request
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-PAGINAS = ["js/catalog.js"]
-SAIDA = RAIZ / "js" / "covers-map.js"
+PUBLIC = RAIZ / "public"          # raiz do site (Firebase Hosting)
+PAGINAS = ["public/js/catalog.js"]
+SAIDA = RAIZ / "public" / "js" / "covers-map.js"
 BASE = "https://thumbnails.libretro.com"
 TIPOS = ["Named_Boxarts", "Named_Covers", "Named_Titles"]
 
@@ -217,7 +218,7 @@ def main():
         def puxar(item):
             chave, url = item
             consola, arq = chave.split("/", 1)
-            destino = RAIZ / "covers" / consola / (re.sub(r"\.[^.]+$", "", arq) + ".png")
+            destino = PUBLIC / "covers" / consola / (re.sub(r"\.[^.]+$", "", arq) + ".png")
             destino.parent.mkdir(parents=True, exist_ok=True)
             if destino.exists() and not tudo:
                 return None
