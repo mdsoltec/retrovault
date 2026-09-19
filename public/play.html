@@ -29,12 +29,12 @@
   </script>
   <!-- Conta/sessão: precisa vir ANTES de tudo que lê histórico, porque
        RVStore separa os dados por usuário (rv:<uid>:chave). -->
-  <script src="js/rv-config.js?v=20260916"></script>
-  <script src="js/rv-account.js?v=20260916"></script>
-  <script src="js/rv-input-mode.js?v=20260916"></script>
+  <script src="js/rv-config.js?v=20260919"></script>
+  <script src="js/rv-account.js?v=20260919"></script>
+  <script src="js/rv-input-mode.js?v=20260919"></script>
   <script>RVAccount.guard();</script>
-  <script src="js/audio.js?v=20260916"></script>
-  <script src="js/overlay-parser.js?v=20260916"></script>
+  <script src="js/audio.js?v=20260919"></script>
+  <script src="js/overlay-parser.js?v=20260919"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body, html {
@@ -987,11 +987,17 @@ async function preloadGame(gamePath) {
 
   const candidateUrls = [];
   for (const alias of [...new Set(aliases)]) {
-    candidateUrls.push(`roms/${alias}/${filenamePath.split('/').map(seg => encodeURIComponent(seg)).join('/')}`);
+    const segs = filenamePath.split('/');
+    candidateUrls.push(`roms/${alias}/${segs.map(seg => encodeURIComponent(seg)).join('/')}`);
     candidateUrls.push(`roms/${alias}/${filenamePath}`);
-    candidateUrls.push(ROMS_BASE + `${alias}/${filenamePath.split('/').map(seg => encodeURIComponent(seg)).join('/')}`);
+    candidateUrls.push(ROMS_BASE + `${alias}/${segs.map(seg => encodeURIComponent(seg)).join('/')}`);
+    // Chave dupla-codificada: alguns arquivos no bucket B2 foram gravados com
+    // o nome já url-encodado (ex.: "Arquivo%20(USA%2C%20Europe).sms" literal).
+    // A tentativa dupla-codificada cobre esses casos sem afetar os demais.
+    candidateUrls.push(ROMS_BASE + `${alias}/${segs.map(seg => encodeURIComponent(encodeURIComponent(seg))).join('/')}`);
   }
-  candidateUrls.push(`roms/${encodedPath}`, `roms/${gamePath}`, ROMS_BASE + encodedPath);
+  candidateUrls.push(`roms/${encodedPath}`, `roms/${gamePath}`, ROMS_BASE + encodedPath,
+                     ROMS_BASE + encodedPath.split('/').map(seg => encodeURIComponent(encodeURIComponent(seg))).join('/'));
 
   const msgEl = document.getElementById('rv-msg');
   const dlWrap = document.getElementById('rv-download-progress');

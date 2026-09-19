@@ -274,9 +274,9 @@ window.RV_FICHAS = {
   { ano: 1993, gen: "Beat 'em Up", dev: "Capcom", jog: 2, desc: "O beat 'em up do arcade com trilha sonora em CD — Haggar, Cody e Guy." },
 
 /* ── GAME GEAR ───────────────────────────────────────────── */
-"Sonic the Hedgehog (World).gg":
+"Sonic The Hedgehog (World).gg":
   { ano: 1991, gen: "Plataforma", dev: "Ancient", jog: 1, desc: "Sonic 8 bits — compacto, mas veloz. O ouriço cabe no bolso." },
-"Sonic the Hedgehog 2 (World).gg":
+"Sonic The Hedgehog 2 (World).gg":
   { ano: 1992, gen: "Plataforma", dev: "Ancient", jog: 1, desc: "Spin dash! O melhor Sonic portátil da era 8 bits — com Tails." },
 "Shinobi (World).gg":
   { ano: 1991, gen: "Ação", dev: "Sega", jog: 1, desc: "O ninja no telãozinho de 8 bits — shurikens, magias e honra." },
@@ -290,45 +290,45 @@ window.RV_FICHAS = {
   { ano: 1992, gen: "Plataforma", dev: "Sega", jog: 1, desc: "Mickey em uma das melhores aventuras do Game Gear — magia e segredos." },
 
 /* ── MASTER SYSTEM ───────────────────────────────────────── */
-"Alex Kidd in Miracle World (USA, Europe, Brazil) (Rev 1).sms":
+"Alex Kidd in Miracle World (USA, Europe, Brazil) (En) (Rev 1).sms":
   { ano: 1986, gen: "Plataforma", dev: "Sega", jog: 1, desc: "O jogo que veio de fábrica no Master System brasileiro — Alex, o Janken e o vilão Janken the Great." },
-"Alex Kidd in Shinobi World (USA, Europe, Brazil).sms":
+"Alex Kidd in Shinobi World (USA, Europe, Brazil) (En).sms":
   { ano: 1990, gen: "Plataforma", dev: "Sega", jog: 1, desc: "Alex Kidd veste o uniforme de ninja — uma paródia de Shinobi com golpes de espada e muita ação." },
-"Sonic The Hedgehog (USA, Europe, Brazil) (Rev 1).sms":
+"Sonic The Hedgehog (USA, Europe, Brazil) (En).sms":
   { ano: 1991, gen: "Plataforma", dev: "Ancient", jog: 1, desc: "A versão 8 bits do ouriço: fases diferentes das do Mega Drive, mas a mesma velocidade." },
-"Sonic The Hedgehog 2 (USA, Europe, Brazil).sms":
+"Sonic The Hedgehog 2 (Europe, Brazil) (En) (Rev 1).sms":
   { ano: 1992, gen: "Plataforma", dev: "Ancient", jog: 1, desc: "O spin dash estreia no 8 bits — com Tails em algumas fases. O melhor Sonic do Master System." },
-"Wonder Boy III - The Dragon's Trap (USA, Europe, Brazil).sms":
+"Wonder Boy III - The Dragon's Trap (World) (Digital) (Unl).sms":
   { ano: 1989, gen: "Aventura / Plataforma", dev: "Westone", jog: 1, desc: "Vire um dragão, piranha, leão e mais — o metroidvania que é considerado um dos maiores do Master." },
-"Wonder Boy in Monster Land (USA, Europe, Brazil).sms":
+"Wonder Boy in Monster Land (USA, Europe).sms":
   { ano: 1988, gen: "Ação / RPG", dev: "Westone", jog: 1, desc: "O Wonder Boy com elementos de RPG: dinheiro, lojas, armas e chefes. Pioneiro do gênero." },
-"Phantasy Star (USA, Europe, Brazil).sms":
+"Phantasy Star (Brazil).sms":
   { ano: 1987, gen: "RPG", dev: "Sega", jog: 1, desc: "O RPG que desafiou Final Fantasy — a jovem Alis em busca de vingança no planeta Algol, com dungeons em 3D." },
-"Golden Axe (USA, Europe, Brazil).sms":
+"Golden Axe (USA, Europe, Brazil) (En).sms":
   { ano: 1989, gen: "Beat 'em Up", dev: "Sega", jog: 2, desc: "Bárbaros, magia e gnômulos — o clássico da Sega em 8 bits, com 2 jogadores." },
-"Out Run (USA, Europe, Brazil).sms":
+"OutRun (World).sms":
   { ano: 1987, gen: "Corrida", dev: "Sega", jog: 1, desc: "A Ferrari Testarossa na estrada, com a trilha inesquecível de Hiroshi Kawaguchi — escolha seu caminho." },
-"After Burner (USA, Europe, Brazil).sms":
+"After Burner (World).sms":
   { ano: 1987, gen: "Ação / Voo", dev: "Sega", jog: 1, desc: "Combate aéreo supersônico — caças, mísseis e a sensação de velocidade do fliperama." },
-"Double Dragon (USA, Europe, Brazil).sms":
+"Double Dragon (World).sms":
   { ano: 1988, gen: "Beat 'em Up", dev: "Sega", jog: 2, desc: "Billy e Jimmy resgatando a Marian — socos, chutes e barras de ferro no 8 bits." },
-"California Games (USA, Europe, Brazil).sms":
+"California Games (USA, Europe, Brazil) (En).sms":
   { ano: 1988, gen: "Esporte", dev: "Epyx", jog: 2, desc: "Surfe, skate, footbag, BMX e mais — o esporte radical da Epyx no Master System." },
-"Mickey Mouse - Castle of Illusion (USA, Europe, Brazil).sms":
+"Castle of Illusion Starring Mickey Mouse (USA, Europe, Brazil) (En) (Rev 1).sms":
   { ano: 1991, gen: "Plataforma", dev: "Sega", jog: 1, desc: "Mickey em busca da Minnie pelo castelo — um dos plataformas mais caprichados do 8 bits." },
-"Psycho Fox (USA, Europe, Brazil).sms":
+"Psycho Fox (USA, Europe, Brazil) (En).sms":
   { ano: 1989, gen: "Plataforma", dev: "Sega", jog: 1, desc: "A raposa que vira tigre e macaco — um dos plataformas mais criativos do Master System." },
-"Fantasy Zone (World).sms":
+"Fantasy Zone (World) (Rev 1).sms":
   { ano: 1986, gen: "Tiro", dev: "Sega", jog: 1, desc: "Opa-Opa, o caça redondinho, num tiro colorido e alegre — 'Welcome to the Fantasy Zone!'" },
-"Kung Fu Kid (USA, Europe, Brazil).sms":
+"Kung Fu Kid (USA, Europe, Brazil) (En).sms":
   { ano: 1987, gen: "Ação", dev: "Sega", jog: 1, desc: "Do monge ao mestre — o beat 'em up de artes marciais do 8 bits da Sega." },
-"R-Type (USA, Europe, Brazil).sms":
+"R-Type (World).sms":
   { ano: 1988, gen: "Tiro", dev: "Irem", jog: 1, desc: "O shmup brutal da Irem — o orb Force e a dificuldade lendária." },
-"Space Harrier (USA, Europe, Brazil).sms":
-  { ano: 1986, gen: "Tiro", dev: "Sega", jog: 1, desc: "O clássico da Sega em terceira pessoa — voe pelo Fantasy Zone a toda velocidade." },
-"Shinobi (USA, Europe, Brazil).sms":
+"Space Harrier 3-D (USA, Europe, Brazil) (En).sms":
+  { ano: 1988, gen: "Tiro", dev: "Sega", jog: 1, desc: "O Fantasy Zone em profundidade — feita para os óculos 3-D da Sega, com o mesmo voo arrojado de sempre.", c: 1 },
+"Shinobi (USA, Europe, Brazil) (En) (Rev 1).sms":
   { ano: 1988, gen: "Ação", dev: "Sega", jog: 1, desc: "Joe Musashi em missão — shurikens, magias e reféns para salvar." },
-"Mortal Kombat (USA, Europe, Brazil).sms":
+"Mortal Kombat (Europe, Brazil) (En).sms":
   { ano: 1993, gen: "Luta", dev: "Probe / Acclaim", jog: 2, desc: "A versão 8 bits do fenômeno — capada, mas com os golpes e o Scorpion." },
 
 /* ── NINTENDO DS ─────────────────────────────────────────── */
@@ -410,29 +410,33 @@ window.RV_FICHAS = {
   { ano: 1982, gen: "Aventura", dev: "Atari", jog: 1, desc: "A casa mal-assombrada com atmosfera única — ache as peças da urna no escuro." },
 
 /* ── MASTER SYSTEM · NOVOS ───────────────────────────────── */
-"Sonic Chaos (USA, Europe, Brazil).sms":
+"Sonic Chaos (Europe, Brazil) (En).sms":
   { ano: 1993, gen: "Plataforma", dev: "Sega", jog: 1, desc: "O Sonic 8 bits mais veloz — spin dash e as Esmeraldas do Caos. O melhor ouriço do Master." },
-"Golden Axe Warrior (USA, Europe, Brazil).sms":
+"Golden Axe Warrior (USA, Europe, Brazil) (En).sms":
   { ano: 1991, gen: "Ação / RPG", dev: "Sega", jog: 1, desc: "O 'Zelda do Master System' — espada, magia e um mundo para explorar. Tesouro escondido." },
-"Wonder Boy in Monster World (USA, Europe, Brazil).sms":
+"Wonder Boy in Monster World (Europe).sms":
   { ano: 1991, gen: "Aventura / Plataforma", dev: "Westone", jog: 1, desc: "A continuação do Dragon's Trap — o melhor da série no Master, com o Genie." },
-"Hang-On (USA, Europe, Brazil).sms":
+"Hang On (Europe).sms":
   { ano: 1987, gen: "Corrida", dev: "Sega", jog: 1, desc: "O clássico de moto que vinha com o console — curva, acelera e não cai." },
-"Alex Kidd - The Lost Stars (USA, Europe, Brazil).sms":
+"Alex Kidd - The Lost Stars (World).sms":
   { ano: 1988, gen: "Plataforma", dev: "Sega", jog: 1, desc: "Alex Kidd em busca das estrelas perdidas — mais rápido e variado que o original." },
-"Batman (USA, Europe, Brazil).sms":
-  { ano: 1990, gen: "Plataforma", dev: "Sunsoft", jog: 1, desc: "O Cavaleiro das Trevas em 8 bits — plataforma e ação na veia, com o batarang." },
-"Asterix (Europe, Brazil).sms":
+"Batman Returns (Europe, Brazil) (En).sms":
+  { ano: 1992, gen: "Ação / Plataforma", dev: "Sega", jog: 1, desc: "O Batman do filme de 92 — o Pinguim toma Gotham e a Mulher-Gato cruza o caminho do morcego em ação 8 bits.", c: 1 },
+"Asterix (Europe, Brazil) (En,Fr) (Rev 1).sms":
   { ano: 1991, gen: "Plataforma", dev: "Sega", jog: 1, desc: "O gaulês mais famoso — pule, bata e colete menires pelos cenários da Gália." },
-"Operation Wolf (USA, Europe, Brazil).sms":
+"Operation Wolf (Europe, Brazil) (En).sms":
   { ano: 1989, gen: "Tiro", dev: "Taito", jog: 1, desc: "O comando de elite contra a guerrilha — o rail shooter do fliperama no Master." },
-"ESWAT - Cyber Police (USA, Europe, Brazil).sms":
+"E-SWAT (USA, Europe, Brazil) (En).sms":
   { ano: 1990, gen: "Ação", dev: "Sega", jog: 1, desc: "O policial ciborgue em missão — run 'n' gun com direito a jetpack nas fases finais." },
-"Power Strike (USA, Europe, Brazil).sms":
+"Power Strike (USA, Europe, Brazil) (En).sms":
   { ano: 1988, gen: "Tiro", dev: "Compile", jog: 1, desc: "O melhor shooter do Master System — naves, power-ups e dificuldade justa." },
-"Master of Darkness (Europe, Brazil).sms":
+"Master of Darkness (Europe, Brazil) (En).sms":
   { ano: 1993, gen: "Ação / Aventura", dev: "Sega", jog: 1, desc: "O 'Castlevania do Master' — Dr. Feud e sua horda de vampiros na Londres vitoriana." },
-"Michael Jackson's Moonwalker (USA, Europe, Brazil).sms":
+"Michael Jackson's Moonwalker (USA, Europe, Brazil) (En).sms":
   { ano: 1990, gen: "Plataforma", dev: "Sega", jog: 1, desc: "O Rei do Pop em 8 bits — resgate as crianças, use a magia e dance para vencer." },
+"Mortal Kombat II (Europe, Brazil) (En).sms":
+  { ano: 1994, gen: "Luta", dev: "Acclaim", jog: 2, desc: "Shao Kahn manda no torneio — novos lutadores, fatalities e o fenômeno do fliperama rodando em 8 bits.", c: 1 },
+"Mortal Kombat 3 (Brazil) (En).sms":
+  { ano: 1995, gen: "Luta", dev: "Tec Toy", jog: 2, desc: "A Tec Toy trouxe o MK3 até para o Master — quase um exclusivo brasileiro, com os novos lutadores e os fatalities de sempre.", c: 1 },
 
 };

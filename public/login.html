@@ -467,6 +467,19 @@ input.code{ text-align:center; letter-spacing:.7em; text-indent:.7em;
   .logo-ring{ width:62px; height:62px; }
   .logo{ font-size:1.4rem; }
 }
+/* Celular deitado: compacta o card para caber sem cortes */
+@media (max-height:520px){
+  body{ padding:12px 18px 16px; }
+  .brand{ margin-bottom:8px; }
+  .logo-ring{ width:48px; height:48px; }
+  .logo{ font-size:1.1rem; }
+  .wordmark{ font-size:1rem; letter-spacing:.22em; text-indent:.22em; }
+  .tagline{ font-size:.52rem; letter-spacing:.16em; }
+  .card{ padding:14px 14px 12px; border-radius:14px; }
+  .tabs{ margin-bottom:12px; padding:3px; }
+  .tab{ padding:8px 4px; font-size:.58rem; letter-spacing:.05em; white-space:nowrap; min-width:0; }
+  .card::before{ display:none; }
+}
 
 </style>
 </head>

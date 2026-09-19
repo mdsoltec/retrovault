@@ -138,8 +138,8 @@
       },
       gamegear: {
         name: 'Game Gear', short: 'GG', core: 'segaGG', games: [
-          { name: 'Sonic the Hedgehog', file: 'Sonic the Hedgehog (World).gg', remote: 'Sonic The Hedgehog (World) (Rev 1) (Virtual Console)' },
-          { name: 'Sonic the Hedgehog 2', file: 'Sonic the Hedgehog 2 (World).gg', remote: 'Sonic The Hedgehog 2 (World)' },
+          { name: 'Sonic the Hedgehog', file: 'Sonic The Hedgehog (World).gg', remote: 'Sonic The Hedgehog (World) (Rev 1) (Virtual Console)' },
+          { name: 'Sonic the Hedgehog 2', file: 'Sonic The Hedgehog 2 (World).gg', remote: 'Sonic The Hedgehog 2 (World)' },
           { name: 'Shinobi', file: 'Shinobi (World).gg', remote: 'Shinobi (World) (Rev A)' },
           { name: 'Shinobi II', subtitle: 'The Silent Fury', file: 'Shinobi II - The Silent Fury (World).gg' },
           { name: 'Columns', file: 'Columns (World).gg', remote: 'Columns (USA, Europe, Brazil) (En) (Rev 2)' },

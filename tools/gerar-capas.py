@@ -60,7 +60,7 @@ OVERRIDES = {
     "snes/Donkey Kong Classic.smc":
         BASE + "/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/"
                "Donkey%20Kong%20%28World%29%20%28Rev%201%29.png",
-    "mastersystem/Batman (USA, Europe, Brazil).sms":
+    "mastersystem/Batman Returns (Europe, Brazil) (En).sms":
         BASE + "/Sega%20-%20Master%20System%20-%20Mark%20III/Named_Boxarts/"
                "Batman%20Returns%20%28Europe%2C%20Brazil%29%20%28En%29.png",
 }
