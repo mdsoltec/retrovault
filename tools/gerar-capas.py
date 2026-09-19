@@ -175,6 +175,8 @@ def main():
 
     sistemas_usados = sorted({j["console"] for j in pendentes})
     indices = {}
+    total_list = len(sistemas_usados) * len(TIPOS)
+    print(f"Baixando índices de {len(sistemas_usados)} sistemas ({total_list} listagens, pode levar alguns minutos)...")
     with concurrent.futures.ThreadPoolExecutor(8) as ex:
         futuros = {
             ex.submit(listar, SISTEMAS[c], t): (c, t)
@@ -182,10 +184,10 @@ def main():
         }
         for f in concurrent.futures.as_completed(futuros):
             c, t = futuros[f]
-            indices.setdefault(c, {})[t] = f.result()
-    for c in sistemas_usados:
-        total = sum(len(v) for v in indices[c].values())
-        print(f"  índice {c}: {total} arquivos")
+            idx = f.result()
+            indices.setdefault(c, {})[t] = idx
+            if idx:
+                print(f"  ✓ {c}/{t}: {len(idx)} capas")
 
     mapa, faltando = {}, []
     for j in pendentes:

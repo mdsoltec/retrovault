@@ -225,7 +225,6 @@
           { name: 'Mortal Kombat', file: 'Mortal Kombat (Europe, Brazil) (En).sms' },
           { name: 'Mortal Kombat II', file: 'Mortal Kombat II (Europe, Brazil) (En).sms' },
           { name: 'Mortal Kombat 3', file: 'Mortal Kombat 3 (Brazil) (En).sms' },
-          { name: 'Mickey', subtitle: 'Ultimate Challenge', file: 'Mickey Ultimate Challenge (Brazil) (En).sms' },
           { name: 'Sonic Chaos', file: 'Sonic Chaos (Europe, Brazil) (En).sms' },
           { name: 'Golden Axe Warrior', file: 'Golden Axe Warrior (USA, Europe, Brazil) (En).sms' },
           { name: 'Wonder Boy in Monster World', file: 'Wonder Boy in Monster World (Europe).sms' },
