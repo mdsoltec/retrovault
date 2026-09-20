@@ -10,9 +10,10 @@
       calibrate.html (faltavam → offline quebrava o player).
    4. Versão fixada do EmulatorJS (4.2.3) no warmup — veja play.html.
    ═══════════════════════════════════════════════════════════ */
-const CACHE_NAME = 'retrovault-v2';
+const CACHE_NAME = 'retrovault-v5';
 const CACHE_EJS = CACHE_NAME + '-ejs'; // núcleos/framework do EmulatorJS
 const CACHE_COVERS = 'retrovault-covers'; // capas baixadas automaticamente da web
+const CACHE_ROMS = 'retrovault-roms-v1'; // ROMs que o jogador escolheu levar para o offline
 const EJS_CDN = 'https://cdn.emulatorjs.org/4.2.3/data/';
 
 const STATIC_ASSETS = [
@@ -21,9 +22,10 @@ const STATIC_ASSETS = [
   'play.html',
   'profile.html',
   'login.html',
-  'retroflix.html',
+  'config.html',
+  '404.html',
   'calibrate.html',
-  'css/style.css?v=20260919',
+  'css/style.css?v=20260922',
   'assets/rv-icon.png',
   'assets/avatar-01.png',
   'assets/avatar-02.png',
@@ -46,17 +48,18 @@ const STATIC_ASSETS = [
   'assets/avatar-19.png',
   'assets/avatar-20.png',
   'manifest.json',
-  'js/audio.js?v=20260919',
-  'js/rv-config.js?v=20260919',
-  'js/rv-account.js?v=20260919',
-  'js/rv-input-mode.js?v=20260919',
-  'js/covers.js?v=20260919',
-  'js/covers-map.js?v=20260919',
-  'js/fichas.js?v=20260919',
-  'js/card-info.js?v=20260919',
-  'js/rv-ui.js?v=20260919',
-  'js/overlay-parser.js?v=20260919',
-  'js/catalog.js?v=20260919',
+  'js/audio.js?v=20260922',
+  'js/rv-config.js?v=20260922',
+  'js/rv-account.js?v=20260922',
+  'js/rv-input-mode.js?v=20260922',
+  'js/covers.js?v=20260922',
+  'js/covers-map.js?v=20260922',
+  'js/fichas.js?v=20260922',
+  'js/card-info.js?v=20260922',
+  'js/rv-ui.js?v=20260922',
+  'js/overlay-parser.js?v=20260922',
+  'js/catalog.js?v=20260922',
+  'js/rv-extras.js?v=20260922',
   // Base de cheats dinâmica do EmulatorJS
   'cheats/cheats.json',
   'cheats/nes.json',
@@ -69,6 +72,7 @@ const STATIC_ASSETS = [
   'cheats/segaMD.json',
   'cheats/segaCD.json',
   'cheats/segaGG.json',
+  'cheats/segaMS.json',
   'cheats/nds.json',
   'cheats/fbneo.json'
 ];
@@ -95,7 +99,7 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE_NAME && k !== CACHE_EJS && k !== CACHE_COVERS).map(k => caches.delete(k)))
+      Promise.all(keys.filter(k => k !== CACHE_NAME && k !== CACHE_EJS && k !== CACHE_COVERS && k !== CACHE_ROMS).map(k => caches.delete(k)))
     ).then(() => self.clients.claim())
   );
 
@@ -156,6 +160,19 @@ self.addEventListener('fetch', event => {
     return;
   }
 
+  // ROMs guardadas pelo jogador ("Offline" no menu do jogo): cache-first.
+  // Só atende o que ESTÁ no cache — quem não foi baixado segue para a rede.
+  if (url.hostname === 'retroverse-roms.mdsoltec.workers.dev') {
+    event.respondWith(
+      caches.open(CACHE_ROMS).then(async cache => {
+        const cached = await cache.match(event.request);
+        if (cached) return cached;
+        return fetch(event.request);
+      })
+    );
+    return;
+  }
+
   // Skip external CDN and ROM requests (too large to cache)
   if (url.hostname !== self.location.hostname) return;
 
@@ -172,6 +189,11 @@ self.addEventListener('fetch', event => {
         }
         return response;
       })
-      .catch(() => caches.match(event.request))
+      .catch(() =>
+        // Offline ou recurso ausente: navegação cai na página 404 estilizada.
+        event.request.mode === 'navigate'
+          ? caches.match('404.html').then(r => r || caches.match('/404.html'))
+          : caches.match(event.request)
+      )
   );
 });

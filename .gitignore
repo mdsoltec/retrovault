@@ -89,5 +89,3 @@ node_modules/
 .env
 .venv/
 venv/
-public_backup/
-tools_backup/

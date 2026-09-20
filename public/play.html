@@ -29,12 +29,12 @@
   </script>
   <!-- Conta/sessão: precisa vir ANTES de tudo que lê histórico, porque
        RVStore separa os dados por usuário (rv:<uid>:chave). -->
-  <script src="js/rv-config.js?v=20260919"></script>
-  <script src="js/rv-account.js?v=20260919"></script>
-  <script src="js/rv-input-mode.js?v=20260919"></script>
+  <script src="js/rv-config.js?v=20260922"></script>
+  <script src="js/rv-account.js?v=20260922"></script>
+  <script src="js/rv-input-mode.js?v=20260922"></script>
   <script>RVAccount.guard();</script>
-  <script src="js/audio.js?v=20260919"></script>
-  <script src="js/overlay-parser.js?v=20260919"></script>
+  <script src="js/audio.js?v=20260922"></script>
+  <script src="js/overlay-parser.js?v=20260922"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body, html {
@@ -168,40 +168,61 @@
     .rv-dl-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--rv-color, #00ff41), #7dffb0); border-radius: 5px; box-shadow: 0 0 12px var(--rv-color, #00ff41); transition: width 0.3s ease; }
     .rv-dl-info { font-size: 0.74rem; font-weight: 600; letter-spacing: 2px; color: rgba(255,255,255,0.55); font-variant-numeric: tabular-nums; }
 
-    #rv-fs-btn {
+    /* ═══ MINI-MENU DE OPÇÕES DA TELA ═══
+       Recolhido: apenas o botão ⋮ (pequeno e discreto, não cobre o jogo).
+       Aberto: painel vertical com Tela cheia / Screenshot / Theater / Saves. */
+    .rv-qm {
       position: fixed; top: calc(10px + env(safe-area-inset-top, 0px)); right: 10px; z-index: 8000;
-      background: rgba(3,8,5,.72); border: 1px solid rgba(0,255,65,.4);
-      border-radius: 12px; width: 42px; height: 42px;
-      display: none; align-items: center; justify-content: center;
-      cursor: pointer;
+      display: none; flex-direction: column; align-items: flex-end; gap: 8px;
+    }
+    .rv-qm.visible { display: flex; }
+    .rv-qm-toggle {
+      width: 34px; height: 34px; border-radius: 10px;
+      background: rgba(3,8,5,.55); border: 1px solid rgba(0,255,65,.22);
+      display: flex; align-items: center; justify-content: center; cursor: pointer;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 6px 20px rgba(0,0,0,.5);
-      transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+      box-shadow: 0 4px 14px rgba(0,0,0,.45);
+      opacity: .5; padding: 0;
+      transition: opacity .2s, transform .15s, border-color .2s, background .2s;
+    }
+    .rv-qm-toggle:hover, .rv-qm-toggle:focus-visible { opacity: 1; border-color: rgba(0,255,65,.45); }
+    .rv-qm-toggle:active { transform: scale(.9); }
+    .rv-qm-toggle svg { width: 18px; height: 18px; fill: #00ff41; pointer-events: none; }
+    .rv-qm.open .rv-qm-toggle { opacity: 1; background: rgba(0,255,65,.14); border-color: rgba(0,255,65,.45); }
+    @keyframes rvQmIn { from { opacity: 0; transform: translateY(-6px) scale(.96); } to { opacity: 1; transform: none; } }
+    /* Os botões originais viram itens do painel (antes eram fixos na tela) */
+    .rv-qm #rv-fs-btn, .rv-qm .rv-float-btn { position: static; }
+    #rv-fs-btn {
+      background: rgba(3,8,5,.5); border: 1px solid transparent;
+      border-radius: 10px; width: 38px; height: 38px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      transition: transform .15s ease, background .2s ease, border-color .2s ease;
     }
     #rv-fs-btn.visible { display: flex; }
-    #rv-fs-btn:hover { border-color: #00ff41; box-shadow: 0 0 16px rgba(0,255,65,.35); }
+    #rv-fs-btn:hover { background: rgba(0,255,65,.12); border-color: rgba(0,255,65,.35); box-shadow: none; }
     #rv-fs-btn:active { transform: scale(.92); }
     #rv-fs-btn svg { width: 19px; height: 19px; fill: #00ff41; }
 
     /* ═══════════════════════════════════════════
        FLOATING BUTTONS (screenshot, theater, menu)
     ═══════════════════════════════════════════ */
+    /* Painel do mini-menu (era a barra fixa; agora é o dropdown do ⋮) */
     .rv-float-btns {
-      position: fixed;
-      top: calc(10px + env(safe-area-inset-top, 0px)); right: 60px;
-      z-index: 8000;
+      position: static;
       display: none;
-      gap: 8px;
-      background: rgba(3,8,5,.6);
-      border: 1px solid rgba(0,255,65,.25);
+      flex-direction: column;
+      gap: 4px;
+      background: rgba(3,8,5,.8);
+      border: 1px solid rgba(0,255,65,.3);
       border-radius: 14px;
       padding: 5px;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 6px 20px rgba(0,0,0,.5);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.6);
     }
-    .rv-float-btns.visible { display: flex; }
+    .rv-qm.open .rv-float-btns { display: flex; animation: rvQmIn .18s ease; }
 
     .rv-float-btn {
       background: transparent;
@@ -292,10 +313,8 @@
       pointer-events: none !important;
     }
 
-    body.theater-mode #rv-fs-btn,
-    body.theater-mode .rv-float-btns { opacity: 0.35; z-index: 8000; }
-    body.theater-mode #rv-fs-btn:hover,
-    body.theater-mode .rv-float-btns:hover { opacity: 1; }
+    body.theater-mode .rv-qm { opacity: 0.35; z-index: 8000; }
+    body.theater-mode .rv-qm:hover { opacity: 1; }
     body.theater-mode #rv-theater-btn {
       border-color: #00ff41;
       box-shadow: 0 0 14px rgba(0,255,65,.45);
@@ -506,7 +525,173 @@
     }
     .rv-meta.pressed { transform: scale(.88) !important; filter: brightness(1.4) !important; }
     #rv-dpad { position: absolute; pointer-events: auto; touch-action: none; }
-  </style>
+
+    /* ═══════════════ TEMA RETROVAULT OS — MENUS DO EMULATORJS ═══════════════
+       A identidade visual do site aplicada aos menus do emulador (pausa,
+       configurações, cheats, volume, gamepad): superfícies escuras esverdeadas,
+       bordas neon, tipografia Orbitron/Rajdhani e acento na cor do console
+       (var --ejs-primary-color, definida por EJS_color). Apenas CSS aditivo. */
+    .ejs_parent {
+      --rv-menu-bg: rgba(4, 9, 6, 0.96);
+      --rv-menu-border: rgba(0, 255, 65, 0.28);
+      --rv-menu-hover: rgba(0, 255, 65, 0.12);
+    }
+    .ejs_parent .ejs_menu_bar {
+      background: var(--rv-menu-bg) !important;
+      border: 1px solid var(--rv-menu-border) !important;
+      border-radius: 14px !important;
+      backdrop-filter: blur(14px) saturate(1.3);
+      -webkit-backdrop-filter: blur(14px) saturate(1.3);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 24px rgba(0, 255, 65, 0.08) !important;
+      font-family: 'Rajdhani', 'Segoe UI', Arial, sans-serif !important;
+    }
+    .ejs_parent .ejs_menu_button svg { fill: #00ff41 !important; opacity: 0.85; transition: opacity .2s, transform .15s; }
+    .ejs_parent .ejs_menu_button:hover svg { opacity: 1; transform: scale(1.08); }
+    .ejs_parent .ejs_menu_button { border-radius: 10px !important; transition: background .2s !important; }
+    .ejs_parent .ejs_menu_button:hover { background: var(--rv-menu-hover) !important; }
+    .ejs_parent .ejs_menu_text,
+    .ejs_parent .ejs_menu_text_right {
+      font-family: 'Rajdhani', 'Segoe UI', Arial, sans-serif !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.5px;
+    }
+    .ejs_parent .ejs_popup_container {
+      background: rgba(2, 5, 3, 0.88) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .ejs_parent .ejs_context_menu,
+    .ejs_parent .ejs_settings_main_bar,
+    .ejs_parent .ejs_settings_center_left,
+    .ejs_parent .ejs_settings_center_right {
+      background: var(--rv-menu-bg) !important;
+      border: 1px solid var(--rv-menu-border) !important;
+      border-radius: 14px !important;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.65), 0 0 28px rgba(0, 255, 65, 0.10) !important;
+      font-family: 'Rajdhani', 'Segoe UI', Arial, sans-serif !important;
+    }
+    .ejs_parent .ejs_option_row:hover,
+    .ejs_parent .ejs_list_selector:hover,
+    .ejs_parent .ejs_cheat_row:hover { background: var(--rv-menu-hover) !important; }
+    .ejs_parent .ejs_option_row_selected,
+    .ejs_parent .ejs_control_selected {
+      background: rgba(0, 255, 65, 0.14) !important;
+      box-shadow: inset 3px 0 0 #00ff41 !important;
+    }
+    .ejs_parent .ejs_popup_container b,
+    .ejs_parent .ejs_settings_main_bar > span:first-child {
+      font-family: 'Orbitron', sans-serif !important;
+      letter-spacing: 1.5px !important;
+    }
+    .ejs_parent ::-webkit-scrollbar { width: 8px; }
+    .ejs_parent ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.4); }
+    .ejs_parent ::-webkit-scrollbar-thumb { background: rgba(0, 255, 65, 0.35); border-radius: 8px; }
+    .ejs_parent ::-webkit-scrollbar-thumb:hover { background: rgba(0, 255, 65, 0.55); }
+    .ejs_parent .ejs_start_button {
+      font-family: 'Orbitron', sans-serif !important;
+      letter-spacing: 2px !important;
+      border: 1px solid rgba(0, 255, 65, 0.45) !important;
+      border-radius: 12px !important;
+      background: rgba(3, 8, 5, 0.72) !important;
+      text-shadow: 0 0 12px rgba(0, 255, 65, 0.6) !important;
+      transition: box-shadow .25s, transform .15s !important;
+    }
+    .ejs_parent .ejs_start_button:hover {
+      box-shadow: 0 0 24px rgba(0, 255, 65, 0.35) !important;
+      transform: translateY(-1px);
+    }
+  
+    /* ═══ EXTRAS: moldura, retomar, portão dos pais ═══ */
+    #rv-sys-bar .rv-sys-actions { flex-wrap: wrap; }
+    #rv-sys-bar .rv-sys-actions button { flex: 1 1 calc(25% - 8px); }
+    body.rv-bezel-slim #game {
+      outline: 2px solid rgba(255,255,255,.16);
+      outline-offset: 4px;
+      box-shadow: 0 0 0 6px rgba(2,8,4,.85), 0 10px 34px rgba(0,0,0,.55);
+      border-radius: 4px;
+    }
+    body.rv-bezel-crt #game {
+      outline: 5px solid #0c110d;
+      outline-offset: 7px;
+      box-shadow: 0 0 0 14px #060a07, 0 0 0 16px rgba(0,255,65,.12), 0 18px 60px rgba(0,0,0,.7);
+      border-radius: 10px;
+    }
+    body.rv-bezel-auto #game {
+      outline: 3px solid var(--rv-bezel-c, #00ff41);
+      outline-offset: 4px;
+      box-shadow: 0 0 0 7px rgba(2,8,4,.9), 0 0 26px var(--rv-bezel-glow, rgba(0,255,65,.25)), 0 12px 40px rgba(0,0,0,.6);
+      border-radius: 6px;
+    }
+    /* Barra "continuar de onde parou" */
+    #rv-resume {
+      position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%);
+      z-index: 7600; display: none; align-items: center; gap: 10px;
+      max-width: min(94vw, 520px);
+      background: rgba(3,12,6,.94); border: 1px solid rgba(0,255,65,.45);
+      border-radius: 14px; padding: 10px 12px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.6);
+      font-family: inherit;
+    }
+    #rv-resume.visible { display: flex; animation: rvResumeIn .22s ease; }
+    @keyframes rvResumeIn { from { opacity: 0; transform: translate(-50%, 8px); } to { opacity: 1; transform: translate(-50%, 0); } }
+    #rv-resume .rv-resume-txt { color: #d7efe0; font-size: 12.5px; font-weight: 600; line-height: 1.35; }
+    #rv-resume .rv-resume-txt small { display: block; color: #7fa98c; font-weight: 500; }
+    #rv-resume button {
+      border: 1px solid rgba(0,255,65,.5); background: rgba(0,255,65,.14); color: #baf5c9;
+      border-radius: 10px; padding: 8px 12px; font: 700 12px inherit; letter-spacing: .4px;
+      cursor: pointer; white-space: nowrap; touch-action: manipulation;
+    }
+    #rv-resume button.rv-resume-go { background: #00ff41; color: #02120a; }
+    #rv-resume button:hover { filter: brightness(1.12); }
+    /* Portão dos pais */
+    #rv-gate {
+      position: fixed; inset: 0; z-index: 9500;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(1,4,2,.96); backdrop-filter: blur(3px); padding: 18px;
+    }
+    #rv-gate .rv-gate-box {
+      width: min(92vw, 340px); background: #04120a;
+      border: 1px solid rgba(0,255,65,.4); border-radius: 18px;
+      padding: 22px 18px; text-align: center; font-family: inherit;
+      box-shadow: 0 18px 60px rgba(0,0,0,.7);
+    }
+    #rv-gate h3 { margin: 0 0 4px; color: #00ff41; font-size: 1rem; letter-spacing: 1px; }
+    #rv-gate p { margin: 0 0 12px; color: #9fb4cc; font-size: .8rem; line-height: 1.45; }
+    #rv-gate .rv-gate-dots {
+      font-size: 1.6rem; letter-spacing: 10px; color: #00ff41; min-height: 34px;
+      font-weight: 700; margin-bottom: 10px;
+    }
+    #rv-gate .rv-gate-pad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    #rv-gate .rv-gate-pad button {
+      padding: 13px 0; font: 700 1.05px inherit; font-size: 1.05rem;
+      background: rgba(0,255,65,.08); border: 1px solid rgba(0,255,65,.3);
+      color: #d7efe0; border-radius: 12px; cursor: pointer; touch-action: manipulation;
+    }
+    #rv-gate .rv-gate-pad button:active { transform: scale(.95); background: rgba(0,255,65,.2); }
+    #rv-gate .rv-gate-err { color: #ff8080; font-size: .75rem; min-height: 1em; margin: 8px 0 0; }
+    #rv-sys-bar .rv-sys-sram-row {
+      display: flex; align-items: center; gap: 8px; padding: 7px 10px;
+      background: rgba(142, 240, 255, 0.05); border: 1px solid rgba(142, 240, 255, 0.22);
+      border-radius: 12px;
+    }
+    #rv-resume button svg { width: 13px; height: 13px; }
+    #rv-resume .rv-resume-go svg { fill: #02120a; }
+    #rv-gate h3 svg { width: 18px; height: 18px; vertical-align: -3px; margin-right: 6px; }
+    #rv-gate .rv-gate-pad button svg { width: 20px; height: 20px; }
+    #rv-sys-bar .rv-sys-sram-row .rv-sram-ico { width: 15px; height: 15px; stroke: #9fd3e0; flex-shrink: 0; }
+    #rv-sys-bar .rv-sys-sram-row .rv-sram-label {
+      flex: 1; min-width: 0; color: #9fd3e0; font-size: 11.5px; font-weight: 600;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    #rv-sys-bar .rv-sys-sram-row button {
+      display: flex; align-items: center; gap: 5px;
+      background: rgba(142, 240, 255, 0.08); border: 1px solid rgba(142, 240, 255, 0.35);
+      color: #cdeef7; border-radius: 9px; padding: 6px 9px;
+      font: 700 10.5px inherit; letter-spacing: .4px; cursor: pointer; white-space: nowrap;
+    }
+    #rv-sys-bar .rv-sys-sram-row button:hover { background: rgba(142, 240, 255, .18); }
+
+</style>
 </head>
 <body>
 
@@ -525,23 +710,27 @@
   </div>
 </div>
 
-<div id="rv-fs-btn" title="Tela cheia">
-  <svg viewBox="0 0 24 24"><path d="M3 3h6v2H5v4H3V3zm12 0h6v6h-2V5h-4V3zM3 15h2v4h4v2H3v-6zm16 4h-4v2h6v-6h-2v4z"/></svg>
-</div>
-
-<!-- BOTÕES FLUTUANTES (screenshot + theater) -->
-<div class="rv-float-btns" id="rv-float-btns">
-  <div class="rv-float-btn" id="rv-screenshot-btn" title="Screenshot">
-    <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-  </div>
-  <div class="rv-float-btn" id="rv-theater-btn" title="Modo Theater">
-    <svg viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
-  </div>
-  <!-- MENU (Salvar/Carregar/Reset/Turbo/Sair). Essencial no PC e quando há
-       controle conectado: sem o overlay na tela, não existiria outro caminho
-       para a barra de sistema do RetroVault OS. -->
-  <div class="rv-float-btn" id="rv-sysbar-btn" title="Saves — Salvar, Carregar, Reset (segure F1)">
-    <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+<!-- MINI-MENU FLUTUANTE (recolhido: só o ⋮; aberto: Tela cheia/Screenshot/Theater/Saves) -->
+<div class="rv-qm" id="rv-qm">
+  <button class="rv-qm-toggle" id="rv-qm-toggle" title="Opções de tela" aria-label="Opções de tela" aria-expanded="false">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.2"/><circle cx="12" cy="12" r="2.2"/><circle cx="12" cy="19" r="2.2"/></svg>
+  </button>
+  <div class="rv-float-btns" id="rv-float-btns">
+    <div id="rv-fs-btn" title="Tela cheia">
+      <svg viewBox="0 0 24 24"><path d="M3 3h6v2H5v4H3V3zm12 0h6v6h-2V5h-4V3zM3 15h2v4h4v2H3v-6zm16 4h-4v2h6v-6h-2v4z"/></svg>
+    </div>
+    <div class="rv-float-btn" id="rv-screenshot-btn" title="Screenshot">
+      <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+    </div>
+    <div class="rv-float-btn" id="rv-theater-btn" title="Modo Theater">
+      <svg viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+    </div>
+    <!-- MENU (Salvar/Carregar/Reset/Turbo/Sair). Essencial no PC e quando há
+         controle conectado: sem o overlay na tela, não existiria outro caminho
+         para a barra de sistema do RetroVault OS. -->
+    <div class="rv-float-btn" id="rv-sysbar-btn" title="Saves — Salvar, Carregar, Reset (segure F1)">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+    </div>
   </div>
 </div>
 
@@ -581,6 +770,12 @@
   <symbol id="rv-i-slot" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/>
   </symbol>
+  <symbol id="rv-i-clip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/>
+  </symbol>
+  <symbol id="rv-i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+  </symbol>
 </svg>
 <div id="rv-sys-bar" role="dialog" aria-label="Ações de sistema">
   <div class="rv-sys-head">
@@ -594,11 +789,19 @@
       <svg aria-hidden="true"><use href="#rv-i-trash"/></svg>
     </button>
   </div>
+  <div class="rv-sys-sram-row">
+    <svg class="rv-sram-ico" aria-hidden="true"><use href="#rv-i-slot"/></svg><span class="rv-sram-label">Cartucho (memória de bateria)</span>
+    <button type="button" data-sys="sram-export" title="Baixa o arquivo .srm do cartucho">Exportar</button>
+    <button type="button" data-sys="sram-import" title="Carrega um arquivo .srm/.sav no cartucho">Importar</button>
+    <input type="file" id="rv-sram-file" accept=".srm,.sav,.srm" hidden>
+  </div>
   <div class="rv-sys-actions">
     <button type="button" data-sys="save"><svg class="ico" aria-hidden="true"><use href="#rv-i-save"/></svg>Salvar</button>
     <button type="button" data-sys="load"><svg class="ico" aria-hidden="true"><use href="#rv-i-load"/></svg>Carregar</button>
     <button type="button" data-sys="reset"><svg class="ico" aria-hidden="true"><use href="#rv-i-reset"/></svg>Reset</button>
     <button type="button" data-sys="turbo"><svg class="ico" aria-hidden="true"><use href="#rv-i-turbo"/></svg>Turbo</button>
+    <button type="button" data-sys="clip" id="rv-sys-clip"><svg class="ico" aria-hidden="true"><use href="#rv-i-clip"/></svg><span id="rv-sys-clip-lbl">Clipe</span></button>
+    <button type="button" data-sys="offline" id="rv-sys-offline"><svg class="ico" aria-hidden="true"><use href="#rv-i-cloud"/></svg><span id="rv-sys-offline-lbl">Offline</span></button>
     <button type="button" data-sys="exit"><svg class="ico" aria-hidden="true"><use href="#rv-i-exit"/></svg>Sair</button>
     <button type="button" data-sys="close" class="rv-close" aria-label="Fechar"><svg class="ico" aria-hidden="true"><use href="#rv-i-close"/></svg></button>
   </div>
@@ -928,6 +1131,12 @@ const SKINS = {
     dpad:{color:'#1e1e34',border:'#44446a'} },
   segaMD: { barBg:'rgba(5,5,5,0.85)', diskBg:'rgba(30,30,30,0.18)', diskBorder:'#33333355',
     face:[{label:'A',input:EJS_INPUT.Y,color:'rgba(185,15,15,.95)',border:'#ff3333',glow:'rgba(200,15,15,.85)'},{label:'X',input:EJS_INPUT.X,color:'rgba(105,10,10,.92)',border:'#cc2222',glow:'rgba(150,10,10,.6)'},{label:'C',input:EJS_INPUT.A,color:'rgba(15,62,185,.95)',border:'#3366ff',glow:'rgba(15,70,200,.85)'},{label:'B',input:EJS_INPUT.B,color:'rgba(175,135,0,.95)',border:'#ffcc00',glow:'rgba(190,150,0,.85)'}],
+    shoulders:[],meta:[{label:'MODE',input:EJS_INPUT.SELECT,color:'rgb,.95)',border:'#4488ff',glow:'rgba(15,80,200,.85)'},{label:'C▼',input:EJS_INPUT.Y,color:'rgba(185,145,0,.95)',border:'#ffdd00',glow:'rgba(200,160,0,.85)',fontSize:13}],
+    shoulders:[{label:'L',input:EJS_INPUT.L,color:'rgba(25,25,48,.97)',border:'#555588',glow:'rgba(60,60,130,.6)',side:'left',row:0},{label:'R',input:EJS_INPUT.R,color:'rgba(25,25,48,.97)',border:'#555588',glow:'rgba(60,60,130,.6)',side:'right',row:0},{label:'Z',input:EJS_INPUT.L2,color:'rgba(80,10,135,.97)',border:'#aa55ff',glow:'rgba(120,30,200,.7)',side:'left',row:1}],
+    meta:[{label:'START',input:EJS_INPUT.START,color:'rgba(20,20,42,.92)',border:'#555588',textColor:'#9999cc'}],
+    dpad:{color:'#1e1e34',border:'#44446a'} },
+  segaMD: { barBg:'rgba(5,5,5,0.85)', diskBg:'rgba(30,30,30,0.18)', diskBorder:'#33333355',
+    face:[{label:'A',input:EJS_INPUT.Y,color:'rgba(185,15,15,.95)',border:'#ff3333',glow:'rgba(200,15,15,.85)'},{label:'X',input:EJS_INPUT.X,color:'rgba(105,10,10,.92)',border:'#cc2222',glow:'rgba(150,10,10,.6)'},{label:'C',input:EJS_INPUT.A,color:'rgba(15,62,185,.95)',border:'#3366ff',glow:'rgba(15,70,200,.85)'},{label:'B',input:EJS_INPUT.B,color:'rgba(175,135,0,.95)',border:'#ffcc00',glow:'rgba(190,150,0,.85)'}],
     shoulders:[],meta:[{label:'MODE',input:EJS_INPUT.SELECT,color:'rgba(14,14,14,.92)',border:'#444',textColor:'#888'},{label:'START',input:EJS_INPUT.START,color:'rgba(14,14,14,.92)',border:'#444',textColor:'#888'}],
     dpad:{color:'#181818',border:'#444444'} },
   gba: { barBg:'rgba(8,4,16,0.82)', diskBg:'rgba(50,25,80,0.18)', diskBorder:'#9966dd55',
@@ -1073,6 +1282,32 @@ if (isNDSCore) {
     desmume_pointer_type: 'touch'
   };
 }
+
+/* ═══ AJUSTES GERAIS DO EMULADOR ═══
+   • Interface do EmulatorJS em português (localization/pt-BR.json do CDN 4.2.3);
+   • Volume inicial 70%;
+   • Cor do carregamento acompanha o tema de cada console;
+   • Estados rápidos (save state) salvos no navegador, sem prompt de download;
+   • Rewind ("voltar no tempo") ligado por padrão nos consoles de cartucho
+     8/16 bits — guarda os últimos segundos na RAM, então fica DESLIGADO nos
+     cores pesados (N64, PSX, Sega CD, NDS) para não afetar o desempenho. */
+EJS_language = 'pt-BR';
+EJS_volume = 0.7;
+EJS_color = (CONSOLE_THEMES[core] || { color: '#00ff41' }).color;
+const RV_REWIND_OK = ['snes', 'nes', 'gb', 'gbc', 'gba', 'segaMD', 'segaMS',
+                      'segaGG', 'atari2600'].includes(core);
+if (isNDSCore) {
+  // Preserva as opções de tela dupla do DS e acrescenta a localização do save.
+  EJS_defaultOptions['save-state-location'] = 'browser';
+} else {
+  EJS_defaultOptions = { 'save-state-location': 'browser' };
+  if (RV_REWIND_OK) EJS_defaultOptions.rewindEnabled = 'enabled';
+}
+
+/* ═══ Preferências do jogador (página Configurações) ═══
+   Lidas de uma vez após todos os padrões acima — o config.html grava
+   em localStorage (rv_emu_settings_v1); o que estiver salvo define o
+   valor inicial de cada opção. Sem preferências salvas, nada muda. */
 
 /* ═══ VERSÃO FIXADA DO EMULATORJS ═══
    'stable' é um alias móvel: quando o projeto sobe de versão, os patches
@@ -1671,6 +1906,425 @@ try {
 
 EJS_startOnLoaded = true; EJS_fullscreenOnLoaded = false;
 
+/* ═════════ EXTRAS DO JOGO (rv-extras) ═════════
+   Tempo de jogo, continuar de onde parou, clipe, cartucho (SRM),
+   ROM no offline, portão dos pais e aviso de atualização.
+   Bloco independente: nada aqui altera os menus existentes. */
+(function () {
+  'use strict';
+  const $id = (i) => document.getElementById(i);
+  const consoleKey = (((typeof game === 'string' ? game : '') || '').split('?')[0].split('/')[0]) || '';
+  const gkey = (((typeof game === 'string' ? game : '') || '').split('?')[0]) || '';
+  const hojeChave = () => { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+
+  /* ── 1. PORTÃO DOS PAIS (config.html → Controle dos pais) ──
+     Chamado pelo leitor de preferências logo abaixo: se o console
+     está fora da lista liberada, o jogo só abre depois do PIN. */
+  window.__rvParentalGate = function (cfg) {
+    const pin = cfg && typeof cfg.parentPin === 'string' ? cfg.parentPin : '';
+    const liberados = Array.isArray(cfg.parentConsoles) ? cfg.parentConsoles : [];
+    if (!pin || !liberados.length || liberados.indexOf(consoleKey) >= 0) return false;
+    const nomeConsole = consoleKey ? consoleKey.toUpperCase() : 'CONSOLE';
+
+    const ov = document.createElement('div'); ov.id = 'rv-gate';
+    const box = document.createElement('div'); box.className = 'rv-gate-box';
+    const h = document.createElement('h3');
+    const hIco = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    hIco.setAttribute('viewBox', '0 0 24 24'); hIco.setAttribute('fill', 'none');
+    hIco.setAttribute('stroke', '#00ff41'); hIco.setAttribute('stroke-width', '2');
+    hIco.setAttribute('stroke-linecap', 'round'); hIco.setAttribute('stroke-linejoin', 'round');
+    hIco.setAttribute('aria-hidden', 'true');
+    hIco.innerHTML = '<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.3" fill="#00ff41" stroke="none"/>';
+    h.appendChild(hIco); h.appendChild(document.createTextNode('Controle dos pais'));
+    const p = document.createElement('p');
+    const b1 = document.createElement('b'); b1.textContent = nomeConsole;
+    p.appendChild(b1); p.appendChild(document.createTextNode(' está protegido por PIN. Digite os 4 dígitos para jogar.'));
+    const dots = document.createElement('div'); dots.className = 'rv-gate-dots'; dots.textContent = '····';
+    const pad = document.createElement('div'); pad.className = 'rv-gate-pad';
+    const err = document.createElement('p'); err.className = 'rv-gate-err';
+    box.appendChild(h); box.appendChild(p); box.appendChild(dots); box.appendChild(pad); box.appendChild(err);
+    ov.appendChild(box); document.body.appendChild(ov);
+
+    let val = '';
+    const pinta = () => { dots.textContent = '•'.repeat(val.length) + '·'.repeat(Math.max(0, 4 - val.length)); };
+    async function conferir() {
+      let hash;
+      try {
+        const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode('rv-parent:' + val));
+        hash = 's#' + Array.from(new Uint8Array(buf)).map(x => x.toString(16).padStart(2, '0')).join('');
+      } catch (e) { hash = 'p#' + val; }
+      if (hash === pin) {
+        ov.remove();
+        if (typeof showToast === 'function') showToast('Acesso liberado', 'check');
+        /* startOnLoaded foi desligado pelo portão: clica no iniciar assim que existir */
+        let n = 0;
+        const iv = setInterval(() => {
+          const botao = document.querySelector('.ejs_start_button');
+          if (botao) { clearInterval(iv); botao.click(); }
+          else if (++n > 240) clearInterval(iv); /* ROMs lentas: espera até 2min */
+        }, 500);
+      } else {
+        err.textContent = 'PIN incorreto — tente de novo';
+        val = ''; pinta();
+        setTimeout(() => { err.textContent = ''; }, 2200);
+      }
+    }
+    function tecla(k) {
+      if (k === '⌫') { val = val.slice(0, -1); pinta(); return; }
+      if (k === 'OK') { if (val.length === 4) conferir(); return; }
+      if (val.length < 4) { val += k; pinta(); if (val.length === 4) setTimeout(conferir, 180); }
+    }
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, '⌫', 0, 'OK'].forEach(k => {
+      const b = document.createElement('button'); b.type = 'button';
+      if (k === '⌫') {
+        b.setAttribute('aria-label', 'Apagar último dígito');
+        const bi = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        bi.setAttribute('viewBox', '0 0 24 24'); bi.setAttribute('fill', 'none');
+        bi.setAttribute('stroke', 'currentColor'); bi.setAttribute('stroke-width', '2');
+        bi.setAttribute('stroke-linecap', 'round'); bi.setAttribute('stroke-linejoin', 'round');
+        bi.innerHTML = '<path d="M22 5H9l-7 7 7 7h13a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/><line x1="12" y1="9" x2="18" y2="15"/><line x1="18" y1="9" x2="12" y2="15"/>';
+        b.appendChild(bi);
+        b.addEventListener('click', () => tecla('⌫'));
+      } else {
+        b.textContent = String(k);
+        b.addEventListener('click', () => tecla(k));
+      }
+      pad.appendChild(b);
+    });
+    return true; /* bloqueado: o leitor desliga o auto-start */
+  };
+
+  /* ── 2. TEMPO DE JOGO (rv_playtime + rv_activity) ── */
+  window.__rvTrackCfg = { on: true };
+  let pendenteMs = 0, ultimoTick = Date.now();
+  function flushTempo() {
+    if (pendenteMs < 1000) return;
+    const secs = Math.round(pendenteMs / 1000);
+    pendenteMs = 0;
+    try {
+      if (!gkey) return;
+      const m = JSON.parse(RVStore.getItem('rv_playtime') || '{}');
+      m[gkey] = (m[gkey] || 0) + secs;
+      RVStore.setItem('rv_playtime', JSON.stringify(m));
+      const a = JSON.parse(RVStore.getItem('rv_activity') || '{}');
+      const h = hojeChave();
+      a[h] = (a[h] || 0) + secs;
+      RVStore.setItem('rv_activity', JSON.stringify(a));
+    } catch (e) { }
+  }
+  setInterval(() => {
+    const agora = Date.now();
+    const dt = agora - ultimoTick; ultimoTick = agora;
+    if (!window.__rvTrackCfg.on) return;
+    const em = window.EJS_emulator;
+    if (!em || !em.started || em.paused) return;
+    if (document.visibilityState !== 'visible') return;
+    pendenteMs += dt;
+    if (pendenteMs >= 30000) flushTempo();
+  }, 5000);
+
+  /* ── 3. CONTINUAR DE ONDE PAROU (estado automático) ── */
+  const autoKey = () => 'rv-auto::' + rvSaveKey();
+  let resumePerguntado = false;
+  async function capturarAuto() {
+    const em = window.EJS_emulator, gm = em && em.gameManager;
+    if (!em || !em.started || !gm || typeof gm.getState !== 'function') return;
+    if (em.paused) return; /* pausado: o jogo já está parado */
+    try {
+      const congelou = rvFreezeCore();
+      let st;
+      try { if (congelou) await rvTick(60); st = await Promise.resolve(gm.getState()); }
+      finally { if (congelou) rvUnfreezeCore(); }
+      const len = st ? (st.byteLength || st.length || 0) : 0;
+      if (!len) return;
+      await rvSavePut(autoKey(), {
+        game: rvSaveKey(), rom: rvGameLabel(), core: (typeof core === 'string' ? core : ''),
+        bytes: len, savedAt: new Date().toISOString(),
+        state: st instanceof Uint8Array ? st : new Uint8Array(st), auto: true
+      });
+    } catch (e) { /* silencioso: é só o ponto de retomada */ }
+  }
+  let ultimaCaptura = 0;
+  function capturarAutoComFolga() {
+    const agora = Date.now();
+    if (agora - ultimaCaptura < 20000) return;
+    ultimaCaptura = agora;
+    capturarAuto();
+  }
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') { capturarAuto(); flushTempo(); } });
+  globalThis.addEventListener('pagehide', () => { try { capturarAuto(); flushTempo(); } catch (e) { } });
+  setInterval(() => { if (document.visibilityState === 'visible') capturarAutoComFolga(); }, 120000);
+  /* Sair pela barra de sistema também captura antes de navegar. */
+  document.addEventListener('click', (ev) => {
+    const b = ev.target && ev.target.closest && ev.target.closest('[data-sys="exit"]');
+    if (b) { capturarAuto(); flushTempo(); }
+  }, true);
+  window.__rvAutoCapture = capturarAuto;
+
+  function montarBarraResume(rec) {
+    const barra = document.createElement('div'); barra.id = 'rv-resume';
+    const txt = document.createElement('div'); txt.className = 'rv-resume-txt';
+    const strong = document.createElement('strong'); strong.textContent = 'Continuar de onde parou?';
+    const small = document.createElement('small');
+    small.textContent = rvGameLabel() + ' · salvo em ' + rvFmtDate(rec.savedAt);
+    txt.appendChild(strong); txt.appendChild(small);
+    const go = document.createElement('button'); go.type = 'button'; go.className = 'rv-resume-go';
+    const goIco = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    goIco.setAttribute('viewBox', '0 0 24 24'); goIco.setAttribute('fill', 'currentColor');
+    goIco.setAttribute('aria-hidden', 'true');
+    goIco.innerHTML = '<polygon points="7 4 20 12 7 20"/>';
+    go.appendChild(goIco); go.appendChild(document.createTextNode('Retomar'));
+    const no = document.createElement('button'); no.type = 'button';
+    const noIco = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    noIco.setAttribute('viewBox', '0 0 24 24'); noIco.setAttribute('fill', 'none');
+    noIco.setAttribute('stroke', 'currentColor'); noIco.setAttribute('stroke-width', '2');
+    noIco.setAttribute('stroke-linecap', 'round'); noIco.setAttribute('aria-hidden', 'true');
+    noIco.innerHTML = '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>';
+    no.appendChild(noIco); no.appendChild(document.createTextNode('Do zero'));
+    barra.appendChild(txt); barra.appendChild(go); barra.appendChild(no);
+    document.body.appendChild(barra);
+    requestAnimationFrame(() => barra.classList.add('visible'));
+    go.addEventListener('click', async () => {
+      go.disabled = true;
+      try {
+        const em = window.EJS_emulator, gm = em && em.gameManager;
+        if (!gm || typeof gm.loadState !== 'function') throw new Error('sem loadState');
+        const raw = rec.state;
+        const bytes = raw instanceof Uint8Array ? raw : ArrayBuffer.isView(raw) ? new Uint8Array(raw.buffer, raw.byteOffset, raw.byteLength) : new Uint8Array(raw);
+        rvUnfreezeCore(); await rvTick(120);
+        await Promise.resolve(gm.loadState(bytes));
+        await rvTick(60); rvUnfreezeCore();
+        if (typeof showToast === 'function') showToast('Retomado de ' + rvFmtDate(rec.savedAt), 'play');
+      } catch (e) { if (typeof showToast === 'function') showToast('Não consegui retomar — use o save do menu', 'warning'); }
+      barra.remove();
+    });
+    no.addEventListener('click', async () => {
+      try { await rvSaveDel(autoKey()); } catch (e) { }
+      barra.remove();
+    });
+  }
+  /* Assim que o jogo começar, pergunta (1× por abertura) se quer retomar. */
+  (function pollResume() {
+    const t0 = Date.now();
+    const iv = setInterval(async () => {
+      const em = window.EJS_emulator;
+      if (resumePerguntado) { clearInterval(iv); return; }
+      if (em && em.started) {
+        clearInterval(iv); resumePerguntado = true;
+        try {
+          const rec = await rvSaveGet(autoKey());
+          if (rec && rec.state && !em.paused) montarBarraResume(rec);
+        } catch (e) { }
+      } else if (Date.now() - t0 > 90000) clearInterval(iv);
+    }, 700);
+  })();
+
+  /* ── 4. CLIPE DE GAMEPLAY (MediaRecorder sobre o canvas) ── */
+  let clipeGravando = false, clipeRec = null, clipeChunks = [], clipeTimer = null;
+  async function gravarClipe() {
+    const lbl = $id('rv-sys-clip-lbl');
+    if (clipeGravando) return;
+    const canvas = document.querySelector('#game canvas');
+    if (!canvas) { if (typeof showToast === 'function') showToast('Nenhum jogo ativo', 'warning'); return; }
+    if (typeof MediaRecorder === 'undefined' || !canvas.captureStream) {
+      if (typeof showToast === 'function') showToast('Este navegador não grava clipes', 'warning'); return;
+    }
+    const mimes = ['video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm', 'video/mp4'];
+    const mime = mimes.find(m => { try { return MediaRecorder.isTypeSupported(m); } catch (e) { return false; } });
+    if (!mime) { if (typeof showToast === 'function') showToast('Formato de vídeo não suportado', 'warning'); return; }
+    const durMs = (window.__rvClipLen || 10) * 1000;
+    let stream;
+    try { stream = canvas.captureStream(30); } catch (e) { if (typeof showToast === 'function') showToast('Não consegui capturar a tela', 'warning'); return; }
+    clipeChunks = [];
+    try { clipeRec = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 6000000 }); }
+    catch (e) { if (typeof showToast === 'function') showToast('Gravador indisponível', 'warning'); return; }
+    clipeRec.ondataavailable = (e) => { if (e.data && e.data.size) clipeChunks.push(e.data); };
+    clipeRec.onstop = () => {
+      clipeGravando = false;
+      if (lbl) lbl.textContent = 'Clipe';
+      clearInterval(clipeTimer);
+      const ext = mime.indexOf('mp4') >= 0 ? 'mp4' : 'webm';
+      const blob = new Blob(clipeChunks, { type: mime.split(';')[0] });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'retrovault-clipe_' + core + '_' + Date.now() + '.' + ext;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+      try {
+        let c = JSON.parse(RVStore.getItem('rv_clips') || '0');
+        c = (typeof c === 'number' ? c : 0) + 1;
+        RVStore.setItem('rv_clips', JSON.stringify(c));
+      } catch (e) { }
+      if (typeof showToast === 'function') showToast('Clipe salvo!', 'camera');
+    };
+    clipeRec.start(250);
+    clipeGravando = true;
+    let resta = Math.round(durMs / 1000);
+    if (lbl) lbl.textContent = resta + 's…';
+    clipeTimer = setInterval(() => {
+      resta--;
+      if (resta <= 0) { clearInterval(clipeTimer); try { clipeRec.stop(); } catch (e) { } }
+      else if (lbl) lbl.textContent = resta + 's…';
+    }, 1000);
+    setTimeout(() => { if (clipeGravando) { try { clipeRec.stop(); } catch (e) { } } }, durMs + 400);
+    if (typeof showToast === 'function') showToast('Gravando ' + (window.__rvClipLen || 10) + 's da tela…', 'camera');
+  }
+
+  /* ── 5. CARTUCHO (SRAM .srm) — exportar/importar ── */
+  async function sramExportar() {
+    const em = window.EJS_emulator, gm = em && em.gameManager;
+    if (!gm || typeof gm.getSaveFile !== 'function') { if (typeof showToast === 'function') showToast('Núcleo sem suporte a cartucho', 'warning'); return; }
+    let dados = null;
+    try { dados = gm.getSaveFile(true); } catch (e) { try { dados = gm.getSaveFile(false); } catch (e2) { } }
+    if (!dados || !dados.length) { if (typeof showToast === 'function') showToast('Este jogo não tem memória de cartucho', 'warning'); return; }
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([dados instanceof Uint8Array ? dados : new Uint8Array(dados)]));
+    a.download = rvGameLabel() + '.srm';
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    if (typeof showToast === 'function') showToast('Cartucho exportado (.srm)', 'check');
+  }
+  async function sramImportar(file) {
+    const em = window.EJS_emulator, gm = em && em.gameManager;
+    if (!gm || !gm.FS || typeof gm.getSaveFilePath !== 'function') { if (typeof showToast === 'function') showToast('Núcleo sem suporte a cartucho', 'warning'); return; }
+    try {
+      const bytes = new Uint8Array(await file.arrayBuffer());
+      gm.FS.writeFile(gm.getSaveFilePath(), bytes);
+      try { if (typeof gm.saveSaveFiles === 'function') gm.saveSaveFiles(); } catch (e) { }
+      if (typeof gm.restart === 'function') { gm.restart(); if (typeof showToast === 'function') showToast('Cartucho importado — jogo reiniciado', 'check'); }
+      else if (typeof showToast === 'function') showToast('Cartucho gravado — reinicie o jogo para valer', 'check');
+    } catch (e) { if (typeof showToast === 'function') showToast('Falha ao importar o cartucho', 'warning'); }
+  }
+
+  /* ── 6. ROM NO OFFLINE (cache retrovault-roms-v1 + sw.js) ── */
+  const CACHE_ROMS = 'retrovault-roms-v1';
+  const LS_OFFLINE = 'rv_offline_roms';
+  const offlineLista = () => { try { return JSON.parse(localStorage.getItem(LS_OFFLINE) || '[]'); } catch (e) { return []; } };
+  const estaOffline = () => offlineLista().indexOf(gkey) >= 0;
+  function romCandidates() {
+    const parts = gkey.split('/');
+    const sys = parts.shift() || '';
+    const fname = parts.join('/');
+    const aliases = ({ gamegear: ['gamegear', 'GameGear', 'GAMEGEAR', 'gg', 'GG', 'segaGG'], segaGG: ['segaGG', 'gamegear', 'GameGear', 'gg', 'GG'] })[sys] || [sys];
+    const urls = [];
+    aliases.forEach(a => {
+      const segs = fname.split('/');
+      urls.push(ROMS_BASE + a + '/' + segs.map(s => encodeURIComponent(s)).join('/'));
+      urls.push(ROMS_BASE + a + '/' + segs.map(s => encodeURIComponent(encodeURIComponent(s))).join('/'));
+    });
+    urls.push(ROMS_BASE + gkey.split('/').map(s => encodeURIComponent(s)).join('/'));
+    return Array.from(new Set(urls.filter(u => u.indexOf('undefined') !== 0)));
+  }
+  function pintaOffline() {
+    const btn = $id('rv-sys-offline'), lbl = $id('rv-sys-offline-lbl');
+    if (!btn) return;
+    const on = estaOffline();
+    btn.classList.toggle('on', on);
+    if (lbl) lbl.textContent = on ? 'No offline' : 'Offline';
+    btn.title = on ? 'Este jogo está salvo para jogar sem internet (toque para remover)' : 'Baixa a ROM deste jogo para poder jogar sem internet';
+  }
+  async function alternarOffline() {
+    if (estaOffline()) {
+      try {
+        const cache = await caches.open(CACHE_ROMS);
+        await Promise.all(romCandidates().map(u => cache.delete(u).catch(() => { })));
+        localStorage.setItem(LS_OFFLINE, JSON.stringify(offlineLista().filter(x => x !== gkey)));
+      } catch (e) { }
+      pintaOffline();
+      if (typeof showToast === 'function') showToast('Jogo removido do offline', 'cloud');
+      return;
+    }
+    if (typeof showToast === 'function') showToast('Baixando a ROM para o offline…', 'cloud');
+    let ok = false;
+    for (const u of romCandidates()) {
+      try {
+        const r = await fetch(u, { cache: 'no-store' });
+        if (r && r.ok) { const cache = await caches.open(CACHE_ROMS); await cache.put(u, r); ok = true; break; }
+      } catch (e) { }
+    }
+    if (ok) {
+      localStorage.setItem(LS_OFFLINE, JSON.stringify(offlineLista().concat([gkey])));
+      pintaOffline();
+      if (typeof showToast === 'function') showToast('ROM no aparelho — dá para jogar sem internet', 'check');
+    } else if (typeof showToast === 'function') showToast('Não consegui baixar a ROM agora', 'warning');
+  }
+
+  /* ── 7. Botões novos da barra de sistema (ouvinte próprio, sem tocar
+         no manipulador existente) ── */
+  document.getElementById('rv-sys-bar').addEventListener('click', (ev) => {
+    const btn = ev.target.closest('[data-sys]');
+    if (!btn) return;
+    const act = btn.dataset.sys;
+    if (act === 'clip') gravarClipe();
+    else if (act === 'offline') alternarOffline();
+    else if (act === 'sram-export') sramExportar();
+    else if (act === 'sram-import') $id('rv-sram-file').click();
+  });
+  const sramInput = $id('rv-sram-file');
+  if (sramInput) sramInput.addEventListener('change', () => {
+    if (sramInput.files && sramInput.files[0]) sramImportar(sramInput.files[0]);
+    sramInput.value = '';
+  });
+  pintaOffline();
+
+  /* ── 8. Pílula de atualização (SW novo assumiu) ── */
+  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+    let avisou = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (avisou || !sessionStorage.getItem('__rvPaginaRodando')) return;
+      avisou = true;
+      if (typeof showToast === 'function') showToast('Site atualizado — a próxima abertura usa a nova versão', 'sparkle');
+    });
+  }
+  sessionStorage.setItem('__rvPaginaRodando', '1');
+})();
+
+/* ═══ Preferências do jogador (página Configurações → config.html) ═══
+   A config.html concentra as configurações do emulador; o que estiver
+   salvo no localStorage define os valores INICIAIS aqui. Sem
+   preferências salvas, valem exatamente os padrões cravados acima. */
+try {
+  const rvCfg = JSON.parse(localStorage.getItem('rv_emu_settings_v1') || '{}');
+  if (rvCfg.lang === 'pt-BR' || rvCfg.lang === 'en-US') EJS_language = rvCfg.lang;
+  if (typeof rvCfg.volume === 'number') EJS_volume = Math.min(1, Math.max(0, rvCfg.volume));
+  if (typeof rvCfg.startOnLoaded === 'boolean') EJS_startOnLoaded = rvCfg.startOnLoaded;
+  if (typeof rvCfg.fullscreenOnLoad === 'boolean') EJS_fullscreenOnLoaded = rvCfg.fullscreenOnLoad;
+  if (typeof rvCfg.startButtonName === 'string' && rvCfg.startButtonName.trim())
+    EJS_startButtonName = rvCfg.startButtonName.trim();
+  if (typeof rvCfg.forceLegacyCores === 'boolean') EJS_forceLegacyCores = rvCfg.forceLegacyCores;
+  if (typeof rvCfg.videoRotation === 'number' && rvCfg.videoRotation >= 0 && rvCfg.videoRotation <= 3)
+    EJS_videoRotation = rvCfg.videoRotation;
+  if (typeof rvCfg.rewind === 'boolean') {
+    if (rvCfg.rewind && RV_REWIND_OK) EJS_defaultOptions.rewindEnabled = 'enabled';
+    else delete EJS_defaultOptions.rewindEnabled;
+  }
+  if (rvCfg.rewind && RV_REWIND_OK && [1, 3, 6, 12, 25, 50, 100].includes(rvCfg.rewindGranularity))
+    EJS_defaultOptions['rewind-granularity'] = String(rvCfg.rewindGranularity);
+  if (rvCfg.saveLocation === 'browser' || rvCfg.saveLocation === 'download')
+    EJS_defaultOptions['save-state-location'] = rvCfg.saveLocation;
+  if (typeof rvCfg.saveSlot === 'number' && rvCfg.saveSlot >= 1 && rvCfg.saveSlot <= 9)
+    EJS_defaultOptions['save-state-slot'] = String(rvCfg.saveSlot);
+  if (typeof rvCfg.shader === 'string' && rvCfg.shader)
+    EJS_defaultOptions.shader = rvCfg.shader;
+  if (rvCfg.vsync === true || rvCfg.vsync === false)
+    EJS_defaultOptions.vsync = rvCfg.vsync ? 'enabled' : 'disabled';
+  /* ── Extras (moldura, clipe, tempo, portão dos pais) ── */
+  if (typeof rvCfg.bezel === 'string' && ['auto', 'slim', 'crt'].indexOf(rvCfg.bezel) >= 0) {
+    document.body.classList.add('rv-bezel-' + rvCfg.bezel);
+    if (rvCfg.bezel === 'auto' && typeof CONSOLE_THEMES === 'object' && CONSOLE_THEMES[core]) {
+      document.body.style.setProperty('--rv-bezel-c', CONSOLE_THEMES[core].color);
+      document.body.style.setProperty('--rv-bezel-glow', CONSOLE_THEMES[core].glow);
+    }
+  }
+  window.__rvClipLen = ([10, 15, 30].indexOf(rvCfg.clipLen) >= 0) ? rvCfg.clipLen : 10;
+  window.__rvTrackCfg.on = (rvCfg.trackTime !== false);
+  /* Portão dos pais: console fora da lista liberada exige o PIN.
+     Enquanto o portão estiver de pé, o jogo não inicia sozinho. */
+  if (typeof window.__rvParentalGate === 'function') {
+    if (window.__rvParentalGate(rvCfg)) EJS_startOnLoaded = false;
+  }
+} catch (e) { /* preferências indisponíveis: mantém os padrões */ }
+
 const isArcade = game.endsWith('.zip');
 
 // Guarda de execução única: o callback EJS_onGameStart e o setTimeout de
@@ -1686,6 +2340,24 @@ function onGameReady() {
   if (ld) ld.classList.add('hidden');
   document.getElementById('rv-fs-btn').classList.add('visible');
   document.getElementById('rv-float-btns').classList.add('visible');
+  const qmEl = document.getElementById('rv-qm');
+  if (qmEl) qmEl.classList.add('visible');
+
+  // Mini-menu de opções: o ⋮ abre/fecha; clique fora ou numa ação fecha.
+  if (qmEl) {
+    const qmToggleEl = document.getElementById('rv-qm-toggle');
+    const fecharQm = () => { qmEl.classList.remove('open'); qmToggleEl.setAttribute('aria-expanded', 'false'); };
+    qmToggleEl.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const aberto = qmEl.classList.toggle('open');
+      qmToggleEl.setAttribute('aria-expanded', String(aberto));
+    });
+    document.addEventListener('click', (e) => {
+      if (qmEl.classList.contains('open') && !qmEl.contains(e.target)) fecharQm();
+    });
+    qmEl.querySelectorAll('.rv-float-btn, #rv-fs-btn').forEach(b =>
+      b.addEventListener('click', () => setTimeout(fecharQm, 200)));
+  }
 
   // Redireciona também o menu hambúrguer do modo touch.
   bindEmulatorMenuToCheats();
@@ -1920,7 +2592,8 @@ if (isArcade) {
     await configureSegaCDBios();
     startRvEmulator();
   }).catch(() => {
-    document.getElementById('rv-msg').textContent = 'Erro ao carregar.';
+    document.getElementById('rv-msg').textContent = 'ROM indisponível no servidor — o arquivo não foi encontrado. Volte e escolha outro jogo; os demais devem funcionar.';
+    document.getElementById('rv-msg').style.color = '#ff7777';
     initControls(); // Mostra overlay mesmo em erro/teste sem ROM
   });
 }

@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Configurações — RetroVault OS</title>
+  <meta name="description" content="Preferências do emulador do RetroVault OS: valores iniciais de volume, tela cheia, rewind, saves, filtros e mais.">
+  <link rel="icon" href="assets/rv-icon.png">
+  <meta name="theme-color" content="#020604">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=20260922">
+  <style>
+    body { padding-bottom: 40px; }
+    .cfg-wrap {
+      max-width: 640px; margin: 0 auto; padding: 26px 18px 60px;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .cfg-hero { text-align: center; padding: 6px 0 2px; }
+    .cfg-hero h1 {
+      font-family: 'Orbitron', sans-serif; font-size: 1.15rem; letter-spacing: 3px;
+      color: var(--text, #e8ffe8); margin: 0 0 6px; text-transform: uppercase;
+    }
+    .cfg-hero p { color: var(--text-muted, #7fa88c); font-size: 0.82rem; margin: 0; }
+    .cfg-card {
+      background: var(--surface, rgba(6, 14, 9, 0.85));
+      border: 1px solid var(--stroke-soft, rgba(0, 255, 65, 0.14));
+      border-radius: 16px; padding: 18px 16px;
+    }
+    .cfg-card h2 {
+      font-family: 'Orbitron', sans-serif; font-size: 0.68rem; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--green-neon, #00ff41); margin: 0 0 14px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .cfg-card h2 svg { width: 16px; height: 16px; fill: var(--green-neon, #00ff41); opacity: .9; }
+    .cfg-row {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      padding: 11px 2px; border-bottom: 1px solid rgba(0, 255, 65, 0.07);
+    }
+    .cfg-row:last-child { border-bottom: 0; }
+    .cfg-label { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .cfg-label b { font-size: 0.92rem; color: var(--text, #e8ffe8); font-weight: 700; }
+    .cfg-label small { font-size: 0.72rem; color: var(--text-muted, #7fa88c); line-height: 1.35; }
+    .cfg-control { flex-shrink: 0; }
+    .cfg-switch { position: relative; width: 52px; height: 28px; display: inline-block; }
+    .cfg-switch input { opacity: 0; width: 0; height: 0; }
+    .cfg-switch .cfg-track {
+      position: absolute; inset: 0; border-radius: 999px; cursor: pointer;
+      background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(0, 255, 65, 0.2);
+      transition: background .25s, border-color .25s;
+    }
+    .cfg-switch .cfg-track::after {
+      content: ''; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px;
+      border-radius: 50%; background: #9fb8a6; transition: transform .25s, background .25s;
+    }
+    .cfg-switch input:checked + .cfg-track { background: rgba(0, 255, 65, 0.18); border-color: rgba(0, 255, 65, 0.55); }
+    .cfg-switch input:checked + .cfg-track::after { transform: translateX(24px); background: var(--green-neon, #00ff41); box-shadow: 0 0 10px rgba(0, 255, 65, .6); }
+    .cfg-switch input:focus-visible + .cfg-track { outline: 2px solid var(--green-neon, #00ff41); outline-offset: 2px; }
+    .cfg-select {
+      appearance: none; -webkit-appearance: none;
+      background: rgba(0, 0, 0, 0.45) url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2300ff41' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 12px center;
+      color: var(--text, #e8ffe8); border: 1px solid rgba(0, 255, 65, 0.25);
+      border-radius: 10px; padding: 9px 32px 9px 12px;
+      font-family: 'Rajdhani', sans-serif; font-size: 0.88rem; font-weight: 600; cursor: pointer;
+    }
+    .cfg-select:focus-visible { outline: 2px solid var(--green-neon, #00ff41); outline-offset: 2px; }
+    .cfg-input {
+      background: rgba(0, 0, 0, 0.45); color: var(--text, #e8ffe8);
+      border: 1px solid rgba(0, 255, 65, 0.25); border-radius: 10px;
+      padding: 9px 12px; font-family: 'Rajdhani', sans-serif; font-size: 0.88rem;
+      font-weight: 600; width: 130px;
+    }
+    .cfg-input:focus-visible { outline: 2px solid var(--green-neon, #00ff41); outline-offset: 2px; }
+    .cfg-pin-controls { display: flex; gap: 8px; }
+    .cfg-pin-controls .cfg-input { width: 92px; text-align: center; letter-spacing: 4px; }
+    .cfg-consoles { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cfg-consoles label {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: .78rem; color: var(--text-dim, #9fb4cc); cursor: pointer;
+      background: rgba(0,255,65,.05); border: 1px solid rgba(0,255,65,.2);
+      border-radius: 8px; padding: 6px 10px; user-select: none;
+    }
+    .cfg-consoles label:has(input:checked) { border-color: rgba(0,255,65,.55); color: var(--text-main, #eafff2); }
+    .cfg-consoles input { accent-color: #00ff41; }
+    /* Conta e controle na tela (mesmo padrão do perfil) */
+    .rv-acc-badge { font-size: .68rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      border: 1px solid rgba(0,255,65,.35); color: var(--green-neon, #00ff41); background: rgba(0,255,65,.08);
+      padding: 2px 8px; border-radius: 20px; }
+    .rv-acc-badge.local { border-color: rgba(255,190,60,.35); color: #ffc65c; background: rgba(255,190,60,.08); }
+    .rv-acc-line { font-size: .9rem; margin: 6px 0; color: var(--text-main, #e8f6ee); }
+    .rv-acc-dim { color: var(--text-muted, #8fa3c0); font-size: .78rem; line-height: 1.6; }
+    .rv-acc-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .rv-acc-btn {
+      padding: 11px 18px; border-radius: 12px; cursor: pointer; font-family: inherit;
+      background: rgba(0,255,65,.07); border: 1px solid rgba(0,255,65,.28);
+      color: var(--green-neon, #00ff41); font-size: .72rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; transition: all .2s;
+    }
+    .rv-acc-btn:hover { background: rgba(0,255,65,.16); border-color: var(--green-neon, #00ff41); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.4); }
+    .rv-acc-btn.active { background: rgba(0,255,65,.22); border-color: var(--green-neon, #00ff41); }
+    .rv-acc-btn-out { color: #ff8f8f; border-color: rgba(255,90,90,.3); background: rgba(255,60,60,.06); }
+    .rv-acc-btn-out:hover { background: rgba(255,60,60,.16); border-color: #ff8f8f; }
+    .cfg-actions--wrap .rv-acc-btn { padding: 10px 14px; font-size: .66rem; letter-spacing: 1px; }
+    @media (max-width: 480px) {
+      .cfg-actions--wrap .rv-acc-btn { flex: 1 1 44%; text-align: center; }
+    }
+    /* Linhas com controles largos (botões/chips): o controle vira linha
+       própria, como as demais quebras da config no mobile — sem estourar. */
+    .cfg-row--full { flex-wrap: wrap; row-gap: 10px; }
+    .cfg-row--full .cfg-control { flex-basis: 100%; width: 100%; margin-left: 0; }
+    .cfg-row--full .rv-acc-actions { margin-top: 0; }
+    .cfg-row--full .rv-acc-btn { padding: 10px 14px; font-size: .66rem; letter-spacing: 1px; }
+    .cfg-row--full .rv-acc-line { font-size: .8rem; }
+    .cfg-volume { display: flex; align-items: center; gap: 10px; }
+    .cfg-volume input[type="range"] { width: 120px; accent-color: #00ff41; cursor: pointer; }
+    .cfg-volume output {
+      font-family: 'Orbitron', sans-serif; font-size: 0.72rem; color: var(--green-neon, #00ff41);
+      min-width: 40px; text-align: right;
+    }
+    .cfg-actions { display: flex; gap: 10px; justify-content: center; margin-top: 4px; flex-wrap: wrap; }
+    .cfg-btn {
+      font-family: 'Rajdhani', sans-serif; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      font-size: 0.72rem; padding: 12px 26px; border-radius: 12px; cursor: pointer; text-decoration: none;
+      transition: transform .15s, box-shadow .2s, background .2s;
+    }
+    .cfg-btn:active { transform: scale(.96); }
+    .cfg-btn-primary {
+      background: linear-gradient(135deg, #00ff41, #00d838); color: #02120a; border: 0;
+      box-shadow: 0 0 18px rgba(0, 255, 65, 0.35);
+    }
+    .cfg-btn-primary:hover { box-shadow: 0 0 26px rgba(0, 255, 65, 0.55); }
+    .cfg-btn-ghost {
+      background: none; color: var(--text-muted, #7fa88c); border: 1px solid rgba(0, 255, 65, 0.25);
+    }
+    .cfg-btn-ghost:hover { color: var(--text, #e8ffe8); background: rgba(0, 255, 65, 0.08); }
+    .cfg-toast {
+      position: fixed; bottom: 26px; left: 50%; transform: translateX(-50%) translateY(20px);
+      background: rgba(3, 8, 5, 0.94); border: 1px solid rgba(0, 255, 65, 0.45);
+      border-radius: 12px; padding: 11px 24px; color: #00ff41;
+      font-family: 'Rajdhani', sans-serif; font-weight: 700; letter-spacing: 2px;
+      font-size: 0.78rem; text-transform: uppercase; opacity: 0; pointer-events: none;
+      transition: opacity .3s, transform .3s; z-index: 9999;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .6), 0 0 24px rgba(0, 255, 65, .15);
+    }
+    .cfg-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+    .cfg-info {
+      font-size: 0.74rem; color: var(--text-muted, #7fa88c); line-height: 1.5;
+      padding: 4px 6px 0; text-align: center;
+    }
+    .cfg-info a { color: var(--green-neon, #00ff41); text-decoration: none; }
+    @media (max-width: 480px) {
+      .cfg-wrap { padding: 18px 12px 46px; }
+      .cfg-toast { bottom: 96px; }
+      .cfg-row { flex-wrap: wrap; }
+      .cfg-control { margin-left: auto; }
+      .cfg-volume input[type="range"] { width: 100px; }
+      .rv-footer { padding-bottom: 40px; }
+    }
+  </style>
+  <script src="js/rv-account.js?v=20260922"></script>
+  <script src="js/rv-input-mode.js?v=20260922"></script>
+  <script src="js/rv-extras.js?v=20260922"></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand" aria-label="RetroVault OS — início">
+      <div class="brand-logo">RV</div>
+      <div class="brand-text">
+        <span class="brand-name">RETROVAULT OS</span>
+        <span class="brand-slogan">CONFIGURAÇÕES // EMULADOR</span>
+      </div>
+    </a>
+    <div class="home-user-chip">
+      <a href="index.html" class="btn-back">Voltar</a>
+      <span class="home-user-name" id="home-user-name" style="display:none"></span>
+      <a href="profile.html" class="profile-link" title="Perfil">
+        <span id="home-avatar" aria-hidden="true"></span>
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <path fill="currentColor"
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="cfg-wrap">
+    <div class="cfg-hero">
+      <h1>Configurações</h1>
+      <p>As configurações do emulador ficam concentradas aqui e valem para todos os jogos.</p>
+    </div>
+
+    <section class="cfg-card">
+      <h2><svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L8.85 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg> Abertura e som</h2>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Idioma do emulador</b>
+          <small>Idioma dos menus do emulador.</small>
+        </div>
+        <div class="cfg-control">
+          <select class="cfg-select" id="cfg-lang" aria-label="Idioma do emulador">
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="en-US">English (US)</option>
+          </select>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Volume inicial</b>
+          <small>Volume de todos os jogos ao começar.</small>
+        </div>
+        <div class="cfg-control cfg-volume">
+          <input type="range" id="cfg-volume" min="0" max="100" step="5" value="70" aria-label="Volume inicial">
+          <output id="cfg-volume-out">70%</output>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Tela cheia automática</b>
+          <small>Entra em tela cheia assim que o jogo abrir.</small>
+        </div>
+        <div class="cfg-control">
+          <label class="cfg-switch">
+            <input type="checkbox" id="cfg-fullscreen" aria-label="Tela cheia automática">
+            <span class="cfg-track"></span>
+          </label>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Iniciar automaticamente</b>
+          <small>Pula a tela de START e liga direto. Desligado, aparece o botão de iniciar.</small>
+        </div>
+        <div class="cfg-control">
+          <label class="cfg-switch">
+            <input type="checkbox" id="cfg-autostart" checked aria-label="Iniciar automaticamente">
+            <span class="cfg-track"></span>
+          </label>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Texto do botão de iniciar</b>
+          <small>Só aparece se "iniciar automaticamente" estiver desligado. Vazio = padrão do jogo.</small>
+        </div>
+        <div class="cfg-control">
+          <input type="text" class="cfg-input" id="cfg-starttext" maxlength="24" placeholder="START" aria-label="Texto do botão de iniciar">
+        </div>
+      </div>
+    </section>
+
+    <section class="cfg-card">
+      <h2><svg viewBox="0 0 24 24"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></svg> Jogabilidade — valores iniciais</h2>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Rewind (voltar no tempo)</b>
+          <small>Permite rebobinar o jogo segurando o botão de rewind. Não se aplica a N64, PS1, Sega CD e DS (desempenho).</small>
+        </div>
+        <div class="cfg-control">
+          <label class="cfg-switch">
+            <input type="checkbox" id="cfg-rewind" checked aria-label="Rewind ativado">
+            <span class="cfg-track"></span>
+          </label>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Granularidade do rewind</b>
+          <small>Quanto de jogo fica guardado para rebobinar. Número maior = mais tempo, usa mais memória.</small>
+        </div>
+        <div class="cfg-control">
+          <select class="cfg-select" id="cfg-rewind-gran" aria-label="Granularidade do rewind">
+            <option value="1">Curta (1)</option>
+            <option value="3">3</option>
+            <option value="6" selected>Média (6)</option>
+            <option value="12">12</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">Longa (100)</option>
+          </select>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Filtro de tela (shader)</b>
+          <small>Efeito visual do jogo. "TV de tubo" simula o CRT dos fliperamas.</small>
+        </div>
+        <div class="cfg-control">
+          <select class="cfg-select" id="cfg-shader" aria-label="Filtro de tela">
+            <option value="disabled" selected>Padrão (sem filtro)</option>
+            <option value="crt-mattias.glslp">TV de tubo (CRT Mattias)</option>
+            <option value="crt-aperture.glslp">TV CRT — fósforo</option>
+            <option value="crt-easymode.glslp">TV CRT — suave</option>
+            <option value="crt-geom.glslp">TV CRT — geométrico</option>
+            <option value="crt-beam">TV CRT — feixe</option>
+            <option value="crt-caligari">TV CRT — Caligari</option>
+            <option value="crt-lottes">TV CRT — Lottes</option>
+            <option value="crt-yeetron">TV CRT — Yeetron</option>
+            <option value="crt-zfast">TV CRT — rápido</option>
+            <option value="2xScaleHQ.glslp">Nitidez 2x (HQ)</option>
+            <option value="4xScaleHQ.glslp">Nitidez 4x (HQ)</option>
+            <option value="sabr">SABR (suaviza pixel)</option>
+            <option value="mix-frames">Misturar quadros</option>
+          </select>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Rotação da tela</b>
+          <small>Gira a imagem. Útil para fliperamas verticais (1942, Pac-Man...).</small>
+        </div>
+        <div class="cfg-control">
+          <select class="cfg-select" id="cfg-rotation" aria-label="Rotação da tela">
+            <option value="0" selected>0° (normal)</option>
+            <option value="1">90°</option>
+            <option value="2">180°</option>
+            <option value="3">270°</option>
+          </select>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Sincronismo vertical (vsync)</b>
+          <small>Evita rasgos na imagem. Desligue se notar travadas em aparelhos antigos.</small>
+        </div>
+        <div class="cfg-control">
+          <label class="cfg-switch">
+            <input type="checkbox" id="cfg-vsync" checked aria-label="VSync">
+            <span class="cfg-track"></span>
+          </label>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Forçar núcleos antigos</b>
+          <small>Modo compatibilidade para aparelhos sem WebGL2 (celulares bem antigos). Em aparelhos novos, deixa desligado.</small>
+        </div>
+        <div class="cfg-control">
+          <label class="cfg-switch">
+            <input type="checkbox" id="cfg-legacy" aria-label="Forçar núcleos antigos">
+            <span class="cfg-track"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="cfg-card">
+      <h2><svg viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg> Saves (estados rápidos) — valores iniciais</h2>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Onde guardar</b>
+          <small>"No navegador" mantém tudo salvo no aparelho. "Baixar arquivo" gera um arquivo para guardar onde quiser.</small>
+        </div>
+        <div class="cfg-control">
+          <select class="cfg-select" id="cfg-saves" aria-label="Local dos save states">
+            <option value="browser" selected>No navegador</option>
+            <option value="download">Baixar arquivo</option>
+          </select>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Slot inicial</b>
+          <small>Qual slot de estado rápido começa selecionado (1 a 9).</small>
+        </div>
+        <div class="cfg-control">
+          <select class="cfg-select" id="cfg-slot" aria-label="Slot inicial de save">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="cfg-card">
+      <h2><svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg> Tela e recursos extras</h2>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Moldura da tela</b>
+          <small>Emoldura o jogo na abertura. "Automática" usa a cor de cada console.</small>
+        </div>
+        <div class="cfg-control">
+          <select class="cfg-select" id="cfg-bezel" aria-label="Moldura da tela">
+            <option value="none">Nenhuma</option>
+            <option value="auto">Automática (cor do console)</option>
+            <option value="slim">Fina (neutra)</option>
+            <option value="crt">Grossa (estilo TV)</option>
+          </select>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Duração do clipe</b>
+          <small>Segundos gravados pelo botão "Clipe" no menu do jogo.</small>
+        </div>
+        <div class="cfg-control">
+          <select class="cfg-select" id="cfg-cliplen" aria-label="Duração do clipe">
+            <option value="10">10 segundos</option>
+            <option value="15">15 segundos</option>
+            <option value="30">30 segundos</option>
+          </select>
+        </div>
+      </div>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>Contar tempo de jogo</b>
+          <small>Alimenta as horas jogadas, o calendário e a sequência de dias do perfil.</small>
+        </div>
+        <div class="cfg-control">
+          <label class="cfg-switch">
+            <input type="checkbox" id="cfg-tracktime" checked aria-label="Contar tempo de jogo">
+            <span class="cfg-track"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="cfg-card">
+      <h2><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM11 13H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4-3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> Controle na tela</h2>
+      <div class="cfg-row cfg-row--full">
+        <div class="cfg-label">
+          <b>Controle virtual</b>
+          <small>No automático ele aparece só em celular/tablet sem controle físico.</small>
+        </div>
+        <div class="cfg-control">
+          <div class="rv-acc-actions" id="pad-modes" style="margin-top:0">
+            <button type="button" class="rv-acc-btn" data-pad="auto">Automático</button>
+            <button type="button" class="rv-acc-btn" data-pad="on">Sempre mostrar</button>
+            <button type="button" class="rv-acc-btn" data-pad="off">Nunca mostrar</button>
+          </div>
+          <div class="rv-acc-line rv-acc-dim" id="pad-status" style="margin-top:10px">—</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cfg-card">
+      <h2><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Conta e sincronização <span id="account-badge" class="rv-acc-badge" style="margin-left:8px"></span></h2>
+      <div class="rv-acc-line" id="account-who">—</div>
+      <div class="rv-acc-line rv-acc-dim" id="account-sync">—</div>
+      <div class="rv-acc-actions cfg-actions--wrap">
+        <button type="button" class="rv-acc-btn" id="btn-sync">Sincronizar agora</button>
+        <button type="button" class="rv-acc-btn" id="btn-export">Baixar backup</button>
+        <button type="button" class="rv-acc-btn" id="btn-import">Restaurar backup</button>
+        <button type="button" class="rv-acc-btn" data-rvx-install hidden><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><rect x="7" y="2.5" width="10" height="19" rx="2"/><polyline points="12 8 12 14"/><polyline points="9.5 11.5 12 14 14.5 11.5"/></svg> Instalar o app</button>
+        <button type="button" class="rv-acc-btn" id="btn-whatsnew">Novidades da versão</button>
+        <button type="button" class="rv-acc-btn rv-acc-btn-out" id="btn-reset-data">Resetar dados do jogador</button>
+        <button type="button" class="rv-acc-btn rv-acc-btn-out" id="btn-logout">Sair da conta</button>
+      </div>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+    </section>
+
+    <section class="cfg-card">
+      <h2><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm3 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg> Controle dos pais</h2>
+      <div class="cfg-row">
+        <div class="cfg-label">
+          <b>PIN de 4 dígitos</b>
+          <small>Com um PIN ativo, consoles fora da lista abaixo pedem o PIN antes de abrir o jogo.</small>
+        </div>
+        <div class="cfg-control cfg-pin-controls">
+          <input type="password" class="cfg-input" id="cfg-pin1" inputmode="numeric" maxlength="4" placeholder="PIN" aria-label="Novo PIN">
+          <input type="password" class="cfg-input" id="cfg-pin2" inputmode="numeric" maxlength="4" placeholder="Confirmar" aria-label="Confirmar PIN">
+        </div>
+      </div>
+      <div class="cfg-row cfg-row--full">
+        <div class="cfg-label">
+          <b>Consoles liberados sem PIN</b>
+          <small>Desmarque o que só pode abrir digitando o PIN.</small>
+        </div>
+        <div class="cfg-control">
+          <div class="cfg-consoles" id="cfg-consoles" aria-label="Consoles liberados"></div>
+          <button class="cfg-btn cfg-btn-ghost" id="cfg-pin-remove" type="button" style="margin-top:10px" hidden>Remover PIN</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="cfg-actions">
+      <button class="cfg-btn cfg-btn-primary" id="cfg-save" type="button">Salvar</button>
+      <button class="cfg-btn cfg-btn-ghost" id="cfg-reset" type="button">Restaurar padrão</button>
+    </div>
+
+    <p class="cfg-info">
+      Todas as configurações do emulador ficam nesta página. Cheats ficam disponíveis dentro de
+      cada jogo, no menu próprio do RetroVault OS. Dúvidas? Visite seu
+      <a href="profile.html">perfil</a>.
+    </p>
+  </main>
+
+  <footer class="rv-footer rv-footer--mini">
+    <div class="footer-brand">RV</div>
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="index.html">Início</a>
+      <a href="profile.html">Perfil</a>
+    </nav>
+    <p class="footer-copy">RETROVAULT OS</p>
+  </footer>
+
+  <!-- BOTTOM NAV (mobile) -->
+  <nav class="bottom-nav nav-4" aria-label="Navegação rápida">
+    <a href="index.html" class="bn-item" data-page="index.html">
+      <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+      Início
+    </a>
+    <a href="index.html#consoles" class="bn-item" data-page="games.html">
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></g></svg>
+      Jogar
+    </a>
+    <a href="config.html" class="bn-item" data-page="config.html">
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></g></svg>
+      Ajustes
+    </a>
+    <a href="profile.html" class="bn-item" data-page="profile.html">
+      <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/></svg>
+      Perfil
+    </a>
+  </nav>
+
+  <div class="cfg-toast" id="cfg-toast" role="status" aria-live="polite">Preferências salvas</div>
+
+  <script>
+    /* ═══ RetroVault OS — Configurações do emulador ═══
+       Grava em localStorage (chave rv_emu_settings_v1). O play.html lê
+       esses valores ao iniciar e usa como valor de cada opção.
+       Sem preferências salvas, valem os padrões do sistema. */
+    (function () {
+      'use strict';
+      var KEY = 'rv_emu_settings_v1';
+      var PADRAO = {
+        lang: 'pt-BR', volume: 0.7, fullscreenOnLoad: false, startOnLoaded: true,
+        startButtonName: '', rewind: true, rewindGranularity: 6,
+        shader: 'disabled', videoRotation: 0, vsync: true, forceLegacyCores: false,
+        saveLocation: 'browser', saveSlot: 1,
+        bezel: 'none', clipLen: 10, trackTime: true,
+        parentPin: '', parentConsoles: []
+      };
+
+      var CONSOLES = [
+        ['snes', 'Super Nintendo'], ['nes', 'Nintendo'], ['gba', 'GBA'], ['gbc', 'Game Boy Color'],
+        ['sega', 'Mega Drive'], ['mastersystem', 'Master System'], ['gamegear', 'Game Gear'],
+        ['segacd', 'Sega CD'], ['psx', 'PlayStation'], ['n64', 'Nintendo 64'], ['nds', 'Nintendo DS'],
+        ['arcade', 'Arcade'], ['atari2600', 'Atari 2600']
+      ];
+
+      var el = function (id) { return document.getElementById(id); };
+      var $lang = el('cfg-lang'), $vol = el('cfg-volume'), $volOut = el('cfg-volume-out'),
+          $fs = el('cfg-fullscreen'), $auto = el('cfg-autostart'), $txt = el('cfg-starttext'),
+          $rew = el('cfg-rewind'), $gran = el('cfg-rewind-gran'), $shader = el('cfg-shader'),
+          $rot = el('cfg-rotation'), $vsync = el('cfg-vsync'), $legacy = el('cfg-legacy'),
+          $saves = el('cfg-saves'), $slot = el('cfg-slot'), $toast = el('cfg-toast'),
+          $bezel = el('cfg-bezel'), $clip = el('cfg-cliplen'), $track = el('cfg-tracktime'),
+          $pin1 = el('cfg-pin1'), $pin2 = el('cfg-pin2'), $pinRemove = el('cfg-pin-remove'),
+          $consolesBox = el('cfg-consoles');
+      var toastT = null;
+
+      /* Monta os checkboxes de consoles (todos marcados por padrão). */
+      CONSOLES.forEach(function (c) {
+        var lb = document.createElement('label');
+        var cb = document.createElement('input');
+        cb.type = 'checkbox'; cb.value = c[0]; cb.checked = true;
+        lb.appendChild(cb);
+        lb.appendChild(document.createTextNode(' ' + c[1]));
+        $consolesBox.appendChild(lb);
+      });
+
+      async function hashPin(pin) {
+        try {
+          var buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode('rv-parent:' + pin));
+          return 's#' + Array.from(new Uint8Array(buf)).map(function (b) { return b.toString(16).padStart(2, '0'); }).join('');
+        } catch (e) { return 'p#' + pin; /* contexto sem criptografia */ }
+      }
+
+      function ler() {
+        try {
+          var v = JSON.parse(localStorage.getItem(KEY) || '{}');
+          return {
+            lang: (v.lang === 'en-US') ? 'en-US' : PADRAO.lang,
+            volume: (typeof v.volume === 'number') ? v.volume : PADRAO.volume,
+            fullscreenOnLoad: (typeof v.fullscreenOnLoad === 'boolean') ? v.fullscreenOnLoad : PADRAO.fullscreenOnLoad,
+            startOnLoaded: (typeof v.startOnLoaded === 'boolean') ? v.startOnLoaded : PADRAO.startOnLoaded,
+            startButtonName: (typeof v.startButtonName === 'string') ? v.startButtonName : PADRAO.startButtonName,
+            rewind: (typeof v.rewind === 'boolean') ? v.rewind : PADRAO.rewind,
+            rewindGranularity: ([1, 3, 6, 12, 25, 50, 100].indexOf(v.rewindGranularity) >= 0) ? v.rewindGranularity : PADRAO.rewindGranularity,
+            shader: (typeof v.shader === 'string' && v.shader) ? v.shader : PADRAO.shader,
+            videoRotation: ([0, 1, 2, 3].indexOf(v.videoRotation) >= 0) ? v.videoRotation : PADRAO.videoRotation,
+            vsync: (typeof v.vsync === 'boolean') ? v.vsync : PADRAO.vsync,
+            forceLegacyCores: (typeof v.forceLegacyCores === 'boolean') ? v.forceLegacyCores : PADRAO.forceLegacyCores,
+            saveLocation: (v.saveLocation === 'download') ? 'download' : PADRAO.saveLocation,
+            saveSlot: (typeof v.saveSlot === 'number' && v.saveSlot >= 1 && v.saveSlot <= 9) ? v.saveSlot : PADRAO.saveSlot,
+            bezel: ['none', 'auto', 'slim', 'crt'].indexOf(v.bezel) >= 0 ? v.bezel : PADRAO.bezel,
+            clipLen: [10, 15, 30].indexOf(v.clipLen) >= 0 ? v.clipLen : PADRAO.clipLen,
+            trackTime: (typeof v.trackTime === 'boolean') ? v.trackTime : PADRAO.trackTime,
+            parentPin: (typeof v.parentPin === 'string') ? v.parentPin : PADRAO.parentPin,
+            parentConsoles: (Array.isArray(v.parentConsoles) && v.parentConsoles.length) ? v.parentConsoles.filter(function (c) {
+              return CONSOLES.some(function (x) { return x[0] === c; });
+            }) : CONSOLES.map(function (c) { return c[0]; })
+          };
+        } catch (e) { return JSON.parse(JSON.stringify(PADRAO)); }
+      }
+
+      function paraTela(c) {
+        $lang.value = c.lang;
+        $vol.value = Math.round(c.volume * 100);
+        $volOut.textContent = Math.round(c.volume * 100) + '%';
+        $fs.checked = c.fullscreenOnLoad;
+        $auto.checked = c.startOnLoaded;
+        $txt.value = c.startButtonName;
+        $rew.checked = c.rewind;
+        $gran.value = String(c.rewindGranularity);
+        $shader.value = c.shader;
+        $rot.value = String(c.videoRotation);
+        $vsync.checked = c.vsync;
+        $legacy.checked = c.forceLegacyCores;
+        $saves.value = c.saveLocation;
+        $slot.value = String(c.saveSlot);
+        $bezel.value = c.bezel;
+        $clip.value = String(c.clipLen);
+        $track.checked = c.trackTime;
+        $pin1.value = ''; $pin2.value = '';
+        $pinRemove.hidden = !c.parentPin;
+        var liberados = new Set(c.parentPin ? c.parentConsoles : CONSOLES.map(function (x) { return x[0]; }));
+        $consolesBox.querySelectorAll('input').forEach(function (cb) { cb.checked = liberados.has(cb.value); });
+      }
+
+      function daTela() {
+        return {
+          lang: $lang.value,
+          volume: Math.min(1, Math.max(0, parseInt($vol.value, 10) / 100)),
+          fullscreenOnLoad: $fs.checked,
+          startOnLoaded: $auto.checked,
+          startButtonName: $txt.value.trim().slice(0, 24),
+          rewind: $rew.checked,
+          rewindGranularity: parseInt($gran.value, 10),
+          shader: $shader.value,
+          videoRotation: parseInt($rot.value, 10),
+          vsync: $vsync.checked,
+          forceLegacyCores: $legacy.checked,
+          saveLocation: $saves.value,
+          saveSlot: parseInt($slot.value, 10),
+          bezel: $bezel.value,
+          clipLen: parseInt($clip.value, 10),
+          trackTime: $track.checked,
+          parentPin: (typeof configSalvo.parentPin === 'string') ? configSalvo.parentPin : '',
+          parentConsoles: $consolesBox.querySelectorAll('input:checked') ? Array.prototype.map.call($consolesBox.querySelectorAll('input:checked'), function (cb) { return cb.value; }) : []
+        };
+      }
+
+      /* PIN não fica no input: mantém o valor salvo até o jogador trocar. */
+      var configSalvo = PADRAO;
+
+      function toast(msg) {
+        $toast.textContent = msg;
+        $toast.classList.add('show');
+        clearTimeout(toastT);
+        toastT = setTimeout(function () { $toast.classList.remove('show'); }, 2200);
+      }
+
+      $vol.addEventListener('input', function () { $volOut.textContent = $vol.value + '%'; });
+
+      el('cfg-save').addEventListener('click', async function () {
+        try {
+          /* PIN: só altera se os dois campos estiverem preenchidos. */
+          var p1 = $pin1.value.trim(), p2 = $pin2.value.trim();
+          if (p1 || p2) {
+            if (!/^\d{4}$/.test(p1)) { toast('O PIN precisa de 4 dígitos'); $pin1.focus(); return; }
+            if (p1 !== p2) { toast('Os PINs não conferem'); $pin2.focus(); return; }
+            daTela(); /* atualiza o resto antes de gravar o PIN */
+            configSalvo.parentPin = await hashPin(p1);
+          }
+          var dados = daTela();
+          /* Sem PIN, a liberação de consoles não tem efeito — mantém tudo liberado. */
+          if (!dados.parentPin) dados.parentConsoles = CONSOLES.map(function (c) { return c[0]; });
+          localStorage.setItem(KEY, JSON.stringify(dados));
+          configSalvo = dados;
+          $pin1.value = ''; $pin2.value = '';
+          $pinRemove.hidden = !dados.parentPin;
+          toast('Preferências salvas');
+        } catch (e) { toast('Não foi possível salvar aqui'); }
+      });
+
+      $pinRemove.addEventListener('click', function () {
+        daTela();
+        configSalvo.parentPin = '';
+        configSalvo.parentConsoles = CONSOLES.map(function (c) { return c[0]; });
+        try { localStorage.setItem(KEY, JSON.stringify(configSalvo)); } catch (e) {}
+        $pin1.value = ''; $pin2.value = '';
+        $pinRemove.hidden = true;
+        $consolesBox.querySelectorAll('input').forEach(function (cb) { cb.checked = true; });
+        toast('PIN removido');
+      });
+
+      el('cfg-reset').addEventListener('click', function () {
+        try { localStorage.removeItem(KEY); } catch (e) {}
+        configSalvo = JSON.parse(JSON.stringify(PADRAO));
+        paraTela(configSalvo);
+        toast('Padrões restaurados');
+      });
+
+      configSalvo = ler();
+      paraTela(configSalvo);
+    })();
+  </script>
+
+  <script>
+    /* ═══ Chip do jogador no topo (nome + avatar, igual à index) ═══ */
+    (function initPlayerChip() {
+      const nameEl = document.getElementById('home-user-name');
+      if (!nameEl) return;
+      const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      const apply = () => {
+        const n = (RVStore.getItem('rv_player_name') || (RVAccount.user() && RVAccount.user().name) || '').trim();
+        const cloud = RVAccount.isCloud();
+        nameEl.innerHTML = n ? (cloud ? '<img class="rv-inline-icon home-user-cloud" src="assets/icons/cloud.svg" alt="nuvem"> ' + esc(n) : esc(n)) : '';
+        nameEl.style.display = n ? '' : 'none';
+        const avatarEl = document.getElementById('home-avatar');
+        const avatar = RVStore.getItem('rv_avatar') || '';
+        const profileLink = avatarEl && avatarEl.closest('.profile-link');
+        if (profileLink) {
+          profileLink.classList.toggle('has-avatar', !!avatar);
+          profileLink.style.backgroundImage = avatar ? 'url("' + avatar.replace(/"/g, '') + '")' : '';
+        }
+        nameEl.title = n
+          ? 'Jogador: ' + n + (cloud ? ' — histórico sincronizado na nuvem' : ' — perfil deste aparelho')
+          : '';
+      };
+      apply();
+      window.addEventListener('storage', (e) => { if (!e.key || /rv_player_name/.test(e.key)) apply(); });
+      window.addEventListener('rv-player-name-changed', apply);
+      window.addEventListener('rv-avatar-changed', apply);
+      window.addEventListener('rv-data-changed', (e) => { if (e.detail && (e.detail.key === 'rv_player_name' || e.detail.key === 'rv_avatar')) apply(); });
+    })();
+
+    /* ═══ Controle na tela (movido do perfil) ═══ */
+    (function initPadPref() {
+      const status = document.getElementById('pad-status');
+      const wrap = document.getElementById('pad-modes');
+      if (!window.RVInput) { wrap.style.display = 'none'; if (status) status.textContent = 'Indisponível aqui.'; return; }
+      function render() {
+        const m = RVInput.mode();
+        wrap.querySelectorAll('[data-pad]').forEach(b => b.classList.toggle('active', b.dataset.pad === m));
+        const gp = RVInput.hasGamepad();
+        status.textContent =
+          'Agora: ' + (RVInput.shouldShowVirtualPad() ? 'controle virtual ATIVO' : 'controle virtual OCULTO') +
+          ' (' + RVInput.reason() + ')' +
+          (gp ? ' · gamepad: ' + (RVInput.gamepadName() || 'conectado') : '');
+      }
+      wrap.addEventListener('click', (e) => {
+        const b = e.target.closest('[data-pad]');
+        if (!b) return;
+        RVInput.setMode(b.dataset.pad);
+        render();
+      });
+      RVInput.onChange(render);
+      render();
+      setTimeout(render, 1200);
+    })();
+
+    /* ═══ Conta e sincronização (movido do perfil) ═══ */
+    (function initAccountPanel() {
+      const user = RVAccount.user();
+      const whoEl = document.getElementById('account-who');
+      const syncEl = document.getElementById('account-sync');
+      const badge = document.getElementById('account-badge');
+      const btnSync = document.getElementById('btn-sync');
+
+      if (!user) {
+        badge.textContent = 'sem sessão';
+        badge.classList.add('local');
+        whoEl.innerHTML = '<a href="login.html" style="color:var(--green-neon)">Entrar ou criar conta →</a>';
+        syncEl.textContent = 'Sem login, o histórico não tem dono e pode se misturar com o de outra pessoa neste navegador.';
+        btnSync.style.display = 'none';
+        document.getElementById('btn-logout').style.display = 'none';
+        return;
+      }
+
+      const cloud = RVAccount.isCloud();
+      badge.textContent = cloud ? 'nuvem' : 'local';
+      if (!cloud) badge.classList.add('local');
+      whoEl.textContent = (RVAccount.name() || user.name || 'Jogador') + (user.email ? ' · ' + user.email : '');
+
+      function describeSync() {
+        const at = RVAccount.store.updatedAt();
+        const quando = at ? new Date(at).toLocaleString('pt-BR') : 'ainda não';
+        syncEl.textContent = cloud
+          ? 'Sincronizado com a sua conta. Última alteração: ' + quando + '. Entre com o mesmo e-mail em outro aparelho para continuar de onde parou.'
+          : 'Perfil deste aparelho. Última alteração: ' + quando + '. Para levar o histórico para outro aparelho, use "Baixar backup" (ou configure a nuvem em js/rv-config.js).';
+      }
+      describeSync();
+
+      if (!cloud) btnSync.style.display = 'none';
+      btnSync.addEventListener('click', async () => {
+        btnSync.disabled = true; btnSync.textContent = 'Sincronizando...';
+        const ok = await RVAccount.syncNow();
+        btnSync.textContent = ok ? 'Sincronizado' : 'Falhou — sem internet?';
+        describeSync();
+        setTimeout(() => { btnSync.disabled = false; btnSync.textContent = 'Sincronizar agora'; if (ok) location.reload(); }, 1200);
+      });
+
+      document.getElementById('btn-export').addEventListener('click', () => {
+        const pack = RVAccount.exportBackup();
+        const blob = new Blob([JSON.stringify(pack, null, 2)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'retrovault-os-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+        a.click();
+        setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+      });
+
+      const fileInput = document.getElementById('import-file');
+      document.getElementById('btn-import').addEventListener('click', () => fileInput.click());
+      fileInput.addEventListener('change', async () => {
+        const file = fileInput.files && fileInput.files[0];
+        if (!file) return;
+        try {
+          RVAccount.importBackup(await file.text(), true);
+          alert('Backup restaurado e mesclado com o histórico atual.');
+          location.reload();
+        } catch (err) { alert('Não foi possível restaurar: ' + err.message); }
+      });
+
+      document.getElementById('btn-logout').addEventListener('click', async () => {
+        if (!confirm('Sair da conta? Seus dados continuam salvos e voltam quando você entrar de novo.')) return;
+        await RVAccount.signOut();
+        location.href = 'login.html';
+      });
+    })();
+
+    /* ═══ Reset de dados + novidades + instalar (agora moram aqui) ═══ */
+    document.getElementById('btn-reset-data').addEventListener('click', () => {
+      if (confirm('Tem certeza? Todos os dados de conquistas, recentes e favoritos serão apagados.')) {
+        ['rv_recent', 'rv_favorites', 'rv_achievements', 'rv_played_games', 'rv_sessions', 'rv_consoles_played', 'rv_screenshots', 'rv_player_name', 'rv_playtime', 'rv_activity', 'rv_status'].forEach(k => RVStore.removeItem(k));
+        location.reload();
+      }
+    });
+    if (window.RVX) {
+      RVX.bindInstallButtons();
+      document.getElementById('btn-whatsnew').addEventListener('click', () => RVX.whatsNew(true));
+    }
+  </script>
+  <script src="js/rv-ui.js?v=20260922"></script>
+</body>
+</html>

@@ -208,9 +208,13 @@
 
     /* ── 6. Bottom nav: marca a página ativa ── */
     try {
-      var here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      /* Firebase Hosting (cleanUrls) serve /games e /profile sem ".html" —
+         normalizamos os dois lados para a marcação funcionar nos dois casos. */
+      var here = (location.pathname.split('/').pop() || 'index.html').toLowerCase().replace(/\.html?$/, '');
       document.querySelectorAll('.bottom-nav .bn-item[data-page]').forEach(function (a) {
-        var pages = (a.getAttribute('data-page') || '').split(' ');
+        var pages = (a.getAttribute('data-page') || '').split(' ').map(function (p) {
+          return p.toLowerCase().replace(/\.html?$/, '');
+        });
         if (pages.indexOf(here) >= 0) a.classList.add('active');
       });
       /* Barra mobile = abas: o toque escolhe o ativo; rolar não muda nada. */

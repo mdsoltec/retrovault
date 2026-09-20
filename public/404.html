@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/rv-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>RetroVault OS — Página não encontrada</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 0%, #051408 0%, #020503 60%);
+      color: #d7efe0; font-family: system-ui, -apple-system, sans-serif; text-align: center; padding: 24px;
+    }
+    .box { max-width: 480px; }
+    .code {
+      font-family: Orbitron, system-ui, sans-serif; font-weight: 900; font-size: clamp(4rem, 16vw, 7rem);
+      color: #00ff41; text-shadow: 0 0 30px rgba(0, 255, 65, .45); letter-spacing: 6px;
+    }
+    h1 { font-size: 1.15rem; letter-spacing: 2px; margin: 10px 0 6px; color: #eafff2; text-transform: uppercase; }
+    p { color: #8fa3c0; font-size: .92rem; line-height: 1.6; margin-bottom: 26px; }
+    a.btn {
+      display: inline-block; padding: 13px 30px; border-radius: 12px; text-decoration: none;
+      background: #00ff41; color: #02120a; font-weight: 800; letter-spacing: 1.5px;
+      font-family: Orbitron, system-ui, sans-serif; font-size: .85rem; text-transform: uppercase;
+      box-shadow: 0 8px 30px rgba(0, 255, 65, .25);
+    }
+    a.btn:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0, 255, 65, .35); }
+    .cartucho {
+      width: 130px; margin: 0 auto 18px; opacity: .9; filter: drop-shadow(0 6px 18px rgba(0, 0, 0, .6));
+    }
+    .scanlines { position: fixed; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(255,255,255,.02) 0 1px, transparent 1px 3px); }
+  </style>
+</head>
+
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <main class="box">
+    <svg class="cartucho" viewBox="0 0 120 140" fill="none" aria-hidden="true">
+      <path d="M20 6h80a10 10 0 0 1 10 10v118H10V16A10 10 0 0 1 20 6z" fill="#0a1f10" stroke="#00ff41" stroke-width="3" />
+      <rect x="28" y="20" width="64" height="34" rx="4" fill="#06120a" stroke="#00ff41" stroke-width="2" opacity=".7" />
+      <text x="60" y="44" text-anchor="middle" font-family="Orbitron, monospace" font-size="16" font-weight="900" fill="#00ff41">?</text>
+      <rect x="34" y="96" width="52" height="24" rx="3" fill="#06120a" stroke="#00ff41" stroke-width="2" opacity=".5" />
+    </svg>
+    <div class="code">404</div>
+    <h1>CARTUCHO NÃO ENCONTRADO</h1>
+    <p>Esta página não existe — ou o sopro no cartucho não resolveu dessa vez.<br>O cofre dos clássicos está inteiro, é só voltar.</p>
+    <a class="btn" href="index.html">Voltar ao início</a>
+  </main>
+</body>
+
+</html>

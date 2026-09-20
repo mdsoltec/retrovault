@@ -46,7 +46,7 @@
   var DATA_KEYS = [
     'rv_recent', 'rv_favorites', 'rv_achievements', 'rv_played_games',
     'rv_sessions', 'rv_consoles_played', 'rv_screenshots', 'rv_player_name', 'rv_avatar',
-    'rv_pad_mode'
+    'rv_pad_mode', 'rv_playtime', 'rv_activity', 'rv_status'
   ];
 
   var SAVES_DB = 'RetroVerso-saves';
@@ -282,6 +282,26 @@
       var l = (Array.isArray(a[k]) ? a[k] : []).concat(Array.isArray(b[k]) ? b[k] : []);
       return l.filter(function (v, i) { return l.indexOf(v) === i; });
     };
+    /* Objetos numéricos (tempo de jogo, atividade diária): maior valor por chave. */
+    function objMax(x, y) {
+      x = (x && typeof x === 'object') ? x : {}; y = (y && typeof y === 'object') ? y : {};
+      var out = {};
+      Object.keys(x).concat(Object.keys(y)).forEach(function (k) {
+        out[k] = Math.max(Number(x[k]) || 0, Number(y[k]) || 0);
+      });
+      return out;
+    }
+    /* Status por jogo: fica o marcado mais recentemente. */
+    function objNewer(x, y) {
+      x = (x && typeof x === 'object') ? x : {}; y = (y && typeof y === 'object') ? y : {};
+      var out = {};
+      Object.keys(x).concat(Object.keys(y)).forEach(function (k) {
+        var xa = x[k] || {}, ya = y[k] || {};
+        if (!xa.s && !ya.s) return;
+        out[k] = ((ya.at || 0) > (xa.at || 0)) ? ya : xa;
+      });
+      return out;
+    }
     var merged = {
       rv_recent: uniqBy(
         (Array.isArray(a.rv_recent) ? a.rv_recent : []).concat(Array.isArray(b.rv_recent) ? b.rv_recent : [])
@@ -297,7 +317,10 @@
       rv_achievements: {},
       rv_player_name: aNewer ? (a.rv_player_name || b.rv_player_name || '') : (b.rv_player_name || a.rv_player_name || ''),
       rv_avatar: aNewer ? (a.rv_avatar || b.rv_avatar || '') : (b.rv_avatar || a.rv_avatar || ''),
-      rv_pad_mode: aNewer ? (a.rv_pad_mode || b.rv_pad_mode || 'auto') : (b.rv_pad_mode || a.rv_pad_mode || 'auto')
+      rv_pad_mode: aNewer ? (a.rv_pad_mode || b.rv_pad_mode || 'auto') : (b.rv_pad_mode || a.rv_pad_mode || 'auto'),
+      rv_playtime: objMax(a.rv_playtime, b.rv_playtime),
+      rv_activity: objMax(a.rv_activity, b.rv_activity),
+      rv_status: objNewer(a.rv_status, b.rv_status)
     };
     /* Conquista mantém a data mais antiga (foi quando foi desbloqueada). */
     var ach = {};

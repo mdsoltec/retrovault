@@ -15,7 +15,16 @@
       "sizes": "792x796",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "assets/rv-icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "categories": ["games", "entertainment"]
+  "categories": [
+    "games",
+    "entertainment"
+  ]
 }

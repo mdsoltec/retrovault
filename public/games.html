@@ -8,14 +8,15 @@
   <link rel="apple-touch-icon" href="assets/rv-icon.png">
   <link rel="manifest" href="manifest.json">
   <title>RetroVault OS - Jogos</title>
-  <link rel="stylesheet" href="css/style.css?v=20260919">
-  <script src="js/audio.js?v=20260919"></script>
-  <script src="js/covers-map.js?v=20260919"></script>
-  <script src="js/covers.js?v=20260919"></script>
-  <script src="js/rv-config.js?v=20260919"></script>
-  <script src="js/rv-account.js?v=20260919"></script>
-  <script src="js/rv-input-mode.js?v=20260919"></script>
-  <script src="js/catalog.js?v=20260919"></script>
+  <link rel="stylesheet" href="css/style.css?v=20260922">
+  <script src="js/audio.js?v=20260922"></script>
+  <script src="js/covers-map.js?v=20260922"></script>
+  <script src="js/covers.js?v=20260922"></script>
+  <script src="js/rv-config.js?v=20260922"></script>
+  <script src="js/rv-account.js?v=20260922"></script>
+  <script src="js/rv-input-mode.js?v=20260922"></script>
+  <script src="js/catalog.js?v=20260922"></script>
+  <script src="js/rv-extras.js?v=20260922"></script>
   <script>RVAccount.guard();</script>
 </head>
 
@@ -27,13 +28,18 @@
 
   <!-- NAVBAR -->
   <header class="navbar games-navbar">
-    <a href="index.html" class="btn-back">Consoles</a>
+    <a href="index.html#consoles" class="btn-back">Consoles</a>
     <div class="games-header-center">
       <span class="games-header-brand">RETROVAULT OS // 2.0</span>
       <h1 id="console-title" class="console-header-title">Jogos</h1>
       <span class="games-count-badge" id="games-count">0 JOGOS DISPONÍVEIS</span>
     </div>
     <div class="navbar-spacer">
+      <a href="config.html" class="profile-link" title="Configurações" aria-label="Configurações" style="width:42px;height:42px">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></g>
+        </svg>
+      </a>
       <a href="profile.html" class="profile-link" title="Perfil" style="width:42px;height:42px">
         <svg viewBox="0 0 24 24" width="20" height="20">
           <path fill="currentColor"
@@ -55,6 +61,23 @@
       <button class="filter-btn" data-sort="az" onclick="sortGames('az', this)">A-Z</button>
       <button class="filter-btn" data-sort="za" onclick="sortGames('za', this)">Z-A</button>
       <button class="filter-btn filter-fav-btn" data-sort="fav" onclick="sortGames('fav', this)"><img class="rv-inline-icon" src="assets/icons/heart.svg" alt=""> Favoritos</button>
+      <button class="filter-btn rvx-dice" data-sort="dice" title="Abrir um jogo aleatório deste console" onclick="RVX.goToRandomGame(consoleType)"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.5" cy="8.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.5" cy="15.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1.4" fill="currentColor" stroke="none"/></svg> Surpresa</button>
+    </div>
+    <div class="games-filters" role="group" aria-label="Filtrar por status, gênero e jogadores">
+      <select class="rvx-filter-select" id="rvx-f-status" aria-label="Status do jogo" onchange="filterGames()">
+        <option value="">Status: todos</option>
+        <option value="playing">Jogando</option>
+        <option value="done">Zerados</option>
+        <option value="wish">Quero zerar</option>
+      </select>
+      <select class="rvx-filter-select" id="rvx-f-gen" aria-label="Gênero" onchange="filterGames()"></select>
+      <select class="rvx-filter-select" id="rvx-f-jog" aria-label="Jogadores" onchange="filterGames()">
+        <option value="">Jogadores: todos</option>
+        <option value="1">1 jogador</option>
+        <option value="2">2+ jogadores</option>
+        <option value="4">3–4 jogadores</option>
+      </select>
+      <select class="rvx-filter-select" id="rvx-f-col" aria-label="Coleção" onchange="filterGames()"></select>
     </div>
     </div>
   </div>
@@ -73,14 +96,18 @@
   </footer>
 
   <!-- BOTTOM NAV (mobile) -->
-  <nav class="bottom-nav" aria-label="Navegação rápida">
+  <nav class="bottom-nav nav-4" aria-label="Navegação rápida">
     <a href="index.html" class="bn-item" data-page="index.html">
       <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
       Início
     </a>
     <a href="index.html#consoles" class="bn-item" data-page="games.html">
-      <svg viewBox="0 0 24 24"><path d="M6 9h4l2-2 2 2h4a3 3 0 0 1 3 3v5a2 2 0 0 1-3.4 1.4L16 16.8a4 4 0 0 1-2.8-1.1L12 14.5l-1.2 1.2a4 4 0 0 1-2.8 1.1l-1.6 1.6A2 2 0 0 1 3 17V12a3 3 0 0 1 3-3z"/></svg>
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></g></svg>
       Jogar
+    </a>
+    <a href="config.html" class="bn-item" data-page="config.html">
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></g></svg>
+      Ajustes
     </a>
     <a href="profile.html" class="bn-item" data-page="profile.html">
       <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/></svg>
@@ -162,12 +189,52 @@
 
     // ═══ FILTROS / ORDENAÇÃO ═══
     let currentSort = 'default';
+    let colecaoAtiva = params.get('colecao') || '';
+
+    /* Preenche os selects de gênero e coleção com o que EXISTE neste console.
+       Roda no load: fichas.js entra DEPOIS deste bloco na página. */
+    function initRvxFilters() {
+      const fichas = window.RV_FICHAS || {};
+      const gens = new Set();
+      games.forEach(g => { const f = fichas[g.file]; if (f && f.gen) gens.add(f.gen); });
+      const selGen = document.getElementById('rvx-f-gen');
+      if (selGen) {
+        selGen.innerHTML = '<option value="">Gênero: todos</option>' +
+          [...gens].sort((a, b) => a.localeCompare(b, 'pt-BR')).map(g => `<option value="${g}">${g}</option>`).join('');
+      }
+      const selCol = document.getElementById('rvx-f-col');
+      if (selCol && window.RVX) {
+        const cols = RVX.COLLECTIONS.filter(c => RVX.collectionGames(c.id, consoleType).length > 0);
+        selCol.innerHTML = '<option value="">Coleção: todas</option>' +
+          cols.map(c => `<option value="${c.id}">${c.name} (${RVX.collectionGames(c.id, consoleType).length})</option>`).join('');
+        if (colecaoAtiva) { selCol.value = colecaoAtiva; renderGames(getCurrentList()); }
+      }
+    }
+    if (document.readyState === 'complete') initRvxFilters();
+    else window.addEventListener('load', initRvxFilters);
 
     function getCurrentList() {
       const query = document.getElementById('game-search').value.trim().toLowerCase();
+      const fStatus = (document.getElementById('rvx-f-status') || {}).value || '';
+      const fGen = (document.getElementById('rvx-f-gen') || {}).value || '';
+      const fJog = (document.getElementById('rvx-f-jog') || {}).value || '';
+      const fCol = (document.getElementById('rvx-f-col') || {}).value || colecaoAtiva;
+      const fichas = window.RV_FICHAS || {};
       let list = games;
       if (query) {
         list = games.filter(g => g.name.toLowerCase().includes(query) || (g.subtitle && g.subtitle.toLowerCase().includes(query)));
+      }
+      if (fStatus && window.RVX) {
+        list = list.filter(g => RVX.statusOf(RVX.gameKey(consoleType, g.file)) === fStatus);
+      }
+      if (fGen) list = list.filter(g => fichas[g.file] && fichas[g.file].gen === fGen);
+      if (fJog) {
+        const n = Number(fJog);
+        list = list.filter(g => fichas[g.file] && Number(fichas[g.file].jog) >= (n >= 4 ? 3 : n));
+      }
+      if (fCol && window.RVX) {
+        const permitidos = new Set(RVX.collectionGames(fCol, consoleType));
+        list = list.filter(g => permitidos.has(g.file));
       }
       if (currentSort === 'az') {
         list = [...list].sort((a, b) => a.name.localeCompare(b.name));
@@ -271,6 +338,35 @@
         });
         coverWrap.appendChild(favBtn);
 
+        // Selo de status (jogando / zerado / quero zerar) — toques ciclam
+        if (window.RVX) {
+          const stBtn = document.createElement('button');
+          stBtn.type = 'button';
+          stBtn.className = 'rvx-status-btn';
+          const paintStatus = () => {
+            const s = RVX.statusOf(RVX.gameKey(consoleType, game.file));
+            stBtn.classList.remove('s-playing', 's-done', 's-wish');
+            if (s) stBtn.classList.add('s-' + s);
+            const ICO = {
+              playing: '<polygon points="8 5 19 12 8 19" fill="currentColor" stroke="none"/>',
+              done: '<polyline points="20 6 9 17 4 12"/>',
+              wish: '<polygon points="12 3 14.7 8.6 20.9 9.4 16.4 13.7 17.5 19.9 12 17 6.5 19.9 7.6 13.7 3.1 9.4 9.3 8.6 12 3"/>',
+              none: '<circle cx="12" cy="12" r="8"/>'
+            };
+            stBtn.innerHTML = '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (s ? ICO[s] : ICO.none) + '</svg>';
+            stBtn.title = s ? 'Status: ' + RVX.STATUS_LABEL[s] + ' (toque para mudar)' : 'Marcar status (jogando / zerado / quero zerar)';
+            stBtn.setAttribute('aria-label', stBtn.title);
+          };
+          paintStatus();
+          stBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            RVX.cycleStatus(RVX.gameKey(consoleType, game.file));
+            paintStatus();
+          });
+          coverWrap.appendChild(stBtn);
+        }
+
         // Bloco de Informações
         const gameInfo = document.createElement('div');
         gameInfo.className = 'game-info';
@@ -296,9 +392,9 @@
       navigator.serviceWorker.register('sw.js', { scope: './' }).catch(() => { });
     }
   </script>
-  <script src="js/fichas.js?v=20260919"></script>
-  <script src="js/card-info.js?v=20260919"></script>
-  <script src="js/rv-ui.js?v=20260919"></script>
+  <script src="js/fichas.js?v=20260922"></script>
+  <script src="js/card-info.js?v=20260922"></script>
+  <script src="js/rv-ui.js?v=20260922"></script>
 <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3bcf5ef8e95dcd8',t:'MTc4OTUzMTE4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","spa":2}' crossorigin="anonymous"></script>
 </body>
 

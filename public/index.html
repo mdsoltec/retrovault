@@ -10,16 +10,16 @@
   <meta name="theme-color" content="#020503">
   <script>try{history.scrollRestoration='manual';}catch(e){}</script>
   <title>RetroVault OS - Universo dos Games Clássicos</title>
-  <link rel="stylesheet" href="css/style.css?v=20260919">
-  <script src="js/audio.js?v=20260919"></script>
-  <script src="js/covers-map.js?v=20260919"></script>
-  <script src="js/covers.js?v=20260919"></script>
-  <script src="js/catalog.js?v=20260919"></script>
+  <link rel="stylesheet" href="css/style.css?v=20260922">
+  <script src="js/audio.js?v=20260922"></script>
+  <script src="js/covers-map.js?v=20260922"></script>
+  <script src="js/covers.js?v=20260922"></script>
+  <script src="js/catalog.js?v=20260922"></script>
   <!-- Mapa de capas remotas pré-computado (URL exata por jogo) -->
 
-  <script src="js/rv-config.js?v=20260919"></script>
-  <script src="js/rv-account.js?v=20260919"></script>
-  <script src="js/rv-input-mode.js?v=20260919"></script>
+  <script src="js/rv-config.js?v=20260922"></script>
+  <script src="js/rv-account.js?v=20260922"></script>
+  <script src="js/rv-input-mode.js?v=20260922"></script>
   <script>RVAccount.guard();</script>
 </head>
 
@@ -40,6 +40,11 @@
     </a>
     <div class="home-user-chip">
       <span class="home-user-name" id="home-user-name" style="display:none"></span>
+      <a href="config.html" class="profile-link" title="Configurações" aria-label="Configurações">
+        <svg viewBox="0 0 24 24" width="22" height="22">
+          <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></g>
+        </svg>
+      </a>
       <a href="profile.html" class="profile-link" title="Perfil">
         <span id="home-avatar" aria-hidden="true"></span>
         <svg viewBox="0 0 24 24" width="22" height="22">
@@ -85,6 +90,9 @@
             <span class="hero-stat-label">Diversão</span>
           </div>
         </div>
+        <button type="button" class="rvx-hero-cta" onclick="RVX && RVX.goToRandomGame()" aria-label="Abrir um jogo aleatório">
+          <svg class="die" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" stroke="none"/><circle cx="15.5" cy="8.5" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="8.5" cy="15.5" r="1.5" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1.5" fill="currentColor" stroke="none"/></svg> Jogo Surpresa
+        </button>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="showcase-card" id="showcase-card" style="--show-c:#00ff41">
@@ -413,19 +421,6 @@
         </a>
         -->
 
-        <!-- RETROFLIX-OFF: Em desenvolvimento
-        <a href="retroflix.html" class="card console-card retroflix">
-          <div class="card-glow-top"></div>
-          <img
-            src="assets/tv.png"
-            alt="RetroFlix" class="console-img">
-          <div class="console-info">
-            <h2>RetroFlix</h2>
-            <p>Filmes · Séries</p>
-          </div>
-        </a>
-        -->
-
       </main>
     </div>
 
@@ -445,14 +440,18 @@
   </footer>
 
   <!-- BOTTOM NAV (mobile) -->
-  <nav class="bottom-nav" aria-label="Navegação rápida">
+  <nav class="bottom-nav nav-4" aria-label="Navegação rápida">
     <a href="#top" class="bn-item" data-page="index.html">
       <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
       Início
     </a>
     <a href="#consoles" class="bn-item" data-page="games.html">
-      <svg viewBox="0 0 24 24"><path d="M6 9h4l2-2 2 2h4a3 3 0 0 1 3 3v5a2 2 0 0 1-3.4 1.4L16 16.8a4 4 0 0 1-2.8-1.1L12 14.5l-1.2 1.2a4 4 0 0 1-2.8 1.1l-1.6 1.6A2 2 0 0 1 3 17V12a3 3 0 0 1 3-3z"/></svg>
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></g></svg>
       Jogar
+    </a>
+    <a href="config.html" class="bn-item" data-page="config.html">
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></g></svg>
+      Ajustes
     </a>
     <a href="profile.html" class="bn-item" data-page="profile.html">
       <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/></svg>
@@ -875,9 +874,14 @@
       });
     }
   </script>
-  <script src="js/fichas.js?v=20260919"></script>
-  <script src="js/card-info.js?v=20260919"></script>
-  <script src="js/rv-ui.js?v=20260919"></script>
+  <script src="js/fichas.js?v=20260922"></script>
+  <script src="js/card-info.js?v=20260922"></script>
+  <script src="js/rv-extras.js?v=20260922"></script>
+  <script>
+    /* Jogo Surpresa + novidades (abre 1x por perfil; nova versão = abre de novo) */
+    if (window.RVX) { RVX.bindInstallButtons(); RVX.whatsNew(false); }
+  </script>
+  <script src="js/rv-ui.js?v=20260922"></script>
   <script>
     /* Preenche "N JOGOS" nos cards de console a partir do CATALOG. */
     (function fillConsoleCounts() {
