@@ -21,8 +21,6 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#games-list">Pular para os jogos</a>
-
   <!-- EFEITO CRT SCANLINES -->
   <div class="crt-overlay" aria-hidden="true"></div>
 
@@ -34,18 +32,21 @@
       <h1 id="console-title" class="console-header-title">Jogos</h1>
       <span class="games-count-badge" id="games-count">0 JOGOS DISPONÍVEIS</span>
     </div>
-    <div class="navbar-spacer">
-      <a href="config.html" class="profile-link" title="Configurações" aria-label="Configurações" style="width:42px;height:42px">
-        <svg viewBox="0 0 24 24" width="20" height="20">
-          <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></g>
-        </svg>
-      </a>
-      <a href="profile.html" class="profile-link" title="Perfil" style="width:42px;height:42px">
-        <svg viewBox="0 0 24 24" width="20" height="20">
+    <div class="home-user-chip">
+      <span class="home-user-name" id="home-user-name" style="display:none"></span>
+      <a href="profile.html" class="profile-link" title="Perfil">
+        <span id="home-avatar" aria-hidden="true"></span>
+        <svg viewBox="0 0 24 24" width="22" height="22">
           <path fill="currentColor"
             d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
         </svg>
       </a>
+      <a href="config.html" class="profile-link" title="Configurações" aria-label="Configurações">
+        <svg viewBox="0 0 24 24" width="22" height="22">
+          <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></g>
+        </svg>
+      </a>
+      
     </div>
   </header>
 
@@ -63,7 +64,7 @@
       <button class="filter-btn filter-fav-btn" data-sort="fav" onclick="sortGames('fav', this)"><img class="rv-inline-icon" src="assets/icons/heart.svg" alt=""> Favoritos</button>
       <button class="filter-btn rvx-dice" data-sort="dice" title="Abrir um jogo aleatório deste console" onclick="RVX.goToRandomGame(consoleType)"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.5" cy="8.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.5" cy="15.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1.4" fill="currentColor" stroke="none"/></svg> Surpresa</button>
     </div>
-    <div class="games-filters" role="group" aria-label="Filtrar por status, gênero e jogadores">
+    <div class="games-filters rvx-selects-group" role="group" aria-label="Filtrar por status, gênero e jogadores">
       <select class="rvx-filter-select" id="rvx-f-status" aria-label="Status do jogo" onchange="filterGames()">
         <option value="">Status: todos</option>
         <option value="playing">Jogando</option>
@@ -81,6 +82,96 @@
     </div>
     </div>
   </div>
+
+  <script>
+  /* Layout PC × mobile: no PC o grupo de selects (status/gênero/jogadores/
+     coleção) sai da barra e vira uma linha própria, centralizada, logo abaixo
+     dela. No mobile permanece dentro da fileira, exatamente como projetado. */
+  (function () {
+    var mq = window.matchMedia('(min-width: 769px)');
+    function pos() {
+      var g = document.querySelector('.rvx-selects-group');
+      var tb = document.querySelector('.games-toolbar');
+      if (!g || !tb) return;
+      if (mq.matches) { if (g.closest('.games-toolbar')) tb.after(g); }
+      else { var row = tb.querySelector('.games-filter-row'); if (g.parentElement !== row) row.appendChild(g); }
+    }
+    if (mq.addEventListener) mq.addEventListener('change', pos); else mq.addListener(pos);
+    pos();
+  })();
+  </script>
+
+  <script>
+  /* Dropdowns custom: o popup nativo do <select> não aceita estilo, então o
+     select vira "cérebro" (valor/opções/onchange) e uma casca estilizada no
+     padrão do sistema assume a abertura do menu. */
+  (function () {
+    function setup(sel) {
+      if (sel.dataset.ddReady) return;
+      sel.dataset.ddReady = '1';
+      var wrap = document.createElement('div');
+      wrap.className = 'rvx-dd';
+      sel.parentNode.insertBefore(wrap, sel);
+      wrap.appendChild(sel);
+      sel.classList.add('rvx-dd-native');
+
+      var btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'rvx-dd-btn';
+      btn.setAttribute('aria-haspopup', 'listbox');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', sel.getAttribute('aria-label') || 'Filtro');
+      var lab = document.createElement('span');
+      lab.className = 'rvx-dd-label';
+      btn.appendChild(lab);
+      btn.insertAdjacentHTML('beforeend',
+        '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>');
+
+      var menu = document.createElement('div');
+      menu.className = 'rvx-dd-menu';
+      menu.setAttribute('role', 'listbox');
+      menu.hidden = true;
+      wrap.appendChild(btn);
+      wrap.appendChild(menu);
+
+      function syncLabel() {
+        var o = sel.options[sel.selectedIndex];
+        lab.textContent = o ? o.text : '';
+      }
+      function build() {
+        menu.innerHTML = '';
+        for (var i = 0; i < sel.options.length; i++) {
+          (function (o, idx) {
+            var it = document.createElement('button');
+            it.type = 'button'; it.className = 'rvx-dd-opt';
+            it.setAttribute('role', 'option');
+            it.setAttribute('aria-selected', String(idx === sel.selectedIndex));
+            if (idx === sel.selectedIndex) it.classList.add('sel');
+            it.dataset.value = o.value;
+            it.textContent = o.text;
+            it.addEventListener('click', function () {
+              sel.value = o.value;
+              sel.dispatchEvent(new Event('change'));
+              syncLabel(); close();
+            });
+            menu.appendChild(it);
+          })(sel.options[i], i);
+        }
+      }
+      function open() { build(); menu.hidden = false; wrap.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+      function close() { menu.hidden = true; wrap.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+      btn.addEventListener('click', function () { menu.hidden ? open() : close(); });
+      document.addEventListener('click', function (e) { if (!wrap.contains(e.target)) close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+      sel.addEventListener('change', syncLabel);
+      if (window.MutationObserver) {
+        new MutationObserver(function () { syncLabel(); if (!menu.hidden) build(); })
+          .observe(sel, { childList: true, subtree: true, characterData: true });
+      }
+      syncLabel();
+    }
+    document.querySelectorAll('.rvx-selects-group select.rvx-filter-select').forEach(setup);
+  })();
+  </script>
 
   <!-- CONTAINER DA LISTA DE JOGOS -->
   <main class="grid-container games-grid" id="games-list" aria-live="polite"></main>
@@ -396,6 +487,34 @@
   <script src="js/card-info.js?v=20260922"></script>
   <script src="js/rv-ui.js?v=20260922"></script>
 <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3bcf5ef8e95dcd8',t:'MTc4OTUzMTE4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","spa":2}' crossorigin="anonymous"></script>
-</body>
+
+  <script>
+  /* Nome + avatar do jogador no topo (mesmo chip da home). */
+  (function initPlayerChip() {
+    const nameEl = document.getElementById('home-user-name');
+    if (!nameEl) return;
+    const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    const apply = () => {
+      const n = (RVStore.getItem('rv_player_name') || (RVAccount.user() && RVAccount.user().name) || '').trim();
+      const cloud = RVAccount.isCloud();
+      nameEl.innerHTML = n ? (cloud ? '<img class="rv-inline-icon home-user-cloud" src="assets/icons/cloud.svg" alt="nuvem"> ' + esc(n) : esc(n)) : '';
+      nameEl.style.display = n ? '' : 'none';
+      const avatarEl = document.getElementById('home-avatar');
+      const avatar = RVStore.getItem('rv_avatar') || '';
+      const profileLink = avatarEl && avatarEl.closest('.profile-link');
+      if (profileLink) {
+        profileLink.classList.toggle('has-avatar', !!avatar);
+        profileLink.style.backgroundImage = avatar ? 'url("' + avatar.replace(/"/g, '') + '")' : '';
+      }
+      nameEl.title = n ? 'Jogador: ' + n + (cloud ? ' — histórico sincronizado na nuvem' : ' — perfil deste aparelho') : '';
+    };
+    apply();
+    window.addEventListener('storage', (e) => { if (!e.key || /rv_player_name/.test(e.key)) apply(); });
+    window.addEventListener('rv-player-name-changed', apply);
+    window.addEventListener('rv-avatar-changed', apply);
+    window.addEventListener('rv-data-changed', (e) => { if (e.detail && (e.detail.key === 'rv_player_name' || e.detail.key === 'rv_avatar')) apply(); });
+  })();
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3e21ce2c845c134',t:'MTc4OTkyMDc1OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 </html>
