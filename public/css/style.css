@@ -1055,11 +1055,11 @@ a { -webkit-tap-highlight-color: transparent; }
 .console-card.retrotv { --console-color: var(--retrotv-color); --console-glow: var(--retrotv-glow); }
 
 /* ═══════════════ CONTINUE / FAVORITOS / GAMEPASS ═══════════════ */
-.user-section { max-width: var(--maxw); margin: 0 auto 30px; padding: 0 4px; scroll-margin-top: 150px; }
+.user-section { max-width: var(--maxw); margin: 0 auto 30px; padding: 0 40px; scroll-margin-top: 150px; }
 #gamepass-section { margin-top: 48px; margin-bottom: 8px; }
 .user-section-header {
   display: flex; align-items: center; justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   padding: 0 4px;
 }
 .user-section-title {

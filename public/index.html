@@ -15,8 +15,6 @@
   <script src="js/covers-map.js?v=20260922"></script>
   <script src="js/covers.js?v=20260922"></script>
   <script src="js/catalog.js?v=20260922"></script>
-  <!-- Mapa de capas remotas pré-computado (URL exata por jogo) -->
-
   <script src="js/rv-config.js?v=20260922"></script>
   <script src="js/rv-account.js?v=20260922"></script>
   <script src="js/rv-input-mode.js?v=20260922"></script>
@@ -132,10 +130,6 @@
 
   <!-- SEÇÃO DE CONSOLES -->
   <section class="consoles-section" id="consoles">
-    <div class="section-header">
-      <span class="section-tag">// Escolha seu universo //</span>
-      <h2 class="section-title">Consoles</h2>
-    </div>
 
     <!-- CONTINUE JOGANDO (preenchido via JS) -->
     <div class="user-section" id="continue-playing-section" style="display:none;">
@@ -153,6 +147,11 @@
         <button class="user-section-clear" onclick="clearFavorites()">Limpar</button>
       </div>
       <div class="user-games-row" id="favorites-row"></div>
+    </div>
+
+    <div class="section-header">
+      <span class="section-tag">// Escolha seu universo //</span>
+      <h2 class="section-title">Consoles</h2>
     </div>
 
 
@@ -429,12 +428,6 @@
   <!-- FOOTER -->
   <footer class="rv-footer">
     <div class="footer-brand">RV</div>
-    <nav class="footer-links" aria-label="Links do rodapé">
-      <a href="#top" data-spy="top">Início</a>
-      <a href="#consoles" data-spy="consoles">Consoles</a>
-      <a href="#gamepass-section" data-spy="gamepass-section">Gamepass</a>
-      <a href="profile.html">Perfil</a>
-    </nav>
     <p class="footer-copy">RETROVAULT OS &mdash; ENTER THE CLASSICS</p>
     <p class="footer-sub">Todos os Mundos. Todos os Clássicos.</p>
   </footer>
@@ -775,9 +768,6 @@
     /* ═══ NOME DO JOGADOR NA HOME ═══
        Lê rv_player_name (definido no profile.html) e mostra ao lado
        do ícone de perfil. Reage a mudanças feitas em outra aba. */
-    /* ═══ NOME DO JOGADOR NA HOME ═══
-       Mostra quem está logado ao lado do ícone de perfil. O ícone de
-       nuvem indica que o histórico está sincronizado com a conta. */
     (function initPlayerChip() {
       const nameEl = document.getElementById('home-user-name');
       if (!nameEl) return;

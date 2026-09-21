@@ -10,7 +10,7 @@
       calibrate.html (faltavam → offline quebrava o player).
    4. Versão fixada do EmulatorJS (4.2.3) no warmup — veja play.html.
    ═══════════════════════════════════════════════════════════ */
-const CACHE_NAME = 'retrovault-v9';
+const CACHE_NAME = 'retrovault-v10';
 const CACHE_EJS = CACHE_NAME + '-ejs'; // núcleos/framework do EmulatorJS
 const CACHE_COVERS = 'retrovault-covers'; // capas baixadas automaticamente da web
 const CACHE_ROMS = 'retrovault-roms-v1'; // ROMs que o jogador escolheu levar para o offline
