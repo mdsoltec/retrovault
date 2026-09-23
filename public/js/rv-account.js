@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVAULT OS — CONTA, SESSÃO E SINCRONIZAÇÃO   (js/rv-account.js)
+   RETROVAULT WEB — CONTA, SESSÃO E SINCRONIZAÇÃO   (js/rv-account.js)
    ───────────────────────────────────────────────────────────
    Resolve o problema de "perder o histórico": tudo que era gravado
    solto no navegador passa a ter DONO.
@@ -49,7 +49,8 @@
     'rv_pad_mode', 'rv_playtime', 'rv_activity', 'rv_status'
   ];
 
-  var SAVES_DB = 'RetroVerso-saves';
+  var SAVES_DB = 'RetroVault-saves';
+  var SAVES_DB_LEGACY = 'RetroVerso-saves'; /* nome do banco em versões antigas — só leitura p/ migração */
   var SAVES_STORE = 'saves';
 
   /* ═══════════════ utilidades básicas ═══════════════ */
@@ -180,8 +181,79 @@
       req.onerror = function () { reject(req.error); };
     });
   }
+
+  /* ── Migração única do banco com nome antigo ──
+     Na 1ª abertura após o rebrand, copia os saves do banco legado para o
+     novo nome, sem apagar o banco antigo. Roda uma única vez por navegador
+     (flag rv_saves_db_migrated) e é best-effort: qualquer falha só pula a
+     migração — o app segue funcionando normalmente. */
+  function idbOpenNamed(name) {
+    return new Promise(function (resolve, reject) {
+      var req = indexedDB.open(name); /* sem versão: nunca força upgrade */
+      req.onupgradeneeded = function () {
+        try { req.result.createObjectStore(SAVES_STORE); } catch (e) { }
+      };
+      req.onsuccess = function () { resolve(req.result); };
+      req.onerror = function () { reject(req.error); };
+    });
+  }
+  function idbGetAllRows(db) {
+    return new Promise(function (resolve, reject) {
+      var out = [];
+      try {
+        var cursor = db.transaction(SAVES_STORE, 'readonly').objectStore(SAVES_STORE).openCursor();
+        cursor.onsuccess = function () {
+          var c = cursor.result;
+          if (c) { out.push({ k: c.key, v: c.value }); c.continue(); }
+          else resolve(out);
+        };
+        cursor.onerror = function () { reject(cursor.error); };
+      } catch (e) { reject(e); }
+    });
+  }
+  function idbPutAllRows(db, rows) {
+    return new Promise(function (resolve, reject) {
+      try {
+        var tx = db.transaction(SAVES_STORE, 'readwrite');
+        var st = tx.objectStore(SAVES_STORE);
+        rows.forEach(function (r) { try { st.put(r.v, r.k); } catch (e) { } });
+        tx.oncomplete = function () { resolve(); };
+        tx.onerror = function () { reject(tx.error); };
+        tx.onabort = function () { reject(tx.error); };
+      } catch (e) { reject(e); }
+    });
+  }
+  async function migrateSavesDbOnce() {
+    if (!global.indexedDB || lsGet('rv_saves_db_migrated') === '1') return;
+    var db = await idbOpenNamed(SAVES_DB);
+    try {
+      var current = await idbGetAllRows(db).catch(function () { return []; });
+      if (current.length) { lsSet('rv_saves_db_migrated', '1'); return; }
+      /* Evita criar um banco legado vazio em navegadores novos. */
+      if (global.indexedDB.databases) {
+        var list = await global.indexedDB.databases().catch(function () { return null; });
+        var exists = !!(list && list.some(function (d) { return d && d.name === SAVES_DB_LEGACY; }));
+        if (!exists) { lsSet('rv_saves_db_migrated', '1'); return; }
+      }
+      var oldDb = await idbOpenNamed(SAVES_DB_LEGACY).catch(function () { return null; });
+      if (!oldDb) { lsSet('rv_saves_db_migrated', '1'); return; }
+      var rows = await idbGetAllRows(oldDb).catch(function () { return []; });
+      oldDb.close();
+      if (rows.length) await idbPutAllRows(db, rows).catch(function () { });
+      lsSet('rv_saves_db_migrated', '1');
+    } finally {
+      try { db.close(); } catch (e) { }
+    }
+  }
+  var savesDbMigratePromise = null;
+  function ensureSavesDbMigrated() {
+    if (!savesDbMigratePromise) {
+      savesDbMigratePromise = migrateSavesDbOnce().catch(function () { /* best-effort */ });
+    }
+    return savesDbMigratePromise;
+  }
   function idbRun(mode, op) {
-    return idbOpen().then(function (db) {
+    return ensureSavesDbMigrated().then(function () { return idbOpen(); }).then(function (db) {
       return new Promise(function (resolve, reject) {
         var tx = db.transaction(SAVES_STORE, mode);
         var req = op(tx.objectStore(SAVES_STORE));
@@ -229,7 +301,7 @@
       var app = appMod.getApps && appMod.getApps().length ? appMod.getApps()[0] : appMod.initializeApp(FB_CFG);
       return { app: app, A: authMod, F: fsMod, auth: authMod.getAuth(app), db: fsMod.getFirestore(app) };
     })().catch(function (err) {
-      console.warn('[RetroVault OS] Firebase indisponível — seguindo em modo local.', err);
+      console.warn('[RetroVault Web] Firebase indisponível — seguindo em modo local.', err);
       fbPromise = null;
       return null;
     });
@@ -372,7 +444,7 @@
       emit('sync', { pulled: true });
       return true;
     } catch (err) {
-      console.warn('[RetroVault OS] sincronização do perfil falhou:', err);
+      console.warn('[RetroVault Web] sincronização do perfil falhou:', err);
       emit('sync', { error: err });
       return false;
     }
@@ -655,7 +727,7 @@
 
   function exportBackup() {
     return {
-      app: 'RetroVault OS', version: 1, exportedAt: new Date().toISOString(),
+      app: 'RetroVault Web', version: 1, exportedAt: new Date().toISOString(),
       user: session ? { uid: session.uid, name: session.name, email: session.email, mode: session.mode } : null,
       data: RVStore.dump()
     };

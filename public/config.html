@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Configurações - RetroVault OS</title>
-  <meta name="description" content="Preferências do emulador do RetroVault OS: valores iniciais de volume, tela cheia, rewind, saves, filtros e mais.">
+  <title>Configurações - RetroVault Web</title>
+  <meta name="description" content="Preferências do emulador do RetroVault Web: valores iniciais de volume, tela cheia, rewind, saves, filtros e mais.">
   <link rel="icon" href="assets/rv-icon.png">
   <meta name="theme-color" content="#020604">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -167,10 +167,10 @@
 </head>
 <body>
   <header class="navbar">
-    <a href="index.html" class="brand" aria-label="RetroVault OS — início">
+    <a href="index.html" class="brand" aria-label="RetroVault Web — início">
       <div class="brand-logo">RV</div>
       <div class="brand-text">
-        <span class="brand-name">RETROVAULT OS</span>
+        <span class="brand-name">RETROVAULT WEB</span>
         <span class="brand-slogan">CONFIGURAÇÕES // EMULADOR</span>
       </div>
     </a>
@@ -489,7 +489,7 @@
 
     <p class="cfg-info">
       Todas as configurações do emulador ficam nesta página. Cheats ficam disponíveis dentro de
-      cada jogo, no menu próprio do RetroVault OS. Dúvidas? Visite seu
+      cada jogo, no menu próprio do RetroVault Web. Dúvidas? Visite seu
       <a href="profile.html">perfil</a>.
     </p>
   </main>
@@ -497,7 +497,7 @@
   <!-- FOOTER -->
   <footer class="rv-footer">
     <div class="footer-brand">RV</div>
-    <p class="footer-copy">RETROVAULT OS &mdash; ENTER THE CLASSICS</p>
+    <p class="footer-copy">RETROVAULT WEB &mdash; ENTER THE CLASSICS</p>
     <p class="footer-sub">Todos os Mundos. Todos os Clássicos.</p>
   </footer>
 
@@ -524,7 +524,7 @@
   <div class="cfg-toast" id="cfg-toast" role="status" aria-live="polite">Preferências salvas</div>
 
   <script>
-    /* ═══ RetroVault OS — Configurações do emulador ═══
+    /* ═══ RetroVault Web — Configurações do emulador ═══
        Grava em localStorage (chave rv_emu_settings_v1). O play.html lê
        esses valores ao iniciar e usa como valor de cada opção.
        Sem preferências salvas, valem os padrões do sistema. */
@@ -806,7 +806,7 @@
         const blob = new Blob([JSON.stringify(pack, null, 2)], { type: 'application/json' });
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
-        a.download = 'retrovault-os-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+        a.download = 'retrovault-web-backup-' + new Date().toISOString().slice(0, 10) + '.json';
         a.click();
         setTimeout(() => URL.revokeObjectURL(a.href), 4000);
       });

@@ -1,5 +1,5 @@
 /**
- * RetroVault OS - RetroArch Overlay CFG Parser & Automatic Touch Engine (PocketArch Compatible)
+ * RetroVault Web - RetroArch Overlay CFG Parser & Automatic Touch Engine (PocketArch Compatible)
  * 
  * Converte automaticamente qualquer arquivo .cfg do RetroArch / Libretro (ex: PocketArch)
  * e suas imagens de overlay em um sistema de controle touch dinâmico e calibrado.
@@ -455,7 +455,7 @@
           if (cur !== -1) target = this.overlayOrder[(cur + 1) % this.overlayOrder.length];
         }
         if (target && this.overlays[target]) {
-          // Overlays de pausa se comportam como o botão MENU do RetroVault OS:
+          // Overlays de pausa se comportam como o botão MENU do RetroVault Web:
           // toque rápido = cheats / segurar = barra de sistema.
           if (this.isPauseOverlay(this.overlays[target])) {
             return [{ type: 'system_menu', action: 'open_cheats', desc }];
@@ -466,7 +466,7 @@
       }
 
       // Alguns CFGs do RetroArch chamam este botão de menu_toggle.
-      // No RetroVault OS: toque rápido abre os cheats (execução deferida ao
+      // No RetroVault Web: toque rápido abre os cheats (execução deferida ao
       // touchend); SEGURAR abre a mini-barra com as ações de sistema.
       const systemButton = String(desc.button || '').toLowerCase();
       if (['menu_toggle', 'menu', 'retroarch_menu', 'menu_bar_button'].includes(systemButton)) {
@@ -578,7 +578,7 @@
       try {
         const gm = window.EJS_emulator?.gameManager || window.EJS_emulator;
         if (!gm) return;
-        // Salvar/carregar passa antes pelo sistema de saves do RetroVault OS
+        // Salvar/carregar passa antes pelo sistema de saves do RetroVault Web
         // (play.html): é o MESMO slot mostrado na barra de sistema, com data
         // e tamanho — o botão do overlay e a barra nunca divergem.
         // Fallback: quickSave/quickLoad do EJS (gm.saveState não existe na

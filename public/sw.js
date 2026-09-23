@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVAULT OS — Service Worker (v9)
+   RETROVAULT WEB — Service Worker (v9)
    O que mudou nesta versão:
    1. EmulatorJS (CDN) agora é cacheado com stale-while-revalidate:
       a 2ª abertura de um jogo usa o núcleo WASM do cache (quase
@@ -87,7 +87,7 @@ self.addEventListener('install', event => {
     caches.open(CACHE_NAME).then(cache => Promise.all(
       STATIC_ASSETS.map(url =>
         cache.add(url).catch(err => {
-          console.warn('[RetroVault OS SW] recurso ignorado no cache:', url, err && err.message);
+          console.warn('[RetroVault Web SW] recurso ignorado no cache:', url, err && err.message);
         })
       )
     ))

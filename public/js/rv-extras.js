@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVAULT OS — EXTRAS   (js/rv-extras.js)
+   RETROVAULT WEB — EXTRAS   (js/rv-extras.js)
    ───────────────────────────────────────────────────────────
    Recursos de produto usados pelas páginas (index/games/profile):
 
@@ -233,7 +233,7 @@
     x.fillStyle = 'rgba(0,255,65,.75)';
     x.font = '700 26px Rajdhani, system-ui, sans-serif';
     x.textAlign = 'center';
-    x.fillText('RETROVAULT OS', w / 2, h - 46);
+    x.fillText('RETROVAULT WEB', w / 2, h - 46);
     x.fillStyle = 'rgba(143,163,192,.7)';
     x.font = '400 19px Rajdhani, system-ui, sans-serif';
     x.fillText('ENTER THE CLASSICS', w / 2, h - 76);
@@ -293,7 +293,7 @@
       }
       cardFooter(x, w, h);
     });
-    return deliverCard(cv, 'retrovault-conquista-' + ach.id + '.png', 'Minha conquista no RetroVault OS!');
+    return deliverCard(cv, 'retrovault-conquista-' + ach.id + '.png', 'Minha conquista no RetroVault Web!');
   }
   function shareProfileCard(info) {
     var w = 1000, h = 720;
@@ -328,7 +328,7 @@
       }
       cardFooter(x, w, h);
     });
-    return deliverCard(cv, 'retrovault-perfil.png', 'Meu player card do RetroVault OS!');
+    return deliverCard(cv, 'retrovault-perfil.png', 'Meu player card do RetroVault Web!');
   }
 
   /* ═════════ O QUE HÁ DE NOVO (ícones: SVG inline, padrão do sistema) ═════════ */
@@ -353,7 +353,7 @@
     ['<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.3" fill="#00ff41" stroke="none"/>',
      'Controle dos pais', 'Defina um PIN e escolha quais consoles podem abrir jogos sem ele.'],
     ['<rect x="7" y="2.5" width="10" height="19" rx="2"/><polyline points="12 8 12 14"/><polyline points="9.5 11.5 12 14 14.5 11.5"/>',
-     'Instalar o app', 'Adicione o RetroVault OS à tela inicial quando o navegador oferecer.']
+     'Instalar o app', 'Adicione o RetroVault Web à tela inicial quando o navegador oferecer.']
   ];
   function ensureWhatsNewStyles() {
     if (document.getElementById('rvx-wn-style')) return;
@@ -389,7 +389,7 @@
       return '<div class="rvx-wn-item"><svg ' + WN_ICO + ' aria-hidden="true">' + i[0] + '</svg><div><b>' + i[1] + '</b><span>' + i[2] + '</span></div></div>';
     }).join('');
     ov.innerHTML = '<div class="rvx-modal-box" role="dialog" aria-label="Novidades">' +
-      '<h3>NOVIDADES DESTA VERSÃO</h3><p class="rvx-wn-sub">RetroVault OS · ' + VERSION + '</p>' + items +
+      '<h3>NOVIDADES DESTA VERSÃO</h3><p class="rvx-wn-sub">RetroVault Web · ' + VERSION + '</p>' + items +
       '<button class="rvx-btn" type="button">MANDAR VER</button></div>';
     ov.addEventListener('click', function (e) { if (e.target === ov || e.target.closest('.rvx-btn')) ov.remove(); });
     document.body.appendChild(ov);

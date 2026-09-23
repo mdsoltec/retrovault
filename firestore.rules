@@ -2,7 +2,7 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Perfil + saves do RetroVerso.
+    // Perfil + saves do RetroVault Web.
     // Estrutura usada pelo js/rv-account.js:
     //   users/{uid}                       -> perfil (email, name, data, clientAt)
     //   users/{uid}/saves/{saveId}        -> metadados do save-state

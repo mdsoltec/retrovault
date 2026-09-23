@@ -1,4 +1,4 @@
-# RETROVAULT OS — Enter The Classics
+# RETROVAULT WEB — Enter The Classics
 
 > Plataforma de emulação retro que roda **100% no navegador**. Sem instalar nada:
 > escolha o console, aperte START e jogue — no PC ou no celular.
@@ -9,7 +9,7 @@
 
 ## O que é
 
-RetroVault OS é um front-end estático (HTML/CSS/JS puro, sem framework) que usa o
+RetroVault WEB é um front-end estático (HTML/CSS/JS puro, sem framework) que usa o
 **EmulatorJS 4.2.3** como motor de emulação. O catálogo, as fichas, as capas, os
 perfis e as configurações vivem no próprio site; as ROMs ficam em um servidor
 próprio (Cloudflare Worker) e são baixadas sob demanda, só quando o jogador abre
@@ -73,11 +73,11 @@ Destaques transversais:
 ## Estrutura
 
 ```
-retroverso/
+retrovault-web/
 ├── public/                  # site (raiz do hosting)
 │   ├── index|games|play|profile|config|login|404 .html
 │   ├── sw.js                # service worker (app + EJS + capas + ROMs offline)
-│   ├── manifest.json        # PWA ("RetroVault OS")
+│   ├── manifest.json        # PWA ("RetroVault WEB")
 │   ├── js/
 │   │   ├── catalog.js       # catálogo: 13 consoles, jogos, cores (FONTE ÚNICA)
 │   │   ├── covers.js        # pipeline de capas + cache

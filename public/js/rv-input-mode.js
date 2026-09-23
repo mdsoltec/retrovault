@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVAULT OS — MODO DE ENTRADA        (js/rv-input-mode.js)
+   RETROVAULT WEB — MODO DE ENTRADA        (js/rv-input-mode.js)
    ───────────────────────────────────────────────────────────
    Decide, sozinho, se o controle virtual na tela deve existir.
 

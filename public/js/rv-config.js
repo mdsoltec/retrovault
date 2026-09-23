@@ -1,11 +1,13 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVAULT OS — CONFIGURAÇÃO DA CONTA / NUVEM
+   RETROVAULT WEB — CONFIGURAÇÃO DA CONTA / NUVEM
    ───────────────────────────────────────────────────────────
    Nuvem LIGADA: login por e-mail + sincronização entre dispositivos.
    ═══════════════════════════════════════════════════════════ */
 window.RV_CONFIG = {
 
   /* ─── 1. Credenciais do Firebase (cole o objeto firebaseConfig) ─── */
+  /* IDs do projeto Firebase: infraestrutura ativa (auth/storage/firestore).
+     Não renomear — mudá-los quebra login e sincronização. */
   firebase: {
     apiKey:            'AIzaSyAMfGOsGFsYhoT_ujQzTKx-Zsx3VMkiets',
     authDomain:        'retroverso-3536c.firebaseapp.com',

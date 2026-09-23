@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """═══════════════════════════════════════════════════════════
-RETROVERSO — Gerador/verificador de fichas dos jogos
+RETROVAULT WEB — Gerador/verificador de fichas dos jogos
 
 Uso:
   python3 tools/gerar-fichas.py check   # (padrão) relatório de cobertura
@@ -92,7 +92,7 @@ def main() -> int:
             if "ano:" in linha and re.search(r"c:\s*1", linha):
                 marcados += 1
 
-    print(f"== RetroVerso — gerador de fichas ({cmd}) ==")
+    print(f"== RetroVault Web — gerador de fichas ({cmd}) ==")
     print(f"js/fichas.js: {len(fichas)} fichas" + (f"  ({marcados} marcadas c:1 para conferir)" if marcados else ""))
     print()
 

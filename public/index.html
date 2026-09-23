@@ -9,7 +9,7 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#020503">
   <script>try{history.scrollRestoration='manual';}catch(e){}</script>
-  <title>RetroVault OS - Universo dos Games Clássicos</title>
+  <title>RetroVault Web - Universo dos Games Clássicos</title>
   <link rel="stylesheet" href="css/style.css?v=20260922">
   <script src="js/audio.js?v=20260922"></script>
   <script src="js/covers-map.js?v=20260922"></script>
@@ -29,10 +29,10 @@
 
   <!-- NAVBAR -->
   <header class="navbar navbar-home">
-    <a href="#top" class="brand" aria-label="RetroVault OS — início">
+    <a href="#top" class="brand" aria-label="RetroVault Web — início">
       <div class="brand-logo">RV</div>
       <div class="brand-text">
-        <span class="brand-name">RETROVAULT OS</span>
+        <span class="brand-name">RETROVAULT WEB</span>
         <span class="brand-slogan">ENTER THE CLASSICS // 2.0</span>
       </div>
     </a>
@@ -396,13 +396,13 @@
     </div>
 
     <!-- ════════════════════════════════════
-         ESPECIAIS (RetroVault OS originais)
+         ESPECIAIS (RetroVault Web originais)
     ════════════════════════════════════ 
     <div class="category-section">
       <div class="category-header">
         <span class="category-title">Especiais</span>
         <span class="category-line"></span>
-        <span class="category-badge">RETROVAULT OS</span>
+        <span class="category-badge">RETROVAULT WEB</span>
       </div>
       <main class="grid-container">
         -->
@@ -428,7 +428,7 @@
   <!-- FOOTER -->
   <footer class="rv-footer">
     <div class="footer-brand">RV</div>
-    <p class="footer-copy">RETROVAULT OS &mdash; ENTER THE CLASSICS</p>
+    <p class="footer-copy">RETROVAULT WEB &mdash; ENTER THE CLASSICS</p>
     <p class="footer-sub">Todos os Mundos. Todos os Clássicos.</p>
   </footer>
 
@@ -609,7 +609,7 @@
 
       // Diagnóstico: card de console sem entrada no CATALOG não soma jogos
       unique.forEach((key) => {
-        if (!CATALOG[key]) console.warn('[RetroVault OS] Card de console sem catálogo (0 jogos):', key);
+        if (!CATALOG[key]) console.warn('[RetroVault Web] Card de console sem catálogo (0 jogos):', key);
       });
 
       const gameCount = unique.reduce((n, key) => {

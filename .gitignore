@@ -1,5 +1,5 @@
 # ═══════════════════════════════════════════════════════════
-#  RETROVERSO — .gitignore 
+#  RETROVAULT WEB — .gitignore 
 # ═══════════════════════════════════════════════════════════
 
 # ── Firebase (não versionar estado local / logs) ────────────
@@ -73,7 +73,7 @@ js/canais-tv.js
 js/radio-player.js
 js/radios.js
 assets/tv.png
-retroverso-capas/
+retrovault-capas/
 
 # ── Scripts locais e diffs ──────────────────────────────────
 push_git.bat

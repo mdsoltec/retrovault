@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="assets/rv-icon.png">
   <link rel="apple-touch-icon" href="assets/rv-icon.png">
   <link rel="manifest" href="manifest.json">
-  <title>RetroVault OS</title>
+  <title>RetroVault Web</title>
   <link rel="stylesheet" href="css/style.css?v=20260922">
   <script src="js/audio.js?v=20260922"></script>
   <script src="js/covers-map.js?v=20260922"></script>
@@ -28,7 +28,7 @@
   <header class="navbar games-navbar">
     <a href="index.html#consoles" class="btn-back">Consoles</a>
     <div class="games-header-center">
-      <span class="games-header-brand">RETROVAULT OS // 2.0</span>
+      <span class="games-header-brand">RETROVAULT WEB // 2.0</span>
       <h1 id="console-title" class="console-header-title">Jogos</h1>
       <span class="games-count-badge" id="games-count">0 JOGOS DISPONÍVEIS</span>
     </div>
@@ -179,7 +179,7 @@
  <!-- FOOTER -->
   <footer class="rv-footer">
     <div class="footer-brand">RV</div>
-    <p class="footer-copy">RETROVAULT OS &mdash; ENTER THE CLASSICS</p>
+    <p class="footer-copy">RETROVAULT WEB &mdash; ENTER THE CLASSICS</p>
     <p class="footer-sub">Todos os Mundos. Todos os Clássicos.</p>
   </footer>
 
@@ -228,7 +228,7 @@
     if (!config[consoleType]) consoleType = 'snes';
     const currentConfig = config[consoleType];
     document.getElementById('console-title').innerText = currentConfig.title;
-    document.title = 'RetroVault OS - ' + currentConfig.title;
+    document.title = 'RetroVault Web - ' + currentConfig.title;
 
     // ─────────────────────────────────────────────────────────
     // SISTEMA DE CAPAS AUTOMÁTICO → js/covers.js (RVCovers)

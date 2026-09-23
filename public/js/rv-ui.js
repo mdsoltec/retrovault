@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RETROVAULT OS 2.0 — MICRO-INTERAÇÕES (rv-ui.js)
+   RETROVAULT WEB 2.0 — MICRO-INTERAÇÕES (rv-ui.js)
    Camada puramente visual: não altera dados nem navegação.
    Tudo aqui é defensivo (se o elemento não existe, ignora) e
    respeita prefers-reduced-motion.

@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap">
-  <title>RetroVault OS - Jogando...</title>
+  <title>RetroVault Web - Jogando...</title>
   <!-- Defesa: o EmulatorJS consulta MediaRecorder.isTypeSupported SEM checar
        se a API existe. Em navegadores sem MediaRecorder (WebKit/Safari antigo,
        alguns WebViews e shells de PWA) a referência crua lançava ReferenceError
@@ -526,7 +526,7 @@
     .rv-meta.pressed { transform: scale(.88) !important; filter: brightness(1.4) !important; }
     #rv-dpad { position: absolute; pointer-events: auto; touch-action: none; }
 
-    /* ═══════════════ TEMA RETROVAULT OS — MENUS DO EMULATORJS ═══════════════
+    /* ═══════════════ TEMA RETROVAULT WEB — MENUS DO EMULATORJS ═══════════════
        A identidade visual do site aplicada aos menus do emulador (pausa,
        configurações, cheats, volume, gamepad): superfícies escuras esverdeadas,
        bordas neon, tipografia Orbitron/Rajdhani e acento na cor do console
@@ -699,7 +699,7 @@
   <div class="rv-bg"></div>
   <div class="rv-load-ring"><div class="rv-logo">RV</div></div>
   <div class="rv-console-title" id="rv-console-title"></div>
-  <div class="rv-name">RETROVAULT OS</div>
+  <div class="rv-name">RETROVAULT WEB</div>
   <div class="rv-slogan">Enter the classics</div>
   <div class="rv-bar-wrap"><div class="rv-bar"></div></div>
   <div class="rv-msg" id="rv-msg">Carregando emulador...</div>
@@ -727,7 +727,7 @@
     </div>
     <!-- MENU (Salvar/Carregar/Reset/Turbo/Sair). Essencial no PC e quando há
          controle conectado: sem o overlay na tela, não existiria outro caminho
-         para a barra de sistema do RetroVault OS. -->
+         para a barra de sistema do RetroVault Web. -->
     <div class="rv-float-btn" id="rv-sysbar-btn" title="Saves — Salvar, Carregar, Reset (segure F1)">
       <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
     </div>
@@ -838,7 +838,7 @@ const CONSOLE_THEMES = {
 
 // Aplica cores temáticas na loading screen
 (function applyConsoleTheme() {
-  const theme = CONSOLE_THEMES[core] || { name: 'RetroVault OS', color: '#00ff41', glow: 'rgba(0,255,65,0.5)' };
+  const theme = CONSOLE_THEMES[core] || { name: 'RetroVault Web', color: '#00ff41', glow: 'rgba(0,255,65,0.5)' };
   const loading = document.getElementById('rv-loading');
   if (loading) {
     loading.style.setProperty('--rv-color', theme.color);
@@ -1222,7 +1222,7 @@ async function preloadGame(gamePath) {
         // Registra se a ROM veio do servidor remoto: BIOS e demais anexos
         // precisam vir da MESMA fonte (roms/ local não existe no GitHub Pages).
         window.__rvRomFromRemote = url.startsWith(ROMS_BASE);
-        console.log('[RetroVault OS] ROM carregada com sucesso de:', url);
+        console.log('[RetroVault Web] ROM carregada com sucesso de:', url);
         break;
       }
     } catch(err) {
@@ -1231,7 +1231,7 @@ async function preloadGame(gamePath) {
   }
 
   if (!response) {
-    console.error('[RetroVault OS] ROM não encontrada. URLs tentadas:', candidateUrls);
+    console.error('[RetroVault Web] ROM não encontrada. URLs tentadas:', candidateUrls);
     msgEl.textContent = 'Erro: ROM não encontrada em roms/ nem no servidor online.';
     throw new Error('ROM não encontrada em nenhuma fonte.');
   }
@@ -1311,7 +1311,7 @@ if (isNDSCore) {
 
 /* ═══ VERSÃO FIXADA DO EMULATORJS ═══
    'stable' é um alias móvel: quando o projeto sobe de versão, os patches
-   de runtime do RetroVault OS (cheats, BIOS trap, stylus NDS, MediaRecorder
+   de runtime do RetroVault Web (cheats, BIOS trap, stylus NDS, MediaRecorder
    stub) podem quebrar SEM aviso. Fixamos a tag exata que hoje serve o
    stable (v4.2.3 — bytes idênticos, verificado por hash do CDN).
    Para atualizar: troque o número AQUI e no sw.js (warmup). */
@@ -1551,7 +1551,7 @@ function openRvCheats() {
   document.body.classList.add('rv-cheats-open');
 
   // O botão "Close" nativo altera display diretamente; mantém o estado visual
-  // do RetroVault OS sincronizado quando isso acontecer.
+  // do RetroVault Web sincronizado quando isso acontecer.
   if (!cheatMenu.__rvCheatObserver) {
     const observer = new MutationObserver(() => {
       const visible = getComputedStyle(cheatMenu).display !== 'none';
@@ -1571,13 +1571,15 @@ window.openRvCheats = openRvCheats;
    No PC: segurar F1 abre a barra, toque rápido no F1 abre os cheats.
    Ícones em SVG (#rv-svg-sprite) e saves com registro visível. */
 
-/* ── SISTEMA DE SAVES RETROVAULT OS ───────────────────────────────────
+/* ── SISTEMA DE SAVES RETROVAULT WEB ───────────────────────────────────
    UM slot por jogo: "Salvar" sobrescreve o save anterior do mesmo jogo
    (a linha de info da barra deixa isso explícito e mostra data/tamanho).
    O estado completo do emulador (save-state) fica em IndexedDB próprio
-   ("RetroVerso-saves"), independente do menu nativo do EmulatorJS:
-   o que a barra salva é exatamente o que a barra carrega. */
-const RV_SAVES_DB = 'RetroVerso-saves';
+   ("RetroVault-saves"), independente do menu nativo do EmulatorJS:
+   o que a barra salva é exatamente o que a barra carrega. Saves gravados
+   com o nome de banco antigo são migrados automaticamente (1x). */
+const RV_SAVES_DB = 'RetroVault-saves';
+const RV_SAVES_DB_LEGACY = 'RetroVerso-saves'; /* banco das versões antigas — só leitura p/ migração */
 const RV_SAVES_STORE = 'saves';
 
 function rvSavesOpen() {
@@ -1590,8 +1592,75 @@ function rvSavesOpen() {
     req.onblocked = () => reject(new Error('IndexedDB bloqueado'));
   });
 }
+function rvSavesOpenNamed(name) {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open(name); /* sem versão: nunca força upgrade */
+    req.onupgradeneeded = () => { try { req.result.createObjectStore(RV_SAVES_STORE); } catch (e) { } };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+function rvSavesGetAllRows(db) {
+  return new Promise((resolve, reject) => {
+    const out = [];
+    try {
+      const cursor = db.transaction(RV_SAVES_STORE, 'readonly').objectStore(RV_SAVES_STORE).openCursor();
+      cursor.onsuccess = () => {
+        const c = cursor.result;
+        if (c) { out.push({ k: c.key, v: c.value }); c.continue(); }
+        else resolve(out);
+      };
+      cursor.onerror = () => reject(cursor.error);
+    } catch (e) { reject(e); }
+  });
+}
+function rvSavesPutAllRows(db, rows) {
+  return new Promise((resolve, reject) => {
+    try {
+      const tx = db.transaction(RV_SAVES_STORE, 'readwrite');
+      const st = tx.objectStore(RV_SAVES_STORE);
+      rows.forEach(r => { try { st.put(r.v, r.k); } catch (e) { } });
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => reject(tx.error);
+      tx.onabort = () => reject(tx.error);
+    } catch (e) { reject(e); }
+  });
+}
+/* Migração única do banco com nome antigo (espelha js/rv-account.js): copia
+   os saves do banco legado para o novo nome, sem apagar o original. Roda 1x
+   por navegador (flag rv_saves_db_migrated); falha = só pula, nunca quebra. */
+async function rvMigrateSavesDbOnce() {
+  if (!window.indexedDB) return;
+  let flag = null;
+  try { flag = localStorage.getItem('rv_saves_db_migrated'); } catch (e) { }
+  if (flag === '1') return;
+  const db = await rvSavesOpenNamed(RV_SAVES_DB);
+  try {
+    const current = await rvSavesGetAllRows(db).catch(() => []);
+    if (current.length) return;
+    /* Evita criar um banco legado vazio em navegadores novos. */
+    if (window.indexedDB.databases) {
+      const list = await window.indexedDB.databases().catch(() => null);
+      const exists = !!(list && list.some(d => d && d.name === RV_SAVES_DB_LEGACY));
+      if (!exists) return;
+    }
+    const oldDb = await rvSavesOpenNamed(RV_SAVES_DB_LEGACY).catch(() => null);
+    if (!oldDb) return;
+    const rows = await rvSavesGetAllRows(oldDb).catch(() => []);
+    oldDb.close();
+    if (rows.length) await rvSavesPutAllRows(db, rows).catch(() => { });
+  } finally {
+    try { db.close(); } catch (e) { }
+    try { localStorage.setItem('rv_saves_db_migrated', '1'); } catch (e) { }
+  }
+}
+let rvSavesDbMigratePromise = null;
+function rvEnsureSavesDbMigrated() {
+  if (!rvSavesDbMigratePromise) rvSavesDbMigratePromise = rvMigrateSavesDbOnce().catch(() => { /* best-effort */ });
+  return rvSavesDbMigratePromise;
+}
 function rvSavesRun(mode, op) {
-  return rvSavesOpen().then(db => new Promise((resolve, reject) => {
+  return rvEnsureSavesDbMigrated().then(() => rvSavesOpen()).then(db => new Promise((resolve, reject) => {
     const tx = db.transaction(RV_SAVES_STORE, mode);
     const req = op(tx.objectStore(RV_SAVES_STORE));
     tx.oncomplete = () => { db.close(); resolve(req && req.result); };
@@ -1688,13 +1757,13 @@ async function rvSaveNow() {
         }
         refreshRvSaveInfo();
       }).catch(err => {
-        console.warn('[RetroVault OS] upload do save falhou:', err);
+        console.warn('[RetroVault Web] upload do save falhou:', err);
         if (typeof showToast === 'function') showToast('Save local OK — nuvem indisponível agora', 'warning');
       });
     }
     return true;
   } catch (err) {
-    console.warn('[RetroVault OS] falha ao gravar save:', err);
+    console.warn('[RetroVault Web] falha ao gravar save:', err);
     if (typeof showToast === 'function') showToast('Falha ao gravar o save', 'warning');
     return false;
   }
@@ -1716,7 +1785,7 @@ async function rvLoadNow() {
       try {
         const cloud = await RVAccount.downloadSave(key);
         if (cloud && cloud.state) { rec = cloud; await rvSavePut(key, cloud); }
-      } catch (e) { console.warn('[RetroVault OS] download do save falhou:', e); }
+      } catch (e) { console.warn('[RetroVault Web] download do save falhou:', e); }
     }
     if (!rec || !rec.state) {
       if (typeof showToast === 'function') showToast('Nenhum save gravado para este jogo');
@@ -1741,7 +1810,7 @@ async function rvLoadNow() {
     if (typeof showToast === 'function') showToast((rec.fromCloud ? 'Save da conta carregado (' : 'Save carregado (') + rvFmtDate(rec.savedAt) + ')', rec.fromCloud ? 'cloud' : 'check');
     return true;
   } catch (err) {
-    console.warn('[RetroVault OS] falha ao carregar save:', err);
+    console.warn('[RetroVault Web] falha ao carregar save:', err);
     try { rvUnfreezeCore(); } catch (e) { /* núcleo já tratado */ }
     if (typeof showToast === 'function') showToast('Falha ao carregar o save', 'warning');
     return false;
@@ -1838,7 +1907,7 @@ function closeRvSystemBar() {
         }
         syncRvSysBarState();
       }
-    } catch (err) { console.warn('[RetroVault OS] barra de sistema:', err); }
+    } catch (err) { console.warn('[RetroVault Web] barra de sistema:', err); }
   });
 })();
 
@@ -2478,14 +2547,14 @@ async function loadRvCheats() {
       const data = await response.json();
       if (data && typeof data === 'object') databases.push(data);
     } catch (error) {
-      console.warn('[RetroVault OS] Não foi possível carregar cheats:', path, error);
+      console.warn('[RetroVault Web] Não foi possível carregar cheats:', path, error);
     }
   }
 
   const database = Object.assign({}, ...databases);
   const romName = window.EJS_gameName || decodeURIComponent((game || '').split('/').pop() || '');
   window.EJS_cheats = findCheatEntries(database, romName);
-  console.info(`[RetroVault OS] Cheats carregados para "${romName}": ${window.EJS_cheats.length}`);
+  console.info(`[RetroVault Web] Cheats carregados para "${romName}": ${window.EJS_cheats.length}`);
 }
 
 let __rvLoaderStarted = false;
@@ -2497,7 +2566,7 @@ async function startRvEmulator() {
     await loadRvCheats();
   } catch (error) {
     window.EJS_cheats = [];
-    console.warn('[RetroVault OS] Falha ao preparar cheats:', error);
+    console.warn('[RetroVault Web] Falha ao preparar cheats:', error);
   }
 
   const script = document.createElement('script');
@@ -2517,7 +2586,7 @@ async function startRvEmulator() {
         msg.style.whiteSpace = 'normal';
         msg.style.maxWidth = '320px';
       }
-      console.warn('[RetroVault OS] watchdog: emulador não iniciou em 30s.', window.__rvLastError || '');
+      console.warn('[RetroVault Web] watchdog: emulador não iniciou em 30s.', window.__rvLastError || '');
     } catch (e) { }
   }, 30000);
 }
@@ -2547,7 +2616,7 @@ if (isArcade) {
               this.gameManager.FS.writeFile(nome, new Uint8Array(await resp.arrayBuffer()));
               this.config.biosUrl = url;
             } catch (err) {
-              console.error('[RetroVault OS] Falha ao baixar BIOS:', url, err);
+              console.error('[RetroVault Web] Falha ao baixar BIOS:', url, err);
               if (this.startGameError) this.startGameError(this.localization ? this.localization('Network Error') : 'Network Error');
               return; // deixa o próprio FBNeo exibir a tela de romset ausente
             }
@@ -2582,10 +2651,10 @@ if (isArcade) {
     for (const url of urls) {
       try {
         const head = await fetch(url, { method: 'HEAD' });
-        if (head.ok) { EJS_biosUrl = url; console.log('[RetroVault OS] BIOS do Sega CD configurada:', url); return; }
+        if (head.ok) { EJS_biosUrl = url; console.log('[RetroVault Web] BIOS do Sega CD configurada:', url); return; }
       } catch (error) {}
     }
-    console.warn('[RetroVault OS] BIOS do Sega CD não encontrada (' + SCD_BIOS_PATH + '). O jogo pode não iniciar.');
+    console.warn('[RetroVault Web] BIOS do Sega CD não encontrada (' + SCD_BIOS_PATH + '). O jogo pode não iniciar.');
   };
   preloadGame(game).then(async blobUrl => {
     EJS_gameUrl = blobUrl; EJS_onGameStart = onGameReady; setTimeout(onGameReady, 14000);
@@ -2631,7 +2700,7 @@ function sendInput(id, val) {
       manager.functions.simulateInput(0, id, val);
     }
     if (new URLSearchParams(window.location.search).has('debug')) {
-      console.log('[RetroVault OS] input', { id, val });
+      console.log('[RetroVault Web] input', { id, val });
     }
   } catch (e) {}
 }
@@ -3067,7 +3136,7 @@ function takeScreenshot() {
     // Download
     const a = document.createElement('a');
     a.href = dataUrl;
-    a.download = `retrovault-os_${core}_${Date.now()}.png`;
+    a.download = `retrovault-web_${core}_${Date.now()}.png`;
     a.click();
     // Salva nas conquistas
     try {
